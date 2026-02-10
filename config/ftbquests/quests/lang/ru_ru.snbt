@@ -1,0 +1,380 @@
+{
+	chapter.31718A1EEFBD3C28.title: "Генетика"
+	chapter.4AA2D83D9D6889BF.title: "Беспроводная энергия"
+	chapter.4EF99906FF767CD8.title: "Археология и Динозаврики"
+	chapter_group.44DAAF0B20180AA5.title: "&lВторостепенное"
+	quest.00DF9E6756C639A7.title: "Игрушка Вихря"
+	quest.01908AA9362EC6E7.quest_desc: [
+		"\"&oХотите стать лучшей версией себя?&r С помощью генетики Вы можете &o&dусовершенствовать&r свой организм, превратив себя в объект &oискусства&r генной инженерии!\""
+		""
+		"С помощью скальпеля Вы можете соскаблить с себя&7(Shift)&r или другого существа органическую материю. Она понадобиться для изучения клеток существа."
+		""
+		"Шприцом Вы можете взять образец своей крови. Она понадобится для внедрения нового &dДНК&r."
+		""
+		"&8*взяв скальпель в руки в отдалении Вы слышите навязчивую мелодию*"
+	]
+	quest.01908AA9362EC6E7.title: "Почешите спинку"
+	quest.028274BCA30F55E8.quest_desc: [
+		"{ftbquests.chapter.f34f4flf45056lf4515elf55265lf6536clf65474lf7557bl_f8568alf95791lf95899lfa59a0lfb5aa7lfb5baflfc5cb6l.quest42.description1}"
+		""
+		"{ftbquests.chapter.f34f4flf45056lf4515elf55265lf6536clf65474lf7557bl_f8568alf95791lf95899lfa59a0lfb5aa7lfb5baflfc5cb6l.quest42.description2}"
+		""
+		"Или на милые плюшевые игрушки."
+	]
+	quest.037DA709053CEBD9.quest_desc: [
+		"Основной кабель Оритеха..."
+		""
+		""
+		"&oкто будет им пользоваться?.."
+	]
+	quest.07C0B81742B2D8CD.title: "Оловянная руда"
+	quest.0854EA551A833457.title: "Игрушка Иссушителя"
+	quest.09D724193BA2126A.quest_desc: ["Соберите полный арсенал инструментов прошлого."]
+	quest.09D724193BA2126A.title: "Как этим пользовались?"
+	quest.09E438DA724A4817.quest_desc: [
+		"{ftbquests.chapter.56AEAC22236F88E3.quest35.description1}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest35.description2}"
+		""
+		"[\"\",{\"translate\":\"ftbquests.chapter.56AEAC22236F88E3.quest35.rich_description1\"},{\"underlined\":1,\"translate\":\"ftbquests.chapter.56AEAC22236F88E3.quest35.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0949BB0088A9C6D5\"}}]"
+	]
+	quest.0C690D4BACF3CD63.quest_desc: [
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest29.description1}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest29.description2}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest29.description3}"
+		""
+		"&cПри разборе киркой не выпадает сама печь, а корпус машины. Снимайте его гаечным ключом."
+	]
+	quest.0CB50D47C9D11894.quest_desc: [""]
+	quest.0D298B9598A9DA92.title: "Игрушка Нюхача"
+	quest.0D78B2E8A66CEDDA.quest_desc: [
+		"{ftbquests.chapter.292851496F040C0B.quest1.description1}"
+		""
+		"{ftbquests.chapter.292851496F040C0B.quest1.description2}"
+		""
+		"{ftbquests.chapter.292851496F040C0B.quest1.description3}"
+		""
+		"{ftbquests.chapter.292851496F040C0B.quest1.description4}"
+		""
+		"{ftbquests.chapter.292851496F040C0B.quest1.description5}"
+		"{ftbquests.chapter.292851496F040C0B.quest1.description6}"
+		""
+		"Но у нас только дэфолт"
+	]
+	quest.1015B52F42E7A8E8.quest_desc: [
+		"С помощью Copy Past Gadget выделите область, которую хотите в будущем воспроизвести."
+		""
+		"Засуньте гаджет в верхний слот Template Manager и бумагу в нижний."
+		"Нажав &lSave&r бумага преобразуется в Template(Чертёж)."
+		""
+		"В будущем его можно загружать(Load) в гаджет, что позволит перенести постройку."
+		""
+		"Так как это Copy &lPaste&r гаджет, его режим можно сменить нажав &lG&r(По умолчанию). Откроется меню настройки. "
+		"Выбрав Paste(&oВставить&r) Вы сможете поставить ранее скопированную зону или загруженный чертёж."
+		""
+		"&l&cГаджеты тратят энергию, а для постройки они используют блоки из вашего инвентаря."
+	]
+	quest.1015B52F42E7A8E8.title: "Строительные Гаджеты"
+	quest.13CFBB32B0E067A3.quest_desc: ["С помощью стола Генной Модификации можно изменять раскрас в будущем выведенных существ далёкого прошлого."]
+	quest.13CFBB32B0E067A3.title: "&oТуалет&r для динозавра"
+	quest.15354EFC545C1C5F.quest_desc: [
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest11.description1}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest11.description2}"
+	]
+	quest.15354EFC545C1C5F.title: "{ftbquests.chapter.5A0B30A41D65CC21.quest11.title}"
+	quest.15586B400513DE4B.quest_desc: [
+		"''Хотите узнать, из чего Вы состоите??\""
+		""
+		"Сосклаблив с себя органическую материю, поместите её в Анализатор Клеток."
+		""
+		"В результате получите свою клетку."
+		""
+		"Машины запитываются с помощью &4FE&r, поэтому используйте конвертер энергии EF->FE."
+	]
+	quest.15586B400513DE4B.title: "Пыль из под ногтей"
+	quest.18A02E732052CB8C.quest_desc: [
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest37.description1}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest37.description2}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest37.description3}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest37.description4}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest37.description5}"
+		""
+		"{@pagebreak}"
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest37.description7}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest37.description8}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest37.description9}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest37.description10}"
+	]
+	quest.1ADBB30D583CD010.title: "Игрушка Разорителя"
+	quest.1C2A065F72A438C7.title: "Игрушка Страйдера"
+	quest.1C2CB7F05FC87658.quest_desc: [
+		"{ftbquests.chapter.292851496F040C0B.quest3.description1}"
+		"{ftbquests.chapter.292851496F040C0B.quest3.description2}"
+		""
+		"{ftbquests.chapter.292851496F040C0B.quest3.description3}"
+		""
+		"Дискорд Industrial Upgrade."
+	]
+	quest.21551AB66F923CFE.quest_desc: [
+		"{ftbquests.chapter.47BD500A3691AC25.quest19.description1}"
+		""
+		"{ftbquests.chapter.47BD500A3691AC25.quest19.description2}"
+		""
+		"{ftbquests.chapter.47BD500A3691AC25.quest19.description3}"
+		""
+		"{ftbquests.chapter.47BD500A3691AC25.quest19.description4}"
+		""
+		"{ftbquests.chapter.47BD500A3691AC25.quest19.description5}"
+	]
+	quest.24C0E19FED4A68D0.quest_desc: [
+		"С помощью Культиватора можно вывести яйцо существа или саженец растения из ранее полученной ДНК."
+		""
+		"Для работы его необходимо запитать какими-либо органическими материалам. Для этого подойдёт еда или кости, и т.д."
+		""
+		"Далее выведите яйцо динозавра."
+		""
+		"&l&4Будьте осторожны!&r &4Культивация может быть неудачной и привести к неблагоприятным последствиям, если под ним не будет блока удовлетворяющий тепловые предпочтения существа!"
+	]
+	quest.24C0E19FED4A68D0.title: "Пропалывая грядку"
+	quest.27221C48FA35E6F4.quest_desc: [
+		"\"Вы - конструктор лего\""
+		""
+		"Для продвижения далее нам необходима основная арматура всего организма - ДНК."
+		"Для её преоbruhзования из клеток понадобится экстрактор ДНК."
+		""
+		"Соберите 8 кусочков пазла Вашего организма. &oОни понадобятся далее&r."
+	]
+	quest.27221C48FA35E6F4.title: "Детали"
+	quest.287EBFC2C61E3CB8.title: "Игрушка Чешуйницы"
+	quest.2992C5F9EE64A135.quest_desc: ["\"Строишь в креативе? Чтож. У меня /gamerule keepInventoryTrue.\""]
+	quest.2992C5F9EE64A135.title: "sf_cheats 1"
+	quest.2CED273C6573104A.quest_desc: ["Генетические машины можно ускорять с помощью специальной модификации."]
+	quest.2CED273C6573104A.title: "Ускоритель"
+	quest.2DA14EEB20EA438D.quest_desc: ["Соберите одеяние древних воинов."]
+	quest.2DA14EEB20EA438D.title: "Лохмотья"
+	quest.32F3EE0F9B79CBE6.title: "Игрушка Эндер-дракона"
+	quest.348CB8615A1580A0.title: "Игрушка Эндермена"
+	quest.35E9A102ECC67C44.quest_desc: ["С её помощью можно расчитать размер."]
+	quest.35E9A102ECC67C44.title: "Надо что-то измерить?.."
+	quest.36AB4F56DAECF99F.quest_desc: [
+		"{ftbquests.chapter.18F4452C86824019.quest79.description1}"
+		"&8ОНО препятсвует нам... Даже в смерти."
+		"&8Или это всё... искусственно?.."
+		""
+		"{ftbquests.chapter.18F4452C86824019.quest79.description2}"
+	]
+	quest.37AA831A23C6B6C1.quest_desc: [""]
+	quest.37E6C4FC89B3460B.title: "Игрушка Вардена"
+	quest.392B56C87AA81411.quest_desc: [
+		"Создайте кормушку для динозавров - они будут сами из неё есть."
+		""
+		"Положите в неё мясо для плотоядных зверей и фрукты и овощи для травоядных."
+		""
+		"&aЧем больше насыщения у еды, тем больше она даст в копилку."
+	]
+	quest.392B56C87AA81411.title: "Кормушка для больших кошечек"
+	quest.3A3A6C8E836819A5.quest_desc: [
+		"Воссоздайте оружие далёкого прошлого... и поместите его в рамочку."
+		""
+		"Прошлое таит в себе не только эти находки."
+	]
+	quest.3A3A6C8E836819A5.title: "Древний арсенал"
+	quest.3C85B04784D9A0C9.quest_desc: [
+		"Продвинутый компьютер обладает большим количеством цветов, чем чёрный и белый."
+		"В добавок, позволяет частично пользоваться мышью и добавляет новые удобства в редактирование скриптов и само пользование устройством."
+		"Так как появляется возможность открывать дополнительные окна."
+	]
+	quest.3DC06323A198B1ED.quest_desc: [
+		"\"&5Mommy Milkers&r\""
+		""
+		"Благодаря Инфузеру Плазмидов представляется возможным взаимствовать ДНК других существ."
+		""
+		"Образуйте уникальную возможность ДНК коровы. А именно давать молоко."
+		""
+		"Для этого поместите расшифрованное ДНК в Инфузер, а справа поместите пустой плазмид."
+	]
+	quest.3DC06323A198B1ED.title: "Инфузориев Плазмид"
+	quest.3EFCB9E41496FEDC.quest_desc: ["Нажмите семенами по Аметистовому месторождению, чтобы преоброзовать его в Фасоритовое."]
+	quest.42AA78336C316D9D.quest_desc: [
+		"Предоставляет командный интерфейс между ME Хранилищем и Computer Craft"
+		"Wiki: https://docs.advanced-peripherals.de/0.7/peripherals/me_bridge/"
+	]
+	quest.4464D5FB3CF1299C.quest_desc: [
+		"\"Это не обруч\""
+		""
+		"Плазмид является основой, в которую внедряется ген."
+		"Для каждого гена необходимо разное количество ДНК."
+	]
+	quest.4464D5FB3CF1299C.title: "Гибкий бублик"
+	quest.494B41FA52970602.quest_desc: ["Работает как ключ из Create'а, но с содержимым из Oritech'а."]
+	quest.494EEDE2CEED89F8.quest_desc: [
+		"Станьте свидетелем невообразимого &l&4УЖАСА&r."
+		""
+		"Погибель &l&4ЭТОГО&r не даст вам путь за пределы..."
+	]
+	quest.494EEDE2CEED89F8.title: "&l&4ОНО&r владеет небом..."
+	quest.4C12691F9BE58D92.quest_desc: [
+		"\"Пицца? Нет - Птица!\""
+		""
+		"Выведите Додо и поглядите на столь чудную птичку."
+		""
+		"Её ДНК можно найти в вечной мерзлоте под землёй.&8(не обязательно, чтобы было холодно)&r"
+	]
+	quest.4C12691F9BE58D92.title: "Домашняя п&8(т)&rица"
+	quest.4FEB2293B7F43C67.quest_desc: [
+		"С помощью этой штуки можно автоматизировать добычу ресурсов."
+		"А ещё она зачаровывается, как кирка."
+		"&lТребует энергию для работы."
+	]
+	quest.504FBBF5D2DBD047.quest_desc: [""]
+	quest.517A29044FE51A20.quest_desc: [
+		"\"...не вымрет.\""
+		""
+		"Выведите Мамонта и взгляните на легенду."
+		""
+		"Чтобы вывести это существо, полученный шприц с эмбрионом нужно ввести в любой скот. Из него выйдет &n&m&1нечто&r. Дальше необходимо только подождать."
+		""
+		"Его ДНК можно найти в вечной мерзлоте под землёй.&8(не обязательно, чтобы было холодно)&r"
+	]
+	quest.517A29044FE51A20.title: "Лох - не мамонт..."
+	quest.51D505EB514577DD.quest_desc: [""]
+	quest.51EBBA41108FD69B.quest_desc: [""]
+	quest.52106170F10B8579.title: "Игрушка Наездника на Разорителе"
+	quest.5246DBF53BF7BAD4.title: "Игрушка Эндермита"
+	quest.5AE33DA79E71345B.quest_desc: [
+		"Здесь было что-то написано, поэтому мне лень просто убирать этот квест."
+		""
+		"В основном изучается AE через подсказки у предметов и блоков, но оно всё на английском."
+	]
+	quest.5AE33DA79E71345B.title: "Старт"
+	quest.5F6FFD128C1FC36F.quest_desc: ["Основной компонент для создания электроники."]
+	quest.5FB3E03A3D70585F.quest_desc: ["Первый шаг в компьютеризации: Создание первого полноценного компьютера."]
+	quest.5FB3E03A3D70585F.quest_subtitle: "10000011101 10000110000 10001000111 10000111101 10001010001 10000111100"
+	quest.6032C813050CFD89.title: "Игрушка Голема"
+	quest.60B40CB170C45E9E.quest_desc: ["Провалите Культивацию и увидьте результат."]
+	quest.60B40CB170C45E9E.title: "Ой..."
+	quest.6297DB1C408E121F.quest_desc: [
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest44.description1}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest44.description2}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest44.description3}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest44.description4}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest44.description5}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest44.description6}"
+		""
+		"{@pagebreak}"
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest44.description8}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest44.description9}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest44.description10}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest44.description11}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest44.description12}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest44.description13}"
+	]
+	quest.637E1140C97558B9.quest_desc: [
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest38.description1}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest38.description2}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest38.description3}"
+	]
+	quest.6A51BBE86BDACE8A.quest_desc: ["Избавьте этот мир от трёх &l&4АБОМИНАЦИЙ&r."]
+	quest.6A79D7D4C49D107C.quest_desc: [
+		"\"Почему &lон&r, а не &lя&r!?\""
+		""
+		"Чтобы внедрить новообретённое ДНК, его необходимо загрузить в шприц с очищенной кровью."
+		""
+		"&l&6Вливать кровь можно только в то существо, из которого вы её брали. Считая игроков."
+		""
+		"Вы можете выбрать: внедрить плазмид в шприц со своей кровью, или взять её у другого животного."
+		""
+		"Шприц необходимый в задании позволяет собирать кровь других животных."
+	]
+	quest.6A79D7D4C49D107C.title: "Шприц с молочком?"
+	quest.6ABF1B2A8DDBCB0C.quest_desc: [
+		"Положите найденные кости в Анализатор и дождитесь результата."
+		"Это будет либо ДНК существа прошлого, либо древних растений... ну или просто пыль."
+		""
+		"Для продолжения получите любое из перечисленных ДНК."
+		""
+		"&6Для работы не требуется энергия."
+	]
+	quest.6ABF1B2A8DDBCB0C.title: "Древние данные"
+	quest.6BAC3AC4CF0C1334.quest_desc: [
+		"{ftbquests.chapter.56AEAC22236F88E3.quest2.description1}"
+		"{ftbquests.chapter.56AEAC22236F88E3.quest2.description2}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest2.description3}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest2.description4}"
+		""
+		"&bSibFox P.S.: Система AE, на самом деле, питается от EF энергии. Проверено."
+	]
+	quest.71A676C3EEC15CA9.quest_desc: [
+		"Чтобы вырастить своего нового необычного питомца, Вам необходимо поместить яйцо на тёплый объект. Самым идеальным для этого окажется работающая печь."
+		""
+		"&6На блоке магмы яйцо просто сломается."
+		""
+		"Выведите вновь древнее существо и поглядите на это прелестное творение."
+	]
+	quest.71A676C3EEC15CA9.title: "Это моя новая собака"
+	quest.72F3BACBB88A2519.quest_desc: ["Обнаружьте &l&4ИХ&r пристанище."]
+	quest.72F3BACBB88A2519.title: "Я не должен был найти &l&4ЭТО..."
+	quest.732BA8807B87A24D.quest_desc: ["Создайте Археологический Верстак и с помощью него восстановите находки древности чертежами прошлого. Для восстановления их понадобится много."]
+	quest.732BA8807B87A24D.title: "Реставрация"
+	quest.765E9A7217F65D32.title: "Игрушка Пуджа"
+	quest.768A82AFF92B6ECD.quest_desc: [
+		"\"О! Ты нашёл ещё одну. Невероятно!\""
+		""
+		"Для того, чтобы воспользоваться возможностью прививать гены, сначала нужно разобраться, что они из себя представляют. Для этого понадобится Дешифратор Генов."
+		""
+		"Поместите неизвестные гены, которые Вы получили из клеток в дешифратор, чтобы распознать одно из множества генов."
+		""
+		"Каждому существу присущи свои виды генов, каждый из которых даёт уникальный эффект."
+	]
+	quest.768A82AFF92B6ECD.title: "Шифр Цезаря"
+	quest.7AEB33E9A73E2BC6.quest_desc: [
+		"\"Под землёй находятся не только металлы.\""
+		""
+		"Чтобы начать изучать мир прошлого, понадобится выкопать останки погребённые в камне, а для их изучения создать &nАнализатор&r."
+	]
+	quest.7AEB33E9A73E2BC6.title: "Отголосоки прошлого"
+	quest.7B3AC4C8B6B9535A.quest_desc: [
+		"\"&cПридайтесь очищению!&r\""
+		""
+		"Чтобы в будущем стать &oлучшей версией себя&r, Вам необходимо задуматься об очищении Вашей крови. Для этого воспользуйтесь отведённой для этого машиной."
+	]
+	quest.7B3AC4C8B6B9535A.title: "Вкус железа"
+	quest.7D51D5EA43BBC849.quest_desc: ["С помощью Палеонтологического Стола можно создавать скелеты существ прошлого."]
+	task.132403BDF53B6ADF.title: "Одолеть три &l&4ЧУДОВИЩА"
+	task.13DD62F102F78EC8.title: "Обнаружить дом мерзости"
+	task.160ACEA7BDED766A.title: "Стегозавр"
+	task.17FBC82C8B4840AC.title: "Это нечто..."
+	task.199D65F1E62D5510.title: "Увидить &l&4ЭТО"
+	task.2960C5620CC9C5AF.title: "Галлимим"
+	task.2D24AA1132473EFC.title: "Анкилозавр"
+	task.3799C60C4BF349DB.title: "Выведите Мамонта"
+	task.4838CE63A843A8F4.title: "Выведите Додо"
+	task.59DD12BE775E4851.title: "Теризинозавр"
+	task.5ED06BD7738D04E5.title: "Соберите весь сет древней брони"
+	task.5F0A20E029B5EA36.title: "Птеранодон"
+	task.5F19422D8274DDC5.title: "Пахицефалозавр"
+}

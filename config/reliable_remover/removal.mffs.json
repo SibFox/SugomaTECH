@@ -1,0 +1,9 @@
+[
+    {
+        "action": "remove",
+        "items": [
+            "mffs:steel_compound",
+            "mffs:steel_ingot"
+        ]
+    }
+]

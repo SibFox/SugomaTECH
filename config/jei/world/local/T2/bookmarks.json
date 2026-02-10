@@ -1,0 +1,5 @@
+[
+  {"version":2},
+  {"recipe":"extendedae:inscriber/concurrent_process","recipeType":"ae2:inscriber","bookmarkType":"RECIPE"},
+  {"ingredient":{"id":"advanced_ae:quantum_alloy"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "action": "remove",
+        "items": [
+            "/advanced_ae:*_card/",
+            "advanced_ae:quantum_upgrade_base"            
+        ]
+    }
+]

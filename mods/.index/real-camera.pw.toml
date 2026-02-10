@@ -1,0 +1,16 @@
+filename = 'realcamera-1.21.1-neoforge-0.7.4-beta.jar'
+name = 'Real Camera'
+side = 'client'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = '6d7bafa6e4a361310a6330645619add7a5bba31055898cd95a4097d7bc7d9fd9774e5d1623cdf10b381d1d682834545dde3b484ae70960a1afb8a5d1f978dbb0'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/fYYSAh4R/versions/KlYesvjl/realcamera-1.21.1-neoforge-0.7.4-beta.jar'
+
+[update.modrinth]
+mod-id = 'fYYSAh4R'
+version = 'KlYesvjl'

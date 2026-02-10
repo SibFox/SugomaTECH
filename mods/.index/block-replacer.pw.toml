@@ -1,0 +1,16 @@
+filename = 'blockreplacer-1.21.1-1.0.0.jar'
+name = 'Block Replacer'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '1d0a0c6dba84324d24f5e1874157e54597204ac6a3013a0fe221dabe83720ac48bde276b43e4ffc3a0caab6ab5b9eb56f0b48ea9b4ea1548069378f70961fc24'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/2z5AR9CT/versions/NhyTi3nY/blockreplacer-1.21.1-1.0.0.jar'
+
+[update.modrinth]
+mod-id = '2z5AR9CT'
+version = 'NhyTi3nY'

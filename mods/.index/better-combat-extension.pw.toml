@@ -1,0 +1,16 @@
+filename = 'bettercombat-extension-2.10.1.jar'
+name = 'Better Combat Extension'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '1f5c48435a346bdaf17f52139c176e3cca545249'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7511862
+project-id = 1062667

@@ -1,0 +1,27 @@
+[
+    {
+        "mob": [ "minecraft:zombie", "minecraft:skeleton", "minecraft:creeper", "minecraft:husk", "minecraft:stray" ],
+        "minheight": 30,
+        "when":"onjoin",
+        "result": "deny"
+    },
+    {
+        "mob": [ "minecraft:zombie_horse", "minecraft:skeleton_horse" ],
+        "when":"onjoin",
+        "result": "deny"
+    },
+    {
+        "mob": [ "arphex:scorpoid_bloodluster", "arphex:scorpoid_clone", "arphex:scorpion_larvae", "arphex:scorpion_striker", "arphex:fly_festerer", "arphex:spider_larvae", "arphex:centipede_evictor", "arphex:centipede_evictor_larvae", "arphex:centipede_evictor_stalker", "arphex:mosquito_morbidity" ],
+        "dimension": "minecraft:nether",
+        "minheight": 100,
+        "when": "onjoin",
+        "result": "deny"
+    },
+    {
+        "mob": [ "arphex:spider_recluse", "arphex:spider_brood", "arphex:scorpion_striker", "arphex:spider_larvae", "arphex:centipede_evictor", "arphex:centipede_evictor_larvae", "arphex:centipede_evictor_stalker", 
+        "arphex:spider_reaper", "arphex:termite_tunneler_alate", "arphex:termite_tunneler_king", "arphex:termite_tunneler_queen", "arphex:termite_tunneler_soldier", "arphex:termite_tunneler_worker" ],
+        "minlight": 5,
+        "when":"onjoin",
+        "result":"deny"
+    }
+]
