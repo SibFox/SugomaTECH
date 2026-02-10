@@ -77,7 +77,7 @@ const item = {
         copper: 'create:copper_nugget',
         iron: 'minecraft:iron_nugget',
         gold: 'minecraft:gold_nugget',
-        zinc: 'create:zinc_nugget',
+        zinc: 'industrialupgrade:nugget/zinc',
         electrum: 'createaddition:electrum_nugget',
         titanium: 'industrialupgrade:nugget/titanium',
     },
@@ -347,6 +347,14 @@ const item = {
                 lvl4: 'industrialupgrade:crafting_elements/crafting_119_element',
                 lvl5: 'industrialupgrade:crafting_elements/crafting_611_element',
             },
+            crafting: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_128_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_129_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_130_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_131_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_605_element',
+            },
+            repulsor_shield: 'industrialupgrade:crafting_elements/crafting_439_element',
         },
 
         spool: {
@@ -482,7 +490,9 @@ const item = {
         entro_shard: 'extendedae:entro_shard',
         entro_dust: 'extendedae:entro_dust',
         redstone_crystal: 'appflux:redstone_crystal',
-        charged_redstone_crystal: 'appflux:charged_redstone_crystal',
+        charged_redstone_crystal: 'appflux:charged_redstone',
+        singularity: 'ae2:singularity',
+        shattered_singularity: 'advanced_ae:shattered_singularity',
 
         silicon: 'ae2:silicon',
         printed_silicon: 'ae2:printed_silicon',
@@ -590,8 +600,8 @@ const item = {
             large: {
                 wooden: 'create:large_cogwheel',
                 copycat: 'copycats:copycat_large_cogwheel',
-                dark_metal: 'dndecor:large_dark_metal_cogwheel',
-                industrial: 'dndecor:large_industrial_cogwheel'
+                // dark_metal: 'dndecor:large_dark_metal_cogwheel',
+                // industrial: 'dndecor:large_industrial_cogwheel'
             },
             colossal_cogwheel: 'petrolsparts:colossal_cogwheel',
             coaxial: {
@@ -631,9 +641,10 @@ const item = {
         titanium_mesh: 'createcybernetics:component_mesh',
         titanium_plating: 'createcybernetics:component_plating',
         ssd: 'createcybernetics:component_ssd',
-        gpu: 'createcybernetics:graphicscard',
+        gpu: 'createcybernetics:component_graphicscard',
         data_shards: 'createcybernetics:data_shards',
         diodes: 'createcybernetics:component_diodes',
+        synthnerves: 'createcybernetics:component_synthnerves',
     },
 
     // ~~~~~~~~~~~~~~~~~~~~ Point Blank ~~~~~~~~~~~~~~~~~~~~ 
@@ -717,6 +728,7 @@ const tag = {
     large_cogwheel: '#techoma:large_cogwheel',
 
     agritech_basic_planters: '#agritechevolved:basic_planter_items',
+    cybernetics_data_shards: '#createcybernetics:data_shards',
 
     // ~~~~~~~~~~ Tables ~~~~~~~~~
 
@@ -771,6 +783,7 @@ const tag = {
         invar: '#c:doubleplate/invar',
         bronze: '#c:doubleplate/bronze',
         electrum: '#c:doubleplate/electrum',
+        titanium: '#c:doubleplate/titanium',
         nichrome: '#c:doubleplate/nichrome',
         obsidian: '#c:doubleplate/obsidian',
         molybdenumsteel: '#c:doubleplate/molybdenumsteel',
@@ -817,163 +830,5 @@ const fluid = {
     redstone: '$kubejs:liquid_redstone',
     oxygen: '$industrialupgrade:iufluidoxygen',
     glowstone: '$industrialupgrade:iufluidglowstone',
-}
-
-const IUMachineCraft = {
-    MACERATOR: 'macerator',
-    CHARGER: 'charger',
-    SILICON_CHAMBER: 'silicon_recipe',
-    FLUID_INTEGRATOR: 'fluid_integrator',
-    WELDING: 'welding',
-    ROLLING: 'rolling',
-    CHEMICAL_FACTORY: 'plastic',
-    DIVIDER: {
-        ITEM: 'item_divider',
-        ITEM_FLUID: 'item_divider_fluid'
-    },
-    MIXER: {
-        TRIPLE_SOLID: 'triple_solid_mixer',
-    },
-    ALLOY_SMELTER: {
-        lvl1: 'alloysmelter',
-        lvl2: 'advalloysmelter',
-        lvl3: 'impalloysmelter',
-        lvl4: 'peralloysmelter',
-    },
-}
-
-
-function noHash(str) {
-    return str.replace('#', '').replace('$', '')
-}
-
-function recipeID(from, path) {
-    const str = 'sugomatech:' + from
-    if (path != null) {
-        return str + "/" + path
-    }
-    return str
-}
-
-function asItem(item, amount) {
-    if (amount === undefined || amount < 1 || amount == null) {
-        amount = 1
-    }
-    return {
-        item: noHash(item),
-        count: amount,
-        isTag: item.startsWith('#'),
-        isFluid: item.startsWith('$'),
-
-        toString() {
-            return amount + 'x ' + noHash(item)
-        }
-    }
-}
-
-const shapedRecipe = (evt, id, inputs, output, amount) => {
-    if (amount === undefined || amount < 1 || amount == null) {
-        amount = 1
-    }
-    const letters = 'ABCDEFGHI'
-    const pattern = []
-    const indexes = {}
-    let c = 0
-    for (let i = 0; i < inputs.length; i++) {
-        let row = inputs[i];
-        pattern[i] = ''
-        for (let k = 0; k < row.length; k++) {
-            let el = row[k];
-            if (el != null) {
-                indexes[letters[c]] = el
-                pattern[i] = pattern[i].concat('', letters[c])
-                // console.info('!!!!!!!!!!!!!!!!\t\t' + el + '\t' + i + '\t' + k + '\t')
-                // console.info('!!!!!!!!!!!!!!!!\t\t' + pattern[i][k] + '\t' + letters[c] + '\t' + indexes[letters[c]])
-                c++
-            } else {
-                pattern[i] = pattern[i].concat('', ' ')
-            }
-        }
-    }
-    // console.info('!!!!!!!!!!!!!!!!\t\t' + pattern)
-    // console.info('!!!!!!!!!!!!!!!!\t\t' + indexes)
-    evt.shaped(
-        Item.of(output, amount),
-        pattern,
-        indexes
-    ).id(id)
-}
-
-const cnRecipe = (evt, output, pattern, indexes) => {
-    let keys = {}
-    for (const [key, entry] of Object.entries(indexes)) {
-        let val = {}
-        if (entry.isTag) {
-            val.tag = entry.item
-        } else {
-            val.item = entry.item
-        }
-        keys[key] = val
-    }
-    evt.custom({
-        "type": "createcybernetics:engineering_table",
-        "accept_mirrored": true,
-        "key": keys,
-        "pattern": pattern,
-        "result": {
-            "count": output.count,
-            "id": output.item
-        }
-    })
-}
-
-const iuRecipe = (evt, id, type, inputs, outputs, params) => {
-    if (params === undefined || params < 1 || params == null) {
-        params = {}
-    }
-    let recipe = {
-        "type": "industrialupgrade:universal_recipe",
-        "recipe_type": type,
-        "isFluidRecipe": false,
-        "inputs": [],
-        "outputs": [],
-        "params": params
-    }
-
-    for (let input of inputs) {
-        let dict = {
-            "type": "item",
-            "id": input.item,
-            "amount": input.count
-        }
-        if (input.isTag) {
-            dict.type = "tag"
-        }
-        if (input.isFluid) {
-            dict.type = "fluid"
-            recipe.isFluidRecipe = true
-        }
-
-        recipe.inputs.push(dict)
-    }
-
-    for (let output of outputs) {
-        let dict = {
-            "type": "item",
-            "id": output.item,
-            "amount": output.count
-        }
-        if (output.isTag) {
-            console.error('Wrong output item in IU recipe\nRecipe ID: ' + id)
-            continue
-        }
-        if (output.isFluid) {
-            dict.type = "fluid"
-            recipe.isFluidRecipe = true
-        }
-
-        recipe.outputs.push(dict)
-    }
-
-    evt.custom(recipe).id(id)
+    quantum_infusion: '$advanced_ae:quantum_infusion_source',
 }

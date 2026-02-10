@@ -9,30 +9,14 @@ const registerCyberneticsCTRecipes = (evt) => {
     function getRecipeID(path) {
         return recipeID('createcybernetics', path)
     }
-    
-    evt.shaped(
-        Item.of(item.cn.titanium_plating, 1),
-        [
-            'AAA',
-            'AAA'
-        ],
-        {
-            A: tag.plate.titanium
-        }
-    )
 
-    evt.shaped(
-        Item.of(item.cn.titanium_plating, 1),
+    shapedRecipe(evt, getRecipeID('engineering_table'),
         [
-            'BAB',
-            'ABA',
-            'BAB'
+            [ null, item.iu.module.crafting.lvl2, null ],
+            [ item.iu.module.circuit, item.iu.machine_corpus.advanced_tech, item.iu.module.combining.lvl2 ],
+            [ item.ae.core.formation, 'industrialupgrade:solderingiron', item.ae.core.annihilation ]
         ],
-        {
-            A: tag.nugget.titanium,
-            B: tag.ingot.titanium
-        }
-    )
+    'createcybernetics:engineering_table')
 
     cnRecipe(evt, asItem('createcybernetics:data_shard_biochip'),
         [
@@ -42,12 +26,12 @@ const registerCyberneticsCTRecipes = (evt) => {
             ' TST ',
             '  TT ',
         ],{
-            T: asItem(tag.plate.titanium),
-            G: asItem(tag.ingot.gold),
-            S: asItem('createcybernetics:component_ssd'),
-            I: asItem(tag.ingot.titanium),
-            C: asItem('createcybernetics:data_shards'),
-            R: asItem('minecraft:red_dye'),
+            T: tag.plate.titanium,
+            G: tag.ingot.gold,
+            S: 'createcybernetics:component_ssd',
+            I: tag.ingot.titanium,
+            C: tag.cybernetics_data_shards,
+            R: 'minecraft:red_dye',
         }
     )
     

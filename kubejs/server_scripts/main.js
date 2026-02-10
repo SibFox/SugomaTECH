@@ -22,6 +22,7 @@ ServerEvents.recipes(event => {
     registerCLRecipes(event)
     registerArPhExRecipes(event)
     registerPipeZRecipes(event)
+    registerCyberneticsRecipes(event)
     registerMFFSRecipes(event)
 })
 
