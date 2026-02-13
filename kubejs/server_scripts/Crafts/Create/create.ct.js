@@ -10,10 +10,6 @@ const registerCreateCTRecipes = (evt) => {
         return recipeID('create', path)
     }
 
-    evt.remove({ output: item.create.spool.copper })
-    evt.remove({ output: item.create.spool.gold })
-    evt.remove({ output: item.create.spool.electrum })
-
     shapedRecipe(evt, getRecipeID('copper_spool'),
         [
             [ null, item.iu.wire.bare.copper, null ],
@@ -38,8 +34,6 @@ const registerCreateCTRecipes = (evt) => {
         ],
     item.create.spool.electrum)
 
-    evt.remove({ output: item.create.modular_accumulator })
-
     shapedRecipe(evt, getRecipeID('modular_accumulator'),
         [
             [ null, tag.rod.electrum, null ],
@@ -47,10 +41,6 @@ const registerCreateCTRecipes = (evt) => {
             [ item.iu.battery.lead, item.iu.battery.lead, item.iu.battery.lead ]
         ],
     item.create.modular_accumulator)
-
-    evt.remove({ output: item.create.connector.small })
-    evt.remove({ output: item.create.connector.small_light })
-    evt.remove({ output: item.create.connector.large })
 
     shapedRecipe(evt, getRecipeID('connector/small'),
         [
@@ -81,4 +71,12 @@ const registerCreateCTRecipes = (evt) => {
             [ item.bamboo, null ]
         ],
     'createaddition:straw')
+
+    shapedRecipe(evt, getRecipeID('spool'),
+        [
+            [ item.plate.iron ],
+            [ item.rod.tungsten ],
+            [ item.plate.iron ]
+        ],
+    item.create.spool.item, 4)
 }

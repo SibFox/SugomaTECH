@@ -40,16 +40,34 @@ function asItem(item, amount) {
     if (amount === undefined || amount < 1 || amount == null) {
         amount = 1
     }
-    return {
+
+    let dict = {
         item: noHash(item),
         count: amount,
         isTag: item.startsWith('#'),
         isFluid: item.startsWith('$'),
+        haveComponents: false,
+        components: {},
 
         toString() {
-            return amount + 'x ' + noHash(item)
+            return amount + 'x ' + item
         }
     }
+
+    let nbtStartPos = item.indexOf('[')    
+    if (nbtStartPos > 0) {
+        let nbtString = item.slice(nbtStartPos).replace('[', '').replace(']', '').split('=')
+        let componentTag = nbtString[0]
+        let componentValue = Number(nbtString[1])
+        dict.components[componentTag] = componentValue
+        dict.haveComponents = true
+        dict.item = dict.item.slice(0, nbtStartPos)
+        console.info(nbtString)
+        console.info(dict.components)
+        console.info(dict.haveComponents)
+    }
+
+    return dict
 }
 
 const shapedRecipe = (evt, id, inputs, output, amount) => {
@@ -88,6 +106,11 @@ const cnRecipe = (evt, output, pattern, indexes) => {
         let val = {}
         if (entry.isTag) {
             val.tag = entry.item
+        } else if (entry.haveComponents) {
+            val.items = entry.item
+            val.components = entry.components
+            val.type = "neoforge:components"
+            console.info(val)
         } else {
             val.item = entry.item
         }

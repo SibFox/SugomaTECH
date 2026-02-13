@@ -8,7 +8,7 @@ const registerRecipeReplacings = (evt) => {
 
     evt.replaceInput({ input: 'createcybernetics:titaniumingot' },
         'createcybernetics:titaniumingot',
-        tag.ingot.titanium
+        item.ingot.titanium
     )
     evt.replaceOutput({ output: 'createcybernetics:titaniumingot' },
         'createcybernetics:titaniumingot',
@@ -17,7 +17,7 @@ const registerRecipeReplacings = (evt) => {
 
     evt.replaceInput({ input: 'createcybernetics:titaniumnugget' },
         'createcybernetics:titaniumnugget',
-        tag.nugget.titanium
+        item.nugget.titanium
     )
     evt.replaceOutput({ output: 'createcybernetics:titaniumnugget' },
         'createcybernetics:titaniumnugget',
@@ -26,7 +26,7 @@ const registerRecipeReplacings = (evt) => {
 
     evt.replaceInput({ input: 'createcybernetics:titaniumsheet' },
         'createcybernetics:titaniumsheet',
-        tag.plate.titanium
+        item.plate.titanium
     )
     evt.replaceOutput({ output: 'createcybernetics:titaniumsheet' },
         'createcybernetics:titaniumsheet',
@@ -35,13 +35,13 @@ const registerRecipeReplacings = (evt) => {
 
     evt.replaceInput({ input: 'createcybernetics:titanium_block' },
         'createcybernetics:titanium_block',
-        tag.ore_block.titanium
+        item.ore_block.titanium
     )
 
 
     evt.replaceInput({ input: 'create:iron_sheet' },
         'create:iron_sheet',
-        tag.plate.iron
+        item.plate.iron
     )
     evt.replaceOutput({ output: 'create:iron_sheet' },
         'create:iron_sheet',
@@ -50,7 +50,7 @@ const registerRecipeReplacings = (evt) => {
 
     evt.replaceInput({ input: 'create:copper_sheet' },
         'create:copper_sheet',
-        tag.plate.copper
+        item.plate.copper
     )
     evt.replaceOutput({ output: 'create:copper_sheet' },
         'create:copper_sheet',
@@ -59,7 +59,7 @@ const registerRecipeReplacings = (evt) => {
 
     evt.replaceInput({ input: 'create:golden_sheet' },
         'create:golden_sheet',
-        tag.plate.gold
+        item.plate.gold
     )
     evt.replaceOutput({ output: 'create:golden_sheet' },
         'create:golden_sheet',
@@ -68,7 +68,7 @@ const registerRecipeReplacings = (evt) => {
 
     evt.replaceInput({ input: 'createaddition:electrum_sheet' },
         'createaddition:electrum_sheet',
-        tag.plate.electrum
+        item.plate.electrum
     )
     evt.replaceOutput({ output: 'createaddition:electrum_sheet' },
         'createaddition:electrum_sheet',
@@ -77,18 +77,22 @@ const registerRecipeReplacings = (evt) => {
     
     evt.replaceInput({ input: 'createaddition:zinc_sheet' },
         'createaddition:zinc_sheet',
-        tag.plate.zinc
+        item.plate.zinc
     )
     evt.replaceOutput({ output: 'createaddition:zinc_sheet' },
         'createaddition:zinc_sheet',
         item.plate.zinc
     )
-
-
-    evt.replaceInput({ output: item.ingot.quantum_alloy },
-        item.ingot.copper,
-        item.ingot.woods_alloy
-    )
     
+    evt.replaceInput({ input: 'createcybernetics:component_wiring' },
+        'createcybernetics:component_wiring',
+        item.iu.spool.lvl1
+    )
+
+    evt.replaceInput({ input: 'create:propeller' },
+        'create:propeller',
+        item.iu.rotor.wind.ready.iron
+    )
+
     console.info('Recipe replcaings passed')
 }

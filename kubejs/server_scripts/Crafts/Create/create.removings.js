@@ -6,6 +6,7 @@
  */
 const registerCreateRemovings = (evt) => {
 
+    evt.remove({ output: item.create.spool.item })
     evt.remove({ output: item.create.spool.copper })
     evt.remove({ output: item.create.spool.gold })
     evt.remove({ output: item.create.spool.electrum })
@@ -18,5 +19,6 @@ const registerCreateRemovings = (evt) => {
     evt.remove({ output: 'createaddition:alternator' })
     evt.remove({ output: 'createaddition:electric_motor' })
     evt.remove({ output: 'createaddition:tesla_coil' })
+    evt.remove({ output: 'create:propeller' })
 
 }

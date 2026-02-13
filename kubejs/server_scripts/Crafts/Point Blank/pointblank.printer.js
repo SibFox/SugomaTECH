@@ -15,51 +15,20 @@ const registerPBPrinterRecipes = (evt) => {
         let ingredientsMap = []
         for (let i = 0; i < ingredients.length; i++)
         {
-            // console.info('!!!!!!!!!!!!!!!! ingr:\t\t' + ingredients[i])
-            let ingredient = { components: {} }
-            let ingredientName = ingredients[i].item
-            // let nbtStartPos = ingredientName.indexOf('[')
-            // if (nbtStartPos > 0)
-            // {
-            //     console.info('!!!!!!!!!!!!!!!! NBT START POSITION: ' + nbtStartPos)
-            //     let nbtString = ingredientName.slice(nbtStartPos).replace('[', '').replace(']', '').split('=')
-            //     let componentTag = nbtString[0]
-            //     let componentValue = Number(nbtString[1])
-            //     console.info('!!!!!!!!!!!!!!!! NBT str: ' + componentTag + ': ' + componentValue)
-            //     ingredient.type = "neoforge:components"
-            //     ingredient.components[componentTag] = componentValue
-            //     ingredientName = ingredientName.slice(0, nbtStartPos)
-            // }
-            ingredient.count = ingredients[i].count
-
-            // if (ingredient.type != null) {
-            //     ingredient.items = ingredientName
-            //     console.info('!!!!!!!!!!!!!!!! i:\t\t' + ingredient.items)
-            // }
-            // else
-            // {
-                if (ingredients[i].isTag /*ingredientName.startsWith('#')*/)
-                {
-                    ingredient.tag = ingredientName//.replace('#', '')
-                    // console.info('!!!!!!!!!!!!!!!! t:\t\t' + ingredient.tag)                
-                }
-                else
-                {
-                    ingredient.item = ingredientName                
-                    // console.info('!!!!!!!!!!!!!!!! i:\t\t' + ingredient.item)
-                }
-                
-            // }
-            // console.info('!!!!!!!!!!!!!!!! cnt:\t\t' + ingredient.count)
-            // console.info('!!!!!!!!!!!!!!!! cmp(chip lvl):\t' + ingredient.components["industrialupgrade:level_microchip"])
+            let ingredient_elem = ingredients[i]
+            let ingredient = { 
+                count: ingredient_elem.count,
+            }
+            let ingredientName = ingredient_elem.item
+            if (ingredient_elem.isTag) {
+                ingredient.tag = ingredientName
+            } else {
+                ingredient.item = ingredientName                
+            }
             ingredientsMap.push(ingredient)
         }
 
         evt.remove({ output: result.item })
-
-        // ingredients.forEach(el => {
-        //     console.info('!!!!!!!!!!!!!!!!!!!!!\t\t' + el)
-        // });
 
         evt.custom({
             "type": "pointblank:default",
@@ -96,6 +65,6 @@ const registerPBPrinterRecipes = (evt) => {
     addPrinterCraft([ asItem(item.ingot.gunmetal, 3), asItem(item.tnt, 1) ], asItem('pointblank:grenade40mm'))
     addPrinterCraft([ asItem(item.ingot.gunmetal, 12), asItem(item.tnt, 3) ], asItem('pointblank:smaw_rocket'))
     addPrinterCraft([ asItem(item.ingot.gunmetal, 12), asItem(item.tnt, 3) ], asItem('pointblank:at4_rocket'))
-    addPrinterCraft([ asItem(item.ingot.gunmetal, 16), asItem(item.pb.processor), asItem(item.iu.wire.isolated.copper, 12), asItem(tag.redstone, 48), asItem(item.tnt, 6) ], asItem('pointblank:javelin_rocket'))
+    addPrinterCraft([ asItem(item.ingot.gunmetal, 16), asItem(item.pb.processor), asItem(item.iu.wire.isolated.copper, 12), asItem(item.redstone, 36), asItem(item.tnt, 6) ], asItem('pointblank:javelin_rocket'))
 
 }

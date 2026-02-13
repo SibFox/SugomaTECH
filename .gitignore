@@ -17,8 +17,10 @@ waypoints/
 config/jei/
 config/fabric/
 config/iris.properties
+mods/.index
 command_history.txt
 icon.png
 TrashSlotSaveState.json
 usercache.json
 usernamecache.json
+options.txt

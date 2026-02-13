@@ -107,10 +107,14 @@ const item = {
         gold: 'industrialupgrade:itemplates/gold_plate',
         electrum: 'industrialupgrade:itemplates/electrum_plate',
         zinc: 'industrialupgrade:itemplates/zinc_plate',
+        titanium: 'industrialupgrade:itemplates/titanium_plate',
         titanium_steel: 'industrialupgrade:crafting_elements/crafting_501_element',
         niobium_titanium: 'industrialupgrade:alloyplate/niobium_titanium',
         red_brass: 'industrialupgrade:alloyplate/red_brass',
-        titanium: 'industrialupgrade:itemplates/titanium_plate'
+    },
+
+    rod: {
+        tungsten: 'industrialupgrade:stick/tungsten',
     },
 
     ore_block: {
@@ -119,7 +123,8 @@ const item = {
         gold: 'minecraft:gold_block',
         diamond: 'minecraft:diamond_block',
         zinc: 'create:zinc_block',
-        electrum: 'createaddition:electrum_block'
+        electrum: 'createaddition:electrum_block',
+        titanium: 'industrialupgrade:baseblockingot/titanium',        
     },
 
     // ~~~~~~~~~~~~~~~~~~~~ INDUSTRIAL UPGRADE ~~~~~~~~~~~~~~~~~~~~ 
@@ -358,6 +363,7 @@ const item = {
         },
 
         spool: {
+            lvl0: 'industrialupgrade:crafting_elements/crafting_294_element',
             lvl1: 'industrialupgrade:crafting_elements/crafting_356_element',
             lvl2: 'industrialupgrade:crafting_elements/crafting_424_element',
             lvl3: 'industrialupgrade:crafting_elements/crafting_371_element',
@@ -461,7 +467,7 @@ const item = {
                     steel: 'industrialupgrade:windrod/steel_rotor_model',                    
                 },
                 ready: {
-                    
+                    iron: 'industrialupgrade:rotor/rotor_iron',
                 },      
             },
         },
@@ -645,6 +651,9 @@ const item = {
         data_shards: 'createcybernetics:data_shards',
         diodes: 'createcybernetics:component_diodes',
         synthnerves: 'createcybernetics:component_synthnerves',
+        actuator: 'createcybernetics:component_actuator',
+        storage: 'createcybernetics:component_storage',
+        fiber_optic: 'createcybernetics:component_fiberoptics',
     },
 
     // ~~~~~~~~~~~~~~~~~~~~ Point Blank ~~~~~~~~~~~~~~~~~~~~ 

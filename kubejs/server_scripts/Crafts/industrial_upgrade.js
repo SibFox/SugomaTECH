@@ -7,6 +7,10 @@
  */
 const registerIURecipes = (evt) => {
 
+    function getRecipeID(path) {
+        return recipeID('iu', path)
+    }
+
     evt.remove({ output: 'industrialupgrade:wiring/itemcable23' }) // Кобальтовая труба
     evt.remove({ output: 'industrialupgrade:wiring/itemcable22' }) // Входная труба
 
@@ -58,6 +62,26 @@ const registerIURecipes = (evt) => {
             'industrialupgrade:raw_block/raw_' + block
         ]).id(recipeID('iu', block + '_block_to_raw'))
     }
+
+    shapedRecipe(evt, getRecipeID('spool'),
+        [
+            [ item.iu.wire.bare.copper, item.iu.wire.bare.copper, item.iu.wire.bare.copper ],
+            [ item.iu.wire.bare.copper, item.create.spool.item, item.iu.wire.bare.copper ],
+            [ item.iu.wire.bare.copper, item.iu.wire.bare.copper, item.iu.wire.bare.copper ]
+        ],
+    item.iu.spool.lvl0)
+
+    evt.shaped(
+        Item.of(item.iu.spool.lvl0, 1),
+        [
+            'WWW',
+            'WSW',
+            'WWW'
+        ],{
+            W: item.iu.wire.bare.copper,
+            S: item.create.spool.item
+        }
+    ).id(getRecipeID('spool'))
 
     console.info('Industrial Upgrade recipe adding passed')
 }

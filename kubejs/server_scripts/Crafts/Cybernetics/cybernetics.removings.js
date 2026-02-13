@@ -6,6 +6,6 @@
  */
 const registerCyberneticsRemovings = (evt) => {
 
-
+    evt.remove({ id: 'createcybernetics:titanium_hand_createpresent' })
     
 }
