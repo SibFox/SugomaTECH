@@ -1,5 +1,14 @@
 [
   {"version":2},
   {"recipe":"extendedae:inscriber/concurrent_process","recipeType":"ae2:inscriber","bookmarkType":"RECIPE"},
-  {"ingredient":{"id":"advanced_ae:quantum_alloy"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+  {"ingredient":{"id":"advanced_ae:quantum_alloy"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create:iron_sheet"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createcybernetics:engineering_table"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createcybernetics:component_diodes"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createcybernetics:component_wiring"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createcybernetics:brainupgrades_matrix"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"mffs:focus_matrix"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"create:propeller"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"createcybernetics:occipital_lobe"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"industrialupgrade:rotor/rotor_iron"},"type":"item_stack","bookmarkType":"INGREDIENT"}
 ]

@@ -2,5 +2,7 @@
   "item.kubejs.invar_boiler": "Инваровый котёл",
   "item.kubejs.heat_resistant_clay": "Термостойкая глина",
   "item.kubejs.coin": "Монета квеста",
-  "block.kubejs.quartz_glass": "Кварцевое стекло"
+  "block.kubejs.quartz_glass": "Кварцевое стекло",
+  "block.kubejs.synth_nerve_cables": "Синтетические нервные окончания",
+  "block.kubejs.hemolimph_drop": "Капля гемолимфы"
 }
