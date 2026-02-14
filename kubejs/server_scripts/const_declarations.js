@@ -21,20 +21,45 @@ const item = {
     clay_ball: 'minecraft:clay_ball',
     andesite: 'minecraft:andesite',
     diorite: 'minecraft:diorite',
+    bone: 'minecraft:bone',
     bone_meal: 'minecraft:bone_meal',
     blaze_rod: 'minecraft:blaze_rod',
     blaze_powder: 'minecraft:blaze_powder',
+    breeze_rod: 'minecraft:breeze_rod',
+    sugar: 'minecraft:sugar',
     glowstone: 'minecraft:glowstone_dust', 
     nether_star: 'minecraft:nether_star',
     chest: 'minecraft:chest',
     bamboo: 'minecraft:bamboo',
     piston: 'minecraft:piston',
     furnace: 'minecraft:furnace',
+    obsidian: 'minecraft:obsidian',
+    phantom_membrane: 'minecraft:phantom_membrane',
+    amethyst_shard: 'minecraft:amethyst_shard',
 
     // ~~~~~~~~~~~~~~~~~~~~ Farmer's Delight ~~~~~~~~~~~~~~~~~~~~ 
     milk_bottle: 'farmersdelight:milk_bottle',
 
     // ~~~~~~~~~~~~~~~~~~~~ Tables ~~~~~~~~~~~~~~~~~~~~
+
+    dye: {
+        white: 'minecraft:white_dye',
+        light_gray: 'minecraft:light_gray_dye',
+        gray: 'minecraft:gray_dye',
+        black: 'minecraft:black_dye',
+        brown: 'minecraft:brown_dye',
+        red: 'minecraft:red_dye',
+        orange: 'minecraft:orange_dye',
+        yellow: 'minecraft:yellow_dye',
+        lime: 'minecraft:lime_dye',
+        green: 'minecraft:green_dye',
+        cyan: 'minecraft:cyan_dye',
+        light_blue: 'minecraft:light_blue_dye',
+        blue: 'minecraft:blue_dye',
+        purple: 'minecraft:purple_dye',
+        magenta: 'minecraft:magenta_dye',
+        pink: 'minecraft:pink_dye',
+    },
 
     plank: {
         minecraft: {
@@ -78,7 +103,7 @@ const item = {
         iron: 'minecraft:iron_nugget',
         gold: 'minecraft:gold_nugget',
         zinc: 'industrialupgrade:nugget/zinc',
-        electrum: 'createaddition:electrum_nugget',
+        electrum: 'industrialupgrade:nugget/electrum',
         titanium: 'industrialupgrade:nugget/titanium',
     },
 
@@ -86,8 +111,8 @@ const item = {
         copper: 'minecraft:copper_ingot',
         iron: 'minecraft:iron_ingot',
         gold: 'minecraft:gold_ingot',
-        zinc: 'create:zinc_ingot',
-        electrum: 'createaddition:electrum_ingot',
+        zinc: 'industrialupgrade:itemingots/zinc_ingot',
+        electrum: 'industrialupgrade:itemingots/electrum_ingot',
         red_alloy: 'morered:red_alloy_ingot',
         netherite: 'minecraft:netherite_ingot',
         gunmetal: 'pointblank:gunmetal_ingot',
@@ -115,6 +140,7 @@ const item = {
 
     rod: {
         tungsten: 'industrialupgrade:stick/tungsten',
+        titanium: 'industrialupgrade:stick/titanium',
     },
 
     ore_block: {
@@ -122,8 +148,8 @@ const item = {
         iron: 'minecraft:iron_block',
         gold: 'minecraft:gold_block',
         diamond: 'minecraft:diamond_block',
-        zinc: 'create:zinc_block',
-        electrum: 'createaddition:electrum_block',
+        zinc: 'industrialupgrade:baseblockingot/zinc',
+        electrum: 'industrialupgrade:baseblockingot/electrum',
         titanium: 'industrialupgrade:baseblockingot/titanium',        
     },
 
@@ -247,6 +273,14 @@ const item = {
             lvl4: 'industrialupgrade:crafting_elements/crafting_402_element',
         },
 
+        controller: {
+            lvl1: 'industrialupgrade:crafting_elements/crafting_42_element',
+            lvl2: 'industrialupgrade:crafting_elements/crafting_16_element',
+            lvl3: 'industrialupgrade:crafting_elements/crafting_92_element',
+            lvl4: 'industrialupgrade:crafting_elements/crafting_116_element',
+            lvl5: 'industrialupgrade:crafting_elements/crafting_621_element',
+        },
+
         upgrade: {
             overclocker: 'industrialupgrade:upgrades/overclocker',
         },
@@ -360,6 +394,7 @@ const item = {
                 lvl5: 'industrialupgrade:crafting_elements/crafting_605_element',
             },
             repulsor_shield: 'industrialupgrade:crafting_elements/crafting_439_element',
+            ore: 'industrialupgrade:crafting_elements/crafting_53_element',
         },
 
         spool: {
@@ -590,6 +625,7 @@ const item = {
         andesite_casing: 'create:andesite_casing',
         modular_accumulator: 'createaddition:modular_accumulator',
         electron_tube: 'create:electron_tube',
+        precision_mechanism: 'create:precision_mechanism',
         
         casing: {
             andesite: 'create:andesite_casing',
@@ -600,8 +636,8 @@ const item = {
             small : {
                 wooden: 'create:cogwheel',
                 copycat: 'copycats:copycat_cogwheel',
-                dark_metal: 'dndecor:dark_metal_cogwheel',
-                industrial: 'dndecor:industrial_cogwheel'
+                // dark_metal: 'dndecor:dark_metal_cogwheel',
+                // industrial: 'dndecor:industrial_cogwheel'
             },
             large: {
                 wooden: 'create:large_cogwheel',
@@ -654,6 +690,17 @@ const item = {
         actuator: 'createcybernetics:component_actuator',
         storage: 'createcybernetics:component_storage',
         fiber_optic: 'createcybernetics:component_fiberoptics',
+        eye_upgrade_base: 'createcybernetics:eyeupgradebase',
+        internal_battery: 'createcybernetics:organsupgrades_battery',
+        bodypart: {
+            brain: 'createcybernetics:bodypart_brain',
+            skin: 'createcybernetics:bodypart_skin',
+            liver: 'createcybernetics:bodypart_liver',
+            muscle: 'createcybernetics:bodypart_muscle',
+        },
+        upgradepart: {
+            titanium_hand: 'createcybernetics:titanium_hand',
+        },
     },
 
     // ~~~~~~~~~~~~~~~~~~~~ Point Blank ~~~~~~~~~~~~~~~~~~~~ 
@@ -809,6 +856,7 @@ const tag = {
     
     gear: {
         invar: '#c:gears/invar',
+        titanium: '#c:gears/titanium',
         alumel: '#c:gears/alumel', // Алюминид-титан
     },
     

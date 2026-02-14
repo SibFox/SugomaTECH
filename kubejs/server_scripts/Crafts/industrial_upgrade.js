@@ -49,27 +49,12 @@ const registerIURecipes = (evt) => {
         ],
     'industrialupgrade:wiring/itemcable25', 6)
 
-    // shapedRecipe(evt, recipeID('iu', 'casing2'),
-    //     [
-    //         [ item.iu.corpus_cover.lvl1, tag.plate.electrum ],
-    //         [ item.iu.plastic, item.iu.plastic ]
-    //     ],
-    // item.iu.corpus_cover.lvl2, 1)
-
     for ( let block of [ 'polonium', 'thallium', 'strontium', 'zirconium' ] ) {
         evt.shapeless(Item.of('industrialupgrade:raw_metals/raw_' + block, 9),
         [
             'industrialupgrade:raw_block/raw_' + block
         ]).id(recipeID('iu', block + '_block_to_raw'))
     }
-
-    shapedRecipe(evt, getRecipeID('spool'),
-        [
-            [ item.iu.wire.bare.copper, item.iu.wire.bare.copper, item.iu.wire.bare.copper ],
-            [ item.iu.wire.bare.copper, item.create.spool.item, item.iu.wire.bare.copper ],
-            [ item.iu.wire.bare.copper, item.iu.wire.bare.copper, item.iu.wire.bare.copper ]
-        ],
-    item.iu.spool.lvl0)
 
     evt.shaped(
         Item.of(item.iu.spool.lvl0, 1),

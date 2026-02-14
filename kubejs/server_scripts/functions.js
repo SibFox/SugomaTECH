@@ -125,7 +125,9 @@ const cnRecipe = (evt, output, pattern, indexes) => {
             "count": output.count,
             "id": output.item
         }
-    })
+    }).id(recipeID(output.item.replace(':', '/')))
+
+    evt.remove({ output: output.item })
 }
 
 const iuRecipe = (evt, id, type, inputs, outputs, params) => {

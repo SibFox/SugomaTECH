@@ -74,6 +74,24 @@ const registerRecipeReplacings = (evt) => {
         'createaddition:electrum_sheet',
         item.plate.electrum
     )
+
+    evt.replaceInput({ input: 'createaddition:electrum_ingot' },
+        'createaddition:electrum_ingot',
+        item.ingot.electrum
+    )
+    evt.replaceOutput({ output: 'createaddition:electrum_ingot' },
+        'createaddition:electrum_ingot',
+        item.ingot.electrum
+    )
+
+    evt.replaceInput({ input: 'createaddition:electrum_nugget' },
+        'createaddition:electrum_nugget',
+        item.nugget.electrum
+    )
+    evt.replaceOutput({ output: 'createaddition:electrum_nugget' },
+        'createaddition:electrum_nugget',
+        item.nugget.electrum
+    )
     
     evt.replaceInput({ input: 'createaddition:zinc_sheet' },
         'createaddition:zinc_sheet',
