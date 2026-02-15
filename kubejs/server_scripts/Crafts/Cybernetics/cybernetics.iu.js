@@ -32,4 +32,7 @@ const registerCyberneticsIURecipes = (evt) => {
             asItem(item.cn.synthnerves)
         ]
     )
+
+    // "createcybernetics:component_wiring",
+    // "createcybernetics:netherite_qpu"
 }

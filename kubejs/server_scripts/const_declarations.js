@@ -403,6 +403,7 @@ const item = {
             },
             repulsor_shield: 'industrialupgrade:crafting_elements/crafting_439_element',
             ore: 'industrialupgrade:crafting_elements/crafting_53_element',
+            boosting: 'industrialupgrade:crafting_elements/crafting_155_element',
         },
 
         spool: {
@@ -707,6 +708,10 @@ const item = {
             skin: 'createcybernetics:bodypart_skin',
             liver: 'createcybernetics:bodypart_liver',
             muscle: 'createcybernetics:bodypart_muscle',
+            heart: 'createcybernetics:bodypart_heart',
+            liver: 'createcybernetics:bodypart_liver',
+            lungs: 'createcybernetics:bodypart_lungs',
+            stomach: 'createcybernetics:bodypart_intestines',
         },
         upgradepart: {
             titanium_hand: 'createcybernetics:titanium_hand',
@@ -886,7 +891,11 @@ const tag = {
         zinc: '#c:storage_blocks/zinc',
         electrum: '#c:storage_blocks/electrum',
         titanium: '#c:storage_blocks/titanium',
-    }
+    },
+
+    tool: {
+        knife: '#c:tools/knife',
+    },
 }
 
 

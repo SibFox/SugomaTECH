@@ -44,15 +44,19 @@ const registerCyberneticsETRecipes = (evt) => {
 
     cnRecipe(evt, asItem('createcybernetics:brainupgrades_eyeofdefender'),
         [
-            ' NNN ',
-            'NETEN',
-            'NTYTN',
-            'NETEN',
-            ' NNN ',
+            ' NKN ',
+            'NSTBN',
+            'KTYTK',
+            'NETCN',
+            ' NKN ',
         ],{
             N: item.nugget.titanium,
-            E: item.create.electron_tube,
+            K: item.nugget.electrum,
+            E: item.ae.processor.logic,
+            C: item.ae.processor.calculation,
             T: item.cn.titanium_plating,
+            S: item.iu.module.scaner.lvl1,
+            B: item.iu.module.boosting,
             Y: 'minecraft:ender_eye'
         }
     )

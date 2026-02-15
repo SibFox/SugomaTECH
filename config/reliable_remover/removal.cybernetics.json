@@ -20,9 +20,8 @@
             "createcybernetics:crushedtitanium",
             "createcybernetics:titaniumingot",
             "createcybernetics:titaniumnugget",
-            "createcybernetics:titaniumsheet",
-            "createcybernetics:component_wiring",
-            "createcybernetics:netherite_qpu"
+            "createcybernetics:titaniumsheet"
+            
         ]
     }
 ]

@@ -7,5 +7,24 @@
   "item.kubejs.organic_polymer": "Органический полимер",
   "item.kubejs.conducting_organic_polymer": "Проводящий органический полимер",
   "item.morered.red_alloy_ingot": "Слиток краснокаменного сплава",
+
+  "item.kubejs.cooked_lungs": "Приготовленные лёгкие",
+  "item.kubejs.cooked_stomach": "Приготовленный желудок",
+  "item.kubejs.minced_brain": "Рублённые мозги",
+  "item.kubejs.cooked_minced_brain": "Приготовленные рублённые мозги",
+  "item.kubejs.minced_heart": "Рублённое сердце",
+  "item.kubejs.cooked_minced_heart": "Приготовленное рублённое сердце",
+  "item.kubejs.minced_liver": "Рублённая печень",
+  "item.kubejs.cooked_minced_liver": "Приготовленная рублённая печень",
+  "item.kubejs.minced_lungs": "Рублённые лёгкие",
+  "item.kubejs.cooked_minced_lungs": "Приготовленные рублённые лёгкие",
+  "item.kubejs.mincd_stomach": "Рублённый желудок",
+  "item.kubejs.cooked_minced_stomach": "Приготовленный рублённый желудок",
+  "item.kubejs.hemolymph_soaked_brain": "Маринованные в гемолимфе мозги",
+  "item.kubejs.hemolymph_soaked_heart": "Маринованное в гемолимфе сердце",
+  "item.kubejs.hemolymph_soaked_liver": "Маринованная в гемолимфе печень",
+  "item.kubejs.hemolymph_soaked_lungs": "Маринованные в гемолимфе лёгкие",
+  "item.kubejs.hemolymph_soaked_stomach": "Маринованный в гемолимфе желудок",
+
   "block.kubejs.quartz_glass": "Кварцевое стекло"
 }

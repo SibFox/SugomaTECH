@@ -24,6 +24,7 @@ ServerEvents.recipes(event => {
     registerPipeZRecipes(event)
     registerCyberneticsRecipes(event)
     registerMFFSRecipes(event)
+    registerFDRecipes(event)
 })
 
 LootJS.lootTables(event => {
