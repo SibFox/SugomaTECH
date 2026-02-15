@@ -24,3 +24,12 @@ TrashSlotSaveState.json
 usercache.json
 usernamecache.json
 options.txt
+config/craftingstation-server.toml
+config/craftingstation-client.toml
+config/emi_loot_config.toml
+emi.json
+config/emi_ores-client.json
+config/exmi/
+config/emixx/
+config/emi.css
+config/iris.properties

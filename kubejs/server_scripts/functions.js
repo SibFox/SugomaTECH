@@ -1,18 +1,36 @@
 // priority: 11
+"use strict";
 
 const IUMachineCraft = {
     MACERATOR: 'macerator',
     CHARGER: 'charger',
     SILICON_CHAMBER: 'silicon_recipe',
+    SINGLE_FLUID_ADAPTER: 'single_fluid_adapter',
+    FLUID_ADAPTER: 'fluid_adapter',
     FLUID_INTEGRATOR: 'fluid_integrator',
     WELDING: 'welding',
     ROLLING: 'rolling',
+    EXTRACTOR: 'extractor',
+    CIRCUIT_MANUFACTURER: 'microchip',
+    CUTTER: 'cutting',
     CHEMICAL_FACTORY: 'plastic',
+    PLASTIC_PLATE: 'plasticplate',
+    ELECTRONIC_ASSEMBLER: 'electronics',
+    BREWING: 'brewing',
+    ELECTROLYZER: 'electrolyzer',
+    SOLID_ELECTROLYZER: 'solid_electrolyzer',
+    POLYMERIZER: 'polymerizer',
+    POLISHER: {
+        LASER: 'laser',
+        PRIMAL: 'primal_laser_polisher',
+    },
     DIVIDER: {
         ITEM: 'item_divider',
         ITEM_FLUID: 'item_divider_fluid'
     },
     MIXER: {
+        FLUID: 'fluid_mixer',
+        SOLID: 'solid_mixer',
         TRIPLE_SOLID: 'triple_solid_mixer',
     },
     ALLOY_SMELTER: {
@@ -29,7 +47,7 @@ function noHash(str) {
 }
 
 function recipeID(from, path) {
-    const str = 'sugomatech:' + from
+    const str = 'kubejs:' + from
     if (path != null) {
         return str + "/" + path
     }

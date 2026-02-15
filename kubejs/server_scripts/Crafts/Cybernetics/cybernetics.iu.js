@@ -14,10 +14,22 @@ const registerCyberneticsIURecipes = (evt) => {
         [ asItem(tag.doubleplate.titanium) ],
         [ asItem(item.cn.titanium_plating) ]
     )
-        // "createcybernetics:titanium_block",
-        // "createcybernetics:rawtitanium",
-        // "createcybernetics:crushedtitanium"
-        // "createcybernetics:titaniumingot",
-        // "createcybernetics:titaniumnugget",
-        // "createcybernetics:titaniumsheet"
+
+    iuRecipe(evt, getRecipeID('titanium_mesh'), IUMachineCraft.CUTTER,
+        [
+            asItem(tag.doubleplate.titanium)
+        ],[
+            asItem(item.cn.titanium_mesh)
+        ]
+    )
+
+    iuRecipe(evt, getRecipeID('synthnerves'), IUMachineCraft.CHEMICAL_FACTORY,
+        [
+            asItem(fluid.glucose, 100),
+            asItem(item.custom.synth_nerve_cables),
+            asItem(item.custom.conducting_organic_polymer)
+        ],[
+            asItem(item.cn.synthnerves)
+        ]
+    )
 }
