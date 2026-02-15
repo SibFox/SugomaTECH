@@ -24,6 +24,39 @@ const registerCommonRecipes = (evt) => {
         { 'temperature': 2000 }
     )
 
+    shapedRecipe(evt, recipeID('createcybernetics', 'synth_nerve_cables'),
+        [
+            [ item.cn.fiber_optic, item.nugget.electrum ],
+            [ item.nugget.electrum, item.nugget.electrum ]
+        ],
+    item.custom.synth_nerve_cables, 1)
+
+    evt.shapeless(Item.of(item.arphex.raw_hemolymph, 1),
+        [
+            '9x ' + item.custom.hemolymph_drop
+        ]
+    ).id(recipeID('arphex', 'raw_hemolyph'))    
+    
+
+    iuRecipe(evt, recipeID('createcybernetics', 'orgainc_polymer'), IUMachineCraft.PLASTIC_PLATE,
+        [
+            asItem(fluid.polypropylene, 100),
+            asItem(item.arphex.raw_hemolymph)
+        ],[
+            asItem(item.custom.organic_polymer)
+        ]
+    )
+
+    // NOTE: ЛОМАЕТ ВСЕ КРАФТЫ ТВЕРДОТЕЛЬНОГО ЭЛЕКТРОЛИЗЁРА ХЗ ПОЧЕМУ
+    // iuRecipe(evt, recipeID('createcybernetics', 'conducting_organic_polymer'), IUMachineCraft.SOLID_ELECTROLYZER,
+    //     [
+    //         asItem(item.custom.organic_polymer)
+    //     ],[
+    //         asItem(item.custom.conducting_organic_polymer),
+    //         asItem(fluid.water, 50)
+    //     ]
+    // )
+
 
 
     console.info('Common recipe adding passed')

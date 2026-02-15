@@ -43,6 +43,10 @@ const registerRecipeReplacings = (evt) => {
         'create:iron_sheet',
         item.plate.iron
     )
+    evt.replaceInput({ input: tag.plate.iron },
+        tag.plate.iron,
+        item.plate.iron
+    )
     evt.replaceOutput({ output: 'create:iron_sheet' },
         'create:iron_sheet',
         item.plate.iron
@@ -50,6 +54,10 @@ const registerRecipeReplacings = (evt) => {
 
     evt.replaceInput({ input: 'create:copper_sheet' },
         'create:copper_sheet',
+        item.plate.copper
+    )
+    evt.replaceInput({ input: tag.plate.copper },
+        tag.plate.copper,
         item.plate.copper
     )
     evt.replaceOutput({ output: 'create:copper_sheet' },
@@ -61,6 +69,10 @@ const registerRecipeReplacings = (evt) => {
         'create:golden_sheet',
         item.plate.gold
     )
+    evt.replaceInput({ input: tag.plate.gold },
+        tag.plate.gold,
+        item.plate.gold
+    )
     evt.replaceOutput({ output: 'create:golden_sheet' },
         'create:golden_sheet',
         item.plate.gold
@@ -70,6 +82,10 @@ const registerRecipeReplacings = (evt) => {
         'createaddition:electrum_sheet',
         item.plate.electrum
     )
+    evt.replaceInput({ input: tag.plate.electrum },
+        tag.plate.electrum,
+        item.plate.electrum
+    )
     evt.replaceOutput({ output: 'createaddition:electrum_sheet' },
         'createaddition:electrum_sheet',
         item.plate.electrum
@@ -77,6 +93,10 @@ const registerRecipeReplacings = (evt) => {
 
     evt.replaceInput({ input: 'createaddition:electrum_ingot' },
         'createaddition:electrum_ingot',
+        item.ingot.electrum
+    )
+    evt.replaceInput({ input: tag.ingot.electrum },
+        tag.ingot.electrum,
         item.ingot.electrum
     )
     evt.replaceOutput({ output: 'createaddition:electrum_ingot' },

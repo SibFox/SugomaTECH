@@ -37,7 +37,7 @@ const registerCreateCTRecipes = (evt) => {
     shapedRecipe(evt, getRecipeID('modular_accumulator'),
         [
             [ null, tag.rod.electrum, null ],
-            [ item.iu.capacitor.advanced, item.create.casing.brass, item.iu.capacitor.advanced ],
+            [ item.iu.capacitor.lvl2, item.create.casing.brass, item.iu.capacitor.lvl2 ],
             [ item.iu.battery.lead, item.iu.battery.lead, item.iu.battery.lead ]
         ],
     item.create.modular_accumulator)

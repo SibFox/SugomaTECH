@@ -153,6 +153,13 @@ const item = {
         titanium: 'industrialupgrade:baseblockingot/titanium',        
     },
 
+    custom: {
+        hemolymph_drop: 'kubejs:hemolymph_drop',
+        organic_polymer: 'kubejs:organic_polymer',
+        conducting_organic_polymer: 'kubejs:conducting_organic_polymer',
+        synth_nerve_cables: 'kubejs:synth_nerve_cables',
+    },
+
     // ~~~~~~~~~~~~~~~~~~~~ INDUSTRIAL UPGRADE ~~~~~~~~~~~~~~~~~~~~ 
     // ~~~~~~~~~~~~~~~~~~~~ INDUSTRIAL UPGRADE ~~~~~~~~~~~~~~~~~~~~ 
     // ~~~~~~~~~~~~~~~~~~~~ INDUSTRIAL UPGRADE ~~~~~~~~~~~~~~~~~~~~ 
@@ -163,6 +170,7 @@ const item = {
         carbon_plastic: 'industrialupgrade:crafting_elements/crafting_479_element',
         rubber: 'industrialupgrade:crafting_elements/crafting_271_element',
         compressed_redstone: 'industrialupgrade:compressed_redstone',
+        polypropylene: 'industrialupgrade:crafting_elements/crafting_484_element',
 
         graphene_wire: 'industrialupgrade:graphene_wire',
         base_generator: 'industrialupgrade:basemachine3/generator_iu',
@@ -258,12 +266,12 @@ const item = {
         },
 
         capacitor: {
-            normal: 'industrialupgrade:circuit/circuit_part1',
-            advanced: 'industrialupgrade:circuit/advanced_part1',
-            nano: 'industrialupgrade:circuit/nanocircuit_part1',
-            quantum: 'industrialupgrade:circuit/quantumcircuit_part1',
-            spectral: 'industrialupgrade:circuit/spectralcircuit_part1',
-            photon: 'industrialupgrade:circuit/photon_part1'
+            lvl1: 'industrialupgrade:circuit/circuit_part1',
+            lvl2: 'industrialupgrade:circuit/advanced_part1',
+            lvl3: 'industrialupgrade:circuit/nanocircuit_part1',
+            lvl4: 'industrialupgrade:circuit/quantumcircuit_part1',
+            lvl5: 'industrialupgrade:circuit/spectralcircuit_part1',
+            lvl6: 'industrialupgrade:circuit/photon_part1'
         },
 
         transistor: {
@@ -463,6 +471,7 @@ const item = {
         },
     
         ram: {
+            interface: 'industrialupgrade:crafting_elements/crafting_554_element',
             kb1: 'industrialupgrade:crafting_elements/crafting_538_element',
             kb8: 'industrialupgrade:crafting_elements/crafting_557_element',
             kb64: 'industrialupgrade:crafting_elements/crafting_552_element',
@@ -568,6 +577,7 @@ const item = {
     // ~~~~~~~~~~~~~~~~~~~~ ARPHEX ~~~~~~~~~~~~~~~~~~~~ 
 
     arphex: {
+        raw_hemolymph: 'arphex:raw_hemolymph',
         time_prism: {
             full: 'arphex:time_prism',
             shard: 'arphex:time_prism_shard'
@@ -629,7 +639,7 @@ const item = {
         
         casing: {
             andesite: 'create:andesite_casing',
-            casing: 'create:brass_casing',
+            brass: 'create:brass_casing',
         },
 
         cogwheel: {
@@ -884,8 +894,11 @@ const tag = {
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FLUIDS FLUIDS FLUIDS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const fluid = {
+    water: '$minecraft:water',
     redstone: '$kubejs:liquid_redstone',
     oxygen: '$industrialupgrade:iufluidoxygen',
     glowstone: '$industrialupgrade:iufluidglowstone',
     quantum_infusion: '$advanced_ae:quantum_infusion_source',
+    polypropylene: '$industrialupgrade:iufluidpolyprop',
+    glucose: '$industrialupgrade:iufluidglucose',
 }
