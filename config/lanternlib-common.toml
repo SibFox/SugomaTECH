@@ -1,2 +1,0 @@
-#List of entities that cannot grief the world.
-griefingBlacklist = ["minecraft:enderman", "minecraft:fireball"]
