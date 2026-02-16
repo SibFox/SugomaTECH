@@ -1,6 +1,6 @@
 {
   "config_version": "2.0.11",
-  "config_datetime": "2026-02-04_17-24-52",
+  "config_datetime": "2026-02-06_16-21-26",
   "general": {
     "disable_all_structures": false,
     "prevent_structure_overlap": true,
@@ -12,14 +12,22 @@
       "name": "global",
       "is_disabled": false,
       "override_global_distance_from_world_center": false,
-      "min_distance_from_world_center": 320,
-      "max_distance_from_world_center": 0,
+      "min_distance_from_world_center": 20,
+      "max_distance_from_world_center": 1500,
       "override_global_flatness_check": false,
       "enable_flatness_check": true,
       "flatness_check_allow_non_solid_blocks": false
     }
   ],
   "structures": [
+    {
+      "name": "minecraft:igloo",
+      "is_disabled": true,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": [],
+      "step": "surface_structures",
+      "terrain_adaptation": "none"
+    },
     {
       "name": "minecraft:mansion",
       "is_disabled": true,
@@ -443,14 +451,16 @@
       "name": "gigeresque:gig_dungeon",
       "is_disabled": false,
       "whitelisted_biomes": [
-        "#forge:is_underground"
+        "wythers:underground"
       ],
-      "blacklisted_biomes": [],
-      "step": "underground_structures",
+      "blacklisted_biomes": [
+        "minecraft:meadow"
+      ],
+      "step": "strongholds",
       "terrain_adaptation": "encapsulate",
       "max_distance_from_center": 16,
-      "max_horizontal_distance_from_center": 128,
-      "max_vertical_distance_from_center": 128
+      "max_horizontal_distance_from_center": 116,
+      "max_vertical_distance_from_center": 116
     },
     {
       "name": "paraglider:nether_horned_statue",
@@ -475,17 +485,6 @@
       "blacklisted_biomes": [],
       "step": "underground_structures",
       "terrain_adaptation": "none"
-    },
-    {
-      "name": "underground_bunkers:underground_bunker",
-      "is_disabled": false,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "underground_structures",
-      "terrain_adaptation": "bury",
-      "max_distance_from_center": 10,
-      "max_horizontal_distance_from_center": 106,
-      "max_vertical_distance_from_center": 106
     },
     {
       "name": "wythers:el_dorado",
@@ -570,14 +569,6 @@
       "override_global_spacing_and_separation_modifier": false
     },
     {
-      "spacing": 25,
-      "separation": 15,
-      "name": "gigeresque:gig_dungeon",
-      "salt": 815338969,
-      "frequency": 0.89000005,
-      "override_global_spacing_and_separation_modifier": false
-    },
-    {
       "spacing": 32,
       "separation": 8,
       "name": "minecraft:desert_pyramids",
@@ -629,14 +620,6 @@
       "name": "minecraft:woodland_mansions",
       "salt": 10387319,
       "frequency": 0.0,
-      "override_global_spacing_and_separation_modifier": false
-    },
-    {
-      "spacing": 25,
-      "separation": 20,
-      "name": "underground_bunkers:minor_structures",
-      "salt": 734441625,
-      "frequency": 0.68,
       "override_global_spacing_and_separation_modifier": false
     },
     {

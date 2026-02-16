@@ -1,0 +1,12 @@
+type = slideshow
+
+slideshow-meta {
+   name = center_menu
+   width = 720
+   height = 420
+   x = 0
+   y = 0
+   duration = 15.0
+   fadespeed = 25.0
+   randomize = false
+   }

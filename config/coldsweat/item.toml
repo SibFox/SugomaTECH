@@ -70,7 +70,7 @@
 	#─────────────────────────────────────────────────────────────────────────
 	# If true, potions can be used in the hearth to give all players in range the potion effect
 	# ⌄ 
-	"Allow Potions in Hearth" = true
+	"Allow Potions in Hearth" = false
 
 ["Soulspring Lamp"]
 	#─────────────────────────────────────────────────────────────────────────//v
@@ -106,10 +106,10 @@
 	# • *fillSlots: If true, the item will fill 1 slot per 2 insulation points. Otherwise, the item will fill 1 slot.
 	# ⌄ 
 	"Insulation Ingredients" = [
-	    ["minecraft:leather", 1, 1],
-	    ["cold_sweat:chameleon_molt", 2, 0.0085, "adaptive"],
-	    ["cold_sweat:hoglin_hide", 0, 2],
-	    ["cold_sweat:goat_fur", 2, 0],
+	    ["minecraft:leather", 2, 2],
+	    ["cold_sweat:chameleon_molt", 4, 4, "adaptive"],
+	    ["cold_sweat:hoglin_hide", 0, 5],
+	    ["cold_sweat:goat_fur", 5, 0],
 	    ["#minecraft:wool", 1.5, 0],
 	    ["minecraft:rabbit_hide", 0, 1.5]
 	]
@@ -125,17 +125,17 @@
 	    ["minecraft:leather_leggings", 6, 6],
 	    ["minecraft:leather_boots", 5, 5],
 	    ["cold_sweat:hoglin_helmet", 0, 10],
-	    ["cold_sweat:hoglin_chestplate", 0, 14],
+	    ["cold_sweat:hoglin_chestplate", 0, 16],
 	    ["cold_sweat:hoglin_leggings", 0, 12],
 	    ["cold_sweat:hoglin_boots", 0, 10],
 	    ["cold_sweat:goat_fur_helmet", 10, 0],
-	    ["cold_sweat:goat_fur_chestplate", 14, 0],
+	    ["cold_sweat:goat_fur_chestplate", 16, 0],
 	    ["cold_sweat:goat_fur_leggings", 12, 0],
 	    ["cold_sweat:goat_fur_boots", 10, 0],
 	    ["cold_sweat:chameleon_helmet", 10, 0.0085, "adaptive"],
-	    ["cold_sweat:chameleon_chestplate", 14, 0.0085, "adaptive"],
-	    ["cold_sweat:chameleon_leggings", 12, 0.0085, "adaptive"],
-	    ["cold_sweat:chameleon_boots", 10, 0.0085, "adaptive"]
+	    ["cold_sweat:chameleon_chestplate", 20, 0.015, "adaptive"],
+	    ["cold_sweat:chameleon_leggings", 15, 0.015, "adaptive"],
+	    ["cold_sweat:chameleon_boots", 10, 0.015, "adaptive"]
 	]
 	#─────────────────────────────────────────────────────────────────────────//v
 	# Defines the items that provide insulation when worn in a curio slot
@@ -169,7 +169,7 @@
 	# ⌄ 
 	# Default: 1.0
 	# Range: 0.0 ~ Infinity
-	"Insulation Strength" = 1.0
+	"Insulation Strength" = 1.15
 	#─────────────────────────────────────────────────────────────────────────//v
 	# Defines wearable items that cannot be insulated
 	# └── Format: ["item_id", "item_id", ...etc]
@@ -188,7 +188,22 @@
 	# • *stack_limit: If set, consuming multiple of the same item will apply stacking effects up to this limit.
 	# ⌄ 
 	"Temperature-Affecting Foods" = [
-	    ["cold_sweat:soul_sprout", -20, "{}", 1200]
+	    ["cold_sweat:soul_sprout", -20, "{}", 1200],
+	    ["mynethersdelight:deviled_egg", 20, "{}", 200],
+	    ["mynethersdelight:spicy_noodle_soup", 20, "{}", 400],
+	    ["mynethersdelight:bullet_pepper", 20, "{}", 50],
+	    ["mynethersdelight:stuffed_pepper", 20, "{}", 400],
+	    ["mynethersdelight:spicy_skewer", 30, "{}", 300],
+	    ["mynethersdelight:chilidog", 30, "{}", 400],
+	    ["mynethersdelight:spicy_hoglin_stew", 20, "{}", 400],
+	    ["mynethersdelight:hot_wings", 30, "{}", 300],
+	    ["mynethersdelight:hot_wings_bucket", 40, "{}", 400],
+	    ["mynethersdelight:spicy_curry", 20, "{}", 400],
+	    ["mynethersdelight:rock_soup", 40, "{}", 200],
+	    ["mynethersdelight:burnt_roll", 80, "{}", 50],
+	    ["mynethersdelight:magma_cake_slice", 80, "{}", 20],
+	    ["mynethersdelight:hot_cream", 20, "{}", 200],
+	    ["mynethersdelight:hot_cream_cone", 20, "{}", 200]
 	]
 	#─────────────────────────────────────────────────────────────────────────
 	# Defines how much a waterskin will change the player's body temperature when used
@@ -245,7 +260,28 @@
 	# • *tempLimit: The maximum temperature at which this item temp will have any effect.
 	#   (Based on the given trait. Represents the minimum temp if the item temp is negative)
 	# ⌄ 
-	"Item Temperatures" = []
+	"Item Temperatures" = [
+	    ["minecraft:snowball", -0.0025, "hand", "core"],
+	    ["minecraft:wind_charge", -0.005, "hand", "core"],
+	    ["minecraft:heart_of_the_sea", -0.15, "hand", "core"],
+	    ["minecraft:nether_star", -0.0015, "hand", "core"],
+	    ["minecraft:powder_snow_bucket", -0.0015, "inventory", "core"],
+	    ["minecraft:snow_block", -0.0015, "inventory", "core"],
+	    ["minecraft:ice", -0.0015, "inventory", "core"],
+	    ["minecraft:packed_ice", -0.0025, "inventory", "core"],
+	    ["minecraft:blue_ice", -0.005, "inventory", "core"],
+	    ["minecraft:breeze_rod", -0.0015, "inventory", "core"],
+	    ["minecraft:ancient_debris", 0.0025, "inventory", "core"],
+	    ["minecraft:fire_charge", 0.0015, "hand", "core"],
+	    ["minecraft:blaze_rod", 0.0015, "inventory", "core"],
+	    ["minecraft:blaze_powder", 0.0015, "inventory", "core"],
+	    ["minecraft:magma_cream", 0.0015, "inventory", "core"],
+	    ["minecraft:magma_block", 0.005, "inventory", "core"],
+	    ["minecraft:lava_bucket", 2, "inventory", "world"],
+	    ["create:blaze_cake", 0.0025, "inventory", "core"],
+	    ["create:blaze_burner", 0.0025, "inventory", "world"],
+	    ["create:builders_tea", 0.0015, "inventory", "core"]
+	]
 
 ["Item Functions"]
 	#─────────────────────────────────────────────────────────────────────────
