@@ -7,6 +7,7 @@
   "item.kubejs.organic_polymer": "Органический полимер",
   "item.kubejs.conducting_organic_polymer": "Проводящий органический полимер",
   "item.morered.red_alloy_ingot": "Слиток краснокаменного сплава",
+  "item.kubejs.liquid_redstone_bucket": "Ведро сжиженного редстоуна",
 
   "item.kubejs.cooked_lungs": "Приготовленные лёгкие",
   "item.kubejs.cooked_stomach": "Приготовленный желудок",
@@ -25,6 +26,8 @@
   "item.kubejs.hemolymph_soaked_liver": "Маринованная в гемолимфе печень",
   "item.kubejs.hemolymph_soaked_lungs": "Маринованные в гемолимфе лёгкие",
   "item.kubejs.hemolymph_soaked_stomach": "Маринованный в гемолимфе желудок",
+
+  "liquid.kubejs.liquid_redstone": "Сжиженный редстоун",
 
   "block.kubejs.quartz_glass": "Кварцевое стекло"
 }

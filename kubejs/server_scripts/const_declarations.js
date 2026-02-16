@@ -112,6 +112,7 @@ const item = {
         iron: 'minecraft:iron_ingot',
         gold: 'minecraft:gold_ingot',
         zinc: 'industrialupgrade:itemingots/zinc_ingot',
+        bronze: 'industrialupgrade:itemingots/bronze_ingot',
         electrum: 'industrialupgrade:itemingots/electrum_ingot',
         red_alloy: 'morered:red_alloy_ingot',
         netherite: 'minecraft:netherite_ingot',
@@ -121,9 +122,12 @@ const item = {
         wolframite: 'industrialupgrade:wolframite',
         titanium_steel: 'industrialupgrade:crafting_elements/crafting_504_element',
         carbon_tungsteen: 'industrialupgrade:crafting_elements/crafting_480_element',
+        vanadoalumite: 'industrialupgrade:alloyingot/vanadoalumite',
         quantum_alloy: 'advanced_ae:quantum_alloy',
         woods_alloy: 'industrialupgrade:alloyingot/woods',
+        sky_bronze: 'megacells:sky_bronze_ingot',
         sky_steel: 'megacells:sky_steel_ingot',
+        entro: 'extendedae:entro_ingot',
     },
 
     plate: {
@@ -136,6 +140,7 @@ const item = {
         titanium_steel: 'industrialupgrade:crafting_elements/crafting_501_element',
         niobium_titanium: 'industrialupgrade:alloyplate/niobium_titanium',
         red_brass: 'industrialupgrade:alloyplate/red_brass',
+        lapis: 'industrialupgrade:itemplates/lapis_plate',
     },
 
     rod: {
@@ -434,6 +439,15 @@ const item = {
             tech: 'industrialupgrade:blockresource/machine',
             advanced_tech: 'industrialupgrade:blockresource/advanced_machine',
         },
+
+        chip: {
+            lvl1: 'industrialupgrade:circuit/circuit_part2',
+            lvl2: 'industrialupgrade:circuit/advanced_part2',
+            lvl3: 'industrialupgrade:circuit/nanocircuit_part2',
+            lvl4: 'industrialupgrade:circuit/quantumcircuit_part2',
+            lvl5: 'industrialupgrade:circuit/spectralcircuit_part2',
+            lvl6: 'industrialupgrade:circuit/photon_part2'
+        },
     
         microchip: {
             lvl1: 'industrialupgrade:crafting_elements/crafting_272_element[industrialupgrade:level_microchip=1]',
@@ -472,7 +486,7 @@ const item = {
         },
     
         ram: {
-            interface: 'industrialupgrade:crafting_elements/crafting_554_element',
+            interface: 'industrialupgrade:crafting_elements/crafting_574_element',
             kb1: 'industrialupgrade:crafting_elements/crafting_538_element',
             kb8: 'industrialupgrade:crafting_elements/crafting_557_element',
             kb64: 'industrialupgrade:crafting_elements/crafting_552_element',
@@ -496,10 +510,23 @@ const item = {
         },
 
         disk: {
-            iron: 'industrialupgrade:crafting_elements/crafting_572_element',
-            cobalt_chrome: 'industrialupgrade:crafting_elements/crafting_577_element',
-            yttrim_alluminum: 'industrialupgrade:crafting_elements/crafting_575_element',
-            nickel: 'industrialupgrade:crafting_elements/crafting_587_element',
+            lvl1: 'industrialupgrade:crafting_elements/crafting_572_element',
+            lvl2: 'industrialupgrade:crafting_elements/crafting_577_element',
+            lvl3: 'industrialupgrade:crafting_elements/crafting_575_element',
+            lvl4: 'industrialupgrade:crafting_elements/crafting_587_element',
+        },
+
+        cooling_system: {
+            lvl1: 'industrialupgrade:crafting_elements/crafting_588_element',
+            lvl2: 'industrialupgrade:crafting_elements/crafting_598_element',
+            lvl3: 'industrialupgrade:crafting_elements/crafting_592_element',
+            lvl4: 'industrialupgrade:crafting_elements/crafting_594_element'
+        },
+
+        diode: {
+            lvl1: 'industrialupgrade:crafting_elements/crafting_568_element',
+            lvl2: 'industrialupgrade:crafting_elements/crafting_567_element',
+            lvl3: 'industrialupgrade:crafting_elements/crafting_565_element',
         },
 
         rotor: {
@@ -542,6 +569,7 @@ const item = {
         entro_dust: 'extendedae:entro_dust',
         redstone_crystal: 'appflux:redstone_crystal',
         charged_redstone_crystal: 'appflux:charged_redstone',
+        sky_dust: 'ae2:sky_dust',
         singularity: 'ae2:singularity',
         shattered_singularity: 'advanced_ae:shattered_singularity',
 
@@ -904,6 +932,7 @@ const tag = {
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const fluid = {
     water: '$minecraft:water',
+    lava: '$minecraft:lava',
     redstone: '$kubejs:liquid_redstone',
     oxygen: '$industrialupgrade:iufluidoxygen',
     glowstone: '$industrialupgrade:iufluidglowstone',

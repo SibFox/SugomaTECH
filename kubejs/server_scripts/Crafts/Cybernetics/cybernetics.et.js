@@ -244,15 +244,18 @@ const registerCyberneticsETRecipes = (evt) => {
     cnRecipe(evt, asItem('createcybernetics:brainupgrades_cyberbrain'),
         [
             ' TTT ',
-            'TQZQT',
+            'TKZWT',
             'TXMCT',
-            'TQVQT',
+            'TLVPT',
             '  NBN'
         ],{
             T: item.cn.titanium_plating,
             N: item.cn.synthnerves,
-            Q: item.iu.controller.lvl3,
+            K: item.iu.controller.lvl3,
             M: item.iu.microchip.lvl8,
+            P: item.ae.processor.concurrent,
+            L: item.ae.processor.logic,
+            W: item.ae.processor.calculation,
             Z: 'createcybernetics:parietal_lobe', X: 'createcybernetics:frontal_lobe',
             C: 'createcybernetics:occipital_lobe', V: 'createcybernetics:temporal_lobe',
             B: 'createcybernetics:cerebellum',
@@ -442,7 +445,7 @@ const registerCyberneticsETRecipes = (evt) => {
         [
             ' GRG ',
             ' DSD ',
-            'YUMZY',
+            'PUMZP',
             ' DAD ',
             '     ',
         ],{
@@ -452,7 +455,7 @@ const registerCyberneticsETRecipes = (evt) => {
             Z: item.cn.ssd,
             M: item.cn.eye_upgrade_base,
             D: item.cn.diodes,
-            Y: item.dye.yellow,
+            P: item.custom.conducting_organic_polymer,
             S: 'minecraft:spyglass',
             A: 'minecraft:amethyst_shard'
         }
@@ -460,13 +463,13 @@ const registerCyberneticsETRecipes = (evt) => {
 
     cnRecipe(evt, asItem('createcybernetics:eyeupgrades_underwatervision'),
         [
-            ' GRG ',
+            ' ERE ',
             ' OFO ',
-            'LGMSL',
+            'PGMSP',
             ' OZO ',
             '     ',
         ],{
-            G: item.nugget.electrum,
+            E: item.nugget.electrum,
             R: item.ingot.red_alloy,
             O: item.cn.fiber_optic,
             F: item.phantom_membrane,
@@ -474,7 +477,7 @@ const registerCyberneticsETRecipes = (evt) => {
             G: item.cn.gpu,
             S: item.cn.ssd,
             M: item.cn.eye_upgrade_base,
-            L: item.dye.light_blue
+            P: item.custom.conducting_organic_polymer,
         }
     )
 
@@ -642,7 +645,7 @@ const registerCyberneticsETRecipes = (evt) => {
         [
             ' GRG ',
             ' OCO ',
-            'LZMXL',
+            'PZMXP',
             ' OCO ',
             '     '
         ],{
@@ -652,7 +655,7 @@ const registerCyberneticsETRecipes = (evt) => {
             M: item.cn.eye_upgrade_base,
             Z: item.cn.gpu,
             X: item.cn.ssd,
-            L: item.dye.green,
+            P: item.custom.conducting_organic_polymer,
             C: 'minecraft:golden_carrot'
         }
     )
@@ -844,15 +847,15 @@ const registerCyberneticsETRecipes = (evt) => {
     cnRecipe(evt, asItem('createcybernetics:skinupgrades_immuno'),
         [
             ' GTT ',
-            'GTSET',
-            'TSMDT',
-            'TESET',
+            'GTPET',
+            'TPMDT',
+            'TEPET',
             ' TTT '
         ],{
             T: item.cn.titanium_plating,
             G: item.dye.green,
+            P: item.custom.organic_polymer,
             E: item.create.electron_tube,
-            S: 'minecraft:fermented_spider_eye',
             M: 'minecraft:milk_bucket',
             D: 'minecraft:dispenser'
         }
@@ -1076,7 +1079,7 @@ const registerCyberneticsETRecipes = (evt) => {
             O: item.cn.fiber_optic,
             G: item.cn.gpu,
             S: item.cn.ssd,
-            P: item.dye.purple,
+            P: item.custom.conducting_organic_polymer,
             M: item.cn.eye_upgrade_base
         }
     )
@@ -1100,7 +1103,7 @@ const registerCyberneticsETRecipes = (evt) => {
         [
             ' NRN ',
             ' OAO ',
-            'DGMSD',
+            'PGMSP',
             ' OGO ',
             '     '
         ],{
@@ -1110,7 +1113,7 @@ const registerCyberneticsETRecipes = (evt) => {
             G: item.cn.gpu,
             S: item.cn.ssd,
             M: item.cn.eye_upgrade_base,
-            D: item.dye.orange,
+            P: item.custom.conducting_organic_polymer,
             A: 'minecraft:spectral_arrow'
         }
     )
@@ -1165,7 +1168,7 @@ const registerCyberneticsETRecipes = (evt) => {
         [
             ' NRN ',
             ' DZD ',
-            'FGMSF',
+            'PGMSP',
             ' DSD ',
             '     '
         ],{
@@ -1176,6 +1179,7 @@ const registerCyberneticsETRecipes = (evt) => {
             G: item.cn.gpu,
             S: item.cn.ssd,
             M: item.cn.eye_upgrade_base,
+            P: item.custom.conducting_organic_polymer,
             Z: 'mffs:warn_module'
         }
     )
@@ -1228,4 +1232,6 @@ const registerCyberneticsETRecipes = (evt) => {
             L: 'industrialupgrade:photoniumglass/photoniyglass1', //Улучшенное стекло
         }
     )
+    
+    
 }

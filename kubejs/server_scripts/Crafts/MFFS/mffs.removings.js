@@ -11,7 +11,7 @@ const registerMFFSRemovings = (evt) => {
     evt.remove({ output: 'mffs:coercion_deriver' })
     evt.remove({ output: 'mffs:fortron_capacitor' })
     evt.remove({ output: 'mffs:biometric_identifier' })
-    evt.remove({ output: 'mffs:intrediction_matrix' })
+    evt.remove({ output: 'mffs:interdiction_matrix' })
     evt.remove({ output: 'mffs:battery' })
     evt.remove({ output: 'mffs:cube_mode' })
     evt.remove({ output: 'mffs:sphere_mode' })

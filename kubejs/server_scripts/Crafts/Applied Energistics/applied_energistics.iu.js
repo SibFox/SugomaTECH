@@ -160,4 +160,47 @@ const registerAEIURecipes = (evt) => {
         ]
     )
 
+    iuRecipe(evt, getRecipeID('sky_dust'), IUMachineCraft.MACERATOR,
+        [
+            asItem('ae2:sky_stone_block')
+        ],[
+            asItem(item.ae.sky_dust)
+        ]
+    )
+
+    iuRecipe(evt, getRecipeID('sky_steel'), IUMachineCraft.ALLOY_SMELTER.lvl2,
+        [
+            asItem(item.ae.sky_dust),
+            asItem(item.ingot.titanium_steel),
+            asItem(item.ae.charged_certus_quartz_crystal)
+        ],[
+            asItem(item.ingot.sky_steel, 2)
+        ],
+        { "temperature": 4500 }
+    )
+
+    iuRecipe(evt, getRecipeID('sky_bronze'), IUMachineCraft.ALLOY_SMELTER.lvl2,
+        [
+            asItem(item.ae.sky_dust),
+            asItem(item.ingot.bronze),
+            asItem(item.ae.charged_certus_quartz_crystal),
+        ],[
+            asItem(item.ingot.sky_bronze, 2)
+        ],
+        { "temperature": 2500 }
+    )
+    
+    iuRecipe(evt, getRecipeID('entro_ingot'), IUMachineCraft.ALLOY_SMELTER.lvl2,
+        [
+            asItem(item.plate.lapis),
+            asItem(item.ingot.vanadoalumite),
+            asItem(item.ae.entro_dust)
+        ],[
+            asItem(item.ingot.entro, 2)
+        ],
+        { "temperature": 3500 }
+    )
+    
+    
+
 }

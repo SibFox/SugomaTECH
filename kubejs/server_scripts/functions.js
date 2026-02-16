@@ -80,9 +80,6 @@ function asItem(item, amount) {
         dict.components[componentTag] = componentValue
         dict.haveComponents = true
         dict.item = dict.item.slice(0, nbtStartPos)
-        console.info(nbtString)
-        console.info(dict.components)
-        console.info(dict.haveComponents)
     }
 
     return dict
@@ -128,7 +125,6 @@ const cnRecipe = (evt, output, pattern, indexes) => {
             val.items = entry.item
             val.components = entry.components
             val.type = "neoforge:components"
-            console.info(val)
         } else {
             val.item = entry.item
         }
@@ -143,7 +139,7 @@ const cnRecipe = (evt, output, pattern, indexes) => {
             "count": output.count,
             "id": output.item
         }
-    }).id(recipeID(output.item.replace(':', '/')))
+    }).id(recipeID(output.item.replace(':', '/') + '/engtable'))
 
     evt.remove({ output: output.item })
 }
@@ -178,6 +174,11 @@ const iuRecipe = (evt, id, type, inputs, outputs, params) => {
         recipe.inputs.push(dict)
     }
 
+    if (type === IUMachineCraft.SOLID_ELECTROLYZER) {
+        recipe.inputs.push({ "type": "fluid", "id": "minecraft:water", "amount": 1 })
+        recipe.isFluidRecipe = true
+    }
+
     for (let output of outputs) {
         let dict = {
             "type": "item",
@@ -186,17 +187,66 @@ const iuRecipe = (evt, id, type, inputs, outputs, params) => {
         }
         if (output.isTag) {
             console.error('Wrong output item in IU recipe\nRecipe ID: ' + id)
-            continue
+            return
         }
         if (output.isFluid) {
             dict.type = "fluid"
-            recipe.isFluidRecipe = true
+            // recipe.isFluidRecipe = true
         }
 
         recipe.outputs.push(dict)
     }
 
-    evt.custom(recipe).id(id)
+    evt.custom(recipe).id(id + '/' + type)    
+}
+
+const aeAssemblerRecipe = (evt, id, input_fluid, input_items, output) => {
+    let recipe = {
+        "type": "extendedae:crystal_assembler",
+        "input_fluid": {
+            "amount": input_fluid.count,
+            "ingredient": {
+                "fluid": input_fluid.item
+            }
+        },
+        "input_items": [],
+        "output": {
+            "count": output.count,
+            "id": output.item
+        }
+    }
+
+    if (input_fluid.isTag || !input_fluid.isFluid) {
+        console.error("Recipe input fluid was not a Fluid in AE Assembler. Recipe ID: " + id)
+        return
+    }
+
+    if (output.isTag || output.isFluid) {
+        console.error("Recipe output was not an Item in AE Assembler. Recipe ID: " + id)
+        return
+    }
+
+    for (let input of input_items) {
+        let dict = {
+            "amount": input.count,
+            "ingredient": {}
+        }
+
+        if (input.isFluid) {
+            console.error("Recipe input was a Fluid in AE Assembler. Recipe ID: " + id)
+            continue
+        }
+        
+        if (input.isTag) {
+            dict.ingredient.tag = input.item
+        } else {
+            dict.ingredient.item = input.item
+        }
+
+        recipe.input_items.push(dict)
+    }
+
+    evt.custom(recipe).id(id + '/assembler')
 }
 
 const aeReactionRecipe = (evt, id, energy, input_fluid, input_items, output) => {
@@ -214,7 +264,7 @@ const aeReactionRecipe = (evt, id, energy, input_fluid, input_items, output) => 
         let input = input_items[i];
         if (input.isTag || input.isFluid) {
             console.error("Recipe input was not an Item in AE Reaction chamber. Recipe ID: " + id)
-            return
+            continue
         }
         input_arr.push({
             "amount": input.count,
@@ -233,5 +283,5 @@ const aeReactionRecipe = (evt, id, energy, input_fluid, input_items, output) => 
         },
         "input_items": input_arr,
         "output": output_ready
-    }).id(id)
+    }).id(id + '/reaction')
 }

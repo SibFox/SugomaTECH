@@ -15,6 +15,7 @@ const registerFDRecipes = (evt) => {
         tag.tool.knife,
         [
             '2x kubejs:minced_brain',
+            ChanceResult.of('createcybernetics:ground_offal', 0.25)
         ]
     ).id(getRecipeID('minced_brain'))
     
@@ -23,6 +24,7 @@ const registerFDRecipes = (evt) => {
         tag.tool.knife,
         [
             '2x kubejs:minced_heart',
+            ChanceResult.of('createcybernetics:ground_offal', 0.25)
         ]
     ).id(getRecipeID('minced_heart'))
 
@@ -31,6 +33,7 @@ const registerFDRecipes = (evt) => {
         tag.tool.knife,
         [
             '2x kubejs:minced_liver',
+            ChanceResult.of('createcybernetics:ground_offal', 0.25)
         ]
     ).id(getRecipeID('minced_liver'))
 
@@ -39,6 +42,7 @@ const registerFDRecipes = (evt) => {
         tag.tool.knife,
         [
             '2x kubejs:minced_lungs',
+            ChanceResult.of('createcybernetics:ground_offal', 0.25)
         ]
     ).id(getRecipeID('minced_lungs'))
 
@@ -47,6 +51,7 @@ const registerFDRecipes = (evt) => {
         tag.tool.knife,
         [
             '2x kubejs:minced_stomach',
+            ChanceResult.of('createcybernetics:ground_offal', 0.25)
         ]
     ).id(getRecipeID('minced_stomach'))
 
@@ -104,8 +109,24 @@ const registerFDRecipes = (evt) => {
         0.5,
         160
     ).id(getRecipeID('hemolymph_soaked_stomach'))
-    
 
+    for (let food of [ 'kubejs:minced_brain', 'kubejs:minced_lungs', 'kubejs:minced_liver',
+         'kubejs:minced_heart' ,'kubejs:minced_stomach' ]) {
+            evt.smelting('1x ' + food.replace(':', ':cooked_'), food).xp(0.35)
+            evt.smoking('1x ' + food.replace(':', ':cooked_'), food).xp(0.35)
+            evt.campfireCooking('1x ' + food.replace(':', ':cooked_'), food, 0.35, 600)
+    }
+
+    evt.smelting('1x ' + 'kubejs:cooked_lungs', item.cn.bodypart.lungs).xp(0.35)
+    evt.smoking('1x ' + 'kubejs:cooked_lungs', item.cn.bodypart.lungs).xp(0.35)
+
+    evt.smelting('1x kubejs:cooked_stomach', item.cn.bodypart.stomach).xp(0.35)
+    evt.smoking('1x kubejs:cooked_stomach', item.cn.bodypart.stomach).xp(0.35)
+
+    evt.smoking('createcybernetics:cooked_brain', item.cn.bodypart.brain).xp(0.35)
+    evt.smoking('createcybernetics:cooked_heart', item.cn.bodypart.heart).xp(0.35)
+    evt.smoking('1x ' + 'createcybernetics:cooked_liver', item.cn.bodypart.liver).xp(0.35)
+    evt.smoking('1x ' + 'createcybernetics:roasted_andouille', 'createcybernetics:andouille_sausage').xp(0.35)
 
     console.info('Farmer\'s Delight recipe adding passed')
 }

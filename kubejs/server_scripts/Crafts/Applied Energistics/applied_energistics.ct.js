@@ -12,9 +12,9 @@ const registerAECTRecipes = (evt) => {
 
     shapedRecipe(evt, getRecipeID('vibration_chamber'),
         [
-            [ tag.ingot.iron, tag.ingot.iron, tag.ingot.iron ],
-            [ tag.ingot.iron, item.iu.base_generator, tag.ingot.iron ],
-            [ tag.ingot.iron, item.ae.energy_acceptor, tag.ingot.iron ]
+            [ item.iu.machine_corpus.tech, tag.ingot.iron, item.iu.machine_corpus.tech ],
+            [ tag.ingot.steel, item.iu.base_generator, tag.ingot.steel ],
+            [ tag.ingot.steel, item.ae.energy_acceptor, tag.ingot.steel ]
         ],
     'ae2:vibration_chamber')
 
@@ -50,34 +50,64 @@ const registerAECTRecipes = (evt) => {
         asItem(item.ingot.quantum_alloy)
     )
 
-    // const processorRecipe = (id, printed, processor, output) => {
-    //     shapedRecipe(evt, getRecipeID(id),
-    //     [
-    //         [ null, item.ae.printed_silicon, null ],
-    //         [ printed, processor, printed ],
-    //         [ null, item.ae.printed_silicon, null ]
-    //     ], output, 6)
-    // }
+    aeAssemblerRecipe(evt, getRecipeID('entro_ingot'),
+        asItem(fluid.redstone, 100),
+        [
+            asItem(item.ae.entro_dust, 4),
+            asItem(item.ingot.vanadoalumite, 4),
+            asItem(item.plate.lapis, 4)
+        ],
+        asItem(item.ingot.entro, 4)
+    )
+    
+    aeAssemblerRecipe(evt, getRecipeID('sky_steel'),
+        asItem(fluid.lava, 100),
+        [
+            asItem(item.ae.charged_certus_quartz_crystal, 4),
+            asItem(item.ingot.titanium_steel, 4),
+            asItem(item.ae.sky_dust, 4)
+        ],
+        asItem(item.ingot.sky_steel, 8)
+    )
 
-    // processorRecipe('calculation_processor', item.ae.processor.printed.calculation,
-    //     item.iu.processor.lvl1, item.ae.processor.calculation)
+    aeAssemblerRecipe(evt, getRecipeID('sky_bronze'),
+        asItem(fluid.lava, 100),
+        [
+            asItem(item.ae.certus_quartz_crystal, 4),
+            asItem(item.ingot.bronze, 4),
+            asItem(item.ae.sky_dust, 4)
+        ],
+        asItem(item.ingot.sky_bronze, 8)
+    )
 
-    // processorRecipe('logic_processor', item.ae.processor.printed.logic,
-    //     item.iu.processor.lvl1, item.ae.processor.logic)        
+    aeReactionRecipe(evt, getRecipeID('entro_ingot'),
+        500000, asItem(fluid.redstone, 1000),
+        [
+            asItem(item.ae.entro_dust, 32),
+            asItem(item.ingot.vanadoalumite, 32),
+            asItem(item.ae.sky_dust, 32)
+        ],
+        asItem(item.ingot.entro, 64)
+    )
 
-    // processorRecipe('engineering_processor', item.ae.processor.printed.engineering,
-    //     item.iu.processor.lvl2, item.ae.processor.engineering)
-
-    // processorRecipe('concurrent_processor', item.ae.processor.printed.concurrent,
-    //     item.iu.processor.lvl2, item.ae.processor.concurrent)
-
-    // processorRecipe('energy_processor', item.ae.processor.printed.energy,
-    //     item.iu.processor.lvl2, item.ae.processor.energy)
-
-    // processorRecipe('quantum_processor', item.ae.processor.printed.quantum,
-    //     item.iu.processor.lvl7, item.ae.processor.quantum)
-
-    // processorRecipe('accumulation_processor', item.ae.processor.printed.accumulation,
-    //     item.iu.processor.lvl4, item.ae.processor.accumulation)
+    aeReactionRecipe(evt, getRecipeID('sky_steel'),
+        300000, asItem(fluid.lava, 1000),
+        [
+            asItem(item.ae.charged_certus_quartz_crystal, 32),
+            asItem(item.ingot.titanium_steel, 32),
+            asItem(item.ae.sky_dust, 32)
+        ],
+        asItem(item.ingot.sky_steel, 64)
+    )
+    
+    aeReactionRecipe(evt, getRecipeID('sky_bronze'),
+        250000, asItem(fluid.lava, 1000),
+        [
+            asItem(item.ae.charged_certus_quartz_crystal, 32),
+            asItem(item.ingot.bronze, 32),
+            asItem(item.ae.sky_dust, 32),
+        ],
+        asItem(item.ingot.sky_bronze, 64)
+    )
 
 }

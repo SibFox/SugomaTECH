@@ -73,5 +73,19 @@ const registerCyberneticsCTRecipes = (evt) => {
             R: item.ingot.red_alloy
         }
     ).id(getRecipeID('actuator'))
+
+    evt.shaped(
+        Item.of(item.cn.storage, 1),
+        [
+            'P P',
+            'N N',
+            'P P'
+        ],{
+            P: item.plate.titanium,
+            N: item.nugget.titanium
+        }
+    ).id(getRecipeID('storage'))
+    
+    
     
 }

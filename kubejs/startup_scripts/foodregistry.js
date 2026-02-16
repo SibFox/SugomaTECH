@@ -10,7 +10,7 @@ const registerFoods = (evt) => {
     evt.create('cooked_stomach').food(food => {
         food
             .nutrition(8)
-            .saturation(0.25)
+            .saturation(0.35)
     })
     
     evt.create('minced_brain').food(food => {

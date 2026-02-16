@@ -86,11 +86,5 @@ const registerGRRecipes = (evt) => {
         ],
     item.gr.advanced_incubator)
 
-    evt.shapeless(Item.of(item.gr.coal_generator, 1),
-        [
-            item.iu.module.generator.lvl1, item.iu.machine_corpus.tech, item.furnace
-        ]
-    ).id(getRecipeID('coal_generator'))
-
     console.info('Genetics Resequenced recipe adding passed')
 }

@@ -38,7 +38,7 @@ const registerCommonRecipes = (evt) => {
     ).id(recipeID('arphex', 'raw_hemolyph'))    
     
 
-    iuRecipe(evt, recipeID('createcybernetics', 'orgainc_polymer'), IUMachineCraft.PLASTIC_PLATE,
+    iuRecipe(evt, recipeID('createcybernetics', 'organic_polymer'), IUMachineCraft.PLASTIC_PLATE,
         [
             asItem(fluid.polypropylene, 100),
             asItem(item.arphex.raw_hemolymph)
@@ -47,17 +47,29 @@ const registerCommonRecipes = (evt) => {
         ]
     )
 
-    // NOTE: ЛОМАЕТ ВСЕ КРАФТЫ ТВЕРДОТЕЛЬНОГО ЭЛЕКТРОЛИЗЁРА ХЗ ПОЧЕМУ
-    // iuRecipe(evt, recipeID('createcybernetics', 'conducting_organic_polymer'), IUMachineCraft.SOLID_ELECTROLYZER,
-    //     [
-    //         asItem(item.custom.organic_polymer)
-    //     ],[
-    //         asItem(item.custom.conducting_organic_polymer),
-    //         asItem(fluid.water, 50)
-    //     ]
-    // )
+    iuRecipe(evt, recipeID('createcybernetics', 'conducting_organic_polymer'), IUMachineCraft.SOLID_ELECTROLYZER,
+        [
+            asItem(item.custom.organic_polymer)
+        ],[
+            asItem(item.custom.conducting_organic_polymer),
+            asItem(fluid.water, 50)
+        ]
+    )
 
-
+    // evt.custom({
+    //     "type": "industrialupgrade:universal_recipe",
+    //     "recipe_type": "solid_electrolyzer",
+    //     "isFluidRecipe": false,
+    //     "inputs": [
+    //         { "type": "item", "id": "kubejs:organic_polymer", "amount": 1 },
+    //         { "type": "fluid", "id": "minecraft:water", "amount": 50 }
+    //     ],
+    //     "outputs": [
+    //         { "type": "item", "id": "kubejs:conducting_organic_polymer", "amount": 1 },
+    //         { "type": "fluid", "id": "minecraft:water", "amount": 50 }
+    //     ],
+    //     "params": {}
+    // })
 
     console.info('Common recipe adding passed')
 }
