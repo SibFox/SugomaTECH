@@ -48,7 +48,7 @@ mouseSensitivity:0.403755868544601
 damageTiltStrength:0.6003521126760564
 highContrast:false
 narratorHotkey:false
-resourcePacks:["pointblank_resources","vanilla","mod_resources","file/[ 19 ] Ретекстур для Comforts.zip","file/[ 18 ] Текстуры для труб.zip","file/[ 17 ] Create ретекстур брони для лошадей.zip","file/[ 16 ] Ретекстур гаечного ключа.zip","file/[ 14 ] Ретекстур (ремоделинг) пауков.zip","file/[ 13 ] Ретекстур (ремоделинг) пчел.zip","file/[ 12 ] Ретекстур лошадей.zip","file/[ 11 ] Ретекстур (ремоделинг) лодок.zip","file/[ 10 ] Пушистые ковры.zip","file/[ 09 ] Ретекстур дверей.zip","file/[ 08 ] Пушистая листва.zip","file/[ 07 ] Ретекстур травы.zip","file/[ 06 ] Волнистая вода.zip","file/[ 05 ] Переход между блоками.zip","file/[ 04 ] Анимированные руды.zip","file/[ 03 ] Атмосферное небо.zip","file/[ 02 ] Кубические Солнце и Луна.zip","file/[ 01 ] Музыка.zip","file/[ -- ] Русификатор Pointblank.zip","file/[ -- ] Улучшенный шрифт.zip","mod/subtle_effects:resourcepacks/biome_color_water_particles","fabric"]
+resourcePacks:["pointblank_resources","vanilla","mod_resources","file/[ 03 ] Атмосферное небо.zip","file/[ 02 ] Кубические Солнце и Луна.zip","file/[ 01 ] Музыка.zip","file/[ -- ] Русификатор Pointblank.zip","file/[ -- ] Улучшенный шрифт.zip"]
 incompatibleResourcePacks:["file/[ 19 ] Ретекстур для Comforts.zip","file/[ 12 ] Ретекстур лошадей.zip","mod/subtle_effects:resourcepacks/biome_color_water_particles"]
 lastServer:
 lang:ru_ru
@@ -121,27 +121,22 @@ key_key.hotbar.6:key.keyboard.6
 key_key.hotbar.7:key.keyboard.7
 key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
+key_key.modernfix.config:key.keyboard.unknown
 key_key.createcybernetics.cyberware_wheel:key.keyboard.keypad.7
 key_key.createcybernetics.spinal_injector:key.keyboard.n
 key_key.createcybernetics.arm_cannon:key.keyboard.keypad.9
 key_key.createcybernetics.arm_cannon_wheel:key.keyboard.keypad.8
 key_key.createcybernetics.heat_engine:key.keyboard.h
-key_key.modernfix.config:key.keyboard.unknown
-key_iris.keybind.reload:key.keyboard.unknown
-key_iris.keybind.toggleShaders:key.keyboard.unknown
-key_iris.keybind.shaderPackSelection:key.keyboard.unknown
-key_iris.keybind.wireframe:key.keyboard.unknown
-key_key.paraglider.paragliderSettings:key.keyboard.p:CONTROL
+key_key.createcybernetics.infolog_gui:key.keyboard.j
+key_supplementaries.keybind.quiver:key.keyboard.v
 key_key.corpse.death_history:key.keyboard.u
 key_key.curios.open.desc:key.keyboard.g
-key_key.lighty.enable:key.keyboard.f8
-key_key.lighty.toggle:key.keyboard.f7
 key_key.pointblack.reload:key.keyboard.r
 key_key.pointblack.firemode:key.keyboard.b
 key_key.pointblack.inspect:key.keyboard.i
 key_key.pointblack.attachments:key.keyboard.y
 key_key.pointblack.scope_switch:key.keyboard.v
-key_key.openNotes:key.keyboard.right.shift
+key_key.pointblack.settings:key.keyboard.y:ALT
 key_key.geneticsresequenced.dragons_breath:key.keyboard.unknown
 key_key.geneticsresequenced.teleport:key.keyboard.unknown
 key_key.jei.toggleOverlay:key.keyboard.o:CONTROL
@@ -175,8 +170,6 @@ key_key.jei.previousCategory:key.keyboard.page.up:SHIFT
 key_key.jei.nextCategory:key.keyboard.page.down:SHIFT
 key_key.jei.closeRecipeGui:key.keyboard.escape
 key_key.jei.copy.recipe.id:key.keyboard.unknown
-key_key.barnyardbuddies.jump_clydesdale:key.keyboard.space
-key_key.barnyardbuddies.clydesdale_sprint:key.keyboard.left.control
 key_key.arphex.space_press:key.keyboard.space
 key_key.arphex.power_bind:key.keyboard.c
 key_keybinds.bettercombat.feint:key.keyboard.unknown
@@ -210,14 +203,10 @@ key_key.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_key.sophisticatedbackpacks.inventory_interaction:key.keyboard.c
 key_key.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.1:ALT
-key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.2:ALT
-key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
-key_key.ok_zoomer.zoom:key.mouse.5
-key_key.ok_zoomer.decrease_zoom:key.keyboard.unknown
-key_key.ok_zoomer.increase_zoom:key.keyboard.unknown
-key_key.ok_zoomer.reset_zoom:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.2:ALT
+key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.1:ALT
 key_Change mode key:key.keyboard.g
 key_Fly Key:key.keyboard.f
 key_BlackList View Key:key.keyboard.x
@@ -229,11 +218,6 @@ key_Armor Key:key.keyboard.m
 key_Boots Key:key.keyboard.b
 key_Leggings Key:key.keyboard.n
 key_ALT Key:key.keyboard.left.alt
-key_Scene1 start/pause:key.keyboard.keypad.1
-key_Scene2 start/pause:key.keyboard.keypad.2
-key_Scene3 start/pause:key.keyboard.keypad.3
-key_Scene reset:key.keyboard.keypad.0
-key_Quest Log:key.keyboard.l
 key_key.ftbteams.open_gui:key.keyboard.unknown
 key_key.ftbquests.quests:key.keyboard.unknown
 key_chunkloaders.keys.open_screen:key.keyboard.unknown
@@ -279,7 +263,6 @@ key_key.journeymap.fullscreen.west:key.keyboard.left
 key_key.journeymap.fullscreen_follow_player:key.keyboard.unknown
 key_key.journeymap.fullscreen.disable_buttons:key.keyboard.unknown
 key_key.journeymap.toggle_entity_names:key.keyboard.unknown
-key_desc.seasonhud.keybind.options:key.keyboard.unknown
 key_key.cpm.gestureMenu:key.keyboard.grave.accent
 key_key.cpm.renderToggle:key.keyboard.unknown
 key_key.cpm.qa_1:key.keyboard.unknown
@@ -300,7 +283,6 @@ key_key.cpm.qa_15:key.keyboard.unknown
 key_key.cpm.qa_16:key.keyboard.unknown
 key_key.guideme.guide:key.keyboard.unknown
 key_key.toastcontrol.clear:key.keyboard.j
-key_key.pointblank_passthrough.interact:key.keyboard.f
 key_key.jade.config:key.keyboard.keypad.0
 key_key.jade.show_overlay:key.keyboard.unknown
 key_key.jade.toggle_liquid:key.keyboard.unknown
@@ -328,7 +310,6 @@ key_key.advanced_ae.quantum_armor_config:key.keyboard.unknown
 key_key.advanced_ae.quantum_magnet_upgrade:key.keyboard.unknown
 key_key.advanced_ae.quantum_auto_stock_upgrade:key.keyboard.unknown
 key_key.advanced_ae.quantum_night_vision_upgrade:key.keyboard.unknown
-key_legendarytooltips.key.scrollTooltips:key.keyboard.left.shift
 key_key.parcool.Enable:key.keyboard.p:CONTROL
 key_key.parcool.Crawl:key.keyboard.z
 key_key.parcool.ClingToCliff:key.mouse.right

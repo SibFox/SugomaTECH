@@ -27,7 +27,7 @@
   "item.kubejs.hemolymph_soaked_lungs": "Маринованные в гемолимфе лёгкие",
   "item.kubejs.hemolymph_soaked_stomach": "Маринованный в гемолимфе желудок",
 
-  "liquid.kubejs.liquid_redstone": "Сжиженный редстоун",
+  "fluid.kubejs.liquid_redstone": "Сжиженный редстоун",
 
   "block.kubejs.quartz_glass": "Кварцевое стекло"
 }

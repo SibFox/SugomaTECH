@@ -32,7 +32,7 @@
 		permit_StartSwimByCrawl = true
 
 	[Limitations.Stamina]
-		#Allowed Values: NONE, PARCOOL, HUNGER, PARAGLIDER
+		#Allowed Values: NONE, PARCOOL, HUNGER, PARAGLIDER, EPIC_FIGHT
 		forced_stamina = "NONE"
 		#Permission of infinite stamina
 		allow_infinite_stamina = true
@@ -143,6 +143,26 @@
 		# Default: 2147483647
 		# Range: > 1
 		max_successive_dodge_count = 2147483647
+		#Window time of just time breakfall
+		# Default: 5
+		# Range: > 0
+		justtime_breakfall_tick = 5
+		#Max coyote time tick (how long tick player can behave like on ground after getting off ledge
+		# Default: 3
+		# Range: 0 ~ 20
+		max_coyote_time = 3
+		#Lowest fall distance needed to trigger breakfall movements
+		# Default: 2.0
+		# Range: 0.0 ~ 10.0
+		lowest_fall_distance_for_breakfall = 2.0
+		#How long breakfall can remove damage
+		# Default: 6.0
+		# Range: 0.0 ~ 1.7976931348623157E308
+		max_breakfall_damage_remove_height = 6.0
+		#Damage reduction rate of Breakfall
+		# Default: 0.6
+		# Range: 0.0 ~ 1.0
+		max_breakfall_damage_reduction_rate = 0.6
 
 		[Limitations.Control.Modifier]
 			#How long you can do Horizontal Wall Run
@@ -165,6 +185,10 @@
 			# Default: 1.0
 			# Range: 0.5 ~ 3.0
 			max_dodge-speed_modifier = 1.0
+			#SkyDive speed decrease rate
+			# Default: 0.98
+			# Range: 0.001 ~ 1.0
+			min_sky-dive_speed_decrease = 0.98
 
 		[Limitations.Control.Control]
 			#Allow disabling cooldown of wall jump
@@ -181,3 +205,23 @@
 			# Default: 2147483647
 			# Range: > 1
 			max_successive_dodge_count = 2147483647
+			#Window time of just time breakfall
+			# Default: 5
+			# Range: > 0
+			justtime_breakfall_tick = 5
+			#Max coyote time tick (how long tick player can behave like on ground after getting off ledge
+			# Default: 3
+			# Range: 0 ~ 20
+			max_coyote_time = 3
+			#Lowest fall distance needed to trigger breakfall movements
+			# Default: 2.0
+			# Range: 0.0 ~ 10.0
+			lowest_fall_distance_for_breakfall = 2.0
+			#How long breakfall can remove damage
+			# Default: 6.0
+			# Range: 0.0 ~ 1.7976931348623157E308
+			max_breakfall_damage_remove_height = 6.0
+			#Damage reduction rate of Breakfall
+			# Default: 0.6
+			# Range: 0.0 ~ 1.0
+			max_breakfall_damage_reduction_rate = 0.6
