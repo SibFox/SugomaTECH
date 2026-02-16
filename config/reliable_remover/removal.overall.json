@@ -2,7 +2,10 @@
     {
         "action": "remove",
         "items": [
-            "createaddition:capacitor"
+            "createaddition:capacitor",
+            "twm:tomahawk",
+            "twm:tomahawk_with_torpor",
+            "twm:tomahawk_with_torpor"
         ]
     }
 ]

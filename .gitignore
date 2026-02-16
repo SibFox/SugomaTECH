@@ -201,3 +201,6 @@ config/moonlight-client.toml
 config/supplementaries-common.toml
 config/supplementaries-client.toml
 dynamic-data-pack-cache/hash.txt
+options.txt
+config/packetfixer.properties
+config/reliable_replacer/example_rules.json.disabled
