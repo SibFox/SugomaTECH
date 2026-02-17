@@ -3,31 +3,233 @@
   "item.kubejs.heat_resistant_clay": "Термостойкая глина",
   "item.kubejs.coin": "Монета квеста",
   "item.kubejs.synth_nerve_cables": "Искусственные нервные окончания",
-  "item.kubejs.hemolymph_drop": "Капля гемолимфы",
+  "item.kubejs.hemolymph_drop": "Капелька гемолимфы",
   "item.kubejs.organic_polymer": "Органический полимер",
   "item.kubejs.conducting_organic_polymer": "Проводящий органический полимер",
   "item.morered.red_alloy_ingot": "Слиток краснокаменного сплава",
   "item.kubejs.liquid_redstone_bucket": "Ведро сжиженного редстоуна",
-
+  "fluid.kubejs.liquid_redstone": "Сжиженный редстоун",
+  "block.kubejs.quartz_glass": "Кварцевое стекло",
+  
+  
   "item.kubejs.cooked_lungs": "Приготовленные лёгкие",
   "item.kubejs.cooked_stomach": "Приготовленный желудок",
-  "item.kubejs.minced_brain": "Рублённые мозги",
-  "item.kubejs.cooked_minced_brain": "Приготовленные рублённые мозги",
-  "item.kubejs.minced_heart": "Рублённое сердце",
-  "item.kubejs.cooked_minced_heart": "Приготовленное рублённое сердце",
-  "item.kubejs.minced_liver": "Рублённая печень",
-  "item.kubejs.cooked_minced_liver": "Приготовленная рублённая печень",
-  "item.kubejs.minced_lungs": "Рублённые лёгкие",
-  "item.kubejs.cooked_minced_lungs": "Приготовленные рублённые лёгкие",
-  "item.kubejs.mincd_stomach": "Рублённый желудок",
-  "item.kubejs.cooked_minced_stomach": "Приготовленный рублённый желудок",
-  "item.kubejs.hemolymph_soaked_brain": "Маринованные в гемолимфе мозги",
-  "item.kubejs.hemolymph_soaked_heart": "Маринованное в гемолимфе сердце",
-  "item.kubejs.hemolymph_soaked_liver": "Маринованная в гемолимфе печень",
-  "item.kubejs.hemolymph_soaked_lungs": "Маринованные в гемолимфе лёгкие",
-  "item.kubejs.hemolymph_soaked_stomach": "Маринованный в гемолимфе желудок",
+  "item.kubejs.minced_brain": "Нарезанные мозги",
+  "item.kubejs.cooked_minced_brain": "Приготовленные нарезанные мозги",
+  "item.kubejs.minced_heart": "Рубленое сердце",
+  "item.kubejs.cooked_minced_heart": "Приготовленное рубленое сердце",
+  "item.kubejs.minced_liver": "Рубленая печень",
+  "item.kubejs.cooked_minced_liver": "Приготовленная рубленая печень",
+  "item.kubejs.minced_lungs": "Рубленые лёгкие",
+  "item.kubejs.cooked_minced_lungs": "Приготовленные рубленые лёгкие",
+  "item.kubejs.mincd_stomach": "Рубленый желудок",
+  "item.kubejs.cooked_minced_stomach": "Приготовленный рубленый желудок",
+  "item.kubejs.hemolymph_soaked_brain": "Вымоченные в гемолимфе мозги",
+  "item.kubejs.hemolymph_soaked_heart": "Вымоченное в гемолимфе сердце",
+  "item.kubejs.hemolymph_soaked_liver": "Вымоченная в гемолимфе печень",
+  "item.kubejs.hemolymph_soaked_lungs": "Вымоченные в гемолимфе лёгкие",
+  "item.kubejs.hemolymph_soaked_stomach": "Вымоченный в гемолимфе желудок",
 
-  "fluid.kubejs.liquid_redstone": "Сжиженный редстоун",
 
-  "block.kubejs.quartz_glass": "Кварцевое стекло"
+
+
+
+  "item.bettervannilafishes.amphiprion_percula_bucket": "Оранжевая рыба-клоун в ведре",
+  "item.bettervannilafishes.amphiprion_percula_bucket.desc.": "Маленькие тропические рыбки, ведут стайный образ жизни.",
+  
+  "item.bettervannilafishes.amphiprion_clarkii_bucket": "Шоколадная рыба-клоун в ведре",
+  "item.bettervannilafishes.amphiprion_clarkii_bucket.desc.": "Маленькие тропические рыбки, ведут стайный образ жизни.",
+  
+  "item.bettervannilafishes.amphiprion_perideraion_bucket": "Розовая рыба-клоун в ведре",
+  "item.bettervannilafishes.amphiprion_perideraion_bucket.desc.": "Маленькие тропические рыбки, ведут стайный образ жизни.",
+  
+  "item.bettervannilafishes.amphiprion_polymnus_bucket": "Крупнополосая рыба-клоун в ведре",
+  "item.bettervannilafishes.amphiprion_polymnus_bucket.desc.": "Маленькие тропические рыбки, ведут стайный образ жизни.",
+  
+  "item.bettervannilafishes.premnas_biaculeatus_bucket": "Желтополосая рыба-клоун в ведре",
+  "item.bettervannilafishes.premnas_biaculeatus_bucket.desc.": "Маленькие тропические рыбки, ведут стайный образ жизни.",
+  
+  "item.bettervannilafishes.amphiprion_ocellaris_bucket": "Платиновая рыба-клоун в ведре",
+  "item.bettervannilafishes.amphiprion_ocellaris_bucket.desc.": "Маленькие тропические рыбки, ведут стайный образ жизни.",
+  
+  "item.bettervannilafishes.astronotus_ocellatus_bucket": "Астронотус в ведре",
+  "item.bettervannilafishes.astronotus_ocellatus_bucket.desc.": "Небольшие тропические рыбы, предпочитают песчаный грунт, ведут стайный образ жизни.",
+  
+  "item.bettervannilafishes.gymnogeophagus_balzanii_bucket": "Геофагус Бальзани в ведре",
+  "item.bettervannilafishes.gymnogeophagus_balzanii_bucket.desc.": "Предпочитает водоемы тропических лесов. Ведет стайный образ жизни.",
+  
+  "item.bettervannilafishes.:aequidens_tetramerus_bucket": "Сетчатая акара в ведре",
+  "item.bettervannilafishes.:aequidens_tetramerus_bucket.desc.": "Небольшие тропические рыбы, предпочитают стайный образ жизни.",
+  
+  "item.bettervannilafishes.krobia_guianensis_bucket": "Акара-дельфин в ведре",
+  "item.bettervannilafishes.krobia_guianensis_bucket.desc.": "Небольшие тропические рыбы, предпочитают стайный образ жизни.",
+  
+  "item.bettervannilafishes.cichlasoma_bimaculatum_bucket": "Черная акара в ведре",
+  "item.bettervannilafishes.cichlasoma_bimaculatum_bucket.desc.": "Небольшие тропические рыбы, предпочитают стайный образ жизни.",
+  
+  "item.bettervannilafishes.australoheros_facetus_bucket": "Цихлазома фацетум в ведре",
+  "item.bettervannilafishes.australoheros_facetus_bucket.desc.": "Небольшие тропические рыбы, предпочитают стайный образ жизни.",
+  
+  "item.bettervannilafishes.acanthurus_lineatus_bucket": "Королевская рыба-хирург в ведре",
+  "item.bettervannilafishes.acanthurus_lineatus_bucket.desc.": "Рыба семейства хирургов. Миролюбивы, предпочитают коралловые рифы.",
+  
+  "item.bettervannilafishes.acanthurus_nigricans_bucket": "Златоспинная рыба-хирург в ведре",
+  "item.bettervannilafishes.acanthurus_nigricans_bucket.desc.": "Рыба семейства хирургов. Миролюбивы, предпочитают коралловые рифы.",
+  
+  "item.bettervannilafishes.acanthurus_triostegus_bucket": "Хирург-зебра в ведре",
+  "item.bettervannilafishes.acanthurus_triostegus_bucket.desc.": "Рыба семейства хирургов. Миролюбивы, предпочитают коралловые рифы.",
+  
+  "item.bettervannilafishes.paracanthurus_hepatus_bucket": "Королевская рыба-хирург в ведре",
+  "item.bettervannilafishes.paracanthurus_hepatus_bucket.desc.": "Рыба семейства хирургов. Миролюбивы, предпочитают коралловые рифы.",
+  
+  "item.bettervannilafishes.acanthurus_leucosternon_bucket": "Белогрудая рыба-хирург в ведре",
+  "item.bettervannilafishes.acanthurus_leucosternon_bucket.desc.": "Рыба семейства хирургов. Миролюбивы, предпочитают коралловые рифы.",
+  
+  "item.bettervannilafishes.acanthurus_leucosternon_bucket": "Белогрудая рыба-хирург в ведре",
+  "item.bettervannilafishes.acanthurus_leucosternon_bucket.desc.": "Рыба семейства хирургов. Миролюбивы, предпочитают коралловые рифы.",
+  
+  "item.bettervannilafishes.acanthurus_achilles_bucket": "Хирург-Ахиллес в ведре",
+  "item.bettervannilafishes.acanthurus_achilles_bucket.desc.": "Рыба семейства хирургов. Миролюбивы, предпочитают коралловые рифы.",
+  
+  "item.bettervannilafishes.galeocerdo_cuvier_bucket": "Тигровая акула...В ведре.",
+  "item.bettervannilafishes.galeocerdo_cuvier_bucket.desc.": "Агрессивны. Лучше содержать в отдельном крупном танкере.",
+  
+  "item.bettervannilafishes.spearfish_bucket": "Рыба-меч в ведре",
+  "item.bettervannilafishes.spearfish_bucket.desc.": "Агрессивны. Лучше содержать в отдельном крупном танкере.",
+  
+  "item.bettervannilafishes.feather_star_bucket": "Перистая звезда в ведре",
+  "item.bettervannilafishes.feather_star_bucket.desc.": "Второе название - 'Морская лилия'. Хорошо приживается рядом с коралловыми рифами.",
+  
+  "item.bettervannilafishes.nautilus_bucket": "Наутилус в ведре",
+  "item.bettervannilafishes.nautilus_bucket.desc.": "Предпочитают коралловые рифы и песчаное дно. Могут ужиться с акулами.",
+  
+  "item.bettervannilafishes.porcupine_fish_bucket": "Иглобрюх в ведре",
+  "item.bettervannilafishes.porcupine_fish_bucket.desc.": "Предпочитают коралловые рифы и подводные луга без хищных рыб.",
+  
+  "item.bettervannilafishes.obscure_puffer_bucket": "Рыба-фугу в ведре",
+  "item.bettervannilafishes.obscure_puffer_bucket.desc.": "Предпочитают коралловые рифы и подводные луга без хищных рыб.",
+  
+  "item.bettervannilafishes.yellow_fin_puffer_bucket": "Такифугу в ведре",
+  "item.bettervannilafishes.yellow_fin_puffer_bucket.desc.": "Предпочитают коралловые рифы и подводные луга без хищных рыб.",
+  
+  "item.bettervannilafishes.pacific_salmon_bucket": "Тихоокеанская треска в ведре",
+  "item.bettervannilafishes.pacific_salmon_bucket.desc.": "Холодолюбивая рыба. Требует большое простраство из-за своих крупных размеров.",
+  
+  "item.bettervannilafishes.female_salmon_bucket": "Лосось в ведре, самка",
+  "item.bettervannilafishes.female_salmon_bucket.desc.": "Холодолюбивая рыба. Требует большое простраство из-за своих крупных размеров.",
+  
+  "item.bettervannilafishes.male_salmon_bucket": "Лосось в ведре, самец",
+  "item.bettervannilafishes.male_salmon_bucket.desc.": "Холодолюбивая рыба. Требует большое простраство из-за своих крупных размеров.",
+  
+  "item.bettervannilafishes.pacific_cod_bucket": "Тихоокеанская треска в ведре",
+  "item.bettervannilafishes.pacific_cod_bucket.desc.": "Холодолюбивая рыба. Требует большое простраство из-за своих крупных размеров.",
+  
+  "item.bettervannilafishes.atlantic_cod_bucket": "Атлантическая треска в ведре",
+  "item.bettervannilafishes.atlantic_cod_bucket.desc.": "Холодолюбивая рыба. Требует большое простраство из-за своих крупных размеров.",
+  
+  "item.bettervannilafishes.haddock_cod_bucket": "Пикша в ведре",
+  "item.bettervannilafishes.haddock_cod_bucket.desc.": "Холодолюбивая рыба средних размеров. Предпочитает селиться стайками.",
+  
+  
+  
+  РЫБЫ (мертвые, лут - необязательно, но было бы прикольно добавить описание)
+  
+  "item.bettervannilafishes.enchanted_pufferfish": "Зачарованный иглобрюх",*(Вообще можно удалить как предмет)
+  "item.bettervannilafishes.enchanted_pufferfish.desc.": "Какое разочарование.",
+  
+  "item.bettervannilafishes.haddock_cod": "Пикша",
+  "item.bettervannilafishes.haddock_cod.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.atlantic_cod": "Атлантическая треска",
+  "item.bettervannilafishes.atlantic_cod.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.pacific_cod": "Тихоокеанская треска",
+  "item.bettervannilafishes.pacific_cod.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.male_salmon": "Лосось, самец",
+  "item.bettervannilafishes.male_salmon.desc.": "Сырой.",
+  
+  "item.bettervannilafishes.female_salmon": "Лосось, самка",
+  "item.bettervannilafishes.female_salmon.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.pacific_salmon": "Тихоокеанский лосось",
+  "item.bettervannilafishes.pacific_salmon.desc.": "Сырой.",
+  
+  "item.bettervannilafishes.yellow_fin_puffer": "Такифугу",
+  "item.bettervannilafishes.yellow_fin_puffer.desc.": "Сырая. Ядовитая?", *(Добавить эффект отравления и тьмы)
+  
+  "item.bettervannilafishes.obscure_puffer": "Рыба-фугу",
+  "item.bettervannilafishes.obscure_puffer.desc.": "Сырая. Ядовитая?", *(Добавить эффект отравления и тьмы)
+  
+  "item.bettervannilafishes.porcupine_fish": "Иглобрюх",
+  "item.bettervannilafishes.porcupine_fish.desc.": "Сырой. И колючий..",
+  
+  "item.bettervannilafishes.spearfish": "Рыба-меч",
+  "item.bettervannilafishes.spearfish.desc.": "Величественная рыба. Сырая.",
+  
+  "item.bettervannilafishes.cooked_spearfish": "Приготовленная рыба-меч",
+  "item.bettervannilafishes.cooked_spearfish.desc.": "Величественная рыба. Вкусная.",
+  
+  "item.bettervannilafishes.galeocerdo_cuvier": "Тигровая акула",
+  "item.bettervannilafishes.galeocerdo_cuvier.desc.": "Величественная рыба. Сырая.",
+  
+  "item.bettervannilafishes.shark_fin": "Акулий плавник",
+  "item.bettervannilafishes.shark_fin.desc.": "Упругий..",
+  
+  "item.bettervannilafishes.acanthurus_achilles": "Хирург-Ахиллес",
+  "item.bettervannilafishes.acanthurus_achilles.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.acanthurus_leucosternon": "Белогрудая рыба-хирург",
+  "item.bettervannilafishes.acanthurus_leucosternon.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.paracanthurus_hepatus": "Королевская рыба-хирург",
+  "item.bettervannilafishes.paracanthurus_hepatus.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.acanthurus_triostegus": "Хирург-зебра",
+  "item.bettervannilafishes.acanthurus_triostegus.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.acanthurus_nigricans": "Златоспинная рыба-хирург",
+  "item.bettervannilafishes.acanthurus_nigricans.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.acanthurus_lineatus": "Полосатая рыба-хирург",
+  "item.bettervannilafishes.acanthurus_lineatus.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.australoheros_facetus": "Цихлазома фацетум",
+  "item.bettervannilafishes.australoheros_facetus.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.cichlasoma_bimaculatum": "Черная акара",
+  "item.bettervannilafishes.cichlasoma_bimaculatum.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.krobia_guianensis": "Акара-дельфин",
+  "item.bettervannilafishes.krobia_guianensis.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.aequidens_tetramerus": "Сетчатая акара",
+  "item.bettervannilafishes.aequidens_tetramerus.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.gymnogeophagus_balzanii": "Геофагус Бальзани",
+  "item.bettervannilafishes.gymnogeophagus_balzanii.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.astronotus_ocellatus": "Астронотус",
+  "item.bettervannilafishes.astronotus_ocellatus.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.amphiprion_ocellaris": "Платиновая рыба-клоун",
+  "item.bettervannilafishes.amphiprion_ocellaris.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.premnas_biaculeatus": "Желтополосая рыба-клоун",
+  "item.bettervannilafishes.premnas_biaculeatus.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.amphiprion_polymnus": "Крупнополосая рыба-клоун",
+  "item.bettervannilafishes.amphiprion_polymnus.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.amphiprion_perideraion": "Розовая рыба-клоун",
+  "item.bettervannilafishes.amphiprion_perideraion.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.amphiprion_clarkii": "Шоколадная рыба-клоун",
+  "item.bettervannilafishes.amphiprion_clarkii.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.amphiprion_percula": "Оранжевая рыба-клоун",
+  "item.bettervannilafishes.amphiprion_percula.desc.": "Сырая.",
+  
+  "item.bettervannilafishes.feather_star_tentacle": "Перистая звезда",
+  "item.bettervannilafishes.feather_star_tentacle.desc.": "Полая, как панцирь."
 }
