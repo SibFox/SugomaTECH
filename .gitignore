@@ -204,3 +204,4 @@ dynamic-data-pack-cache/hash.txt
 options.txt
 config/packetfixer.properties
 config/reliable_replacer/example_rules.json.disabled
+config/drippyloadingscreen/early_window_reference.properties

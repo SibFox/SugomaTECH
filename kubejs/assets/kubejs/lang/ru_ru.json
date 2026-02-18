@@ -33,7 +33,6 @@
 
 
 
-
   "item.bettervannilafishes.amphiprion_percula_bucket": "Оранжевая рыба-клоун в ведре",
   "item.bettervannilafishes.amphiprion_percula_bucket.desc.": "Маленькие тропические рыбки, ведут стайный образ жизни.",
   
@@ -85,9 +84,6 @@
   "item.bettervannilafishes.acanthurus_leucosternon_bucket": "Белогрудая рыба-хирург в ведре",
   "item.bettervannilafishes.acanthurus_leucosternon_bucket.desc.": "Рыба семейства хирургов. Миролюбивы, предпочитают коралловые рифы.",
   
-  "item.bettervannilafishes.acanthurus_leucosternon_bucket": "Белогрудая рыба-хирург в ведре",
-  "item.bettervannilafishes.acanthurus_leucosternon_bucket.desc.": "Рыба семейства хирургов. Миролюбивы, предпочитают коралловые рифы.",
-  
   "item.bettervannilafishes.acanthurus_achilles_bucket": "Хирург-Ахиллес в ведре",
   "item.bettervannilafishes.acanthurus_achilles_bucket.desc.": "Рыба семейства хирургов. Миролюбивы, предпочитают коралловые рифы.",
   
@@ -132,9 +128,10 @@
   
   
   
-  РЫБЫ (мертвые, лут - необязательно, но было бы прикольно добавить описание)
+  "comm": "РЫБЫ (мертвые, лут - необязательно, но было бы прикольно добавить описание)",
   
-  "item.bettervannilafishes.enchanted_pufferfish": "Зачарованный иглобрюх",*(Вообще можно удалить как предмет)
+  "item.bettervannilafishes.enchanted_pufferfish": "Зачарованный иглобрюх",
+  "comm1": "*(Вообще можно удалить как предмет)",
   "item.bettervannilafishes.enchanted_pufferfish.desc.": "Какое разочарование.",
   
   "item.bettervannilafishes.haddock_cod": "Пикша",
@@ -156,10 +153,12 @@
   "item.bettervannilafishes.pacific_salmon.desc.": "Сырой.",
   
   "item.bettervannilafishes.yellow_fin_puffer": "Такифугу",
-  "item.bettervannilafishes.yellow_fin_puffer.desc.": "Сырая. Ядовитая?", *(Добавить эффект отравления и тьмы)
+  "item.bettervannilafishes.yellow_fin_puffer.desc.": "Сырая. Ядовитая?", 
+  "comm2": "*(Добавить эффект отравления и тьмы)",
   
   "item.bettervannilafishes.obscure_puffer": "Рыба-фугу",
-  "item.bettervannilafishes.obscure_puffer.desc.": "Сырая. Ядовитая?", *(Добавить эффект отравления и тьмы)
+  "item.bettervannilafishes.obscure_puffer.desc.": "Сырая. Ядовитая?",
+  "comm3": "*(Добавить эффект отравления и тьмы)",
   
   "item.bettervannilafishes.porcupine_fish": "Иглобрюх",
   "item.bettervannilafishes.porcupine_fish.desc.": "Сырой. И колючий..",

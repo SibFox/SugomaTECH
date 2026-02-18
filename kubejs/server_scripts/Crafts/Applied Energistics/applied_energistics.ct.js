@@ -57,7 +57,7 @@ const registerAECTRecipes = (evt) => {
             asItem(item.ingot.vanadoalumite, 4),
             asItem(item.plate.lapis, 4)
         ],
-        asItem(item.ingot.entro, 4)
+        asItem(item.ingot.entro, 8)
     )
     
     aeAssemblerRecipe(evt, getRecipeID('sky_steel'),
