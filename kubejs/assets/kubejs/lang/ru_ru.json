@@ -29,8 +29,16 @@
   "item.kubejs.hemolymph_soaked_liver": "Вымоченная в гемолимфе печень",
   "item.kubejs.hemolymph_soaked_lungs": "Вымоченные в гемолимфе лёгкие",
   "item.kubejs.hemolymph_soaked_stomach": "Вымоченный в гемолимфе желудок",
-
-
+  
+  
+  "item.bettervannilafishes.haddock_cod_specimen": "Трофейная пикша",
+  "item.bettervannilafishes.atlantic_cod_specimen": "Трофейная атлантическая треска",
+  "item.bettervannilafishes.pacific_cod_specimen": "Трофейная тихоокеанская треска",
+  "item.bettervannilafishes.pacific_salmon_specimen": "Трофейный тихоокеанский лосось",
+  "item.bettervannilafishes.male_salmon_specimen": "Трофейный лосось, самец",
+  "item.bettervannilafishes.female_salmon_specimen": "Трофейфый лосось, самка",
+  "item.bettervannilafishes.spearfish_specimen": "Трофейная рыба-меч",
+  "item.bettervannilafishes.galeocerdo_cuvier_specimen": "Трофейная тигровая акула",
 
 
   "item.bettervannilafishes.amphiprion_percula_bucket": "Оранжевая рыба-клоун в ведре",
