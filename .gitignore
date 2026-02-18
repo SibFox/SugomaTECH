@@ -205,3 +205,11 @@ options.txt
 config/packetfixer.properties
 config/reliable_replacer/example_rules.json.disabled
 config/drippyloadingscreen/early_window_reference.properties
+config/appleskin-client.toml
+config/ambientsounds-client.json
+config/beautifiedchatclient.json5
+config/betteradvancements-client.toml
+config/betterclouds-v1.json
+config/dynamic_fps.json
+/config/inventoryprofilesnext
+config/saturn-optimizations.toml

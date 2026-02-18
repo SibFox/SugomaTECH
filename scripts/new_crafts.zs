@@ -261,45 +261,45 @@ var cc_wired_modem = <item:computercraft:wired_modem>;
 
 
 // ~~~~~~~~~~ Phasorite Networks ~~~~~~~~~~ 
-var pn_crystal = <item:phasoritenetworks:phasorite_crystal>;
-var pn_charged_crystal = <item:phasoritenetworks:charged_phasorite_crystal>;
-var pn_lens = <item:phasoritenetworks:phasorite_lens>;
-var pn_core = <item:phasoritenetworks:phasorite_core>;
+// var pn_crystal = <item:phasoritenetworks:phasorite_crystal>;
+// var pn_charged_crystal = <item:phasoritenetworks:charged_phasorite_crystal>;
+// var pn_lens = <item:phasoritenetworks:phasorite_lens>;
+// var pn_core = <item:phasoritenetworks:phasorite_core>;
 
 
 // ~~~~~~~~~~ Create / Create: Crafts & Additions ~~~~~~~~~~
-var c_shaft = <item:create:shaft>;
-var c_andesite_alloy = <item:create:andesite_alloy>;
-var c_brass_casing = <item:create:brass_casing>;
-var cca_spool = <item:createaddition:spool>;
-var cca_copper_spool = <item:createaddition:copper_spool>;
-var cca_gold_spool = <item:createaddition:gold_spool>;
-var cca_electrum_spool = <item:createaddition:electrum_spool>;
-var cca_connector = <item:createaddition:connector>;
+// var c_shaft = <item:create:shaft>;
+// var c_andesite_alloy = <item:create:andesite_alloy>;
+// var c_brass_casing = <item:create:brass_casing>;
+// var cca_spool = <item:createaddition:spool>;
+// var cca_copper_spool = <item:createaddition:copper_spool>;
+// var cca_gold_spool = <item:createaddition:gold_spool>;
+// var cca_electrum_spool = <item:createaddition:electrum_spool>;
+// var cca_connector = <item:createaddition:connector>;
 
 
 // ~~~~~~~~~~ Immersive Aircraft/Machinery ~~~~~~~~~~ 
-var ia_engine = <item:immersive_aircraft:engine>;
-var ia_boiler = <item:immersive_aircraft:boiler>;
-var ia_propeller = <item:immersive_aircraft:propeller>;
-var ia_sail = <item:immersive_aircraft:sail>;
-var ia_hull = <item:immersive_aircraft:hull>;
-var ia_redstone_mechanism = <item:immersive_machinery:redstone_mechanism>;
+// var ia_engine = <item:immersive_aircraft:engine>;
+// var ia_boiler = <item:immersive_aircraft:boiler>;
+// var ia_propeller = <item:immersive_aircraft:propeller>;
+// var ia_sail = <item:immersive_aircraft:sail>;
+// var ia_hull = <item:immersive_aircraft:hull>;
+// var ia_redstone_mechanism = <item:immersive_machinery:redstone_mechanism>;
 
 
 // ~~~~~~~~~~ Genetics Resequenced ~~~~~~~~~~ 
-var gr_cell = <item:geneticsresequenced:gmo_cell>;
+// var gr_cell = <item:geneticsresequenced:gmo_cell>;
 
 
 // ~~~~~~~~~~ Point Blank ~~~~~~~~~~ 
-var pb_kamicat_p = <item:pointblank:processor>;
-var pb_gunmetal_ingot = <item:pointblank:gunmetal_ingot>;
-var pb_guninternals = <item:pointblank:guninternals>;
+// var pb_kamicat_p = <item:pointblank:processor>;
+// var pb_gunmetal_ingot = <item:pointblank:gunmetal_ingot>;
+// var pb_guninternals = <item:pointblank:guninternals>;
 
 
 // ~~~~~~~~~~ Modular Force Fields System ~~~~~~~~~~ 
-var mffs_focus_matrix = <item:mffs:focus_matrix>;
-var mffs_blank_card = <item:mffs:blank_card>;
+// var mffs_focus_matrix = <item:mffs:focus_matrix>;
+// var mffs_blank_card = <item:mffs:blank_card>;
 
 
 

@@ -90,5 +90,46 @@ const registerFoods = (evt) => {
     })
     
 
+    evt.create('plated_brain_arphex').food(food => {
+        food
+            .nutrition(12)
+            .saturation(0.5)
+            .effect('minecraft:blindness', 200, 0, 0.9) // моментально пропадает по неизвестной причине
+            .effect('minecraft:darkness', 300, 0, 0.9)
+            .effect('minecraft:poison', 120, 0, 0.5)
+            .effect('arphex:enhanced_senses', 3600, 0, 1)
+    })
+    evt.create('plated_brain_end').food(food => {
+        food
+            .nutrition(20)
+            .saturation(1)
+            .effect('minecraft:blindness', 200, 1, 0.8)
+            .effect('minecraft:darkness', 300, 1, 0.8)
+    })
+    evt.create('plated_brain_nether').food(food => {
+        food
+            .nutrition(20)
+            .saturation(0.5)
+            .effect('minecraft:blindness', 200, 1, 0.8)
+            .effect('minecraft:darkness', 300, 1, 0.8)
+    })
+    evt.create('plated_minced_brain_stew').food(food => {
+        food
+            .nutrition(10)
+            .saturation(1)
+            .effect('minecraft:blindness', 200, 0, 1)
+            .effect('minecraft:darkness', 300, 0, 1)
+    })
+    evt.create('plated_minced_brain_with_milk').food(food => {
+        food
+            .nutrition(10)
+            .saturation(0.5)
+            .effect('minecraft:blindness', 200, 0, 1)
+            .effect('minecraft:darkness', 300, 0, 1)
+    })
+
+
+
+
     console.info('Food registry passed')
 }
