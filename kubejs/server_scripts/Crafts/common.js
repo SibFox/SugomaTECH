@@ -56,5 +56,39 @@ const registerCommonRecipes = (evt) => {
         ]
     )
 
+    cElectrifyRecipe(evt, recipeID('electrum_nugget'),
+        4000,
+        asItem(tag.nugget.gold),
+        asItem(item.nugget.electrum)
+    )
+
+    cElectrifyRecipe(evt, recipeID('electrum_ingot'),
+        36000,
+        asItem(tag.ingot.gold),
+        asItem(item.ingot.electrum)
+    )
+    
+    cElectrifyRecipe(evt, recipeID('electrum_plate'),
+        36000,
+        asItem(tag.plate.gold),
+        asItem(item.plate.electrum)
+    )
+    
+    cElectrifyRecipe(evt, recipeID('electrum_block'),
+        324000,
+        asItem(tag.ore_block.gold),
+        asItem(item.ore_block.electrum)
+    )
+    
+    cElectrifyRecipe(evt, recipeID('conducting_organic_polymer'),
+        6000,
+        asItem(item.custom.organic_polymer),
+        asItem(item.custom.conducting_organic_polymer)
+    )
+    
+    
+    
+    
+
     console.info('Common recipe adding passed')
 }

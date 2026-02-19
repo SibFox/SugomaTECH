@@ -849,13 +849,14 @@ const registerCyberneticsETRecipes = (evt) => {
             ' GTT ',
             'GTPET',
             'TPMDT',
-            'TEPET',
+            'TEPZT',
             ' TTT '
         ],{
             T: item.cn.titanium_plating,
             G: item.dye.green,
             P: item.custom.organic_polymer,
-            E: item.create.electron_tube,
+            E: item.iu.capacitor.lvl3,
+            Z: item.iu.transistor.lvl2,
             M: 'minecraft:milk_bucket',
             D: 'minecraft:dispenser'
         }
@@ -1093,7 +1094,7 @@ const registerCyberneticsETRecipes = (evt) => {
             ' N  N'
         ],{
             T: item.cn.titanium_plating,
-            E: item.create.electron_tube,
+            E: item.iu.transistor.lvl2,
             S: item.cn.storage,
             N: item.nugget.titanium
         }

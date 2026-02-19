@@ -79,4 +79,13 @@ const registerCreateCTRecipes = (evt) => {
             [ item.plate.iron ]
         ],
     item.create.spool.item, 4)
+
+    shapedRecipe(evt, getRecipeID('mechanical_drill'),
+        [
+            [ item.ia.iron_drill ],
+            [ item.create.casing.andesite ],
+            [ tag.gear.titanium ]
+        ],
+    'create:mechanical_drill')
+    
 }

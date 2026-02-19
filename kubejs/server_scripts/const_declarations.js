@@ -138,10 +138,11 @@ const item = {
         electrum: 'industrialupgrade:itemplates/electrum_plate',
         zinc: 'industrialupgrade:itemplates/zinc_plate',
         titanium: 'industrialupgrade:itemplates/titanium_plate',
+        obsidian: 'industrialupgrade:itemplates/obsidian_plate',
+        lapis: 'industrialupgrade:itemplates/lapis_plate',
         titanium_steel: 'industrialupgrade:crafting_elements/crafting_501_element',
         niobium_titanium: 'industrialupgrade:alloyplate/niobium_titanium',
         red_brass: 'industrialupgrade:alloyplate/red_brass',
-        lapis: 'industrialupgrade:itemplates/lapis_plate',
     },
 
     rod: {
@@ -177,6 +178,7 @@ const item = {
         rubber: 'industrialupgrade:crafting_elements/crafting_271_element',
         compressed_redstone: 'industrialupgrade:compressed_redstone',
         polypropylene: 'industrialupgrade:crafting_elements/crafting_484_element',
+        tempered_glass: 'industrialupgrade:blockresource/tempered_glass',
 
         graphene_wire: 'industrialupgrade:graphene_wire',
         base_generator: 'industrialupgrade:basemachine3/generator_iu',
@@ -410,6 +412,22 @@ const item = {
             repulsor_shield: 'industrialupgrade:crafting_elements/crafting_439_element',
             ore: 'industrialupgrade:crafting_elements/crafting_53_element',
             boosting: 'industrialupgrade:crafting_elements/crafting_155_element',
+            macerator: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_69_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_2_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_78_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_103_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_602_element',
+            },
+            cutting: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_132_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_133_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_134_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_136_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_612_element',
+            },
+            assembler: 'industrialupgrade:crafting_elements/crafting_243_element',
+
         },
 
         spool: {
@@ -571,11 +589,17 @@ const item = {
         redstone_crystal: 'appflux:redstone_crystal',
         charged_redstone_crystal: 'appflux:charged_redstone',
         sky_dust: 'ae2:sky_dust',
+        ender_dust: 'ae2:ender_dust',
         singularity: 'ae2:singularity',
+        quantum_singularity: 'ae2:quantum_entangled_singularity',
         shattered_singularity: 'advanced_ae:shattered_singularity',
+        wireless_receiver: 'ae2:wireless_receiver',
+        vibrant_glass: 'ae2:quartz_glass',
 
         silicon: 'ae2:silicon',
         printed_silicon: 'ae2:printed_silicon',
+
+        extended_machine_frame: 'extendedae:machine_frame',
 
         processor: {
             logic: 'ae2:logic_processor',
@@ -771,6 +795,7 @@ const item = {
         industrial_gears: 'immersive_aircraft:industrial_gears',
         sturdy_pipes: 'immersive_aircraft:sturdy_pipes',
         improved_landing_gear: 'immersive_aircraft:improved_landing_gear',
+        iron_drill: 'immersive_machinery:iron_drill',
     },
 
     // ~~~~~~~~~~~~~~~~~~~~ Genetics Resequenced ~~~~~~~~~~~~~~~~~~~~
@@ -821,6 +846,7 @@ const tag = {
     string: '#c:strings',
     obsidian: '#c:obsidians',
     slime_ball: '#c:slime_balls',
+    certus_quartz: '#ae2:all_certus_quartz',
     
     rods: '#c:rods',
     shaft: '#techoma:shafts',
@@ -866,6 +892,7 @@ const tag = {
         nichrome: '#c:plates/nichrome',
         zinc: '#c:plates/zinc',
         cobalt: '#c:plates/cobalt',
+        obsidian: '#c:plates/obsidian',
         composite: '#c:plates/advancedalloy',
         steel: '#c:plates/steel',
         alumel: '#c:plates/alumel',

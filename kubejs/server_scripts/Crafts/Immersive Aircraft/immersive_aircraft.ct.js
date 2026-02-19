@@ -90,4 +90,19 @@ const registerIACTRecipes = (evt) => {
         ],
     item.ia.eco_engine)
 
+    evt.shaped(
+        Item.of(item.ia.iron_drill, 1),
+        [
+            ' P ',
+            'PDP',
+            'PBP'
+        ],{
+            P: tag.plate.iron,
+            B: tag.ore_block.iron,
+            D: item.iu.drilling_bit.iron
+        }
+    ).id(getRecipeID('iron_drill'))
+    
+    
+
 }

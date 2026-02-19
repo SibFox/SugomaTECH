@@ -44,6 +44,56 @@ const registerAECTRecipes = (evt) => {
         ]
     ).id(getRecipeID('silicon_x8'))
 
+    shapedRecipe(evt, getRecipeID('inscriber'),
+        [
+            [ item.iu.module.macerator.lvl2, null, item.iu.module.cutting.lvl2 ],
+            [ item.ae.processor.calculation, item.iu.machine_corpus.tech, item.ae.processor.logic ],
+            [ item.iu.module.slot.x3, item.iu.electromotor.lvl2, item.iu.module.slot.x1 ]
+        ],
+    'ae2:inscriber')
+
+    
+    
+    evt.shaped(
+        Item.of(item.ae.extended_machine_frame, 1),
+        [
+            'ETE',
+            'SCS',
+            'ETE'
+        ],{
+            E: item.ingot.entro,
+            T: item.ingot.sky_steel,
+            S: item.ingot.sky_bronze,
+            C: item.iu.machine_corpus.advanced_tech
+        }
+    ).id(getRecipeID('extended_machine_frame'))
+
+    evt.shaped(
+        Item.of(item.ae.extended_machine_frame, 1),
+        [
+            'ESE',
+            'TCT',
+            'ESE'
+        ],{
+            E: item.ingot.entro,
+            T: item.ingot.sky_steel,
+            S: item.ingot.sky_bronze,
+            C: item.iu.machine_corpus.advanced_tech
+        }
+    ).id(getRecipeID('extended_machine_frame'))
+    
+    
+    
+    shapedRecipe(evt, getRecipeID('crystal_assembler'),
+        [
+            [ null, item.iu.module.assembler, null ],
+            [ item.ae.processor.logic, item.ae.extended_machine_frame, item.ae.processor.concurrent ],
+            [ item.iu.module.slot.x8, item.iu.electromotor.lvl2, item.iu.module.tank.storage ]
+        ],
+    'extendedae:crystal_assembler')
+
+
+
     aeReactionRecipe(evt, getRecipeID('quantum_alloy'),
         200000, asItem(fluid.quantum_infusion, 1000),
         [ asItem(item.ingot.woods_alloy, 4), asItem(item.ae.shattered_singularity, 4), asItem(item.ae.singularity, 4) ],
@@ -51,7 +101,7 @@ const registerAECTRecipes = (evt) => {
     )
 
     aeAssemblerRecipe(evt, getRecipeID('entro_ingot'),
-        asItem(fluid.redstone, 100),
+        asItem(fluid.redstone, 144),
         [
             asItem(item.ae.entro_dust, 4),
             asItem(item.ingot.vanadoalumite, 4),
@@ -81,11 +131,11 @@ const registerAECTRecipes = (evt) => {
     )
 
     aeReactionRecipe(evt, getRecipeID('entro_ingot'),
-        500000, asItem(fluid.redstone, 1000),
+        500000, asItem(fluid.redstone, 1440),
         [
-            asItem(item.ae.entro_dust, 32),
-            asItem(item.ingot.vanadoalumite, 32),
-            asItem(item.ae.sky_dust, 32)
+            asItem(item.ae.entro_dust, 24),
+            asItem(item.ingot.vanadoalumite, 24),
+            asItem(item.ae.sky_dust, 24)
         ],
         asItem(item.ingot.entro, 64)
     )
@@ -93,9 +143,9 @@ const registerAECTRecipes = (evt) => {
     aeReactionRecipe(evt, getRecipeID('sky_steel'),
         300000, asItem(fluid.lava, 1000),
         [
-            asItem(item.ae.charged_certus_quartz_crystal, 32),
-            asItem(item.ingot.titanium_steel, 32),
-            asItem(item.ae.sky_dust, 32)
+            asItem(item.ae.charged_certus_quartz_crystal, 24),
+            asItem(item.ingot.titanium_steel, 24),
+            asItem(item.ae.sky_dust, 24)
         ],
         asItem(item.ingot.sky_steel, 64)
     )
@@ -103,11 +153,23 @@ const registerAECTRecipes = (evt) => {
     aeReactionRecipe(evt, getRecipeID('sky_bronze'),
         250000, asItem(fluid.lava, 1000),
         [
-            asItem(item.ae.charged_certus_quartz_crystal, 32),
-            asItem(item.ingot.bronze, 32),
-            asItem(item.ae.sky_dust, 32),
+            asItem(item.ae.charged_certus_quartz_crystal, 24),
+            asItem(item.ingot.bronze, 24),
+            asItem(item.ae.sky_dust, 24),
         ],
         asItem(item.ingot.sky_bronze, 64)
     )
+    
+    aeReactionRecipe(evt, getRecipeID('shattered_singularity'),
+        200000, asItem(fluid.redstone, 720),
+        [
+            asItem(item.ae.quantum_singularity, 2),
+            asItem(item.ae.ender_dust, 2),
+            asItem(item.ae.sky_dust, 2)
+        ],
+        asItem(item.ae.shattered_singularity, 2)
+    )
+    
+    
 
 }

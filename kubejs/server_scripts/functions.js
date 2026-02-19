@@ -107,6 +107,7 @@ const shapedRecipe = (evt, id, inputs, output, amount) => {
             }
         }
     }
+    console.info(id)
     evt.shaped(
         Item.of(output, amount),
         pattern,
@@ -255,6 +256,7 @@ const aeReactionRecipe = (evt, id, energy, input_fluid, input_items, output) => 
 
     if (output.isTag) {
         console.error("Recipe output was a Tag in AE Reaction chamber. Recipe ID: " + id)
+        return
     }
     if (output.isFluid) {
         output_ready["#t"] = "ae2:f"
@@ -285,3 +287,30 @@ const aeReactionRecipe = (evt, id, energy, input_fluid, input_items, output) => 
         "output": output_ready
     }).id(id + '/reaction')
 }
+
+const cElectrifyRecipe = (evt, id, energy, input, output) => {
+        let dict = {
+            "type": "createaddition:charging",
+            "energy": energy,
+            "ingredients": [],
+            "max_charge_rate": 360,
+            "results": [ { "id": output.item } ]
+        }
+
+        if (input.isFluid) {
+            console.error("Recipe input was a Fluid in Create Additions Electrify recipe. Recipe ID: " + id)
+            return
+        }
+        if (output.isFluid || output.isTag) {
+            console.error("Recipe output was not an Item in Create Additions Electrify recipe. Recipe ID: " + id)
+            return
+        }
+
+        if (input.isTag) {
+            dict.ingredients.push({ 'tag': input.item })
+        } else {
+            dict.ingredients.push({ 'item': input.item })            
+        }
+
+        evt.custom(dict).id(id + '/electrify')
+    }

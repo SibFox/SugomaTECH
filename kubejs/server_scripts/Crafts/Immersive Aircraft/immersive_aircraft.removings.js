@@ -16,5 +16,6 @@ const registerIARemovings = (evt) => {
     evt.remove({ output: item.ia.engine })
     evt.remove({ output: item.ia.nether_engine })
     evt.remove({ output: item.ia.eco_engine })
+    evt.remove({ output: item.ia.iron_drill })
     
 }

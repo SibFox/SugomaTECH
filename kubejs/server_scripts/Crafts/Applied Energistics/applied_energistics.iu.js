@@ -200,6 +200,32 @@ const registerAEIURecipes = (evt) => {
         ],
         { "temperature": 3500 }
     )
+
+    iuRecipe(evt, getRecipeID('wireless_booster'), IUMachineCraft.ELECTRONIC_ASSEMBLER,
+        [
+            asItem(item.iu.rom.corpus, 2),
+            asItem(tag.certus_quartz),
+            asItem(item.ae.fluix_dust),
+            asItem(item.ae.ender_dust),
+            asItem(item.iu.chip.lvl1)
+        ],[
+            asItem(item.ae.wireless_booster, 2)
+        ]
+    )
+
+    iuRecipe(evt, getRecipeID('vibrant_glass'), IUMachineCraft.FLUID_INTEGRATOR,
+        [
+            asItem(fluid.glowstone, 288),
+            asItem(item.iu.tempered_glass)
+        ],[
+            asItem(item.ae.vibrant_glass),
+            asItem(fluid.oxygen, 25)
+        ]
+    )
+    
+    
+    
+    
     
     
 

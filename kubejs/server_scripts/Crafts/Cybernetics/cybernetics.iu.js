@@ -33,32 +33,29 @@ const registerCyberneticsIURecipes = (evt) => {
         ]
     )
 
-    iuRecipe(evt, getRecipeID('ssd'), IUMachineCraft.ELECTRONIC_ASSEMBLER,
+    iuRecipe(evt, getRecipeID('ssd'), IUMachineCraft.CIRCUIT_MANUFACTURER,
         [
             asItem(item.iu.rom.corpus),
-            asItem(item.ingot.red_alloy),
-            asItem('industrialupgrade:crafting_elements/crafting_590_element'),
-            asItem(item.iu.capacitor.lvl3),
+            asItem(item.iu.chip.lvl3),
+            asItem('industrialupgrade:crafting_elements/crafting_560_element'),
+            asItem(item.iu.capacitor.lvl3, 2),
             asItem(item.iu.ram.interface)
         ],[
             asItem(item.cn.ssd)
-        ]
+        ],
+        { "temperature": 1250 }
     )
     
-    iuRecipe(evt, getRecipeID('gpu'), IUMachineCraft.ELECTRONIC_ASSEMBLER,
+    iuRecipe(evt, getRecipeID('gpu'), IUMachineCraft.CIRCUIT_MANUFACTURER,
         [
             asItem(item.iu.rom.corpus),
-            asItem('industrialupgrade:crafting_elements/crafting_560_element'),
             asItem(item.iu.chip.lvl3),
+            asItem('industrialupgrade:crafting_elements/crafting_560_element'),
             asItem(item.iu.diode.lvl2, 2),
             asItem(item.iu.cooling_system.lvl2)
         ],[
             asItem(item.cn.gpu)
-        ]
+        ],
+        { "temperature": 1250 }
     )
-    
-    
-
-    // "createcybernetics:component_wiring",
-    // "createcybernetics:netherite_qpu"
 }
