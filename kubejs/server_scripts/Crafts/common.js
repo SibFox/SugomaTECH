@@ -56,20 +56,5 @@ const registerCommonRecipes = (evt) => {
         ]
     )
 
-    // evt.custom({
-    //     "type": "industrialupgrade:universal_recipe",
-    //     "recipe_type": "solid_electrolyzer",
-    //     "isFluidRecipe": false,
-    //     "inputs": [
-    //         { "type": "item", "id": "kubejs:organic_polymer", "amount": 1 },
-    //         { "type": "fluid", "id": "minecraft:water", "amount": 50 }
-    //     ],
-    //     "outputs": [
-    //         { "type": "item", "id": "kubejs:conducting_organic_polymer", "amount": 1 },
-    //         { "type": "fluid", "id": "minecraft:water", "amount": 50 }
-    //     ],
-    //     "params": {}
-    // })
-
     console.info('Common recipe adding passed')
 }

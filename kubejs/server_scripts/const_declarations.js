@@ -27,6 +27,7 @@ const item = {
     blaze_powder: 'minecraft:blaze_powder',
     breeze_rod: 'minecraft:breeze_rod',
     sugar: 'minecraft:sugar',
+    salt: 'createfood:salt',
     glowstone: 'minecraft:glowstone_dust', 
     nether_star: 'minecraft:nether_star',
     chest: 'minecraft:chest',

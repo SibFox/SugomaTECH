@@ -4,19 +4,19 @@
 	#MINUTES: Uses daySpeedMinutes and nightSpeedMinutes settings.
 	#REALTIME: Sets day and night to 12 real-world hours each.
 	#Allowed Values: RATIO, MINUTES, REALTIME
-	speedMethod = "RATIO"
+	speedMethod = "MINUTES"
 	#The speed at which time passes during the day.
 	#Day is defined as any time between dayStart (see below) and nightStart (see below) the next day.
 	#This is the RATIO of time passing relative to vanilla.
 	#Vanilla speed: 1.0
 	#Range: 0.0 ~ 24000.0
-	daySpeed = 0.59
+	daySpeed = 1.0
 	#The speed at which time passes during the night.
 	#Night is defined as any time between dayStart (see below) and nightStart (see below).
 	#This is the RATIO of time passing relative to vanilla.
 	#Vanilla speed: 1.0
 	#Range: 0.0 ~ 24000.0
-	nightSpeed = 1.35
+	nightSpeed = 1.0
 	#An alternative way to set day speed. This setting is mutually exclusive with daySpeed.
 	#If both are set, speedMethod (see above) determines which setting is used.
 	#This setting defines the length of the day in real-world minutes.
@@ -59,7 +59,7 @@
 		#Note: On NeoForge 1.21.1+ this is already handled by the platform. SLEEPING will still work as intended.
 		#Note: This setting is not applicable if game rule doWeatherCycle is false.
 		#Allowed Values: NEVER, ALWAYS, SLEEPING
-		weatherEffect = "SLEEPING"
+		weatherEffect = "NEVER"
 		#When applied, this effect syncs the random tick speed with the current speed of time, forcing
 		#crop, tree, and grass growth to occur at baseRandomTickSpeed multiplied by the current time-speed.
 		#When set to SLEEPING, randomTickSpeed is set to baseRandomTickSpeed unless at least one player is sleeping in a dimension.
@@ -111,7 +111,7 @@
 	#The speed at which time passes when all players are sleeping.
 	#Set to -1 to disable this feature (sleepSpeedMax will be used when all players are sleeping).
 	#Range: -1.0 ~ 24000.0
-	sleepSpeedAll = -1.0
+	sleepSpeedAll = 30.0
 	#This parameter defines the curvature of the interpolation function that translates the sleeping player percentage into time-speed.
 	#The function used is a Normalized Tunable Sigmoid Function.
 	#A value of 0.5 represents a linear relationship.
@@ -124,7 +124,7 @@
 	#Set to 'true' for the weather to clear when players wake up in the morning as it does in vanilla.
 	#Set to 'false' to force weather to pass naturally. Adds realism when accelerateWeather is enabled.
 	#Note: This setting is ignored if game rule doWeatherCycle is false.
-	clearWeatherOnWake = true
+	clearWeatherOnWake = false
 	#When true, players are allowed to sleep at all times of day in dimensions controlled by Better Days.
 	#Note: Other mods may override this ability.
 	allowDaySleep = false

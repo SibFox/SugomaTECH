@@ -32,6 +32,11 @@
   "item.kubejs.hemolymph_soaked_liver": "Проваренная в гемолимфе печень",
   "item.kubejs.hemolymph_soaked_lungs": "Проваренные в гемолимфе лёгкие",
   "item.kubejs.hemolymph_soaked_stomach": "Проваренный в гемолимфе желудок",
+
+  "item.kubejs.plated_stomach_nether": "Нет спасения",
+  "item.kubejs.plated_stomach_nether.desc": "Даже от одного вида \u0026lэтого\u0026r у меня начинается изжога...",
+  "item.kubejs.plated_stomach_end": "Путь к сердцу мужчины",
+  "item.kubejs.plated_stomach_end.desc": "§oЧто... §rНет, я даже думать об этом не хочу.",
   
   
   
@@ -534,7 +539,7 @@
   "subtitles.gigeresque.hugger_death": "Facehugger dies",
   "subtitles.gigeresque.hugger_hurt": "Facehugger chirps",
   "subtitles.gigeresque.hugger_implant": "Something swallows",
-  "subtitles.gigeresque.tracker_summon": "A ghostly figure appears"
+  "subtitles.gigeresque.tracker_summon": "A ghostly figure appears",
 
 
 

@@ -19,15 +19,7 @@ StartupEvents.registry('fluid', evt => {
 })
 
 ItemEvents.modification(evt => {
-  // evt.modify('twm:tomahawk', item => {
-  //   item.maxDamage = 64
-  // })
-  // evt.modify('twm:tomahawk_with_torpor', item => {
-  //   item.maxDamage = 64
-  // })
-  // evt.modify('twm:tomahawk_with_wild_toxin', item => {
-  //   item.maxDamage = 64
-  // })
+
 })
 
 Platform.mods.kubejs.name = 'SUGOMA Tech'
