@@ -83,8 +83,8 @@ const registerCreateCTRecipes = (evt) => {
     shapedRecipe(evt, getRecipeID('mechanical_drill'),
         [
             [ item.ia.iron_drill ],
-            [ item.create.casing.andesite ],
-            [ tag.gear.titanium ]
+            [ tag.gear.titanium ],
+            [ item.create.casing.andesite ]
         ],
     'create:mechanical_drill')
     

@@ -28,6 +28,10 @@ ServerEvents.recipes(event => {
     registerWCRecipes(event)
 })
 
+LootJS.lootTables(evt => {
+    evt.modifyLootTables(LootType.ENTITY).removeItem('pointblank:gunmetal_nugget')
+})
+
 // LootJS.lootTables(event => {
 //     let ids = event.getLootTableIds()
 //     console.info(ids)
