@@ -138,6 +138,7 @@ const item = {
         electrum: 'industrialupgrade:itemplates/electrum_plate',
         zinc: 'industrialupgrade:itemplates/zinc_plate',
         titanium: 'industrialupgrade:itemplates/titanium_plate',
+        invar: 'industrialupgrade:itemplates/invar_plate',
         obsidian: 'industrialupgrade:itemplates/obsidian_plate',
         lapis: 'industrialupgrade:itemplates/lapis_plate',
         titanium_steel: 'industrialupgrade:crafting_elements/crafting_501_element',
@@ -690,6 +691,7 @@ const item = {
         modular_accumulator: 'createaddition:modular_accumulator',
         electron_tube: 'create:electron_tube',
         precision_mechanism: 'create:precision_mechanism',
+        polished_rose_quartz: 'create:polished_rose_quartz',
         
         casing: {
             andesite: 'create:andesite_casing',
@@ -896,6 +898,7 @@ const tag = {
         composite: '#c:plates/advancedalloy',
         steel: '#c:plates/steel',
         alumel: '#c:plates/alumel',
+        invar: '#c:plates/invar',
         aluminumbronze: '#c:plates/aluminumbronze',
         duralumin: '#c:plates/duralumin',
         cobaltchrome: '#c:plates/cobaltchrome',
