@@ -1,8 +1,8 @@
 "use strict";
 
 function calcSaturation(nutrition, saturation) {
-    return { nutrition: nutrition, 
-        saturation: saturation / nutrition / 2
+    return { nutrition: nutrition * 2, 
+        saturation: saturation / nutrition
     }
 }
 
@@ -97,7 +97,7 @@ let registerFoods = (evt) => {
     
 
     evt.create('plated_brain_arphex').food(food => {
-        let hungerData = calcSaturation(12, 16)
+        let hungerData = calcSaturation(6, 8)
         food
             .nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
@@ -108,7 +108,7 @@ let registerFoods = (evt) => {
     }).maxStackSize(16)
     .tooltip('item.kubejs.plated_brain_arphex.desc')
     evt.create('plated_brain_end').food(food => {
-        let hungerData = calcSaturation(9, 12)
+        let hungerData = calcSaturation(4.5, 6)
         food
             .nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
@@ -117,7 +117,7 @@ let registerFoods = (evt) => {
     }).maxStackSize(16)
     .tooltip('item.kubejs.plated_brain_end.desc')
     evt.create('plated_brain_nether').food(food => {
-        let hungerData = calcSaturation(12, 10)
+        let hungerData = calcSaturation(6, 5)
         food
             .nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
@@ -127,7 +127,7 @@ let registerFoods = (evt) => {
     }).maxStackSize(16)
     .tooltip('item.kubejs.plated_brain_nether.desc')
     evt.create('plated_minced_brain_stew').food(food => {
-        let hungerData = calcSaturation(11, 14)
+        let hungerData = calcSaturation(5.5, 7)
         food
             .nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
@@ -136,7 +136,7 @@ let registerFoods = (evt) => {
     }).maxStackSize(16)
     .tooltip('item.kubejs.plated_minced_brain_stew.desc')
     evt.create('plated_minced_brain_with_milk').food(food => {
-        let hungerData = calcSaturation(9, 12)
+        let hungerData = calcSaturation(4.5, 6)
         food
             .nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
@@ -146,7 +146,7 @@ let registerFoods = (evt) => {
     .tooltip('item.kubejs.plated_minced_brain_with_milk.desc')
 
     evt.create('plated_heart_arphex').food(food => {
-        let hungerData = calcSaturation(7, 5)
+        let hungerData = calcSaturation(3.5, 2.5)
         food
             .nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
@@ -155,14 +155,14 @@ let registerFoods = (evt) => {
     }).maxStackSize(16)
     .tooltip('item.kubejs.plated_heart_arphex.desc')
     evt.create('plated_heart_end').food(food => {
-        let hungerData = calcSaturation(6, 8)
+        let hungerData = calcSaturation(3, 4)
         food
             .nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
     }).maxStackSize(16)
     .tooltip('item.kubejs.plated_heart_end.desc')
     evt.create('plated_heart_nether').food(food => {
-        let hungerData = calcSaturation(10, 14)
+        let hungerData = calcSaturation(5, 7)
         food
             .nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
@@ -170,7 +170,7 @@ let registerFoods = (evt) => {
     }).maxStackSize(16)
     .tooltip('item.kubejs.plated_heart_nether.desc')
     evt.create('plated_minced_heart_stew').food(food => {
-        let hungerData = calcSaturation(16, 22)
+        let hungerData = calcSaturation(7, 11)
         food
             .nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
@@ -179,7 +179,7 @@ let registerFoods = (evt) => {
     .tooltip('item.kubejs.plated_minced_heart_stew.desc')
 
     evt.create('plated_liver_end').food(food => {
-        let hungerData = calcSaturation(9, 6)
+        let hungerData = calcSaturation(3.5, 3)
         food
             .nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
@@ -188,7 +188,7 @@ let registerFoods = (evt) => {
     }).maxStackSize(16)
     .tooltip('item.kubejs.plated_liver_end.desc')
     evt.create('plated_liver_nether').food(food => {
-        let hungerData = calcSaturation(14, 17.5)
+        let hungerData = calcSaturation(7, 6.5)
         food
             .nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
@@ -196,7 +196,7 @@ let registerFoods = (evt) => {
     }).maxStackSize(16)
     .tooltip('item.kubejs.plated_liver_nether.desc')
     evt.create('plated_minced_liver_stew').food(food => {
-        let hungerData = calcSaturation(15, 18)
+        let hungerData = calcSaturation(7.5, 9)
         food
             .nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
@@ -204,7 +204,7 @@ let registerFoods = (evt) => {
     }).maxStackSize(16)
     .tooltip('item.kubejs.plated_minced_liver_stew.desc')
     evt.create('plated_minced_liver_with_apple').food(food => {
-        let hungerData = calcSaturation(16, 20)
+        let hungerData = calcSaturation(7, 11)
         food
             .nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
@@ -213,7 +213,7 @@ let registerFoods = (evt) => {
     .tooltip('item.kubejs.plated_minced_liver_with_apple.desc')
 
     evt.create('plated_lungs_arphex').food(food => {
-        let hungerData = calcSaturation(6, 4)
+        let hungerData = calcSaturation(3, 2)
         food
             .nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
@@ -224,7 +224,7 @@ let registerFoods = (evt) => {
     }).maxStackSize(16)
     .tooltip('item.kubejs.plated_lungs_arphex.desc')
     evt.create('plated_lungs_end').food(food => {
-        let hungerData = calcSaturation(11, 14)
+        let hungerData = calcSaturation(5.5, 7)
         food
             .nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
@@ -233,7 +233,7 @@ let registerFoods = (evt) => {
     }).maxStackSize(16)
     .tooltip('item.kubejs.plated_lungs_end.desc')
     evt.create('plated_lungs_nether').food(food => {
-        let hungerData = calcSaturation(15, 10)
+        let hungerData = calcSaturation(7.5, 5)
         food
             .nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
@@ -242,14 +242,14 @@ let registerFoods = (evt) => {
     }).maxStackSize(16)
     .tooltip('item.kubejs.plated_lungs_nether.desc')
     evt.create('plated_minced_lungs_stew').food(food => {
-        let hungerData = calcSaturation(11, 15)
+        let hungerData = calcSaturation(5.5, 7.5)
         food.nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
             .effect('farmersdelight:nourishment', 2400, 0, 1)
     }).maxStackSize(16)
     .tooltip('item.kubejs.plated_minced_lungs_stew.desc')
     evt.create('plated_minced_lungs_with_potatoes').food(food => {
-        let hungerData = calcSaturation(14, 17)
+        let hungerData = calcSaturation(6.5, 8)
         food.nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
             .effect('farmersdelight:nourishment', 3600, 0, 1)
@@ -257,7 +257,7 @@ let registerFoods = (evt) => {
     .tooltip('item.kubejs.plated_minced_lungs_with_potatoes.desc')
     
     evt.create('plated_stomach_end').food(food => {
-        let hungerData = calcSaturation(6, 4)
+        let hungerData = calcSaturation(3, 2)
         food.nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
             .effect('minecraft:nausea', 340, 0, 0.8)
@@ -265,7 +265,7 @@ let registerFoods = (evt) => {
     }).maxStackSize(16)
     .tooltip('item.kubejs.plated_stomach_end.desc')
     evt.create('plated_stomach_nether').food(food => {
-        let hungerData = calcSaturation(13, 16)
+        let hungerData = calcSaturation(6.5, 8)
         food.nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
             .effect('mynethersdelight:b_pungent', 900, 2, 1)
@@ -273,7 +273,7 @@ let registerFoods = (evt) => {
     }).maxStackSize(16)
     .tooltip('item.kubejs.plated_stomach_nether.desc')
     evt.create('plated_minced_stomach_stew').food(food => {
-        let hungerData = calcSaturation(16, 20)
+        let hungerData = calcSaturation(8, 12.5)
         food.nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
             .effect('farmersdelight:comfort', 3600, 0, 1)
