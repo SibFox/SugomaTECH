@@ -25,7 +25,7 @@ antifieldBlockRadius = 25
 	#How many ticks should the Incubator take to brew a potion? A vanilla brewing stand takes 400 ticks
 	# Default: 200
 	# Range: > 1
-	incubatorTicksPerBrew = 200
+	incubatorTicksPerBrew = 1200
 	#How many times slower should the Advanced Incubator be when it's at low temperature? Default is 120, which makes it take a full Minecraft day (excluding Overclockers)
 	# Default: 120
 	# Range: > 1

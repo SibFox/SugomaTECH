@@ -7,7 +7,7 @@
 const registerCreateMechanicalRecipes = (evt) => {
 
     function getRecipeID(path) {
-        return recipeID('create/mechanical', path)
+        return recipeID('create', path)
     }
 
     evt.recipes.create.mechanical_crafting('createaddition:alternator', [

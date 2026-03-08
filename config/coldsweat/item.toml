@@ -23,7 +23,8 @@
 	    ["minecraft:dried_kelp_block", 40],
 	    ["minecraft:coal_block", 500],
 	    ["minecraft:magma_block", 333],
-	    ["minecraft:lava_bucket", 1000]
+	    ["minecraft:lava_bucket", 1000],
+	    ["industrialupgrade:bucket/pahoehoe_lava", 2000]
 	]
 	#─────────────────────────────────//v
 	Icebox = [
@@ -45,6 +46,7 @@
 	    ["minecraft:coal_block", 500],
 	    ["minecraft:magma_block", 333],
 	    ["minecraft:lava_bucket", 1000],
+	    ["industrialupgrade:bucket/pahoehoe_lava", 2000],
 	    ["minecraft:snowball", -10],
 	    ["minecraft:clay_ball", -37],
 	    ["minecraft:snow_block", -40],

@@ -139,7 +139,7 @@
     "minecraft:dirt"
   ],
   "launchIntoDestiny": false,
-  "allowDestinyCommandOnce": true,
+  "allowDestinyCommandOnce": false,
   "allowDestinyCommandMoreThanOnce": false,
   "allowDestinyTeleportation": false,
   "enablePlayerShaders": true,

@@ -15,7 +15,6 @@ const registerCreateRemovings = (evt) => {
     evt.remove({ output: item.create.connector.small })
     evt.remove({ output: item.create.connector.small_light })
     evt.remove({ output: item.create.connector.large })
-    evt.remove({ output: item.create.electron_tube })
     evt.remove({ output: 'createaddition:rolling_mill' })
     evt.remove({ output: 'createaddition:electrum_amulet' })
     evt.remove({ output: 'createaddition:alternator' })
@@ -24,6 +23,5 @@ const registerCreateRemovings = (evt) => {
     evt.remove({ output: 'create:propeller' })
     evt.remove({ output: 'createaddition:electrum_block' })
     evt.remove({ output: 'create:mechanical_drill' })
-    evt.remove({ output: 'create:mechanical_crafter' })
 
 }

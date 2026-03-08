@@ -87,23 +87,5 @@ const registerCreateCTRecipes = (evt) => {
             [ item.create.casing.andesite ]
         ],
     'create:mechanical_drill')
-
-    shapedRecipe(evt, getRecipeID('electron_tube'),
-        [
-            [ item.create.polished_rose_quartz ],
-            [ tag.plate.invar ],
-            [ item.iu.capacitor.lvl1 ]
-        ],
-    item.create.electron_tube, 1)
     
-    shapedRecipe(evt, getRecipeID('mechanical_crafter'),
-        [
-            [ item.create.electron_tube ],
-            [ item.create.casing.brass ],
-            [ item.iu.module.assembler ]
-        ],
-    'create:mechanical_crafter', 3)
-    
-    
-
 }

@@ -10,25 +10,25 @@
 	#This is the RATIO of time passing relative to vanilla.
 	#Vanilla speed: 1.0
 	#Range: 0.0 ~ 24000.0
-	daySpeed = 1.09
+	daySpeed = 1.00
 	#The speed at which time passes during the night.
 	#Night is defined as any time between dayStart (see below) and nightStart (see below).
 	#This is the RATIO of time passing relative to vanilla.
 	#Vanilla speed: 1.0
 	#Range: 0.0 ~ 24000.0
-	nightSpeed = 0.92
+	nightSpeed = 1.00
 	#An alternative way to set day speed. This setting is mutually exclusive with daySpeed.
 	#If both are set, speedMethod (see above) determines which setting is used.
 	#This setting defines the length of the day in real-world minutes.
 	#Vanilla length: 10.0 minutes
 	#Range: 0.1 ~ 10000.0
-	daySpeedMinutes = 40.0
+	daySpeedMinutes = 60.0
 	#An alternative way to set night speed. This setting is mutually exclusive with nightSpeed.
 	#If both are set, speedMethod (see above) determines which setting is used.
 	#This setting defines the length of the night in real-world minutes.
 	#Vanilla length: 10.0 minutes
 	#Range: 0.1 ~ 10000.0
-	nightSpeedMinutes = 30.0
+	nightSpeedMinutes = 40.0
 	#The time to start day. This is configurable within the time the sun appears and day starts.
 	#Default: 23500
 	#Range: 22300.0 ~ 24000.0
@@ -111,7 +111,7 @@
 	#The speed at which time passes when all players are sleeping.
 	#Set to -1 to disable this feature (sleepSpeedMax will be used when all players are sleeping).
 	#Range: -1.0 ~ 24000.0
-	sleepSpeedAll = 30.0
+	sleepSpeedAll = -1.0
 	#This parameter defines the curvature of the interpolation function that translates the sleeping player percentage into time-speed.
 	#The function used is a Normalized Tunable Sigmoid Function.
 	#A value of 0.5 represents a linear relationship.
@@ -156,14 +156,14 @@
 			#sleepingPlayers -> the number of players in the current dimension who were sleeping.
 			#totalPlayers -> the number of players in the current dimension (spectators are not counted).
 			#sleepingPercentage -> the percentage of players in the current dimension who are sleeping (does not include % symbol).
-			message = "§e§oTempus fugit!"
+			message = "§e§oУтро наступило!"
 			#Sets where this message appears.
 			#Allowed Values: SYSTEM, GAME_INFO
 			type = "GAME_INFO"
 			#Sets to whom this message is sent.
 			#A target of 'SLEEPING' will send the message to all players who just woke up.
 			#Allowed Values: ALL, DIMENSION, SLEEPING
-			target = "DIMENSION"
+			target = "SLEEPING"
 
 		#This message is sent when a player enters their bed.
 		[sleep.messages.enterBed]
@@ -172,14 +172,14 @@
 			#sleepingPlayers -> the number of players in the current dimension who are sleeping.
 			#totalPlayers -> the number of players in the current dimension (spectators are not counted).
 			#sleepingPercentage -> the percentage of players in the current dimension who are sleeping (does not include % symbol).
-			message = "${player} is now sleeping. [${sleepingPlayers}/${totalPlayers}]"
+			message = "${player} спит. [${sleepingPlayers}/${totalPlayers}]"
 			#Sets where this message appears.
 			#Allowed Values: SYSTEM, GAME_INFO
 			type = "GAME_INFO"
 			#Sets to whom this message is sent.
 			#
 			#Allowed Values: ALL, DIMENSION, SLEEPING
-			target = "DIMENSION"
+			target = "SLEEPING"
 
 		#This message is sent when a player leaves their bed (without being woken up naturally by morning).
 		[sleep.messages.leaveBed]
@@ -188,11 +188,11 @@
 			#sleepingPlayers -> the number of players in the current dimension who are sleeping.
 			#totalPlayers -> the number of players in the current dimension (spectators are not counted).
 			#sleepingPercentage -> the percentage of players in the current dimension who are sleeping (does not include % symbol).
-			message = "${player} has left their bed. [${sleepingPlayers}/${totalPlayers}]"
+			message = "${player} покинул кровать. [${sleepingPlayers}/${totalPlayers}]"
 			#Sets where this message appears.
 			#Allowed Values: SYSTEM, GAME_INFO
 			type = "GAME_INFO"
 			#Sets to whom this message is sent.
 			#
 			#Allowed Values: ALL, DIMENSION, SLEEPING
-			target = "DIMENSION"
+			target = "SLEEPING"

@@ -16,10 +16,10 @@
     "blackfuildNonrepacle": false,
     "alienblockHardness": 3.0,
     "alienblockResistance": 6.0,
-    "eggmorphTickTimer": 1200.0,
+    "eggmorphTickTimer": 12000.0,
     "acidDamage": 2.0,
-    "sporeTickTimer": 1200,
-    "gooEffectTickTimer": 1200,
+    "sporeTickTimer": 12000,
+    "gooEffectTickTimer": 12000,
     "enableResinAlienCheck": true,
     "resinEntityCheckRange": 15
   },
@@ -36,7 +36,7 @@
       "facehuggerGivesBlindness": false,
       "enableFacehuggerAttachmentTimer": true,
       "enableFacehuggerTimerTicks": false,
-      "impregnationTickTimer": 1200.0,
+      "impregnationTickTimer": 120000.0,
       "facehuggerAttachTickTimer": 1200.0,
       "facehuggerStunTickTimer": 90,
       "facehuggerHealth": 40.0
