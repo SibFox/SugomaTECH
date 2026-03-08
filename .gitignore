@@ -24,7 +24,6 @@ icon.png
 TrashSlotSaveState.json
 usercache.json
 usernamecache.json
-options.txt
 config/craftingstation-server.toml
 config/craftingstation-client.toml
 config/emi_loot_config.toml
@@ -136,10 +135,8 @@ config/jade/sort-order.json
 /config/vanilla_structures
 config/easymagic-server.toml
 config/easymagic-common.toml
-fancymenu_data/last_world.fmdata
 /dynamic-resource-pack-cache
 servers.dat
-/fancymenu_data
 config/advanced_ae-common.toml
 config/advanced_ae-client.toml
 config/ae2-client.toml
@@ -201,10 +198,9 @@ config/moonlight-client.toml
 config/supplementaries-common.toml
 config/supplementaries-client.toml
 dynamic-data-pack-cache/hash.txt
-options.txt
+
 config/packetfixer.properties
 config/reliable_replacer/example_rules.json.disabled
-config/drippyloadingscreen/early_window_reference.properties
 config/appleskin-client.toml
 config/ambientsounds-client.json
 config/beautifiedchatclient.json5
@@ -213,3 +209,6 @@ config/betterclouds-v1.json
 config/dynamic_fps.json
 /config/inventoryprofilesnext
 config/saturn-optimizations.toml
+/fancymenu_data/buddy
+config/drippyloadingscreen/early_window_reference.properties
+fancymenu_data/last_world.fmdata
