@@ -24,6 +24,8 @@ icon.png
 TrashSlotSaveState.json
 usercache.json
 usernamecache.json
+options.txt
+!*/options.txt
 config/craftingstation-server.toml
 config/craftingstation-client.toml
 config/emi_loot_config.toml
