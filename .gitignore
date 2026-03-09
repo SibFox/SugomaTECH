@@ -214,3 +214,7 @@ config/saturn-optimizations.toml
 /fancymenu_data/buddy
 config/drippyloadingscreen/early_window_reference.properties
 fancymenu_data/last_world.fmdata
+config/kaleidoscope_cookery-common.toml
+config/kaleidoscope_end-common.toml
+config/kaleidoscope_nether-common.toml
+config/thirst/item_settings.toml
