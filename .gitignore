@@ -218,3 +218,6 @@ config/kaleidoscope_cookery-common.toml
 config/kaleidoscope_end-common.toml
 config/kaleidoscope_nether-common.toml
 config/thirst/item_settings.toml
+config/createbigcannons-server.toml
+config/createbigcannons-client.toml
+config/ritchiesprojectilelib-server.toml
