@@ -1,5 +1,6 @@
 {
   "swapper": {
-    "examplemod:input_block": "examplemod:output_block"
+    "create:zinc_ore": "minecraft:stone",
+    "create:deepslate_zinc_ore": "minecraft:deepslate"
   }
 }

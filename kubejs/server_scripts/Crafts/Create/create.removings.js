@@ -23,5 +23,11 @@ const registerCreateRemovings = (evt) => {
     evt.remove({ output: 'create:propeller' })
     evt.remove({ output: 'createaddition:electrum_block' })
     evt.remove({ output: 'create:mechanical_drill' })
+    // evt.remove({ id: 'createbigcannons:melting/melt_bronze_ingot' })
+    // evt.remove({ id: 'createbigcannons:melting/melt_bronze_nugget' })
+    // evt.remove({ id: 'createbigcannons:melting/melt_bronze_block' })
+    // evt.remove({ id: 'createbigcannons:melting/melt_steel_ingot' })
+    // evt.remove({ id: 'createbigcannons:melting/melt_steel_nugget' })
+    // evt.remove({ id: 'createbigcannons:melting/melt_steel_block' })
 
 }

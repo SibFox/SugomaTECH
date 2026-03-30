@@ -86,9 +86,25 @@ const registerCommonRecipes = (evt) => {
         asItem(item.custom.conducting_organic_polymer)
     )
     
+    evt.shapeless(Item.of(item.ingot.bronze, 1),
+        [
+            '9x ' + tag.nugget.bronze
+        ]
+    ).id(recipeID('bronze_ingot_ct'))
     
+    evt.shapeless(Item.of(item.ingot.steel, 1),
+        [
+            '9x ' + tag.nugget.steel
+        ]
+    ).id(recipeID('steel_ingot_ct'))
     
-    
+    evt.shapeless(Item.of(item.nugget.steel, 9),
+        [
+            tag.ingot.steel
+        ]
+    ).id(recipeID('steel_nugget_ct'))
+
+
 
     console.info('Common recipe adding passed')
 }

@@ -48,14 +48,15 @@ const registerOverallTags = (evt) => {
     add('minecraft:mineable/axe', 'immersive_furniture:artisans_workstation')
 
 
-
+    // Удалить все теги с предмета
     for (let i of [
         'create:iron_sheet', 'create:copper_sheet', 'create:golden_sheet',
         'create:zinc_ingot', 'createaddition:zinc_sheet', 'createaddition:electrum_ingot',
         'createaddition:electrum_nugget', 'createaddition:electrum_sheet',
         'createcybernetics:titanium_block', 'createcybernetics:titaniumingot', 
         'createcybernetics:titaniumnugget', 'createcybernetics:titaniumsheet', 'mffs:steel_ingot',
-        'createaddition:electrum_block', 'create:zinc_nugget', 'create:sturdy_sheet'
+        'createaddition:electrum_block', 'create:zinc_nugget', 'create:sturdy_sheet',
+        'createbigcannons:bronze_block', 'createbigcannons:bronze_ingot'
     ]) { evt.removeAllTagsFrom(i) }
 
     console.info('Tag adding passed')

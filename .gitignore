@@ -221,3 +221,9 @@ config/thirst/item_settings.toml
 config/createbigcannons-server.toml
 config/createbigcannons-client.toml
 config/ritchiesprojectilelib-server.toml
+config/hackersandslashers/client.json5
+config/livelyinteractions-client.toml
+/mods/.connector
+/mods/*.disabled
+config/custom_chest_name-client.toml
+.pg-native/libpowergridNative5.dll

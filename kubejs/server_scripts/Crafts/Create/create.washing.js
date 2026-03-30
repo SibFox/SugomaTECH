@@ -7,7 +7,7 @@
 const registerCreateWashingRecipes = (evt) => {
 
     function getRecipeID(path) {
-        return recipeID('create/washing/', path)
+        return recipeID('create/washing', path)
     }
 
 
