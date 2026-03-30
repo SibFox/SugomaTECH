@@ -1,9 +1,0 @@
-type = panorama
-
-panorama-meta {
-  name = iupanorama
-  speed = 1.5
-  fov = 80.0
-  angle = 5.0
-  start_rotation = 230
-}
