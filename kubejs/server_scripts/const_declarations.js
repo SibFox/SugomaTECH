@@ -106,6 +106,8 @@ const item = {
         zinc: 'industrialupgrade:nugget/zinc',
         electrum: 'industrialupgrade:nugget/electrum',
         titanium: 'industrialupgrade:nugget/titanium',
+        bronze: 'createbigcannons:bronze_scrap',
+        steel: 'createbigcannons:steel_scrap',
     },
 
     ingot: {
@@ -121,6 +123,7 @@ const item = {
         titanium: 'industrialupgrade:itemingots/titanium_ingot',
         composite: 'industrialupgrade:crafting_elements/crafting_274_element',
         wolframite: 'industrialupgrade:wolframite',
+        steel: 'industrialupgrade:itemingots/steel_ingot',
         titanium_steel: 'industrialupgrade:crafting_elements/crafting_504_element',
         carbon_tungsteen: 'industrialupgrade:crafting_elements/crafting_480_element',
         vanadoalumite: 'industrialupgrade:alloyingot/vanadoalumite',
@@ -157,7 +160,8 @@ const item = {
         diamond: 'minecraft:diamond_block',
         zinc: 'industrialupgrade:baseblockingot/zinc',
         electrum: 'industrialupgrade:baseblockingot/electrum',
-        titanium: 'industrialupgrade:baseblockingot/titanium',        
+        titanium: 'industrialupgrade:baseblockingot/titanium',
+        bronze: 'industrialupgrade:blockresource/bronze_block',
     },
 
     custom: {
@@ -865,6 +869,8 @@ const tag = {
         zinc: '#c:nuggets/zinc',
         electrum: '#c:nuggets/electrum',
         titanium: '#c:nuggets/titanium',
+        bronze: '#c:nuggets/bronze',
+        steel: '#c:nuggets/steel',
     },
 
     ingot: {
@@ -874,6 +880,7 @@ const tag = {
         zinc: '#c:ingots/zinc',
         electrum: '#c:ingots/electrum',
         lead: '#c:ingots/lead',
+        bronze: '#c:ingots/bronze',
         titanium: '#c:ingots/titanium',
         steel: '#c:ingots/steel',
         wolframite: '#c:ingots/wolframite',
@@ -945,8 +952,10 @@ const tag = {
         diamond: '#c:storage_blocks/diamond',
         redstone: '#c:storage_blocks/redstone',
         zinc: '#c:storage_blocks/zinc',
+        bronze: '#c:storage_blocks/bronze',
         electrum: '#c:storage_blocks/electrum',
         titanium: '#c:storage_blocks/titanium',
+        steel: '#c:storage_blocks/steel',
     },
 
     tool: {
@@ -967,4 +976,11 @@ const fluid = {
     quantum_infusion: '$advanced_ae:quantum_infusion_source',
     polypropylene: '$industrialupgrade:iufluidpolyprop',
     glucose: '$industrialupgrade:iufluidglucose',
+
+    metal: {
+        bronze: '$industrialupgrade:iufluidbronze',
+        steel: '$industrialupgrade:iufluidsteel',
+        cast_iron: '$createbigcannons:molten_cast_iron',
+        nethersteel: '$createbigcannons:molten_nethersteel',
+    },
 }

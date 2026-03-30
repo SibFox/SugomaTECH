@@ -182,7 +182,7 @@ const registerCCRecipes = (evt) => {
     shapedRecipe(evt, getRecipeID('disk_drive'),
         [
             [ item.iu.wire.isolated.gold, item.ingot.red_alloy, item.iu.wire.isolated.gold ],
-            [ item.iu.wire.isolated.gold, item.iu.disk.iron, item.iu.wire.isolated.gold ],
+            [ item.iu.wire.isolated.gold, item.iu.disk.lvl1, item.iu.wire.isolated.gold ],
             [ item.iu.autopower_module, item.cc.casing, item.iu.power_slot ]
         ],
     item.cc.disk_drive)

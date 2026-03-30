@@ -7,7 +7,7 @@
 const registerCreateMechanicalRecipes = (evt) => {
 
     function getRecipeID(path) {
-        return recipeID('create', path)
+        return recipeID('create/mechanical', path)
     }
 
     evt.recipes.create.mechanical_crafting('createaddition:alternator', [
@@ -50,4 +50,6 @@ const registerCreateMechanicalRecipes = (evt) => {
         P: tag.plate.alumel,
         S: item.iu.spool.superconducting.lvl1
     }).id(getRecipeID('tesla_coil'))
+
+    
 }

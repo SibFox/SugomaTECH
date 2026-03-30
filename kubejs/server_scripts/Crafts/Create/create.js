@@ -10,6 +10,8 @@ const registerCreateRecipes = (evt) => {
     registerCreateCTRecipes(evt)
     registerCreateIURecipes(evt)
     registerCreateMechanicalRecipes(evt)
+    registerCreateCompactingRecipes(evt)
+    registerCreateMeltingRecipes(evt)
 
     console.info('Create recipe adding passed')
 }
