@@ -15,6 +15,8 @@ const registerCreateRemovings = (evt) => {
     evt.remove({ output: item.create.connector.small })
     evt.remove({ output: item.create.connector.small_light })
     evt.remove({ output: item.create.connector.large })
+    evt.remove({ output: item.ingot.electrum, type: 'create:mixing' })
+    evt.remove({ output: 'createaddition:electrum_ingot' })
     evt.remove({ output: 'createaddition:rolling_mill' })
     evt.remove({ output: 'createaddition:electrum_amulet' })
     evt.remove({ output: 'createaddition:alternator' })

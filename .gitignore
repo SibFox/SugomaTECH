@@ -227,3 +227,11 @@ config/livelyinteractions-client.toml
 /mods/*.disabled
 config/custom_chest_name-client.toml
 .pg-native/libpowergridNative5.dll
+/config/voicechat
+/config/createcybernetics/*_iris_*
+/config/createcybernetics/*_layout_*
+config/slimpatch-common.toml
+config/proximitychat-server.toml
+config/continuity.json
+config/exposure*
+config/obscuria/accents-common.toml

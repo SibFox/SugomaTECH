@@ -24,7 +24,7 @@ const registerFDRecipes = (evt) => {
             'meals',
             [
                 item.cn.bodypart[part], item.custom.hemolymph_drop,
-                item.custom.hemolymph_drop, item.custom.hemolymph_drop, item.salt
+                item.custom.hemolymph_drop, item.custom.hemolymph_drop, item.sugar
             ],
             'kubejs:hemolymph_soaked_' + part,
             0.5,

@@ -88,13 +88,13 @@ const registerCommonRecipes = (evt) => {
     
     evt.shapeless(Item.of(item.ingot.bronze, 1),
         [
-            '9x ' + tag.nugget.bronze
+            Ingredient.of(tag.nugget.bronze, 9)
         ]
     ).id(recipeID('bronze_ingot_ct'))
     
     evt.shapeless(Item.of(item.ingot.steel, 1),
         [
-            '9x ' + tag.nugget.steel
+            Ingredient.of(tag.nugget.steel, 9)
         ]
     ).id(recipeID('steel_ingot_ct'))
     

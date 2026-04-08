@@ -11,7 +11,6 @@ ServerEvents.recipes(event => {
     registerRecipeRemovings(event)
     registerRecipeReplacings(event)
     registerCommonRecipes(event)
-    registerSBRecipes(event)
     registerPBRecipes(event)
     registerIURecipes(event)
     registerAERecipes(event)

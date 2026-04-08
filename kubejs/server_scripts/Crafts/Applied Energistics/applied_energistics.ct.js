@@ -40,7 +40,7 @@ const registerAECTRecipes = (evt) => {
 
     evt.shapeless(Item.of(item.ae.silicon, 8),
         [
-            item.iu.dust.potassium, '4x ' + item.iu.dust.silicon
+            item.iu.dust.potassium, Item.of(item.iu.dust.silicon, 4)
         ]
     ).id(getRecipeID('silicon_x8'))
 

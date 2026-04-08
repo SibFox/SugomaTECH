@@ -6,12 +6,6 @@
  */
 const registerRecipeRemovings = (evt) => {
 
-    evt.remove({ output: "sophisticatedbackpacks:backpack" })
-    evt.remove({ output: "sophisticatedbackpacks:copper_backpack" })
-    evt.remove({ output: "sophisticatedbackpacks:iron_backpack" })
-    // evt.remove({ output: "sophisticatedbackpacks:magnet_upgrade" })
-    // evt.remove({ id: "sophisticatedbackpacks:magnet_upgrade" })
-
     evt.remove({ id: "petrolpark:recipe_book_test" })
     evt.remove({ output: "create:crushed_raw_nickel" })
     evt.remove({ output: "create:crushed_raw_lead" })

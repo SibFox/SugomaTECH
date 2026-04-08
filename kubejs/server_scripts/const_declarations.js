@@ -878,6 +878,7 @@ const tag = {
         iron: '#c:ingots/iron',
         gold: '#c:ingots/gold',
         zinc: '#c:ingots/zinc',
+        silver: '#c:ingots/silver',
         electrum: '#c:ingots/electrum',
         lead: '#c:ingots/lead',
         bronze: '#c:ingots/bronze',
