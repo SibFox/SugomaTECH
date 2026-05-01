@@ -1,0 +1,89 @@
+{
+  "itemGroup.tabserene_shrubbery": "Безмятежные кустарники",
+  "item_group.serene_shrubbery.serene_shrubbery": "Безмятежные кустарники",
+
+  "advancements.foxy_florist.title": "Наперстянка!",
+  "advancements.foxy_florist.descr": "Соберите наперстянку всех видов!",
+
+  "advancements.gardeners_path.title": "Путь садовника!",
+  "advancements.gardeners_path.descr": "Соберите свой первый полевой цветок!",
+
+  "advancements.hybrid_flora.title": "Гибридная флора!",
+  "advancements.hybrid_flora.descr": "Успешно выведите новый вид растений!",
+
+  "advancements.hydrangea_horticulturist.title": "Садовод-гортензист!",
+  "advancements.hydrangea_horticulturist.descr": "Соберите гортензии всех видов!",
+
+  "advancements.lupine_lover.title": "Любитель люпина!",
+  "advancements.lupine_lover.descr": "Соберите люпин всех видов!",
+
+  "advancements.pansy_planter.title": "Плантатор анютиных глазок!",
+  "advancements.pansy_planter.descr": "Соберите анютины глазки всех видов!",
+
+  "advancements.spooky_gardening.title": "Тёмный садовод!",
+  "advancements.spooky_gardening.descr": "Соберите чёрные цветы всех видов!",
+
+  "advancements.the_beauty_of_baskets.title": "Красота корзинок!",
+  "advancements.the_beauty_of_baskets.descr": "Заполучите цветочную корзину!",
+
+  "block.serene_shrubbery.bloom_basket": "Цветочная корзина",
+  "block.serene_shrubbery.bloom_basket_orange_pansies": "Цветочная корзина с оранжевыми анютиными глазками",
+  "block.serene_shrubbery.bloom_basket_sunrise_pansies": "Цветочная корзина с золотистыми анютиными глазками",
+  "block.serene_shrubbery.bloom_basket_white_pansies": "Цветочная корзина с белыми анютиными глазками",
+  "block.serene_shrubbery.bloom_basket_panola_pansies": "Цветочная корзина с нежно-розовыми анютиными глазками",
+  "block.serene_shrubbery.bloom_basket_pink_pansies": "Цветочная корзина с розовыми анютиными глазками",
+  "block.serene_shrubbery.bloom_basket_yellow_pansies": "Цветочная корзина с жёлтыми анютиными глазками",
+  "block.serene_shrubbery.bloom_basket_purple_pansies": "Цветочная корзина с лиловыми анютиными глазками",
+  "block.serene_shrubbery.bloom_basket_red_pansies": "Цветочная корзина с красными анютиными глазками",
+  "block.serene_shrubbery.bloom_basket_frost_pansies": "Цветочная корзина с холодными анютиными глазками",
+  "block.serene_shrubbery.bloom_basket_halloween_pansies": "Цветочная с корзина чёрными анютиными глазками",
+
+  "block.serene_shrubbery.fireweed": "Кирпей узколистный",
+  "block.serene_shrubbery.butterfly_bush": "Буддлея",
+  "block.serene_shrubbery.twinflower": "Линнея",
+
+  "block.serene_shrubbery.manhattan_lights_lupine": "Многолистный люпин",
+  "block.serene_shrubbery.lupine_white": "Белый люпин",
+  "block.serene_shrubbery.golden_lupine": "Золотой люпин",
+    "block.serene_shrubbery.lupine_pink": "Розовый люпин",
+  "block.serene_shrubbery.purple_lupine": "Фиолетовый люпин ",
+  "block.serene_shrubbery.sky_blue_lupine": "Небесно-голубой люпин",
+
+  "block.serene_shrubbery.hydrangea": "Голубая гортензия",
+  "block.serene_shrubbery.pink_hydrangea": "Розовая гортензия",
+  "block.serene_shrubbery.halloween_hydrangea": "Чёрная гортензия",
+  "block.serene_shrubbery.white_hydrangea": "Белая гортензия",
+  "block.serene_shrubbery.purple_hydrangea": "Лиловая гортензия",
+  "block.serene_shrubbery.red_hydrangea": "Красная гортензия",
+
+  "block.serene_shrubbery.white_pansies": "Белые анютины глазки",
+  "block.serene_shrubbery.yellow_pansies": "Жёлтые анютины глазки",
+  "block.serene_shrubbery.sunrise_pansies": "Золотистые анютины глазки",
+  "block.serene_shrubbery.purple_pansies": "Лиловые анютины глазки",
+  "block.serene_shrubbery.panola_pink_pansies": "Нежно-розовые анютины глазки",
+  "block.serene_shrubbery.red_pansies": "Красные анютины глазки",
+  "block.serene_shrubbery.blue_frost_pansies": "Голубые анютины глазки",
+  "block.serene_shrubbery.orange_pansies": "Оранжевые анютины глазки",
+  "block.serene_shrubbery.halloween_pansies": "Чёрные анютины глазки",
+  "block.serene_shrubbery.pink_pansies": "Розовые анютины глазки",
+
+  "block.serene_shrubbery.purple_liverwort": "Лиловый печёночник",
+  "block.serene_shrubbery.blue_liverwort": "Голубой печёночник",
+  "block.serene_shrubbery.white_liverwort": "Розовый печёночник",
+
+  "block.serene_shrubbery.white_foxglove": "Белая наперстянка",
+  "block.serene_shrubbery.sunset_foxglove": "Золотистая наперстянка",
+  "block.serene_shrubbery.peach_foxglove": "Персиковая наперстянка",
+  "block.serene_shrubbery.lavender_foxglove": "Лавандовая наперстянка",
+  "block.serene_shrubbery.candy_mountain_foxglove": "Малиновая наперстянка",
+  "block.serene_shrubbery.purple_foxglove": "Лиловая наперстянка",
+  "block.serene_shrubbery.halloween_foxglove": "Чёрная наперстянка",
+
+  "block.serene_shrubbery.blanketflower_1_flower": "Гайлардия",
+  "block.serene_shrubbery.blanketflower_triple": "Тройная гайлардия",
+  "block.serene_shrubbery.blanketflower_double": "Двойная гайлардия",
+  "block.serene_shrubbery.blanketflower_quad": "Четверная гайлардия",
+
+  "block.serene_shrubbery.pink_crown_cactus": "Розовый цветущий кактус",
+  "block.serene_shrubbery.orange_crown_cactus": "Оранжевый цветущий кактус"
+}
