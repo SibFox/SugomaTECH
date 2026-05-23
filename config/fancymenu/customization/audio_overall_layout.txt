@@ -3,14 +3,14 @@ type = fancymenu_layout
 layout-meta {
   identifier = %fancymenu:universal_layout%
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1771803610015
+  last_edited_time = 1778045650127
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
   universal_layout_blacklist = pause_screen;
-  [loading_requirement_container_meta:5cd5cf83-ef63-4a7f-afc7-d72498acfaea-1771800381051] = [groups:][instances:]
+  [loading_requirement_container_meta:0ee50e15-cc2d-469c-a643-5376e7d2ffaa-1778045442328] = [groups:][instances:]
 }
 
 customization {
@@ -49,6 +49,18 @@ element {
   audio_instance_weight_6 = 1.0
   audio_instance_7 = [source:local]/config/fancymenu/assets/sounds/music/fu_fog.ogg
   audio_instance_weight_7 = 1.0
+  audio_instance_8 = [source:local]/config/fancymenu/assets/sounds/music/fu_vangelis.ogg
+  audio_instance_weight_8 = 1.0
+  audio_instance_9 = [source:local]/config/fancymenu/assets/sounds/music/fu_lurking_in_the_shadows.ogg
+  audio_instance_weight_9 = 1.0
+  audio_instance_10 = [source:local]/config/fancymenu/assets/sounds/music/fu_a_thing.ogg
+  audio_instance_weight_10 = 1.0
+  audio_instance_11 = [source:local]/config/fancymenu/assets/sounds/music/fu_echoes_of_time.ogg
+  audio_instance_weight_11 = 1.0
+  audio_instance_12 = [source:local]/config/fancymenu/assets/sounds/music/fu_frost.ogg
+  audio_instance_weight_12 = 1.0
+  audio_instance_13 = [source:local]/config/fancymenu/assets/sounds/music/fu_dark_ambient_1.ogg
+  audio_instance_weight_13 = 1.0
   play_mode = shuffle
   looping = true
   volume = 0.75
@@ -63,8 +75,8 @@ element {
   fade_out_speed = 1.0
   base_opacity = 1.0
   auto_sizing = false
-  auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1011
+  auto_sizing_base_screen_width = 2560
+  auto_sizing_base_screen_height = 1496
   sticky_anchor = false
   anchor_point = mid-centered
   x = -50
