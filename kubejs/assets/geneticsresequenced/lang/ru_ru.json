@@ -1,50 +1,50 @@
 {
-  "advancement.geneticsresequenced.black_death.desc": "Craft a DNA Helix that has The Black Death.",
-  "advancement.geneticsresequenced.black_death.title": "La Grand Mort",
+  "advancement.geneticsresequenced.black_death.desc": "Создайте спираль ДНК с Чёрной смертью.",
+  "advancement.geneticsresequenced.black_death.title": "Чума, сифилис и проказа",
   
-  "advancement.geneticsresequenced.blood_purifier.desc": "Craft a Blood Purifier.\n\nUse it to decontaminate Syringes.",
-  "advancement.geneticsresequenced.blood_purifier.title": "B Positive.",
+  "advancement.geneticsresequenced.blood_purifier.desc": "Создайте очиститель крови.\n\nИспользуйте его, чтобы обеззаразить кровь в шприцах.",
+  "advancement.geneticsresequenced.blood_purifier.title": "Группа крови на рукаве",
   
-  "advancement.geneticsresequenced.cell_analyzer.desc": "Craft a Cell Analyzer.\n\nIt converts Образец ткани into Cells.",
-  "advancement.geneticsresequenced.cell_analyzer.title": "Cells at Work",
+  "advancement.geneticsresequenced.cell_analyzer.desc": "Создайте Анализатор клеток.\n\nОн позволяет конвертировать образцы ткани в клетки.",
+  "advancement.geneticsresequenced.cell_analyzer.title": "Погоди, но где мне найти Кевина?",
   
-  "advancement.geneticsresequenced.decrypt_dna.desc": "Decrypt a DNA Helix to find out its Gene.",
+  "advancement.geneticsresequenced.decrypt_dna.desc": "Расшифруйте спираль ДНК, чтобы узнать, какой в ней ген.",
   "advancement.geneticsresequenced.decrypt_dna.title": "Ген-ий.",
   
-  "advancement.geneticsresequenced.dna_decryptor.desc": "Craft a DNA Decryptor.\n\nIt discovers what Gene is inside a DNA Helix.",
-  "advancement.geneticsresequenced.dna_decryptor.title": "Дешифратор ДНК",
+  "advancement.geneticsresequenced.dna_decryptor.desc": "Создайте Дешифратор ДНК.\n\nОн позволяет раскрыть гены в спиралях ДНК.",
+  "advancement.geneticsresequenced.dna_decryptor.title": "Дешифратор",
   
-  "advancement.geneticsresequenced.dna_extractor.desc": "Craft a DNA Extractor.\n\nIt converts Cells into encrypted DNA Helices.",
+  "advancement.geneticsresequenced.dna_extractor.desc": "Создайте Экстрактор ДНК.\n\nОн конвертирует клетки в расшифрованные спирали ДНК.",
   "advancement.geneticsresequenced.dna_extractor.title": "Экстрактор ДНК",
   
-  "advancement.geneticsresequenced.flight.desc": "Get the Flight Gene.",
-  "advancement.geneticsresequenced.flight.title": "To Infinity and Beyond.",
+  "advancement.geneticsresequenced.flight.desc": "Получите ген Полёта.",
+  "advancement.geneticsresequenced.flight.title": "Сквозь тернии к звёздам.",
   
-  "advancement.geneticsresequenced.get_gene.desc": "Inject yourself with any Gene.",
-  "advancement.geneticsresequenced.get_gene.title": "What Are Midichlorians?",
+  "advancement.geneticsresequenced.get_gene.desc": "Внедрите в себя ген.",
+  "advancement.geneticsresequenced.get_gene.title": "Что еще на Мидихлорианы?",
   
-  "advancement.geneticsresequenced.get_milked.desc": "Позвольте подоить себя, вживив в себя ген Лактации. \n\nYou can milk yourself by sneaking.",
+  "advancement.geneticsresequenced.get_milked.desc": "Позвольте подоить себя, вживив в себя ген Лактации. \n\nВы можете сделать это сами, крадучись.",
   "advancement.geneticsresequenced.get_milked.title": "Молочная мамочка",
   
-  "advancement.geneticsresequenced.pathowogen.desc": "Получи ген кринжа. Выпусти внутреннего фембойчика.",
+  "advancement.geneticsresequenced.pathowogen.desc": "Получи ген кринжа. Поиграй с Create:Estrogene в реальной жизни.",
   "advancement.geneticsresequenced.pathowogen.title": "ПатOwOген ",
   
-  "advancement.geneticsresequenced.plasmid_infuser.desc": "Craft a Plasmid Infuser.\n\nUse it to set a Plasmid's Gene using DNA Helices.",
-  "advancement.geneticsresequenced.plasmid_infuser.title": "Внедритель плазмид",
+  "advancement.geneticsresequenced.plasmid_infuser.desc": "Создайте внедритель плазмид.\n\nИспользуйте его для назначения гена плазмиды с помощью спиралей ДНК.",
+  "advancement.geneticsresequenced.plasmid_infuser.title": "'...Знаешь, я был бы не против внедрить свою спираль ДНК в твои плазмиды...'",
   
-  "advancement.geneticsresequenced.plasmid_injector.desc": "Craft a Plasmid Injector.\n\nUse it to inject full Plasmids into into decontaminated Syringes.",
-  "advancement.geneticsresequenced.plasmid_injector.title": "Инъектор плазмид",
+  "advancement.geneticsresequenced.plasmid_injector.desc": "Создайте Инъектор плазмид.\n\nИспользуйте его, чтобы переместить полученные плазмиды в шприц с очищенной кровью.",
+  "advancement.geneticsresequenced.plasmid_injector.title": "Инъектор Гаджет",
   
-  "advancement.geneticsresequenced.scare.desc": "Get the Scare Zombies, Scare Spiders, Scare Creepers, and Scare Skeletons Genes.",
+  "advancement.geneticsresequenced.scare.desc": "Получите все отпугивающие гены.",
   "advancement.geneticsresequenced.scare.title": "Бу.                 ",
   
-  "advancement.geneticsresequenced.scraper.desc": "Craft a Scraper.\n\nScrapers are used to get Образец ткани from mobs.",
+  "advancement.geneticsresequenced.scraper.desc": "Создайте скальпель.\n\nОни используются для сбора образцов ткани с существ.",
   
-  "advancement.geneticsresequenced.slimy_death.desc": "Trigger the Slimy Death Gene.",
-  "advancement.geneticsresequenced.slimy_death.title": "Me and the Boys",
+  "advancement.geneticsresequenced.slimy_death.desc": "Пробудите ген Слизневой смерти.",
+  "advancement.geneticsresequenced.slimy_death.title": "ХВАТАЙТЕ ЕГО, ПАРНИ",
   
-  "advancement.geneticsresequenced.syringe.desc": "Craft a Syringe.\n\nSyringes are used to extract blood from yourself.\n\nA Metal Syringe can be used to extract blood from others, instead.",
-  "advancement.geneticsresequenced.syringe.title": "You'll Feel a Small Prick",
+  "advancement.geneticsresequenced.syringe.desc": "Создайте шприц.\n\nОбычные шприцы используются для сбора собственной крови.\n\nДля сбора крови с других существ используйте Металлический шприц.",
+  "advancement.geneticsresequenced.syringe.title": "'...12 пробирок...Как будто комарик...Укусил...'",
 
 
 
@@ -53,7 +53,7 @@
   "block.geneticsresequenced.bioluminescence": "Биолюминисцентный свет",
   "block.geneticsresequenced.blood_purifier": "Очиститель крови",
   "block.geneticsresequenced.cell_analyzer": "Клеточный анализатор",
-  "block.geneticsresequenced.coal_generator": "Coal Generator",
+  "block.geneticsresequenced.coal_generator": "Угольный генератор",
   "block.geneticsresequenced.dna_decryptor": "Дешифратор ДНК",
   "block.geneticsresequenced.dna_extractor": "Экстрактор ДНК",
   "block.geneticsresequenced.incubator": "Инкубатор",
@@ -777,7 +777,7 @@
   "gene.geneticsresequenced.item_magnet": "Магнит предметов",
   "gene.geneticsresequenced.johnny": "Джонни",
   "gene.geneticsresequenced.jump_boost": "Прыгучесть",
-  "gene.geneticsresequenced.keep_inventory": "Keep Inventory",
+  "gene.geneticsresequenced.keep_inventory": "Сохранение инвентаря",
   "gene.geneticsresequenced.knockback": "Отдача",
   "gene.geneticsresequenced.lava_proof": "Лавастойкость",
   "gene.geneticsresequenced.lay_egg": "Яйцекладущий",
