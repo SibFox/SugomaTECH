@@ -1,272 +1,267 @@
 {
-  "block.bettervannilafishes.haddock_cod_specimen": "Трофейная пикша",
+  "advancements.bettervannilafishes.monster_go_away.desc": "Создайте зачарованного иглобрюха, чтобы сражаться с монстрами.",
+  "advancements.bettervannilafishes.monster_go_away.title": "Монстры и демоны, уходите прочь",
+  
+  "block.bettervannilafishes.aequidens_tetramerus_specimen": "Трофейная сетчатая акара",
+  "block.bettervannilafishes.astronotus_ocellatus_specimen": "Трофейный астронотус",
   "block.bettervannilafishes.atlantic_cod_specimen": "Трофейная атлантическая треска",
+  "block.bettervannilafishes.australoheros_facetus_specimen": "Трофейная чанчито",
+  "block.bettervannilafishes.channa_argus_specimen": "Трофейный коричневый змееголов",
+  "block.bettervannilafishes.channa_micropeltes_specimen": "Трофейный томан",
+  "block.bettervannilafishes.cichlasoma_bimaculatum_specimen": "Трофейная чёрная акара",
+  "block.bettervannilafishes.elopichthys_bambusa_specimen": "Трофейный желтощёк",
+  "block.bettervannilafishes.epinephelus_itajara_specimen": "Трофейная гуаса",
+  "block.bettervannilafishes.epinephelus_lanceolatus_specimen": "Трофейный малоглазый групер",
+  "block.bettervannilafishes.epinephelus_melanostigma_specimen": "Трофейный пятнистый групер",
+  "block.bettervannilafishes.female_salmon_specimen": "Трофейная самка лосося",
+  "block.bettervannilafishes.galeocerdo_cuvier_specimen": "Трофейная тигровая акула",
+  "block.bettervannilafishes.gymnogeophagus_balzanii_specimen": "Трофейный Парагвайский геофаг",
+  "block.bettervannilafishes.haddock_cod_specimen": "Трофейная пикша",
+  "block.bettervannilafishes.krobia_guianensis_specimen": "Трофейный геофагус Гейи",
+  "block.bettervannilafishes.male_salmon_specimen": "Трофейный самец лосося",
   "block.bettervannilafishes.pacific_cod_specimen": "Трофейная тихоокеанская треска",
   "block.bettervannilafishes.pacific_salmon_specimen": "Трофейный тихоокеанский лосось",
-  "block.bettervannilafishes.male_salmon_specimen": "Трофейный лосось, самец",
-  "block.bettervannilafishes.female_salmon_specimen": "Трофейфый лосось, самка",
   "block.bettervannilafishes.spearfish_specimen": "Трофейная рыба-меч",
-  "block.bettervannilafishes.galeocerdo_cuvier_specimen": "Трофейная тигровая акула",
-
-  "item.bettervannilafishes.amphiprion_percula_bucket": "Оранжевая рыба-клоун в ведре",
-  "item.bettervannilafishes.amphiprion_percula_bucket.descr": "Маленькие тропические рыбки, ведут стайный образ жизни.",
-
-  "item.bettervannilafishes.amphiprion_clarkii_bucket": "Шоколадная рыба-клоун в ведре",
-  "item.bettervannilafishes.amphiprion_clarkii_bucket.descr": "Маленькие тропические рыбки, ведут стайный образ жизни.",
-
-  "item.bettervannilafishes.amphiprion_perideraion_bucket": "Розовая рыба-клоун в ведре",
-  "item.bettervannilafishes.amphiprion_perideraion_bucket.descr": "Маленькие тропические рыбки, ведут стайный образ жизни.",
-
-  "item.bettervannilafishes.amphiprion_polymnus_bucket": "Крупнополосая рыба-клоун в ведре",
-  "item.bettervannilafishes.amphiprion_polymnus_bucket.descr": "Маленькие тропические рыбки, ведут стайный образ жизни.",
-
-  "item.bettervannilafishes.premnas_biaculeatus_bucket": "Желтополосая рыба-клоун в ведре",
-  "item.bettervannilafishes.premnas_biaculeatus_bucket.descr": "Маленькие тропические рыбки, ведут стайный образ жизни.",
-
-  "item.bettervannilafishes.amphiprion_ocellaris_bucket": "Платиновая рыба-клоун в ведре",
-  "item.bettervannilafishes.amphiprion_ocellaris_bucket.descr": "Маленькие тропические рыбки, ведут стайный образ жизни.",
-
-  "item.bettervannilafishes.astronotus_ocellatus_bucket": "Астронотус в ведре",
-  "item.bettervannilafishes.astronotus_ocellatus_bucket.descr": "Небольшие тропические рыбы, предпочитают песчаный грунт, ведут стайный образ жизни.",
-
-  "item.bettervannilafishes.gymnogeophagus_balzanii_bucket": "Геофагус Бальзани в ведре",
-  "item.bettervannilafishes.gymnogeophagus_balzanii_bucket.descr": "Предпочитает водоемы тропических лесов. Ведет стайный образ жизни.",
-
-  "item.bettervannilafishes.:aequidens_tetramerus_bucket": "Сетчатая акара в ведре",
-  "item.bettervannilafishes.:aequidens_tetramerus_bucket.descr": "Небольшие тропические рыбы, ведут стайный образ жизни.",
-
-  "item.bettervannilafishes.krobia_guianensis_bucket": "Акара-дельфин в ведре",
-  "item.bettervannilafishes.krobia_guianensis_bucket.descr": "Небольшие тропические рыбы, предпочитают стайный образ жизни.",
-
-  "item.bettervannilafishes.cichlasoma_bimaculatum_bucket": "Чёрная акара в ведре",
-  "item.bettervannilafishes.cichlasoma_bimaculatum_bucket.descr": "Небольшие тропические рыбы, ведут стайный образ жизни.",
-
-  "item.bettervannilafishes.australoheros_facetus_bucket": "Цихлазома фацетум в ведре",
-  "item.bettervannilafishes.australoheros_facetus_bucket.descr": "Небольшие тропические рыбы, ведут стайный образ жизни.",
-
-  "item.bettervannilafishes.acanthurus_lineatus_bucket": "Полосатая рыба-хирург в ведре",
-  "item.bettervannilafishes.acanthurus_lineatus_bucket.descr": "Рыба семейства хирургов. Миролюбивы, предпочитают коралловые рифы.",
-
-  "item.bettervannilafishes.acanthurus_nigricans_bucket": "Златоспинная рыба-хирург в ведре",
-  "item.bettervannilafishes.acanthurus_nigricans_bucket.descr": "Рыба семейства хирургов. Миролюбивы, предпочитают коралловые рифы.",
-
-  "item.bettervannilafishes.acanthurus_triostegus_bucket": "Хирург-зебра в ведре",
-  "item.bettervannilafishes.acanthurus_triostegus_bucket.descr": "Рыба семейства хирургов. Миролюбивы, предпочитают коралловые рифы.",
-
-  "item.bettervannilafishes.paracanthurus_hepatus_bucket": "Королевская рыба-хирург в ведре",
-  "item.bettervannilafishes.paracanthurus_hepatus_bucket.descr": "Рыба семейства хирургов. Миролюбивы, предпочитают коралловые рифы.",
-
-  "item.bettervannilafishes.acanthurus_leucosternon_bucket": "Белогрудая рыба-хирург в ведре",
-  "item.bettervannilafishes.acanthurus_leucosternon_bucket.descr": "Рыба семейства хирургов. Миролюбивы, предпочитают коралловые рифы.",
-
-  "item.bettervannilafishes.acanthurus_achilles_bucket": "Хирург-Ахиллес в ведре",
-  "item.bettervannilafishes.acanthurus_achilles_bucket.descr": "Рыба семейства хирургов. Миролюбивы, предпочитают коралловые рифы.",
-
-  "item.bettervannilafishes.galeocerdo_cuvier_bucket": "Тигровая акула...В ведре.",
-  "item.bettervannilafishes.galeocerdo_cuvier_bucket.descr": "Агрессивны. Лучше содержать в отдельном крупном танкере.",
-
-  "item.bettervannilafishes.spearfish_bucket": "Рыба-меч в ведре",
-  "item.bettervannilafishes.spearfish_bucket.descr": "Агрессивны. Лучше содержать в отдельном крупном танкере.",
-
-  "item.bettervannilafishes.feather_star_bucket": "Перистая звезда в ведре",
-  "item.bettervannilafishes.feather_star_bucket.descr": "Второе название - 'Морская лилия'. Хорошо приживается рядом с коралловыми рифами.",
-
-  "item.bettervannilafishes.nautilus_bucket": "Наутилус в ведре",
-  "item.bettervannilafishes.nautilus_bucket.descr": "Предпочитают коралловые рифы и песчаное дно. Могут ужиться с акулами благодаря своему панцирю.",
-
-  "item.bettervannilafishes.porcupine_fish_bucket": "Иглобрюх в ведре",
-  "item.bettervannilafishes.porcupine_fish_bucket.descr": "Предпочитают коралловые рифы и подводные луга без хищных рыб.",
-
-  "item.bettervannilafishes.obscure_puffer_bucket": "Рыба-фугу в ведре",
-  "item.bettervannilafishes.obscure_puffer_bucket.descr": "Предпочитают коралловые рифы и подводные луга без хищных рыб.",
-
-  "item.bettervannilafishes.yellow_fin_puffer_bucket": "Такифугу в ведре",
-  "item.bettervannilafishes.yellow_fin_puffer_bucket.descr": "Предпочитают коралловые рифы и подводные луга без хищных рыб.",
-
-  "item.bettervannilafishes.pacific_salmon_bucket": "Тихоокеанская треска в ведре",
-  "item.bettervannilafishes.pacific_salmon_bucket.descr": "Холодолюбивая рыба. Требует большое пространство из-за своих крупных размеров.",
-
-  "item.bettervannilafishes.female_salmon_bucket": "Лосось в ведре, самка",
-  "item.bettervannilafishes.female_salmon_bucket.descr": "Холодолюбивая рыба. Требует большое пространство из-за своих крупных размеров.",
-
-  "item.bettervannilafishes.male_salmon_bucket": "Лосось в ведре, самец",
-  "item.bettervannilafishes.male_salmon_bucket.descr": "Холодолюбивая рыба. Требует большое пространство из-за своих крупных размеров.",
-
-  "item.bettervannilafishes.pacific_cod_bucket": "Тихоокеанская треска в ведре",
-  "item.bettervannilafishes.pacific_cod_bucket.descr": "Холодолюбивая рыба. Требует большое пространство из-за своих крупных размеров.",
-
-  "item.bettervannilafishes.atlantic_cod_bucket": "Атлантическая треска в ведре",
-  "item.bettervannilafishes.atlantic_cod_bucket.descr": "Холодолюбивая рыба. Требует большое пространство из-за своих крупных размеров.",
-
-  "item.bettervannilafishes.haddock_cod_bucket": "Пикша в ведре",
-  "item.bettervannilafishes.haddock_cod_bucket.descr": "Холодолюбивая рыба средних размеров. Предпочитает селиться стайками.",
-
-
-
-  "item.bettervannilafishes.enchanted_pufferfish": "Зачарованный иглобрюх",
-  "item.bettervannilafishes.enchanted_pufferfish.descr": "Какое разочарование",
-
-  "item.bettervannilafishes.haddock_cod": "Пикша",
-  "item.bettervannilafishes.haddock_cod.descr": "Сырая",
-
-  "item.bettervannilafishes.atlantic_cod": "Атлантическая треска",
-  "item.bettervannilafishes.atlantic_cod.descr": "Сырая",
-
-  "item.bettervannilafishes.pacific_cod": "Тихоокеанская треска",
-  "item.bettervannilafishes.pacific_cod.descr": "Сырая",
-
-  "item.bettervannilafishes.male_salmon": "Лосось, самец",
-  "item.bettervannilafishes.male_salmon.descr": "Сырой",
-
-  "item.bettervannilafishes.female_salmon": "Лосось, самка",
-  "item.bettervannilafishes.female_salmon.descr": "Сырая",
-
-  "item.bettervannilafishes.pacific_salmon": "Тихоокеанский лосось",
-  "item.bettervannilafishes.pacific_salmon.descr": "Сырой",
-
-  "item.bettervannilafishes.yellow_fin_puffer": "Такифугу",
-  "item.bettervannilafishes.yellow_fin_puffer.descr": "Сырая. Ядовитая?",
-
-  "item.bettervannilafishes.obscure_puffer": "Рыба-фугу",
-  "item.bettervannilafishes.obscure_puffer.descr": "Сырая. Ядовитая?",
-
-  "item.bettervannilafishes.porcupine_fish": "Иглобрюх",
-  "item.bettervannilafishes.porcupine_fish.descr": "Сырой. И колючий..",
-
-  "item.bettervannilafishes.spearfish": "Рыба-меч",
-  "item.bettervannilafishes.spearfish.descr": "Величественная рыба. Сырая.",
-
-  "item.bettervannilafishes.cooked_spearfish": "Приготовленная рыба-меч",
-  "item.bettervannilafishes.cooked_spearfish.descr": "Величественная рыба. Вкусная.",
-
-  "item.bettervannilafishes.galeocerdo_cuvier": "Тигровая акула",
-  "item.bettervannilafishes.galeocerdo_cuvier.descr": "Величественная рыба. Сырая.",
-
-  "item.bettervannilafishes.shark_fin": "Акулий плавник",
-  "item.bettervannilafishes.shark_fin.descr": "Упругий..",
-
-  "item.bettervannilafishes.acanthurus_achilles": "Хирург-Ахиллес",
-  "item.bettervannilafishes.acanthurus_achilles.descr": "Сырая",
-
-  "item.bettervannilafishes.acanthurus_leucosternon": "Белогрудая рыба-хирург",
-  "item.bettervannilafishes.acanthurus_leucosternon.descr": "Сырая",
-
-  "item.bettervannilafishes.paracanthurus_hepatus": "Королевская рыба-хирург",
-  "item.bettervannilafishes.paracanthurus_hepatus.descr": "Сырая",
-
-  "item.bettervannilafishes.acanthurus_triostegus": "Хирург-зебра",
-  "item.bettervannilafishes.acanthurus_triostegus.descr": "Сырая",
-
-  "item.bettervannilafishes.acanthurus_nigricans": "Златоспинная рыба-хирург",
-  "item.bettervannilafishes.acanthurus_nigricans.descr": "Сырая",
-
-  "item.bettervannilafishes.acanthurus_lineatus": "Полосатая рыба-хирург",
-  "item.bettervannilafishes.acanthurus_lineatus.descr": "Сырая",
-
-  "item.bettervannilafishes.australoheros_facetus": "Цихлазома фацетум",
-  "item.bettervannilafishes.australoheros_facetus.descr": "Сырая",
-
-  "item.bettervannilafishes.cichlasoma_bimaculatum": "Чёрная акара",
-  "item.bettervannilafishes.cichlasoma_bimaculatum.descr": "Сырая",
-
-  "item.bettervannilafishes.krobia_guianensis": "Акара-дельфин",
-  "item.bettervannilafishes.krobia_guianensis.descr": "Сырая",
-
-  "item.bettervannilafishes.aequidens_tetramerus": "Сетчатая акара",
-  "item.bettervannilafishes.aequidens_tetramerus.descr": "Сырая",
-
-  "item.bettervannilafishes.gymnogeophagus_balzanii": "Геофагус Бальзани",
-  "item.bettervannilafishes.gymnogeophagus_balzanii.descr": "Сырая",
-
-  "item.bettervannilafishes.astronotus_ocellatus": "Астронотус",
-  "item.bettervannilafishes.astronotus_ocellatus.descr": "Сырая",
-
-  "item.bettervannilafishes.amphiprion_ocellaris": "Платиновая рыба-клоун",
-  "item.bettervannilafishes.amphiprion_ocellaris.descr": "Сырая",
-
-  "item.bettervannilafishes.premnas_biaculeatus": "Желтополосая рыба-клоун",
-  "item.bettervannilafishes.premnas_biaculeatus.descr": "Сырая",
-
-  "item.bettervannilafishes.amphiprion_polymnus": "Крупнополосая рыба-клоун",
-  "item.bettervannilafishes.amphiprion_polymnus.descr": "Сырая",
-
-  "item.bettervannilafishes.amphiprion_perideraion": "Розовая рыба-клоун",
-  "item.bettervannilafishes.amphiprion_perideraion.descr": "Сырая",
-
-  "item.bettervannilafishes.amphiprion_clarkii": "Шоколадная рыба-клоун",
-  "item.bettervannilafishes.amphiprion_clarkii.descr": "Сырая",
-
-  "item.bettervannilafishes.amphiprion_percula": "Оранжевая рыба-клоун",
-  "item.bettervannilafishes.amphiprion_percula.descr": "Сырая",
-
-  "item.bettervannilafishes.feather_star_tentacle": "Перистая звезда",
-  "item.bettervannilafishes.feather_star_tentacle.descr": "Полая, как панцирь.",
-
-  "item.bettervannilafishes.haddock_cod_spawn_egg": "Яйцо призыва пикши",
-  "item.bettervannilafishes.atlantic_cod_spawn_egg": "Яйцо призыва атлантической трески",
-  "item.bettervannilafishes.pacific_cod_spawn_egg": "Яйцо призыва океанической трески",
-  "item.bettervannilafishes.male_salmon_spawn_egg": "Яйцо призыва самца лосося",
-  "item.bettervannilafishes.female_salmon_spawn_egg": "Яйцо призыва самки лосося",
-  "item.bettervannilafishes.pacific_salmon_spawn_egg": "Яйцо призыва океанического лосося",
-  "item.bettervannilafishes.yellow_fin_puffer_spawn_egg": "Яйцо призыва такифугу",
-  "item.bettervannilafishes.obscure_puffer_spawn_egg": "Яйцо призыва рыбы-фугу",
-  "item.bettervannilafishes.porcupine_fish_spawn_egg": "Яйцо призыва иглобрюха",
-  "item.bettervannilafishes.nautilus_spawn_egg": "Яйцо призыва наутилуса",
-  "item.bettervannilafishes.feather_star_spawn_egg": "Яйцо призыва перистой звезды",
-  "item.bettervannilafishes.spearfish_spawn_egg": "Яйцо призыва рыбы-меча",
-  "item.bettervannilafishes.galeocerdo_cuvier_spawn_egg": "Яйцо призыва тигровой акулы",
-  "item.bettervannilafishes.acanthurus_achilles_spawn_egg": "Яйцо призыва хирурга-Ахиллеса",
-  "item.bettervannilafishes.acanthurus_leucosternon_spawn_egg": "Яйцо призыва белогрудой рыбы-хирурга",
-  "item.bettervannilafishes.paracanthurus_hepatus_spawn_egg": "Яйцо призыва королевской рыбы-хирурга",
-  "item.bettervannilafishes.acanthurus_triostegus_spawn_egg": "Яйцо призыва хирурга-зебры",
-  "item.bettervannilafishes.acanthurus_nigricans_spawn_egg": "Яйцо призыва златоспинной рыбы-хирурга",
-  "item.bettervannilafishes.premnas_biaculeatus_spawn_egg": "Яйцо призыва желтополосой рыбы-клоуна",
-  "item.bettervannilafishes.amphiprion_ocellaris_spawn_egg": "Яйцо призыва платиновой рыбы-клоуна",
-  "item.bettervannilafishes.astronotus_ocellatus_spawn_egg": "Яйцо призыва астронотуса",
-  "item.bettervannilafishes.gymnogeophagus_balzanii_spawn_egg": "Яйцо призыва Геофагуса Бальзани",
-  "item.bettervannilafishes.aequidens_tetramerus_spawn_egg": "Яйцо призыва сетчатой акары",
-  "item.bettervannilafishes.krobia_guianensis_spawn_egg": "Яйцо призыва акары-дельфина",
-  "item.bettervannilafishes.cichlasoma_bimaculatum_spawn_egg": "Яйцо призыва чёрной акары",
-  "item.bettervannilafishes.australoheros_facetus_spawn_egg": "Яйцо призыва цихлазомы фацетум",
-  "item.bettervannilafishes.acanthurus_lineatus_spawn_egg": "Яйцо призыва полосатой рыбы-хирурга",
-  "item.bettervannilafishes.amphiprion_percula_spawn_egg": "Яйцо призыва оранжевой рыбы-клоуна",
-  "item.bettervannilafishes.amphiprion_clarkii_spawn_egg": "Яйцо призыва шоколадной рыбы-клоуна",
-  "item.bettervannilafishes.amphiprion_perideraion_spawn_egg": "Яйцо призыва розовой рыбы-клоуна",
-  "item.bettervannilafishes.amphiprion_polymnus_spawn_egg": "Яйцо призыва крупнополосой рыбы-клоуна",
-
-  "entity.bettervannilafishes.haddock_cod": "Пикша",
-  "entity.bettervannilafishes.atlantic_cod": "Атлантическая треска",
-  "entity.bettervannilafishes.pacific_cod": "Океаническая треска",
-  "entity.bettervannilafishes.male_salmon": "Самец лосося",
-  "entity.bettervannilafishes.female_salmon": " Самка лосося",
-  "entity.bettervannilafishes.pacific_salmon": "Океанический лосось",
-  "entity.bettervannilafishes.yellow_fin_puffer": "Такифугу",
-  "entity.bettervannilafishes.obscure_puffer": "Рыба-фугу",
-  "entity.bettervannilafishes.porcupine_fish": "Иглобрюх",
-  "entity.bettervannilafishes.nautilus": "Наутилус",
-  "entity.bettervannilafishes.feather_star": "Перистая звезда",
-  "entity.bettervannilafishes.spearfish": "Рыба-меч",
-  "entity.bettervannilafishes.galeocerdo_cuvier": "Тигровая акула",
+  
+  "bvc.command.follow": "Следует",
+  "bvc.command.hanging": "Бездействует",
+  
+  "effect.bettervannilafishes.bleeding": "Кровотечение",
+  "effect.bettervannilafishes.nautilus_blessing": "Благословение Наутилуса",
+  "effect.bettervannilafishes.purification": "Очищение",
+  
   "entity.bettervannilafishes.acanthurus_achilles": "Хирург-Ахиллес",
   "entity.bettervannilafishes.acanthurus_leucosternon": "Белогрудая рыба-хирург",
-  "entity.bettervannilafishes.paracanthurus_hepatus": "Королевской рыбы-хирурга",
-  "entity.bettervannilafishes.acanthurus_triostegus": "Хирург-зебра",
-  "entity.bettervannilafishes.acanthurus_nigricans": "Златоспинной рыба-хирург",
-  "entity.bettervannilafishes.premnas_biaculeatus": "Желтополосая рыба-клоун",
-  "entity.bettervannilafishes.amphiprion_ocellaris": "Платиновая рыба-клоун",
-  "entity.bettervannilafishes.astronotus_ocellatus": "Астронотус",
-  "entity.bettervannilafishes.gymnogeophagus_balzanii": "Геофагус Бальзани",
-  "entity.bettervannilafishes.aequidens_tetramerus": "Сетчатая акара",
-  "entity.bettervannilafishes.krobia_guianensis": "Акара-дельфин",
-  "entity.bettervannilafishes.cichlasoma_bimaculatum": "Чёрная акара",
-  "entity.bettervannilafishes.australoheros_facetus": "Цихлазома фацетум",
   "entity.bettervannilafishes.acanthurus_lineatus": "Полосатая рыба-хирург",
-  "entity.bettervannilafishes.amphiprion_percula": "Оранжевая рыба-клоун",
+  "entity.bettervannilafishes.acanthurus_nigricans": "Златоспинная рыба-хирург",
+  "entity.bettervannilafishes.acanthurus_triostegus": "Хирург-зебра",
+  "entity.bettervannilafishes.aequidens_tetramerus": "Сетчатая акара",
   "entity.bettervannilafishes.amphiprion_clarkii": "Шоколадная рыба-клоун",
+  "entity.bettervannilafishes.amphiprion_ocellaris": "Платиновая рыба-клоун",
+  "entity.bettervannilafishes.amphiprion_percula": "Рыба-клоун",
   "entity.bettervannilafishes.amphiprion_perideraion": "Розовая рыба-клоун",
   "entity.bettervannilafishes.amphiprion_polymnus": "Крупнополосая рыба-клоун",
+  "entity.bettervannilafishes.astronotus_ocellatus": "Астронотус",
+  "entity.bettervannilafishes.atlantic_cod": "Атлантическая треска",
+  "entity.bettervannilafishes.australoheros_facetus": "Чанчито",
+  "entity.bettervannilafishes.chaetodon_auriga": "Нитепёрая рыба-бабочка",
+  "entity.bettervannilafishes.chaetodon_collare": "Желтохвостая рыба-бабочка",
+  "entity.bettervannilafishes.chaetodon_reticulatus": "Сетчатая рыба-бабочка",
+  "entity.bettervannilafishes.chaetodon_speculum": "Зеркальная рыба-бабочка",
+  "entity.bettervannilafishes.chaetodon_striatus": "Полосатая рыба-бабочка",
+  "entity.bettervannilafishes.chaetodon_unimaculatus": "Щетинозубка",
+  "entity.bettervannilafishes.channa_argus": "Коричневый змееголов",
+  "entity.bettervannilafishes.channa_micropeltes": "Томан",
+  "entity.bettervannilafishes.cichlasoma_bimaculatum": "Чёрная акара",
+  "entity.bettervannilafishes.dosidicus_gigas": "Гигантский кальмар",
+  "entity.bettervannilafishes.elopichthys_bambusa": "Желтощёк",
+  "entity.bettervannilafishes.epinephelus_itajara": "Гуаса",
+  "entity.bettervannilafishes.epinephelus_lanceolatus": "Малоглазый групер",
+  "entity.bettervannilafishes.epinephelus_melanostigma": "Пятнистый групер",
+  "entity.bettervannilafishes.feather_star": "Перистая звезда",
+  "entity.bettervannilafishes.female_salmon": "Самка лосося",
+  "entity.bettervannilafishes.galeocerdo_cuvier": "Тигровая акула",
+  "entity.bettervannilafishes.gymnogeophagus_balzanii": "Парагвайский геофаг",
+  "entity.bettervannilafishes.haddock_cod": "Пикша",
+  "entity.bettervannilafishes.krobia_guianensis": "Геофагус Гейи",
+  "entity.bettervannilafishes.male_salmon": "Самец лосося",
+  "entity.bettervannilafishes.nautilus": "Наутилус",
+  "entity.bettervannilafishes.obscure_puffer": "Иглобрюх",
+  "entity.bettervannilafishes.pacific_cod": "Серая треска",
+  "entity.bettervannilafishes.pacific_salmon": "Нерка",
+  "entity.bettervannilafishes.paracanthurus_hepatus": "Королевская рыба-хирург",
+  "entity.bettervannilafishes.porcupine_fish": "Рыба-ёж",
+  "entity.bettervannilafishes.premnas_biaculeatus": "Колючещёкий клоун",
+  "entity.bettervannilafishes.spearfish": "Рыба-меч",
+  "entity.bettervannilafishes.yellow_fin_puffer": "Такифугу",
 
-  "effect.bettervannilafishes.bleeding": "Кровотечение",
-  "effect.bettervannilafishes.nautilus_blessing": "Благословление Наутилуса",
-  "effect.bettervannilafishes.purification": "Очищение"
+
+
+  "item.bettervannilafishes.acanthurus_achilles": "Хирург-Ахиллес",
+  "item.bettervannilafishes.acanthurus_achilles_bucket": "Хирург-Ахиллес в ведре",
+  "item.bettervannilafishes.acanthurus_achilles_spawn_egg": "Яйцо призыва хирурга-Ахиллеса",
+
+  "item.bettervannilafishes.acanthurus_leucosternon": "Королевская рыба-хирург",
+  "item.bettervannilafishes.acanthurus_leucosternon_bucket": "Королевская рыба-хирург в ведре",
+  "item.bettervannilafishes.acanthurus_leucosternon_spawn_egg": "Яйцо призыва королевской рыбы-хирург",
+
+  "item.bettervannilafishes.acanthurus_lineatus": "Полосатая рыба-хирург",
+  "item.bettervannilafishes.acanthurus_lineatus_bucket": "Полосатая рыба-хирург в ведре",
+  "item.bettervannilafishes.acanthurus_lineatus_spawn_egg": "Яйцо призыва полосатой рыбы-хирурга",
+
+  "item.bettervannilafishes.acanthurus_nigricans": "Златоспинная рыба-хирург",
+  "item.bettervannilafishes.acanthurus_nigricans_bucket": "Златоспинная рыба-хирург в ведре",
+  "item.bettervannilafishes.acanthurus_nigricans_spawn_egg": "Яйцо призыва златоспинной рыбы-хирурга",
+
+  "item.bettervannilafishes.acanthurus_triostegus": "Хирург-зебра",
+  "item.bettervannilafishes.acanthurus_triostegus_bucket": "Хирург-зебра в ведре",
+  "item.bettervannilafishes.acanthurus_triostegus_spawn_egg": "Яйцо призыва хирурга-зебры",
+
+  "item.bettervannilafishes.aequidens_tetramerus": "Сетчатая акара",
+  "item.bettervannilafishes.aequidens_tetramerus_bucket": "Сетчатая акара в ведре",
+  "item.bettervannilafishes.aequidens_tetramerus_spawn_egg": "Яйцо призыва сетчатой акары",
+
+  "item.bettervannilafishes.amphiprion_clarkii": "Шоколадная рыба-клоун",
+  "item.bettervannilafishes.amphiprion_clarkii_bucket": "Шоколадная рыба-клоун в ведре",
+  "item.bettervannilafishes.amphiprion_clarkii_spawn_egg": "Яйцо призыва шоколадной рыбы-клоуна",
+
+  "item.bettervannilafishes.amphiprion_ocellaris": "Платиновая рыба-клоун",
+  "item.bettervannilafishes.amphiprion_ocellaris_bucket": "Платиновая рыба-клоун в ведре",
+  "item.bettervannilafishes.amphiprion_ocellaris_spawn_egg": "Яйцо призыва платиновой рыбы-клоуна",
+
+  "item.bettervannilafishes.amphiprion_percula": "Оранжевая рыба-клоун",
+  "item.bettervannilafishes.amphiprion_percula_bucket": "Оранжевая рыба-клоун в ведре",
+  "item.bettervannilafishes.amphiprion_percula_spawn_egg": "Яйцо призыва оранжевой рыбы-клоуна",
+
+  "item.bettervannilafishes.amphiprion_perideraion": "Розовая рыба-клоун",
+  "item.bettervannilafishes.amphiprion_perideraion_bucket": "Розовая рыба-клоун в ведре",
+  "item.bettervannilafishes.amphiprion_perideraion_spawn_egg": "Яйцо призыва розовой рыбы-клоуна",
+
+  "item.bettervannilafishes.amphiprion_polymnus": "Крупнополосая рыба-клоун",
+  "item.bettervannilafishes.amphiprion_polymnus_bucket": "Крупнополосая рыба-клоун в ведре",
+  "item.bettervannilafishes.amphiprion_polymnus_spawn_egg": "Яйцо призыва крупнополосой рыбы-клоуна",
+
+  "item.bettervannilafishes.astronotus_ocellatus": "Астронотус",
+  "item.bettervannilafishes.astronotus_ocellatus_bucket": "Астронотус в ведре",
+  "item.bettervannilafishes.astronotus_ocellatus_spawn_egg": "Яйцо призыва астронотуса",
+
+  "item.bettervannilafishes.atlantic_cod": "Атлантическая треска",
+  "item.bettervannilafishes.atlantic_cod_bucket": "Атлантическая треска в ведре",
+  "item.bettervannilafishes.atlantic_cod_spawn_egg": "Яйцо призыва атлантической трески",
+
+  "item.bettervannilafishes.australoheros_facetus": "Чанчито",
+  "item.bettervannilafishes.australoheros_facetus_bucket": "Чанчито в ведре",
+  "item.bettervannilafishes.australoheros_facetus_spawn_egg": "Яйцо призыва чанчито",
+
+  "item.bettervannilafishes.chaetodon_auriga": "Нитепёрая рыба-бабочка",
+  "item.bettervannilafishes.chaetodon_auriga_bucket": "Нитепёрая рыба-бабочка в ведре",
+  "item.bettervannilafishes.chaetodon_auriga_spawn_egg": "Яйцо призыва нитепёрой рыбы-бабочки",
+
+  "item.bettervannilafishes.chaetodon_collare": "Желтохвостая рыба-бабочка",
+  "item.bettervannilafishes.chaetodon_collare_bucket": "Желтохвостая рыба-бабочка в ведре",
+  "item.bettervannilafishes.chaetodon_collare_spawn_egg": "Яйцо призыва Желтохвостая рыба-бабочка",
+
+  "item.bettervannilafishes.chaetodon_reticulatus": "Сетчатая рыба-бабочка",
+  "item.bettervannilafishes.chaetodon_reticulatus_bucket": "Сетчатая рыба-бабочка в ведре",
+  "item.bettervannilafishes.chaetodon_reticulatus_spawn_egg": "Яйцо призыва сетчатой рыбы-бабочки",
+
+  "item.bettervannilafishes.chaetodon_speculum": "Зеркальная рыба-бабочка",
+  "item.bettervannilafishes.chaetodon_speculum_bucket": "Зеркальная рыба-бабочка в ведре",
+  "item.bettervannilafishes.chaetodon_speculum_spawn_egg": "Яйцо призыва зеркальной рыбы-бабочки",
+
+  "item.bettervannilafishes.chaetodon_striatus": "Полосатая рыба-бабочка",
+  "item.bettervannilafishes.chaetodon_striatus_bucket": "Полосатая рыба-бабочка в ведре",
+  "item.bettervannilafishes.chaetodon_striatus_spawn_egg": "Яйцо призыва полосатой рыбы-бабочки",
+
+  "item.bettervannilafishes.chaetodon_unimaculatus": "Однопятнистая рыба-бабочка",
+  "item.bettervannilafishes.chaetodon_unimaculatus_bucket": "Однопятнистая рыба-бабочка в ведре",
+  "item.bettervannilafishes.chaetodon_unimaculatus_spawn_egg": "Яйцо призыва однопятнистой рыбы-бабочки",
+
+  "item.bettervannilafishes.channa_argus": "Коричневый змееголов",
+  "item.bettervannilafishes.channa_argus_bucket": "Коричневый змееголов в ведре",
+  "item.bettervannilafishes.channa_argus_spawn_egg": "Яйцо призыва коричневого змееголова",
+
+  "item.bettervannilafishes.channa_micropeltes": "Томан",
+  "item.bettervannilafishes.channa_micropeltes_bucket": "Томан в ведре",
+  "item.bettervannilafishes.channa_micropeltes_spawn_egg": "Яйцо призыва томана",
+
+  "item.bettervannilafishes.cichlasoma_bimaculatum": "Чёрная акара",
+  "item.bettervannilafishes.cichlasoma_bimaculatum_bucket": "Чёрная акара в ведре",
+  "item.bettervannilafishes.cichlasoma_bimaculatum_spawn_egg": "Яйцо призыва чёрной акары",
+
+  "item.bettervannilafishes.cooked_channa": "Приготовленный змееголов",
+  "item.bettervannilafishes.cooked_elopichthys_bambusa": "Приготовленный желтощёк",
+  "item.bettervannilafishes.cooked_epinephelus": "Приготовленный групер",
+  "item.bettervannilafishes.cooked_humboldt_squid": "Приготовленный гигантский кальмар",
+  "item.bettervannilafishes.cooked_spearfish": "Приготовленная рыба-меч",
+
+  "item.bettervannilafishes.humboldt_squid": "Гигантский кальмар",
+  "item.bettervannilafishes.dosidicus_gigas_bucket": "Гигантский кальмар в ведре",
+  "item.bettervannilafishes.dosidicus_gigas_spawn_egg": "Яйцо призыва гигантского кальмара",
+  
+
+  "item.bettervannilafishes.elopichthys_bambusa": "Желтощёк",
+  "item.bettervannilafishes.elopichthys_bambusa_bucket": "Желтощёк в ведре",
+  "item.bettervannilafishes.elopichthys_bambusa_spawn_egg": "Яйцо призыва желтощёка",
+
+  "item.bettervannilafishes.enchanted_pufferfish": "Зачарованный иглобрюх",
+
+  "item.bettervannilafishes.epinephelus_itajara": "Гуаса",
+  "item.bettervannilafishes.epinephelus_itajara_bucket": "Гуаса в ведре",
+  "item.bettervannilafishes.epinephelus_itajara_spawn_egg": "Яйцо призыва гуасы",
+
+  "item.bettervannilafishes.epinephelus_lanceolatus": "Малоглазый групер",
+  "item.bettervannilafishes.epinephelus_lanceolatus_bucket": "Малоглазый групер в ведре",
+  "item.bettervannilafishes.epinephelus_lanceolatus_spawn_egg": "Яйцо призыва малоглазого групера",
+
+  "item.bettervannilafishes.epinephelus_melanostigma": "Пятнистый групер",
+  "item.bettervannilafishes.epinephelus_melanostigma_bucket": "Пятнистый групер в ведре",
+  "item.bettervannilafishes.epinephelus_melanostigma_spawn_egg": "Яйцо призыва пятнистого групера",
+
+  "item.bettervannilafishes.feather_star_bucket": "Перистая звезда в ведре",
+  "item.bettervannilafishes.feather_star_spawn_egg": "Яйцо призыва перистой звезды",
+  "item.bettervannilafishes.feather_star_tentacle": "Щупальце перистой звезды",
+
+  "item.bettervannilafishes.female_salmon": "Самка лосося",
+  "item.bettervannilafishes.female_salmon_bucket": "Самка лосося в ведре",
+  "item.bettervannilafishes.female_salmon_spawn_egg": "Яйцо призыва самки лосося",
+
+  "item.bettervannilafishes.galeocerdo_cuvier": "Тигровая акула",
+  "item.bettervannilafishes.galeocerdo_cuvier_bucket": "Тигровая акула в ведре",
+  "item.bettervannilafishes.galeocerdo_cuvier_spawn_egg": "Яйцо призыва тигровой акулы",
+
+  "item.bettervannilafishes.gymnogeophagus_balzanii": "Парагвайский геофаг",
+  "item.bettervannilafishes.gymnogeophagus_balzanii_bucket": "Парагвайский геофаг в ведре",
+  "item.bettervannilafishes.gymnogeophagus_balzanii_spawn_egg": "Яйцо призыва парагвайского геофага",
+
+  "item.bettervannilafishes.haddock_cod": "Пикша",
+  "item.bettervannilafishes.haddock_cod_bucket": "Пикша в ведре",
+  "item.bettervannilafishes.haddock_cod_spawn_egg": "Яйцо призыва пикши",
+
+  "item.bettervannilafishes.krobia_guianensis": "Гвианский геофаг",
+  "item.bettervannilafishes.krobia_guianensis_bucket": "Гвианский геофаг в ведре",
+  "item.bettervannilafishes.krobia_guianensis_spawn_egg": "Яйцо призыва гвианского геофага",
+
+  "item.bettervannilafishes.male_salmon": "Самец лосося",
+  "item.bettervannilafishes.male_salmon_bucket": "Самец лосося в ведре",
+  "item.bettervannilafishes.male_salmon_spawn_egg": "Яйцо призыва самца лосося",
+
+  "item.bettervannilafishes.nautilus_bucket": "Наутилус в ведре",
+  "item.bettervannilafishes.nautilus_spawn_egg": "Яйцо призыва наутилуса",
+
+  "item.bettervannilafishes.obscure_puffer": "Матовый иглобрюх",
+  "item.bettervannilafishes.obscure_puffer_bucket": "Матовый иглобрюх в ведре",
+  "item.bettervannilafishes.obscure_puffer_spawn_egg": "Яйцо призыва матового иглобрюха",
+
+  "item.bettervannilafishes.pacific_cod": "Тихоокеанская треска",
+  "item.bettervannilafishes.pacific_cod_bucket": "Тихоокеанская треска в ведре",
+  "item.bettervannilafishes.pacific_cod_spawn_egg": "Яйцо призыва тихоокеанской трески",
+
+  "item.bettervannilafishes.pacific_salmon": "Тихоокеанский лосось",
+  "item.bettervannilafishes.pacific_salmon_bucket": "Тихоокеанский лосось в ведре",
+  "item.bettervannilafishes.pacific_salmon_spawn_egg": "Яйцо призыва тихоокеанского лосося",
+
+  "item.bettervannilafishes.paracanthurus_hepatus": "Королевская рыба-хирург",
+  "item.bettervannilafishes.paracanthurus_hepatus_bucket": "Королевская рыба-хирург в ведре",
+  "item.bettervannilafishes.paracanthurus_hepatus_spawn_egg": "Яйцо призыва королевской рыбы-хирурга",
+
+  "item.bettervannilafishes.porcupine_fish": "Рыба-ёж",
+  "item.bettervannilafishes.porcupine_fish_bucket": "Рыба-ёж в ведре",
+  "item.bettervannilafishes.porcupine_fish_spawn_egg": "Яйцо призыва рыбы-ежа",
+
+  "item.bettervannilafishes.premnas_biaculeatus": "Колючещёкая рыба-клоун",
+  "item.bettervannilafishes.premnas_biaculeatus_bucket": "Колючещёкая рыба-клоун в ведре",
+  "item.bettervannilafishes.premnas_biaculeatus_spawn_egg": "Яйцо призыва колючещёкой рыбы-клоуна",
+
+  "item.bettervannilafishes.shark_fin": "Акулий плавник",
+
+  "item.bettervannilafishes.spearfish": "Рыба-меч",
+  "item.bettervannilafishes.spearfish_bucket": "Рыба-меч в ведре",
+  "item.bettervannilafishes.spearfish_spawn_egg": "Яйцо призыва рыбы-меча",
+
+  "item.bettervannilafishes.yellow_fin_puffer": "Такифугу",
+  "item.bettervannilafishes.yellow_fin_puffer_bucket": "Такифугу в ведре",
+  "item.bettervannilafishes.yellow_fin_puffer_spawn_egg": "Яйцо призыва Такифугу",
+  
+  "itemGroup.bvf_group": "Better Vannila Fishes"
 }
