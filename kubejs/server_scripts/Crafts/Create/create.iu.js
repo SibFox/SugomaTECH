@@ -12,7 +12,7 @@ const registerCreateIURecipes = (evt) => {
 
     iuRecipe(evt, getRecipeID('andesite_alloy_iron'), IUMachineCraft.ALLOY_SMELTER.lvl1,
         [
-            asItem(item.andesite),
+            asItem(item.andesite, 3),
             asItem(tag.ingot.iron)
         ],[
             asItem(item.create.andesite_alloy, 4)
@@ -22,7 +22,7 @@ const registerCreateIURecipes = (evt) => {
     
     iuRecipe(evt, getRecipeID('andesite_alloy_zinc'), IUMachineCraft.ALLOY_SMELTER.lvl1,
         [
-            asItem(item.andesite),
+            asItem(item.andesite, 3),
             asItem(tag.ingot.zinc)
         ],[
             asItem(item.create.andesite_alloy, 4)

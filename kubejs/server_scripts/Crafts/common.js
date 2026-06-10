@@ -86,23 +86,26 @@ const registerCommonRecipes = (evt) => {
         asItem(item.custom.conducting_organic_polymer)
     )
     
-    evt.shapeless(Item.of(item.ingot.bronze, 1),
-        [
-            Ingredient.of(tag.nugget.bronze, 9)
-        ]
-    ).id(recipeID('bronze_ingot_ct'))
+    // До добавления биг кэнонс
+    // evt.shapeless(Item.of(item.ingot.bronze, 1),
+    //     [
+    //         Ingredient.of(tag.nugget.bronze, 9)
+    //     ]
+    // ).id(recipeID('bronze_ingot_ct'))
     
-    evt.shapeless(Item.of(item.ingot.steel, 1),
-        [
-            Ingredient.of(tag.nugget.steel, 9)
-        ]
-    ).id(recipeID('steel_ingot_ct'))
+    // До добавления биг кэнонс
+    // evt.shapeless(Item.of(item.ingot.steel, 1),
+    //     [
+    //         Ingredient.of(tag.nugget.steel, 9)
+    //     ]
+    // ).id(recipeID('steel_ingot_ct'))
     
-    evt.shapeless(Item.of(item.nugget.steel, 9),
-        [
-            tag.ingot.steel
-        ]
-    ).id(recipeID('steel_nugget_ct'))
+    // До добавления биг кэнонс
+    // evt.shapeless(Item.of(item.nugget.steel, 9),
+    //     [
+    //         tag.ingot.steel
+    //     ]
+    // ).id(recipeID('steel_nugget_ct'))
 
 
 

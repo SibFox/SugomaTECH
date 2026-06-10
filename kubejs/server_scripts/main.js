@@ -9,6 +9,7 @@ ServerEvents.tags('item', event => {
 
 ServerEvents.recipes(event => {
     registerRecipeRemovings(event)
+    registerIURecipeRemovings(event)
     registerRecipeReplacings(event)
     registerCommonRecipes(event)
     registerPBRecipes(event)
@@ -30,6 +31,8 @@ ServerEvents.recipes(event => {
 LootJS.lootTables(evt => {
     evt.modifyLootTables(LootType.ENTITY).removeItem('pointblank:gunmetal_nugget')
 })
+
+registerInteractions()
 
 // LootJS.lootTables(event => {
 //     let ids = event.getLootTableIds()
