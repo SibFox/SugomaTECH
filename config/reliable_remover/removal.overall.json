@@ -3,9 +3,13 @@
         "action": "remove",
         "items": [
             "createaddition:capacitor",
-            "twm:tomahawk",
-            "twm:tomahawk_with_torpor",
-            "twm:tomahawk_with_torpor"
+            "create:crushed_raw_osmium",
+            "create:crushed_raw_platinum",
+            "create:crushed_raw_silver",
+            "create:crushed_raw_tin",
+            "create:crushed_raw_lead",
+            "create:crushed_raw_uranium",
+            "create:crushed_raw_nickel"
         ]
     }
 ]

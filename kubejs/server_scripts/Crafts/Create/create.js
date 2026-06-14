@@ -11,6 +11,8 @@ const registerCreateRecipes = (evt) => {
     registerCreateIURecipes(evt)
     registerCreateMechanicalRecipes(evt)
     registerCreateCompactingRecipes(evt)
+    registerCreateCrushingRecipes(evt)
+    registerCreateWashingRecipes(evt)
     registerCreateMixingRecipes(evt)
     registerCreateMeltingRecipes(evt)
 

@@ -30,4 +30,29 @@ const registerCreateIURecipes = (evt) => {
         { "temperature": 2000 }
     )
 
+    iuRecipe(evt, getRecipeID('electron_tube'), IUMachineCraft.ELECTRONIC_ASSEMBLER,
+        [
+            asItem(tag.plate.iron),
+            asItem(item.iu.capacitor.lvl1),
+            asItem(item.iu.diode.lvl1, 2),
+            asItem(item.iu.wire.bare.tin, 4),
+            asItem(item.create.polished_rose_quarts)
+        ],[
+            asItem(item.create.electron_tube)
+        ]
+    )
+    
+    iuRecipe(evt, getRecipeID('transmitter'), IUMachineCraft.ELECTRONIC_ASSEMBLER,
+        [
+            asItem(tag.plate.copper, 3),
+            asItem(item.redstone, 4),
+            asItem(item.iu.chip.lvl1),
+            asItem(item.create.electron_tube)
+        ],[
+            asItem(item.create.transmitter)
+        ]
+    )
+    
+    
+
 }

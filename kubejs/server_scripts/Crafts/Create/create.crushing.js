@@ -31,4 +31,13 @@ const registerCreateCrushingRecipes = (evt) => {
             [ '9x industrialupgrade:crushed/' + metal, CreateItem.of('9x create:experience_nugget', 0.75)])
     }
 
+    // for (let metal of [ 'iron', 'copper', 'gold'
+    // ]) {
+    //     regCrushingRecipe(evt, 
+    //         'minecraft:raw_' + metal, 
+    //         [ 'industrialupgrade:crushed/' + metal, CreateItem.of('create:experience_nugget', 0.75)])
+    //     regCrushingRecipe(evt, 
+    //         'industrialupgrade:raw_' + metal + '_block', 
+    //         [ '9x industrialupgrade:crushed/' + metal, CreateItem.of('9x create:experience_nugget', 0.75)])
+    // }
 }

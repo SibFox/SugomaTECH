@@ -234,6 +234,7 @@ const item = {
             silicon: 'industrialupgrade:itemdust/silicon_dust',
             quartz: 'industrialupgrade:itemdust/quartz_dust',
             sulfur: 'industrialupgrade:itemdust/sulfur_dust',
+            stone: 'industrialupgrade:itemdust/stone_dust',
             small: {
                 energy: 'industrialupgrade:smalldust/energium',
                 calcium_phosphate: 'industrialupgrade:smalldust/calcium_phosphate',
@@ -692,7 +693,9 @@ const item = {
         obsidian_powder:'create:powdered_obsidian',
         andesite_casing: 'create:andesite_casing',
         modular_accumulator: 'createaddition:modular_accumulator',
+        polished_rose_quarts: 'create:polished_rose_quartz',
         electron_tube: 'create:electron_tube',
+        transmitter: 'create:transmitter',
         precision_mechanism: 'create:precision_mechanism',
         
         casing: {
@@ -772,6 +775,8 @@ const item = {
         },
         upgradepart: {
             titanium_hand: 'createcybernetics:titanium_hand',
+            pneumatic_wrist: 'createcybernetics:armupgrades_pneumaticwrist',
+            pneumatic_legs: 'createcybernetics:legupgrades_jumpboost'
         },
     },
 
