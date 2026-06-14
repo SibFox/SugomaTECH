@@ -24,33 +24,33 @@ const registerCCRecipes = (evt) => {
     shapedRecipe(evt, getRecipeID('computer_advanced'),
         [
             [ item.iu.wire.glass, item.iu.microchip.lvl3, item.iu.wire.glass ],
-            [ item.glass_panel, item.cc.casing, item.glass_panel ],
+            [ tag.glass_panel, item.cc.casing, tag.glass_panel ],
             [ item.iu.wire.glass, item.iu.autopower_module, item.iu.wire.glass ]
         ],
     item.cc.computer.advanced)
 
-    // evt.custom({
-    // "type": "computercraft:transform_shaped",
-    // "category": "redstone",
-    // "function": [{"type": "computercraft:copy_components", "from": {"item": "computercraft:computer_normal"}}],
-    // "key": {
-    //     "w": {"item": item.iu.wire.glass },
-    //     "M": {"type": "neoforge:components",
-    //     "components": {
-    //         "industrialupgrade:level_microchip": 3
-    //     },
-    //     "items": item.iu.microchip.lvl3.slice(0, '[') },
-    //     "C": {"item": item.cc.casing },
-    //     "G": {"tag": noHash(tag.glass_panel) },
-    //     "A": {"item": item.iu.autopower_module }
-    // },
-    // "pattern": [
-    //     "WMW", 
-    //     "GCG", 
-    //     "WAW"
-    // ],
-    // "result": {"count": 1, "id": item.cc.computer.advanced }
-    // }).id(getRecipeID('computer_advanced_upgrade'))
+    evt.custom({
+    "type": "computercraft:transform_shaped",
+    "category": "redstone",
+    "function": [{"type": "computercraft:copy_components", "from": {"item": "computercraft:computer_normal"}}],
+    "key": {
+        "W": {"item": item.iu.wire.glass },
+        "M": {"type": "neoforge:components",
+        "components": {
+            "industrialupgrade:level_microchip": 3
+        },
+            "items": (item.iu.microchip.lvl3.slice(0, item.iu.microchip.lvl3.indexOf('[')))
+        },
+        "C": {"item": item.cc.computer.normal },
+        "A": {"item": item.iu.autopower_module }
+    },
+    "pattern": [
+        "WMW", 
+        " C ", 
+        "WAW"
+    ],
+    "result": {"count": 1, "id": item.cc.computer.advanced }
+    }).id(getRecipeID('computer_advanced_upgrade'))
 
     evt.remove({ output: item.cc.computer.pocket.normal })
     evt.remove({ output: item.cc.computer.pocket.advanced })
@@ -71,6 +71,29 @@ const registerCCRecipes = (evt) => {
         ],
     item.cc.computer.pocket.advanced)
 
+    evt.custom({
+    "type": "computercraft:transform_shaped",
+    "category": "redstone",
+    "function": [{"type": "computercraft:copy_components", "from": {"item": item.cc.computer.pocket.normal}}],
+    "key": {
+        "W": {"item": item.iu.wire.glass },
+        "M": {"type": "neoforge:components",
+        "components": {
+            "industrialupgrade:level_microchip": 3
+        },
+            "items": (item.iu.microchip.lvl3.slice(0, item.iu.microchip.lvl3.indexOf('[')))
+        },
+        "C": {"item": item.cc.computer.pocket.normal },
+        "A": {"item": item.iu.autopower_module }
+    },
+    "pattern": [
+        "WMW", 
+        " C ", 
+        "WAW"
+    ],
+    "result": {"count": 1, "id": item.cc.computer.pocket.advanced }
+    }).id(getRecipeID('pocket_computer_advanced_upgrade'))
+
     evt.remove({ output: item.cc.turtle.normal })
     evt.remove({ output: item.cc.turtle.advanced })
 
@@ -89,6 +112,29 @@ const registerCCRecipes = (evt) => {
             [ item.iu.wire.glass, item.iu.battery.lead, item.iu.wire.glass ]
         ],
     item.cc.turtle.advanced)
+
+    evt.custom({
+    "type": "computercraft:transform_shaped",
+    "category": "redstone",
+    "function": [{"type": "computercraft:copy_components", "from": {"item": item.cc.turtle.normal}}],
+    "key": {
+        "W": {"item": item.iu.wire.glass },
+        "M": {"type": "neoforge:components",
+        "components": {
+            "industrialupgrade:level_microchip": 4
+        },
+            "items": (item.iu.microchip.lvl4.slice(0, item.iu.microchip.lvl4.indexOf('[')))
+        },
+        "C": {"item": item.cc.turtle.normal },
+        "A": {"item": item.iu.battery.lead }
+    },
+    "pattern": [
+        "WMW", 
+        " C ", 
+        "WAW"
+    ],
+    "result": {"count": 1, "id": item.cc.turtle.advanced }
+    }).id(getRecipeID('turtle_advanced_upgrade'))
 
     evt.remove({ output: item.cc.monitor.normal })
     evt.remove({ output: item.cc.monitor.advanced })

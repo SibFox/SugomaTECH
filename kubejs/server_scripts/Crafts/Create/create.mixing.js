@@ -13,12 +13,16 @@ const registerCreateMixingRecipes = (evt) => {
     evt.recipes.create.mixing(Item.of(item.create.andesite_alloy, 4), 
         [
             item.andesite,
+            item.andesite,
+            item.andesite,
             Ingredient.of(tag.ingot.iron)
         ]
     ).heated().id(getRecipeID('andesite_alloy_iron'))
 
     evt.recipes.create.mixing(Item.of(item.create.andesite_alloy, 4), 
         [
+            item.andesite,
+            item.andesite,
             item.andesite,
             Ingredient.of(tag.ingot.zinc)
         ]
