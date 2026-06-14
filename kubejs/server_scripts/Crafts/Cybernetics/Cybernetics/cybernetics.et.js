@@ -854,7 +854,7 @@ const registerCyberneticsETRecipes = (evt) => {
         ],{
             T: item.cn.titanium_plating,
             G: item.dye.green,
-            P: item.custom.organic_polymer,
+            P: item.custom.conducting_organic_polymer,
             E: item.iu.capacitor.lvl3,
             Z: item.iu.transistor.lvl2,
             M: 'minecraft:milk_bucket',
