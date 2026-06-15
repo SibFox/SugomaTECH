@@ -237,7 +237,7 @@ let registerFoods = (evt) => {
         food
             .nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
-            .effect('twm:vicio', 600, 0, 0.8)
+            // .effect('twm:vicio', 600, 0, 0.8)
             .effect('mynethersdelight:b_pungent', 900, 0, 1)
     }).maxStackSize(16)
     .tooltip('item.kubejs.plated_lungs_nether.desc')

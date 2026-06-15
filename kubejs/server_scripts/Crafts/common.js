@@ -86,6 +86,23 @@ const registerCommonRecipes = (evt) => {
         asItem(item.custom.conducting_organic_polymer)
     )
     
+    evt.shaped(
+        Item.of(item.custom.pack_frame, 1),
+        [
+            'RRR',
+            'R R',
+            'RRR'
+        ],{
+            R: tag.rod.tungsten
+        }
+    ).id(getRecipeID('pack_frame'))
+    
+    evt.shapeless(Item.of(item.custom.hardened_leather, 1),
+        [
+            item.leather, item.string, 'kaleidoscope_cookery:oil'
+        ]
+    ).id(getRecipeID('hardened_leather'))    
+
     // До добавления биг кэнонс
     // evt.shapeless(Item.of(item.ingot.bronze, 1),
     //     [

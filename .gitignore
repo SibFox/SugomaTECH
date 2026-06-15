@@ -289,3 +289,8 @@ config/villagersreborn.toml
 config/tinymultiblocklib-client.toml
 config/sable-common.toml
 .mixin.out/
+config/waterfall-common.toml
+config/villagersreborn-server.toml
+config/kaleidoscope_compat.jsonc
+config/lithostitched.json
+config/emberstextapi-server.toml

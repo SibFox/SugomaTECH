@@ -37,6 +37,7 @@ const item = {
     obsidian: 'minecraft:obsidian',
     phantom_membrane: 'minecraft:phantom_membrane',
     amethyst_shard: 'minecraft:amethyst_shard',
+    string: 'minecraft:string',
 
     // ~~~~~~~~~~~~~~~~~~~~ Farmer's Delight ~~~~~~~~~~~~~~~~~~~~ 
     milk_bottle: 'farmersdelight:milk_bottle',
@@ -169,6 +170,8 @@ const item = {
         organic_polymer: 'kubejs:organic_polymer',
         conducting_organic_polymer: 'kubejs:conducting_organic_polymer',
         synth_nerve_cables: 'kubejs:synth_nerve_cables',
+        pack_frame: 'kubejs:pack_frame',
+        hardened_leather: 'kubejs:hardened_leather'
     },
 
     // ~~~~~~~~~~~~~~~~~~~~ INDUSTRIAL UPGRADE ~~~~~~~~~~~~~~~~~~~~ 
