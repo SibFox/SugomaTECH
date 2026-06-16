@@ -86,6 +86,80 @@ const registerCyberneticsCTRecipes = (evt) => {
         }
     ).id(getRecipeID('storage'))
     
+    evt.shaped(
+        Item.of('createcybernetics:holoimprint_chip', 1),
+        [
+            'TTT',
+            'PCS',
+            ' E '
+        ],{
+            T: tag.plate.titanium,
+            S: item.cn.ssd,
+            E: tag.plate.electrum,
+            C: 'ae2:cell_component_64k',
+            P: item.ae.processor.concurrent
+        }
+    ).id(getRecipeID('holoimprint_chip'))
+    
+    
+
+    evt.shaped(
+        Item.of('createcybernetics:robosurgeon', 1),
+        [
+            ' M ',
+            'SCU',
+            ' E '
+        ],{
+            C: item.iu.machine_corpus.advanced_tech,
+            M: item.iu.module.cybernetics,
+            E: item.iu.electromotor.lvl1,
+            S: item.iu.module.scaner.lvl1,
+            U: item.iu.module.upgrade
+        }
+    ).id(getRecipeID('robosurgeon'))
+
+    evt.shaped(
+        Item.of('createcybernetics:surgery_table', 1),
+        [
+            ' M ',
+            'SCU',
+            '   '
+        ],{
+            C: '#minecraft:beds',
+            M: item.iu.module.cybernetics,
+            S: item.iu.module.scaner.lvl1,
+            U: item.iu.module.upgrade
+        }
+    ).id(getRecipeID('surgery_table'))
+    
+    evt.shaped(
+        Item.of('createcybernetics:charging_block', 1),
+        [
+            ' M ',
+            'SCS',
+            'BSB'
+        ],{
+            C: item.iu.machine_corpus.tech,
+            M: item.iu.module.cybernetics,
+            S: item.iu.spool.superconducting.lvl1,
+            B: tag.ore_block.electrum
+        }
+    ).id(getRecipeID('charging_block'))
+    
+    evt.shaped(
+        Item.of('createcybernetics:surgery_chamber', 1),
+        [
+            ' M ',
+            'ACB',
+            ' U '
+        ],{
+            C: item.iu.machine_corpus.tech,
+            M: item.iu.module.cybernetics,
+            U: item.iu.module.upgrade,
+            A: item.iu.module.cutting.lvl1,
+            B: item.iu.module.extractor.lvl1
+        }
+    ).id(getRecipeID('surgery_chamber'))
     
     
 }

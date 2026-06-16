@@ -10,13 +10,18 @@ const registerSBRecipes = (evt) => {
         return recipeID('sb', path)
     }
 
-    shapedRecipe(evt, getRecipeID('backpack'),
+    evt.shaped(
+        Item.of('sophisticatedbackpacks:backpack', 1),
         [
-            [ tag.leather, tag.diamond, tag.leather ],
-            [ tag.rod.titan, tag.chest, tag.rod.titan ],
-            [ tag.leather, tag.diamond, tag.leather ]
-        ],
-    'sophisticatedbackpacks:backpack')
+            'LLL',
+            'LFL',
+            'LTL'
+        ],{
+            L: item.custom.hardened_leather,
+            F: item.custom.pack_frame,
+            T: tag.ingot.titanium_steel
+        }
+    ).id(getRecipeID('backpack'))
 
     evt.custom({    // Медь
         "neoforge:conditions": [

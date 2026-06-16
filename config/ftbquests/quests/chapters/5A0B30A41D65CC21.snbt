@@ -13,24 +13,24 @@
 			image: "kubejs:textures/quests/blast.png"
 			rotation: 0.0d
 			width: 2.0d
-			x: 5.5d
-			y: -17.0d
+			x: 6.5d
+			y: -21.5d
 		}
 		{
 			height: 2.0d
 			image: "kubejs:textures/quests/steam_boiler_multi.png"
 			rotation: 0.0d
 			width: 2.0d
-			x: 9.5d
-			y: -17.0d
+			x: 10.5d
+			y: -21.5d
 		}
 		{
 			height: 1.0d
 			image: "kubejs:textures/quests/bio_boiler.png"
 			rotation: 0.0d
 			width: 1.0d
-			x: 0.5d
-			y: -23.5d
+			x: 1.5d
+			y: -28.0d
 		}
 	]
 	order_index: 1
@@ -45,8 +45,8 @@
 				id: "4F6130436CC406E9"
 				type: "checkmark"
 			}]
-			x: -1.0d
-			y: 3.0d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["53DDED12CC3B3480"]
@@ -64,8 +64,8 @@
 				item: { count: 1, id: "industrialupgrade:primal_fluid_heater/primal_fluid_heater" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: 1.0d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["58312F80E2A33485"]
@@ -76,8 +76,8 @@
 				id: "77184314F362D788"
 				type: "checkmark"
 			}]
-			x: -1.0d
-			y: -2.0d
+			x: 0.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["6EE4767EFFEAF973"]
@@ -95,8 +95,8 @@
 				item: { count: 1, id: "industrialupgrade:charged_redstone" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: -4.0d
+			x: 0.0d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -117,8 +117,8 @@
 				item: { count: 1, id: "industrialupgrade:battery/advanced_re_battery" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: -6.0d
+			x: -1.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["6030B6A23B9EE68E"]
@@ -136,8 +136,8 @@
 				item: { count: 1, id: "industrialupgrade:basemachine3/steam_ampere_generator" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: -8.0d
+			x: -2.0d
+			y: -12.5d
 		}
 		{
 			dependencies: [
@@ -158,8 +158,8 @@
 				item: { count: 1, id: "industrialupgrade:basemachine3/steam_electrolyzer" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: -8.0d
+			x: 0.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["58312F80E2A33485"]
@@ -178,8 +178,8 @@
 				item: { count: 1, id: "industrialupgrade:basemachine3/steam_fluid_heater" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 1.0d
+			x: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6EE4767EFFEAF973"]
@@ -197,8 +197,8 @@
 				item: { count: 1, id: "industrialupgrade:primal_fluid_integrator/primal_fluid_integrator" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.0d
+			x: 2.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["2AA662E7E64C3CA4"]
@@ -206,26 +206,35 @@
 			tasks: [{
 				id: "40A6FFA1F0066673"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidsulfuroxide" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -4.0d
+			x: 4.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
 				"29CBB7A813B115E3"
 				"2063DBC325C761F3"
 			]
+			icon: {
+				components: {
+					"industrialupgrade:fluid": {
+						amount: 1000
+						id: "industrialupgrade:iufluidsulfurtrioxide"
+					}
+				}
+				id: "industrialupgrade:itemcell/itemcell"
+			}
 			id: "15354EFC545C1C5F"
 			tasks: [{
 				id: "24D9A62692CEB70B"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidsulfurtrioxide" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -8.0d
+			x: 4.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["15354EFC545C1C5F"]
@@ -233,32 +242,23 @@
 			tasks: [{
 				id: "300566998F67277F"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidsulfuricacid" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -8.0d
+			x: 6.5d
+			y: -12.5d
 		}
 		{
 			dependencies: ["11DAD05C9CEE6A27"]
-			icon: {
-				components: {
-					"industrialupgrade:fluid": {
-						amount: 1000
-						id: "industrialupgrade:iufluidcoppersulfate"
-					}
-				}
-				id: "industrialupgrade:itemcell/itemcell"
-			}
 			id: "1DDF37CC6EDAE3D0"
 			tasks: [{
 				id: "338F061B7FFF5634"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidcoppersulfate" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -8.0d
+			x: 8.5d
+			y: -12.5d
 		}
 		{
 			dependencies: ["1DDF37CC6EDAE3D0"]
@@ -276,8 +276,8 @@
 				item: { count: 1, id: "industrialupgrade:crafting_elements/crafting_487_element" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: -10.0d
+			x: 8.5d
+			y: -14.5d
 		}
 		{
 			dependencies: ["7ACF5A65FAF87E4A"]
@@ -302,8 +302,8 @@
 					type: "item"
 				}
 			]
-			x: 9.5d
-			y: -12.5d
+			x: 10.5d
+			y: -17.0d
 		}
 		{
 			dependencies: [
@@ -324,8 +324,8 @@
 				item: { count: 1, id: "industrialupgrade:electronics_assembler/electronics_assembler" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: -12.5d
+			x: 6.5d
+			y: -17.0d
 		}
 		{
 			dependencies: ["7ACF5A65FAF87E4A"]
@@ -343,8 +343,8 @@
 				item: { count: 1, id: "industrialupgrade:primal_soldering_mechanism/primal_soldering_mechanism" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: -12.5d
+			x: 8.5d
+			y: -17.0d
 		}
 		{
 			dependencies: [
@@ -368,14 +368,11 @@
 				item: { count: 1, id: "industrialupgrade:crafting_elements/crafting_272_element" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: -14.5d
+			x: 8.5d
+			y: -19.0d
 		}
 		{
-			dependencies: [
-				"6EE4767EFFEAF973"
-				"58312F80E2A33485"
-			]
+			dependencies: ["6EE4767EFFEAF973"]
 			id: "57DF8F3C73D18210"
 			rewards: [{
 				id: "58A6304422EA5BC3"
@@ -391,8 +388,8 @@
 				item: { count: 1, id: "industrialupgrade:basemachine3/steampressureconverter" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: -0.5d
+			x: 2.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6A363FE35A7D5A99"]
@@ -410,8 +407,8 @@
 				item: { count: 1, id: "industrialupgrade:crafting_elements/crafting_476_element" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: -4.0d
+			x: -2.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["505AEADB803F080E"]
@@ -429,8 +426,8 @@
 				item: { count: 1, id: "industrialupgrade:basemachine3/steam_crystal_charge" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: -10.0d
+			x: -3.5d
+			y: -14.5d
 		}
 		{
 			dependencies: ["29CBB7A813B115E3"]
@@ -440,8 +437,8 @@
 				item: { count: 1, id: "industrialupgrade:crafting_elements/crafting_498_element" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -10.0d
+			x: 1.0d
+			y: -14.5d
 		}
 		{
 			dependencies: ["29CBB7A813B115E3"]
@@ -459,8 +456,8 @@
 				item: { count: 1, id: "industrialupgrade:basemachine3/steam_handler_ore" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: -10.0d
+			x: -1.0d
+			y: -14.5d
 		}
 		{
 			dependencies: [
@@ -481,8 +478,8 @@
 				item: { count: 1, id: "industrialupgrade:crafting_elements/crafting_499_element" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: -11.5d
+			x: 0.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["190421B2C6F24F05"]
@@ -492,8 +489,8 @@
 				item: { count: 1, id: "industrialupgrade:crafting_elements/crafting_502_element" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: -13.0d
+			x: 0.0d
+			y: -17.5d
 		}
 		{
 			dependencies: ["6EE4767EFFEAF973"]
@@ -511,8 +508,8 @@
 				item: { count: 1, id: "industrialupgrade:basemachine3/steam_sharpener" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: -2.0d
+			x: -2.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["095B396BA2C63291"]
@@ -532,8 +529,8 @@
 				item: { count: 1, id: "industrialupgrade:itemingots/steel_ingot" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: -14.5d
+			x: 0.0d
+			y: -19.0d
 		}
 		{
 			dependencies: ["22A5BE86FE11146E"]
@@ -551,8 +548,8 @@
 				item: { count: 1, id: "industrialupgrade:energy/steel_hammer" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: -16.0d
+			x: -2.5d
+			y: -20.5d
 		}
 		{
 			dependencies: ["22A5BE86FE11146E"]
@@ -570,8 +567,8 @@
 				item: { count: 1, id: "industrialupgrade:refractory_furnace/refractory_furnace" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: -14.5d
+			x: -3.0d
+			y: -19.0d
 		}
 		{
 			dependencies: ["22A5BE86FE11146E"]
@@ -589,8 +586,8 @@
 				item: { count: 1, id: "industrialupgrade:basemachine3/steel_tank" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: -17.0d
+			x: -1.5d
+			y: -21.5d
 		}
 		{
 			dependencies: ["22A5BE86FE11146E"]
@@ -608,8 +605,8 @@
 				item: { count: 1, id: "industrialupgrade:basemachine3/steam_converter" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: -17.5d
+			x: 0.0d
+			y: -22.0d
 		}
 		{
 			dependencies: ["0C690D4BACF3CD63"]
@@ -627,8 +624,8 @@
 				item: { count: 1, id: "industrialupgrade:mini_smeltery/mini_smeltery" }
 				type: "item"
 			}]
-			x: -5.5d
-			y: -14.5d
+			x: -4.5d
+			y: -19.0d
 		}
 		{
 			dependencies: ["22A5BE86FE11146E"]
@@ -647,8 +644,8 @@
 				item: { count: 1, id: "industrialupgrade:crafting_elements/crafting_504_element" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -14.5d
+			x: 3.0d
+			y: -19.0d
 		}
 		{
 			dependencies: ["5DB0F8ACC7E07B4A"]
@@ -668,8 +665,8 @@
 				item: { count: 1, id: "industrialupgrade:blockresource/machine" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: -14.5d
+			x: 5.5d
+			y: -19.0d
 		}
 		{
 			dependencies: ["7ACF5A65FAF87E4A"]
@@ -694,8 +691,8 @@
 					type: "item"
 				}
 			]
-			x: 5.5d
-			y: -10.0d
+			x: 6.5d
+			y: -14.5d
 		}
 		{
 			dependencies: ["2FC45DEC412F5866"]
@@ -715,8 +712,8 @@
 				item: { count: 1, id: "industrialupgrade:crafting_elements/crafting_276_element" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: -14.5d
+			x: 11.0d
+			y: -19.0d
 		}
 		{
 			dependencies: [
@@ -724,6 +721,14 @@
 				"637E1140C97558B9"
 			]
 			id: "18A02E732052CB8C"
+			rewards: [{
+				id: "19E9AAED7FB2406B"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "7A4E45F8671E9FD1"
@@ -751,25 +756,33 @@
 					type: "item"
 				}
 				{
-					count: 41L
+					count: 22L
 					id: "5B7B7A9C7DAEF6A1"
 					item: { count: 1, id: "industrialupgrade:blastfurnace/blast_furnace_part" }
 					type: "item"
 				}
 			]
-			x: 5.5d
-			y: -16.5d
+			x: 6.5d
+			y: -21.0d
 		}
 		{
 			dependencies: ["2FC45DEC412F5866"]
 			id: "637E1140C97558B9"
+			rewards: [{
+				id: "3B3DB0C1C057BEF2"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "21D7A902DECC0C8E"
 				item: { count: 1, id: "industrialupgrade:basemachine3/fluid_heat" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: -16.5d
+			x: 8.5d
+			y: -21.0d
 		}
 		{
 			dependencies: ["6EE4767EFFEAF973"]
@@ -788,8 +801,8 @@
 				item: { count: 1, id: "industrialupgrade:basemachine3/steam_quarry" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 0.0d
+			x: -2.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5DB0F8ACC7E07B4A"]
@@ -808,12 +821,13 @@
 				item: { count: 1, id: "industrialupgrade:basemachine3/adv_steam_quarry" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: -16.0d
+			x: 4.5d
+			y: -20.5d
 		}
 		{
 			dependencies: ["5DB0F8ACC7E07B4A"]
 			id: "50A4CADBB7E45FF0"
+			optional: true
 			rewards: [{
 				id: "060EAC1B3563D8EF"
 				item: {
@@ -827,8 +841,8 @@
 				item: { count: 1, id: "industrialupgrade:cultivated_peat" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -17.5d
+			x: 3.0d
+			y: -22.0d
 		}
 		{
 			dependencies: [
@@ -836,6 +850,7 @@
 				"043AFA4E6DBEF77F"
 			]
 			id: "5C3E16DB25F83EC8"
+			optional: true
 			rewards: [{
 				id: "2A33723A9BF6F0B1"
 				item: {
@@ -849,12 +864,13 @@
 				item: { count: 1, id: "industrialupgrade:basemachine3/steam_peat_generator" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: -19.0d
+			x: 1.5d
+			y: -23.5d
 		}
 		{
 			dependencies: ["5C3E16DB25F83EC8"]
 			id: "1082EFE89F384BF5"
+			optional: true
 			rewards: [{
 				id: "1D8D8EA9BAA20B57"
 				item: {
@@ -874,8 +890,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 0.5d
-			y: -21.0d
+			x: 1.5d
+			y: -25.5d
 		}
 		{
 			dependencies: [
@@ -883,6 +899,14 @@
 				"2FC45DEC412F5866"
 			]
 			id: "6297DB1C408E121F"
+			rewards: [{
+				id: "673364B947B2611B"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "69256E096684994C"
@@ -916,13 +940,20 @@
 					item: { count: 1, id: "industrialupgrade:crafting_elements/crafting_599_element" }
 					type: "item"
 				}
+				{
+					count: 10L
+					id: "733C95ADC880CB77"
+					item: { count: 1, id: "industrialupgrade:crafting_elements/crafting_294_element" }
+					type: "item"
+				}
 			]
-			x: 9.5d
-			y: -16.5d
+			x: 10.5d
+			y: -21.0d
 		}
 		{
 			dependencies: ["1082EFE89F384BF5"]
 			id: "6CC7FA8C77B40D27"
+			optional: true
 			rewards: [{
 				id: "4E2949EEDB81BC4C"
 				item: {
@@ -936,12 +967,13 @@
 				item: { count: 1, id: "industrialupgrade:basemachine3/bio_gearing" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: -22.5d
+			x: 1.5d
+			y: -27.0d
 		}
 		{
 			dependencies: ["1082EFE89F384BF5"]
 			id: "2C06E8AD4CE3A8B4"
+			optional: true
 			rewards: [{
 				id: "51AF01E5645D7C79"
 				item: {
@@ -955,12 +987,13 @@
 				item: { count: 1, id: "industrialupgrade:basemachine3/bio_orewashing" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: -23.5d
+			x: 0.5d
+			y: -28.0d
 		}
 		{
 			dependencies: ["1082EFE89F384BF5"]
 			id: "0C4039C693949601"
+			optional: true
 			rewards: [{
 				id: "2F56924D6A2367A3"
 				item: {
@@ -974,8 +1007,8 @@
 				item: { count: 1, id: "industrialupgrade:basemachine3/bio_centrifuge" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: -23.5d
+			x: 2.5d
+			y: -28.0d
 		}
 		{
 			dependencies: ["5DB0F8ACC7E07B4A"]
@@ -985,19 +1018,27 @@
 				item: { count: 1, id: "industrialupgrade:tank_iu/tank_iu" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -12.5d
+			x: 3.0d
+			y: -17.0d
 		}
 		{
 			dependencies: ["505AEADB803F080E"]
 			id: "206A4B818BC7F99E"
+			rewards: [{
+				id: "5E4E428D1F7817AA"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "524C475A9D1D063F"
 				item: { count: 1, id: "industrialupgrade:wiring/ampere" }
 				type: "item"
 			}]
 			x: -4.5d
-			y: -8.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["1151AC1C81BBA035"]
@@ -1015,13 +1056,14 @@
 				item: { count: 1, id: "industrialupgrade:gas_chamber/primal_gas_chamber" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: -6.0d
+			x: 4.0d
+			y: -10.0d
 		}
 		{
-			dependencies: ["53DDED12CC3B3480"]
-			hide_dependency_lines: true
+			dependencies: ["58312F80E2A33485"]
+			hide_dependency_lines: false
 			id: "6406CEAA80A2D901"
+			optional: true
 			rewards: [{
 				id: "51A675E348244E3F"
 				item: {
@@ -1036,8 +1078,8 @@
 				item: { count: 1, id: "industrialupgrade:basemachine3/steam_pump" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 3.0d
+			x: 1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["22A5BE86FE11146E"]
@@ -1062,8 +1104,8 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
-			y: -13.0d
+			x: -2.5d
+			y: -17.5d
 		}
 		{
 			dependencies: ["57DF8F3C73D18210"]
@@ -1082,8 +1124,54 @@
 				item: { count: 1, id: "industrialupgrade:basemachine3/steam_extractor" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: -0.5d
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["22A5BE86FE11146E"]
+			id: "755EF2C7E6DD3ED5"
+			rewards: [{
+				id: "49F56FAC821C2551"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1A07A7098C86A7E7"
+					item: { count: 1, id: "industrialupgrade:tools/latex_pipette" }
+					type: "item"
+				}
+				{
+					id: "1ABF840D641402B4"
+					item: { count: 1, id: "industrialupgrade:basemachine3/auto_latex_collector" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -16.5d
+		}
+		{
+			dependencies: ["637E1140C97558B9"]
+			id: "4541A3398F8D9447"
+			optional: true
+			rewards: [{
+				id: "09D674482AFED231"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "53F606E4BAF02793"
+				item: { count: 1, id: "industrialupgrade:wiring/pipes" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -23.0d
 		}
 	]
 }

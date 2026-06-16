@@ -44,15 +44,14 @@ const registerCreateIURecipes = (evt) => {
     
     iuRecipe(evt, getRecipeID('transmitter'), IUMachineCraft.ELECTRONIC_ASSEMBLER,
         [
-            asItem(tag.plate.copper, 3),
+            asItem(tag.plate.copper, 1),
+            asItem(item.ingot.red_alloy, 1),
             asItem(item.redstone, 4),
-            asItem(item.iu.chip.lvl1),
-            asItem(item.create.electron_tube)
+            asItem(item.create.electron_tube),
+            asItem(item.iu.chip.lvl1)
         ],[
             asItem(item.create.transmitter)
         ]
     )
-    
-    
 
 }

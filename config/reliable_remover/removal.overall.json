@@ -9,7 +9,8 @@
             "create:crushed_raw_tin",
             "create:crushed_raw_lead",
             "create:crushed_raw_uranium",
-            "create:crushed_raw_nickel"
+            "create:crushed_raw_nickel",
+            "pointblank:gunmetal_nugget"
         ]
     }
 ]

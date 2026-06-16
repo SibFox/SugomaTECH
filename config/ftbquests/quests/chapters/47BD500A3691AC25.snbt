@@ -17,20 +17,28 @@
 			y: -9.0d
 		}
 		{
-			height: 1.0d
-			image: "kubejs:textures/quests/steam_boiler.png"
-			rotation: 0.0d
-			width: 1.0d
-			x: 2.7594557823129477d
-			y: -7.163945578231306d
-		}
-		{
 			height: 2.0d
 			image: "kubejs:textures/quests/smeltery.png"
 			rotation: 0.0d
 			width: 2.0d
 			x: 0.0d
 			y: -2.0d
+		}
+		{
+			height: 1.0d
+			image: "kubejs:textures/quests/steam_boiler.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.794829931972785d
+			y: -6.8241496598639415d
+		}
+		{
+			height: 1.92d
+			image: "kubejs:textures/quests/block_anvil.png"
+			rotation: 0.0d
+			width: 4.17d
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	order_index: 0
@@ -77,7 +85,6 @@
 			dependencies: ["46323D0D4D10CEE9"]
 			id: "488766971D83AF83"
 			rewards: [{
-				count: 2
 				id: "7B5BA3F368439B58"
 				item: {
 					count: 1
@@ -235,6 +242,14 @@
 		{
 			dependencies: ["488766971D83AF83"]
 			id: "10C7F02C7C545724"
+			rewards: [{
+				id: "137BAF6B1B0DB971"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "0E0B251A95E246F8"
 				item: { count: 1, id: "industrialupgrade:primal_silicon_crystal_handler/primal_silicon_crystal_handler" }
@@ -296,7 +311,6 @@
 			]
 			id: "06B830549A3C8654"
 			rewards: [{
-				count: 4
 				id: "3CF37DF812103AA1"
 				item: {
 					count: 1
@@ -356,6 +370,14 @@
 		}
 		{
 			id: "5D5611E1B440B416"
+			rewards: [{
+				id: "07D3DD1A456F6E01"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
 			shape: "square"
 			size: 1.2d
 			tasks: [
@@ -457,6 +479,15 @@
 			dependencies: ["2DC56CA357E30F42"]
 			hide_dependency_lines: true
 			id: "71D9DFAB32B7FCB6"
+			optional: true
+			rewards: [{
+				id: "4BD1082F87BC0E90"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "0C9BB58FDBEAC605"
 				item: { count: 1, id: "minecraft:diamond" }

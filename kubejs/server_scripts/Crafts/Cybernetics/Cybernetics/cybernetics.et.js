@@ -133,7 +133,7 @@ const registerCyberneticsETRecipes = (evt) => {
             T: item.cn.titanium_plating,
             W: item.iu.spool.lvl1,
             M: 'mffs:warn_module',
-            R: 'minecraft:red_dye'  // поменять
+            R: item.cn.titanium_mesh
         }
     )
     
@@ -404,7 +404,7 @@ const registerCyberneticsETRecipes = (evt) => {
             'TT   ',
         ],{
             T: item.cn.titanium_plating,
-            D: 'minecraft:dispenser',
+            D: 'industrialupgrade:wiring/itemcable26', //кобальт-хром труба
             C: item.plate.copper,
             O: 'create:copper_backtank'
         }
@@ -412,7 +412,7 @@ const registerCyberneticsETRecipes = (evt) => {
 
     cnRecipe(evt, asItem('createcybernetics:organsupgrades_heatengine'),
         [
-            '    I',
+            '  C I',
             ' PAPI',
             ' PFWI',
             ' PPP ',
@@ -423,6 +423,7 @@ const registerCyberneticsETRecipes = (evt) => {
             A: item.cn.actuator,
             F: 'minecraft:blast_furnace',
             W: item.iu.rotor.wind.ready.iron,
+            C: item.iu.spool.superconducting.lvl1
         }
     )
 
@@ -627,7 +628,7 @@ const registerCyberneticsETRecipes = (evt) => {
         [
             '     ',
             'TTETG',
-            ' SDRN',
+            'SODRN',
             'TTETG',
             '     '
         ],{
@@ -637,7 +638,8 @@ const registerCyberneticsETRecipes = (evt) => {
             S: item.cn.storage,
             E: item.create.electron_tube,
             G: item.nugget.electrum,
-            D: 'minecraft:dispenser'
+            D: item.pb.guninternals,
+            O: item.ingot.gunmetal
         }
     )
 
@@ -945,14 +947,15 @@ const registerCyberneticsETRecipes = (evt) => {
         [
             '  TTG',
             ' TSRT',
-            'TSSST',
+            'TSCST',
             'TRST ',
             'GTT  '
         ],{
             T: item.cn.titanium_plating,
             G: item.nugget.electrum,
             R: item.ingot.red_alloy,
-            S: item.cn.storage
+            S: item.cn.storage,
+            C: item.iu.inductor.lvl1
         }
     )
 
@@ -1122,13 +1125,14 @@ const registerCyberneticsETRecipes = (evt) => {
     cnRecipe(evt, asItem('createcybernetics:boneupgrades_bonelacing'),
         [
             '   MM',
-            '  M M',
+            '  MNM',
             ' MBM ',
-            'M M  ',
+            'MNM  ',
             'MM   '
         ],{
             M: item.cn.titanium_mesh,
-            B: item.bone
+            B: item.bone,
+            N: tag.nugget.titanium
         }
     )
     
@@ -1234,5 +1238,69 @@ const registerCyberneticsETRecipes = (evt) => {
         }
     )
     
+    cnRecipe(evt, asItem('createcybernetics:skinupgrades_empthreading'),
+        [
+            '     ',
+            '     ',
+            'SMSMS',
+            'CICIC',
+            '     '
+        ],{
+            S: item.cn.upgradepart.synthskin,
+            M: item.cn.titanium_mesh,
+            C: item.iu.spool.lvl1,
+            I: item.ingot.red_alloy
+        }
+    )
     
+    cnRecipe(evt, asItem('createcybernetics:boneupgrades_capacitorframe'),
+        [
+            '  P  ',
+            ' MNM ',
+            'MAIAM',
+            'SMNMS',
+            'MAIAM'
+        ],{
+            M: item.cn.upgradepart.bone_battery,
+            N: tag.nugget.electrum,
+            I: tag.ingot.electrum,
+            A: item.cn.actuator,
+            S: item.iu.spool.superconducting.lvl1,
+            P: item.iu.spool.superconducting.lvl2
+        }
+    )
+    
+    cnRecipe(evt, asItem('createcybernetics:brainupgrades_cyberdeck'),
+        [
+            'W    ',
+            'TTTTT',
+            'TSPDT',
+            'TTTTT',
+            '     '
+        ],{
+            W: item.create.redstone_link,
+            T: item.cn.titanium_plating,
+            S: item.ae.processor.calculation,
+            P: item.iu.microchip.lvl6,
+            D: item.ae.processor.concurrent
+        }
+    )
+    
+    cnRecipe(evt, asItem('createcybernetics:exosuit1'),
+        [
+            'TATAT',
+            'P A P',
+            '  T  ',
+            ' A A ',
+            ' L L '
+        ],{
+            A: item.cn.actuator,
+            T: tag.ingot.titanium,
+            P: item.cn.upgradepart.pneumatic_wrist,
+            L: item.cn.upgradepart.pneumatic_legs
+        }
+    )
+    
+    
+
 }

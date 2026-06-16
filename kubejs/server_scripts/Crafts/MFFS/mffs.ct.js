@@ -89,6 +89,18 @@ const registerMFFSCTRecipes = (evt) => {
         ],
     'mffs:tube_mode')
 
+    evt.shaped(
+        Item.of('mffs:cylinder_mode', 1),
+        [
+            'C C',
+            'CDC',
+            'C C'
+        ],{
+            C: item.iu.composite,
+            D: item.mffs.focus_matrix
+        }
+    ).id(getRecipeID('cylinder_mode'))
+    
     shapedRecipe(evt, getRecipeID('pyramid_mode'),
         [
             [ item.ingot.composite, null, null ],

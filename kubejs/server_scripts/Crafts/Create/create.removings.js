@@ -18,7 +18,6 @@ const registerCreateRemovings = (evt) => {
     evt.remove({ output: item.ingot.electrum, type: 'create:mixing' })
     evt.remove({ output: item.create.electron_tube })
     evt.remove({ output: item.create.transmitter })
-    // evt.remove({ output: 'create:crushed_raw_iron' })
     evt.remove({ output: 'createaddition:electrum_ingot' })
     evt.remove({ output: 'createaddition:rolling_mill' })
     evt.remove({ output: 'createaddition:electrum_amulet' })

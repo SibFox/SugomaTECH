@@ -58,4 +58,19 @@ const registerCyberneticsIURecipes = (evt) => {
         ],
         { "temperature": 1250 }
     )
+
+    iuRecipe(evt, getRecipeID('neural_processor'), IUMachineCraft.CIRCUIT_MANUFACTURER,
+        [
+            asItem(item.iu.programmed_board.lvl4),
+            asItem(item.iu.processor.lvl8),
+            asItem(item.cn.ssd, 2),
+            asItem(item.custom.conducting_organic_polymer, 4),
+            asItem(item.iu.chip.lvl4, 1)
+        ],[
+            asItem(item.cn.upgradepart.neural_processor)
+        ],
+        { "temperature": 4500 }
+    )
+    
+    
 }

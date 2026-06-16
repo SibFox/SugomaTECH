@@ -97,6 +97,14 @@
 			y: 8.5d
 		}
 		{
+			height: 1.0d
+			image: "minecraft:textures/gui/sprites/icon/info.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.5d
+			y: 4.0d
+		}
+		{
 			height: 2.0d
 			image: "industrialupgrade:item/nuclear/small_uranium_235"
 			rotation: 0.0d
@@ -121,22 +129,6 @@
 			x: -17.5d
 			y: -7.0d
 		}
-		{
-			height: 4.0d
-			image: "kubejs:textures/quests/j_quote-2.png"
-			rotation: 0.0d
-			width: 2.8d
-			x: 8.191496598639446d
-			y: 5.7d
-		}
-		{
-			height: 1.0d
-			image: "kubejs:textures/quests/j_amog.png"
-			rotation: 0.0d
-			width: 1.2d
-			x: -17.456802721088437d
-			y: -8.23979591836735d
-		}
 	]
 	order_index: 2
 	quest_links: [ ]
@@ -154,23 +146,8 @@
 			y: 0.0d
 		}
 		{
-			id: "6BAC3AC4CF0C1334"
-			shape: "rsquare"
-			tasks: [
-				{
-					id: "6094D95B49F35932"
-					type: "checkmark"
-				}
-				{
-					id: "139E2FB72FCAA630"
-					item: { count: 1, id: "powerutils:converter/power_utilities_fe" }
-					type: "item"
-				}
-			]
-			x: 6.5d
-			y: 7.0d
-		}
-		{
+			dependencies: ["4EDDFEECAECAFBFF"]
+			hide_dependency_lines: true
 			id: "3DD2F37E7A2BB49B"
 			rewards: [{
 				id: "383E865C3DE71F60"
@@ -189,6 +166,8 @@
 			y: 5.5d
 		}
 		{
+			dependencies: ["4EDDFEECAECAFBFF"]
+			hide_dependency_lines: true
 			id: "562BF588C9AE77F3"
 			rewards: [{
 				id: "52E213C8C6632C42"
@@ -207,6 +186,8 @@
 			y: 5.5d
 		}
 		{
+			dependencies: ["4EDDFEECAECAFBFF"]
+			hide_dependency_lines: true
 			id: "5636F9C89E8FAE8A"
 			rewards: [{
 				id: "3ADF6EB354BDF966"
@@ -225,6 +206,8 @@
 			y: 5.5d
 		}
 		{
+			dependencies: ["4EDDFEECAECAFBFF"]
+			hide_dependency_lines: true
 			id: "0BEF86EEB360F9FA"
 			rewards: [{
 				id: "7B100EC32FCFFC6F"
@@ -243,6 +226,8 @@
 			y: 7.5d
 		}
 		{
+			dependencies: ["4EDDFEECAECAFBFF"]
+			hide_dependency_lines: true
 			id: "25620FBD89BCEDC2"
 			rewards: [{
 				id: "5E9E3CED6D5785F9"
@@ -261,6 +246,8 @@
 			y: 7.5d
 		}
 		{
+			dependencies: ["4EDDFEECAECAFBFF"]
+			hide_dependency_lines: true
 			id: "58344F08DBF07AB1"
 			rewards: [{
 				id: "52706779400D6DF6"
@@ -279,6 +266,8 @@
 			y: 7.5d
 		}
 		{
+			dependencies: ["4EDDFEECAECAFBFF"]
+			hide_dependency_lines: true
 			id: "457DB28DFC8CFB01"
 			rewards: [{
 				id: "4C2AFBA46124DFE1"
@@ -297,6 +286,8 @@
 			y: 7.5d
 		}
 		{
+			dependencies: ["4EDDFEECAECAFBFF"]
+			hide_dependency_lines: true
 			id: "75DAE253BE05CE0C"
 			rewards: [{
 				id: "5DF90AE81B5B04A5"
@@ -393,14 +384,16 @@
 			}]
 			tasks: [{
 				id: "5095BF73898C76D2"
-				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidneft" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				item: { count: 1, id: "industrialupgrade:itemcell/itemcell" }
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -4.5d
 			y: 4.5d
 		}
 		{
+			dependencies: ["4EDDFEECAECAFBFF"]
+			hide_dependency_lines: true
 			id: "791C9FCDC0A22034"
 			shape: "rsquare"
 			tasks: [
@@ -411,6 +404,12 @@
 				{
 					id: "43DCEE90E676E4BC"
 					item: { count: 1, id: "industrialupgrade:basemachine3/solid_cooling" }
+					type: "item"
+				}
+				{
+					id: "258E68A25DDA61DE"
+					item: { count: 1, id: "industrialupgrade:wiring/cool" }
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -438,6 +437,8 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["4EDDFEECAECAFBFF"]
+			hide_dependency_lines: true
 			id: "0810029C62E8695F"
 			shape: "rsquare"
 			tasks: [
@@ -563,6 +564,7 @@
 		{
 			dependencies: ["754A3D01A701B1D7"]
 			id: "5EF722BAC5D22F4F"
+			optional: true
 			rewards: [{
 				id: "27E0ECD3E0ECE61E"
 				item: {
@@ -788,7 +790,7 @@
 			tasks: [{
 				id: "08A01A2AE04AB0F7"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidpolyeth" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -11.0d
@@ -808,7 +810,7 @@
 			tasks: [{
 				id: "76E307930F4DF2A3"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidpolyprop" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -14.0d
@@ -828,7 +830,7 @@
 			tasks: [{
 				id: "1DF73C54D9ED4421"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidethylene" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -11.0d
@@ -851,7 +853,7 @@
 			tasks: [{
 				id: "0235136AF58DC47F"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidacetylene" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -11.0d
@@ -871,7 +873,7 @@
 			tasks: [{
 				id: "4B289A07ECD72037"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidmethane" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -11.0d
@@ -891,7 +893,7 @@
 			tasks: [{
 				id: "2CA6F9D05BBF380B"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidgas" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -11.0d
@@ -915,7 +917,7 @@
 				item: { count: 1, id: "industrialupgrade:crafting_elements/crafting_482_element" }
 				type: "item"
 			}]
-			x: -9.0d
+			x: -9.5d
 			y: 2.0d
 		}
 		{
@@ -932,7 +934,7 @@
 			tasks: [{
 				id: "3C20DAB20DBC13EE"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidpropylene" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -14.0d
@@ -955,7 +957,7 @@
 			tasks: [{
 				id: "1D2054CCC0805184"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluiddibromopropane" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -14.0d
@@ -975,7 +977,7 @@
 			tasks: [{
 				id: "771FC761C1F84D34"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidpropane" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -12.5d
@@ -995,7 +997,7 @@
 			tasks: [{
 				id: "48190F9FC69E76D9"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidbromine" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -14.0d
@@ -1045,6 +1047,7 @@
 		{
 			dependencies: ["58A916EA1E943AF8"]
 			id: "42195EC979DF2208"
+			optional: true
 			rewards: [{
 				id: "11B508E3D091927F"
 				item: {
@@ -1064,6 +1067,7 @@
 		{
 			dependencies: ["42195EC979DF2208"]
 			id: "391ECF6799C61E9B"
+			optional: true
 			rewards: [{
 				id: "21A005D2570AC109"
 				item: {
@@ -1083,6 +1087,7 @@
 		{
 			dependencies: ["42195EC979DF2208"]
 			id: "3443ECFC0D2A9B31"
+			optional: true
 			rewards: [{
 				id: "5960FFCC7789E429"
 				item: {
@@ -1091,11 +1096,18 @@
 				}
 				type: "item"
 			}]
-			tasks: [{
-				id: "18C942464A1BE1AE"
-				item: { count: 1, id: "industrialupgrade:energy_tools/drill" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "18C942464A1BE1AE"
+					item: { count: 1, id: "industrialupgrade:energy_tools/drill" }
+					type: "item"
+				}
+				{
+					id: "3A2CE31DDC6CCBDE"
+					item: { count: 1, id: "industrialupgrade:energy_tools/diamond_drill" }
+					type: "item"
+				}
+			]
 			x: -3.0d
 			y: -8.5d
 		}
@@ -1454,7 +1466,7 @@
 			tasks: [{
 				id: "750BF57BDD6FF959"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidcreosote" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -20.0d
@@ -1493,7 +1505,7 @@
 			tasks: [{
 				id: "4A03932C46B1D90A"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidindustrialoil" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -22.5d
@@ -1516,7 +1528,7 @@
 			tasks: [{
 				id: "2800A63E222E175D"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidmotoroil" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -22.5d
@@ -1536,7 +1548,7 @@
 			tasks: [{
 				id: "4639374F65D1347D"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidcoolant" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -24.5d
@@ -1556,7 +1568,7 @@
 			tasks: [{
 				id: "7837B4CA94CE95A2"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluiddistilled_water" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -24.5d
@@ -1855,7 +1867,7 @@
 			tasks: [{
 				id: "66805C726F3B4451"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidsulfuricacid" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -9.0d
@@ -1936,7 +1948,7 @@
 			tasks: [{
 				id: "2DB077A9653A0A0F"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidnitricacid" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -6.0d
@@ -1956,7 +1968,7 @@
 			tasks: [{
 				id: "1CABAAFC7C10161C"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidnitrogendioxide" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -4.5d
@@ -1976,7 +1988,7 @@
 			tasks: [{
 				id: "5E3BB4E79D362B9E"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidnitrogenoxy" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -4.0d
@@ -1996,7 +2008,7 @@
 			tasks: [{
 				id: "2D73255AB7AD552A"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidnitrogenhydride" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -2.5d
@@ -2015,8 +2027,8 @@
 			}]
 			tasks: [{
 				id: "561F7E17BB91F914"
-				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidazot" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				item: { count: 1, id: "industrialupgrade:itemcell/itemcell" }
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -2.0d
@@ -2036,7 +2048,7 @@
 			tasks: [{
 				id: "15C4ACA90D01ED17"
 				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidnitricoxide" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "strict"
+				match_components: "fuzzy"
 				type: "item"
 			}]
 			x: -0.5d
@@ -2081,6 +2093,8 @@
 			y: -15.5d
 		}
 		{
+			dependencies: ["4EDDFEECAECAFBFF"]
+			hide_dependency_lines: true
 			id: "587550792D9D021E"
 			rewards: [{
 				id: "304D213ACD0B9322"
@@ -2139,6 +2153,14 @@
 		{
 			dependencies: ["35839CB07EB073D5"]
 			id: "5C7AB32C61427DA4"
+			rewards: [{
+				id: "2825F14F02530ED2"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "4BB8632D83762E67"
 				item: { count: 1, id: "industrialupgrade:basemachine2/helium_generator" }
@@ -2150,6 +2172,14 @@
 		{
 			dependencies: ["5C7AB32C61427DA4"]
 			id: "7B4FD830C19155A2"
+			rewards: [{
+				id: "540B990766AF9A82"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "4B31CF8FBD11A49A"
 				item: { count: 1, id: "industrialupgrade:helium_cooling_mixture" }
@@ -2161,6 +2191,14 @@
 		{
 			dependencies: ["7B4FD830C19155A2"]
 			id: "40960CEB371D96E0"
+			rewards: [{
+				id: "199E3FF1D639B2BA"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "346F716F9A56EDA7"
 				item: { count: 1, id: "industrialupgrade:upgrades/overclockerupgrade1" }
@@ -2172,6 +2210,14 @@
 		{
 			dependencies: ["40960CEB371D96E0"]
 			id: "70215038730DBFE5"
+			rewards: [{
+				id: "7AEA1DB4B1F78D46"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.2d
 			tasks: [{
@@ -2216,7 +2262,7 @@
 				item: { count: 1, id: "industrialupgrade:basemachine3/polymerizer" }
 				type: "item"
 			}]
-			x: -15.0d
+			x: -15.5d
 			y: -13.5d
 		}
 		{

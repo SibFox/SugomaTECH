@@ -1,17 +1,17 @@
 {
 	chapter.0D5E7267C8F6781C.title: "{ftbquests.chapter.0D5E7267C8F6781C.title}"
 	chapter.100A225B6AEDABCD.title: "{ftbquests.chapter.100A225B6AEDABCD.title}"
-	chapter.17547FC8D4FFF9D2.title: "AE2"
 	chapter.18F4452C86824019.title: "{ftbquests.chapter.18F4452C86824019.title}"
 	chapter.292851496F040C0B.title: "{ftbquests.chapter.292851496F040C0B.title}"
 	chapter.47BD500A3691AC25.title: "{ftbquests.chapter.47BD500A3691AC25.title}"
 	chapter.4920B8457B7CD283.title: "{ftbquests.chapter.f34f4flf45056lf4515elf55265lf6536clf65474lf7557bl_f8568alf95791lf95899lfa59a0lfb5aa7lfb5baflfc5cb6l.title}"
-	chapter.4AA2D83D9D6889BF.title: "Wireless Energy"
 	chapter.56AEAC22236F88E3.title: "{ftbquests.chapter.56AEAC22236F88E3.title}"
 	chapter.5A0B30A41D65CC21.title: "{ftbquests.chapter.5A0B30A41D65CC21.title}"
 	chapter_group.127FCDB3BF44B5FC.title: "{ftbquests.chapter_groups_1333010186616747516.title}"
 	chapter_group.43F397064768B66D.title: "{ftbquests.chapter_groups_4896423273105503853.title}"
 	chapter_group.5A10AA2F9B3209B2.title: "{ftbquests.chapter_groups_6489874184484817330.title}"
+	quest.002311B194E5CA08.quest_desc: ["{ftbquests.chapter.100A225B6AEDABCD.quest10.description1}"]
+	quest.002311B194E5CA08.title: "{ftbquests.chapter.100A225B6AEDABCD.quest10.title}"
 	quest.002B210F489EBC45.quest_desc: ["{ftbquests.chapter.5A0B30A41D65CC21.quest30.description1}"]
 	quest.003DD2EA14F523B8.quest_desc: [
 		"{ftbquests.chapter.18F4452C86824019.quest105.description1}"
@@ -72,8 +72,6 @@
 		""
 		"{ftbquests.chapter.18F4452C86824019.quest94.description7}"
 	]
-	quest.024B5F0FE004A0B7.quest_desc: ["In addition to the classic ores you can find geodes underground that will give you additional resources"]
-	quest.024B5F0FE004A0B7.title: "Dense Ore"
 	quest.025374A19B8B7FBB.quest_desc: ["{ftbquests.chapter.18F4452C86824019.quest114.description1}"]
 	quest.028274BCA30F55E8.quest_desc: [
 		"{ftbquests.chapter.f34f4flf45056lf4515elf55265lf6536clf65474lf7557bl_f8568alf95791lf95899lfa59a0lfb5aa7lfb5baflfc5cb6l.quest42.description1}"
@@ -116,7 +114,6 @@
 		""
 		"{ftbquests.chapter.18F4452C86824019.quest2.description20}"
 	]
-	quest.037DA709053CEBD9.quest_desc: ["The first cables to carry current, given their cost consider using the tools found in the Wireless Energy section"]
 	quest.03C7625F2FF688E7.quest_desc: [
 		"{ftbquests.chapter.18F4452C86824019.quest24.description1}"
 		""
@@ -438,8 +435,6 @@
 	quest.11DAD05C9CEE6A27.title: "{ftbquests.chapter.5A0B30A41D65CC21.quest12.title}"
 	quest.1216DB01183AD26C.quest_desc: ["{ftbquests.chapter.47BD500A3691AC25.quest8.description1}"]
 	quest.122C82BAFDBD5CBC.quest_desc: ["{ftbquests.chapter.100A225B6AEDABCD.quest6.description1}"]
-	quest.12F39BD4C301787F.quest_desc: ["Right-click on a pipe to put it into export, if you want to remove the connection you will need the wrench!"]
-	quest.139121D0788B36C1.quest_desc: ["sugar: decreases minimum spawn delay clock: decreases maximum spawn delay fermented spider eye: increases spawn count ghast tear: increases max nearby entities prismarine crystals: increases required player range blaze rod: increases spawn range dragon egg: ignores spawn conditions nether star: ignores nearby player"]
 	quest.13BFFB4D6F93945F.title: "{ftbquests.chapter.18F4452C86824019.quest11.title}"
 	quest.140064054EA6C214.title: "{ftbquests.chapter.f34f4flf45056lf4515elf55265lf6536clf65474lf7557bl_f8568alf95791lf95899lfa59a0lfb5aa7lfb5baflfc5cb6l.quest13.title}"
 	quest.14ACFA97FCB9EF7C.quest_desc: [
@@ -525,6 +520,7 @@
 	]
 	quest.194FA8E138BB6B59.quest_desc: ["{ftbquests.chapter.18F4452C86824019.quest87.description1}"]
 	quest.1B3B31EF280D570C.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest86.description1}"]
+	quest.1B3C1498A8DE5914.quest_desc: ["{ftbquests.chapter.100A225B6AEDABCD.quest11.description1}"]
 	quest.1BC37EF28D052E6B.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest119.description1}"]
 	quest.1C2CB7F05FC87658.quest_desc: [
 		"{ftbquests.chapter.292851496F040C0B.quest3.description1}"
@@ -716,10 +712,6 @@
 		"{ftbquests.chapter.100A225B6AEDABCD.quest17.description2}"
 	]
 	quest.29D6A9624F412D36.title: "{ftbquests.chapter.100A225B6AEDABCD.quest17.title}"
-	quest.2A315CBFFAEADF65.quest_desc: [
-		"The first power generator, 32 rft of pure power!"
-		"Different fuels produce rf for longer."
-	]
 	quest.2AA662E7E64C3CA4.quest_desc: ["{ftbquests.chapter.5A0B30A41D65CC21.quest9.description1}"]
 	quest.2B7A53F8A1248670.title: "{ftbquests.chapter.f34f4flf45056lf4515elf55265lf6536clf65474lf7557bl_f8568alf95791lf95899lfa59a0lfb5aa7lfb5baflfc5cb6l.quest34.title}"
 	quest.2C06E8AD4CE3A8B4.quest_desc: [
@@ -820,7 +812,6 @@
 	]
 	quest.35839CB07EB073D5.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest73.description1}"]
 	quest.36183FCC6DBEC481.title: "{ftbquests.chapter.18F4452C86824019.quest68.title}"
-	quest.36208EBDACDBF4B1.quest_desc: ["You can produce turbofuel inside the centrifuge (with a machine fluid addon) with oil and fluxite"]
 	quest.362584D2983BB7D8.quest_desc: [
 		"{ftbquests.chapter.56AEAC22236F88E3.quest51.description1}"
 		""
@@ -833,7 +824,6 @@
 	]
 	quest.36AB4F56DAECF99F.title: "{ftbquests.chapter.18F4452C86824019.quest79.title}"
 	quest.37A793D86CA4D761.quest_desc: ["{ftbquests.chapter.0D5E7267C8F6781C.quest24.description1}"]
-	quest.37AA831A23C6B6C1.quest_desc: ["You can use an Enderic Laser to quickly grow clusters from a Flawless Budding Certus Quartz, unfortunately you cannot collect them automatically, you will need the ME annihilator plane"]
 	quest.37AFB897D50C854F.title: "{ftbquests.chapter.f34f4flf45056lf4515elf55265lf6536clf65474lf7557bl_f8568alf95791lf95899lfa59a0lfb5aa7lfb5baflfc5cb6l.quest36.title}"
 	quest.386199214C075EB5.quest_desc: ["{ftbquests.chapter.18F4452C86824019.quest107.description1}"]
 	quest.3ADCAC47D56711D4.quest_desc: [
@@ -842,7 +832,6 @@
 		"{ftbquests.chapter.56AEAC22236F88E3.quest84.description2}"
 	]
 	quest.3B953D07266D08CD.title: "{ftbquests.chapter.18F4452C86824019.quest64.title}"
-	quest.3B9E36F77A8CEC40.quest_desc: ["Like the diamond but faster!"]
 	quest.3BABDECA88C13932.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest39.description1}"]
 	quest.3BABDECA88C13932.title: "{ftbquests.chapter.56AEAC22236F88E3.quest39.title}"
 	quest.3C0C78CA44539F74.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest32.description1}"]
@@ -859,7 +848,6 @@
 		""
 		"{ftbquests.chapter.56AEAC22236F88E3.quest25.description2}"
 	]
-	quest.3DBE913C39522EA0.quest_desc: ["Here everyone wonders why there is no Ender Tank mod or anything else for transporting fluids in the pack. Well, I don't want you to skip Oritech's other generators, sorry"]
 	quest.3DD2F37E7A2BB49B.quest_desc: [
 		"{ftbquests.chapter.56AEAC22236F88E3.quest3.description1}"
 		""
@@ -883,23 +871,7 @@
 		"{ftbquests.chapter.18F4452C86824019.quest86.description8}"
 	]
 	quest.3EE8A52A397420C8.title: "{ftbquests.chapter.18F4452C86824019.quest65.title}"
-	quest.3EFCB9E41496FEDC.quest_desc: [
-		"Right Click on a Amethyst Budding"
-		"You can boost the Phasorite Budding with Enderic Laser from Oritech!"
-	]
 	quest.3F7E4AFC538087D7.title: "{ftbquests.chapter.18F4452C86824019.quest66.title}"
-	quest.3F88C70F0F2F3359.quest_desc: [
-		"Thank you for downloading the modpack!"
-		"The purpose of the pack is to allow you to explore the Oritech mod, in a slightly modded and non-frustrating environment."
-		""
-		"This modpack is built around Oritech, so mods with similar mechanics or overlapping features have been excluded. This ensures players can fully engage with and explore the unique systems Oritech offers without distractions or redundancies."
-		""
-		"Please note that I'm in the process of completing the quests!"
-		"That said I hope you have fun playing and exploring the Oritech mod!"
-		""
-		"MarcusKron"
-	]
-	quest.3F88C70F0F2F3359.title: "Welcome on OritechCraft!"
 	quest.40692BFF75E44E6C.title: "{ftbquests.chapter.f34f4flf45056lf4515elf55265lf6536clf65474lf7557bl_f8568alf95791lf95899lfa59a0lfb5aa7lfb5baflfc5cb6l.quest45.title}"
 	quest.40960CEB371D96E0.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest102.description1}"]
 	quest.418F8F035463E8A0.quest_desc: [
@@ -933,6 +905,7 @@
 	]
 	quest.41C9A15C241B1701.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest43.description1}"]
 	quest.41C9A15C241B1701.title: "{ftbquests.chapter.56AEAC22236F88E3.quest43.title}"
+	quest.428C84E8A63362B7.quest_desc: ["1111"]
 	quest.4369E99F75866627.quest_desc: ["{ftbquests.chapter.18F4452C86824019.quest118.description1}"]
 	quest.43FD417D07561254.quest_desc: ["{ftbquests.chapter.18F4452C86824019.quest72.description1}"]
 	quest.44E4E1F341DA586D.title: "{ftbquests.chapter.f34f4flf45056lf4515elf55265lf6536clf65474lf7557bl_f8568alf95791lf95899lfa59a0lfb5aa7lfb5baflfc5cb6l.quest35.title}"
@@ -995,10 +968,8 @@
 	]
 	quest.47B70385C57C63BB.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest44.description1}"]
 	quest.47B70385C57C63BB.title: "{ftbquests.chapter.56AEAC22236F88E3.quest44.title}"
-	quest.47DA5AC4248F58E7.quest_desc: ["You can enchant the spikes!"]
 	quest.47E71D696F19E7A6.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest90.description1}"]
 	quest.47E71D696F19E7A6.title: "{ftbquests.chapter.56AEAC22236F88E3.quest90.title}"
-	quest.4846441FE38C97E1.title: "Sophisticated Chest"
 	quest.488766971D83AF83.quest_desc: [
 		"{ftbquests.chapter.47BD500A3691AC25.quest3.description1}"
 		""
@@ -1068,7 +1039,6 @@
 		""
 		"{ftbquests.chapter.0D5E7267C8F6781C.quest18.description4}"
 	]
-	quest.4D05CFFAE391560E.quest_desc: ["And now with this you can make your hand job better"]
 	quest.4EA1021C7450D313.quest_desc: [
 		"{ftbquests.chapter.5A0B30A41D65CC21.quest20.description1}"
 		""
@@ -1113,7 +1083,6 @@
 		""
 		"{ftbquests.chapter.56AEAC22236F88E3.quest110.description3}"
 	]
-	quest.504FBBF5D2DBD047.quest_desc: ["AE2 silicon is equivalent to that of Oritech, they are interchangeable!"]
 	quest.505AEADB803F080E.quest_desc: [
 		"{ftbquests.chapter.5A0B30A41D65CC21.quest6.description1}"
 		""
@@ -1131,15 +1100,12 @@
 	]
 	quest.5114C50A90359617.quest_desc: ["{ftbquests.chapter.0D5E7267C8F6781C.quest31.description1}"]
 	quest.51AECFE6E27C482A.quest_desc: ["{ftbquests.chapter.0D5E7267C8F6781C.quest22.description1}"]
-	quest.51D505EB514577DD.quest_desc: ["Considering that drill is currently equivalent to a diamond pickaxe using RF, here's a book you can enchant it for a wonderful 3x3"]
 	quest.51EBBA41108FD69B.quest_desc: ["{ftbquests.chapter.5A0B30A41D65CC21.quest48.description1}"]
 	quest.521E23F189D70A42.quest_desc: [
 		"{ftbquests.chapter.5A0B30A41D65CC21.quest21.description1}"
 		""
 		"{ftbquests.chapter.5A0B30A41D65CC21.quest21.description2}"
 	]
-	quest.531F1F467FC2E5AF.quest_desc: ["You can create farmland by pressing shift and right-click with a hoe, the higher the hoe material the larger the area you will create"]
-	quest.531F1F467FC2E5AF.title: "Farming"
 	quest.53598599FAB8A360.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest96.description1}"]
 	quest.53C288486B2EA61F.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest57.description1}"]
 	quest.53DDED12CC3B3480.quest_desc: [
@@ -1157,8 +1123,6 @@
 	quest.54EF2969AAAF483A.title: "{ftbquests.chapter.56AEAC22236F88E3.quest45.title}"
 	quest.54FA580CBCCDF600.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest107.description1}"]
 	quest.55CF4B72E2940626.title: "{ftbquests.chapter.18F4452C86824019.quest51.title}"
-	quest.55F1DF12ACDFE519.quest_desc: ["You can find artefacts very rarely in every chest or you can kill a mimic, if you want more information about mimic ask Frieren "]
-	quest.55F1DF12ACDFE519.title: "Artifacts!"
 	quest.562BF588C9AE77F3.quest_desc: [
 		"{ftbquests.chapter.56AEAC22236F88E3.quest4.description1}"
 		""
@@ -1169,7 +1133,6 @@
 		""
 		"{ftbquests.chapter.56AEAC22236F88E3.quest5.description2}"
 	]
-	quest.568EF27A600AD321.quest_desc: ["It's time to move to a new home!"]
 	quest.569360BC3FA51833.title: "{ftbquests.chapter.56AEAC22236F88E3.quest66.title}"
 	quest.57701B467B68BE83.quest_desc: ["{ftbquests.chapter.18F4452C86824019.quest126.description1}"]
 	quest.5793E76CCAC97F70.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest11.description1}"]
@@ -1189,7 +1152,6 @@
 		""
 		"{ftbquests.chapter.5A0B30A41D65CC21.quest19.description8}"
 	]
-	quest.58173153B8A00A87.quest_desc: ["Say goodbye to fall damage!"]
 	quest.58296E2DE88FE4CF.title: "{ftbquests.chapter.f34f4flf45056lf4515elf55265lf6536clf65474lf7557bl_f8568alf95791lf95899lfa59a0lfb5aa7lfb5baflfc5cb6l.quest33.title}"
 	quest.58312F80E2A33485.quest_desc: [
 		"{ftbquests.chapter.5A0B30A41D65CC21.quest2.description1}"
@@ -1218,17 +1180,6 @@
 	quest.58A916EA1E943AF8.quest_desc: [""]
 	quest.592C40E45B7D0C48.title: "{ftbquests.chapter.18F4452C86824019.quest10.title}"
 	quest.59E36D587F32D23F.quest_desc: ["{ftbquests.chapter.0D5E7267C8F6781C.quest34.description1}"]
-	quest.5A6E18292D3AB2B5.quest_desc: ["You can block-dig the veins of ores by holding down shift while using the pickaxe!"]
-	quest.5A6E18292D3AB2B5.title: "Veinminer"
-	quest.5AE33DA79E71345B.quest_desc: [
-		"AE2 is required to be able to autocraft items from the Oritech mod, so it was added along with many of its addons. "
-		"In this modpack, applied is without channels!"
-		"If you want to play with channels go to config and change the value."
-		""
-		""
-		"Quests for Applied will be developed later"
-	]
-	quest.5B0D8866F44F3884.quest_desc: ["Monster!"]
 	quest.5B4E1F342A72526D.quest_desc: ["{ftbquests.chapter.100A225B6AEDABCD.quest18.description1}"]
 	quest.5BC94F2E1797A6FA.quest_desc: ["{ftbquests.chapter.100A225B6AEDABCD.quest9.description1}"]
 	quest.5C3E16DB25F83EC8.quest_desc: [
@@ -1271,11 +1222,6 @@
 		"{ftbquests.chapter.47BD500A3691AC25.quest7.description1}"
 		"{ftbquests.chapter.47BD500A3691AC25.quest7.description2}"
 	]
-	quest.5E560627C3642201.quest_desc: [
-		"No treecapitator for you!"
-		"If you want to get massive amounts of wood use the tree cutter or the Prometheus Battle Axe from Oritech!"
-	]
-	quest.5E560627C3642201.title: "Treecapitator? No, thanx!"
 	quest.5EDEECD91F46F229.quest_desc: [
 		"{ftbquests.chapter.56AEAC22236F88E3.quest117.description1}"
 		""
@@ -1300,7 +1246,6 @@
 		"{ftbquests.chapter.56AEAC22236F88E3.quest14.description5}"
 	]
 	quest.5F2908B005E0F7AC.title: "{ftbquests.chapter.56AEAC22236F88E3.quest14.title}"
-	quest.5F6FFD128C1FC36F.quest_desc: ["A simple crafting component, you will use a lot of them!"]
 	quest.601E077C23BBD34D.quest_desc: [
 		"{ftbquests.chapter.5A0B30A41D65CC21.quest32.description1}"
 		""
@@ -1308,7 +1253,6 @@
 		""
 		"{ftbquests.chapter.5A0B30A41D65CC21.quest32.description3}"
 	]
-	quest.603A7C0D42A38931.quest_desc: ["Use an Enderic Laser on a Budding Amethyst to obtain fluxite"]
 	quest.607A3A9D11601B49.quest_desc: [
 		"{ftbquests.chapter.0D5E7267C8F6781C.quest13.description1}"
 		""
@@ -1390,7 +1334,6 @@
 		""
 		"{ftbquests.chapter.18F4452C86824019.quest104.description2}"
 	]
-	quest.64893F6DCEEFA6EA.quest_desc: ["wip"]
 	quest.64A058A6FF5A790E.quest_desc: [
 		"{ftbquests.chapter.18F4452C86824019.quest6.description1}"
 		""
@@ -1485,14 +1428,6 @@
 	]
 	quest.6B2ECD0D3792B9E0.title: "{ftbquests.chapter.56AEAC22236F88E3.quest93.title}"
 	quest.6B502FF340BF8363.title: "{ftbquests.chapter.f34f4flf45056lf4515elf55265lf6536clf65474lf7557bl_f8568alf95791lf95899lfa59a0lfb5aa7lfb5baflfc5cb6l.quest32.title}"
-	quest.6BAC3AC4CF0C1334.quest_desc: [
-		"{ftbquests.chapter.56AEAC22236F88E3.quest2.description1}"
-		"{ftbquests.chapter.56AEAC22236F88E3.quest2.description2}"
-		""
-		"{ftbquests.chapter.56AEAC22236F88E3.quest2.description3}"
-		""
-		"{ftbquests.chapter.56AEAC22236F88E3.quest2.description4}"
-	]
 	quest.6BBFD7D15277A352.quest_desc: ["{ftbquests.chapter.18F4452C86824019.quest59.description1}"]
 	quest.6BBFD7D15277A352.title: "{ftbquests.chapter.18F4452C86824019.quest59.title}"
 	quest.6C046ADC92039DF2.title: "{ftbquests.chapter.f34f4flf45056lf4515elf55265lf6536clf65474lf7557bl_f8568alf95791lf95899lfa59a0lfb5aa7lfb5baflfc5cb6l.quest7.title}"
@@ -1500,10 +1435,6 @@
 	quest.6CC7FA8C77B40D27.quest_desc: ["{ftbquests.chapter.5A0B30A41D65CC21.quest45.description1}"]
 	quest.6CD1DBFDBFEE6F44.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest42.description1}"]
 	quest.6CD1DBFDBFEE6F44.title: "{ftbquests.chapter.56AEAC22236F88E3.quest42.title}"
-	quest.6D0D20FC70C1D8D8.quest_desc: ["Being near a campfire will give you a regenerative effect, consider keeping one in your inventory when you go mining! The first one is free."]
-	quest.6D0D20FC70C1D8D8.title: "Campfire"
-	quest.6D15C9F58CFBFB7F.quest_desc: ["Some features to add lightness to your gameplay! You can jump over fences, step assist is modded, sort inventories with mouse middle button, quickly climb ladders, harvest crops with the right button, get villagers/piglins by right-clicking on them and much more! "]
-	quest.6D15C9F58CFBFB7F.title: "Quality of Life"
 	quest.6D353E94D7F13E82.quest_desc: ["{ftbquests.chapter.18F4452C86824019.quest25.description1}"]
 	quest.6D5F9B7D63438D20.quest_desc: ["{ftbquests.chapter.0D5E7267C8F6781C.quest1.description1}"]
 	quest.6D9299C734CAAAC1.quest_desc: [
@@ -1543,7 +1474,6 @@
 	]
 	quest.6EE4767EFFEAF973.title: "{ftbquests.chapter.5A0B30A41D65CC21.quest3.title}"
 	quest.6F2D7074EA78261C.quest_desc: ["{ftbquests.chapter.100A225B6AEDABCD.quest19.description1}"]
-	quest.6F4CA511874371D1.quest_desc: ["Recharge all your instruments here!"]
 	quest.6FE7F5367B5DF0FF.title: "{ftbquests.chapter.18F4452C86824019.quest62.title}"
 	quest.6FFC0518A149EF3F.quest_desc: [
 		"{ftbquests.chapter.56AEAC22236F88E3.quest16.description1}"
@@ -1578,7 +1508,6 @@
 		"{ftbquests.chapter.47BD500A3691AC25.quest20.description2}"
 	]
 	quest.724FF2B0CEF84E20.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest67.description1}"]
-	quest.7336E750C27B35DB.quest_desc: ["Produced in the centrifuge with a machine fluid addon"]
 	quest.736BBE0272A4B10F.title: "{ftbquests.chapter.f34f4flf45056lf4515elf55265lf6536clf65474lf7557bl_f8568alf95791lf95899lfa59a0lfb5aa7lfb5baflfc5cb6l.quest38.title}"
 	quest.73FF88080F039888.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest69.description1}"]
 	quest.73FF88080F039888.title: "{ftbquests.chapter.56AEAC22236F88E3.quest69.title}"
@@ -1642,11 +1571,6 @@
 	]
 	quest.795D6EED90CBD783.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest40.description1}"]
 	quest.795D6EED90CBD783.title: "{ftbquests.chapter.56AEAC22236F88E3.quest40.title}"
-	quest.79AB6BB49278D042.quest_desc: [
-		"You can move animals and inventories with the carry-on mod! Use shift + right mouse button."
-		"You can carry one at a time, if you want to carry more animals you can use the Capture Cell"
-	]
-	quest.79AB6BB49278D042.title: "Carry on!"
 	quest.79AC6CF9BCD94562.quest_desc: [
 		"{ftbquests.chapter.18F4452C86824019.quest3.description1}"
 		""
@@ -1683,34 +1607,406 @@
 		"{ftbquests.chapter.292851496F040C0B.quest4.description3}"
 	]
 	quest.7D2A63E47912C4B7.title: "{ftbquests.chapter.292851496F040C0B.quest4.title}"
-	quest.7D87FF59EF030B8A.quest_desc: ["You don't know how to build a house that is not a dirt cube with a door? Well, you're like me! So let's use the prefab to have a den for the night"]
 	quest.7DE603645323C369.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest70.description1}"]
 	quest.7DE603645323C369.title: "{ftbquests.chapter.56AEAC22236F88E3.quest70.title}"
 	quest.7E0BE91D00D02678.title: "{ftbquests.chapter.f34f4flf45056lf4515elf55265lf6536clf65474lf7557bl_f8568alf95791lf95899lfa59a0lfb5aa7lfb5baflfc5cb6l.quest17.title}"
-	quest.7E241A9CECBD9424.quest_desc: ["You cannot pick up spawners with the carry-on, but must use a pickaxe with silk touch. If you want to spawn a specific mob you must make the Spawner from the Oritech mod!"]
-	quest.7E241A9CECBD9424.title: "Spawner"
 	task.00351117560A6FF8.title: "{ftbquests.chapter.5A0B30A41D65CC21.quest43.task_14936965691109368.title}"
 	task.07C3D3C06241D000.title: "{ftbquests.chapter.f34f4flf45056lf4515elf55265lf6536clf65474lf7557bl_f8568alf95791lf95899lfa59a0lfb5aa7lfb5baflfc5cb6l.quest42.task_559523601959735296.title}"
 	task.0C9E6DFA9EF0F275.title: "{ftbquests.chapter.100A225B6AEDABCD.quest20.task_909285097951261301.title}"
 	task.0D57B16A81201DD9.title: "{ftbquests.chapter.56AEAC22236F88E3.quest15.task_961432116457905625.title}"
-	task.1369B568D1AE4D51.title: "hey listen!"
 	task.1C79642018740871.title: "{ftbquests.chapter.292851496F040C0B.quest2.task_2051781194255960177.title}"
 	task.1CA61C0D5CC6BD8B.title: "{ftbquests.chapter.18F4452C86824019.quest79.task_2064368322912632203.title}"
-	task.219C97FBB1A6482E.title: "Any #minecraft:logs"
 	task.2769097325B7408E.title: "{ftbquests.chapter.47BD500A3691AC25.quest2.task_2839811430192464014.title}"
-	task.2B321FD6E3DCF927.title: "Any #storagedrawers:drawers"
-	task.330BE47256F64517.title: "WIP"
-	task.35962C4CD8DEB498.title: "Any #waystones:waystones"
-	task.3640936687F25635.title: "House"
-	task.3A231092139A29B7.title: "Read me!"
 	task.3B8D9062FA33E19E.title: "{ftbquests.chapter.18F4452C86824019.quest107.task_4291244774732849566.title}"
 	task.478D985EB75E8BD7.title: "{ftbquests.chapter.56AEAC22236F88E3.quest1.task_5155944680979860439.title}"
 	task.4F6130436CC406E9.title: "{ftbquests.chapter.5A0B30A41D65CC21.quest1.task_5719906067882968809.title}"
 	task.5444FBF3E69123E6.title: "{ftbquests.chapter.18F4452C86824019.quest80.task_6072255222566167526.title}"
 	task.5965943F28A1146F.title: "{ftbquests.chapter.56AEAC22236F88E3.quest22.task_6441717841008858223.title}"
 	task.6094D95B49F35932.title: "{ftbquests.chapter.56AEAC22236F88E3.quest2.task_6959426310300195122.title}"
-	task.65939C13C61CEE01.title: "Any #sophisticatedstorage:base_tier_wooden_storage"
 	task.699775BFD6A37535.title: "{ftbquests.chapter.56AEAC22236F88E3.quest17.task_7608679562265982261.title}"
 	task.72D1000697A36CCA.title: "{ftbquests.chapter.292851496F040C0B.quest1.task_8273394018770185418.title}"
 	task.7D4DB4524DE5C638.title: "{ftbquests.chapter.292851496F040C0B.quest4.task_9029071093534934584.title}"
+		chapter.7A60DAD17BB41728.title: "{ftbquests.chapter.2}"
+	chapter_group.7F4B7EBD641EADF4.title: "{ftbquests.chapter.1}"
+	quest.01E4930C0BAA6324.quest_desc: [
+		"{ftbquests.chapter.100A225B6AEDABCD.quest12.description1}"
+		""
+		"{ftbquests.chapter.100A225B6AEDABCD.quest12.description2}"
+		""
+		"{ftbquests.chapter.88}"
+	]
+	quest.07011121E021E56B.quest_desc: ["{ftbquests.chapter.85}"]
+	quest.078B92B4F3DB4884.quest_desc: [
+		"{ftbquests.chapter.70}"
+		""
+		"{ftbquests.chapter.71}"
+		""
+		"{ftbquests.chapter.72}"
+	]
+	quest.0810029C62E8695F.quest_desc: [
+		"{ftbquests.chapter.56AEAC22236F88E3.quest17.description1}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest17.description2}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest17.description3}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest17.description4}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest17.description5}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest17.description6}"
+		"{@pagebreak}"
+		"{ftbquests.chapter.56AEAC22236F88E3.quest17.description7}"
+		"{ftbquests.chapter.56AEAC22236F88E3.quest17.description8}"
+		"{ftbquests.chapter.56AEAC22236F88E3.quest17.description9}"
+		"{ftbquests.chapter.56AEAC22236F88E3.quest17.description10}"
+		"{ftbquests.chapter.56AEAC22236F88E3.quest17.description11}"
+		"{ftbquests.chapter.56AEAC22236F88E3.quest17.description12}"
+		"{ftbquests.chapter.56AEAC22236F88E3.quest17.description13}"
+		"{ftbquests.chapter.56AEAC22236F88E3.quest17.description14}"
+		"{ftbquests.chapter.56AEAC22236F88E3.quest17.description15}"
+		"{ftbquests.chapter.56AEAC22236F88E3.quest17.description16}"
+		"{ftbquests.chapter.56AEAC22236F88E3.quest17.description17}"
+	]
+	quest.09E438DA724A4817.quest_desc: [
+		"{ftbquests.chapter.56AEAC22236F88E3.quest35.description1}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest35.description2}"
+		""
+	]
+	quest.0BEF86EEB360F9FA.quest_desc: [
+		"{ftbquests.chapter.56AEAC22236F88E3.quest6.description1}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest6.description2}"
+	]
+	quest.0D78B2E8A66CEDDA.quest_desc: [
+		"{ftbquests.chapter.292851496F040C0B.quest1.description1}"
+		""
+		"{ftbquests.chapter.292851496F040C0B.quest1.description2}"
+		""
+		"{ftbquests.chapter.292851496F040C0B.quest1.description3}"
+		""
+		"{ftbquests.chapter.292851496F040C0B.quest1.description4}"
+		""
+		"{ftbquests.chapter.292851496F040C0B.quest1.description5}"
+		"{ftbquests.chapter.292851496F040C0B.quest1.description6}"
+		""
+		"{ftbquests.chapter.292851496F040C0B.quest1.description7}"
+	]
+	quest.0EC3D9768A0AF3B3.quest_desc: [
+		"{ftbquests.chapter.22}"
+		""
+		"{ftbquests.chapter.23}"
+		""
+		"{ftbquests.chapter.24}"
+	]
+	quest.13E9F4FF6837EBF5.quest_desc: [
+		"{ftbquests.chapter.89}"
+		"{ftbquests.chapter.90}"
+	]
+	quest.13EFA6B237716FC7.quest_desc: ["{ftbquests.chapter.46}"]
+	quest.14115193DDB5C8F4.quest_desc: [
+		"{ftbquests.chapter.77}"
+		""
+		"{ftbquests.chapter.78}"
+		""
+		"{ftbquests.chapter.79}"
+		""
+		"{ftbquests.chapter.80}"
+		"{image:kubejs:textures/quests/ae2_7.png width:169 height:90 align:center}"
+	]
+	quest.15354EFC545C1C5F.quest_desc: [
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest11.description1}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest11.description2}"
+	]
+	quest.15354EFC545C1C5F.title: "{ftbquests.chapter.5A0B30A41D65CC21.quest11.title}"
+	quest.175DB693486F5E1A.quest_desc: [
+		"{ftbquests.chapter.10}"
+		""
+		"{ftbquests.chapter.18}"
+		""
+		"{ftbquests.chapter.41}"
+	]
+	quest.17C5211A1466D638.quest_desc: [
+		"{ftbquests.chapter.100A225B6AEDABCD.quest7.description1}"
+		""
+		"{ftbquests.chapter.100A225B6AEDABCD.quest7.description2}"
+		"{ftbquests.chapter.100A225B6AEDABCD.quest7.description3}"
+		""
+		"{ftbquests.chapter.100A225B6AEDABCD.quest7.description4}"
+		""
+		"{ftbquests.chapter.45}"
+	]
+	quest.1C21443E27019756.quest_desc: ["{ftbquests.chapter.55}"]
+	quest.1D437CA60FF3489C.quest_desc: [
+		"{ftbquests.chapter.47BD500A3691AC25.quest16.description1}"
+		""
+		"{ftbquests.chapter.47BD500A3691AC25.quest16.description2}"
+		""
+		"{ftbquests.chapter.87}"
+	]
+	quest.1E814C9AAE478ACD.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest94.description1}"]
+	quest.1E814C9AAE478ACD.title: "{ftbquests.chapter.56AEAC22236F88E3.quest94.title}"
+	quest.1F337FC3AA04A5CF.quest_desc: [
+		"{ftbquests.chapter.47BD500A3691AC25.quest4.description1}"
+		""
+		"{ftbquests.chapter.47BD500A3691AC25.quest4.description2}"
+		""
+		"{ftbquests.chapter.87}"
+		""
+		"{ftbquests.chapter.47BD500A3691AC25.quest4.description4}"
+		""
+		"{ftbquests.chapter.47BD500A3691AC25.quest4.description5}"
+	]
+	quest.1FBD802D36A7C48E.quest_desc: [
+		"{image:kubejs:textures/quests/ae2.png width:170 height:126 align:center}"
+		"{ftbquests.chapter.28}"
+		"{@pagebreak}"
+		"{ftbquests.chapter.29}"
+		""
+		"{ftbquests.chapter.30}"
+		""
+		"{ftbquests.chapter.31}"
+		""
+		"{ftbquests.chapter.32}"
+	]
+	quest.1FBD802D36A7C48E.title: "{ftbquests.chapter.27}"
+	quest.20F7E12C7F799E62.quest_desc: ["{ftbquests.chapter.4}"]
+	quest.20F7E12C7F799E62.title: "{ftbquests.chapter.3}"
+	quest.25620FBD89BCEDC2.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest7.description1}"]
+	quest.25F6638C40B10887.quest_desc: [
+		"{ftbquests.chapter.17}"
+		""
+		"&l{ftbquests.chapter.19}"
+		""
+		"{ftbquests.chapter.20}"
+		"{ftbquests.chapter.21}"
+		""
+		"{ftbquests.chapter.81}"
+	]
+	quest.261988BFBF279F0C.quest_desc: ["{ftbquests.chapter.64}"]
+	quest.262E647A5F56D66A.quest_desc: [
+		"{ftbquests.chapter.34}"
+		""
+		"{ftbquests.chapter.35}"
+		""
+		"{ftbquests.chapter.36}"
+	]
+	quest.2756C72BCEFA43BB.quest_desc: [
+		"{ftbquests.chapter.5}"
+		""
+		"{ftbquests.chapter.6}"
+		""
+		"{ftbquests.chapter.7}"
+	]
+	quest.29CBB7A813B115E3.quest_desc: [
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest7.description1}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest7.description2}"
+		""
+		"{ftbquests.chapter.84}"
+	]
+	quest.2E5C6BF66A865E86.quest_desc: ["{ftbquests.chapter.54}"]
+	quest.2FC45DEC412F5866.quest_desc: [
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest18.description1}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest18.description2}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest18.description3}"
+	]
+	quest.3103E557B2B6E3EB.quest_desc: [
+		"{ftbquests.chapter.47}"
+		""
+		"{ftbquests.chapter.48}"
+		""
+		"{ftbquests.chapter.49}"
+	]
+	quest.330B40B79AC42D60.quest_desc: [
+		"{ftbquests.chapter.47BD500A3691AC25.quest5.description1}"
+		""
+		"{ftbquests.chapter.47BD500A3691AC25.quest5.description2}"
+		""
+		"{ftbquests.chapter.87}"
+		""
+		"{ftbquests.chapter.47BD500A3691AC25.quest5.description4}"
+	]
+	quest.33E3BC2576C8E134.quest_desc: [
+		"{ftbquests.chapter.47BD500A3691AC25.quest17.description1}"
+		""
+		"{ftbquests.chapter.47BD500A3691AC25.quest17.description2}"
+		""
+		"{ftbquests.chapter.87}"
+	]
+	quest.3DD2F37E7A2BB49B.quest_desc: [
+		"{ftbquests.chapter.56AEAC22236F88E3.quest3.description1}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest3.description2}"
+	]
+	quest.3DDA536DBD99398C.quest_desc: [
+		"{ftbquests.chapter.25}"
+		""
+		"{ftbquests.chapter.26}"
+	]
+	quest.40A9030F15ECF592.quest_desc: ["{ftbquests.chapter.8}"]
+	quest.40C47971276A4CBA.quest_desc: [
+		"{ftbquests.chapter.61}"
+		""
+		"{ftbquests.chapter.62}"
+		""
+		"{ftbquests.chapter.63}"
+	]
+	quest.428C84E8A63362B7.quest_desc: ["{ftbquests.chapter.53}"]
+	quest.4541A3398F8D9447.quest_desc: [
+		"{ftbquests.chapter.82}"
+		""
+		"{ftbquests.chapter.83}"
+	]
+	quest.457DB28DFC8CFB01.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest9.description1}"]
+	quest.562BF588C9AE77F3.quest_desc: [
+		"{ftbquests.chapter.56AEAC22236F88E3.quest4.description1}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest4.description2}"
+	]
+	quest.5636F9C89E8FAE8A.quest_desc: [
+		"{ftbquests.chapter.56AEAC22236F88E3.quest5.description1}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest5.description2}"
+	]
+	quest.5760C54CEE8923FD.quest_desc: ["{ftbquests.chapter.73}"]
+	quest.58344F08DBF07AB1.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest81.description1}"]
+	quest.587550792D9D021E.quest_desc: [
+		"{ftbquests.chapter.56AEAC22236F88E3.quest97.description1}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest97.description2}"
+	]
+	quest.58A916EA1E943AF8.quest_desc: ["{ftbquests.chapter.86}"]
+	quest.5DAFA95394B84E01.quest_desc: [
+		"{ftbquests.chapter.65}"
+		""
+		"{ftbquests.chapter.66}"
+		""
+		"{ftbquests.chapter.67}"
+		""
+		"{ftbquests.chapter.68}"
+		""
+		"{ftbquests.chapter.69}"
+	]
+	quest.5DD08A59DD94F333.quest_desc: [
+		"{ftbquests.chapter.9}"
+		""
+		"{ftbquests.chapter.18}"
+		""
+		"{ftbquests.chapter.41}"
+	]
+	quest.5E3861E2AAE261B9.quest_desc: [
+		"{ftbquests.chapter.11}"
+		""
+		"{ftbquests.chapter.12}"
+		""
+		"{ftbquests.chapter.42}"
+	]
+	quest.5E525D19FC0E4E21.quest_desc: [
+		"{ftbquests.chapter.47BD500A3691AC25.quest7.description1}"
+		"{ftbquests.chapter.47BD500A3691AC25.quest7.description2}"
+		""
+		"{ftbquests.chapter.87}"
+	]
+	quest.601C64BC7392AC6E.quest_desc: [
+		"{ftbquests.chapter.13}"
+		""
+		"{ftbquests.chapter.14}"
+		""
+		"{ftbquests.chapter.15}"
+		""
+		"{ftbquests.chapter.16}"
+		""
+		"{ftbquests.chapter.60}"
+	]
+	quest.6054C59F76D31202.quest_desc: [
+		"{ftbquests.chapter.56}"
+		""
+		"{ftbquests.chapter.57}"
+		""
+		"{ftbquests.chapter.58}"
+		""
+		"{ftbquests.chapter.59}"
+	]
+	quest.6406CEAA80A2D901.quest_desc: [
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest51.description1}"
+		""
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest51.description2}"
+		"{ftbquests.chapter.5A0B30A41D65CC21.quest51.image0}"
+	]
+	quest.6884857F6081D537.quest_desc: [
+		"{image:kubejs:textures/quests/ae2_6.png width:88 height:64 align:center}"
+		""
+		"{ftbquests.chapter.75}"
+		""
+		"{ftbquests.chapter.76}"
+	]
+	quest.68B327CB42E12CB5.quest_desc: ["{ftbquests.chapter.74}"]
+	quest.6EAEF2D6BEED01CC.quest_desc: [
+		"{ftbquests.chapter.56AEAC22236F88E3.quest36.description1}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest36.description2}"
+		""
+	]
+	quest.6EE632D30084A1D9.quest_desc: [
+		"{ftbquests.chapter.50}"
+		""
+		"{ftbquests.chapter.51}"
+		""
+		"{ftbquests.chapter.52}"
+	]
+	quest.6F2D7074EA78261C.quest_desc: [
+		"{ftbquests.chapter.100A225B6AEDABCD.quest19.description1}"
+		""
+		"{ftbquests.chapter.43}"
+		""
+		"{ftbquests.chapter.44}"
+	]
+	quest.71D9DFAB32B7FCB6.quest_desc: [
+		"{ftbquests.chapter.47BD500A3691AC25.quest20.description1}"
+		""
+		"{ftbquests.chapter.47BD500A3691AC25.quest20.description2}"
+		""
+		"{ftbquests.chapter.45}"
+	]
+	quest.737A0E69B0C4D7F1.quest_desc: [
+		"{image:kubejs:textures/quests/ae2_1.png width:159 height:161 align:center}"
+		"{ftbquests.chapter.38}"
+		""
+		"{ftbquests.chapter.39}"
+		""
+		"{ftbquests.chapter.40}"
+	]
+	quest.755EF2C7E6DD3ED5.quest_desc: ["{ftbquests.chapter.37}"]
+	quest.75DAE253BE05CE0C.quest_desc: [
+		"{ftbquests.chapter.56AEAC22236F88E3.quest10.description1}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest10.description2}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest10.description3}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest10.description4}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest10.description5}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest10.description6}"
+	]
+	quest.791C9FCDC0A22034.quest_desc: [
+		"{ftbquests.chapter.56AEAC22236F88E3.quest15.description1}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest15.description2}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest15.description3}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest15.description4}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest15.description5}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest15.description6}"
+	]
+	task.03E7EB6A4EA4D9F4.title: "{ftbquests.chapter.33}"
 }

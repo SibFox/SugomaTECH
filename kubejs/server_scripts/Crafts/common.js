@@ -6,7 +6,13 @@
  */
 const registerCommonRecipes = (evt) => {
 
-    shapedRecipe(evt, recipeID('minecraft', 'saddle'),
+    function getRecipeID(a, b) {
+        let c = a
+        if (b != null) c += '/' + b
+        return recipeID(c)
+    }
+
+    shapedRecipe(evt, getRecipeID('minecraft', 'saddle'),
         [
             [ null, item.leather, null],
             [ tag.leather, tag.ingot.iron, item.leather ]
@@ -14,7 +20,7 @@ const registerCommonRecipes = (evt) => {
         'minecraft:saddle'
     )
 
-    iuRecipe(evt, recipeID('red_alloy'), IUMachineCraft.ALLOY_SMELTER.lvl1,
+    iuRecipe(evt, getRecipeID('red_alloy'), IUMachineCraft.ALLOY_SMELTER.lvl1,
         [
             asItem(tag.ingot.electrum),
             asItem(item.iu.compressed_redstone)
@@ -24,7 +30,7 @@ const registerCommonRecipes = (evt) => {
         { 'temperature': 2000 }
     )
 
-    shapedRecipe(evt, recipeID('createcybernetics', 'synth_nerve_cables'),
+    shapedRecipe(evt, getRecipeID('createcybernetics', 'synth_nerve_cables'),
         [
             [ item.cn.fiber_optic, item.nugget.electrum ],
             [ item.nugget.electrum, item.nugget.electrum ]
@@ -35,10 +41,10 @@ const registerCommonRecipes = (evt) => {
         [
             '9x ' + item.custom.hemolymph_drop
         ]
-    ).id(recipeID('arphex', 'raw_hemolyph'))    
+    ).id(getRecipeID('arphex', 'raw_hemolyph'))    
     
 
-    iuRecipe(evt, recipeID('createcybernetics', 'organic_polymer'), IUMachineCraft.PLASTIC_PLATE,
+    iuRecipe(evt, getRecipeID('createcybernetics', 'organic_polymer'), IUMachineCraft.PLASTIC_PLATE,
         [
             asItem(fluid.polypropylene, 100),
             asItem(item.arphex.raw_hemolymph)
@@ -47,7 +53,7 @@ const registerCommonRecipes = (evt) => {
         ]
     )
 
-    iuRecipe(evt, recipeID('createcybernetics', 'conducting_organic_polymer'), IUMachineCraft.SOLID_ELECTROLYZER,
+    iuRecipe(evt, getRecipeID('createcybernetics', 'conducting_organic_polymer'), IUMachineCraft.SOLID_ELECTROLYZER,
         [
             asItem(item.custom.organic_polymer)
         ],[
@@ -56,31 +62,31 @@ const registerCommonRecipes = (evt) => {
         ]
     )
 
-    cElectrifyRecipe(evt, recipeID('electrum_nugget'),
+    cElectrifyRecipe(evt, getRecipeID('electrum_nugget'),
         4000,
         asItem(tag.nugget.gold),
         asItem(item.nugget.electrum)
     )
 
-    cElectrifyRecipe(evt, recipeID('electrum_ingot'),
+    cElectrifyRecipe(evt, getRecipeID('electrum_ingot'),
         36000,
         asItem(tag.ingot.gold),
         asItem(item.ingot.electrum)
     )
     
-    cElectrifyRecipe(evt, recipeID('electrum_plate'),
+    cElectrifyRecipe(evt, getRecipeID('electrum_plate'),
         36000,
         asItem(tag.plate.gold),
         asItem(item.plate.electrum)
     )
     
-    cElectrifyRecipe(evt, recipeID('electrum_block'),
+    cElectrifyRecipe(evt, getRecipeID('electrum_block'),
         324000,
         asItem(tag.ore_block.gold),
         asItem(item.ore_block.electrum)
     )
     
-    cElectrifyRecipe(evt, recipeID('conducting_organic_polymer'),
+    cElectrifyRecipe(evt, getRecipeID('conducting_organic_polymer'),
         6000,
         asItem(item.custom.organic_polymer),
         asItem(item.custom.conducting_organic_polymer)
@@ -103,26 +109,43 @@ const registerCommonRecipes = (evt) => {
         ]
     ).id(getRecipeID('hardened_leather'))    
 
+    evt.shaped(
+        Item.of(item.iu.module.cybernetics, 1),
+        [
+            ' D ',
+            'NON',
+            'PGP'
+        ],{
+            D: item.cn.diodes,
+            O: item.iu.module.template.lvl1,
+            P: tag.plate.titanium,
+            G: tag.gear.titanium,
+            N: item.iu.tech_box.normal.nano
+        }
+    ).id(getRecipeID('module_cybernetics'))
+    
+    
+
     // До добавления биг кэнонс
     // evt.shapeless(Item.of(item.ingot.bronze, 1),
     //     [
     //         Ingredient.of(tag.nugget.bronze, 9)
     //     ]
-    // ).id(recipeID('bronze_ingot_ct'))
+    // ).id(getRecipeID('bronze_ingot_ct'))
     
     // До добавления биг кэнонс
     // evt.shapeless(Item.of(item.ingot.steel, 1),
     //     [
     //         Ingredient.of(tag.nugget.steel, 9)
     //     ]
-    // ).id(recipeID('steel_ingot_ct'))
+    // ).id(getRecipeID('steel_ingot_ct'))
     
     // До добавления биг кэнонс
     // evt.shapeless(Item.of(item.nugget.steel, 9),
     //     [
     //         tag.ingot.steel
     //     ]
-    // ).id(recipeID('steel_nugget_ct'))
+    // ).id(getRecipeID('steel_nugget_ct'))
 
 
 

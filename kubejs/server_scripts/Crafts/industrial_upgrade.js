@@ -22,7 +22,7 @@ const registerIURecipes = (evt) => {
         ],
     'industrialupgrade:wiring/itemcable23', 6)
 
-    shapedRecipe(evt, recipeID('iu', 'cobalt_pipe_entering'),
+    shapedRecipe(evt, recipeID('iu', 'cobalt_pipe_input'),
         [
             [ tag.plate.cobalt, tag.plate.cobalt, tag.plate.cobalt ],
             [ tag.lapis, tag.plate.nichrome, tag.lapis ],
@@ -30,24 +30,33 @@ const registerIURecipes = (evt) => {
         ],
     'industrialupgrade:wiring/itemcable22', 6)
 
-    evt.remove({ output: 'industrialupgrade:wiring/itemcable26' }) // Кобальт-хромовая труба
-    evt.remove({ output: 'industrialupgrade:wiring/itemcable25' }) // Входная труба
+    // evt.remove({ output: 'industrialupgrade:wiring/itemcable26' }) // Кобальт-хромовая труба
+    // evt.remove({ output: 'industrialupgrade:wiring/itemcable25' }) // Входная труба
+    // evt.remove({ output: 'industrialupgrade:wiring/itemcable24' }) // Выходная труба
 
-    shapedRecipe(evt, recipeID('iu', 'cobaltchrome_pipe'),
-        [
-            [ tag.plate.cobaltchrome, tag.plate.cobaltchrome, tag.plate.cobaltchrome ],
-            [ null, tag.plate.nichrome, null ],
-            [ tag.plate.cobaltchrome, tag.plate.cobaltchrome, tag.plate.cobaltchrome ]
-        ],
-    'industrialupgrade:wiring/itemcable26', 6)
+    // shapedRecipe(evt, recipeID('iu', 'cobaltchrome_pipe'),
+    //     [
+    //         [ tag.plate.cobaltchrome, tag.plate.cobaltchrome, tag.plate.cobaltchrome ],
+    //         [ null, tag.plate.nichrome, null ],
+    //         [ tag.plate.cobaltchrome, tag.plate.cobaltchrome, tag.plate.cobaltchrome ]
+    //     ],
+    // 'industrialupgrade:wiring/itemcable26', 6)
 
-    shapedRecipe(evt, recipeID('iu', 'cobaltchrome_pipe__entering'),
-        [
-            [ tag.plate.cobaltchrome, tag.plate.cobaltchrome, tag.plate.cobaltchrome ],
-            [ tag.lapis, tag.plate.nichrome, tag.lapis ],
-            [ tag.plate.cobaltchrome, tag.plate.cobaltchrome, tag.plate.cobaltchrome ]
-        ],
-    'industrialupgrade:wiring/itemcable25', 6)
+    // shapedRecipe(evt, recipeID('iu', 'cobaltchrome_pipe_input'),
+    //     [
+    //         [ tag.plate.cobaltchrome, tag.plate.cobaltchrome, tag.plate.cobaltchrome ],
+    //         [ tag.lapis, tag.plate.nichrome, tag.lapis ],
+    //         [ tag.plate.cobaltchrome, tag.plate.cobaltchrome, tag.plate.cobaltchrome ]
+    //     ],
+    // 'industrialupgrade:wiring/itemcable25', 6)
+
+    // shapedRecipe(evt, recipeID('iu', 'cobaltchrome_pipe_output'),
+    //     [
+    //         [ tag.plate.cobaltchrome, tag.plate.cobaltchrome, tag.plate.cobaltchrome ],
+    //         [ tag.redstone, tag.plate.nichrome, tag.redstone ],
+    //         [ tag.plate.cobaltchrome, tag.plate.cobaltchrome, tag.plate.cobaltchrome ]
+    //     ],
+    // 'industrialupgrade:wiring/itemcable24', 6)
 
     for ( let block of [ 'polonium', 'thallium', 'strontium', 'zirconium' ] ) {
         evt.shapeless(Item.of('industrialupgrade:raw_metals/raw_' + block, 9),

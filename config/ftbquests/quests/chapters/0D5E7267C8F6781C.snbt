@@ -104,7 +104,7 @@
 				{
 					count: 2L
 					id: "01DD1AF9798E2108"
-					item: { count: 2, id: "industrialupgrade:cyclotron/cyclotron_particle_accelerator" }
+					item: { count: 1, id: "industrialupgrade:cyclotron/cyclotron_particle_accelerator" }
 					type: "item"
 				}
 				{
@@ -135,7 +135,7 @@
 				{
 					count: 39L
 					id: "3407D90E00787472"
-					item: { count: 39, id: "industrialupgrade:cyclotron/cyclotron_casing" }
+					item: { count: 1, id: "industrialupgrade:cyclotron/cyclotron_casing" }
 					type: "item"
 				}
 			]
@@ -195,7 +195,7 @@
 				item: { count: 1, id: "industrialupgrade:crafting_elements/crafting_641_element" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 1.0d
 			y: -6.5d
 		}
 		{

@@ -57,28 +57,12 @@
 			y: -3.0d
 		}
 		{
-			height: 6.0d
-			image: "kubejs:textures/quests/j_alien.png"
+			height: 2.5d
+			image: "minecraft:item/stone_pickaxe"
 			rotation: 0.0d
-			width: 7.5d
-			x: -19.064073129251653d
-			y: -2.2557663690476346d
-		}
-		{
-			height: 12.0d
-			image: "kubejs:textures/quests/j_tormentor.png"
-			rotation: 90.0d
-			width: 7.0d
-			x: 30.820812074830002d
-			y: -2.981956845238116d
-		}
-		{
-			height: 4.0d
-			image: "kubejs:textures/quests/j_bosses.png"
-			rotation: 0.0d
-			width: 6.0d
-			x: 21.650000000000013d
-			y: -3.79730017006802d
+			width: 2.5d
+			x: -3.0d
+			y: -6.5d
 		}
 	]
 	order_index: 1
@@ -258,8 +242,51 @@
 				item: { count: 1, id: "sophisticatedbackpacks:backpack" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: -1.0d
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			id: "002311B194E5CA08"
+			rewards: [{
+				id: "0229B73347840772"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "093C1159226711AA"
+					item: { count: 1, id: "ironchest:iron_chest" }
+					type: "item"
+				}
+				{
+					id: "600D5740B279880F"
+					item: { count: 1, id: "ironfurnaces:iron_furnace" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			id: "1B3C1498A8DE5914"
+			rewards: [{
+				id: "6FC112D48544DA92"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "04770CD3571581BA"
+				item: { count: 1, id: "waystones:waystone" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
 		}
 		{
 			id: "01E4930C0BAA6324"
@@ -289,7 +316,7 @@
 				}
 			]
 			x: -2.0d
-			y: -1.0d
+			y: 0.5d
 		}
 		{
 			id: "4671525C8B08D3C5"
@@ -309,8 +336,8 @@
 			shape: "square"
 			size: 1.1d
 			tasks: [{
-				id: "63F2BA406CC0CB1A"
-				item: { count: 1, id: "industrialupgrade:itemcell/itemcell" }
+				id: "021098889565D4BE"
+				item: { count: 1, id: "industrialupgrade:bucket/pahoehoe_lava" }
 				type: "item"
 			}]
 			x: 8.8d
@@ -418,11 +445,25 @@
 				}
 				type: "item"
 			}]
-			tasks: [{
-				id: "0BDBA0F3E6958D55"
-				item: { count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0BDBA0F3E6958D55"
+					item: { count: 1, id: "industrialupgrade:itemcell/itemcell" }
+					type: "item"
+				}
+				{
+					id: "1EB63B2A184B41C4"
+					item: { count: 1, id: "industrialupgrade:itemcell/smallfluidcell" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7D0243DCFDD7E66D"
+					item: { count: 1, id: "industrialupgrade:itemcell/reinforcedfluidcell" }
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 3.0d
 			y: -2.0d
 		}
@@ -466,196 +507,6 @@
 			]
 			x: 1.0d
 			y: -2.0d
-		}
-		{
-			icon: {
-				id: "gigeresque:alien_storage_block1"
-			}
-			icon_scale: 0.9d
-			id: "72F3BACBB88A2519"
-			invisible: true
-			rewards: [
-				{
-					id: "7480DB0D3606A319"
-					item: {
-						components: {
-							"cold_sweat:armor_insulation": {
-								insulation: [ ]
-							}
-							"industrialupgrade:data": {
-								active: 1b
-								toggleTimer: 0b
-							}
-							"industrialupgrade:energy": 0.0d
-						}
-						count: 1
-						id: "industrialupgrade:armour/nightvision_goggles"
-					}
-					type: "item"
-				}
-				{
-					count: 4
-					id: "3517BDDA5D39E3C3"
-					item: {
-						count: 1
-						id: "kubejs:coin"
-					}
-					type: "item"
-				}
-			]
-			shape: "diamond"
-			size: 1.5d
-			tasks: [{
-				icon: {
-					id: "gigeresque:alien_storage_block1"
-				}
-				id: "13DD62F102F78EC8"
-				structure: "gigeresque:gig_dungeon"
-				type: "structure"
-			}]
-			x: -20.25d
-			y: -3.0d
-		}
-		{
-			dependencies: ["5BC94F2E1797A6FA"]
-			id: "501EA153A63F800F"
-			rewards: [{
-				count: 2
-				id: "2D17502DF21A6763"
-				item: {
-					count: 1
-					id: "kubejs:coin"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "38549633E915D2DC"
-				item: { count: 1, id: "sophisticatedbackpacks:netherite_backpack" }
-				type: "item"
-			}]
-			x: -2.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["01E4930C0BAA6324"]
-			id: "6B55C618EE5509AF"
-			rewards: [{
-				count: 2
-				id: "1434CB5FD2F33B4F"
-				item: {
-					count: 1
-					id: "kubejs:coin"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "0C3CB68AEBFD937E"
-				item: { count: 1, id: "pipez:ultimate_upgrade" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: 0.0d
-		}
-		{
-			id: "35E9A102ECC67C44"
-			rewards: [{
-				id: "3C1119533596A5E9"
-				item: {
-					count: 1
-					id: "kubejs:coin"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "2EAC16A8896AAE77"
-				item: { count: 1, id: "measurements:tape_measure" }
-				type: "item"
-			}]
-			x: 3.0d
-			y: 1.0d
-		}
-		{
-			id: "1015B52F42E7A8E8"
-			rewards: [{
-				id: "57000F183F06F525"
-				item: {
-					count: 1
-					id: "kubejs:coin"
-				}
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "6C0A9E44057496A8"
-					item: { count: 1, id: "buildinggadgets2:template_manager" }
-					type: "item"
-				}
-				{
-					id: "7E0F1547AD36C8B1"
-					item: { components: { "buildinggadgets2:bind_toggle": 0b, "buildinggadgets2:copy_end_pos": [I; 109, 238, -18 ], "buildinggadgets2:copy_start_pos": [I; 109, 236, -19 ], "buildinggadgets2:copy_uuid": [I; -686159333, 1755269026, -1322367771, 760878288 ], "buildinggadgets2:gadget_mode": "buildinggadgets2:paste", "buildinggadgets2:gadget_uuid": [I; 440914052, -270319118, -1289871009, 425135786 ], "buildinggadgets2:raytrace_fluid_toggle": 0b, "buildinggadgets2:relative_paste": [I; 0, 1, 0 ], "buildinggadgets2:render_type": 5b, "buildinggadgets2:template_name": "", "buildinggadgets2:undo_list": [ [I; 1884760671, -1188083315, -1335458843, -1707545393 ], [I; 349656824, -1484372087, -1285221758, -122553165 ], [I; 531041018, -1013299562, -1719605907, -450868790 ], [I; 1017696905, -366197295, -1886919604, 923171436 ], [I; 1009715950, 189024861, -1508656617, -282584046 ], [I; 1500906294, 1601589221, -1154689564, -821590618 ], [I; 873154636, -1833940254, -2043155728, -1630727369 ], [I; 31473336, -514897306, -1240378192, 299436771 ], [I; -41510763, -359315934, -1480597996, -1514634218 ], [I; 1552411064, 1970293108, -1980242608, -1948791913 ] ] }, count: 1, id: "buildinggadgets2:gadget_copy_paste" }
-					type: "item"
-				}
-				{
-					id: "33C01BBB9DC0C0B8"
-					item: { count: 1, id: "buildinggadgets2:template" }
-					type: "item"
-				}
-			]
-			x: 1.0d
-			y: 1.0d
-		}
-		{
-			icon_scale: 0.9d
-			id: "494EEDE2CEED89F8"
-			invisible: true
-			rewards: [{
-				count: 12
-				id: "1F21A40CF199FF17"
-				item: {
-					count: 1
-					id: "kubejs:coin"
-				}
-				type: "item"
-			}]
-			shape: "octagon"
-			size: 1.5d
-			tasks: [{
-				icon: {
-					id: "arphex:core_of_eternal_suffering"
-				}
-				id: "199D65F1E62D5510"
-				observe_type: 5
-				timer: 0L
-				to_observe: "arphex:tormentor"
-				type: "observation"
-			}]
-			x: 29.25d
-			y: -3.0d
-		}
-		{
-			icon_scale: 0.9d
-			id: "6A51BBE86BDACE8A"
-			invisible: true
-			shape: "pentagon"
-			size: 1.5d
-			tasks: [{
-				advancement: "arphex:destroyer_of_suffering"
-				criterion: ""
-				id: "132403BDF53B6ADF"
-				type: "advancement"
-			}]
-			x: 21.75d
-			y: -2.25d
-		}
-		{
-			id: "629784E18463366C"
-			tasks: [{
-				id: "4E18740F9657A4A0"
-				item: { count: 1, id: "industrialupgrade:energy/wrench" }
-				type: "item"
-			}]
-			x: 2.0d
-			y: 2.0d
 		}
 	]
 }

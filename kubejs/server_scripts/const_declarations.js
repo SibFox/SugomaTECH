@@ -435,7 +435,7 @@ const item = {
                 lvl5: 'industrialupgrade:crafting_elements/crafting_612_element',
             },
             assembler: 'industrialupgrade:crafting_elements/crafting_243_element',
-
+            cybernetics: 'kubejs:module_cybernetics',
         },
 
         spool: {
@@ -577,6 +577,14 @@ const item = {
             quantum: 'industrialupgrade:crafting_elements/crafting_509_element',
             photon: 'industrialupgrade:crafting_elements/crafting_525_element',
         },
+
+        inductor: {
+            lvl1: 'industrialupgrade:crafting_elements/crafting_582_element',
+            lvl2: 'industrialupgrade:crafting_elements/crafting_599_element',
+            lvl3: 'industrialupgrade:crafting_elements/crafting_583_element',
+            lvl4: 'industrialupgrade:crafting_elements/crafting_597_element',
+            lvl5: 'industrialupgrade:crafting_elements/crafting__element',
+        },
     },
 
     // ~~~~~~~~~~~~~~~~~~~~ APPLIED ENERGISTICS ~~~~~~~~~~~~~~~~~~~~ 
@@ -700,6 +708,7 @@ const item = {
         electron_tube: 'create:electron_tube',
         transmitter: 'create:transmitter',
         precision_mechanism: 'create:precision_mechanism',
+        redstone_link: 'create:redstone_link',
         
         casing: {
             andesite: 'create:andesite_casing',
@@ -779,7 +788,10 @@ const item = {
         upgradepart: {
             titanium_hand: 'createcybernetics:titanium_hand',
             pneumatic_wrist: 'createcybernetics:armupgrades_pneumaticwrist',
-            pneumatic_legs: 'createcybernetics:legupgrades_jumpboost'
+            pneumatic_legs: 'createcybernetics:legupgrades_jumpboost',
+            neural_processor: 'createcybernetics:brainupgrades_neuralprocessor',
+            synthskin: 'createcybernetics:skinupgrades_synthskin',
+            bone_battery: 'createcybernetics:boneupgrades_bonebattery',
         },
     },
 
@@ -933,6 +945,8 @@ const tag = {
         berylliumbronze: '#c:doubleplate/berylliumbronze',
         vanadoalumite: '#c:doubleplate/vanadoalumite',
         nitenol: '#c:doubleplate/nitenol',
+        alumel: '#c:doubleplate/alumel',
+        niobium_titanium: '#c:doubleplate/niobium_titanium',
     },
 
     casings: {

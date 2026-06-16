@@ -13,6 +13,7 @@ const registerItems = (evt) => {
     evt.create('conducting_organic_polymer')
     evt.create('pack_frame')
     evt.create('hardened_leather')
+    evt.create('module_cybernetics')
 
     console.info('Item registry passed')
 }
