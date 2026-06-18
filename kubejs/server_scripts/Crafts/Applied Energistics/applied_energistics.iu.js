@@ -23,7 +23,7 @@ const registerAEIURecipes = (evt) => {
             asItem(item.redstone),
             asItem(fluid.oxygen, 1)
         ],[
-            asItem(fluid.redstone, 144),
+            asItem(fluid.redstone, 25),
             asItem(fluid.oxygen, 5)
         ]
     )
@@ -104,7 +104,7 @@ const registerAEIURecipes = (evt) => {
         [
             asItem(tag.ingot.gold),
             asItem(item.ae.silicon),
-            asItem(fluid.redstone, 144)
+            asItem(fluid.redstone, 25)
         ],[
             asItem(item.ae.processor.logic)
         ]
@@ -114,7 +114,7 @@ const registerAEIURecipes = (evt) => {
         [
             asItem(item.ae.certus_quartz_crystal),
             asItem(item.ae.silicon),
-            asItem(fluid.redstone, 144)
+            asItem(fluid.redstone, 25)
         ],[
             asItem(item.ae.processor.calculation)
         ]
@@ -124,7 +124,7 @@ const registerAEIURecipes = (evt) => {
         [
             asItem(tag.diamond),
             asItem(item.ae.silicon),
-            asItem(fluid.redstone, 144)
+            asItem(fluid.redstone, 25)
         ],[
             asItem(item.ae.processor.engineering)
         ]
@@ -134,7 +134,7 @@ const registerAEIURecipes = (evt) => {
         [
             asItem(item.ae.charged_redstone_crystal),
             asItem(item.ae.silicon),
-            asItem(fluid.redstone, 144)
+            asItem(fluid.redstone, 25)
         ],[
             asItem(item.ae.processor.energy)
         ]
@@ -144,7 +144,7 @@ const registerAEIURecipes = (evt) => {
         [
             asItem(item.ae.entro_crystal),
             asItem(item.ae.silicon),
-            asItem(fluid.redstone, 144)
+            asItem(fluid.redstone, 25)
         ],[
             asItem(item.ae.processor.concurrent)
         ]
@@ -154,7 +154,7 @@ const registerAEIURecipes = (evt) => {
         [
             asItem(item.ingot.sky_steel),
             asItem(item.ae.silicon),
-            asItem(fluid.glowstone, 144)
+            asItem(fluid.glowstone, 25)
         ],[
             asItem(item.ae.processor.accumulation)
         ]
@@ -207,7 +207,7 @@ const registerAEIURecipes = (evt) => {
             asItem(tag.certus_quartz),
             asItem(item.ae.fluix_dust),
             asItem(item.ae.ender_dust),
-            asItem(item.iu.chip.lvl1)
+            asItem(item.create.transmitter)
         ],[
             asItem(item.ae.wireless_booster, 2)
         ]

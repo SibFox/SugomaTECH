@@ -1,0 +1,15 @@
+{
+  "swapper": {
+    "inputs": [
+      "create:zinc_ore",
+      "createpropulsion:platinum_ore",
+      "createcybernetics:titaniumore_block"
+    ],
+    "output": "minecraft:stone",
+    "keep_states": false,
+    "retrogen": true,
+    "player_blocks": true,
+    "keep_nbt": false,
+    "probability": 1
+  }
+}

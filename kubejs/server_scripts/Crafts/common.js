@@ -124,6 +124,21 @@ const registerCommonRecipes = (evt) => {
         }
     ).id(getRecipeID('module_cybernetics'))
     
+    evt.shaped(
+        Item.of('hole_filler_mod:throwable_hole_filler_balanced', 1),
+        [
+            'PMO',
+            'PGO',
+            'PCO'
+        ],{
+            M: item.iu.module.macerator.lvl1,
+            C: item.iu.molecular_core,
+            G: 'industrialupgrade:basemachine2/lava_gen',
+            P: tag.casings.palladium,
+            O: tag.casings.polonium
+        }
+    ).id(getRecipeID('hole_filler'))
+    
     
 
     // До добавления биг кэнонс

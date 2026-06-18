@@ -8,6 +8,7 @@ const registerRecipeRemovings = (evt) => {
 
     evt.remove({ mod: 'mffs' })
     evt.remove({ mod: 'wirelesschargers' })
+    evt.remove({ mod: 'hole_filler_mod' })
     evt.remove({ mod: 'createcybernetics', type: 'create:mechanical_crafting' })
 
     evt.remove({ id: "petrolpark:recipe_book_test" })

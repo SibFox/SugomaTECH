@@ -173,10 +173,99 @@ const registerRecipeReplacings = (evt) => {
         item.plate.zinc
     )
 
+    evt.replaceInput({ input: 'create:sturdy_sheet' },
+        'create:sturdy_sheet',
+        tag.plate.obsidian
+    )
     evt.replaceOutput({ output: 'create:sturdy_sheet' },
         'create:sturdy_sheet',
         item.plate.obsidian
     )
+    
+    evt.replaceInput({ input: 'createpropulsion:platinum_ingot' },
+        'createpropulsion:platinum_ingot',
+        tag.ingot.platinum
+    )
+    evt.replaceOutput({ output: 'createpropulsion:platinum_ingot' },
+        'createpropulsion:platinum_ingot',
+        item.ingot.platinum
+    )
+
+    evt.replaceInput({ input: 'createpropulsion:platinum_block' },
+        'createpropulsion:platinum_block',
+        tag.ore_block.platinum
+    )
+    evt.replaceOutput({ output: 'createpropulsion:platinum_block' },
+        'createpropulsion:platinum_block',
+        item.ore_block.platinum
+    )
+    
+    evt.replaceInput({ input: 'createpropulsion:platinum_sheet' },
+        'createpropulsion:platinum_sheet',
+        tag.plate.platinum
+    )
+    evt.replaceOutput({ output: 'createpropulsion:platinum_sheet' },
+        'createpropulsion:platinum_sheet',
+        item.plate.platinum
+    )
+
+    evt.replaceInput({ input: 'createpropulsion:platinum_nugget' },
+        'createpropulsion:platinum_nugget',
+        tag.nugget.platinum
+    )
+    evt.replaceOutput({ output: 'createpropulsion:platinum_nugget' },
+        'createpropulsion:platinum_nugget',
+        item.nugget.platinum
+    )
+
+    evt.replaceInput({ input: 'powergrid:zinc_sheet' },
+        'powergrid:zinc_sheet',
+        tag.plate.zinc
+    )
+    evt.replaceOutput({ output: 'powergrid:zinc_sheet' },
+        'powergrid:zinc_sheet',
+        item.plate.zinc
+    )
+    
+    
+
+
+    evt.replaceInput({ input: 'create:crushed_raw_iron' },
+        'create:crushed_raw_iron',
+        'industrialupgrade:crushed/iron'
+    )
+    evt.replaceOutput({ output: 'create:crushed_raw_iron' },
+        'create:crushed_raw_iron',
+        'industrialupgrade:crushed/iron'
+    )
+
+    evt.replaceInput({ input: 'create:crushed_raw_gold' },
+        'create:crushed_raw_gold',
+        'industrialupgrade:crushed/gold'
+    )
+    evt.replaceOutput({ output: 'create:crushed_raw_gold' },
+        'create:crushed_raw_gold',
+        'industrialupgrade:crushed/gold'
+    )
+
+    evt.replaceInput({ input: 'create:crushed_raw_copper' },
+        'create:crushed_raw_copper',
+        'industrialupgrade:crushed/copper'
+    )
+    evt.replaceOutput({ output: 'create:crushed_raw_copper' },
+        'create:crushed_raw_copper',
+        'industrialupgrade:crushed/copper'
+    )
+    
+    evt.replaceInput({ input: 'create:crushed_raw_zinc' },
+        'create:crushed_raw_zinc',
+        'industrialupgrade:crushed/zinc'
+    )
+    evt.replaceOutput({ output: 'create:crushed_raw_zinc' },
+        'create:crushed_raw_zinc',
+        'industrialupgrade:crushed/zinc'
+    )
+    
     
     
     evt.replaceInput({ input: 'createcybernetics:component_wiring' },
@@ -193,6 +282,9 @@ const registerRecipeReplacings = (evt) => {
         'ae2:quartz_glass',
         item.iu.tempered_glass
     )
+
+
+
 
     console.info('Recipe replcaings passed')
 }

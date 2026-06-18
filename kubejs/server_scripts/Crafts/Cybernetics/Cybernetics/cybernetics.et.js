@@ -305,7 +305,7 @@ const registerCyberneticsETRecipes = (evt) => {
             'J J J',
         ],{
             N: 'minecraft:netherite_block',
-            S: 'createcybernetics:skinupgrades_synthskin',
+            S: item.cn.upgradepart.synthskin,
             T: item.cn.titanium_plating,
             B: 'minecraft:slime_block',
             I: 'minecraft:blue_ice', // Заменить на криогент
@@ -325,14 +325,14 @@ const registerCyberneticsETRecipes = (evt) => {
             T: item.dye.brown, Y: item.dye.red, U: item.dye.orange, I: item.dye.yellow,
             C: item.dye.lime, Z: item.dye.green, X: item.dye.cyan, C: item.dye.light_blue,
             V: item.dye.blue, B: item.dye.purple, N: item.dye.magenta, M: item.dye.pink,
-            S: 'createcybernetics:skinupgrades_synthskin',
+            S: item.cn.upgradepart.synthskin,
             O: item.cn.fiber_optic,
             A: item.cn.actuator,
             J: item.cn.synthnerves
         }
     )
 
-    cnRecipe(evt, asItem('createcybernetics:skinupgrades_synthskin'),
+    cnRecipe(evt, asItem(item.cn.upgradepart.synthskin),
         [
             '     ',
             '     ',
@@ -620,7 +620,7 @@ const registerCyberneticsETRecipes = (evt) => {
             T: item.cn.titanium_plating,
             N: item.cn.synthnerves,
             A: 'createcybernetics:skinupgrades_subdermalarmor',
-            S: 'createcybernetics:skinupgrades_synthskin'
+            S: item.cn.upgradepart.synthskin
         }
     )
 
@@ -688,8 +688,8 @@ const registerCyberneticsETRecipes = (evt) => {
             E: item.create.electron_tube,
             S: item.sugar,
             P: item.blaze_powder,
-            F: 'create:fluid_pipe',
-            D: 'minecraft:dispenser'
+            F: 'industrialupgrade:wiring/itemcable26',
+            D: item.ia.redstone_mechanism
         }
     )
 
@@ -705,8 +705,8 @@ const registerCyberneticsETRecipes = (evt) => {
             S: item.cn.storage,
             N: item.cn.synthnerves,
             R: item.ingot.red_alloy,
-            F: 'minecraft:flint_and_steel',
-            D: 'minecraft:dispenser'
+            F: 'minecraft:flint_and_steel', // заменить на имплант зажигалку
+            D: item.ia.redstone_mechanism
         }
     )
 
@@ -859,8 +859,8 @@ const registerCyberneticsETRecipes = (evt) => {
             P: item.custom.conducting_organic_polymer,
             E: item.iu.capacitor.lvl3,
             Z: item.iu.transistor.lvl2,
-            M: 'minecraft:milk_bucket',
-            D: 'minecraft:dispenser'
+            M: 'minecraft:milk_bucket', // заменить на что-то генетическое
+            D: item.ia.redstone_mechanism
         }
     )
 
@@ -939,7 +939,7 @@ const registerCyberneticsETRecipes = (evt) => {
         ],{
             T: item.cn.titanium_plating,
             N: item.nugget.titanium,
-            S: 'createcybernetics:skinupgrades_synthskin'
+            S: item.cn.upgradepart.synthskin
         }
     )
 
@@ -969,7 +969,7 @@ const registerCyberneticsETRecipes = (evt) => {
         ],{
             T: item.cn.titanium_plating,
             M: item.cn.titanium_mesh,
-            S: 'createcybernetics:skinupgrades_synthskin'
+            S: item.cn.upgradepart.synthskin
         }
     )
 
@@ -1010,15 +1010,16 @@ const registerCyberneticsETRecipes = (evt) => {
         [
             '     ',
             '     ',
-            'SDSDS',
-            'NEGEN',
+            'SMSMS',
+            'NDGEN',
             '     '
         ],{
             N: item.cn.synthnerves,
             E: item.create.electron_tube,
-            S: 'createcybernetics:skinupgrades_synthskin',
-            D: 'minecraft:dispenser',
-            G: 'cold_sweat:thermometer'
+            S: item.cn.upgradepart.synthskin,
+            D: item.ia.redstone_mechanism,
+            G: 'cold_sweat:thermometer',
+            M: item.cn.titanium_mesh
         }
     )
 
@@ -1064,7 +1065,7 @@ const registerCyberneticsETRecipes = (evt) => {
         ],{
             P: item.enderpearl,
             T: item.create.electron_tube,
-            R: 'minecraft:lightning_rod',
+            R: item.iu.spool.lvl2,
             E: 'minecraft:end_rod',
             H: 'minecraft:chorus_flower'
         }
@@ -1218,7 +1219,7 @@ const registerCyberneticsETRecipes = (evt) => {
             S: item.cn.storage,
             E: item.create.electron_tube,
             P: item.plate.titanium,
-            D: 'minecraft:dispenser'
+            D: item.ia.redstone_mechanism
         }
     )
     
@@ -1231,7 +1232,7 @@ const registerCyberneticsETRecipes = (evt) => {
             '     '
         ],{
             P: item.iu.wire.glass,
-            S: 'createcybernetics:skinupgrades_synthskin',
+            S: item.cn.upgradepart.synthskin,
             T: item.cn.titanium_plating,
             W: item.iu.spool.superconducting.lvl2,
             L: 'industrialupgrade:photoniumglass/photoniyglass1', //Улучшенное стекло

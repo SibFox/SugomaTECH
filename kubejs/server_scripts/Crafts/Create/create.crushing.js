@@ -23,12 +23,18 @@ const registerCreateCrushingRecipes = (evt) => {
         'barium', 'bismuth', 'gadolinium', 'gallium', 'hafnium', 'yttrium', 'molybdenum', 
         'neodymium', 'niobium', 'palladium', 'polonium', 'strontium', 'thallium', 'zirconium'
     ]) {
-        regCrushingRecipe(evt, 
-            'industrialupgrade:raw_metals/raw_' + metal, 
-            [ 'industrialupgrade:crushed/' + metal, CreateItem.of('create:experience_nugget', 0.75)])
-        regCrushingRecipe(evt, 
-            'industrialupgrade:raw_block/raw_' + metal, 
-            [ '9x industrialupgrade:crushed/' + metal, CreateItem.of('9x create:experience_nugget', 0.75)])
+        // regCrushingRecipe(evt, 
+        //     'industrialupgrade:raw_metals/raw_' + metal, 
+        //     [ 'industrialupgrade:crushed/' + metal, CreateItem.of('create:experience_nugget', 0.75)])
+        // regCrushingRecipe(evt, 
+        //     'industrialupgrade:raw_block/raw_' + metal, 
+        //     [ '9x industrialupgrade:crushed/' + metal, CreateItem.of('9x create:experience_nugget', 0.75)])
+        // regCrushingRecipe(evt, 
+        //     '#c:raw_materials/' + metal, 
+        //     [ 'industrialupgrade:crushed/' + metal, CreateItem.of('create:experience_nugget', 0.75)])
+        // regCrushingRecipe(evt, 
+        //     '#c:storage_block/raw_' + metal, 
+        //     [ '9x industrialupgrade:crushed/' + metal, CreateItem.of('9x create:experience_nugget', 0.75)])
     }
 
     // for (let metal of [ 'iron', 'copper', 'gold'

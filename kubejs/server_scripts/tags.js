@@ -1,8 +1,12 @@
 "use strict";
 
 const registerOverallTags = (evt) => {
-    const add = (tag, item) => {
+    function add(tag, item) {
         evt.add(noHash(tag), item)
+    }
+
+    function remove(tag, item) {
+        evt.remove(noHash(tag), item)
     }
 
     for (const [key, val] of Object.entries(item.log.minecraft.stripped))
@@ -50,13 +54,26 @@ const registerOverallTags = (evt) => {
 
     // Удалить все теги с предмета
     for (let i of [
-        'create:iron_sheet', 'create:copper_sheet', 'create:golden_sheet',
-        'create:zinc_ingot', 'createaddition:zinc_sheet', 'createaddition:electrum_ingot',
+        'create:iron_sheet', 'create:copper_sheet', 
+        'create:golden_sheet','create:zinc_ingot', 
+        'createaddition:zinc_sheet', 'createaddition:electrum_ingot',
         'createaddition:electrum_nugget', 'createaddition:electrum_sheet',
         'createcybernetics:titanium_block', 'createcybernetics:titaniumingot', 
-        'createcybernetics:titaniumnugget', 'createcybernetics:titaniumsheet', 'mffs:steel_ingot',
-        'createaddition:electrum_block', 'create:zinc_nugget', 'create:sturdy_sheet',
-        'createbigcannons:bronze_block', 'createbigcannons:bronze_ingot'
+        'createcybernetics:titaniumnugget', 'createcybernetics:titaniumsheet', 
+        'mffs:steel_ingot', 'createaddition:electrum_block', 
+        'create:zinc_nugget', 'create:sturdy_sheet',
+        'createbigcannons:bronze_block', 'createbigcannons:bronze_ingot', 
+        'createcybernetics:crushedtitanium', 'createpropulsion:platinum_ingot', 
+        'createpropulsion:platinum_block', 'createpropulsion:platinum_sheet',
+        'createpropulsion:platinum_nugget', 'createpropulsion:raw_platinum_block',
+        'createpropulsion:raw_platinum', 'create:raw_zinc_block',
+        'create:zinc_ore', 'create:deepslate_zinc_ore',
+        'create:crushed_raw_zinc', 'create:crushed_raw_iron',
+        'create:crushed_raw_gold', 'create:crushed_raw_copper',
+        'createpropulsion:platinum_ore', 'createpropulsion:deepslate_platinum_ore',
+        'createcybernetics:deepslate_titaniumore_block', 'createcybernetics:titaniumore_block',
+        'create:zinc_block', 'powergrid:zinc_sheet', 'create:raw_zinc'
+
     ]) { evt.removeAllTagsFrom(i) }
 
     console.info('Tag adding passed')

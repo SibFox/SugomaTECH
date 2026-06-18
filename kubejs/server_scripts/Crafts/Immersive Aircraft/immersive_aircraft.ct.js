@@ -103,6 +103,22 @@ const registerIACTRecipes = (evt) => {
         }
     ).id(getRecipeID('iron_drill'))
     
+    evt.shaped(
+        Item.of(item.ia.redstone_mechanism, 1),
+        [
+            'CIA',
+            'FPB',
+            '   '
+        ],{
+            C: 'minecraft:comparator',
+            I: item.iu.compressed_redstone,
+            F: 'minecraft:redstone_torch',
+            P: 'minecraft:repeater',
+            A: tag.gear.alumel,
+            B: item.create.electron_tube
+        }
+    ).id(getRecipeID('redstone_mechanism'))
+    
     
 
 }

@@ -107,6 +107,7 @@ const item = {
         zinc: 'industrialupgrade:nugget/zinc',
         electrum: 'industrialupgrade:nugget/electrum',
         titanium: 'industrialupgrade:nugget/titanium',
+        platinum: 'industrialupgrade:nugget/platinum',
         bronze: 'createbigcannons:bronze_scrap',
         steel: 'createbigcannons:steel_scrap',
     },
@@ -133,6 +134,7 @@ const item = {
         sky_bronze: 'megacells:sky_bronze_ingot',
         sky_steel: 'megacells:sky_steel_ingot',
         entro: 'extendedae:entro_ingot',
+        platinum: 'industrialupgrade:itemingots/platinum_ingot',
     },
 
     plate: {
@@ -144,6 +146,7 @@ const item = {
         titanium: 'industrialupgrade:itemplates/titanium_plate',
         obsidian: 'industrialupgrade:itemplates/obsidian_plate',
         lapis: 'industrialupgrade:itemplates/lapis_plate',
+        platinum: 'industrialupgrade:itemplates/platinum_plate',
         titanium_steel: 'industrialupgrade:crafting_elements/crafting_501_element',
         niobium_titanium: 'industrialupgrade:alloyplate/niobium_titanium',
         red_brass: 'industrialupgrade:alloyplate/red_brass',
@@ -162,6 +165,7 @@ const item = {
         zinc: 'industrialupgrade:baseblockingot/zinc',
         electrum: 'industrialupgrade:baseblockingot/electrum',
         titanium: 'industrialupgrade:baseblockingot/titanium',
+        platinum: 'industrialupgrade:baseblockingot/platinum',
         bronze: 'industrialupgrade:blockresource/bronze_block',
     },
 
@@ -193,7 +197,7 @@ const item = {
         power_slot: 'industrialupgrade:crafting_elements/crafting_539_element',
         tube_scheme: 'industrialupgrade:crafting_elements/crafting_122_element',
         laser_component: 'industrialupgrade:crafting_elements/crafting_354_element',
-        molecular_core: 'industrialupgrade:itemiucrafting/itemmtcore',
+        molecular_core: 'industrialupgrade:itemiucrafring/itemmtcore',
         upgrade_casing: 'industrialupgrade:upgrade_casing',
 
         cylinder: 'industrialupgrade:crafting_elements/crafting_46_element',
@@ -436,6 +440,7 @@ const item = {
             },
             assembler: 'industrialupgrade:crafting_elements/crafting_243_element',
             cybernetics: 'kubejs:module_cybernetics',
+            lava: 'industrialupgrade:crafting_elements/crafting_228_element',
         },
 
         spool: {
@@ -599,6 +604,7 @@ const item = {
         certus_quartz_dust: 'ae2:certus_quartz_dust',
         fluix_crystal: 'ae2:fluix_crystal',
         fluix_dust: 'ae2:fluix_dust',
+        fluix_pearl: 'ae2:fluix_pearl',
         entro_crystal: 'extendedae:entro_crystal',
         entro_shard: 'extendedae:entro_shard',
         entro_dust: 'extendedae:entro_dust',
@@ -611,6 +617,7 @@ const item = {
         shattered_singularity: 'advanced_ae:shattered_singularity',
         wireless_receiver: 'ae2:wireless_receiver',
         vibrant_glass: 'ae2:quartz_glass',
+        quartz_fiber: 'ae2:quartz_fiber',
 
         silicon: 'ae2:silicon',
         printed_silicon: 'ae2:printed_silicon',
@@ -694,6 +701,7 @@ const item = {
 
     },
 
+    // ~~~~~~~~~~~~~~~~~~~~ Create ~~~~~~~~~~~~~~~~~~~~
     // ~~~~~~~~~~~~~~~~~~~~ Create ~~~~~~~~~~~~~~~~~~~~
     // ~~~~~~~~~~~~~~~~~~~~ Create ~~~~~~~~~~~~~~~~~~~~
 
@@ -891,6 +899,7 @@ const tag = {
         titanium: '#c:nuggets/titanium',
         bronze: '#c:nuggets/bronze',
         steel: '#c:nuggets/steel',
+        platinum: '#c:nuggets/platinum',
     },
 
     ingot: {
@@ -907,6 +916,7 @@ const tag = {
         wolframite: '#c:ingots/wolframite',
         titanium_steel: '#c:ingots/titaniumsteel',
         carbon_tungsteen: '#c:ingots/carbontungsteen',
+        platinum: '#c:ingots/platinum',  
     },
 
     plate: {
@@ -932,6 +942,7 @@ const tag = {
         titanium_steel: '#c:plates/titaniumsteel',
         niobium_titanium: '#c:plates/niobiumtitanium',
         red_brass: '#c:plates/redbrass',
+        platinum: '#c:plates/platinum',
     },
     
     doubleplate: {
@@ -953,6 +964,9 @@ const tag = {
         electrum: '#c:casings/electrum',
         lead: '#c:casings/lead',
         titan: '#c:casings/titanium',
+        palladium: '#c:casings/palladium',
+        polonium: '#c:casings/polonium',
+        niobium: '#c:casings/niobium',
     },
     
     gear: {
@@ -979,6 +993,7 @@ const tag = {
         electrum: '#c:storage_blocks/electrum',
         titanium: '#c:storage_blocks/titanium',
         steel: '#c:storage_blocks/steel',
+        platinum: '#c:storage_blocks/platinum',
     },
 
     tool: {

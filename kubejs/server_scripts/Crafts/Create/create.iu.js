@@ -35,7 +35,7 @@ const registerCreateIURecipes = (evt) => {
             asItem(tag.plate.iron),
             asItem(item.iu.capacitor.lvl1),
             asItem(item.iu.diode.lvl1, 2),
-            asItem(item.iu.wire.bare.tin, 4),
+            asItem(item.iu.wire.bare.tin, 2),
             asItem(item.create.polished_rose_quarts)
         ],[
             asItem(item.create.electron_tube)

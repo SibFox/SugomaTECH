@@ -1,0 +1,15 @@
+{
+  "swapper": {
+    "inputs": [
+      "create:deepslate_zinc_ore",
+      "createpropulsion:deepslate_platinum_ore",
+      "createcybernetics:deepslate_titaniumore_block"
+    ],
+    "output": "minecraft:deepslate",
+    "keep_states": false,
+    "retrogen": true,
+    "player_blocks": true,
+    "keep_nbt": false,
+    "probability": 1
+  }
+}

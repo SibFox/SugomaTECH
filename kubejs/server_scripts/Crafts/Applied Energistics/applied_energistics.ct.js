@@ -12,7 +12,7 @@ const registerAECTRecipes = (evt) => {
 
     shapedRecipe(evt, getRecipeID('vibration_chamber'),
         [
-            [ item.iu.machine_corpus.tech, tag.ingot.iron, item.iu.machine_corpus.tech ],
+            [ item.iu.corpus_cover.lvl1, tag.ingot.iron, item.iu.corpus_cover.lvl1 ],
             [ tag.ingot.steel, item.iu.base_generator, tag.ingot.steel ],
             [ tag.ingot.steel, item.ae.energy_acceptor, tag.ingot.steel ]
         ],
@@ -52,7 +52,24 @@ const registerAECTRecipes = (evt) => {
         ],
     'ae2:inscriber')
 
+    evt.shaped(
+        Item.of('ae2:wireless_receiver', 1),
+        [
+            ' F ',
+            'CTC',
+            'COC'
+        ],{
+            F: item.ae.fluix_pearl,
+            O: item.ae.quartz_fiber,
+            T: item.create.transmitter,
+            C: tag.casings.niobium
+        }
+    ).id(getRecipeID('wireless_receiver'))
     
+    
+
+
+
     
     evt.shaped(
         Item.of(item.ae.extended_machine_frame, 1),
@@ -101,7 +118,7 @@ const registerAECTRecipes = (evt) => {
     )
 
     aeAssemblerRecipe(evt, getRecipeID('entro_ingot'),
-        asItem(fluid.redstone, 144),
+        asItem(fluid.redstone, 25),
         [
             asItem(item.ae.entro_dust, 4),
             asItem(item.ingot.vanadoalumite, 4),
@@ -131,7 +148,7 @@ const registerAECTRecipes = (evt) => {
     )
 
     aeReactionRecipe(evt, getRecipeID('entro_ingot'),
-        500000, asItem(fluid.redstone, 1440),
+        500000, asItem(fluid.redstone, 250),
         [
             asItem(item.ae.entro_dust, 24),
             asItem(item.ingot.vanadoalumite, 24),
@@ -161,7 +178,7 @@ const registerAECTRecipes = (evt) => {
     )
     
     aeReactionRecipe(evt, getRecipeID('shattered_singularity'),
-        200000, asItem(fluid.redstone, 720),
+        200000, asItem(fluid.redstone, 250),
         [
             asItem(item.ae.quantum_singularity, 2),
             asItem(item.ae.ender_dust, 2),

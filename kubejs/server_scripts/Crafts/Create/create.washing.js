@@ -14,7 +14,7 @@ const registerCreateWashingRecipes = (evt) => {
         evt.recipes.create.splashing(outputs, input)
     }
 
-    for (let metal of [ 'iron', 'copper', 'gold', 'mikhail', 'aluminium', 'vanadium', 
+    for (let metal of [ 'mikhail', 'aluminium', 'vanadium', 
         'cobalt', 'tungsten', 'magnesium', 'nickel', 'platinum', 'titanium', 'chromium', 
         'spinel', 'silver', 'zinc', 'manganese', 'iridium', 'germanium', 'lead', 'tin', 
         'osmium', 'tantalum', 'cadmium', 'arsenic', 'barium', 'bismuth', 'gadolinium', 
@@ -23,7 +23,7 @@ const registerCreateWashingRecipes = (evt) => {
     ]) {
         regWashingRecipe(evt, 
             'industrialupgrade:crushed/' + metal, 
-            [ 'industrialupgrade:purifiedcrushed/' + metal, CreateItem.of(item.iu.dust.stone, 0.75)])
+            [ 'industrialupgrade:purifiedcrushed/' + metal, CreateItem.of(item.iu.dust.stone, 0.66)])
     }
 
 }
