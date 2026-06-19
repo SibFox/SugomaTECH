@@ -14,6 +14,7 @@ const registerCreateRecipes = (evt) => {
     registerCreateCrushingRecipes(evt)
     registerCreateWashingRecipes(evt)
     registerCreateMixingRecipes(evt)
+    registerCreateSequencedRecipes(evt)
     // registerCreateMeltingRecipes(evt)
 
     console.info('Create recipe adding passed')

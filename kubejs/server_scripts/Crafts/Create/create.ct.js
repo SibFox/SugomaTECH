@@ -64,13 +64,13 @@ const registerCreateCTRecipes = (evt) => {
         ]
     ).id(getRecipeID('connector/small_light'))
 
-    shapedRecipe(evt, getRecipeID('straw'),
-        [
-            [ item.bamboo, item.bamboo ],
-            [ item.bamboo, null ],
-            [ item.bamboo, null ]
-        ],
-    'createaddition:straw')
+    // shapedRecipe(evt, getRecipeID('straw'),
+    //     [
+    //         [ item.bamboo, item.bamboo ],
+    //         [ item.bamboo, null ],
+    //         [ item.bamboo, null ]
+    //     ],
+    // 'createaddition:straw')
 
     shapedRecipe(evt, getRecipeID('spool'),
         [

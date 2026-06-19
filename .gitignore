@@ -294,3 +294,5 @@ config/villagersreborn-server.toml
 config/kaleidoscope_compat.jsonc
 config/lithostitched.json
 config/emberstextapi-server.toml
+config/sophisticatedcore-client.toml
+config/sophisticatedbackpacks-common.toml

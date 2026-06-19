@@ -1,10 +1,6 @@
 "use strict";
 
 const registerItems = (evt) => {
-
-    // event.create('invar_boiler')
-    // event.create('heat_resistant_clay')
-    // event.create('blast_brick')
     evt.create('coin')
     evt.create('shop')
     evt.create('synth_nerve_cables')
@@ -14,6 +10,30 @@ const registerItems = (evt) => {
     evt.create('pack_frame')
     evt.create('hardened_leather')
     evt.create('module_cybernetics')
+
+
+    for (let item of [
+        'copper', 'bronze', 'gold', 'iron', 'lead', 'steel', 
+        'tin', 'duralumin', 'electrum', 
+        'ferromanganese', 'gadolinium', 'gallium_arsenic',
+        'gallium', 'germanium',
+        'hafnium', 'invar',
+        'iridium', 'magnesium', 'manganese', 'meteoric_iron',
+        'mikhail', 'molybdenum', 'molybdenum_steel', 'muntsa',
+        'mithril', 'neodymium', 'nichrome', 'nickel',
+        'niobium', 'niobium_titanium',
+        'nitenol', 'orichalcum', 'osmiridium', 'osmium',
+        'palladium', 'platinum', 'polonium',
+        'red_brass', 'silver', 'spinel', 'strontium',
+        'tantalum', 'thallium', 'titanium', 'vanadoalumite',
+        'vanadium', 'tungsten', 'yttrium', 'zeliber',
+        'zinc', 'zirconium', 'aluminium', 'cobalt',
+        'chromium', 'cadmium', 'arsenic', 'barium',
+        'bismuth'
+    ])
+    {
+        evt.create('incomplete_' + item).texture('kubejs:item/plates/' + item + '_plate')
+    }
 
     console.info('Item registry passed')
 }
