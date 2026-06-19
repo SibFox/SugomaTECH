@@ -14,7 +14,7 @@
 
 [snowstorm]
 	#Enable snowstorm mode which increases snow pilling intensity.
-	enabled = false
+	enabled = true
 
 ["Grass and Flower Growth"]
 	#Enable enhanced grass and flower growth during warm seasons.
@@ -24,7 +24,7 @@
 	#Maximum total snow layers allowed per column (8 layers = 1 block). Default 24 = 3 blocks.
 	# Default: 24
 	# Range: 0 ~ 512
-	maxSnowAccumulationLayers = 24
+	maxSnowAccumulationLayers = 8
 
 [seasonSync]
 	#Lock seasons to current Canadian calendar months (Eastern time).

@@ -7,7 +7,7 @@ minimumCooldownForNotification = 1200
 #How far should the Antifield Block prevent Item/XP Magnet Genes from working (in blocks)
 # Default: 25.0
 # Range: 1.0 ~ 1.7976931348623157E308
-antifieldBlockRadius = 25
+antifieldBlockRadius = 50
 
 [machines]
 	#How much energy should the Coal Generator be able to store

@@ -4,11 +4,11 @@
 	#Do you want the boss and clone versions to spawn naturally, or only from summoning structures?
 	"Boss natural spawning" = true
 	#Bosses and variant spawns are rare by default. 1=twice as common. 2=default rarity. 3=twice as rare. 4=three times rarer. Avoid decimal and negative numbers.
-	"Boss rarity" = 1.0
+	"Boss rarity" = 2.0
 	#This controls whether the stalker bosses (spider moth, scorpioid bloodluster, draconic voidlasher, tormentor) are included in general. Set to false if you only want the other mobs, and the bosses will become unable to be spawned in any way.
 	"Boss inclusion" = true
 	#Controls the vanilla biome-specific spawnrates of ALL non-boss mobs in this mod, including minibosses and all regular arthropods. Default multiplier value is 5. You could more than double the ArPhEx spawnrates by setting it to 2 or 1. Lower values = more spawns (minimum value is 1). No maximum rarity. Avoid decimal and negative numbers.
-	"Non-boss global spawnrates (biome-specific)" = 10.0
+	"Non-boss global spawnrates (biome-specific)" = 30.0
 	#ArPhEx has an additional spawning system that gives a 1 in (10) chance to spawn a random ArPhEx mob each time the natural spawn triggers. This system allows ArPhEx mobs to spawn in any non-vanilla overworld biomes, while still accounting for mob rarity. Default number is 5, meaning it has a 1 in 5 chance to spawn each time. Setting it to 0 disables the additional spawning system entirely. Avoid decimal and negative numbers.
 	"Random-system spawnrates (not biome-specific)" = 5.0
 	#This value controls whether ArPhEx entities are included in general. Setting to false makes it impossible to spawn ArPhEx mobs, while keeping the items as usual. 
@@ -72,7 +72,7 @@
 	#Enable Tormentor's ability to add blurring and desaturation shaders when Tormenting
 	"Tormentor Shaders" = true
 	#The Tormentor can occasionally respond to chat messages that mention its name, using a random threatening line. There are 32 built-in messages. You can add your own below, one per line. Each custom entry you add reduces the chance of using a built-in line. If you list 32 or more custom messages, only your custom responses will ever be used.
-	"Bonus Tormentor Chat Messages" = ["I am here, mortal", "Your torment is inevitable"]
+	"Bonus Tormentor Chat Messages" = ["сЛАБаЯ, нЕЖнаЯ пЛОтЬ...", "бОйСЯ...", "тЕБЕ не сПРяТАтьСя...", "я ОЩущАЮ СтРАХ...", "мяГКиЕ, тёПЛыЕ вНУтреннОсТИ...", "я МОгУ поМОчЬ...", "Я мОГу оБРАтИТЬ тВОЮ пЛоТЬ КрЕПЧЕ...", "ГоЛОД...", "тВОИ соРОдИЧИ оБРЕКлИ мЕНЯ на ВЕЧнЫй гОЛОд...", "я ХоЧУ еСТЬ СЫРоЕ мЯСО...", "мОЙ ВЫВоДОк чУВстВУеТ ваШ ТРеПЕТ...", "СЛАбОСТЬ", "...пРИГоДнЫЕ дЛЯ пОТоМСтВА теПЛоКРОВныЕ...", "...я нАБлЮДАЮ...", "...ЕДА...", "...ПОмОгИ МНе...", "...нЕПрочНЫМ оБОЛОчКАМ нЕ сУЖдЕНО поСтИЧЬ...", "...мОИ дЕТи пОЗнАлИ ХРуСТ кОСтЕЙ...", "...я ЗНаЮ...", "...тВОИ сОРоДИчИ сАМИ соЗДАЛи мЕНЯ...", "...БоЙСя...", "...я оЖиДАЮ...", "..тВОй рАзУМ моЖЕТ сТАть соВЕршЕНЕН...", "...нЕЖНая ПЛоТЬ...", "ГоЛОД...", "бОйСЯ...", "...я ЗНаЮ...", "я ХоЧУ еСТЬ СЫРоЕ мЯСО...", "...СЛАбОСТЬ...", "мяГКиЕ, тёПЛыЕ вНУтреннОсТИ...", "ГоЛОД...", "...я ЗНаЮ...", "...нЕЖНая ПЛоТЬ..."]
 	#When the tormentor responds to a chat message, it has a 50% chance to cooldown. This config option lets you choose how many seconds it would cooldown for
 	"Tormentor Response Cooldown" = 24000.0
 	#Set to false to disable mobs like locusts from breaking crops, and minibosses/bosses from breaking leaves. Does not affect tamed ant commands, or the Tormentor's attacks

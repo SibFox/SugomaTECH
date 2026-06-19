@@ -33,7 +33,7 @@
       "alienegg_max_group": 1
     },
     "facehuggerConfigs": {
-      "facehuggerGivesBlindness": false,
+      "facehuggerGivesBlindness": true,
       "enableFacehuggerAttachmentTimer": true,
       "enableFacehuggerTimerTicks": false,
       "impregnationTickTimer": 8000.0,

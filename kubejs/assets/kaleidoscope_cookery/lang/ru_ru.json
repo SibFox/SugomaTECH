@@ -25,7 +25,6 @@
   "block.kaleidoscope_cookery.strung_mushrooms": "Связка грибов",
   "block.kaleidoscope_cookery.straw_block": "Тюк соломы",
 
-
   "block.kaleidoscope_cookery.cook_stool_oak": "Дубовый табурет",
   "block.kaleidoscope_cookery.cook_stool_spruce": "Еловый табурет",
   "block.kaleidoscope_cookery.cook_stool_acacia": "Акациевый табурет",
@@ -215,7 +214,6 @@
 
   "item.kaleidoscope_cookery.transmutation_lunch_bag": "Мешочек для еды",
 
-
   "entity.minecraft.villager.kaleidoscope_cookery.chef": "Шеф-повар",
   "entity.minecraft.villager.chef": "Шеф",
   "entity.kaleidoscope_cookery.scarecrow": "Пугало",
@@ -333,6 +331,7 @@
   "tooltip.kaleidoscope_cookery.cold_roasted_meat.maxim": "Тонко нарезанное мясное ассорти холодного копчения",
   "tooltip.kaleidoscope_cookery.oil_splashed_fish.maxim": "Когда в сковороду наливают разогретое масло, она начинает источать аромат. Рыба получается нежной и с ошеломляющей остротой.",
   "tooltip.kaleidoscope_cookery.sickle": "ПКМ, чтобы собрать растение и убрать сорняки",
+
   "tip.kaleidoscope_cookery.kitchen.remove_ingredient.need_container": "Нужно использовать %s , чтобы достать ингредиент!",
   "tip.kaleidoscope_cookery.pot.need_oil": "Нужно масло",
   "tip.kaleidoscope_cookery.pot.need_lit_stove": "Недостаточно жара",
