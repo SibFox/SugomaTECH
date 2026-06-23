@@ -66,6 +66,20 @@ const registerAECTRecipes = (evt) => {
         }
     ).id(getRecipeID('wireless_receiver'))
     
+    evt.shaped(
+        Item.of('ae2:crafting_unit', 1),
+        [
+            'COC',
+            'WPW',
+            'COC'
+        ],{
+            C: item.iu.corpus_cover.lvl1,
+            O: item.ae.processor.calculation,
+            P: item.ae.processor.logic,
+            W: item.ae.cable.fluix_glass
+        }
+    ).id(getRecipeID('crafting_unit'))
+    
     
 
 

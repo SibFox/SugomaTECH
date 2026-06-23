@@ -93,10 +93,10 @@ const registerCreateSequencedRecipes = (evt) => {
         [ 'arsenic',            8,  false, 'itemingots/' ],
         [ 'barium',             9,  false, 'itemingots/' ],
         [ 'bismuth',            10, false, 'itemingots/' ],
-        [ '',          , true, 'itemingots/' ],
-        [ '',          , true, 'itemingots/' ],
-        [ '',          , true, 'itemingots/' ],
-        [ '',          , true, 'itemingots/' ],
+        // [ '',          , true, 'itemingots/' ],
+        // [ '',          , true, 'itemingots/' ],
+        // [ '',          , true, 'itemingots/' ],
+        // [ '',          , true, 'itemingots/' ],
         // [ '',          , true, 'itemingots/' ],
     ]){
         let fin_name = 'industrialupgrade:'

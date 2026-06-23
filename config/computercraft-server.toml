@@ -167,19 +167,19 @@ disabled_generic_methods = []
 	#The range of Wireless Modems at low altitude in clear weather, in meters.
 	# Default: 64
 	# Range: 0 ~ 100000
-	modem_range = 64
+	modem_range = 350
 	#The range of Wireless Modems at maximum altitude in clear weather, in meters.
 	# Default: 384
 	# Range: 0 ~ 100000
-	modem_high_altitude_range = 384
+	modem_high_altitude_range = 1750
 	#The range of Wireless Modems at low altitude in stormy weather, in meters.
 	# Default: 64
 	# Range: 0 ~ 100000
-	modem_range_during_storm = 64
+	modem_range_during_storm = 200
 	#The range of Wireless Modems at maximum altitude in stormy weather, in meters.
 	# Default: 384
 	# Range: 0 ~ 100000
-	modem_high_altitude_range_during_storm = 384
+	modem_high_altitude_range_during_storm = 1100
 	#Maximum amount of notes a speaker can play at once.
 	# Default: 8
 	# Range: > 1

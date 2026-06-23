@@ -296,3 +296,9 @@ config/lithostitched.json
 config/emberstextapi-server.toml
 config/sophisticatedcore-client.toml
 config/sophisticatedbackpacks-common.toml
+config/aeroworks-common.toml
+config/aeronautics_utility_objects-server.toml
+config/aeroworks-client.toml
+config/createdeliveryrequired-client.toml
+config/createthrusters-client.toml
+config/tracks-server.toml

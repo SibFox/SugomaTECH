@@ -301,6 +301,13 @@ const item = {
             lvl4: 'industrialupgrade:crafting_elements/crafting_402_element',
         },
 
+        resistor: {
+            copper: 'industrialupgrade:crafting_elements/crafting_581_element',
+            lazuli: 'industrialupgrade:crafting_elements/crafting_579_element',
+            tungsten: 'industrialupgrade:crafting_elements/crafting_563_element',
+            molybdenum: 'industrialupgrade:crafting_elements/crafting_585_element',
+        },
+
         controller: {
             lvl1: 'industrialupgrade:crafting_elements/crafting_42_element',
             lvl2: 'industrialupgrade:crafting_elements/crafting_16_element',
@@ -617,7 +624,8 @@ const item = {
         shattered_singularity: 'advanced_ae:shattered_singularity',
         wireless_receiver: 'ae2:wireless_receiver',
         vibrant_glass: 'ae2:quartz_glass',
-        quartz_fiber: 'ae2:quartz_fiber',
+        
+        wireless_access_point: 'ae2:wireless_access_point',
 
         silicon: 'ae2:silicon',
         printed_silicon: 'ae2:printed_silicon',
@@ -646,6 +654,11 @@ const item = {
         core: {
             formation: 'ae2:formation_core',
             annihilation: 'ae2:annihilation_core',
+        },
+
+        cable: {
+            fluix_glass: 'ae2:fluix_glass_cable',
+            quartz_fiber: 'ae2:quartz_fiber',
         },
     },
 
@@ -888,6 +901,8 @@ const tag = {
     agritech_basic_planters: '#agritechevolved:basic_planter_items',
     cybernetics_data_shards: '#createcybernetics:data_shards',
 
+    ae_glass_cable: '#ae2:glass_cable',
+
     // ~~~~~~~~~~ Tables ~~~~~~~~~
 
     nugget: {
@@ -961,6 +976,8 @@ const tag = {
     },
 
     casings: {
+        iron: '#c:casings/iron',
+        tungsten: '#c:casings/tungsten',
         electrum: '#c:casings/electrum',
         lead: '#c:casings/lead',
         titan: '#c:casings/titanium',
@@ -998,6 +1015,11 @@ const tag = {
 
     tool: {
         knife: '#c:tools/knife',
+    },
+
+    dusts: {
+        diamond: '#c:dusts/diamond',
+        emerald: '#c:dusts/emerald', // Заменить чисто IU пыль на тэг
     },
 }
 

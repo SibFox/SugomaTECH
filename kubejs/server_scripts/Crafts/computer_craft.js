@@ -178,21 +178,33 @@ const registerCCRecipes = (evt) => {
     evt.remove({ output: item.cc.modem.wireless.normal })
     evt.remove({ output: item.cc.modem.wireless.advanced })
 
-    shapedRecipe(evt, getRecipeID('wireless_modem_normal'),
+    evt.shaped(
+        Item.of(item.cc.modem.wireless.normal, 1),
         [
-            [ item.iu.wire.isolated.copper, null, item.iu.wire.isolated.copper ],
-            [ tag.plate.iron, item.ae.wireless_booster, tag.plate.iron ],
-            [ null, item.iu.wire.isolated.copper, null ]
-        ],
-    item.cc.modem.wireless.normal)
+            ' W ',
+            'PBP',
+            'PSP'
+        ],{
+            P: tag.casings.tungsten,
+            B: item.ae.wireless_booster,
+            W: item.ae.wireless_access_point,
+            S: item.iu.module.wireless
+        }
+    ).id(getRecipeID('wireless_modem_normal'))
 
-    shapedRecipe(evt, getRecipeID('wireless_modem_advanced'),
+    evt.shaped(
+        Item.of(item.cc.modem.wireless.advanced, 1),
         [
-            [ item.iu.wire.glass, null, item.iu.wire.glass ],
-            [ tag.plate.electrum, item.ae.wireless_booster, tag.plate.electrum ],
-            [ null, item.iu.wire.glass, null ]
-        ],
-    item.cc.modem.wireless.advanced)
+            ' W ',
+            'PBP',
+            'PSP'
+        ],{
+            P: tag.casings.electrum,
+            B: 'extendedae:wireless_connect',
+            W: item.ae.wireless_access_point,
+            S: item.iu.module.wireless
+        }
+    ).id(getRecipeID('wireless_modem_advanced'))
 
     evt.remove({ output: item.cc.redstone_relay })
 

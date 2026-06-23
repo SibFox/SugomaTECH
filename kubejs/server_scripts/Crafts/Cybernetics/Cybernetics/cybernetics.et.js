@@ -429,16 +429,19 @@ const registerCyberneticsETRecipes = (evt) => {
 
     cnRecipe(evt, asItem('createcybernetics:organsupgrades_diamondwaferstack'),
         [
-            'DD DD',
-            'DK KD',
-            ' W W ',
-            ' RWL ',
-            ' WBW ',
+            'DP PD',
+            'PK KP',
+            ' F F ',
+            ' RWR ',
+            ' FBF ',
         ],{
-            D: item.diamond,
+            D: tag.dusts.diamond,
             K: 'minecraft:end_crystal',
-            W: item.iu.spool.lvl1,
-            R: item.dye.red, L: item.dye.blue, B: item.dye.black,
+            F: item.cn.fiber_optic,
+            W: item.iu.spool.superconducting.lvl2,
+            R: item.iu.capacitor.lvl3, 
+            B: item.iu.transistor.lvl2,
+            P: item.custom.conducting_organic_polymer
         }
     )
 
@@ -916,16 +919,17 @@ const registerCyberneticsETRecipes = (evt) => {
         [
             '     ',
             'SNSNS',
-            'TTTLN',
+            'TTTQN',
             'TCETS',
-            'LTTTN'
+            'PTTTN'
         ],{
             T: item.cn.titanium_plating,
             S: item.cn.synthnerves,
             C: item.cn.ssd,
             E: item.create.electron_tube,
-            N: item.nugget.titanium,
-            L: item.dye.light_blue
+            N: item.nugget.electrum,
+            P: item.iu.transistor.lvl2,
+            Q: item.iu.capacitor.lvl3
         }
     )
 
