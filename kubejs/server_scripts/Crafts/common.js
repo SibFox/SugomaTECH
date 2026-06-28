@@ -35,7 +35,7 @@ const registerCommonRecipes = (evt) => {
             [ item.cn.fiber_optic, item.nugget.electrum ],
             [ item.nugget.electrum, item.nugget.electrum ]
         ],
-    item.custom.synth_nerve_cables, 1)
+    item.custom.synth_nerve_cables, 3)
 
     evt.shapeless(Item.of(item.arphex.raw_hemolymph, 1),
         [

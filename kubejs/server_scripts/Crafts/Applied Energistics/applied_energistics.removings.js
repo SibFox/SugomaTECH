@@ -21,5 +21,6 @@ const registerAERemovings = (evt) => {
     evt.remove({ output: item.ae.vibrant_glass })
     evt.remove({ output: 'ae2:wireless_receiver' })
     evt.remove({ output: 'ae2:crafting_unit' })
+    evt.remove({ output: 'ae2:molecular_assembler' })
 
 }

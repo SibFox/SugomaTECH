@@ -72,14 +72,13 @@ function asItem(item, amount) {
         }
     }
 
-    let nbtStartPos = item.indexOf('[')    
+    let nbtStartPos = item.indexOf('[')
+
     if (nbtStartPos > 0) {
-        let nbtString = item.slice(nbtStartPos).replace('[', '').replace(']', '').split('=')
-        let componentTag = nbtString[0]
-        let componentValue = Number(nbtString[1])
-        dict.components[componentTag] = componentValue
-        dict.haveComponents = true
-        dict.item = dict.item.slice(0, nbtStartPos)
+        let bracketContent = item.slice(nbtStartPos + 1, item.lastIndexOf(']'))
+        dict.components = parseComponents(bracketContent)
+        dict.haveComponents = Object.keys(dict.components).length > 0
+        dict.item = noHash(item.slice(0, nbtStartPos))
     }
 
     return dict
@@ -130,6 +129,15 @@ const cnRecipe = (evt, output, pattern, indexes) => {
             val.item = entry.item
         }
         keys[key] = val
+        console.log('Output:', JSON.stringify({
+            item: entry.item,
+            count: entry.count,
+            isTag: entry.isTag,
+            isFluid: entry.isFluid,
+            haveComponents: entry.haveComponents,
+            components: entry.components,
+        }, null, 2))
+        console.log('-'.repeat(60))
     }
     evt.custom({
         "type": "createcybernetics:engineering_table",

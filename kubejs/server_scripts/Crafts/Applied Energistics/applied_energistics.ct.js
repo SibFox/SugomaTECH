@@ -18,6 +18,8 @@ const registerAECTRecipes = (evt) => {
         ],
     'ae2:vibration_chamber')
 
+
+
     shapedRecipe(evt, getRecipeID('certus_quartz_crystal'),
         [
             [ item.iu.dust.quartz, item.iu.charged_quartz, item.iu.dust.quartz ],
@@ -79,9 +81,6 @@ const registerAECTRecipes = (evt) => {
             W: item.ae.cable.fluix_glass
         }
     ).id(getRecipeID('crafting_unit'))
-    
-    
-
 
 
     
@@ -97,7 +96,7 @@ const registerAECTRecipes = (evt) => {
             S: item.ingot.sky_bronze,
             C: item.iu.machine_corpus.advanced_tech
         }
-    ).id(getRecipeID('extended_machine_frame'))
+    ).id(getRecipeID('extended_machine_frame_1'))
 
     evt.shaped(
         Item.of(item.ae.extended_machine_frame, 1),
@@ -111,19 +110,42 @@ const registerAECTRecipes = (evt) => {
             S: item.ingot.sky_bronze,
             C: item.iu.machine_corpus.advanced_tech
         }
-    ).id(getRecipeID('extended_machine_frame'))
+    ).id(getRecipeID('extended_machine_frame_2'))
     
-    
-    
-    shapedRecipe(evt, getRecipeID('crystal_assembler'),
+    evt.shaped(
+        Item.of('extendedae:crystal_assembler', 1),
         [
-            [ null, item.iu.module.assembler, null ],
-            [ item.ae.processor.logic, item.ae.extended_machine_frame, item.ae.processor.concurrent ],
-            [ item.iu.module.slot.x8, item.iu.electromotor.lvl2, item.iu.module.tank.storage ]
-        ],
-    'extendedae:crystal_assembler')
-
-
+            ' A ',
+            'LMC',
+            'SEO'
+        ],{
+            A: item.iu.module.assembler,
+            L: item.ae.processor.logic,
+            C: item.ae.processor.concurrent,
+            M: item.ae.extended_machine_frame,
+            S: item.iu.module.slot.x8,
+            O: item.iu.module.tank.storage,
+            E: item.iu.electromotor.lvl3
+        }
+    ).id(getRecipeID('crytal_assembler'))
+    
+    evt.shaped(
+        Item.of('ae2:molecular_assembler', 1),
+        [
+            'GMG',
+            'DCF',
+            'GSG'
+        ],{
+            G: item.iu.tempered_glass,
+            D: item.ae.core.annihilation,
+            F: item.ae.core.formation,
+            C: item.iu.molecular_core,
+            M: item.iu.module.crafting.lvl2,
+            S: item.iu.module.slot.x2
+        }
+    ).id(getRecipeID('molecular_assembler'))
+    
+    
 
     aeReactionRecipe(evt, getRecipeID('quantum_alloy'),
         200000, asItem(fluid.quantum_infusion, 1000),

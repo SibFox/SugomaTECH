@@ -88,4 +88,16 @@ const registerCreateCTRecipes = (evt) => {
         ],
     'create:mechanical_drill')
     
+    evt.shaped(
+        Item.of(item.create.lighter, 1),
+        [
+            ' P ',
+            'PTP',
+            'PAP'
+        ],{
+            P: tag.plate.brass,
+            A: item.create.andesite_alloy,
+            T: item.cn.storage
+        }
+    ).id(getRecipeID('lighter'))
 }

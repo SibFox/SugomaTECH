@@ -20,6 +20,7 @@ const registerCreateRemovings = (evt) => {
     evt.remove({ output: item.ingot.electrum, type: 'create:mixing' })
     evt.remove({ output: item.create.electron_tube, not: { type: 'create:sequenced_assembly'} })
     evt.remove({ output: item.create.transmitter, not: { type: 'create:sequenced_assembly'} })
+    evt.remove({ output: item.create.lighter, not: { type: 'create:sequenced_assembly'} })
     evt.remove({ output: 'createaddition:electrum_ingot', not: { type: 'create:sequenced_assembly'} })
     evt.remove({ output: 'createaddition:rolling_mill', not: { type: 'create:sequenced_assembly'} })
     evt.remove({ output: 'createaddition:electrum_amulet', not: { type: 'create:sequenced_assembly'} })
@@ -29,6 +30,9 @@ const registerCreateRemovings = (evt) => {
     evt.remove({ output: 'create:propeller', not: { type: 'create:sequenced_assembly'} })
     evt.remove({ output: 'createaddition:electrum_block', not: { type: 'create:sequenced_assembly'} })
     evt.remove({ output: 'create:mechanical_drill', not: { type: 'create:sequenced_assembly'} })
+    evt.remove({ output: 'create:brass_ingot', not: { type: 'create:sequenced_assembly'} })
+    evt.remove({ output: 'create:brass_sheet', not: { type: 'create:sequenced_assembly'} })
+    evt.remove({ output: 'create:brass_nugget', not: { type: 'create:sequenced_assembly'} })
 
     // evt.remove({ id: 'createbigcannons:melting/melt_bronze_ingot' })
     // evt.remove({ id: 'createbigcannons:melting/melt_bronze_nugget' })

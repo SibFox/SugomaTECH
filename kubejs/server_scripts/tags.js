@@ -51,6 +51,10 @@ const registerOverallTags = (evt) => {
     add('minecraft:mineable/axe', 'immersive_furniture:furniture')
     add('minecraft:mineable/axe', 'immersive_furniture:artisans_workstation')
 
+    add('c:ingots/brass', item.ingot.brass)
+    add('c:nuggets/brass', item.nugget.brass)
+    add('c:plates/brass', item.plate.brass)
+    add('c:storage_blocks/brass', item.ore_block.brass)
 
     // Удалить все теги с предмета
     for (let i of [
@@ -72,7 +76,8 @@ const registerOverallTags = (evt) => {
         'create:crushed_raw_gold', 'create:crushed_raw_copper',
         'createpropulsion:platinum_ore', 'createpropulsion:deepslate_platinum_ore',
         'createcybernetics:deepslate_titaniumore_block', 'createcybernetics:titaniumore_block',
-        'create:zinc_block', 'powergrid:zinc_sheet', 'create:raw_zinc'
+        'create:zinc_block', 'powergrid:zinc_sheet', 'create:raw_zinc', 'create:brass_ingot',
+        'create:brass_nugget', 'create:brass_sheet', 'create:brass_block'
 
     ]) { evt.removeAllTagsFrom(i) }
 

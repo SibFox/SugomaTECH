@@ -14,6 +14,18 @@ StartupEvents.registry('block', evt => {
 
 })
 
+StartupEvents.registry('armor_material', evt => {
+  evt.create('bio')
+  .defense({
+    helmet: 2,
+    chestplate: 4,
+    leggings: 3,
+    boots: 2
+  })
+  .enchantmentValue(3)
+  .equipSound('minecraft:item.armor.equip_iron')
+})
+
 StartupEvents.registry('fluid', evt => {
   evt.create('liquid_redstone')
 })

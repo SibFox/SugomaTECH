@@ -37,6 +37,8 @@ const registerRecipeRemovings = (evt) => {
     evt.remove({ output: 'createaddition:electrum_nugget', type: 'createaddition:charging' })
     evt.remove({ output: 'createaddition:electrum_ingot', type: 'createaddition:charging' })
     evt.remove({ output: 'createaddition:electrum_sheet', type: 'createaddition:charging' })
+    
+    evt.remove({ id: 'createcybernetics:wetware_spidereyes' }) // Уменьшает производительность в 8 раз, написать об этом разрабу
 
     console.info('Recipe removing passed')
 }

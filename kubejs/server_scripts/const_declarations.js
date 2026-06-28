@@ -38,6 +38,9 @@ const item = {
     phantom_membrane: 'minecraft:phantom_membrane',
     amethyst_shard: 'minecraft:amethyst_shard',
     string: 'minecraft:string',
+    repeater: 'minecraft:repeater',
+    redstone_torch: 'minecraft:redstone_torch',
+    comparator: 'minecraft:comparator',
 
     // ~~~~~~~~~~~~~~~~~~~~ Farmer's Delight ~~~~~~~~~~~~~~~~~~~~ 
     milk_bottle: 'farmersdelight:milk_bottle',
@@ -110,6 +113,7 @@ const item = {
         platinum: 'industrialupgrade:nugget/platinum',
         bronze: 'createbigcannons:bronze_scrap',
         steel: 'createbigcannons:steel_scrap',
+        brass: 'industrialupgrade:alloynugget/red_brass',
     },
 
     ingot: {
@@ -118,6 +122,7 @@ const item = {
         gold: 'minecraft:gold_ingot',
         zinc: 'industrialupgrade:itemingots/zinc_ingot',
         bronze: 'industrialupgrade:itemingots/bronze_ingot',
+        brass: 'industrialupgrade:alloyingot/red_brass',
         electrum: 'industrialupgrade:itemingots/electrum_ingot',
         red_alloy: 'morered:red_alloy_ingot',
         netherite: 'minecraft:netherite_ingot',
@@ -149,7 +154,7 @@ const item = {
         platinum: 'industrialupgrade:itemplates/platinum_plate',
         titanium_steel: 'industrialupgrade:crafting_elements/crafting_501_element',
         niobium_titanium: 'industrialupgrade:alloyplate/niobium_titanium',
-        red_brass: 'industrialupgrade:alloyplate/red_brass',
+        brass: 'industrialupgrade:alloyplate/red_brass',
     },
 
     rod: {
@@ -167,6 +172,7 @@ const item = {
         titanium: 'industrialupgrade:baseblockingot/titanium',
         platinum: 'industrialupgrade:baseblockingot/platinum',
         bronze: 'industrialupgrade:blockresource/bronze_block',
+        brass: 'industrialupgrade:baseblockalloy/red_brass',
     },
 
     custom: {
@@ -175,7 +181,9 @@ const item = {
         conducting_organic_polymer: 'kubejs:conducting_organic_polymer',
         synth_nerve_cables: 'kubejs:synth_nerve_cables',
         pack_frame: 'kubejs:pack_frame',
-        hardened_leather: 'kubejs:hardened_leather'
+        hardened_leather: 'kubejs:hardened_leather',
+        embryo: 'kubejs:embryo',
+        embryo_in_jar: 'kubejs:jar_embryo',
     },
 
     // ~~~~~~~~~~~~~~~~~~~~ INDUSTRIAL UPGRADE ~~~~~~~~~~~~~~~~~~~~ 
@@ -721,7 +729,6 @@ const item = {
     create: {
         shaft: 'create:shaft',
         andesite_alloy: 'create:andesite_alloy',
-        copper_magnet: 'create_sa:copper_magnet',
         obsidian_powder:'create:powdered_obsidian',
         andesite_casing: 'create:andesite_casing',
         modular_accumulator: 'createaddition:modular_accumulator',
@@ -771,14 +778,20 @@ const item = {
             large: 'createaddition:large_connector',
         },
     
+        // ~~~~~~~~~~~~~~~~~~~~ Addons ~~~~~~~~~~~~~~~~~~~~
+        lighter: 'createdieselgenerators:lighter',
+        control_chip: 'create_connected:control_chip',
+        
         // ~~~~~~~~~~~~~~~~~~~~ Create Compressed ~~~~~~~~~~~~~~~~~~~~
-    
         crushed_ore_block: {
             copper: 'create_compressed:crushed_copper_pile',
             iron: 'create_compressed:crushed_iron_pile',
             gold: 'create_compressed:crushed_gold_pile',
             zinc: 'create_compressed:crushed_zinc_pile',
         },        
+
+        // ~~~~~~~~~~~~~~~~~~~~ Create Power Grid ~~~~~~~~~~~~~~~~~~~~
+        electrical_gizmo: 'powergrid:electrical_gizmo',
     },
 
     // ~~~~~~~~~~~~~~~~~~~~ Cybernetics ~~~~~~~~~~~~~~~~~~~~ 
@@ -910,6 +923,7 @@ const tag = {
         iron: '#c:nuggets/iron',
         gold: '#c:nuggets/gold',
         zinc: '#c:nuggets/zinc',
+        brass: '#c:nuggets/brass',
         electrum: '#c:nuggets/electrum',
         titanium: '#c:nuggets/titanium',
         bronze: '#c:nuggets/bronze',
@@ -922,6 +936,7 @@ const tag = {
         iron: '#c:ingots/iron',
         gold: '#c:ingots/gold',
         zinc: '#c:ingots/zinc',
+        brass: '#c:ingots/brass',
         silver: '#c:ingots/silver',
         electrum: '#c:ingots/electrum',
         lead: '#c:ingots/lead',
@@ -939,6 +954,7 @@ const tag = {
         tin: '#c:plates/tin',
         iron: '#c:plates/iron',
         gold: '#c:plates/gold',
+        brass: '#c:plates/brass',
         electrum: '#c:plates/electrum',
         titanium: '#c:plates/titanium',
         bronze: '#c:plates/bronze',
@@ -990,6 +1006,7 @@ const tag = {
         invar: '#c:gears/invar',
         titanium: '#c:gears/titanium',
         alumel: '#c:gears/alumel', // Алюминид-титан
+        brass: '#c:gears/redbrass',
     },
     
     rod: {
@@ -1006,6 +1023,7 @@ const tag = {
         diamond: '#c:storage_blocks/diamond',
         redstone: '#c:storage_blocks/redstone',
         zinc: '#c:storage_blocks/zinc',
+        brass: '#c:storage_blocks/brass',
         bronze: '#c:storage_blocks/bronze',
         electrum: '#c:storage_blocks/electrum',
         titanium: '#c:storage_blocks/titanium',
