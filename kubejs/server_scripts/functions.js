@@ -129,15 +129,6 @@ const cnRecipe = (evt, output, pattern, indexes) => {
             val.item = entry.item
         }
         keys[key] = val
-        console.log('Output:', JSON.stringify({
-            item: entry.item,
-            count: entry.count,
-            isTag: entry.isTag,
-            isFluid: entry.isFluid,
-            haveComponents: entry.haveComponents,
-            components: entry.components,
-        }, null, 2))
-        console.log('-'.repeat(60))
     }
     evt.custom({
         "type": "createcybernetics:engineering_table",

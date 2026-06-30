@@ -33,6 +33,7 @@ const registerCreateRemovings = (evt) => {
     evt.remove({ output: 'create:brass_ingot', not: { type: 'create:sequenced_assembly'} })
     evt.remove({ output: 'create:brass_sheet', not: { type: 'create:sequenced_assembly'} })
     evt.remove({ output: 'create:brass_nugget', not: { type: 'create:sequenced_assembly'} })
+    evt.remove({ output: 'simulated:gyroscopic_mechanism'})
 
     // evt.remove({ id: 'createbigcannons:melting/melt_bronze_ingot' })
     // evt.remove({ id: 'createbigcannons:melting/melt_bronze_nugget' })

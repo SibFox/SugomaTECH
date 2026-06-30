@@ -322,6 +322,12 @@ const registerRecipeReplacings = (evt) => {
         item.iu.tempered_glass
     )
 
+    evt.replaceInput({ input: 'industrialupgrade:itemdust/emerald_dust' },
+        'industrialupgrade:itemdust/emerald_dust',
+        tag.dusts.emerald
+    )
+    
+    
 
 
 

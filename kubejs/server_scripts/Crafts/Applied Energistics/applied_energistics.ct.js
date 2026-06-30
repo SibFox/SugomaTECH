@@ -10,15 +10,7 @@ const registerAECTRecipes = (evt) => {
         return recipeID('ae2', path)
     }
 
-    shapedRecipe(evt, getRecipeID('vibration_chamber'),
-        [
-            [ item.iu.corpus_cover.lvl1, tag.ingot.iron, item.iu.corpus_cover.lvl1 ],
-            [ tag.ingot.steel, item.iu.base_generator, tag.ingot.steel ],
-            [ tag.ingot.steel, item.ae.energy_acceptor, tag.ingot.steel ]
-        ],
-    'ae2:vibration_chamber')
-
-
+    // ~~~~~~ Предметы ~~~~~~
 
     shapedRecipe(evt, getRecipeID('certus_quartz_crystal'),
         [
@@ -49,7 +41,7 @@ const registerAECTRecipes = (evt) => {
     shapedRecipe(evt, getRecipeID('inscriber'),
         [
             [ item.iu.module.macerator.lvl2, null, item.iu.module.cutting.lvl2 ],
-            [ item.ae.processor.calculation, item.iu.machine_corpus.tech, item.ae.processor.logic ],
+            [ item.ae.processor.calculation, item.iu.machine_corpus.advanced_tech, item.ae.processor.logic ],
             [ item.iu.module.slot.x3, item.iu.electromotor.lvl2, item.iu.module.slot.x1 ]
         ],
     'ae2:inscriber')
@@ -62,12 +54,37 @@ const registerAECTRecipes = (evt) => {
             'COC'
         ],{
             F: item.ae.fluix_pearl,
-            O: item.ae.quartz_fiber,
+            O: item.ae.cable.quartz_fiber,
             T: item.create.transmitter,
             C: tag.casings.niobium
         }
     ).id(getRecipeID('wireless_receiver'))
+
+    evt.shaped(
+        Item.of('ae2:network_tool', 1),
+        [
+            'PCW',
+            'Q  '
+        ],{
+            P: tag.ae.illuminated_panel,
+            C: item.iu.module.slot.x8,
+            W: tag.tool.wrench,
+            Q: item.ae.processor.calculation
+        }
+    ).id(getRecipeID('network_tool'))
+
+
+
+    // ~~~~~~ Машинки и их части ~~~~~~
     
+    shapedRecipe(evt, getRecipeID('vibration_chamber'),
+        [
+            [ item.iu.corpus_cover.lvl1, tag.ingot.iron, item.iu.corpus_cover.lvl1 ],
+            [ tag.ingot.steel, item.iu.base_generator, tag.ingot.steel ],
+            [ tag.ingot.steel, item.ae.energy_acceptor, tag.ingot.steel ]
+        ],
+    'ae2:vibration_chamber')
+
     evt.shaped(
         Item.of('ae2:crafting_unit', 1),
         [
@@ -82,8 +99,6 @@ const registerAECTRecipes = (evt) => {
         }
     ).id(getRecipeID('crafting_unit'))
 
-
-    
     evt.shaped(
         Item.of(item.ae.extended_machine_frame, 1),
         [
@@ -145,84 +160,65 @@ const registerAECTRecipes = (evt) => {
         }
     ).id(getRecipeID('molecular_assembler'))
     
+    evt.shaped(
+        Item.of('advanced_ae:reaction_chamber', 1),
+        [
+            ' C ',
+            'MRP',
+            'TEB'
+        ],{
+            C: 'ae2:condenser',
+            R: 'ae2:vibration_chamber',
+            E: item.iu.electromotor.lvl2,
+            T: item.iu.module.tank.storage,
+            B: item.iu.module.tank.lvl1,
+            M: item.iu.module.crafting.lvl2,
+            P: item.iu.module.transformation_adv
+        }
+    ).id(getRecipeID('reaction_chamber'))
     
-
-    aeReactionRecipe(evt, getRecipeID('quantum_alloy'),
-        200000, asItem(fluid.quantum_infusion, 1000),
-        [ asItem(item.ingot.woods_alloy, 4), asItem(item.ae.shattered_singularity, 4), asItem(item.ae.singularity, 4) ],
-        asItem(item.ingot.quantum_alloy)
-    )
-
-    aeAssemblerRecipe(evt, getRecipeID('entro_ingot'),
-        asItem(fluid.redstone, 25),
+    evt.shaped(
+        Item.of('ae2:condenser', 1),
         [
-            asItem(item.ae.entro_dust, 4),
-            asItem(item.ingot.vanadoalumite, 4),
-            asItem(item.plate.lapis, 4)
-        ],
-        asItem(item.ingot.entro, 8)
-    )
+            ' S ',
+            'MCB',
+            'QQQ'
+        ],{
+            C: item.iu.machine_corpus.advanced_tech,
+            S: item.iu.module.synthesis.photon,
+            B: item.iu.module.slot.x2,
+            M: item.iu.module.slot.x1,
+            Q: 'industrialupgrade:excitednucleus/quacore'
+        }
+    ).id(getRecipeID('condenser'))
     
-    aeAssemblerRecipe(evt, getRecipeID('sky_steel'),
-        asItem(fluid.lava, 100),
+    evt.shaped(
+        Item.of('ae2:energy_acceptor', 1),
         [
-            asItem(item.ae.charged_certus_quartz_crystal, 4),
-            asItem(item.ingot.titanium_steel, 4),
-            asItem(item.ae.sky_dust, 4)
-        ],
-        asItem(item.ingot.sky_steel, 8)
-    )
-
-    aeAssemblerRecipe(evt, getRecipeID('sky_bronze'),
-        asItem(fluid.lava, 100),
-        [
-            asItem(item.ae.certus_quartz_crystal, 4),
-            asItem(item.ingot.bronze, 4),
-            asItem(item.ae.sky_dust, 4)
-        ],
-        asItem(item.ingot.sky_bronze, 8)
-    )
-
-    aeReactionRecipe(evt, getRecipeID('entro_ingot'),
-        500000, asItem(fluid.redstone, 250),
-        [
-            asItem(item.ae.entro_dust, 24),
-            asItem(item.ingot.vanadoalumite, 24),
-            asItem(item.ae.sky_dust, 24)
-        ],
-        asItem(item.ingot.entro, 64)
-    )
-
-    aeReactionRecipe(evt, getRecipeID('sky_steel'),
-        300000, asItem(fluid.lava, 1000),
-        [
-            asItem(item.ae.charged_certus_quartz_crystal, 24),
-            asItem(item.ingot.titanium_steel, 24),
-            asItem(item.ae.sky_dust, 24)
-        ],
-        asItem(item.ingot.sky_steel, 64)
-    )
+            'GEG',
+            'ICI',
+            'GRG'
+        ],{
+            C: item.iu.machine_corpus.tech,
+            G: item.iu.tempered_glass,
+            E: item.iu.module.energy,
+            I: tag.ingot.electrum,
+            R: item.ingot.red_alloy
+        }
+    ).id(getRecipeID('energy_acceptor'))
     
-    aeReactionRecipe(evt, getRecipeID('sky_bronze'),
-        250000, asItem(fluid.lava, 1000),
+    evt.shaped(
+        Item.of('megacells:cell_dock', 1),
         [
-            asItem(item.ae.charged_certus_quartz_crystal, 24),
-            asItem(item.ingot.bronze, 24),
-            asItem(item.ae.sky_dust, 24),
-        ],
-        asItem(item.ingot.sky_bronze, 64)
-    )
-    
-    aeReactionRecipe(evt, getRecipeID('shattered_singularity'),
-        200000, asItem(fluid.redstone, 250),
-        [
-            asItem(item.ae.quantum_singularity, 2),
-            asItem(item.ae.ender_dust, 2),
-            asItem(item.ae.sky_dust, 2)
-        ],
-        asItem(item.ae.shattered_singularity, 2)
-    )
+            'CSC',
+            ' G ',
+        ],{
+            C: tag.plate.iron,
+            S: item.iu.module.slot.x1,
+            G: tag.ae.glass_cable 
+        }
+    ).id(getRecipeID('cell_dock'))
     
     
-
+    
 }

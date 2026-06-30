@@ -22,5 +22,8 @@ const registerAERemovings = (evt) => {
     evt.remove({ output: 'ae2:wireless_receiver' })
     evt.remove({ output: 'ae2:crafting_unit' })
     evt.remove({ output: 'ae2:molecular_assembler' })
-
+    evt.remove({ output: 'advanced_ae:reaction_chamber' })
+    evt.remove({ output: 'ae2:condenser' })
+    evt.remove({ output: 'ae2:energy_acceptor' })
+    evt.remove({ output: 'megacells:cell_dock' })
 }
