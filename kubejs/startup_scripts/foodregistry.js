@@ -95,7 +95,7 @@ let registerFoods = (evt) => {
             .effect('minecraft:hunger', 200, 0, 0.7)
     })
     
-    evt.create('embryo_paste_jar').food(food => {
+    evt.create('jar_embryo_paste').food(food => {
         let hungerData = calcSaturation(4, 8)
         food.nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)

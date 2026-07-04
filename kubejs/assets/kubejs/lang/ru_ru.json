@@ -11,6 +11,10 @@
   "item.kubejs.module_cybernetics": "Датчик: Кибернетика",
   "item.kubejs.liquid_redstone_bucket": "Ведро сжиженного редстоуна",
   "item.morered.red_alloy_ingot": "Слиток краснокаменного сплава",
+  "item.kubejs.kloverghett_seed": "Металлическое семечко",
+  "item.kubejs.kloverghett_crystal": "Кловергеттов кристалл",
+  "item.kubejs.kloverghett_part": "Кусочек кловергетта",
+  "item.kubejs.kloverghett_treated": "Обработанный кловергетт",
 
   "fluid_type.kubejs.liquid_redstone": "Сжиженный редстоун",
 

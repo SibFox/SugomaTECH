@@ -4,7 +4,7 @@
  * 
  * @param {Internal.RecipesEventJS} evt 
  */
-const registerArPhExRecipes = (evt) => {
+const registerArPhExCTRecipes = (evt) => {
 
     function getRecipeID(path) {
         return recipeID('arphex', path)
@@ -16,6 +16,4 @@ const registerArPhExRecipes = (evt) => {
             item.ingot.netherite, item.arphex.time_prism.full
         ]
     ).id(getRecipeID('entropy_matrix_shard'))
-
-    console.info('ArPhEx recipe adding passed')
 }

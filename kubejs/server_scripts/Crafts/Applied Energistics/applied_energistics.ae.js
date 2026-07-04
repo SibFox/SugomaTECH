@@ -89,4 +89,24 @@ const registerAEMachinesRecipes = (evt) => {
         ],
         asItem(item.ae.shattered_singularity, 2)
     )
+
+    aeReactionRecipe(evt, getRecipeID('quantum_singularity_1'),
+        50000, asItem(fluid.redstone, 100),
+        [
+            asItem(item.ae.singularity, 4),
+            asItem(item.ae.ender_dust, 4)
+        ],
+        asItem(item.ae.quantum_singularity, 1)
+    )
+
+    aeReactionRecipe(evt, getRecipeID('quantum_singularity_2'),
+        50000, asItem(fluid.redstone, 100),
+        [
+            asItem(item.ae.singularity, 4),
+            asItem(item.enderpearl, 4)
+        ],
+        asItem(item.ae.quantum_singularity, 1)
+    )
+    
+    
 }

@@ -162,7 +162,62 @@ const registerCommonRecipes = (evt) => {
     //     ]
     // ).id(getRecipeID('steel_nugget_ct'))
 
+    // Кловергетт
 
+    iuRecipe(evt, getRecipeID('kloverghett_crystal'), IUMachineCraft.SILICON_CHAMBER,
+        [
+            asItem(item.custom.kloverghett_seed, 3),
+            asItem(item.echo_shard)
+        ],[
+            asItem(item.custom.kloverghett_crystal)
+        ]
+    )
+
+    aeReactionRecipe(evt, getRecipeID('kloverghett_part'),
+        10000, asItem(fluid.coolant, 500),
+        [
+            asItem(item.custom.kloverghett_crystal, 4),
+            asItem(item.iu.dust.energy, 16)
+        ],
+        asItem(item.custom.kloverghett_part, 1)
+    )
+
+    aeReactionRecipe(evt, getRecipeID('kloverghett_part_c'),
+        10000, asItem(fluid.coolant, 500),
+        [
+            asItem(item.custom.kloverghett_crystal, 4),
+            asItem(item.iu.dust.energy, 16)
+        ],
+        asItem(fluid.hot_coolant, 500)
+    )
+    
+    iuRecipe(evt, getRecipeID('kloverghett_treated'), IUMachineCraft.CYCLOTRON,
+        [
+            asItem(item.custom.kloverghett_part, 2)
+        ],[
+            asItem(item.custom.kloverghett_treated)
+        ],
+        { 
+            'chance': 60,
+            'cryogen': 70,
+            'positrons': 43
+        }
+    )
+    
+    iuRecipe(evt, getRecipeID('kloverghett_seed'), IUMachineCraft.FLUID_INTEGRATOR,
+        [
+            asItem(fluid.fluid_matter, 75),
+            asItem(item.custom.kloverghett_crystal)
+        ],[
+            asItem(item.custom.kloverghett_seed, 5),
+            asItem(fluid.nitrooxide, 125)
+        ]
+    )
+    
+    
+    
+    
+    
 
     console.info('Common recipe adding passed')
 }

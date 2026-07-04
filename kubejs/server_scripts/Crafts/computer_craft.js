@@ -257,9 +257,9 @@ const registerCCRecipes = (evt) => {
 
     shapedRecipe(evt, getRecipeID('peripheral_casing'),
         [
-            [ tag.rod.alluminum, tag.plate.titan, tag.rod.alluminum ],
-            [ tag.plate.titan, item.iu.machine_corpus.tech, tag.plate.titan ],
-            [ tag.rod.electrum, tag.plate.titan, tag.rod.electrum ]
+            [ tag.rod.alluminum, tag.plate.titanium, tag.rod.alluminum ],
+            [ tag.plate.titanium, item.iu.machine_corpus.tech, tag.plate.titanium ],
+            [ tag.rod.electrum, tag.plate.titanium, tag.rod.electrum ]
         ],
     item.cc.casing)
 

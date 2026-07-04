@@ -56,6 +56,10 @@ const registerOverallTags = (evt) => {
     add('c:plates/brass', item.plate.brass)
     add('c:storage_blocks/brass', item.ore_block.brass)
 
+    add(tag.wire.copper, item.iu.wire.bare.copper)
+    add(tag.wire.iron, item.iu.wire.bare.iron)
+    add(tag.wire.gold, item.iu.wire.bare.gold)
+
     // Удалить все теги с предмета
     // for (let i of deletion_list) 
     // { 

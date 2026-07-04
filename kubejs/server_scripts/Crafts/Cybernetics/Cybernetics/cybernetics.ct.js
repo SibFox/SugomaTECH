@@ -33,14 +33,12 @@ const registerCyberneticsCTRecipes = (evt) => {
     evt.shaped(
         Item.of(item.cn.diodes, 1),
         [
-            'CTC',
-            'PPP',
-            'ERE'
+            ' E ',
+            'TTT',
+            ' R '
         ],{
-            T: item.iu.transistor.lvl2,
-            C: item.iu.capacitor.lvl3,
-            P: item.plate.titanium,
-            E: item.nugget.electrum,
+            T: tag.rod.titanium,
+            E: tag.ingot.electrum,
             R: item.ingot.red_alloy
         }
     ).id(getRecipeID('diodes'))

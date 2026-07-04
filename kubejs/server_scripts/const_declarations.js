@@ -41,6 +41,8 @@ const item = {
     repeater: 'minecraft:repeater',
     redstone_torch: 'minecraft:redstone_torch',
     comparator: 'minecraft:comparator',
+    experience_bottle: 'minecraft:experience_bottle',
+    echo_shard: 'minecraft:echo_shard',
 
     // ~~~~~~~~~~~~~~~~~~~~ Farmer's Delight ~~~~~~~~~~~~~~~~~~~~ 
     milk_bottle: 'farmersdelight:milk_bottle',
@@ -140,6 +142,9 @@ const item = {
         sky_steel: 'megacells:sky_steel_ingot',
         entro: 'extendedae:entro_ingot',
         platinum: 'industrialupgrade:itemingots/platinum_ingot',
+
+        superalloy_haynes: 'industrialupgrade:alloyingot/superalloy_haynes',
+        superalloy_rene: 'industrialupgrade:alloyingot/superalloy_rene',
     },
 
     plate: {
@@ -155,6 +160,7 @@ const item = {
         titanium_steel: 'industrialupgrade:crafting_elements/crafting_501_element',
         niobium_titanium: 'industrialupgrade:alloyplate/niobium_titanium',
         brass: 'industrialupgrade:alloyplate/red_brass',
+        wolframite: 'industrialupgrade:crafting_elements/crafting_655_element',
     },
 
     rod: {
@@ -184,6 +190,10 @@ const item = {
         hardened_leather: 'kubejs:hardened_leather',
         embryo: 'kubejs:embryo',
         embryo_in_jar: 'kubejs:jar_embryo',
+        kloverghett_seed: 'kubejs:kloverghett_seed',
+        kloverghett_crystal: 'kubejs:kloverghett_crystal',
+        kloverghett_part: 'kubejs:kloverghett_part',
+        kloverghett_treated: 'kubejs:kloverghett_treated',
     },
 
     // ~~~~~~~~~~~~~~~~~~~~ INDUSTRIAL UPGRADE ~~~~~~~~~~~~~~~~~~~~ 
@@ -215,6 +225,10 @@ const item = {
 
         charged_quartz: 'industrialupgrade:charged_quartz',
         charged_redstone: 'industrialupgrade:charged_redstone',
+
+        ruby: 'industrialupgrade:preciousgem/ruby_gem',
+        saphire: 'industrialupgrade:preciousgem/sapphire_gem',
+        topaz: 'industrialupgrade:preciousgem/topaz_gem',
 
     
         wire: {
@@ -252,7 +266,6 @@ const item = {
             sulfur: 'industrialupgrade:itemdust/sulfur_dust',
             stone: 'industrialupgrade:itemdust/stone_dust',
             small: {
-                energy: 'industrialupgrade:smalldust/energium',
                 calcium_phosphate: 'industrialupgrade:smalldust/calcium_phosphate',
                 potassium: 'industrialupgrade:smalldust/potassium',
                 silicon: 'industrialupgrade:smalldust/silico',
@@ -325,10 +338,6 @@ const item = {
             lvl5: 'industrialupgrade:crafting_elements/crafting_621_element',
         },
 
-        upgrade: {
-            overclocker: 'industrialupgrade:upgrades/overclocker',
-        },
-
         spool: {
             lvl0: 'industrialupgrade:crafting_elements/crafting_294_element',
             lvl1: 'industrialupgrade:crafting_elements/crafting_356_element',
@@ -355,7 +364,7 @@ const item = {
             steam: 'industrialupgrade:blockresource/steam_machine',
             bio: 'industrialupgrade:blockresource/bio_machine',
             tech: 'industrialupgrade:blockresource/machine',
-            advanced_tech: 'industrialupgrade:blockresource/advanced_machine',
+            tech_adv: 'industrialupgrade:blockresource/advanced_machine',
         },
 
         chip: {
@@ -441,6 +450,13 @@ const item = {
             lvl4: 'industrialupgrade:crafting_elements/crafting_594_element'
         },
 
+        data_bus: {
+            lvl1: 'industrialupgrade:crafting_elements/crafting_580_element',
+            lvl2: 'industrialupgrade:crafting_elements/crafting_560_element',
+            lvl3: 'industrialupgrade:crafting_elements/crafting_589_element',
+            lvl4: 'industrialupgrade:crafting_elements/crafting_596_element',
+        },
+
         diode: {
             lvl1: 'industrialupgrade:crafting_elements/crafting_568_element',
             lvl2: 'industrialupgrade:crafting_elements/crafting_567_element',
@@ -474,6 +490,15 @@ const item = {
             lvl2: 'industrialupgrade:crafting_elements/crafting_599_element',
             lvl3: 'industrialupgrade:crafting_elements/crafting_583_element',
             lvl4: 'industrialupgrade:crafting_elements/crafting_597_element',
+        },
+
+        upgrade: {
+            casing: 'industrialupgrade:upgrade_casing',
+            overclocker: 'industrialupgrade:upgrades/overclocker',
+            pulling: 'industrialupgrade:upgrades/pulling',
+            ejector: 'industrialupgrade:upgrades/ejector',
+            fluid_pulling: 'industrialupgrade:upgrades/fluid_pulling',
+            fluid_ejector: 'industrialupgrade:upgrades/fluid_ejector',
         },
 
         module: {
@@ -605,6 +630,8 @@ const item = {
             assembler: 'industrialupgrade:crafting_elements/crafting_243_element',
             cybernetics: 'kubejs:module_cybernetics',
             lava: 'industrialupgrade:crafting_elements/crafting_228_element',
+            unpacking: 'industrialupgrade:crafting_elements/crafting_469_element',
+            transformer: 'industrialupgrade:crafting_elements/crafting_156_element',
         },
 
         core: {
@@ -656,6 +683,7 @@ const item = {
         fluix_crystal: 'ae2:fluix_crystal',
         fluix_dust: 'ae2:fluix_dust',
         fluix_pearl: 'ae2:fluix_pearl',
+        fluix_block: 'ae2:fluix_block',
         entro_crystal: 'extendedae:entro_crystal',
         entro_shard: 'extendedae:entro_shard',
         entro_dust: 'extendedae:entro_dust',
@@ -715,7 +743,27 @@ const item = {
     // ~~~~~~~~~~~~~~~~~~~~ ARPHEX ~~~~~~~~~~~~~~~~~~~~ 
 
     arphex: {
+        ectoplasm: 'arphex:ectoplasm',
+        burning_glands: 'arphex:burning_glands',
         raw_hemolymph: 'arphex:raw_hemolymph',
+        heavy_chitin: 'arphex:heavy_chitin',
+        scorch_charge: 'arphex:scorch_charge',
+        infernal_shard: 'arphex:infernal_shard',
+        infernal_ingot: 'arphex:infernal_ingot',
+        spacetime_shard: 'arphex:spacetime_shard',
+        spacetime_ingot: 'arphex:spacetime_ingot',
+        fire_opal: {
+            full: 'arphex:fire_opal',
+            shard: 'arphex:fire_opal_shard'
+        },
+        abyssal_crystal: {
+            full: 'arphex:abyssal_crystal',
+            shard: 'arphex:abyssal_shard',
+        },
+        void_geode: {
+            full: 'arphex:void_geode',
+            shard: 'arphex:void_geode_shard',
+        },
         time_prism: {
             full: 'arphex:time_prism',
             shard: 'arphex:time_prism_shard'
@@ -977,17 +1025,26 @@ const tag = {
         iron: '#c:ingots/iron',
         gold: '#c:ingots/gold',
         zinc: '#c:ingots/zinc',
-        brass: '#c:ingots/brass',
         silver: '#c:ingots/silver',
-        electrum: '#c:ingots/electrum',
         lead: '#c:ingots/lead',
+        aluminium: '#c:ingots/aluminium',
+        tungsten: '#c:ingots/tungsten',
+        magnesium: '#c:ingots/magnesium',
+        hafnium: '#c:ingots/hafnium',
+        brass: '#c:ingots/brass',
+        electrum: '#c:ingots/electrum',
         bronze: '#c:ingots/bronze',
         titanium: '#c:ingots/titanium',
         steel: '#c:ingots/steel',
         wolframite: '#c:ingots/wolframite',
         titanium_steel: '#c:ingots/titaniumsteel',
+        molybdenum_steel: '#c:ingots/molybdenumsteel',
         carbon_tungsteen: '#c:ingots/carbontungsteen',
-        platinum: '#c:ingots/platinum',  
+        platinum: '#c:ingots/platinum',
+        aluminiumlithium: '#c:ingots/aluminiumlithium',      
+        hafniumboride: '#c:ingots/hafniumboride',
+        woods: '#c:ingots/woods',
+        stainless_steel: '#c:ingots/stainlesssteel',  
     },
 
     plate: {
@@ -1003,6 +1060,7 @@ const tag = {
         zinc: '#c:plates/zinc',
         cobalt: '#c:plates/cobalt',
         obsidian: '#c:plates/obsidian',
+        hafnium: '#c:plates/hafnium',
         composite: '#c:plates/advancedalloy',
         steel: '#c:plates/steel',
         alumel: '#c:plates/alumel',
@@ -1015,6 +1073,7 @@ const tag = {
         niobium_titanium: '#c:plates/niobiumtitanium',
         red_brass: '#c:plates/redbrass',
         platinum: '#c:plates/platinum',
+        woods: '#c:plates/woods',
     },
     
     doubleplate: {
@@ -1024,12 +1083,14 @@ const tag = {
         titanium: '#c:doubleplate/titanium',
         nichrome: '#c:doubleplate/nichrome',
         obsidian: '#c:doubleplate/obsidian',
+        hafnium: '#c:doubleplate/hafnium',
         molybdenumsteel: '#c:doubleplate/molybdenumsteel',
         berylliumbronze: '#c:doubleplate/berylliumbronze',
         vanadoalumite: '#c:doubleplate/vanadoalumite',
         nitenol: '#c:doubleplate/nitenol',
         alumel: '#c:doubleplate/alumel',
         niobium_titanium: '#c:doubleplate/niobium_titanium',
+        woods: '#c:doubleplate/woods',
     },
 
     casings: {
@@ -1037,10 +1098,12 @@ const tag = {
         tungsten: '#c:casings/tungsten',
         electrum: '#c:casings/electrum',
         lead: '#c:casings/lead',
-        titan: '#c:casings/titanium',
+        titanium: '#c:casings/titanium',
         palladium: '#c:casings/palladium',
         polonium: '#c:casings/polonium',
         niobium: '#c:casings/niobium',
+        hafnium: '#c:casings/hafnium',
+        woods: '#c:casings/woods',
     },
     
     gear: {
@@ -1048,12 +1111,14 @@ const tag = {
         titanium: '#c:gears/titanium',
         alumel: '#c:gears/alumel', // Алюминид-титан
         brass: '#c:gears/redbrass',
+        hafniumboride: '#c:gears/hafniumboride',
+        woods: '#c:gears/woods',
     },
     
     rod: {
         electrum: '#c:rods/electrum',
         aluminium: '#c:rods/aluminium',
-        titan: '#c:rods/titanium',
+        titanium: '#c:rods/titanium',
         tungsten: '#c:rods/tungsten',
     },
     
@@ -1070,6 +1135,13 @@ const tag = {
         titanium: '#c:storage_blocks/titanium',
         steel: '#c:storage_blocks/steel',
         platinum: '#c:storage_blocks/platinum',
+        woods: '#c:storage_blocks/woods',
+    },
+
+    wire: {
+        copper: '#c:wires/copper',
+        iron: '#c:wires/iron',
+        gold: '#c:wires/gold',
     },
 
     tool: {
@@ -1079,11 +1151,15 @@ const tag = {
 
     dusts: {
         diamond: '#c:dusts/diamond',
-        emerald: '#c:dusts/emerald', // Заменить чисто IU пыль на тэг
+        emerald: '#c:dusts/emerald',
     },
 
     ae: {
         glass_cable: '#ae2:glass_cable',
+        smart_cable: '#ae2:smart_cable',
+        covered_cable: '#ae2:covered_cable',
+        covered_dence_cable: '#ae2:covered_dense_cable',
+        smart_dence_cable: '#ae2:smart_dense_cable',
         illuminated_panel: '#ae2:illuminated_panel',
     },
 
@@ -1105,6 +1181,11 @@ const fluid = {
     quantum_infusion: '$advanced_ae:quantum_infusion_source',
     polypropylene: '$industrialupgrade:iufluidpolyprop',
     glucose: '$industrialupgrade:iufluidglucose',
+    fluid_matter: '$industrialupgrade:iufluiduu_matter',
+    coolant: '$industrialupgrade:iufluidcoolant',
+    hot_coolant: '$industrialupgrade:iufluidhot_coolant',
+    nitrooxide: '$industrialupgrade:iufluidnitricoxide',
+
 
     metal: {
         bronze: '$industrialupgrade:iufluidbronze',

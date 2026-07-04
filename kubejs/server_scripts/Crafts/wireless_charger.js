@@ -22,7 +22,7 @@ const registerWCRecipes = (evt) => {
         [
             [ null, item.iu.electromotor.lvl2, null ],
             [ tag.plate.electrum, 'wirelesschargers:basic_wireless_player_charger', tag.plate.electrum ],
-            [ tag.plate.electrum, item.iu.machine_corpus.advanced_tech, tag.plate.electrum ]
+            [ tag.plate.electrum, item.iu.machine_corpus.tech_adv, tag.plate.electrum ]
         ],
     'wirelesschargers:advanced_wireless_player_charger')
     
@@ -38,7 +38,7 @@ const registerWCRecipes = (evt) => {
         [
             [ null, item.iu.electromotor.lvl2, null ],
             [ tag.plate.electrum, 'wirelesschargers:basic_wireless_block_charger', tag.plate.electrum ],
-            [ tag.plate.electrum, item.iu.machine_corpus.advanced_tech, tag.plate.electrum ]
+            [ tag.plate.electrum, item.iu.machine_corpus.tech_adv, tag.plate.electrum ]
         ],
     'wirelesschargers:advanced_wireless_block_charger')
 

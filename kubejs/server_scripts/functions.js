@@ -20,6 +20,12 @@ const IUMachineCraft = {
     ELECTROLYZER: 'electrolyzer',
     SOLID_ELECTROLYZER: 'solid_electrolyzer',
     POLYMERIZER: 'polymerizer',
+    MOLECULAR: 'molecular', // energy: 0-inf
+    MOLECULAR_DOUBLE: 'doublemolecular', // energy: int 0-inf
+    CYCLOTRON: 'cyclotron', // chance (integer 0-100), 
+    // cryogen (consuming cryogen per tick, integer 1-100, default 1), 
+    // positrons (consuming positrons per tick, integer 1-100, default 1)
+    ENRICHMENT: 'enrichment', // rad_amount (integer 0-infinity)
     POLISHER: {
         LASER: 'laser',
         PRIMAL: 'primal_laser_polisher',

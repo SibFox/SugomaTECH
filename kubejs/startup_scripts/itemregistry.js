@@ -13,6 +13,10 @@ const registerItems = (evt) => {
     evt.create('jar')
     evt.create('embryo')
     evt.create('jar_embryo')
+    evt.create('kloverghett_seed')
+    evt.create('kloverghett_crystal')
+    evt.create('kloverghett_part')
+    evt.create('kloverghett_treated')
 
     for (let item of [
         'copper', 'bronze', 'gold', 'iron', 'lead', 'steel', 
