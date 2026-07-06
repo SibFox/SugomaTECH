@@ -8,6 +8,7 @@
 const item = {
     // ~~~~~~~~~~~~~~~~~~~~ Minecraft ~~~~~~~~~~~~~~~~~~~~ 
     redstone: 'minecraft:redstone',
+    redstone_block: 'minecraft:redstone_block',
     lapis: 'minecraft:lapis_lazuli',
     quartz: 'minecraft:quartz',
     diamond: 'minecraft:diamond',
@@ -127,6 +128,7 @@ const item = {
         brass: 'industrialupgrade:alloyingot/red_brass',
         electrum: 'industrialupgrade:itemingots/electrum_ingot',
         red_alloy: 'morered:red_alloy_ingot',
+        netherite_scrap: 'minecraft:netherite_scrap',
         netherite: 'minecraft:netherite_ingot',
         gunmetal: 'pointblank:gunmetal_ingot',
         titanium: 'industrialupgrade:itemingots/titanium_ingot',
@@ -179,6 +181,8 @@ const item = {
         platinum: 'industrialupgrade:baseblockingot/platinum',
         bronze: 'industrialupgrade:blockresource/bronze_block',
         brass: 'industrialupgrade:baseblockalloy/red_brass',
+        sky_steel: 'megacells:sky_steel_block',
+        sky_bronze: 'megacells:sky_bronze_block',
     },
 
     custom: {
@@ -230,6 +234,10 @@ const item = {
         saphire: 'industrialupgrade:preciousgem/sapphire_gem',
         topaz: 'industrialupgrade:preciousgem/topaz_gem',
 
+        grown_silicon_crystal: 'industrialupgrade:crafting_elements/crafting_492_element',
+        silicon_crystal: 'industrialupgrade:crafting_elements/crafting_493_element',
+        polished_silicon_disk: 'industrialupgrade:crafting_elements/crafting_494_element',
+        polished_silicon_crystal: 'industrialupgrade:crafting_elements/crafting_495_element',
     
         wire: {
             bare: {
@@ -1044,7 +1052,8 @@ const tag = {
         aluminiumlithium: '#c:ingots/aluminiumlithium',      
         hafniumboride: '#c:ingots/hafniumboride',
         woods: '#c:ingots/woods',
-        stainless_steel: '#c:ingots/stainlesssteel',  
+        stainless_steel: '#c:ingots/stainlesssteel',
+        tan_tung_haf: '#c:ingots/tantalumtungstenhafnium',
     },
 
     plate: {
@@ -1074,6 +1083,7 @@ const tag = {
         red_brass: '#c:plates/redbrass',
         platinum: '#c:plates/platinum',
         woods: '#c:plates/woods',
+        tan_tung_haf: '#c:plates/tantalumtungstenhafnium',
     },
     
     doubleplate: {
@@ -1090,6 +1100,7 @@ const tag = {
         nitenol: '#c:doubleplate/nitenol',
         alumel: '#c:doubleplate/alumel',
         niobium_titanium: '#c:doubleplate/niobium_titanium',
+        tan_tung_haf: '#c:doubleplate/tantalumtungstenhafnium',
         woods: '#c:doubleplate/woods',
     },
 
@@ -1103,6 +1114,7 @@ const tag = {
         polonium: '#c:casings/polonium',
         niobium: '#c:casings/niobium',
         hafnium: '#c:casings/hafnium',
+        tan_tung_haf: '#c:casings/tantalumtungstenhafnium',
         woods: '#c:casings/woods',
     },
     
@@ -1112,6 +1124,7 @@ const tag = {
         alumel: '#c:gears/alumel', // Алюминид-титан
         brass: '#c:gears/redbrass',
         hafniumboride: '#c:gears/hafniumboride',
+        tan_tung_haf: '#c:gears/tantalumtungstenhafnium',
         woods: '#c:gears/woods',
     },
     
@@ -1185,6 +1198,7 @@ const fluid = {
     coolant: '$industrialupgrade:iufluidcoolant',
     hot_coolant: '$industrialupgrade:iufluidhot_coolant',
     nitrooxide: '$industrialupgrade:iufluidnitricoxide',
+    cryogen: '$industrialupgrade:iufluidcryogen',
 
 
     metal: {

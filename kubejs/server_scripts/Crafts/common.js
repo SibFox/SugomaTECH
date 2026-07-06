@@ -30,6 +30,26 @@ const registerCommonRecipes = (evt) => {
         { 'temperature': 2000 }
     )
 
+    iuRecipe(evt, getRecipeID('liquid_redstone_1'), IUMachineCraft.DIVIDER.ITEM_FLUID,
+        [
+            asItem(item.redstone),
+            asItem(fluid.oxygen, 1)
+        ],[
+            asItem(fluid.redstone, 10),
+            asItem(fluid.oxygen, 5)
+        ]
+    )
+
+    iuRecipe(evt, getRecipeID('liquid_redstone_2'), IUMachineCraft.DIVIDER.ITEM_FLUID,
+        [
+            asItem(item.redstone_block),
+            asItem(fluid.oxygen, 1)
+        ],[
+            asItem(fluid.redstone, 90),
+            asItem(fluid.oxygen, 45)
+        ]
+    )
+
     shapedRecipe(evt, getRecipeID('createcybernetics', 'synth_nerve_cables'),
         [
             [ item.cn.fiber_optic, item.nugget.electrum ],
@@ -139,6 +159,16 @@ const registerCommonRecipes = (evt) => {
         }
     ).id(getRecipeID('hole_filler'))
     
+    iuRecipe(evt, getRecipeID('netherite'), IUMachineCraft.ALLOY_SMELTER.lvl2,
+        [
+            asItem(item.ingot.netherite_scrap, 4),
+            asItem(item.ingot.gold, 4),
+            asItem(tag.ingot.molybdenum_steel, 4)
+        ],[
+            asItem(item.ingot.netherite)
+        ]
+    )
+    
     
 
     // До добавления биг кэнонс
@@ -174,26 +204,20 @@ const registerCommonRecipes = (evt) => {
     )
 
     aeReactionRecipe(evt, getRecipeID('kloverghett_part'),
-        10000, asItem(fluid.coolant, 500),
+        100000, asItem(fluid.cryogen, 500),
         [
             asItem(item.custom.kloverghett_crystal, 4),
+            asItem(item.ae.charged_certus_quartz_crystal, 32),
+            asItem(item.ae.fluix_crystal, 24),
+            asItem(item.ae.entro_crystal, 24),
             asItem(item.iu.dust.energy, 16)
         ],
         asItem(item.custom.kloverghett_part, 1)
     )
-
-    aeReactionRecipe(evt, getRecipeID('kloverghett_part_c'),
-        10000, asItem(fluid.coolant, 500),
-        [
-            asItem(item.custom.kloverghett_crystal, 4),
-            asItem(item.iu.dust.energy, 16)
-        ],
-        asItem(fluid.hot_coolant, 500)
-    )
     
     iuRecipe(evt, getRecipeID('kloverghett_treated'), IUMachineCraft.CYCLOTRON,
         [
-            asItem(item.custom.kloverghett_part, 2)
+            asItem(item.custom.kloverghett_part, 3)
         ],[
             asItem(item.custom.kloverghett_treated)
         ],

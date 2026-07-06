@@ -24,6 +24,7 @@ const registerRecipeRemovings = (evt) => {
     evt.remove({ output: "create:crushed_raw_silver" })
     evt.remove({ output: "create:crushed_raw_silver" })
     evt.remove({ output: "createcybernetics:crushedtitanium" })
+    evt.remove({ id: 'minecraft:netherite_ingot' })
 
     evt.remove({ output: 'advanced_ae:quantum_leggings' })
     evt.remove({ output: 'advanced_ae:quantum_helmet' })

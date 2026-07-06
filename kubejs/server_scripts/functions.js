@@ -90,7 +90,7 @@ function asItem(item, amount) {
     return dict
 }
 
-const shapedRecipe = (evt, id, inputs, output, amount) => {
+function shapedRecipe (evt, id, inputs, output, amount){
     if (amount === undefined || amount < 1 || amount == null) {
         amount = 1
     }
@@ -120,7 +120,7 @@ const shapedRecipe = (evt, id, inputs, output, amount) => {
     ).id(id)
 }
 
-const cnRecipe = (evt, output, pattern, indexes) => {
+function cnRecipe(evt, output, pattern, indexes){
     let keys = {}
     for (const [key, entry] of Object.entries(indexes)) {
         entry = asItem(entry)
@@ -150,7 +150,7 @@ const cnRecipe = (evt, output, pattern, indexes) => {
     evt.remove({ output: output.item })
 }
 
-const iuRecipe = (evt, id, type, inputs, outputs, params) => {
+function iuRecipe(evt, id, type, inputs, outputs, params){
     if (params === undefined || params < 1 || params == null) {
         params = {}
     }
@@ -206,15 +206,9 @@ const iuRecipe = (evt, id, type, inputs, outputs, params) => {
     evt.custom(recipe).id(id + '/' + type)    
 }
 
-const aeAssemblerRecipe = (evt, id, input_fluid, input_items, output) => {
+function aeAssemblerRecipe(evt, id, input_fluid, input_items, output){
     let recipe = {
         "type": "extendedae:crystal_assembler",
-        "input_fluid": {
-            "amount": input_fluid.count,
-            "ingredient": {
-                "fluid": input_fluid.item
-            }
-        },
         "input_items": [],
         "output": {
             "count": output.count,
@@ -222,10 +216,19 @@ const aeAssemblerRecipe = (evt, id, input_fluid, input_items, output) => {
         }
     }
 
-    if (input_fluid.isTag || !input_fluid.isFluid) {
-        console.error("Recipe input fluid was not a Fluid in AE Assembler. Recipe ID: " + id)
-        return
+    if (input_fluid){
+        if (input_fluid.isTag || !input_fluid.isFluid) {
+            console.error("Recipe input fluid was not a Fluid in AE Assembler. Recipe ID: " + id)
+            return
+        }
+        recipe['input_fluid'] = {
+            "amount": input_fluid.count,
+            "ingredient": {
+                "fluid": input_fluid.item
+            }
+        }
     }
+
 
     if (output.isTag || output.isFluid) {
         console.error("Recipe output was not an Item in AE Assembler. Recipe ID: " + id)
@@ -255,7 +258,7 @@ const aeAssemblerRecipe = (evt, id, input_fluid, input_items, output) => {
     evt.custom(recipe).id(id + '/assembler')
 }
 
-const aeReactionRecipe = (evt, id, energy, input_fluid, input_items, output) => {
+function aeReactionRecipe(evt, id, energy, input_fluid, input_items, output){
     let input_arr = []
     let output_ready = { "#": output.count, "#t": "ae2:i", "id": output.item }
 
@@ -293,7 +296,7 @@ const aeReactionRecipe = (evt, id, energy, input_fluid, input_items, output) => 
     }).id(id + '/reaction')
 }
 
-const cElectrifyRecipe = (evt, id, energy, input, output) => {
+function cElectrifyRecipe(evt, id, energy, input, output){
         let dict = {
             "type": "createaddition:charging",
             "energy": energy,

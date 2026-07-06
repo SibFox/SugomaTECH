@@ -222,7 +222,7 @@ const registerAECTRecipes = (evt) => {
             'TEB'
         ],{
             C: 'ae2:condenser',
-            R: 'ae2:vibration_chamber',
+            R: 'industrialupgrade:molecular/molecular',
             E: item.iu.electromotor.lvl2,
             T: item.iu.module.tank.storage,
             B: item.iu.module.tank.lvl1,
@@ -344,6 +344,20 @@ const registerAECTRecipes = (evt) => {
             F: item.ae.fluix_block,
         }
     ).id(getRecipeID('dense_energy_cell'))
+
+    evt.shaped(
+        Item.of('megacells:mega_energy_cell', 1),
+        [
+            'SAS',
+            'ECE',
+            'SAS'
+        ],{
+            A: item.ae.processor.accumulation,
+            S: item.ore_block.sky_steel,
+            E: item.iu.battery.energy_crystal.lvl2,
+            C: 'ae2:dense_energy_cell'
+        }
+    ).id(getRecipeID('mega_energy_cell'))
     
     evt.shaped(
         Item.of('appflux:flux_accessor', 1),
@@ -510,6 +524,76 @@ const registerAECTRecipes = (evt) => {
         }
     ).id(getRecipeID('adv_pattern_provider'))
     
+    evt.shaped(
+        Item.of('ae2:spatial_io_port', 1),
+        [
+            'TPT',
+            'SIS',
+            'HAH'
+        ],{
+            I: 'ae2:io_port',
+            T: item.iu.tempered_glass,
+            P: item.iu.microchip.lvl7,
+            H: tag.ingot.hafniumboride,
+            A: item.ae.processor.accumulation,
+            S: item.ae.quantum_singularity
+        }
+    ).id(getRecipeID('spatial_io_port'))
+    
+    evt.shaped(
+        Item.of('ae2:spatial_pylon', 1),
+        [
+            'TIT',
+            'CFC',
+            'TIT'
+        ],{
+            F: item.ae.fluix_block,
+            I: tag.doubleplate.tan_tung_haf,
+            C: item.iu.controller.lvl3,
+            T: item.iu.tempered_glass
+        }
+    ).id(getRecipeID('spatial_pylon'))
+    
+    evt.shaped(
+        Item.of('extendedae:assembler_matrix_wall', 1),
+        [
+            'BFB',
+            'EAE',
+            'BFB'
+        ],{
+            F: item.ae.fluix_crystal,
+            E: item.ingot.entro,
+            A: item.iu.machine_corpus.tech,
+            B: item.ingot.wolframite
+        }
+    ).id(getRecipeID('assembler_matrix_wall'))
+
+    evt.shaped(
+        Item.of('extendedae:assembler_matrix_glass', 1),
+        [
+            'BFB',
+            'EAE',
+            'BFB'
+        ],{
+            F: item.ae.fluix_crystal,
+            E: item.ingot.entro,
+            A: item.iu.machine_corpus.tech,
+            B: item.iu.tempered_glass
+        }
+    ).id(getRecipeID('assembler_matrix_glass'))
+    
+    evt.shaped(
+        Item.of('extendedae:assembler_matrix_frame', 1),
+        [
+            'QLQ',
+            'LEL',
+            'QLQ'
+        ],{
+            L: item.plate.lapis,
+            E: item.ae.extended_machine_frame,
+            Q: item.ae.fluix_crystal
+        }
+    ).id(getRecipeID('assembler_matrix_frame'))
     
     
     

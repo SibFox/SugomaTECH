@@ -30,7 +30,8 @@ const registerItemObliteration = () => {
         'create:brass_nugget', 'create:brass_sheet', 'create:brass_block',
         'createaddition:copper_rod', 'createaddition:iron_rod', 'createaddition:gold_rod',
         'createaddition:electrum_rod', 'createaddition:brass_rod', 'megacells:sky_osmium_ingot',
-        'megacells:sky_osmium_block'
+        'megacells:sky_osmium_block', 'extendedae:infinity_cobblestone_cell',
+        'extendedae:infinity_water_cell'
     ]
 
     // Check if itemID exists within obliterateItems

@@ -13,34 +13,63 @@ const registerAEMachinesRecipes = (evt) => {
     // ~~~~~~~ Кристальный сборщик ~~~~~~~
     
     aeAssemblerRecipe(evt, getRecipeID('entro_ingot'),
-    asItem(fluid.redstone, 25),
-    [
-        asItem(item.ae.entro_dust, 4),
-        asItem(item.ingot.vanadoalumite, 4),
-        asItem(item.plate.lapis, 4)
-    ],
-    asItem(item.ingot.entro, 8)
+        asItem(fluid.redstone, 10),
+        [
+            asItem(item.ae.entro_dust, 4),
+            asItem(item.ingot.vanadoalumite, 4),
+            asItem(item.plate.lapis, 4)
+        ],
+        asItem(item.ingot.entro, 8)
     )
 
     aeAssemblerRecipe(evt, getRecipeID('sky_steel'),
-    asItem(fluid.lava, 100),
-    [
-        asItem(item.ae.charged_certus_quartz_crystal, 4),
-        asItem(item.ingot.titanium_steel, 4),
-        asItem(item.ae.sky_dust, 4)
-    ],
-    asItem(item.ingot.sky_steel, 8)
+        asItem(fluid.lava, 100),
+        [
+            asItem(item.ae.charged_certus_quartz_crystal, 4),
+            asItem(item.ingot.titanium_steel, 4),
+            asItem(item.ae.sky_dust, 4)
+        ],
+        asItem(item.ingot.sky_steel, 8)
     )
 
     aeAssemblerRecipe(evt, getRecipeID('sky_bronze'),
-    asItem(fluid.lava, 100),
-    [
-        asItem(item.ae.certus_quartz_crystal, 4),
-        asItem(item.ingot.bronze, 4),
-        asItem(item.ae.sky_dust, 4)
-    ],
-    asItem(item.ingot.sky_bronze, 8)
+        asItem(fluid.lava, 100),
+        [
+            asItem(item.ae.certus_quartz_crystal, 4),
+            asItem(item.ingot.bronze, 4),
+            asItem(item.ae.sky_dust, 4)
+        ],
+        asItem(item.ingot.sky_bronze, 8)
     )
+
+    aeAssemblerRecipe(evt, getRecipeID('mega_pattern_provider'),
+        null,
+        [
+            asItem('#ae2:pattern_provider', 1),
+            asItem('ae2:capacity_card'),
+            asItem('minecraft:crafting_table', 3),
+            asItem(item.ae.processor.accumulation),
+            asItem(tag.ae.glass_cable, 6)
+        ],
+        asItem('megacells:mega_pattern_provider', 1)
+    )
+
+    aeAssemblerRecipe(evt, getRecipeID('mega_interface'),
+        null,
+        [
+            asItem('#ae2:pattern_provider', 1),
+            asItem('ae2:capacity_card'),
+            asItem(tag.glass, 3),
+            asItem(item.ae.processor.accumulation),
+            asItem(tag.ae.glass_cable, 6)
+        ],
+        asItem('megacells:mega_interface', 1)
+    )
+    
+    
+
+
+
 
     // ~~~~~~~ Реакционная камера ~~~~~~~
     
@@ -51,7 +80,7 @@ const registerAEMachinesRecipes = (evt) => {
     )
 
     aeReactionRecipe(evt, getRecipeID('entro_ingot'),
-        500000, asItem(fluid.redstone, 250),
+        500000, asItem(fluid.redstone, 40),
         [
             asItem(item.ae.entro_dust, 24),
             asItem(item.ingot.vanadoalumite, 24),
@@ -81,7 +110,7 @@ const registerAEMachinesRecipes = (evt) => {
     )
     
     aeReactionRecipe(evt, getRecipeID('shattered_singularity'),
-        200000, asItem(fluid.redstone, 250),
+        200000, asItem(fluid.redstone, 40),
         [
             asItem(item.ae.quantum_singularity, 2),
             asItem(item.ae.ender_dust, 2),
@@ -91,7 +120,7 @@ const registerAEMachinesRecipes = (evt) => {
     )
 
     aeReactionRecipe(evt, getRecipeID('quantum_singularity_1'),
-        50000, asItem(fluid.redstone, 100),
+        50000, asItem(fluid.redstone, 40),
         [
             asItem(item.ae.singularity, 4),
             asItem(item.ae.ender_dust, 4)
@@ -100,7 +129,7 @@ const registerAEMachinesRecipes = (evt) => {
     )
 
     aeReactionRecipe(evt, getRecipeID('quantum_singularity_2'),
-        50000, asItem(fluid.redstone, 100),
+        50000, asItem(fluid.redstone, 40),
         [
             asItem(item.ae.singularity, 4),
             asItem(item.enderpearl, 4)

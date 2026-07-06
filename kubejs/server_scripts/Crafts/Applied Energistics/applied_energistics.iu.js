@@ -18,16 +18,6 @@ const registerAEIURecipes = (evt) => {
         ]
     )
 
-    iuRecipe(evt, getRecipeID('liquid_redstone'), IUMachineCraft.DIVIDER.ITEM_FLUID,
-        [
-            asItem(item.redstone),
-            asItem(fluid.oxygen, 1)
-        ],[
-            asItem(fluid.redstone, 25),
-            asItem(fluid.oxygen, 5)
-        ]
-    )
-
     iuRecipe(evt, getRecipeID('certus_dust'), IUMachineCraft.MACERATOR,
         [
             asItem(item.ae.certus_quartz_crystal)
@@ -104,7 +94,7 @@ const registerAEIURecipes = (evt) => {
         [
             asItem(item.ae.processor.printed.logic),
             asItem(item.ae.printed_silicon),
-            asItem(fluid.redstone, 25)
+            asItem(fluid.redstone, 10)
         ],[
             asItem(item.ae.processor.logic)
         ]
@@ -114,7 +104,7 @@ const registerAEIURecipes = (evt) => {
         [
             asItem(item.ae.processor.printed.calculation),
             asItem(item.ae.printed_silicon),
-            asItem(fluid.redstone, 25)
+            asItem(fluid.redstone, 10)
         ],[
             asItem(item.ae.processor.calculation)
         ]
@@ -124,7 +114,7 @@ const registerAEIURecipes = (evt) => {
         [
             asItem(item.ae.processor.printed.engineering),
             asItem(item.ae.printed_silicon),
-            asItem(fluid.redstone, 25)
+            asItem(fluid.redstone, 10)
         ],[
             asItem(item.ae.processor.engineering)
         ]
@@ -134,7 +124,7 @@ const registerAEIURecipes = (evt) => {
         [
             asItem(item.ae.processor.printed.energy),
             asItem(item.ae.printed_silicon),
-            asItem(fluid.redstone, 25)
+            asItem(fluid.redstone, 10)
         ],[
             asItem(item.ae.processor.energy)
         ]
@@ -144,7 +134,7 @@ const registerAEIURecipes = (evt) => {
         [
             asItem(item.ae.processor.printed.concurrent),
             asItem(item.ae.printed_silicon),
-            asItem(fluid.redstone, 25)
+            asItem(fluid.redstone, 10)
         ],[
             asItem(item.ae.processor.concurrent)
         ]
@@ -235,6 +225,19 @@ const registerAEIURecipes = (evt) => {
             asItem(item.iu.cooling_system.lvl2)
         ],[
             asItem(item.ae.core.formation)
+        ],
+        { 'temperature': 1000 }
+    )
+
+    iuRecipe(evt, getRecipeID('blank_pattern'), IUMachineCraft.CIRCUIT_MANUFACTURER,
+        [
+            asItem(item.iu.rom.corpus, 2),
+            asItem(item.iu.power_slot),
+            asItem(tag.certus_quartz, 3),
+            asItem(item.glowstone, 4),
+            asItem(item.iu.ram.interface)
+        ],[
+            asItem('ae2:blank_pattern')
         ],
         { 'temperature': 1000 }
     )
@@ -342,22 +345,18 @@ const registerAEIURecipes = (evt) => {
         ],
         { 'temperature': 3000 }
     )
-    
-    iuRecipe(evt, getRecipeID('blank_pattern'), IUMachineCraft.CIRCUIT_MANUFACTURER,
+
+    iuRecipe(evt, getRecipeID('bulk_item_cell'), IUMachineCraft.CIRCUIT_MANUFACTURER,
         [
             asItem(item.iu.rom.corpus, 2),
             asItem(item.iu.power_slot),
-            asItem(tag.certus_quartz, 3),
-            asItem(item.glowstone, 4),
-            asItem(item.iu.ram.interface)
+            asItem(item.ingot.netherite, 3),
+            asItem('megacells:bulk_cell_component'),
+            asItem(item.cn.ssd)
         ],[
-            asItem('ae2:blank_pattern')
-        ],
-        { 'temperature': 1000 }
-    )
-    
-    
-    
+            asItem('megacells:bulk_item_cell')
+        ]
+    )    
     
 
 }
