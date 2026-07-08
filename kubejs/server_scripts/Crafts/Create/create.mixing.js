@@ -35,7 +35,12 @@ const registerCreateMixingRecipes = (evt) => {
         ]
     ).heated().id(getRecipeID('electrum'))
 
-    
+    evt.recipes.create.mixing(Item.of(item.ingot.brass, 1), 
+        [
+            Ingredient.of(tag.ingot.copper),
+            Ingredient.of(tag.ingot.zinc),
+        ]
+    ).heated().id(getRecipeID('brass'))
 
     
 }

@@ -33,14 +33,12 @@ const registerCyberneticsCTRecipes = (evt) => {
     evt.shaped(
         Item.of(item.cn.diodes, 1),
         [
-            'TCT',
-            'PPP',
-            'ERE'
+            ' E ',
+            'TTT',
+            ' R '
         ],{
-            T: item.iu.transistor.lvl2,
-            C: item.iu.capacitor.lvl3,
-            P: item.plate.titanium,
-            E: item.nugget.electrum,
+            T: tag.rod.titanium,
+            E: tag.ingot.electrum,
             R: item.ingot.red_alloy
         }
     ).id(getRecipeID('diodes'))
@@ -162,4 +160,16 @@ const registerCyberneticsCTRecipes = (evt) => {
     ).id(getRecipeID('surgery_chamber'))
     
     
+    // ~~~~~~~ Grafting Table
+    evt.custom({
+        "type": "createcybernetics:grafting_table",
+        "wetware": [
+            { "item": item.cn.bodypart.muscle },
+            { "item": item.iu.spool.lvl1 },
+            { "item": item.redstone },
+            { "item": item.redstone }
+        ],
+        "result": { "id": "createcybernetics:wetware_electrocytemuscle", "count": 1 }
+    }).id(getRecipeID('electrocytemuscle'))
+
 }

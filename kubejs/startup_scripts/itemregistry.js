@@ -10,7 +10,13 @@ const registerItems = (evt) => {
     evt.create('pack_frame')
     evt.create('hardened_leather')
     evt.create('module_cybernetics')
-
+    evt.create('jar')
+    evt.create('embryo')
+    evt.create('jar_embryo')
+    evt.create('kloverghett_seed')
+    evt.create('kloverghett_crystal')
+    evt.create('kloverghett_part')
+    evt.create('kloverghett_treated')
 
     for (let item of [
         'copper', 'bronze', 'gold', 'iron', 'lead', 'steel', 
@@ -34,6 +40,8 @@ const registerItems = (evt) => {
     {
         evt.create('incomplete_' + item).texture('kubejs:item/plates/' + item + '_plate')
     }
+
+    evt.create('peeper', 'helmet').material('kubejs:bio').displayName('Глазастик').maxDamage(163)
 
     console.info('Item registry passed')
 }

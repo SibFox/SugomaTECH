@@ -24,6 +24,7 @@ const registerRecipeRemovings = (evt) => {
     evt.remove({ output: "create:crushed_raw_silver" })
     evt.remove({ output: "create:crushed_raw_silver" })
     evt.remove({ output: "createcybernetics:crushedtitanium" })
+    evt.remove({ id: 'minecraft:netherite_ingot' })
 
     evt.remove({ output: 'advanced_ae:quantum_leggings' })
     evt.remove({ output: 'advanced_ae:quantum_helmet' })
@@ -37,6 +38,8 @@ const registerRecipeRemovings = (evt) => {
     evt.remove({ output: 'createaddition:electrum_nugget', type: 'createaddition:charging' })
     evt.remove({ output: 'createaddition:electrum_ingot', type: 'createaddition:charging' })
     evt.remove({ output: 'createaddition:electrum_sheet', type: 'createaddition:charging' })
+    
+    evt.remove({ id: 'createcybernetics:wetware_spidereyes' }) // Уменьшает производительность в 8 раз, написать об этом разрабу
 
     console.info('Recipe removing passed')
 }

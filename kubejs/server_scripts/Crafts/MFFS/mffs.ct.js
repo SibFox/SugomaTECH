@@ -22,7 +22,7 @@ const registerMFFSCTRecipes = (evt) => {
         [
             [ null, item.iu.battery.energy_crystal.lvl2, null ],
             [ item.iu.module.synthesis.photon, item.mffs.focus_matrix, item.iu.module.slot.x8 ],
-            [ item.iu.module.combining.lvl2, item.iu.machine_corpus.advanced_tech, item.iu.module.tank.lvl4 ]
+            [ item.iu.module.combining.lvl2, item.iu.machine_corpus.tech_adv, item.iu.module.tank.lvl4 ]
         ],
     'mffs:projector')
 
@@ -30,7 +30,7 @@ const registerMFFSCTRecipes = (evt) => {
         [
             [ null, item.iu.module.generator.lvl2, null ],
             [ null, item.mffs.focus_matrix, null ],
-            [ item.iu.module.tank.lvl4, item.iu.machine_corpus.advanced_tech, item.iu.module.slot.x1 ]
+            [ item.iu.module.tank.lvl4, item.iu.machine_corpus.tech_adv, item.iu.module.slot.x1 ]
         ],
     'mffs:coercion_deriver')
 
@@ -46,7 +46,7 @@ const registerMFFSCTRecipes = (evt) => {
         [
             [ null, item.iu.module.scaner.lvl2, null ],
             [ item.iu.module.slot.x3, item.mffs.focus_matrix, item.iu.module.tank.lvl1 ],
-            [ null, item.iu.machine_corpus.advanced_tech, null ]
+            [ null, item.iu.machine_corpus.tech_adv, null ]
         ],
     'mffs:biometric_identifier')
 
@@ -54,7 +54,7 @@ const registerMFFSCTRecipes = (evt) => {
         [
             [ item.iu.module.scaner.lvl2, 'mffs:shock_module', item.iu.module.preservation ],
             [ null, item.mffs.focus_matrix, null ],
-            [ item.iu.module.slot.x8, item.iu.machine_corpus.advanced_tech, item.iu.module.slot.x8 ]
+            [ item.iu.module.slot.x8, item.iu.machine_corpus.tech_adv, item.iu.module.slot.x8 ]
         ],
     'mffs:interdiction_matrix')
 

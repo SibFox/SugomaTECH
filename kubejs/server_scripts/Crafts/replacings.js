@@ -266,7 +266,46 @@ const registerRecipeReplacings = (evt) => {
         'industrialupgrade:crushed/zinc'
     )
     
+    evt.replaceInput({ input: 'create:brass_ingot' },
+        'create:brass_ingot',
+        tag.ingot.brass
+    )
+    evt.replaceOutput({ output: 'create:brass_ingot' },
+        'create:brass_ingot',
+        item.ingot.brass
+    )
     
+    evt.replaceInput({ input: 'create:brass_nugget' },
+        'create:brass_nugget',
+        tag.nugget.brass
+    )
+    evt.replaceOutput({ output: 'create:brass_nugget' },
+        'create:brass_nugget',
+        item.nugget.brass
+    )
+    
+    evt.replaceInput({ input: 'create:brass_sheet' },
+        'create:brass_sheet',
+        tag.plate.brass
+    )
+    evt.replaceOutput({ output: 'create:brass_sheet' },
+        'create:brass_sheet',
+        item.plate.brass
+    )
+    
+    evt.replaceInput({ input: 'create:brass_block' },
+        'create:brass_block',
+        tag.ore_block.brass
+    )
+    evt.replaceOutput({ output: 'create:brass_block' },
+        'create:brass_block',
+        item.ore_block.brass
+    )
+    
+    
+
+
+
     
     evt.replaceInput({ input: 'createcybernetics:component_wiring' },
         'createcybernetics:component_wiring',
@@ -283,6 +322,12 @@ const registerRecipeReplacings = (evt) => {
         item.iu.tempered_glass
     )
 
+    evt.replaceInput({ input: 'industrialupgrade:itemdust/emerald_dust' },
+        'industrialupgrade:itemdust/emerald_dust',
+        tag.dusts.emerald
+    )
+    
+    
 
 
 

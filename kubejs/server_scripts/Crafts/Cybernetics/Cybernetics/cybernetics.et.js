@@ -14,7 +14,7 @@ const registerCyberneticsETRecipes = (evt) => {
             'ISCSI',
             ' TST ',
             'RTGTR',
-            ' TST ',
+            ' TQT ',
             '  TT ',
         ],{
             T: item.plate.titanium,
@@ -23,22 +23,24 @@ const registerCyberneticsETRecipes = (evt) => {
             I: item.ingot.titanium,
             C: tag.cybernetics_data_shards,
             R: 'minecraft:red_dye',
+            Q: 'ae2:cell_component_64k'
         }
     )
 
     cnRecipe(evt, asItem('createcybernetics:boneupgrades_sandevistan'),
         [
-            ' SPT ',
+            ' SAT ',
             'SGPE ',
-            ' SPT ',
+            ' SAT ',
             'SGPE ',
-            ' SPT ',
+            ' SAT ',
         ],{
             S: item.cn.synthnerves,
             P: item.plate.titanium,
             T: item.cn.titanium_plating,
-            G: item.nugget.electrum,
-            E: item.create.electron_tube
+            G: item.ingot.red_alloy,
+            E: item.create.electron_tube,
+            A: item.cn.actuator
         }
     )
 
@@ -184,7 +186,7 @@ const registerCyberneticsETRecipes = (evt) => {
             G: item.cn.gpu,
             R: item.ingot.red_alloy,
             M: item.iu.microchip.lvl6,
-            Z: 'minecraft:comparator'
+            Z: item.create.control_chip
         }
     )
 
@@ -198,11 +200,11 @@ const registerCyberneticsETRecipes = (evt) => {
         ],{
             N: item.cn.synthnerves,
             R: item.ingot.red_alloy,
-            S: item.cn.storage,
+            S: item.ae.processor.calculation,
             C: item.cn.ssd,
             G: item.cn.gpu,
             M: item.iu.microchip.lvl6,
-            Z: 'minecraft:comparator'
+            Z: item.ae.processor.concurrent
         }
     )
 
@@ -216,7 +218,7 @@ const registerCyberneticsETRecipes = (evt) => {
         ],{
             N: item.cn.synthnerves,
             R: item.ingot.red_alloy,
-            S: item.cn.storage,
+            S: 'ae2:cell_component_64k',
             C: item.cn.ssd,
             G: item.cn.gpu,
             M: item.iu.microchip.lvl6
@@ -233,8 +235,8 @@ const registerCyberneticsETRecipes = (evt) => {
         ],{
             S: item.cn.synthnerves,
             R: item.ingot.red_alloy,
-            C: 'minecraft:comparator',
-            K: 'minecraft:compass',
+            C: item.create.control_chip,
+            K: 'simulated:gyroscopic_mechanism',
             Z: item.cn.ssd,
             G: item.cn.gpu,
             M: item.iu.microchip.lvl6
@@ -275,7 +277,7 @@ const registerCyberneticsETRecipes = (evt) => {
             S: item.cn.synthnerves,
             G: item.nugget.electrum,
             B: item.cn.bodypart.brain,
-            N: 'minecraft:observer'
+            N: item.ae.processor.logic
         }
     )
 
@@ -288,10 +290,10 @@ const registerCyberneticsETRecipes = (evt) => {
             ' WSW ',
         ],{
             E: item.create.electron_tube,
-            R: 'minecraft:lightning_rod',
+            R: tag.rod.electrum,
             O: item.obsidian,
-            F: 'minecraft:flint_and_steel',
-            W: item.iu.spool.lvl1,
+            F: item.create.lighter,
+            W: item.iu.spool.lvl2,
             S: item.cn.synthnerves
         }
     )
@@ -349,9 +351,9 @@ const registerCyberneticsETRecipes = (evt) => {
     cnRecipe(evt, asItem('createcybernetics:boneupgrades_boneflex'),
         [
             'MT   ',
-            'TSWG ',
+            'TSWS ',
             ' WBW ',
-            ' GW  ',
+            ' SWG ',
             '     ',
         ],{
             M: item.cn.diodes,
@@ -359,23 +361,25 @@ const registerCyberneticsETRecipes = (evt) => {
             S: 'minecraft:sugar',
             W: item.iu.spool.lvl1,
             B: item.bone,
-            G: item.dye.green
+            G: 'geneticsresequenced:dna_helix[geneticsresequenced:gene=\
+            "geneticsresequenced:step_assist"]' // Ген Высокого шага
         }
     )
 
     cnRecipe(evt, asItem('createcybernetics:heartupgrades_cyberheart'),
         [
             '     ',
-            'TPCPT',
-            'TFRFT',
-            'TPCPT',
+            'TQCFT',
+            'TPRPT',
+            'TFCQT',
             '     ',
         ],{
             T: item.cn.titanium_plating,
-            P: 'create:fluid_pipe',
-            C: 'minecraft:comparator',
-            R: item.ingot.red_alloy,
-            F: 'create:mechanical_pump'
+            Q: 'industrialupgrade:wiring/itemcable24',
+            P: 'industrialupgrade:wiring/itemcable26',
+            F: 'industrialupgrade:wiring/itemcable25',
+            C: item.create.control_chip,
+            R: item.ingot.red_alloy
         }
     )
 
@@ -519,15 +523,16 @@ const registerCyberneticsETRecipes = (evt) => {
     cnRecipe(evt, asItem('createcybernetics:heartupgrades_stemcell'),
         [
             'TT TT',
-            'TGBGT',
-            ' BSB ',
-            'TTBTT',
-            'TG GT'
+            'TMSMT',
+            ' SES ',
+            'TMSMT',
+            'TT TT'
         ],{
             T: item.cn.titanium_plating,
-            G: 'minecraft:ghast_tear',
+            E: item.custom.embryo,
             B: item.ore_block.titanium,
-            S: item.cn.synthnerves
+            S: item.cn.synthnerves,
+            M: item.cn.titanium_mesh
         }
     )
 
@@ -572,10 +577,10 @@ const registerCyberneticsETRecipes = (evt) => {
         ],{
             T: item.cn.titanium_plating,
             S: item.cn.synthnerves,
-            W: item.iu.spool.lvl1,
-            R: 'minecraft:redstone_torch',
-            N: 'minecraft:observer',
-            I: 'minecraft:lightning_rod'
+            W: item.iu.spool.superconducting.lvl2,
+            R: item.create.electrical_gizmo,
+            N: item.ae.processor.logic,
+            I: tag.rod.electrum
         }
     )
 
@@ -668,14 +673,17 @@ const registerCyberneticsETRecipes = (evt) => {
     cnRecipe(evt, asItem('createcybernetics:muscleupgrades_synthmuscle'),
         [
             '   BM',
-            ' MBMB',
-            ' BTB ',
-            'BMBM ',
+            ' MBOB',
+            ' BMB ',
+            'BTBM ',
             'MB   '
         ],{
             M: item.cn.titanium_mesh,
             B: item.cn.bodypart.muscle,
-            T: 'minecraft:ghast_tear'
+            T: 'geneticsresequenced:plasmid[geneticsresequenced:plasmid_progress=\
+            {dna_points:20,gene:"geneticsresequenced:strength"}]', // Плазмид Силы
+            O: 'geneticsresequenced:plasmid[geneticsresequenced:plasmid_progress=\
+            {dna_points:20,gene:"geneticsresequenced:speed"}]' // Плазмид Скорости
         }
     )
 
@@ -708,7 +716,7 @@ const registerCyberneticsETRecipes = (evt) => {
             S: item.cn.storage,
             N: item.cn.synthnerves,
             R: item.ingot.red_alloy,
-            F: 'minecraft:flint_and_steel', // заменить на имплант зажигалку
+            F: item.create.lighter,
             D: item.ia.redstone_mechanism
         }
     )
@@ -858,25 +866,26 @@ const registerCyberneticsETRecipes = (evt) => {
             ' TTT '
         ],{
             T: item.cn.titanium_plating,
-            G: item.dye.green,
+            G: item.cn.titanium_mesh,
             P: item.custom.conducting_organic_polymer,
             E: item.iu.capacitor.lvl3,
             Z: item.iu.transistor.lvl2,
-            M: 'minecraft:milk_bucket', // заменить на что-то генетическое
+            M: 'geneticsresequenced:plasmid[geneticsresequenced:plasmid_progress={dna_points:2,gene:"geneticsresequenced:weakness"}]', // Ген слабости
             D: item.ia.redstone_mechanism
         }
     )
 
     cnRecipe(evt, asItem('createcybernetics:organsupgrades_metabolic'),
         [
-            '  TWW',
+            '  TQW',
             'LTNT ',
             'LTSTL',
             ' TNTL',
-            'WWT  '
+            'WQT  '
         ],{
             T: item.cn.titanium_plating,
             W: item.iu.spool.lvl1,
+            Q: item.iu.spool.superconducting.lvl1,
             L: item.cn.bodypart.liver,
             N: item.cn.synthnerves,
             S: item.cn.storage
@@ -1145,16 +1154,15 @@ const registerCyberneticsETRecipes = (evt) => {
         [
             ' TTT ',
             'WTMTW',
-            'RTGTB',
+            'СTGTС',
             'WTMTW',
             ' TTT '
         ],{
             T: item.cn.titanium_plating,
             W: item.iu.spool.lvl2,
-            R: item.dye.red,
-            B: item.dye.blue,
-            M: 'minecraft:glistering_melon_slice',
-            G: 'minecraft:ghast_tear'
+            С: item.create.control_chip,
+            M: 'geneticsresequenced:dna_helix[geneticsresequenced:gene="geneticsresequenced:more_hearts"]', // Ген Здоровья
+            G: 'geneticsresequenced:plasmid[geneticsresequenced:plasmid_progress={dna_points:50,gene:"geneticsresequenced:regeneration_4"}]' // Плазмид Регенрация 4
         }
     )
     
@@ -1267,7 +1275,7 @@ const registerCyberneticsETRecipes = (evt) => {
             'MAIAM'
         ],{
             M: item.cn.upgradepart.bone_battery,
-            N: tag.nugget.electrum,
+            N: tag.rod.electrum,
             I: tag.ingot.electrum,
             A: item.cn.actuator,
             S: item.iu.spool.superconducting.lvl1,
@@ -1306,6 +1314,37 @@ const registerCyberneticsETRecipes = (evt) => {
         }
     )
     
-    
+    cnRecipe(evt, asItem('createcybernetics:brainupgrades_iceprotocol'),
+        [
+            'TTTTT',
+            'TLGLT',
+            'TSEST',
+            'TCCCT',
+            'TTTTT'
+        ],{
+            T: item.cn.titanium_plating,
+            E: item.cn.diodes,
+            C: item.ae.processor.concurrent,
+            L: item.ae.processor.logic,
+            G: item.ae.processor.engineering,
+            S: item.cn.ssd
+        }
+    )
 
+    cnRecipe(evt, asItem('createcybernetics:data_shard_infolog'),
+        [
+            'IIIII',
+            ' PSP ',
+            ' PEP ',
+            ' PSP ',
+            '  PP '
+        ],{
+            I: tag.ingot.titanium,
+            P: tag.plate.titanium,
+            E: item.ingot.red_alloy,
+            S: item.cn.ssd
+        }
+    )
+    
+    
 }

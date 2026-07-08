@@ -302,3 +302,7 @@ config/aeroworks-client.toml
 config/createdeliveryrequired-client.toml
 config/createthrusters-client.toml
 config/tracks-server.toml
+config/createthrusters-server.toml
+config/createthrusterslib-server.toml
+/.vs
+config/sable_kardanwelle*

@@ -127,4 +127,23 @@ const registerCreateSequencedRecipes = (evt) => {
         .loops(metal[1])        
     }
 
+    let transition = 'simulated:incomplete_gyroscopic_mechanism'
+    evt.recipes.create.sequenced_assembly(
+        [
+            CreateItem.of('simulated:gyroscopic_mechanism', 2.0),
+            CreateItem.of(item.plate.iron, 0.08),
+            CreateItem.of(item.create.andesite_alloy, 0.08),
+            CreateItem.of(item.nugget.brass, 0.03),
+            CreateItem.of('industrialupgrade:crushed/iron', 0.02)
+        ],
+        tag.plate.iron,
+        [
+            evt.recipes.create.deploying(transition, [transition, item.create.cogwheel.small.wooden]),
+            evt.recipes.create.deploying(transition, [transition, item.create.shaft]),
+            evt.recipes.create.deploying(transition, [transition, item.nugget.brass])
+        ]
+    )
+    .transitionalItem(transition)
+    .loops(5)
+    .id('gyroscopic_mechanism')
 }

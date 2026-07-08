@@ -38,7 +38,7 @@ const registerCyberneticsIURecipes = (evt) => {
             asItem(item.iu.rom.corpus),
             asItem(item.iu.chip.lvl3),
             asItem('industrialupgrade:crafting_elements/crafting_560_element'),
-            asItem(item.iu.capacitor.lvl3, 2),
+            asItem(item.iu.capacitor.lvl3),
             asItem(item.iu.ram.interface)
         ],[
             asItem(item.cn.ssd)

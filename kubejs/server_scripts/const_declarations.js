@@ -8,6 +8,7 @@
 const item = {
     // ~~~~~~~~~~~~~~~~~~~~ Minecraft ~~~~~~~~~~~~~~~~~~~~ 
     redstone: 'minecraft:redstone',
+    redstone_block: 'minecraft:redstone_block',
     lapis: 'minecraft:lapis_lazuli',
     quartz: 'minecraft:quartz',
     diamond: 'minecraft:diamond',
@@ -38,6 +39,11 @@ const item = {
     phantom_membrane: 'minecraft:phantom_membrane',
     amethyst_shard: 'minecraft:amethyst_shard',
     string: 'minecraft:string',
+    repeater: 'minecraft:repeater',
+    redstone_torch: 'minecraft:redstone_torch',
+    comparator: 'minecraft:comparator',
+    experience_bottle: 'minecraft:experience_bottle',
+    echo_shard: 'minecraft:echo_shard',
 
     // ~~~~~~~~~~~~~~~~~~~~ Farmer's Delight ~~~~~~~~~~~~~~~~~~~~ 
     milk_bottle: 'farmersdelight:milk_bottle',
@@ -110,6 +116,7 @@ const item = {
         platinum: 'industrialupgrade:nugget/platinum',
         bronze: 'createbigcannons:bronze_scrap',
         steel: 'createbigcannons:steel_scrap',
+        brass: 'industrialupgrade:alloynugget/red_brass',
     },
 
     ingot: {
@@ -118,8 +125,10 @@ const item = {
         gold: 'minecraft:gold_ingot',
         zinc: 'industrialupgrade:itemingots/zinc_ingot',
         bronze: 'industrialupgrade:itemingots/bronze_ingot',
+        brass: 'industrialupgrade:alloyingot/red_brass',
         electrum: 'industrialupgrade:itemingots/electrum_ingot',
         red_alloy: 'morered:red_alloy_ingot',
+        netherite_scrap: 'minecraft:netherite_scrap',
         netherite: 'minecraft:netherite_ingot',
         gunmetal: 'pointblank:gunmetal_ingot',
         titanium: 'industrialupgrade:itemingots/titanium_ingot',
@@ -135,6 +144,9 @@ const item = {
         sky_steel: 'megacells:sky_steel_ingot',
         entro: 'extendedae:entro_ingot',
         platinum: 'industrialupgrade:itemingots/platinum_ingot',
+
+        superalloy_haynes: 'industrialupgrade:alloyingot/superalloy_haynes',
+        superalloy_rene: 'industrialupgrade:alloyingot/superalloy_rene',
     },
 
     plate: {
@@ -149,7 +161,8 @@ const item = {
         platinum: 'industrialupgrade:itemplates/platinum_plate',
         titanium_steel: 'industrialupgrade:crafting_elements/crafting_501_element',
         niobium_titanium: 'industrialupgrade:alloyplate/niobium_titanium',
-        red_brass: 'industrialupgrade:alloyplate/red_brass',
+        brass: 'industrialupgrade:alloyplate/red_brass',
+        wolframite: 'industrialupgrade:crafting_elements/crafting_655_element',
     },
 
     rod: {
@@ -167,6 +180,9 @@ const item = {
         titanium: 'industrialupgrade:baseblockingot/titanium',
         platinum: 'industrialupgrade:baseblockingot/platinum',
         bronze: 'industrialupgrade:blockresource/bronze_block',
+        brass: 'industrialupgrade:baseblockalloy/red_brass',
+        sky_steel: 'megacells:sky_steel_block',
+        sky_bronze: 'megacells:sky_bronze_block',
     },
 
     custom: {
@@ -175,7 +191,13 @@ const item = {
         conducting_organic_polymer: 'kubejs:conducting_organic_polymer',
         synth_nerve_cables: 'kubejs:synth_nerve_cables',
         pack_frame: 'kubejs:pack_frame',
-        hardened_leather: 'kubejs:hardened_leather'
+        hardened_leather: 'kubejs:hardened_leather',
+        embryo: 'kubejs:embryo',
+        embryo_in_jar: 'kubejs:jar_embryo',
+        kloverghett_seed: 'kubejs:kloverghett_seed',
+        kloverghett_crystal: 'kubejs:kloverghett_crystal',
+        kloverghett_part: 'kubejs:kloverghett_part',
+        kloverghett_treated: 'kubejs:kloverghett_treated',
     },
 
     // ~~~~~~~~~~~~~~~~~~~~ INDUSTRIAL UPGRADE ~~~~~~~~~~~~~~~~~~~~ 
@@ -199,6 +221,7 @@ const item = {
         laser_component: 'industrialupgrade:crafting_elements/crafting_354_element',
         molecular_core: 'industrialupgrade:itemiucrafring/itemmtcore',
         upgrade_casing: 'industrialupgrade:upgrade_casing',
+        energy_flow_generator: 'industrialupgrade:crafting_elements/crafting_731_element',
 
         cylinder: 'industrialupgrade:crafting_elements/crafting_46_element',
         heating_cylinder: 'industrialupgrade:crafting_elements/crafting_70_element',
@@ -207,6 +230,14 @@ const item = {
         charged_quartz: 'industrialupgrade:charged_quartz',
         charged_redstone: 'industrialupgrade:charged_redstone',
 
+        ruby: 'industrialupgrade:preciousgem/ruby_gem',
+        saphire: 'industrialupgrade:preciousgem/sapphire_gem',
+        topaz: 'industrialupgrade:preciousgem/topaz_gem',
+
+        grown_silicon_crystal: 'industrialupgrade:crafting_elements/crafting_492_element',
+        silicon_crystal: 'industrialupgrade:crafting_elements/crafting_493_element',
+        polished_silicon_disk: 'industrialupgrade:crafting_elements/crafting_494_element',
+        polished_silicon_crystal: 'industrialupgrade:crafting_elements/crafting_495_element',
     
         wire: {
             bare: {
@@ -243,7 +274,6 @@ const item = {
             sulfur: 'industrialupgrade:itemdust/sulfur_dust',
             stone: 'industrialupgrade:itemdust/stone_dust',
             small: {
-                energy: 'industrialupgrade:smalldust/energium',
                 calcium_phosphate: 'industrialupgrade:smalldust/calcium_phosphate',
                 potassium: 'industrialupgrade:smalldust/potassium',
                 silicon: 'industrialupgrade:smalldust/silico',
@@ -316,140 +346,6 @@ const item = {
             lvl5: 'industrialupgrade:crafting_elements/crafting_621_element',
         },
 
-        upgrade: {
-            overclocker: 'industrialupgrade:upgrades/overclocker',
-        },
-
-        module: {
-            template: {
-                lvl1: 'industrialupgrade:crafting_elements/crafting_21_element',
-                lvl2: 'industrialupgrade:crafting_elements/crafting_25_element',
-                lvl3: 'industrialupgrade:crafting_elements/crafting_23_element',
-                lvl4: 'industrialupgrade:crafting_elements/crafting_24_element',
-                lvl5: 'industrialupgrade:crafting_elements/crafting_620_element',
-            },
-            slot: {
-                x1: 'industrialupgrade:crafting_elements/crafting_44_element',
-                x2: 'industrialupgrade:crafting_elements/crafting_47_element',
-                x3: 'industrialupgrade:crafting_elements/crafting_49_element',
-                x4: 'industrialupgrade:crafting_elements/crafting_51_element',
-                x8: 'industrialupgrade:crafting_elements/crafting_52_element',
-            },
-            scaner: {
-                lvl1: 'industrialupgrade:crafting_elements/crafting_170_element',
-                lvl2: 'industrialupgrade:crafting_elements/crafting_171_element',
-                lvl3: 'industrialupgrade:crafting_elements/crafting_172_element',
-                lvl4: 'industrialupgrade:crafting_elements/crafting_173_element',
-                lvl5: 'industrialupgrade:crafting_elements/crafting_635_element',
-            },
-            wireless: 'industrialupgrade:crafting_elements/crafting_90_element',
-            energy: 'industrialupgrade:crafting_elements/crafting_60_element',
-            energy_adv: 'industrialupgrade:crafting_elements/crafting_614_element',
-            generator: {
-                lvl1: 'industrialupgrade:crafting_elements/crafting_11_element',
-                lvl2: 'industrialupgrade:crafting_elements/crafting_234_element',
-                lvl3: 'industrialupgrade:crafting_elements/crafting_232_element',
-                lvl4: 'industrialupgrade:crafting_elements/crafting_233_element',
-                lvl5: 'industrialupgrade:crafting_elements/crafting_629_element'
-            },
-            redsonte_generator: {
-                lvl1: 'industrialupgrade:crafting_elements/crafting_258_element',
-                lvl2: 'industrialupgrade:crafting_elements/crafting_261_element',
-                lvl3: 'industrialupgrade:crafting_elements/crafting_259_element',
-                lvl4: 'industrialupgrade:crafting_elements/crafting_260_element',
-                lvl5: 'industrialupgrade:crafting_elements/crafting_628_element'
-            },
-            gas_generator: 'industrialupgrade:crafting_elements/crafting_263_element',
-            genetics: 'industrialupgrade:crafting_elements/crafting_659_element',
-            analyzer: 'industrialupgrade:crafting_elements/crafting_226_element',
-            liquid: {
-                lvl1: 'industrialupgrade:crafting_elements/crafting_27_element',
-                lvl2: 'industrialupgrade:crafting_elements/crafting_6_element',
-                lvl3: 'industrialupgrade:crafting_elements/crafting_83_element',
-                lvl4: 'industrialupgrade:crafting_elements/crafting_107_element',
-                lvl5: 'industrialupgrade:crafting_elements/crafting_603_element',
-            },
-            tank: {
-                lvl1: 'industrialupgrade:crafting_elements/crafting_43_element',
-                lvl2: 'industrialupgrade:crafting_elements/crafting_45_element',
-                lvl3: 'industrialupgrade:crafting_elements/crafting_48_element',
-                lvl4: 'industrialupgrade:crafting_elements/crafting_50_element',
-                storage: 'industrialupgrade:crafting_elements/crafting_154_element',
-            },
-            extractor: {
-                lvl1: 'industrialupgrade:crafting_elements/crafting_159_element',
-                lvl2: 'industrialupgrade:crafting_elements/crafting_160_element',
-                lvl3: 'industrialupgrade:crafting_elements/crafting_161_element',
-                lvl4: 'industrialupgrade:crafting_elements/crafting_162_element',
-                lvl5: 'industrialupgrade:crafting_elements/crafting_615_element',
-            },
-            transformation: 'industrialupgrade:crafting_elements/crafting_75_element',
-            combining: {
-                lvl1: 'industrialupgrade:crafting_elements/crafting_124_element',
-                lvl2: 'industrialupgrade:crafting_elements/crafting_135_element',
-                lvl3: 'industrialupgrade:crafting_elements/crafting_146_element',
-                lvl4: 'industrialupgrade:crafting_elements/crafting_157_element',
-                lvl5: 'industrialupgrade:crafting_elements/crafting_632_element',
-            },
-            upgrade: 'industrialupgrade:crafting_elements/crafting_66_element',
-            downgrade: 'industrialupgrade:crafting_elements/crafting_67_element',
-            circuit: 'industrialupgrade:crafting_elements/crafting_73_element',
-            potion: 'industrialupgrade:crafting_elements/crafting_661_element',
-            brewing: 'industrialupgrade:crafting_elements/crafting_658_element',
-            heat: {
-                lvl1: 'industrialupgrade:crafting_elements/crafting_39_element',
-                lvl2: 'industrialupgrade:crafting_elements/crafting_15_element',
-                lvl3: 'industrialupgrade:crafting_elements/crafting_91_element',
-                lvl4: 'industrialupgrade:crafting_elements/crafting_115_element',
-                lvl5: 'industrialupgrade:crafting_elements/crafting_613_element',
-            },
-            day: 'industrialupgrade:crafting_elements/crafting_37_element',
-            night: 'industrialupgrade:crafting_elements/crafting_30_element',
-            preservation: 'industrialupgrade:crafting_elements/crafting_264_element',
-            dna: 'industrialupgrade:crafting_elements/crafting_676_element',
-            speed: 'industrialupgrade:crafting_elements/crafting_155_element',
-            synthesis: {
-                plastic: 'industrialupgrade:crafting_elements/crafting_65_element',
-                oil: 'industrialupgrade:crafting_elements/crafting_98_element',
-                radiation: 'industrialupgrade:crafting_elements/crafting_99_element',
-                photon: 'industrialupgrade:crafting_elements/crafting_100_element',
-            },
-            bio: {
-                lvl1: 'industrialupgrade:crafting_elements/crafting_64_element',
-                lvl2: 'industrialupgrade:crafting_elements/crafting_19_element',
-                lvl3: 'industrialupgrade:crafting_elements/crafting_95_element',
-                lvl4: 'industrialupgrade:crafting_elements/crafting_119_element',
-                lvl5: 'industrialupgrade:crafting_elements/crafting_611_element',
-            },
-            crafting: {
-                lvl1: 'industrialupgrade:crafting_elements/crafting_128_element',
-                lvl2: 'industrialupgrade:crafting_elements/crafting_129_element',
-                lvl3: 'industrialupgrade:crafting_elements/crafting_130_element',
-                lvl4: 'industrialupgrade:crafting_elements/crafting_131_element',
-                lvl5: 'industrialupgrade:crafting_elements/crafting_605_element',
-            },
-            repulsor_shield: 'industrialupgrade:crafting_elements/crafting_439_element',
-            ore: 'industrialupgrade:crafting_elements/crafting_53_element',
-            boosting: 'industrialupgrade:crafting_elements/crafting_155_element',
-            macerator: {
-                lvl1: 'industrialupgrade:crafting_elements/crafting_69_element',
-                lvl2: 'industrialupgrade:crafting_elements/crafting_2_element',
-                lvl3: 'industrialupgrade:crafting_elements/crafting_78_element',
-                lvl4: 'industrialupgrade:crafting_elements/crafting_103_element',
-                lvl5: 'industrialupgrade:crafting_elements/crafting_602_element',
-            },
-            cutting: {
-                lvl1: 'industrialupgrade:crafting_elements/crafting_132_element',
-                lvl2: 'industrialupgrade:crafting_elements/crafting_133_element',
-                lvl3: 'industrialupgrade:crafting_elements/crafting_134_element',
-                lvl4: 'industrialupgrade:crafting_elements/crafting_136_element',
-                lvl5: 'industrialupgrade:crafting_elements/crafting_612_element',
-            },
-            assembler: 'industrialupgrade:crafting_elements/crafting_243_element',
-            cybernetics: 'kubejs:module_cybernetics',
-            lava: 'industrialupgrade:crafting_elements/crafting_228_element',
-        },
-
         spool: {
             lvl0: 'industrialupgrade:crafting_elements/crafting_294_element',
             lvl1: 'industrialupgrade:crafting_elements/crafting_356_element',
@@ -476,7 +372,7 @@ const item = {
             steam: 'industrialupgrade:blockresource/steam_machine',
             bio: 'industrialupgrade:blockresource/bio_machine',
             tech: 'industrialupgrade:blockresource/machine',
-            advanced_tech: 'industrialupgrade:blockresource/advanced_machine',
+            tech_adv: 'industrialupgrade:blockresource/advanced_machine',
         },
 
         chip: {
@@ -562,6 +458,13 @@ const item = {
             lvl4: 'industrialupgrade:crafting_elements/crafting_594_element'
         },
 
+        data_bus: {
+            lvl1: 'industrialupgrade:crafting_elements/crafting_580_element',
+            lvl2: 'industrialupgrade:crafting_elements/crafting_560_element',
+            lvl3: 'industrialupgrade:crafting_elements/crafting_589_element',
+            lvl4: 'industrialupgrade:crafting_elements/crafting_596_element',
+        },
+
         diode: {
             lvl1: 'industrialupgrade:crafting_elements/crafting_568_element',
             lvl2: 'industrialupgrade:crafting_elements/crafting_567_element',
@@ -595,7 +498,183 @@ const item = {
             lvl2: 'industrialupgrade:crafting_elements/crafting_599_element',
             lvl3: 'industrialupgrade:crafting_elements/crafting_583_element',
             lvl4: 'industrialupgrade:crafting_elements/crafting_597_element',
-            lvl5: 'industrialupgrade:crafting_elements/crafting__element',
+        },
+
+        upgrade: {
+            casing: 'industrialupgrade:upgrade_casing',
+            overclocker: 'industrialupgrade:upgrades/overclocker',
+            pulling: 'industrialupgrade:upgrades/pulling',
+            ejector: 'industrialupgrade:upgrades/ejector',
+            fluid_pulling: 'industrialupgrade:upgrades/fluid_pulling',
+            fluid_ejector: 'industrialupgrade:upgrades/fluid_ejector',
+        },
+
+        module: {
+            template: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_21_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_25_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_23_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_24_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_620_element',
+            },
+            slot: {
+                x1: 'industrialupgrade:crafting_elements/crafting_44_element',
+                x2: 'industrialupgrade:crafting_elements/crafting_47_element',
+                x3: 'industrialupgrade:crafting_elements/crafting_49_element',
+                x4: 'industrialupgrade:crafting_elements/crafting_51_element',
+                x8: 'industrialupgrade:crafting_elements/crafting_52_element',
+            },
+            scaner: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_170_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_171_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_172_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_173_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_635_element',
+            },
+            wireless: 'industrialupgrade:crafting_elements/crafting_90_element',
+            energy: 'industrialupgrade:crafting_elements/crafting_60_element',
+            energy_adv: 'industrialupgrade:crafting_elements/crafting_614_element',
+            generator: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_11_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_234_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_232_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_233_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_629_element'
+            },
+            redsonte_generator: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_258_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_261_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_259_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_260_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_628_element'
+            },
+            gas_generator: 'industrialupgrade:crafting_elements/crafting_263_element',
+            genetics: 'industrialupgrade:crafting_elements/crafting_659_element',
+            analyzer: 'industrialupgrade:crafting_elements/crafting_226_element',
+            liquid: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_27_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_6_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_83_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_107_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_603_element',
+            },
+            tank: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_43_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_45_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_48_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_50_element',
+                storage: 'industrialupgrade:crafting_elements/crafting_154_element',
+            },
+            extractor: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_159_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_160_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_161_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_162_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_615_element',
+            },
+            transformation: 'industrialupgrade:crafting_elements/crafting_75_element',
+            transformation_adv: 'industrialupgrade:crafting_elements/crafting_10_element',
+            combining: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_124_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_135_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_146_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_157_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_632_element',
+            },
+            upgrade: 'industrialupgrade:crafting_elements/crafting_66_element',
+            downgrade: 'industrialupgrade:crafting_elements/crafting_67_element',
+            circuit: 'industrialupgrade:crafting_elements/crafting_73_element',
+            potion: 'industrialupgrade:crafting_elements/crafting_661_element',
+            brewing: 'industrialupgrade:crafting_elements/crafting_658_element',
+            heat: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_39_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_15_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_91_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_115_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_613_element',
+            },
+            day: 'industrialupgrade:crafting_elements/crafting_37_element',
+            night: 'industrialupgrade:crafting_elements/crafting_30_element',
+            preservation: 'industrialupgrade:crafting_elements/crafting_264_element',
+            dna: 'industrialupgrade:crafting_elements/crafting_676_element',
+            speed: 'industrialupgrade:crafting_elements/crafting_155_element',
+            synthesis: {
+                plastic: 'industrialupgrade:crafting_elements/crafting_65_element',
+                oil: 'industrialupgrade:crafting_elements/crafting_98_element',
+                radiation: 'industrialupgrade:crafting_elements/crafting_99_element',
+                photon: 'industrialupgrade:crafting_elements/crafting_100_element',
+            },
+            bio: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_64_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_19_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_95_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_119_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_611_element',
+            },
+            crafting: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_128_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_129_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_130_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_131_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_605_element',
+            },
+            repulsor_shield: 'industrialupgrade:crafting_elements/crafting_439_element',
+            ore: 'industrialupgrade:crafting_elements/crafting_53_element',
+            boosting: 'industrialupgrade:crafting_elements/crafting_155_element',
+            macerator: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_69_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_2_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_78_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_103_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_602_element',
+            },
+            cutting: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_132_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_133_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_134_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_136_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_612_element',
+            },
+            assembler: 'industrialupgrade:crafting_elements/crafting_243_element',
+            cybernetics: 'kubejs:module_cybernetics',
+            lava: 'industrialupgrade:crafting_elements/crafting_228_element',
+            unpacking: 'industrialupgrade:crafting_elements/crafting_469_element',
+            transformer: 'industrialupgrade:crafting_elements/crafting_156_element',
+        },
+
+        core: {
+            normal: {
+                advanced: 'industrialupgrade:itemcore/advcore',
+                hybrid: 'industrialupgrade:itemcore/hybcore',
+                ultra: 'industrialupgrade:itemcore/ultcore',
+                quantum: 'industrialupgrade:itemcore/quacore',
+                spectral: 'industrialupgrade:itemcore/specore',
+                proton: 'industrialupgrade:itemcore/procore',
+                singular: 'industrialupgrade:itemcore/sincore',
+                diffraction: 'industrialupgrade:itemcore/admcore',
+                photon: 'industrialupgrade:itemcore/phocore',
+                neutron: 'industrialupgrade:itemcore/neucore',
+                barion: 'industrialupgrade:itemcore/barcore',
+                adrone: 'industrialupgrade:itemcore/adrcore',
+                graviton: 'industrialupgrade:itemcore/gracore',
+                quark: 'industrialupgrade:itemcore/kvrcore'
+            },
+            excited: {
+                codeadvanced: 'industrialupgrade:excitednucleus/advcore',
+                hybrid: 'industrialupgrade:excitednucleus/hybcore',
+                ultra: 'industrialupgrade:excitednucleus/ultcore',
+                quantum: 'industrialupgrade:excitednucleus/quacore',
+                spectral: 'industrialupgrade:excitednucleus/specore',
+                proton: 'industrialupgrade:excitednucleus/procore',
+                singular: 'industrialupgrade:excitednucleus/sincore',
+                diffraction: 'industrialupgrade:excitednucleus/admcore',
+                photon: 'industrialupgrade:excitednucleus/phocore',
+                neutron: 'industrialupgrade:excitednucleus/neucore',
+                barion: 'industrialupgrade:excitednucleus/barcore',
+                adrone: 'industrialupgrade:excitednucleus/adrcore',
+                graviton: 'industrialupgrade:excitednucleus/gracore',
+                quark: 'industrialupgrade:excitednucleus/kvrcore'
+            },
         },
     },
 
@@ -612,6 +691,7 @@ const item = {
         fluix_crystal: 'ae2:fluix_crystal',
         fluix_dust: 'ae2:fluix_dust',
         fluix_pearl: 'ae2:fluix_pearl',
+        fluix_block: 'ae2:fluix_block',
         entro_crystal: 'extendedae:entro_crystal',
         entro_shard: 'extendedae:entro_shard',
         entro_dust: 'extendedae:entro_dust',
@@ -623,7 +703,8 @@ const item = {
         quantum_singularity: 'ae2:quantum_entangled_singularity',
         shattered_singularity: 'advanced_ae:shattered_singularity',
         wireless_receiver: 'ae2:wireless_receiver',
-        vibrant_glass: 'ae2:quartz_glass',
+        vibrant_glass: 'ae2:quartz_vibrant_glass',
+        insulating_resin: 'appflux:harden_insulating_resin',
         
         wireless_access_point: 'ae2:wireless_access_point',
 
@@ -657,8 +738,11 @@ const item = {
         },
 
         cable: {
-            fluix_glass: 'ae2:fluix_glass_cable',
             quartz_fiber: 'ae2:quartz_fiber',
+            fluix_glass: 'ae2:fluix_glass_cable',
+            fluix_covered: 'ae2:fluix_covered_cable',
+            fluix_covered_dence: 'ae2:fluix_covered_dense_cable',
+            smart: 'ae2:fluix_smart_cable',
         },
     },
 
@@ -667,7 +751,27 @@ const item = {
     // ~~~~~~~~~~~~~~~~~~~~ ARPHEX ~~~~~~~~~~~~~~~~~~~~ 
 
     arphex: {
+        ectoplasm: 'arphex:ectoplasm',
+        burning_glands: 'arphex:burning_glands',
         raw_hemolymph: 'arphex:raw_hemolymph',
+        heavy_chitin: 'arphex:heavy_chitin',
+        scorch_charge: 'arphex:scorch_charge',
+        infernal_shard: 'arphex:infernal_shard',
+        infernal_ingot: 'arphex:infernal_ingot',
+        spacetime_shard: 'arphex:spacetime_shard',
+        spacetime_ingot: 'arphex:spacetime_ingot',
+        fire_opal: {
+            full: 'arphex:fire_opal',
+            shard: 'arphex:fire_opal_shard'
+        },
+        abyssal_crystal: {
+            full: 'arphex:abyssal_crystal',
+            shard: 'arphex:abyssal_shard',
+        },
+        void_geode: {
+            full: 'arphex:void_geode',
+            shard: 'arphex:void_geode_shard',
+        },
         time_prism: {
             full: 'arphex:time_prism',
             shard: 'arphex:time_prism_shard'
@@ -721,7 +825,6 @@ const item = {
     create: {
         shaft: 'create:shaft',
         andesite_alloy: 'create:andesite_alloy',
-        copper_magnet: 'create_sa:copper_magnet',
         obsidian_powder:'create:powdered_obsidian',
         andesite_casing: 'create:andesite_casing',
         modular_accumulator: 'createaddition:modular_accumulator',
@@ -771,14 +874,20 @@ const item = {
             large: 'createaddition:large_connector',
         },
     
+        // ~~~~~~~~~~~~~~~~~~~~ Addons ~~~~~~~~~~~~~~~~~~~~
+        lighter: 'createdieselgenerators:lighter',
+        control_chip: 'create_connected:control_chip',
+        
         // ~~~~~~~~~~~~~~~~~~~~ Create Compressed ~~~~~~~~~~~~~~~~~~~~
-    
         crushed_ore_block: {
             copper: 'create_compressed:crushed_copper_pile',
             iron: 'create_compressed:crushed_iron_pile',
             gold: 'create_compressed:crushed_gold_pile',
             zinc: 'create_compressed:crushed_zinc_pile',
         },        
+
+        // ~~~~~~~~~~~~~~~~~~~~ Create Power Grid ~~~~~~~~~~~~~~~~~~~~
+        electrical_gizmo: 'powergrid:electrical_gizmo',
     },
 
     // ~~~~~~~~~~~~~~~~~~~~ Cybernetics ~~~~~~~~~~~~~~~~~~~~ 
@@ -901,8 +1010,9 @@ const tag = {
     agritech_basic_planters: '#agritechevolved:basic_planter_items',
     cybernetics_data_shards: '#createcybernetics:data_shards',
 
-    ae_glass_cable: '#ae2:glass_cable',
 
+
+    
     // ~~~~~~~~~~ Tables ~~~~~~~~~
 
     nugget: {
@@ -910,6 +1020,7 @@ const tag = {
         iron: '#c:nuggets/iron',
         gold: '#c:nuggets/gold',
         zinc: '#c:nuggets/zinc',
+        brass: '#c:nuggets/brass',
         electrum: '#c:nuggets/electrum',
         titanium: '#c:nuggets/titanium',
         bronze: '#c:nuggets/bronze',
@@ -923,15 +1034,26 @@ const tag = {
         gold: '#c:ingots/gold',
         zinc: '#c:ingots/zinc',
         silver: '#c:ingots/silver',
-        electrum: '#c:ingots/electrum',
         lead: '#c:ingots/lead',
+        aluminium: '#c:ingots/aluminium',
+        tungsten: '#c:ingots/tungsten',
+        magnesium: '#c:ingots/magnesium',
+        hafnium: '#c:ingots/hafnium',
+        brass: '#c:ingots/brass',
+        electrum: '#c:ingots/electrum',
         bronze: '#c:ingots/bronze',
         titanium: '#c:ingots/titanium',
         steel: '#c:ingots/steel',
         wolframite: '#c:ingots/wolframite',
         titanium_steel: '#c:ingots/titaniumsteel',
+        molybdenum_steel: '#c:ingots/molybdenumsteel',
         carbon_tungsteen: '#c:ingots/carbontungsteen',
-        platinum: '#c:ingots/platinum',  
+        platinum: '#c:ingots/platinum',
+        aluminiumlithium: '#c:ingots/aluminiumlithium',      
+        hafniumboride: '#c:ingots/hafniumboride',
+        woods: '#c:ingots/woods',
+        stainless_steel: '#c:ingots/stainlesssteel',
+        tan_tung_haf: '#c:ingots/tantalumtungstenhafnium',
     },
 
     plate: {
@@ -939,6 +1061,7 @@ const tag = {
         tin: '#c:plates/tin',
         iron: '#c:plates/iron',
         gold: '#c:plates/gold',
+        brass: '#c:plates/brass',
         electrum: '#c:plates/electrum',
         titanium: '#c:plates/titanium',
         bronze: '#c:plates/bronze',
@@ -946,6 +1069,7 @@ const tag = {
         zinc: '#c:plates/zinc',
         cobalt: '#c:plates/cobalt',
         obsidian: '#c:plates/obsidian',
+        hafnium: '#c:plates/hafnium',
         composite: '#c:plates/advancedalloy',
         steel: '#c:plates/steel',
         alumel: '#c:plates/alumel',
@@ -958,6 +1082,8 @@ const tag = {
         niobium_titanium: '#c:plates/niobiumtitanium',
         red_brass: '#c:plates/redbrass',
         platinum: '#c:plates/platinum',
+        woods: '#c:plates/woods',
+        tan_tung_haf: '#c:plates/tantalumtungstenhafnium',
     },
     
     doubleplate: {
@@ -967,12 +1093,15 @@ const tag = {
         titanium: '#c:doubleplate/titanium',
         nichrome: '#c:doubleplate/nichrome',
         obsidian: '#c:doubleplate/obsidian',
+        hafnium: '#c:doubleplate/hafnium',
         molybdenumsteel: '#c:doubleplate/molybdenumsteel',
         berylliumbronze: '#c:doubleplate/berylliumbronze',
         vanadoalumite: '#c:doubleplate/vanadoalumite',
         nitenol: '#c:doubleplate/nitenol',
         alumel: '#c:doubleplate/alumel',
         niobium_titanium: '#c:doubleplate/niobium_titanium',
+        tan_tung_haf: '#c:doubleplate/tantalumtungstenhafnium',
+        woods: '#c:doubleplate/woods',
     },
 
     casings: {
@@ -980,22 +1109,29 @@ const tag = {
         tungsten: '#c:casings/tungsten',
         electrum: '#c:casings/electrum',
         lead: '#c:casings/lead',
-        titan: '#c:casings/titanium',
+        titanium: '#c:casings/titanium',
         palladium: '#c:casings/palladium',
         polonium: '#c:casings/polonium',
         niobium: '#c:casings/niobium',
+        hafnium: '#c:casings/hafnium',
+        tan_tung_haf: '#c:casings/tantalumtungstenhafnium',
+        woods: '#c:casings/woods',
     },
     
     gear: {
         invar: '#c:gears/invar',
         titanium: '#c:gears/titanium',
         alumel: '#c:gears/alumel', // Алюминид-титан
+        brass: '#c:gears/redbrass',
+        hafniumboride: '#c:gears/hafniumboride',
+        tan_tung_haf: '#c:gears/tantalumtungstenhafnium',
+        woods: '#c:gears/woods',
     },
     
     rod: {
         electrum: '#c:rods/electrum',
         aluminium: '#c:rods/aluminium',
-        titan: '#c:rods/titanium',
+        titanium: '#c:rods/titanium',
         tungsten: '#c:rods/tungsten',
     },
     
@@ -1006,20 +1142,42 @@ const tag = {
         diamond: '#c:storage_blocks/diamond',
         redstone: '#c:storage_blocks/redstone',
         zinc: '#c:storage_blocks/zinc',
+        brass: '#c:storage_blocks/brass',
         bronze: '#c:storage_blocks/bronze',
         electrum: '#c:storage_blocks/electrum',
         titanium: '#c:storage_blocks/titanium',
         steel: '#c:storage_blocks/steel',
         platinum: '#c:storage_blocks/platinum',
+        woods: '#c:storage_blocks/woods',
+    },
+
+    wire: {
+        copper: '#c:wires/copper',
+        iron: '#c:wires/iron',
+        gold: '#c:wires/gold',
     },
 
     tool: {
         knife: '#c:tools/knife',
+        wrench: '#c:tools/wrench',        
     },
 
     dusts: {
         diamond: '#c:dusts/diamond',
-        emerald: '#c:dusts/emerald', // Заменить чисто IU пыль на тэг
+        emerald: '#c:dusts/emerald',
+    },
+
+    ae: {
+        glass_cable: '#ae2:glass_cable',
+        smart_cable: '#ae2:smart_cable',
+        covered_cable: '#ae2:covered_cable',
+        covered_dence_cable: '#ae2:covered_dense_cable',
+        smart_dence_cable: '#ae2:smart_dense_cable',
+        illuminated_panel: '#ae2:illuminated_panel',
+    },
+
+    chests: {
+        wooden: '#c:chests/wooden',
     },
 }
 
@@ -1036,6 +1194,12 @@ const fluid = {
     quantum_infusion: '$advanced_ae:quantum_infusion_source',
     polypropylene: '$industrialupgrade:iufluidpolyprop',
     glucose: '$industrialupgrade:iufluidglucose',
+    fluid_matter: '$industrialupgrade:iufluiduu_matter',
+    coolant: '$industrialupgrade:iufluidcoolant',
+    hot_coolant: '$industrialupgrade:iufluidhot_coolant',
+    nitrooxide: '$industrialupgrade:iufluidnitricoxide',
+    cryogen: '$industrialupgrade:iufluidcryogen',
+
 
     metal: {
         bronze: '$industrialupgrade:iufluidbronze',
@@ -1044,3 +1208,29 @@ const fluid = {
         nethersteel: '$createbigcannons:molten_nethersteel',
     },
 }
+
+const deletion_list = [
+    'create:iron_sheet', 'create:copper_sheet', 
+    'create:golden_sheet','create:zinc_ingot', 
+    'createaddition:zinc_sheet', 'createaddition:electrum_ingot',
+    'createaddition:electrum_nugget', 'createaddition:electrum_sheet',
+    'createcybernetics:titanium_block', 'createcybernetics:titaniumingot', 
+    'createcybernetics:titaniumnugget', 'createcybernetics:titaniumsheet', 
+    'mffs:steel_ingot', 'createaddition:electrum_block', 
+    'create:zinc_nugget', 'create:sturdy_sheet',
+    // 'createbigcannons:bronze_block', 'createbigcannons:bronze_ingot', 
+    'createcybernetics:crushedtitanium', 'createpropulsion:platinum_ingot', 
+    'createpropulsion:platinum_block', 'createpropulsion:platinum_sheet',
+    'createpropulsion:platinum_nugget', 'createpropulsion:raw_platinum_block',
+    'createpropulsion:raw_platinum', 'create:raw_zinc_block',
+    'create:zinc_ore', 'create:deepslate_zinc_ore',
+    'create:crushed_raw_zinc', 'create:crushed_raw_iron',
+    'create:crushed_raw_gold', 'create:crushed_raw_copper',
+    'createpropulsion:platinum_ore', 'createpropulsion:deepslate_platinum_ore',
+    'createcybernetics:deepslate_titaniumore_block', 'createcybernetics:titaniumore_block',
+    'create:zinc_block', 'powergrid:zinc_sheet', 'create:raw_zinc', 'create:brass_ingot',
+    'create:brass_nugget', 'create:brass_sheet', 'create:brass_block',
+    'createaddition:copper_rod', 'createaddition:iron_rod', 'createaddition:gold_rod',
+    'createaddition:electrum_rod', 'createaddition:brass_rod'
+
+]

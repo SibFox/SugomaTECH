@@ -30,12 +30,32 @@ const registerCommonRecipes = (evt) => {
         { 'temperature': 2000 }
     )
 
+    iuRecipe(evt, getRecipeID('liquid_redstone_1'), IUMachineCraft.DIVIDER.ITEM_FLUID,
+        [
+            asItem(item.redstone),
+            asItem(fluid.oxygen, 1)
+        ],[
+            asItem(fluid.redstone, 10),
+            asItem(fluid.oxygen, 5)
+        ]
+    )
+
+    iuRecipe(evt, getRecipeID('liquid_redstone_2'), IUMachineCraft.DIVIDER.ITEM_FLUID,
+        [
+            asItem(item.redstone_block),
+            asItem(fluid.oxygen, 1)
+        ],[
+            asItem(fluid.redstone, 90),
+            asItem(fluid.oxygen, 45)
+        ]
+    )
+
     shapedRecipe(evt, getRecipeID('createcybernetics', 'synth_nerve_cables'),
         [
             [ item.cn.fiber_optic, item.nugget.electrum ],
             [ item.nugget.electrum, item.nugget.electrum ]
         ],
-    item.custom.synth_nerve_cables, 1)
+    item.custom.synth_nerve_cables, 3)
 
     evt.shapeless(Item.of(item.arphex.raw_hemolymph, 1),
         [
@@ -139,6 +159,16 @@ const registerCommonRecipes = (evt) => {
         }
     ).id(getRecipeID('hole_filler'))
     
+    iuRecipe(evt, getRecipeID('netherite'), IUMachineCraft.ALLOY_SMELTER.lvl2,
+        [
+            asItem(item.ingot.netherite_scrap, 4),
+            asItem(item.ingot.gold, 4),
+            asItem(tag.ingot.molybdenum_steel, 4)
+        ],[
+            asItem(item.ingot.netherite)
+        ]
+    )
+    
     
 
     // До добавления биг кэнонс
@@ -162,7 +192,56 @@ const registerCommonRecipes = (evt) => {
     //     ]
     // ).id(getRecipeID('steel_nugget_ct'))
 
+    // Кловергетт
 
+    iuRecipe(evt, getRecipeID('kloverghett_crystal'), IUMachineCraft.SILICON_CHAMBER,
+        [
+            asItem(item.custom.kloverghett_seed, 3),
+            asItem(item.echo_shard)
+        ],[
+            asItem(item.custom.kloverghett_crystal)
+        ]
+    )
+
+    aeReactionRecipe(evt, getRecipeID('kloverghett_part'),
+        100000, asItem(fluid.cryogen, 500),
+        [
+            asItem(item.custom.kloverghett_crystal, 4),
+            asItem(item.ae.charged_certus_quartz_crystal, 32),
+            asItem(item.ae.fluix_crystal, 24),
+            asItem(item.ae.entro_crystal, 24),
+            asItem(item.iu.dust.energy, 16)
+        ],
+        asItem(item.custom.kloverghett_part, 1)
+    )
+    
+    iuRecipe(evt, getRecipeID('kloverghett_treated'), IUMachineCraft.CYCLOTRON,
+        [
+            asItem(item.custom.kloverghett_part, 3)
+        ],[
+            asItem(item.custom.kloverghett_treated)
+        ],
+        { 
+            'chance': 60,
+            'cryogen': 70,
+            'positrons': 43
+        }
+    )
+    
+    iuRecipe(evt, getRecipeID('kloverghett_seed'), IUMachineCraft.FLUID_INTEGRATOR,
+        [
+            asItem(fluid.fluid_matter, 75),
+            asItem(item.custom.kloverghett_crystal)
+        ],[
+            asItem(item.custom.kloverghett_seed, 5),
+            asItem(fluid.nitrooxide, 125)
+        ]
+    )
+    
+    
+    
+    
+    
 
     console.info('Common recipe adding passed')
 }

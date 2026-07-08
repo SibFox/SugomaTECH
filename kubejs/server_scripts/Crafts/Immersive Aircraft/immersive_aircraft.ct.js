@@ -110,11 +110,11 @@ const registerIACTRecipes = (evt) => {
             'FPB',
             '   '
         ],{
-            C: 'minecraft:comparator',
+            C: item.comparator,
             I: item.iu.compressed_redstone,
-            F: 'minecraft:redstone_torch',
-            P: 'minecraft:repeater',
-            A: tag.gear.alumel,
+            F: item.redstone_torch,
+            P: item.repeater,
+            A: tag.gear.brass,
             B: item.create.electron_tube
         }
     ).id(getRecipeID('redstone_mechanism'))
