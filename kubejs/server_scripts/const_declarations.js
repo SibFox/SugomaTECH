@@ -165,6 +165,10 @@ const item = {
         wolframite: 'industrialupgrade:crafting_elements/crafting_655_element',
     },
 
+    casing: {
+        wolframite: 'industrialupgrade:crafting_elements/crafting_505_element',
+    },
+
     rod: {
         tungsten: 'industrialupgrade:stick/tungsten',
         titanium: 'industrialupgrade:stick/titanium',
@@ -198,6 +202,13 @@ const item = {
         kloverghett_crystal: 'kubejs:kloverghett_crystal',
         kloverghett_part: 'kubejs:kloverghett_part',
         kloverghett_treated: 'kubejs:kloverghett_treated',
+
+        exo_components: {
+            lvl1: 'kubejs:exo_c_1',
+            lvl2: 'kubejs:exo_c_2',
+            lvl3: 'kubejs:exo_c_3',
+            lvl4: 'kubejs:exo_c_4',
+        },
     },
 
     // ~~~~~~~~~~~~~~~~~~~~ INDUSTRIAL UPGRADE ~~~~~~~~~~~~~~~~~~~~ 
@@ -206,6 +217,7 @@ const item = {
 
     iu: {
         carbon: 'industrialupgrade:crafting_elements/crafting_282_element',
+        compressed_carbon: 'industrialupgrade:compresscarbon',
         plastic: 'industrialupgrade:plastic_plate',
         carbon_plastic: 'industrialupgrade:crafting_elements/crafting_479_element',
         rubber: 'industrialupgrade:crafting_elements/crafting_271_element',
@@ -238,6 +250,10 @@ const item = {
         silicon_crystal: 'industrialupgrade:crafting_elements/crafting_493_element',
         polished_silicon_disk: 'industrialupgrade:crafting_elements/crafting_494_element',
         polished_silicon_crystal: 'industrialupgrade:crafting_elements/crafting_495_element',
+
+        industrial_iridium_plate: 'industrialupgrade:crafting_elements/crafting_285_element',
+        compressed_industrial_iridium_plate: 'industrialupgrade:quantumitems2',
+        dense_compressed_industrial_iridium_plate: 'industrialupgrade:quantumitems4',
     
         wire: {
             bare: {
@@ -500,6 +516,12 @@ const item = {
             lvl4: 'industrialupgrade:crafting_elements/crafting_597_element',
         },
 
+        energy_crystal: {
+            nano: 'industrialupgrade:crafting_elements/crafting_524_element',
+            quantum: 'industrialupgrade:crafting_elements/crafting_516_element',
+            spectral: 'industrialupgrade:crafting_elements/crafting_532_element'
+        },
+
         upgrade: {
             casing: 'industrialupgrade:upgrade_casing',
             overclocker: 'industrialupgrade:upgrades/overclocker',
@@ -754,19 +776,25 @@ const item = {
         ectoplasm: 'arphex:ectoplasm',
         burning_glands: 'arphex:burning_glands',
         raw_hemolymph: 'arphex:raw_hemolymph',
+        chitin: 'arphex:chitin',
         heavy_chitin: 'arphex:heavy_chitin',
         scorch_charge: 'arphex:scorch_charge',
+        mantle_of_vitality: 'arphex:mantle_of_vitality',
+        spectral_shard: 'arphex:spectral_shard',
+        spectral_ingot: 'arphex:spectral_ingot',
         infernal_shard: 'arphex:infernal_shard',
         infernal_ingot: 'arphex:infernal_ingot',
+        umbral_shard: 'arphex:umbral_shard',
+        umbral_ingot: 'arphex:umbral_ingot',
         spacetime_shard: 'arphex:spacetime_shard',
         spacetime_ingot: 'arphex:spacetime_ingot',
-        fire_opal: {
-            full: 'arphex:fire_opal',
-            shard: 'arphex:fire_opal_shard'
-        },
         abyssal_crystal: {
             full: 'arphex:abyssal_crystal',
             shard: 'arphex:abyssal_shard',
+        },
+        fire_opal: {
+            full: 'arphex:fire_opal',
+            shard: 'arphex:fire_opal_shard'
         },
         void_geode: {
             full: 'arphex:void_geode',
@@ -1047,6 +1075,7 @@ const tag = {
         wolframite: '#c:ingots/wolframite',
         titanium_steel: '#c:ingots/titaniumsteel',
         molybdenum_steel: '#c:ingots/molybdenumsteel',
+        alcled: '#c:ingots/alcled',
         carbon_tungsteen: '#c:ingots/carbontungsteen',
         platinum: '#c:ingots/platinum',
         aluminiumlithium: '#c:ingots/aluminiumlithium',      
@@ -1054,6 +1083,12 @@ const tag = {
         woods: '#c:ingots/woods',
         stainless_steel: '#c:ingots/stainlesssteel',
         tan_tung_haf: '#c:ingots/tantalumtungstenhafnium',
+        stellite: '#c:ingots/stellite',
+        mithril: '#c:ingots/mithril',
+        adamantium: '#c:ingots/adamantium',
+        orichalcum: '#c:ingots/orichalcum',
+        bloodstone: '#c:ingots/bloodstone',
+        draconid: '#c:ingots/draconid',
     },
 
     plate: {
@@ -1077,6 +1112,7 @@ const tag = {
         duralumin: '#c:plates/duralumin',
         cobaltchrome: '#c:plates/cobaltchrome',
         molybdenumsteel: '#c:plates/molybdenumsteel',
+        alcled: '#c:plates/alcled',
         berylliumbronze: '#c:plates/berylliumbronze',
         titanium_steel: '#c:plates/titaniumsteel',
         niobium_titanium: '#c:plates/niobiumtitanium',
@@ -1084,6 +1120,11 @@ const tag = {
         platinum: '#c:plates/platinum',
         woods: '#c:plates/woods',
         tan_tung_haf: '#c:plates/tantalumtungstenhafnium',
+        mithril: '#c:plates/mithril',
+        adamantium: '#c:plates/adamantium',
+        orichalcum: '#c:plates/orichalcum',
+        bloodstone: '#c:plates/bloodstone',
+        draconid: '#c:plates/draconid',
     },
     
     doubleplate: {
@@ -1095,6 +1136,7 @@ const tag = {
         obsidian: '#c:doubleplate/obsidian',
         hafnium: '#c:doubleplate/hafnium',
         molybdenumsteel: '#c:doubleplate/molybdenumsteel',
+        alcled: '#c:doubleplate/alcled',
         berylliumbronze: '#c:doubleplate/berylliumbronze',
         vanadoalumite: '#c:doubleplate/vanadoalumite',
         nitenol: '#c:doubleplate/nitenol',
@@ -1102,6 +1144,11 @@ const tag = {
         niobium_titanium: '#c:doubleplate/niobium_titanium',
         tan_tung_haf: '#c:doubleplate/tantalumtungstenhafnium',
         woods: '#c:doubleplate/woods',
+        mithril: '#c:doubleplate/mithril',
+        adamantium: '#c:doubleplate/adamantium',
+        orichalcum: '#c:doubleplate/orichalcum',
+        bloodstone: '#c:doubleplate/bloodstone',
+        draconid: '#c:doubleplate/draconid',
     },
 
     casings: {
@@ -1115,7 +1162,13 @@ const tag = {
         niobium: '#c:casings/niobium',
         hafnium: '#c:casings/hafnium',
         tan_tung_haf: '#c:casings/tantalumtungstenhafnium',
+        alcled: '#c:casings/alcled',
         woods: '#c:casings/woods',
+        mithril: '#c:casings/mithril',
+        adamantium: '#c:casings/adamantium',
+        orichalcum: '#c:casings/orichalcum',
+        bloodstone: '#c:casings/bloodstone',
+        draconid: '#c:casings/draconid',
     },
     
     gear: {
@@ -1125,6 +1178,7 @@ const tag = {
         brass: '#c:gears/redbrass',
         hafniumboride: '#c:gears/hafniumboride',
         tan_tung_haf: '#c:gears/tantalumtungstenhafnium',
+        alcled: '#c:gears/alcled',
         woods: '#c:gears/woods',
     },
     
@@ -1233,4 +1287,24 @@ const deletion_list = [
     'createaddition:copper_rod', 'createaddition:iron_rod', 'createaddition:gold_rod',
     'createaddition:electrum_rod', 'createaddition:brass_rod'
 
+]
+
+const inc_metals = [
+    'copper', 'bronze', 'gold', 'iron', 'lead', 'steel', 
+    'tin', 'duralumin', 'electrum', 
+    'ferromanganese', 'gadolinium', 'gallium_arsenic',
+    'gallium', 'germanium',
+    'hafnium', 'invar',
+    'iridium', 'magnesium', 'manganese', 'meteoric_iron',
+    'mikhail', 'molybdenum', 'molybdenum_steel', 'muntsa',
+    'mithril', 'neodymium', 'nichrome', 'nickel',
+    'niobium', 'niobium_titanium',
+    'nitenol', 'orichalcum', 'osmiridium', 'osmium',
+    'palladium', 'platinum', 'polonium',
+    'red_brass', 'silver', 'spinel', 'strontium',
+    'tantalum', 'thallium', 'titanium', 'vanadoalumite',
+    'vanadium', 'tungsten', 'yttrium', 'zeliber',
+    'zinc', 'zirconium', 'aluminium', 'cobalt',
+    'chromium', 'cadmium', 'arsenic', 'barium',
+    'bismuth'
 ]

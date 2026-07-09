@@ -13,10 +13,18 @@ const registerItems = (evt) => {
     evt.create('jar')
     evt.create('embryo')
     evt.create('jar_embryo')
+    evt.create('exo_c_1')
+    evt.create('exo_c_2')
+    evt.create('exo_c_3')
+    evt.create('exo_c_4')
     evt.create('kloverghett_seed')
+        .tooltip(Text.translate('item.kubejs.kloverghett_seed.desc').gray())
     evt.create('kloverghett_crystal')
+        .tooltip(Text.translate('item.kubejs.kloverghett_crystal.desc').gray())
     evt.create('kloverghett_part')
+        .tooltip(Text.translate('item.kubejs.kloverghett_part.desc').gray())
     evt.create('kloverghett_treated')
+        .tooltip(Text.translate('item.kubejs.kloverghett_treated.desc').gray())
 
     for (let item of [
         'copper', 'bronze', 'gold', 'iron', 'lead', 'steel', 
@@ -38,10 +46,11 @@ const registerItems = (evt) => {
         'bismuth'
     ])
     {
-        evt.create('incomplete_' + item).texture('kubejs:item/plates/' + item + '_plate')
+        evt.create('incomplete_' + item).texture('kubejs:item/plates/tin_plate')
     }
 
-    evt.create('peeper', 'helmet').material('kubejs:bio').displayName('Глазастик').maxDamage(163)
+    evt.create('peeper', 'helmet').material('kubejs:bio')
+        .displayName('Глазастик').maxDamage(163)
 
     console.info('Item registry passed')
 }

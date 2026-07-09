@@ -34,6 +34,13 @@ const registerCreateRemovings = (evt) => {
     evt.remove({ output: 'create:brass_sheet', not: { type: 'create:sequenced_assembly'} })
     evt.remove({ output: 'create:brass_nugget', not: { type: 'create:sequenced_assembly'} })
     evt.remove({ output: 'simulated:gyroscopic_mechanism'})
+    evt.remove({ output: 'powergrid:wire', not: { type: 'create:sequenced_assembly'} })
+    evt.remove({ output: 'powergrid:iron_wire', not: { type: 'create:sequenced_assembly'} })
+    evt.remove({ output: 'powergrid:golden_wire', not: { type: 'create:sequenced_assembly'} })
+    evt.remove({ output: 'powergrid:insulated_copper_wire', not: { type: 'create:sequenced_assembly'} })
+    evt.remove({ output: 'powergrid:resistive_coil', not: { type: 'create:sequenced_assembly'} })
+    evt.remove({ output: 'powergrid:copper_coil', not: { type: 'create:sequenced_assembly'} })
+
 
     // evt.remove({ id: 'createbigcannons:melting/melt_bronze_ingot' })
     // evt.remove({ id: 'createbigcannons:melting/melt_bronze_nugget' })

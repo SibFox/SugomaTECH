@@ -30,6 +30,7 @@ ServerEvents.recipes(event => {
 })
 
 // LootJS.lootTables(evt => {
+//     lootArPhEx(evt)
 //     evt.modifyLootTables(LootType.ENTITY).removeItem('pointblank:gunmetal_nugget')
 // })
 
@@ -40,9 +41,12 @@ registerInteractions()
 //     console.info(ids)
 // })
 
-// RecipeViewerEvents.removeEntries('item', evt => {
-//     evt.remove('minecraft:string')
-// })
+RecipeViewerEvents.removeEntries('item', evt => {
+    for (let m of inc_metals)
+    {
+        evt.remove('kubejs:incomplete_' + m)
+    }
+})
 
 ItemEvents.foodEaten(event => {
     const {player} = event
@@ -61,12 +65,6 @@ ItemEvents.foodEaten(event => {
     }
 })
 
-// RecipeViewerEvents.removeEntries('item', evt => {
-//     for (let i of deletion_list)
-//     {
-//         evt.remove(i)
-//     }
-// })
 
 
 // // --- CONFIGURATION ---

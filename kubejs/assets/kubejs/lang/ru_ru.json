@@ -1,6 +1,4 @@
 {
-  "item.kubejs.invar_boiler": "Инваровый котёл",
-  "item.kubejs.heat_resistant_clay": "Термостойкая глина",
   "item.kubejs.coin": "Монета квеста",
   "item.kubejs.synth_nerve_cables": "Искусственные нервные окончания",
   "item.kubejs.hemolymph_drop": "Капелька гемолимфы",
@@ -12,15 +10,19 @@
   "item.kubejs.liquid_redstone_bucket": "Ведро сжиженного редстоуна",
   "item.morered.red_alloy_ingot": "Слиток краснокаменного сплава",
   "item.kubejs.kloverghett_seed": "Металлическое семечко",
+  "item.kubejs.kloverghett_seed.desc": "Странное металлическое образование, напоминающее семечко",
   "item.kubejs.kloverghett_crystal": "Кловергеттов кристалл",
+  "item.kubejs.kloverghett_crystal.desc": "Биологический металл искусственного происхождения, склонный к инфузии с податливыми материалами биологического происхождения Улья",
   "item.kubejs.kloverghett_part": "Кусочек кловергетта",
+  "item.kubejs.kloverghett_part.desc": "",
   "item.kubejs.kloverghett_treated": "Обработанный кловергетт",
+  "item.kubejs.kloverghett_treated.desc": "В данном состоянии обладает сверхпотенциалом для инфузии с материалами Улья",
+  "item.kubejs.exo_c_1": "Вольфрамитовые экзо-компоненты брони",
+  "item.kubejs.exo_c_2": "Мифриловые экзо-компоненты брони",
+  "item.kubejs.exo_c_3": "Драконидовые экзо-компоненты брони",
+  "item.kubejs.exo_c_4": "Кловергеттовые экзо-компоненты брони",
 
   "fluid_type.kubejs.liquid_redstone": "Сжиженный редстоун",
-
-  "block.kubejs.liquid_redstone": "Сжиженный редстоун",
-  "block.kubejs.fluid.liquid_redstone": "Сжиженный редстоун",
-  "block.kubejs.quartz_glass": "Кварцевое стекло",
 
   "item.kubejs.plated_stomach_nether": "Нет спасения.",
   "item.kubejs.plated_stomach_nether.desc": "Даже от одного вида §lэтого§r у меня начинается изжога...",

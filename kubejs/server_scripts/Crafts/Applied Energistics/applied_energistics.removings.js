@@ -71,6 +71,7 @@ const registerAERemovings = (evt) => {
     evt.remove({ output: 'extendedae:assembler_matrix_wall' })
     evt.remove({ output: 'extendedae:assembler_matrix_glass' })
     evt.remove({ output: 'extendedae:assembler_matrix_frame' })
+    evt.remove({ output: 'advanced_ae:adv_pattern_provider_upgrade' })
     // evt.remove({ output: '' })
     
     evt.remove({ id: 'ae2:network/cells/spatial_storage_cell_2_cubed' })
@@ -80,7 +81,7 @@ const registerAERemovings = (evt) => {
     for (let c of ['1', '4', '16', '64', '256']){
         evt.remove({ id: 'ae2:network/cells/item_storage_cell_' + c + 'k'})
         evt.remove({ id: 'ae2:network/cells/fluid_storage_cell_' + c + 'k'})
-        // evt.remove({ id: 'appex:experience_storage_cell_' + c + 'k'})
+        evt.remove({ id: 'ae2things:disk_drive_' + c + 'k'})
         evt.remove({ id: 'appflux:' + c + 'k_fe_cell'})
         evt.remove({ id: 'appflux:' + c + 'm_fe_cell'})
         evt.remove({ id: 'megacells:cells/standard/item_storage_cell_' + c + 'm'})

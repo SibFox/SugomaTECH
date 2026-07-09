@@ -100,4 +100,52 @@ const registerCreateCTRecipes = (evt) => {
             T: item.cn.storage
         }
     ).id(getRecipeID('lighter'))
+
+    evt.shapeless(Item.of('powergrid:wire', 1),
+        [
+            item.iu.wire.bare.copper            
+        ]
+    ).id(getRecipeID('wire_bare_copper'))
+
+    evt.shapeless(Item.of('powergrid:iron_wire', 1),
+        [
+            item.iu.wire.bare.iron
+        ]
+    ).id(getRecipeID('wire_bare_iron'))
+
+    evt.shapeless(Item.of('powergrid:golden_wire', 1),
+        [
+            item.iu.wire.bare.gold
+        ]
+    ).id(getRecipeID('wire_bare_gold'))
+
+    evt.shapeless(Item.of('powergrid:insulated_copper_wire', 1),
+        [
+            item.iu.wire.isolated.copper
+        ]
+    ).id(getRecipeID('wire_isolated_copper'))
+
+    evt.shaped(
+        Item.of('powergrid:copper_coil', 1),
+        [
+            'W W',
+            'WSW',
+            'W W'
+        ],{
+            W: tag.wire.copper,
+            S: item.create.spool.item
+        }
+    ).id(getRecipeID('copper_coil'))
+    
+    evt.shaped(
+        Item.of('powergrid:resistive_coil', 1),
+        [
+            'W W',
+            'WSW',
+            'W W'
+        ],{
+            W: tag.wire.iron,
+            S: item.create.spool.item
+        }
+    ).id(getRecipeID('resistive_coil'))
 }

@@ -52,8 +52,8 @@ const registerCCRecipes = (evt) => {
     "result": {"count": 1, "id": item.cc.computer.advanced }
     }).id(getRecipeID('computer_advanced_upgrade'))
 
-    evt.remove({ output: item.cc.computer.pocket.normal })
-    evt.remove({ output: item.cc.computer.pocket.advanced })
+    // evt.remove({ output: item.cc.computer.pocket.normal })
+    // evt.remove({ output: item.cc.computer.pocket.advanced })
 
     shapedRecipe(evt, getRecipeID('pocket_computer_normal'),
         [
@@ -94,8 +94,8 @@ const registerCCRecipes = (evt) => {
     "result": {"count": 1, "id": item.cc.computer.pocket.advanced }
     }).id(getRecipeID('pocket_computer_advanced_upgrade'))
 
-    evt.remove({ output: item.cc.turtle.normal })
-    evt.remove({ output: item.cc.turtle.advanced })
+    // evt.remove({ output: item.cc.turtle.normal })
+    // evt.remove({ output: item.cc.turtle.advanced })
 
     shapedRecipe(evt, getRecipeID('turtle_normal'),
         [
@@ -257,7 +257,7 @@ const registerCCRecipes = (evt) => {
 
     shapedRecipe(evt, getRecipeID('peripheral_casing'),
         [
-            [ tag.rod.alluminum, tag.plate.titanium, tag.rod.alluminum ],
+            [ tag.rod.aluminum, tag.plate.titanium, tag.rod.aluminum ],
             [ tag.plate.titanium, item.iu.machine_corpus.tech, tag.plate.titanium ],
             [ tag.rod.electrum, tag.plate.titanium, tag.rod.electrum ]
         ],

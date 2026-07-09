@@ -166,7 +166,8 @@ const registerCommonRecipes = (evt) => {
             asItem(tag.ingot.molybdenum_steel, 4)
         ],[
             asItem(item.ingot.netherite)
-        ]
+        ],
+        { 'temperature': 6000 }
     )
     
     
@@ -191,6 +192,7 @@ const registerCommonRecipes = (evt) => {
     //         tag.ingot.steel
     //     ]
     // ).id(getRecipeID('steel_nugget_ct'))
+
 
     // Кловергетт
 
@@ -239,9 +241,72 @@ const registerCommonRecipes = (evt) => {
     )
     
     
+    // Экзо-компоненты брони
+
+    evt.shaped(
+        Item.of(item.custom.exo_components.lvl1, 1),
+        [
+            'QIQ',
+            'DCD',
+            'IPI'
+        ],{
+            Q: item.iu.tech_box.normal.nano,
+            I: item.iu.compressed_carbon,
+            C: item.iu.controller.lvl2,
+            P: item.iu.microchip.lvl2,
+            D: item.plate.wolframite
+        }
+    ).id(getRecipeID('exo_1'))
     
+    evt.shaped(
+        Item.of(item.custom.exo_components.lvl2, 1),
+        [
+            'QCQ',
+            'DED',
+            'IPI'
+        ],{
+            Q: item.iu.tech_box.big.nano,
+            C: item.iu.controller.lvl3,
+            I: item.iu.industrial_iridium_plate,
+            P: item.iu.microchip.lvl6,
+            D: tag.plates.mithril,
+            E: item.custom.exo_components.lvl1
+        }
+    ).id(getRecipeID('exo_2'))
     
+    evt.shaped(
+        Item.of(item.custom.exo_components.lvl3, 1),
+        [
+            'QCQ',
+            'DED',
+            'IPI'
+        ],{
+            Q: item.iu.tech_box.big.quantum,
+            C: item.iu.controller.lvl4,
+            I: item.iu.compressed_industrial_iridium_plate,
+            P: item.iu.microchip.lvl8,
+            D: tag.plates.draconid,
+            E: item.custom.exo_components.lvl2
+        }
+    ).id(getRecipeID('exo_3'))
     
+    evt.shaped(
+        Item.of(item.custom.exo_components.lvl4, 1),
+        [
+            'QCQ',
+            'DED',
+            'IPI'
+        ],{
+            Q: item.iu.tech_box.big.spectral,
+            C: item.iu.controller.lvl5,
+            I: item.iu.dense_compressed_industrial_iridium_plate,
+            P: item.iu.microchip.lvl10,
+            D: item.custom.kloverghett_treated,
+            E: item.custom.exo_components.lvl3
+        }
+    ).id(getRecipeID('exo_4'))
+
+
 
     console.info('Common recipe adding passed')
 }

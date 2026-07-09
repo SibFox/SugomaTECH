@@ -78,4 +78,49 @@ const registerIURecipes = (evt) => {
     ).id(getRecipeID('spool'))
 
     console.info('Industrial Upgrade recipe adding passed')
+
+    evt.shapeless(Item.of(item.iu.wire.bare.copper, 1),
+        [
+            'createaddition:copper_wire'
+        ]
+    ).id(getRecipeID('wire_bare_copper_csa'))
+
+    evt.shapeless(Item.of(item.iu.wire.bare.gold, 1),
+        [
+            'createaddition:gold_wire'
+        ]
+    ).id(getRecipeID('wire_bare_gold_csa'))
+    
+    evt.shapeless(Item.of(item.iu.wire.isolated.gold, 1),
+    [
+        'createaddition:electrum_wire'
+    ]
+    ).id(getRecipeID('wire_isolated_gold_csa'))
+
+    evt.shapeless(Item.of(item.iu.wire.bare.copper, 1),
+        [
+            'powergrid:wire'
+        ]
+    ).id(getRecipeID('wire_bare_copper_pg'))
+
+    evt.shapeless(Item.of(item.iu.wire.bare.iron, 1),
+        [
+            'powergrid:iron_wire'
+        ]
+    ).id(getRecipeID('wire_bare_gold_pg'))
+
+    evt.shapeless(Item.of(item.iu.wire.bare.gold, 1),
+        [
+            'powergrid:golden_wire'
+        ]
+    ).id(getRecipeID('wire_bare_gold_pg'))
+
+    evt.shapeless(Item.of(item.iu.wire.isolated.copper, 1),
+        [
+            'powergrid:insulated_copper_wire'
+        ]
+    ).id(getRecipeID('wire_isolated_copper_pg'))
+    
+    
+    
 }
