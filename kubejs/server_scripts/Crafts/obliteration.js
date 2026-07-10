@@ -31,7 +31,10 @@ const registerItemObliteration = () => {
         'createaddition:copper_rod', 'createaddition:iron_rod', 'createaddition:gold_rod',
         'createaddition:electrum_rod', 'createaddition:brass_rod', 'megacells:sky_osmium_ingot',
         'megacells:sky_osmium_block', 'extendedae:infinity_cobblestone_cell',
-        'extendedae:infinity_water_cell'
+        'extendedae:infinity_water_cell', 'agritechevolved:biomass_burner',
+        'agritechevolved:composter', 'agritechevolved:capacitor_tier1',
+        'agritechevolved:capacitor_tier2', 'agritechevolved:capacitor_tier3',
+        'geneticsresequenced:coal_generator'
     ]
 
     // Check if itemID exists within obliterateItems

@@ -12,11 +12,11 @@ const registerMFFSCTRecipes = (evt) => {
 
     shapedRecipe(evt, getRecipeID('focus_matrix'),
         [
-            [ tag.plate.molybdenumsteel, item.iu.wire.glass, tag.plate.molybdenumsteel ],
+            [ item.iu.module.template.lvl1, item.iu.tech_box.normal.nano, item.iu.module.template.lvl1 ],
             [ item.iu.graphene_wire, item.iu.microchip.lvl6, item.iu.graphene_wire ],
-            [ tag.plate.molybdenumsteel, item.iu.wire.glass, tag.plate.molybdenumsteel ]
+            [ item.iu.controller.lvl2, item.cn.fiber_optic, item.iu.controller.lvl2 ]
         ],
-    item.mffs.focus_matrix, 4)
+    item.mffs.focus_matrix, 2)
 
     shapedRecipe(evt, getRecipeID('projector'),
         [

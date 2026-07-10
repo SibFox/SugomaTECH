@@ -180,7 +180,7 @@ function iuRecipe(evt, id, type, inputs, outputs, params){
         recipe.inputs.push(dict)
     }
 
-    if (type === IUMachineCraft.SOLID_ELECTROLYZER) {
+    if ([IUMachineCraft.SOLID_ELECTROLYZER, IUMachineCraft.DIVIDER.ITEM_FLUID].includes(type)) {
         recipe.inputs.push({ "type": "fluid", "id": "minecraft:water", "amount": 1 })
         recipe.isFluidRecipe = true
     }

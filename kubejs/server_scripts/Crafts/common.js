@@ -32,8 +32,7 @@ const registerCommonRecipes = (evt) => {
 
     iuRecipe(evt, getRecipeID('liquid_redstone_1'), IUMachineCraft.DIVIDER.ITEM_FLUID,
         [
-            asItem(item.redstone),
-            asItem(fluid.oxygen, 1)
+            asItem(item.redstone)
         ],[
             asItem(fluid.redstone, 10),
             asItem(fluid.oxygen, 5)
@@ -42,8 +41,7 @@ const registerCommonRecipes = (evt) => {
 
     iuRecipe(evt, getRecipeID('liquid_redstone_2'), IUMachineCraft.DIVIDER.ITEM_FLUID,
         [
-            asItem(item.redstone_block),
-            asItem(fluid.oxygen, 1)
+            asItem(item.redstone_block)
         ],[
             asItem(fluid.redstone, 90),
             asItem(fluid.oxygen, 45)
@@ -269,7 +267,7 @@ const registerCommonRecipes = (evt) => {
             C: item.iu.controller.lvl3,
             I: item.iu.industrial_iridium_plate,
             P: item.iu.microchip.lvl6,
-            D: tag.plates.mithril,
+            D: tag.plate.mithril,
             E: item.custom.exo_components.lvl1
         }
     ).id(getRecipeID('exo_2'))
@@ -285,7 +283,7 @@ const registerCommonRecipes = (evt) => {
             C: item.iu.controller.lvl4,
             I: item.iu.compressed_industrial_iridium_plate,
             P: item.iu.microchip.lvl8,
-            D: tag.plates.draconid,
+            D: tag.plate.draconid,
             E: item.custom.exo_components.lvl2
         }
     ).id(getRecipeID('exo_3'))

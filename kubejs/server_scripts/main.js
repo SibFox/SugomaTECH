@@ -27,6 +27,7 @@ ServerEvents.recipes(event => {
     registerFDRecipes(event)
     registerWCRecipes(event)
     registerSBRecipes(event)
+    registerAgritechRecipes(event)
 })
 
 // LootJS.lootTables(evt => {

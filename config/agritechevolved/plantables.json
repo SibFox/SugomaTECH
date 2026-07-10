@@ -1747,103 +1747,103 @@
   "allowedSoils": [
     {
       "soil": "minecraft:dirt",
-      "growthModifier": 0.1
+      "growthModifier": 0.01
     },
     {
       "soil": "minecraft:coarse_dirt",
-      "growthModifier": 0.1
+      "growthModifier": 0.01
     },
     {
       "soil": "minecraft:podzol",
-      "growthModifier": 0.1
+      "growthModifier": 0.01
     },
     {
       "soil": "minecraft:mycelium",
-      "growthModifier": 0.1
+      "growthModifier": 0.01
     },
     {
       "soil": "minecraft:mud",
-      "growthModifier": 0.15
+      "growthModifier": 0.015
     },
     {
       "soil": "minecraft:muddy_mangrove_roots",
-      "growthModifier": 0.15
+      "growthModifier": 0.015
     },
     {
       "soil": "minecraft:rooted_dirt",
-      "growthModifier": 0.1
+      "growthModifier": 0.01
     },
     {
       "soil": "minecraft:moss_block",
-      "growthModifier": 0.1
+      "growthModifier": 0.01
     },
     {
       "soil": "minecraft:farmland",
-      "growthModifier": 0.15
+      "growthModifier": 0.015
     },
     {
       "soil": "minecraft:sand",
-      "growthModifier": 0.15
+      "growthModifier": 0.015
     },
     {
       "soil": "minecraft:red_sand",
-      "growthModifier": 0.15
+      "growthModifier": 0.015
     },
     {
       "soil": "minecraft:grass_block",
-      "growthModifier": 0.1
+      "growthModifier": 0.01
     },
     {
       "soil": "minecraft:soul_sand",
-      "growthModifier": 0.15
+      "growthModifier": 0.015
     },
     {
       "soil": "minecraft:end_stone",
-      "growthModifier": 0.15
+      "growthModifier": 0.015
     },
     {
       "soil": "minecraft:jungle_log",
-      "growthModifier": 0.15
+      "growthModifier": 0.015
     },
     {
       "soil": "minecraft:jungle_wood",
-      "growthModifier": 0.15
+      "growthModifier": 0.015
     },
     {
       "soil": "minecraft:stripped_jungle_log",
-      "growthModifier": 0.15
+      "growthModifier": 0.015
     },
     {
       "soil": "minecraft:stripped_jungle_wood",
-      "growthModifier": 0.15
+      "growthModifier": 0.015
     },
     {
       "soil": "minecraft:crimson_nylium",
-      "growthModifier": 0.175
+      "growthModifier": 0.0175
     },
     {
       "soil": "minecraft:warped_nylium",
-      "growthModifier": 0.175
+      "growthModifier": 0.0175
     },
     {
       "soil": "farmersdelight:rich_soil",
-      "growthModifier": 0.2
+      "growthModifier": 0.02
     },
     {
       "soil": "farmersdelight:rich_soil_farmland",
-      "growthModifier": 0.2
+      "growthModifier": 0.02
     },
     {
       "soil": "farmersdelight:organic_compost",
-      "growthModifier": 0.2
+      "growthModifier": 0.02
     },
     {
       "soil": "agritechevolved:infused_farmland",
-      "growthModifier": 0.55
+      "growthModifier": 0.055
     },
     {
       "soil": "agritechevolved:mulch",
-      "growthModifier": 0.35
+      "growthModifier": 0.035
     }
   ],
   "allowedFertilizers": [
@@ -1859,7 +1859,7 @@
     },
     {
       "item": "agritechevolved:compacted_biomass",
-      "speedMultiplier": 1.3,
+      "speedMultiplier": 1.5,
       "yieldMultiplier": 1.3
     }
   ]

@@ -226,6 +226,7 @@ const item = {
         tempered_glass: 'industrialupgrade:blockresource/tempered_glass',
 
         graphene_wire: 'industrialupgrade:graphene_wire',
+        graphene_plate: 'industrialupgrade:graphene_plate',
         base_generator: 'industrialupgrade:basemachine3/generator_iu',
         autopower_module: 'industrialupgrade:crafting_elements/crafting_713_element',
         power_slot: 'industrialupgrade:crafting_elements/crafting_539_element',
@@ -285,6 +286,7 @@ const item = {
             energy: 'industrialupgrade:itemdust/energium_dust',
             calcium_phosphate: 'industrialupgrade:itemdust/calcium_phosphate_dust',
             potassium: 'industrialupgrade:itemdust/potassium_dust',
+            potassium_phosphate: 'industrialupgrade:itemdust/potassium_phosphate_dust',
             silicon: 'industrialupgrade:itemdust/silicon_dust',
             quartz: 'industrialupgrade:itemdust/quartz_dust',
             sulfur: 'industrialupgrade:itemdust/sulfur_dust',
@@ -1253,7 +1255,8 @@ const fluid = {
     hot_coolant: '$industrialupgrade:iufluidhot_coolant',
     nitrooxide: '$industrialupgrade:iufluidnitricoxide',
     cryogen: '$industrialupgrade:iufluidcryogen',
-
+    biomass: '$industrialupgrade:iufluidbiomass',
+    plant_mixture: '$industrialupgrade:iufluidplantmixture',
 
     metal: {
         bronze: '$industrialupgrade:iufluidbronze',
