@@ -2,9 +2,15 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "genetic_resqued"
-	group: "44DAAF0B20180AA5"
+	group: "4A3E876B2700798D"
+	icon: {
+		components: {
+			"geneticsresequenced:gene": "geneticsresequenced:basic"
+		}
+		id: "geneticsresequenced:dna_helix"
+	}
 	id: "31718A1EEFBD3C28"
-	order_index: 2
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -13,264 +19,378 @@
 			}
 			icon_scale: 0.9d
 			id: "01908AA9362EC6E7"
-			shape: "octagon"
-			size: 1.5d
-			tasks: [
-				{
-					id: "29B8C4397607D1D3"
-					item: { count: 1, id: "geneticsresequenced:scraper" }
-					type: "item"
-				}
-				{
-					id: "7ED5F7C15DBCAA9C"
-					item: { count: 1, id: "geneticsresequenced:syringe" }
-					type: "item"
-				}
-			]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				id: "29B8C4397607D1D3"
+				item: { count: 1, id: "geneticsresequenced:scraper" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["01908AA9362EC6E7"]
+			hide_details_until_startable: true
+			id: "57B3D2B3506C1298"
+			shape: "hexagon"
+			tasks: [{
+				id: "689235546BDF6AE2"
+				item: { count: 1, id: "geneticsresequenced:syringe" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["01908AA9362EC6E7"]
+			hide_until_deps_complete: true
+			id: "19FE1F2000E58A36"
+			shape: "none"
+			tasks: [{
+				count: 32L
+				id: "643F0C9F05398ABB"
+				item: { components: { "geneticsresequenced:entity_type": "minecraft:pig" }, count: 1, id: "geneticsresequenced:organic_matter" }
+				type: "item"
+			}]
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["01908AA9362EC6E7"]
-			icon: {
-				components: {
-					"geneticsresequenced:entity_type": "minecraft:pig"
-				}
-				id: "geneticsresequenced:organic_matter"
-			}
-			id: "15586B400513DE4B"
-			rewards: [{
-				id: "33451EF5E7DB1A02"
-				item: {
-					count: 1
-					id: "kubejs:coin"
-				}
+			hide_details_until_startable: true
+			id: "6C6FE25134242C16"
+			shape: "hexagon"
+			tasks: [{
+				id: "1B31046DA0957B3D"
+				item: { count: 1, id: "geneticsresequenced:metal_syringe" }
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "5116DE56168AFAE3"
-					item: { components: { "geneticsresequenced:entity_type": "minecraft:player" }, count: 1, id: "geneticsresequenced:organic_matter" }
-					type: "item"
-				}
-				{
-					id: "22736F899B51B7A2"
-					item: { count: 1, id: "geneticsresequenced:cell_analyzer" }
-					type: "item"
-				}
-				{
-					id: "7393A1D1DC6DCE4D"
-					item: { components: { "geneticsresequenced:entity_type": "minecraft:player" }, count: 1, id: "geneticsresequenced:cell" }
-					type: "item"
-				}
-			]
-			x: 1.5d
+			x: 1.0d
 			y: 0.5d
 		}
 		{
-			dependencies: ["15586B400513DE4B"]
-			icon: {
-				components: {
-					"geneticsresequenced:is_contaminated": 0b
-					"geneticsresequenced:specific_entity": {
-						name: "SibFox"
-						uuid: "8ec84b0f-9064-471e-ba07-dd5d5d728f7a"
-					}
-				}
-				id: "geneticsresequenced:syringe"
-			}
-			id: "7B3AC4C8B6B9535A"
+			dependencies: [
+				"6C6FE25134242C16"
+				"57B3D2B3506C1298"
+			]
+			hide_details_until_startable: true
+			id: "58A98FFF9BF239FC"
+			require_sequential_tasks: true
 			rewards: [{
-				id: "5510E57322E2E000"
+				id: "0BAC4B6DAFADA4BE"
 				item: {
 					count: 1
 					id: "kubejs:coin"
 				}
 				type: "item"
 			}]
-			tasks: [
-				{
-					id: "2611E439862E1AC2"
-					item: { count: 1, id: "geneticsresequenced:blood_purifier" }
-					type: "item"
-				}
-				{
-					id: "06F314752C358794"
-					item: { count: 1, id: "geneticsresequenced:syringe" }
-					type: "item"
-				}
-			]
-			x: 1.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["7B3AC4C8B6B9535A"]
-			icon: {
-				components: {
-					"geneticsresequenced:entity_type": "minecraft:cow"
-				}
-				id: "geneticsresequenced:dna_helix"
-			}
-			id: "27221C48FA35E6F4"
-			rewards: [{
-				id: "0041ACD4D8C0BC09"
-				item: {
-					count: 1
-					id: "kubejs:coin"
-				}
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "6C19A018F17F6D58"
-					item: { count: 1, id: "geneticsresequenced:dna_extractor" }
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "0ECD88DE571A905A"
-					item: { components: { "geneticsresequenced:entity_type": "minecraft:player" }, count: 9, id: "geneticsresequenced:dna_helix" }
-					type: "item"
-				}
-			]
-			x: 0.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["27221C48FA35E6F4"]
-			id: "4464D5FB3CF1299C"
+			shape: "rsquare"
 			tasks: [{
-				id: "17FAEABC3A624B64"
+				id: "78C38C68E83A8654"
+				item: { count: 1, id: "geneticsresequenced:blood_purifier" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			id: "3B07C195C50774CB"
+			optional: true
+			rewards: [{
+				id: "117341D6121C6E30"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "7F4DE57A3A8908B9"
+				item: { count: 1, id: "geneticsresequenced:coal_generator" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["001979AD8815672C"]
+			hide_details_until_startable: true
+			id: "4B06A3C83175D9C8"
+			rewards: [{
+				id: "67C0F5D718954516"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "50D661D51A47A8B6"
+				item: { count: 1, id: "geneticsresequenced:plasmid_infuser" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["4B06A3C83175D9C8"]
+			hide_details_until_startable: true
+			id: "47AD819295852D52"
+			rewards: [{
+				id: "369E633743421990"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "7EAE7E088D8E14F0"
+				item: { count: 1, id: "geneticsresequenced:plasmid_injector" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["1674C337F8B32D9B"]
+			id: "001979AD8815672C"
+			rewards: [{
+				id: "14A41C21704FEC85"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "483185F358316E4F"
 				item: { count: 1, id: "geneticsresequenced:plasmid" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["768A82AFF92B6ECD"]
-			icon: {
-				id: "geneticsresequenced:plasmid"
-			}
-			id: "3DC06323A198B1ED"
-			rewards: [{
-				id: "60773C9C4A2E281F"
-				item: {
-					count: 1
-					id: "kubejs:coin"
-				}
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "00FC12E68C1EC755"
-					item: { count: 1, id: "geneticsresequenced:plasmid_infuser" }
-					type: "item"
-				}
-				{
-					id: "2E9923E0F687CCFD"
-					item: { components: { "geneticsresequenced:plasmid_progress": { dna_points: 12, gene: "geneticsresequenced:milky" } }, count: 1, id: "geneticsresequenced:plasmid" }
-					type: "item"
-				}
-			]
-			x: 2.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["3DC06323A198B1ED"]
-			icon: {
-				id: "minecraft:milk_bucket"
-			}
-			id: "6A79D7D4C49D107C"
-			invisible: true
-			rewards: [{
-				id: "6C68305861AD0D0F"
-				item: {
-					count: 1
-					id: "kubejs:coin"
-				}
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "5D1EB10C57051AAF"
-					item: { count: 1, id: "geneticsresequenced:plasmid_injector" }
-					type: "item"
-				}
-				{
-					id: "1A7579E9C9EA0454"
-					item: { count: 1, id: "geneticsresequenced:metal_syringe" }
-					type: "item"
-				}
-			]
-			x: 3.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["4464D5FB3CF1299C"]
-			icon: {
-				components: {
-					"geneticsresequenced:entity_type": "minecraft:cow"
-				}
-				id: "geneticsresequenced:dna_helix"
-			}
-			id: "768A82AFF92B6ECD"
-			rewards: [{
-				id: "3463E1DFEA05E729"
-				item: {
-					count: 1
-					id: "kubejs:coin"
-				}
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "05947FA81FD0CA67"
-					item: { count: 1, id: "geneticsresequenced:dna_decryptor" }
-					type: "item"
-				}
-				{
-					count: 7L
-					id: "7EDF0895941BCA78"
-					item: { components: { "geneticsresequenced:gene": "geneticsresequenced:milky" }, count: 7, id: "geneticsresequenced:dna_helix" }
-					type: "item"
-				}
-			]
 			x: -1.0d
-			y: -1.0d
+			y: -6.5d
 		}
 		{
-			id: "2992C5F9EE64A135"
-			invisible: true
-			tasks: [
-				{
-					id: "3BD7B2292C221BAB"
-					item: { components: { "geneticsresequenced:plasmid_progress": { dna_points: 40, gene: "geneticsresequenced:keep_inventory" } }, count: 1, id: "geneticsresequenced:plasmid" }
-					type: "item"
+			dependencies: ["1674C337F8B32D9B"]
+			id: "313D06B6D1049B66"
+			optional: true
+			rewards: [{
+				id: "15DCBFD159B0C3B5"
+				item: {
+					count: 1
+					id: "kubejs:coin"
 				}
-				{
-					id: "540D9643A37FDD40"
-					item: { components: { "geneticsresequenced:plasmid_progress": { dna_points: 20, gene: "geneticsresequenced:dragons_breath" } }, count: 1, id: "geneticsresequenced:plasmid" }
-					type: "item"
-				}
-				{
-					id: "1D021414D72FFA20"
-					item: { components: { "geneticsresequenced:plasmid_progress": { dna_points: 30, gene: "geneticsresequenced:no_fall_damage" } }, count: 1, id: "geneticsresequenced:plasmid" }
-					type: "item"
-				}
-			]
-			x: 0.5d
-			y: 1.5d
-		}
-		{
-			id: "2CED273C6573104A"
+				type: "item"
+			}]
+			shape: "none"
 			tasks: [{
-				id: "7E24AA574C1652B5"
+				id: "3D38073DF22857FC"
+				item: { count: 1, id: "geneticsresequenced:anti_plasmid" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["19FE1F2000E58A36"]
+			id: "2B684BF745B97FD5"
+			rewards: [{
+				id: "252A3DA6A3A62380"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "799B64A974BD9728"
+				item: { count: 1, id: "geneticsresequenced:cell_analyzer" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2B684BF745B97FD5"]
+			id: "6BD49D9EEE8DE61A"
+			rewards: [{
+				id: "3B28498743D7EC44"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "1170441A86728CB0"
+				item: { components: { "geneticsresequenced:entity_type": "minecraft:pig" }, count: 1, id: "geneticsresequenced:cell" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6BD49D9EEE8DE61A"]
+			id: "17A47E26BE71E97A"
+			rewards: [{
+				id: "24080FA9B5E0BD02"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "1038D4DDDA169DF3"
+				item: { count: 1, id: "geneticsresequenced:dna_extractor" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["17A47E26BE71E97A"]
+			id: "1674C337F8B32D9B"
+			rewards: [{
+				id: "2090CEA9F656010A"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "18BB209EBFD1B69B"
+				item: { components: { "geneticsresequenced:gene": "geneticsresequenced:basic" }, count: 1, id: "geneticsresequenced:dna_helix" }
+				match_components: "fuzzy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1674C337F8B32D9B"]
+			id: "5946A043F2E1AF0E"
+			rewards: [{
+				id: "44165778D148C7DC"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "7CC2E7044A9E58E3"
+				item: { count: 1, id: "geneticsresequenced:dna_decryptor" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			id: "61C89B5257A695AC"
+			optional: true
+			shape: "none"
+			tasks: [{
+				id: "7F9221463EEDFDE6"
+				item: { components: { "minecraft:potion_contents": { potion: "geneticsresequenced:substrate" } }, count: 1, id: "minecraft:potion" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["61C89B5257A695AC"]
+			id: "63903A9AA7B60C36"
+			optional: true
+			rewards: [{
+				id: "22FF1A1972D8E2ED"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "1B0EE6D3DC643872"
+				item: { count: 1, id: "geneticsresequenced:advanced_incubator" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.0d
+		}
+		{
+			id: "613B142597B57B1F"
+			rewards: [{
+				id: "024FBE5FB3CCD9F7"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "168D236A24CEDD58"
 				item: { count: 1, id: "geneticsresequenced:overclocker" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: 1.5d
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["583A859E492347DE"]
+			id: "77E99D4C02892131"
+			optional: true
+			rewards: [{
+				id: "56C0178757E448C3"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "2845934434172C32"
+				item: { count: 1, id: "geneticsresequenced:anti_field_block" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -9.0d
+		}
+		{
+			id: "583A859E492347DE"
+			optional: true
+			rewards: [{
+				id: "17671C24D70C7951"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				id: "46E7693CF3E85E8D"
+				item: { count: 1, id: "geneticsresequenced:anti_field_orb" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -7.5d
 		}
 	]
 }

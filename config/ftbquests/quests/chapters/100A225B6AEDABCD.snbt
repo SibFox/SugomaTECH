@@ -258,12 +258,12 @@
 			tasks: [
 				{
 					id: "093C1159226711AA"
-					item: { count: 1, id: "ironchest:iron_chest" }
+					item: { components: { "ftbquests:missing_item": "ironchest:iron_chest" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "600D5740B279880F"
-					item: { count: 1, id: "ironfurnaces:iron_furnace" }
+					item: { components: { "ftbquests:missing_item": "ironfurnaces:iron_furnace" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 			]
@@ -282,7 +282,7 @@
 			}]
 			tasks: [{
 				id: "04770CD3571581BA"
-				item: { count: 1, id: "waystones:waystone" }
+				item: { components: { "ftbquests:missing_item": "waystones:waystone" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -1.5d

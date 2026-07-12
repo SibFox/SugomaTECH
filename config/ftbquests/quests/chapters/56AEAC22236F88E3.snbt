@@ -2125,7 +2125,7 @@
 			}]
 			tasks: [{
 				id: "208DFF022BF8E031"
-				item: { count: 1, id: "simplyquarries:simplyquarries/simply_quarry" }
+				item: { components: { "ftbquests:missing_item": "simplyquarries:simplyquarries/simply_quarry" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 2.0d

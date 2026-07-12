@@ -2,9 +2,9 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "tips"
-	group: "44DAAF0B20180AA5"
+	group: "7F4B7EBD641EADF4"
 	icon: {
-		id: "ae2:controller"
+		id: "ae2:fluix_crystal"
 	}
 	id: "17547FC8D4FFF9D2"
 	order_index: 0
@@ -499,7 +499,7 @@
 			tasks: [{
 				count: 2L
 				id: "60C6455BADB2A4D5"
-				item: { count: 2, id: "ae2:wireless_booster" }
+				item: { count: 1, id: "ae2:wireless_booster" }
 				type: "item"
 			}]
 			x: 1.0d
