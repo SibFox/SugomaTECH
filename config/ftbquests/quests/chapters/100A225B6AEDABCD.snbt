@@ -21,8 +21,8 @@
 			image: "kubejs:textures/quests/dirt_mecha.png"
 			rotation: 0.0d
 			width: 3.2d
-			x: 7.571428571428555d
-			y: 2.0420918367346985d
+			x: 7.514285714285698d
+			y: 0.6081632653061249d
 		}
 		{
 			height: 1.0d
@@ -61,8 +61,8 @@
 			image: "minecraft:item/stone_pickaxe"
 			rotation: 0.0d
 			width: 2.5d
-			x: -3.0d
-			y: -6.5d
+			x: 7.5d
+			y: -10.0d
 		}
 	]
 	order_index: 1
@@ -91,8 +91,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: -1.0d
+			x: 10.5d
+			y: -1.5d
 		}
 		{
 			id: "14ACFA97FCB9EF7C"
@@ -109,8 +109,8 @@
 				item: { count: 1, id: "industrialupgrade:facadeitem" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 1.0d
+			x: 3.0d
+			y: -5.5d
 		}
 		{
 			id: "26B76375A1FDE7DD"
@@ -134,8 +134,8 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
-			y: 0.0d
+			x: 3.0d
+			y: -4.5d
 		}
 		{
 			id: "2F2D8348EC25E12E"
@@ -152,7 +152,7 @@
 				item: { count: 1, id: "industrialupgrade:sensor/sensor" }
 				type: "item"
 			}]
-			x: 1.0d
+			x: 5.5d
 			y: -1.0d
 		}
 		{
@@ -170,8 +170,8 @@
 				item: { count: 1, id: "industrialupgrade:connect_item" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -1.0d
+			x: 12.0d
+			y: -3.5d
 		}
 		{
 			id: "122C82BAFDBD5CBC"
@@ -188,8 +188,8 @@
 				item: { count: 1, id: "industrialupgrade:bags/lead_box" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 0.0d
+			x: 12.0d
+			y: -4.5d
 		}
 		{
 			id: "17C5211A1466D638"
@@ -206,8 +206,8 @@
 				item: { count: 1, id: "industrialupgrade:energy/molot" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -2.0d
+			x: 9.0d
+			y: -8.5d
 		}
 		{
 			id: "2DB062BF44BF7F22"
@@ -225,7 +225,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 0.0d
+			y: -3.5d
 		}
 		{
 			id: "5BC94F2E1797A6FA"
@@ -242,51 +242,8 @@
 				item: { count: 1, id: "sophisticatedbackpacks:backpack" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: -0.5d
-		}
-		{
-			id: "002311B194E5CA08"
-			rewards: [{
-				id: "0229B73347840772"
-				item: {
-					count: 1
-					id: "kubejs:coin"
-				}
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "093C1159226711AA"
-					item: { components: { "ftbquests:missing_item": "ironchest:iron_chest" }, count: 1, id: "ftbquests:missing_item" }
-					type: "item"
-				}
-				{
-					id: "600D5740B279880F"
-					item: { components: { "ftbquests:missing_item": "ironfurnaces:iron_furnace" }, count: 1, id: "ftbquests:missing_item" }
-					type: "item"
-				}
-			]
-			x: -2.0d
+			x: 4.5d
 			y: -1.5d
-		}
-		{
-			id: "1B3C1498A8DE5914"
-			rewards: [{
-				id: "6FC112D48544DA92"
-				item: {
-					count: 1
-					id: "kubejs:coin"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "04770CD3571581BA"
-				item: { components: { "ftbquests:missing_item": "waystones:waystone" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: -0.5d
 		}
 		{
 			id: "01E4930C0BAA6324"
@@ -315,8 +272,8 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: 0.5d
+			x: 5.0d
+			y: -8.0d
 		}
 		{
 			id: "4671525C8B08D3C5"
@@ -383,8 +340,8 @@
 				item: { count: 1, id: "industrialupgrade:energy/iron_hammer" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: -5.0d
+			x: 6.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["1D900197A58756AD"]
@@ -402,8 +359,8 @@
 				item: { count: 1, id: "industrialupgrade:energy/steel_hammer" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: -5.0d
+			x: 7.5d
+			y: -8.5d
 		}
 		{
 			id: "5B4E1F342A72526D"
@@ -432,8 +389,8 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
-			y: -5.0d
+			x: 10.0d
+			y: -8.0d
 		}
 		{
 			id: "6F2D7074EA78261C"
@@ -464,8 +421,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: -2.0d
+			x: 9.5d
+			y: -1.0d
 		}
 		{
 			id: "4A3784C6AF34B27F"
@@ -475,8 +432,8 @@
 				id: "0C9E6DFA9EF0F275"
 				type: "checkmark"
 			}]
-			x: 7.557142857142857d
-			y: 0.9339285714285737d
+			x: 7.5d
+			y: -0.5d
 		}
 		{
 			id: "10C12824EA94599A"
@@ -505,8 +462,8 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
-			y: -2.0d
+			x: 12.0d
+			y: -5.5d
 		}
 	]
 }

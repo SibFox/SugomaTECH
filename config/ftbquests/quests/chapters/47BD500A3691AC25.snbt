@@ -13,8 +13,8 @@
 			image: "kubejs:textures/quests/treerubber.png"
 			rotation: 0.0d
 			width: 10.12d
-			x: -6.0d
-			y: -9.0d
+			x: -2.0d
+			y: -9.5d
 		}
 		{
 			height: 2.0d
@@ -68,7 +68,7 @@
 				}
 			]
 			x: 0.0d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			id: "2DC56CA357E30F42"
@@ -79,7 +79,7 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: 1.9500000000000002d
+			y: 2.6d
 		}
 		{
 			dependencies: ["46323D0D4D10CEE9"]
@@ -397,8 +397,8 @@
 					type: "item"
 				}
 			]
-			x: -6.0d
-			y: -7.199999999999999d
+			x: -1.9704761904761838d
+			y: -7.199999999999989d
 		}
 		{
 			dependencies: ["5D5611E1B440B416"]
@@ -493,7 +493,7 @@
 				item: { count: 1, id: "minecraft:diamond" }
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.5d
 			y: 2.0d
 		}
 	]

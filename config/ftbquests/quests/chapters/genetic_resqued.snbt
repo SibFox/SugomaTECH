@@ -10,6 +10,14 @@
 		id: "geneticsresequenced:dna_helix"
 	}
 	id: "31718A1EEFBD3C28"
+	images: [{
+		height: 20.0d
+		image: "kubejs:textures/quests/dna.png"
+		rotation: 0.0d
+		width: 20.0d
+		x: -0.0952380952380949d
+		y: -3.3690476190476133d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -46,7 +54,7 @@
 			dependencies: ["01908AA9362EC6E7"]
 			hide_until_deps_complete: true
 			id: "19FE1F2000E58A36"
-			shape: "none"
+			shape: "circle"
 			tasks: [{
 				count: 32L
 				id: "643F0C9F05398ABB"
@@ -167,7 +175,7 @@
 				}
 				type: "item"
 			}]
-			shape: "none"
+			shape: "circle"
 			tasks: [{
 				id: "483185F358316E4F"
 				item: { count: 1, id: "geneticsresequenced:plasmid" }
@@ -188,7 +196,7 @@
 				}
 				type: "item"
 			}]
-			shape: "none"
+			shape: "circle"
 			tasks: [{
 				id: "3D38073DF22857FC"
 				item: { count: 1, id: "geneticsresequenced:anti_plasmid" }
@@ -228,7 +236,7 @@
 				}
 				type: "item"
 			}]
-			shape: "none"
+			shape: "circle"
 			tasks: [{
 				id: "1170441A86728CB0"
 				item: { components: { "geneticsresequenced:entity_type": "minecraft:pig" }, count: 1, id: "geneticsresequenced:cell" }
@@ -269,7 +277,7 @@
 				}
 				type: "item"
 			}]
-			shape: "none"
+			shape: "circle"
 			tasks: [{
 				id: "18BB209EBFD1B69B"
 				item: { components: { "geneticsresequenced:gene": "geneticsresequenced:basic" }, count: 1, id: "geneticsresequenced:dna_helix" }
@@ -302,7 +310,7 @@
 		{
 			id: "61C89B5257A695AC"
 			optional: true
-			shape: "none"
+			shape: "circle"
 			tasks: [{
 				id: "7F9221463EEDFDE6"
 				item: { components: { "minecraft:potion_contents": { potion: "geneticsresequenced:substrate" } }, count: 1, id: "minecraft:potion" }
@@ -383,7 +391,7 @@
 				}
 				type: "item"
 			}]
-			shape: "none"
+			shape: "circle"
 			tasks: [{
 				id: "46E7693CF3E85E8D"
 				item: { count: 1, id: "geneticsresequenced:anti_field_orb" }
