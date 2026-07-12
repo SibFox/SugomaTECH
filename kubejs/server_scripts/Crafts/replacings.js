@@ -327,8 +327,13 @@ const registerRecipeReplacings = (evt) => {
         tag.dusts.emerald
     )
     
+    evt.replaceInput({ input: 'minecraft:chest' },
+        'minecraft:chest',
+        tag.chests.wooden
+    )
     
-
+    
+    
 
 
     console.info('Recipe replcaings passed')

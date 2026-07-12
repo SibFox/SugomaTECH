@@ -49,8 +49,8 @@ const registerItems = (evt) => {
         evt.create('incomplete_' + item).texture('kubejs:item/plates/tin_plate')
     }
 
-    evt.create('peeper', 'helmet').material('kubejs:bio')
-        .displayName('Глазастик').maxDamage(163)
+    // evt.create('peeper', 'helmet').material('kubejs:bio')
+    //     .displayName('Глазастик').maxDamage(163)
 
     console.info('Item registry passed')
 }

@@ -221,19 +221,22 @@ const item = {
         plastic: 'industrialupgrade:plastic_plate',
         carbon_plastic: 'industrialupgrade:crafting_elements/crafting_479_element',
         rubber: 'industrialupgrade:crafting_elements/crafting_271_element',
+        synthetic_rubber: 'industrialupgrade:synthetic_rubber',
         compressed_redstone: 'industrialupgrade:compressed_redstone',
         polypropylene: 'industrialupgrade:crafting_elements/crafting_484_element',
         tempered_glass: 'industrialupgrade:blockresource/tempered_glass',
+        magnet: 'industrialupgrade:energy/magnet',
+        exotic_material: 'industrialupgrade:crafting_elements/crafting_434_element',
 
         graphene_wire: 'industrialupgrade:graphene_wire',
         graphene_plate: 'industrialupgrade:graphene_plate',
+        graphite_plate: 'industrialupgrade:crafting_elements/crafting_320_element',
         base_generator: 'industrialupgrade:basemachine3/generator_iu',
         autopower_module: 'industrialupgrade:crafting_elements/crafting_713_element',
         power_slot: 'industrialupgrade:crafting_elements/crafting_539_element',
         tube_scheme: 'industrialupgrade:crafting_elements/crafting_122_element',
         laser_component: 'industrialupgrade:crafting_elements/crafting_354_element',
         molecular_core: 'industrialupgrade:itemiucrafring/itemmtcore',
-        upgrade_casing: 'industrialupgrade:upgrade_casing',
         energy_flow_generator: 'industrialupgrade:crafting_elements/crafting_731_element',
 
         cylinder: 'industrialupgrade:crafting_elements/crafting_46_element',
@@ -863,10 +866,12 @@ const item = {
         transmitter: 'create:transmitter',
         precision_mechanism: 'create:precision_mechanism',
         redstone_link: 'create:redstone_link',
+        belt: 'create:belt_connector',
         
         casing: {
             andesite: 'create:andesite_casing',
             brass: 'create:brass_casing',
+            industrial_iron: 'create:industrial_iron_block',
         },
 
         cogwheel: {
@@ -918,6 +923,10 @@ const item = {
 
         // ~~~~~~~~~~~~~~~~~~~~ Create Power Grid ~~~~~~~~~~~~~~~~~~~~
         electrical_gizmo: 'powergrid:electrical_gizmo',
+        integrated_circuit: 'powergrid:integrated_circuit',
+
+        // ~~~~~~~~~~~~~~~~~~~~ Aeronautics ~~~~~~~~~~~~~~~~~~~~
+        engine_assembly: 'simulated:engine_assembly',
     },
 
     // ~~~~~~~~~~~~~~~~~~~~ Cybernetics ~~~~~~~~~~~~~~~~~~~~ 
@@ -1059,6 +1068,7 @@ const tag = {
     },
 
     ingot: {
+        // Обычное
         copper: '#c:ingots/copper',
         iron: '#c:ingots/iron',
         gold: '#c:ingots/gold',
@@ -1071,21 +1081,29 @@ const tag = {
         hafnium: '#c:ingots/hafnium',
         brass: '#c:ingots/brass',
         electrum: '#c:ingots/electrum',
-        bronze: '#c:ingots/bronze',
         titanium: '#c:ingots/titanium',
+        platinum: '#c:ingots/platinum',
         steel: '#c:ingots/steel',
+        // 2 сплавка
+        bronze: '#c:ingots/bronze',
+        duralumin: '#c:ingots/duralumin',
         wolframite: '#c:ingots/wolframite',
         titanium_steel: '#c:ingots/titaniumsteel',
+        aluminiumlithium: '#c:ingots/aluminiumlithium',
+        osmiridium: '#c:ingots/osmiridium',
+        // 3 сплавка
         molybdenum_steel: '#c:ingots/molybdenumsteel',
         alcled: '#c:ingots/alcled',
+        berylliumbronze: '#c:ingots/berylliumbronze',
         carbon_tungsteen: '#c:ingots/carbontungsteen',
-        platinum: '#c:ingots/platinum',
-        aluminiumlithium: '#c:ingots/aluminiumlithium',      
         hafniumboride: '#c:ingots/hafniumboride',
+        tan_tung_haf: '#c:ingots/tantalumtungstenhafnium',
+        // 4 сплавка
         woods: '#c:ingots/woods',
         stainless_steel: '#c:ingots/stainlesssteel',
-        tan_tung_haf: '#c:ingots/tantalumtungstenhafnium',
         stellite: '#c:ingots/stellite',
+        inconel: '#c:ingots/inconel',
+        // Космическое
         mithril: '#c:ingots/mithril',
         adamantium: '#c:ingots/adamantium',
         orichalcum: '#c:ingots/orichalcum',
@@ -1094,6 +1112,7 @@ const tag = {
     },
 
     plate: {
+        // Обычное
         copper: '#c:plates/copper',
         tin: '#c:plates/tin',
         iron: '#c:plates/iron',
@@ -1107,21 +1126,29 @@ const tag = {
         cobalt: '#c:plates/cobalt',
         obsidian: '#c:plates/obsidian',
         hafnium: '#c:plates/hafnium',
+        platinum: '#c:plates/platinum',
         composite: '#c:plates/advancedalloy',
         steel: '#c:plates/steel',
+        // 2 сплавка
         alumel: '#c:plates/alumel',
+        duralumin: '#c:plates/duralumin',
         aluminumbronze: '#c:plates/aluminumbronze',
         duralumin: '#c:plates/duralumin',
         cobaltchrome: '#c:plates/cobaltchrome',
-        molybdenumsteel: '#c:plates/molybdenumsteel',
-        alcled: '#c:plates/alcled',
-        berylliumbronze: '#c:plates/berylliumbronze',
-        titanium_steel: '#c:plates/titaniumsteel',
-        niobium_titanium: '#c:plates/niobiumtitanium',
         red_brass: '#c:plates/redbrass',
-        platinum: '#c:plates/platinum',
-        woods: '#c:plates/woods',
+        titanium_steel: '#c:plates/titaniumsteel',
+        osmiridium: '#c:plates/osmiridium',
+        // 3 сплавка
+        molybdenumsteel: '#c:plates/molybdenumsteel',
+        berylliumbronze: '#c:plates/berylliumbronze',
+        hafniumboride: '#c:plates/hafniumboride',
+        alcled: '#c:plates/alcled',
+        niobium_titanium: '#c:plates/niobiumtitanium',
         tan_tung_haf: '#c:plates/tantalumtungstenhafnium',
+        // 4 сплавка
+        woods: '#c:plates/woods',
+        inconel: '#c:plates/inconel',
+        // Космическое
         mithril: '#c:plates/mithril',
         adamantium: '#c:plates/adamantium',
         orichalcum: '#c:plates/orichalcum',
@@ -1130,22 +1157,29 @@ const tag = {
     },
     
     doubleplate: {
+        // Обычное
+        titanium: '#c:doubleplate/titanium',
+        obsidian: '#c:doubleplate/obsidian',
+        hafnium: '#c:doubleplate/hafnium',
+        // 2 сплавка
         invar: '#c:doubleplate/invar',
         bronze: '#c:doubleplate/bronze',
         electrum: '#c:doubleplate/electrum',
-        titanium: '#c:doubleplate/titanium',
         nichrome: '#c:doubleplate/nichrome',
-        obsidian: '#c:doubleplate/obsidian',
-        hafnium: '#c:doubleplate/hafnium',
+        duralumin: '#c:doubleplate/duralumin',
         molybdenumsteel: '#c:doubleplate/molybdenumsteel',
+        niobium_titanium: '#c:doubleplate/niobiumtitanium',
+        alumel: '#c:doubleplate/alumel',
+        nitenol: '#c:doubleplate/nitenol',
+        // 3 сплавка
         alcled: '#c:doubleplate/alcled',
         berylliumbronze: '#c:doubleplate/berylliumbronze',
+        hafniumboride: '#c:doubleplate/hafniumboride',
         vanadoalumite: '#c:doubleplate/vanadoalumite',
-        nitenol: '#c:doubleplate/nitenol',
-        alumel: '#c:doubleplate/alumel',
-        niobium_titanium: '#c:doubleplate/niobium_titanium',
         tan_tung_haf: '#c:doubleplate/tantalumtungstenhafnium',
+        // 4 сплавка
         woods: '#c:doubleplate/woods',
+        // Космическое
         mithril: '#c:doubleplate/mithril',
         adamantium: '#c:doubleplate/adamantium',
         orichalcum: '#c:doubleplate/orichalcum',
@@ -1163,6 +1197,7 @@ const tag = {
         polonium: '#c:casings/polonium',
         niobium: '#c:casings/niobium',
         hafnium: '#c:casings/hafnium',
+        duralumin: '#c:casings/duralumin',
         tan_tung_haf: '#c:casings/tantalumtungstenhafnium',
         alcled: '#c:casings/alcled',
         woods: '#c:casings/woods',
@@ -1178,6 +1213,7 @@ const tag = {
         titanium: '#c:gears/titanium',
         alumel: '#c:gears/alumel', // Алюминид-титан
         brass: '#c:gears/redbrass',
+        duralumin: '#c:gears/duralumin',
         hafniumboride: '#c:gears/hafniumboride',
         tan_tung_haf: '#c:gears/tantalumtungstenhafnium',
         alcled: '#c:gears/alcled',

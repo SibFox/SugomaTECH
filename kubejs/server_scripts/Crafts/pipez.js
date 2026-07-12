@@ -44,6 +44,71 @@ const registerPipeZRecipes = (evt) => {
         ],
         { 'temperature': 3000 }
     )
+
+    evt.remove({ output: 'pipez:basic_upgrade' })
+    evt.remove({ output: 'pipez:improved_upgrade' })
+    evt.remove({ output: 'pipez:advanced_upgrade' })
+    evt.remove({ output: 'pipez:ultimate_upgrade' })
+    
+    evt.shaped(
+        Item.of('pipez:basic_upgrade', 1),
+        [
+            'ACA',
+            'BUB',
+            'APA'
+        ],{
+            U: item.iu.upgrade.casing,
+            A: tag.ingot.duralumin,
+            B: item.ingot.red_alloy,
+            C: item.iu.controller.lvl1,
+            P: item.iu.microchip.lvl4
+        }
+    ).id(getRecipeID('basic_upgrade'))
+    
+    evt.shaped(
+        Item.of('pipez:improved_upgrade', 1),
+        [
+            'ACA',
+            'BUB',
+            'APA'
+        ],{
+            U: 'pipez:basic_upgrade',
+            A: tag.ingot.berylliumbronze,
+            B: item.iu.exotic_material,
+            C: item.iu.controller.lvl2,
+            P: item.iu.microchip.lvl5
+        }
+    ).id(getRecipeID('improved_upgrade'))
+    
+    evt.shaped(
+        Item.of('pipez:advanced_upgrade', 1),
+        [
+            'ACA',
+            'BUB',
+            'APA'
+        ],{
+            U: 'pipez:improved_upgrade',
+            A: tag.ingot.hafniumboride,
+            B: item.iu.graphite_plate,
+            C: item.iu.controller.lvl3,
+            P: item.iu.microchip.lvl6
+        }
+    ).id(getRecipeID('advanced_upgrade'))
+    
+    evt.shaped(
+        Item.of('pipez:ultimate_upgrade', 1),
+        [
+            'ACA',
+            'BUB',
+            'APA'
+        ],{
+            U: 'pipez:advanced_upgrade',
+            A: tag.ingot.inconel,
+            B: item.ingot.netherite,
+            C: item.iu.controller.lvl4,
+            P: item.iu.microchip.lvl8
+        }
+    ).id(getRecipeID('ultimate_upgrade'))
     
     
 

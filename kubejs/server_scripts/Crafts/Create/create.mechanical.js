@@ -51,5 +51,32 @@ const registerCreateMechanicalRecipes = (evt) => {
         S: item.iu.spool.superconducting.lvl1
     }).id(getRecipeID('tesla_coil'))
 
+    cnRecipe(evt, asItem(item.create.integrated_circuit),
+        [
+            '     ',
+            '  L  ',
+            'DRQRD',
+            ' EEE ',
+            '     '
+        ],{
+            Q: item.create.electron_tube,
+            E: tag.nugget.electrum,
+            L: item.plate.lapis,
+            R: item.ingot.red_alloy,
+            D: item.iu.diode.lvl1
+        },
+        true
+    )
     
+    evt.shapeless(Item.of('powergrid:diode', 1),
+        [
+            item.iu.diode.lvl1
+        ]
+    ).id(getRecipeID('diode_iu_pg'))
+    
+    evt.shapeless(Item.of(item.iu.diode.lvl1, 1),
+        [
+            'powergrid:diode'
+        ]
+    ).id(getRecipeID('diode_pg_iu'))
 }

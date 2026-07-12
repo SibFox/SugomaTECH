@@ -113,7 +113,7 @@ const registerMFFSCTRecipes = (evt) => {
         [
             [ item.iu.module.upgrade ],
             [ item.mffs.focus_matrix ],
-            [ item.iu.upgrade_casing ]
+            [ item.iu.upgrade.casing ]
         ],
     'mffs:scale_module', 8)
 
@@ -135,7 +135,7 @@ const registerMFFSCTRecipes = (evt) => {
         [
             [ null, item.iu.module.speed, null ],
             [ null, item.mffs.focus_matrix, null ],
-            [ item.ingot.red_alloy, item.iu.upgrade_casing, item.ingot.red_alloy ]
+            [ item.ingot.red_alloy, item.iu.upgrade.casing, item.ingot.red_alloy ]
         ],
     'mffs:speed_module', 2)
 
@@ -143,7 +143,7 @@ const registerMFFSCTRecipes = (evt) => {
         [
             [ item.iu.module.energy.lvl2 ],
             [ item.mffs.focus_matrix ],
-            [ item.iu.upgrade_casing ]
+            [ item.iu.upgrade.casing ]
         ],
     'mffs:capacity_module', 4)
 
@@ -151,7 +151,7 @@ const registerMFFSCTRecipes = (evt) => {
         [
             [ tag.wool, tag.wool, tag.wool ],
             [ tag.wool, item.mffs.focus_matrix, tag.wool ],
-            [ tag.wool, item.iu.upgrade_casing, tag.wool ]
+            [ tag.wool, item.iu.upgrade.casing, tag.wool ]
         ],
     'mffs:camouflage_module')
 }

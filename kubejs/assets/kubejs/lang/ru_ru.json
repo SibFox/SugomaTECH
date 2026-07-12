@@ -17,10 +17,10 @@
   "item.kubejs.kloverghett_part.desc": "",
   "item.kubejs.kloverghett_treated": "Обработанный кловергетт",
   "item.kubejs.kloverghett_treated.desc": "В данном состоянии обладает сверхпотенциалом для инфузии с материалами Улья",
-  "item.kubejs.exo_c_1": "Вольфрамитовые экзо-компоненты брони",
-  "item.kubejs.exo_c_2": "Мифриловые экзо-компоненты брони",
-  "item.kubejs.exo_c_3": "Драконидовые экзо-компоненты брони",
-  "item.kubejs.exo_c_4": "Кловергеттовые экзо-компоненты брони",
+  "item.kubejs.exo_c_1": "Вольфрамитовые экзо-компоненты",
+  "item.kubejs.exo_c_2": "Мифриловые экзо-компоненты",
+  "item.kubejs.exo_c_3": "Драконидовые экзо-компоненты",
+  "item.kubejs.exo_c_4": "Кловергеттовые экзо-компоненты",
 
   "fluid_type.kubejs.liquid_redstone": "Сжиженный редстоун",
 

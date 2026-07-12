@@ -120,7 +120,8 @@ function shapedRecipe (evt, id, inputs, output, amount){
     ).id(id)
 }
 
-function cnRecipe(evt, output, pattern, indexes){
+function cnRecipe(evt, output, pattern, indexes, addMechanical){
+    addMechanical = addMechanical || false
     let keys = {}
     for (const [key, entry] of Object.entries(indexes)) {
         entry = asItem(entry)
@@ -146,6 +147,14 @@ function cnRecipe(evt, output, pattern, indexes){
             "id": output.item
         }
     }).id(recipeID(output.item.replace(':', '/') + '/engtable'))
+
+    if (addMechanical)
+    {
+        evt.recipes.create.mechanical_crafting(Item.of(output.item, output.count),
+            pattern,
+            indexes
+        ).id(recipeID(output.item.replace(':', '/') + '/mechanical'))        
+    }
 
     evt.remove({ output: output.item })
 }

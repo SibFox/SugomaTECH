@@ -148,4 +148,118 @@ const registerCreateCTRecipes = (evt) => {
             S: item.create.spool.item
         }
     ).id(getRecipeID('resistive_coil'))
+
+    evt.shaped(
+        Item.of('create:fluid_pipe', 6),
+        [
+            'PPP',
+            ' F ',
+            'PPP'
+        ],{
+            P: tag.plate.copper,
+            F: tag.plate.bronze
+        }
+    ).id(getRecipeID('fluid_pipe'))
+    
+    evt.shapeless(Item.of('offroad:small_tire', 1),
+        [
+            tag.shaft, item.iu.rubber
+        ]
+    ).id(getRecipeID('small_tire'))
+    
+    evt.shaped(
+        Item.of('offroad:tire', 1),
+        [
+            ' R ',
+            'RSR',
+            ' R '
+        ],{
+            R: item.iu.rubber,
+            S: tag.shaft
+        }
+    ).id(getRecipeID('tire'))
+    
+    evt.shaped(
+        Item.of('offroad:large_tire', 1),
+        [
+            ' R ',
+            'RSR',
+            ' R '
+        ],{
+            R: item.iu.synthetic_rubber,
+            S: tag.shaft
+        }
+    ).id(getRecipeID('large_tire'))
+    
+    evt.shaped(
+        Item.of('offroad:monstrous_tire', 1),
+        [
+            'LRL',
+            'RSR',
+            'LRL'
+        ],{
+            R: item.iu.synthetic_rubber,
+            L: item.create.belt,
+            S: tag.shaft
+        }
+    ).id(getRecipeID('monstrous_tire'))
+
+    evt.shaped(
+        Item.of(item.create.belt, 1),
+        [
+            'RRR',
+            'RRR'
+        ],{
+            R: item.iu.rubber
+        }
+    ).id(getRecipeID('belt'))
+    
+    
+    evt.shaped(
+        Item.of('petrolsparts:pneumatic_tube', 4),
+        [
+            'RMR',
+            'RLR',
+            'TST'
+        ],{
+            T: tag.plate.tungsten,
+            S: tag.cogwheel,
+            L: item.iu.rotor.wind.ready.iron,
+            M: item.create.precision_mechanism,
+            R: item.iu.synthetic_rubber
+        }
+    ).id(getRecipeID('pneumatic_tube'))
+    
+    evt.shapeless(Item.of('simulated:redstone_magnet', 1),
+        [
+            item.ingot.red_alloy, item.iu.magnet, item.create.casing.industrial_iron
+        ]
+    ).id(getRecipeID('redstone_magnet'))
+    
+    evt.shaped(
+        Item.of('createpropulsion:stirling_engine', 1),
+        [
+            'GSG',
+            'AEA',
+            'MMM'
+        ],{
+            S: tag.shaft,
+            E: item.create.engine_assembly,
+            A: item.create.andesite_alloy,
+            G: tag.doubleplate.niobium_titanium,
+            M: tag.doubleplate.bronze
+        }
+    ).id(getRecipeID('stirling_engine'))
+    
+    evt.shapeless(Item.of('powergrid:resistor', 1),
+        [
+            item.iu.resistor.copper
+        ]
+    ).id(getRecipeID('resistor_iu_pg'))
+    
+    evt.shapeless(Item.of(item.iu.resistor.copper, 1),
+        [
+            'powergrid:resistor'
+        ]
+    ).id(getRecipeID('resistor_pg_iu'))
 }
