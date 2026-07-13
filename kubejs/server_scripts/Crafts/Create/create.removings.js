@@ -20,7 +20,7 @@ const registerCreateRemovings = (evt) => {
     evt.remove({ output: item.ingot.electrum, type: 'create:mixing' })
     evt.remove({ output: item.create.electron_tube, not: { type: 'create:sequenced_assembly'} })
     evt.remove({ output: item.create.transmitter, not: { type: 'create:sequenced_assembly'} })
-    evt.remove({ output: item.create.lighter, not: { type: 'create:sequenced_assembly'} })
+    evt.remove({ output: item.fns, not: { type: 'create:sequenced_assembly'} })
     evt.remove({ output: item.create.belt, not: { type: 'create:sequenced_assembly'} })
     evt.remove({ output: 'createaddition:electrum_ingot', not: { type: 'create:sequenced_assembly'} })
     evt.remove({ output: 'createaddition:rolling_mill', not: { type: 'create:sequenced_assembly'} })
@@ -50,6 +50,10 @@ const registerCreateRemovings = (evt) => {
     evt.remove({ output: 'simulated:redstone_magnet', not: { type: 'create:sequenced_assembly'} })
     evt.remove({ output: 'createpropulsion:stirling_engine', not: { type: 'create:sequenced_assembly'} })
     evt.remove({ output: 'powergrid:resistor', not: { type: 'create:sequenced_assembly'} })
+    evt.remove({ output: 'createthrusters:thruster', not: { type: 'create:sequenced_assembly'} })
+    evt.remove({ output: 'createpropulsion:thruster', not: { type: 'create:sequenced_assembly'} })
+    evt.remove({ output: 'createpropulsion:ion_thruster', not: { type: 'create:sequenced_assembly'} })
+    evt.remove({ output: 'createthrusters:thruster_lense', not: { type: 'create:sequenced_assembly'} })
 
 
     // evt.remove({ id: 'createbigcannons:melting/melt_bronze_ingot' })
@@ -62,4 +66,22 @@ const registerCreateRemovings = (evt) => {
 
     evt.remove({ output: 'create_aeronautics_toolgun:magnetic_gun' })
     evt.remove({ output: 'create_aeronautics_toolgun:survival_structure_tool' })
+
+
+    evt.remove({ output: 'createthrusters:processing_upgrade_smoking_t1' })
+    evt.remove({ output: 'createthrusters:processing_upgrade_smoking_t2' })
+    evt.remove({ output: 'createthrusters:processing_upgrade_smoking_t3' })
+    evt.remove({ output: 'createthrusters:processing_upgrade_smoking_t4' })
+    evt.remove({ output: 'createthrusters:processing_upgrade_smelting_t1' })
+    evt.remove({ output: 'createthrusters:processing_upgrade_smelting_t2' })
+    evt.remove({ output: 'createthrusters:processing_upgrade_smelting_t3' })
+    evt.remove({ output: 'createthrusters:processing_upgrade_smelting_t4' })
+    evt.remove({ output: 'createthrusters:processing_upgrade_haunting_t1' })
+    evt.remove({ output: 'createthrusters:processing_upgrade_haunting_t2' })
+    evt.remove({ output: 'createthrusters:processing_upgrade_haunting_t3' })
+    evt.remove({ output: 'createthrusters:processing_upgrade_haunting_t4' })
+    evt.remove({ output: 'createthrusters:propulsion_upgrade_t1' })
+    evt.remove({ output: 'createthrusters:propulsion_upgrade_t2' })
+    evt.remove({ output: 'createthrusters:propulsion_upgrade_t3' })
+    evt.remove({ output: 'createthrusters:propulsion_upgrade_t4' })
 }

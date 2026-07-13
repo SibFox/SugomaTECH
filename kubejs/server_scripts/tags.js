@@ -22,9 +22,7 @@ const registerOverallTags = (evt) => {
     });
 
     add(tag.shaft, 'create:shaft')
-    add(tag.shaft, 'createcasing:glass_shaft')
     add(tag.shaft, 'copycats:copycat_shaft')
-    add(tag.shaft, 'createcasing:brass_shaft')
 
     
     for (const [key, val] of Object.entries(item.create.cogwheel.small)) {
@@ -54,6 +52,7 @@ const registerOverallTags = (evt) => {
     add('c:ingots/brass', item.ingot.brass)
     add('c:nuggets/brass', item.nugget.brass)
     add('c:plates/brass', item.plate.brass)
+    add('c:doubleplate/brass', item.doubleplate.brass)
     add('c:storage_blocks/brass', item.ore_block.brass)
 
     add(tag.wire.copper, item.iu.wire.bare.copper)

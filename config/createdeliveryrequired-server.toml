@@ -2,11 +2,11 @@
 	#How often Contractor delivery offers refresh.
 	# Default: 30
 	# Range: 1 ~ 1440
-	refreshIntervalMinutes = 30
+	refreshIntervalMinutes = 90
 	#Number of generated delivery offers shown by each Contractor.
 	# Default: 10
 	# Range: 1 ~ 32
-	generatedOfferCount = 10
+	generatedOfferCount = 8
 	#Minimum base travel distance in blocks for generated Contractor offers. Star distance multipliers apply on top of this base distance.
 	# Default: 500
 	# Range: 1 ~ 1000000
@@ -14,7 +14,7 @@
 	#Maximum base travel distance in blocks for generated Contractor offers. Star distance multipliers apply on top of this base distance.
 	# Default: 800
 	# Range: 1 ~ 1000000
-	generatedMaximumTravelDistanceBlocks = 800
+	generatedMaximumTravelDistanceBlocks = 1500
 	#Minimum random contract time limit in minutes.
 	# Default: 60
 	# Range: 1 ~ 1440
@@ -26,7 +26,7 @@
 	#Total spur value of items demanded per contract slot per refresh. demand = budget / itemPrice.
 	# Default: 1000000
 	# Range: > 1
-	demandBudgetSpurs = 1000000
+	demandBudgetSpurs = 10000
 	#Multiplier applied to all contract item prices loaded from the price list. Default 1.0 = no change.
 	# Default: 1.0
 	# Range: 0.0 ~ 1000.0
@@ -60,7 +60,7 @@
 	#How often Market pickup offers refresh.
 	# Default: 30
 	# Range: 1 ~ 1440
-	refreshIntervalMinutes = 30
+	refreshIntervalMinutes = 90
 	#Number of generated pickup offers shown by each Market.
 	# Default: 6
 	# Range: 1 ~ 32
@@ -72,19 +72,19 @@
 	#Maximum pickup distance in blocks for generated Market offers.
 	# Default: 500
 	# Range: 1 ~ 1000000
-	generatedMaximumPickupDistanceBlocks = 500
+	generatedMaximumPickupDistanceBlocks = 1500
 	#Maximum amount that can be bought from a market offer.
 	# Default: 103680
 	# Range: 1 ~ 103680
-	maximumPurchasableAmount = 103680
+	maximumPurchasableAmount = 350
 	#Multiplier applied to all market item prices loaded from the price list. Default 1.0 = no change.
 	# Default: 3.0
 	# Range: 0.0 ~ 1000.0
-	priceMultiplier = 3.0
+	priceMultiplier = 1.0
 	#Maximum discount from buying the full market payload.
 	# Default: 10.0
 	# Range: 0.0 ~ 100.0
-	maximumBulkDiscountPercent = 10.0
+	maximumBulkDiscountPercent = 15.0
 
 [p2pTerminal]
 	#Minutes a player has to deliver items into a P2P Link supply zone before the listing supply contract expires.

@@ -1,6 +1,6 @@
 StartupEvents.registry('item', evt => {
   registerItems(evt)
-  registerFoods(evt)
+  // registerFoods(evt)
 })
 
 StartupEvents.registry('block', evt => {
@@ -30,16 +30,16 @@ StartupEvents.registry('fluid', evt => {
   evt.create('liquid_redstone')
 })
 
-const tools = [
-    { name: 'minecraft:flint_and_steel', maxDamage: 4 }
-];
+// const tools = [
+//     { name: 'minecraft:flint_and_steel', maxDamage: 4 }
+// ];
 
-ItemEvents.modification(evt => {
-    tools.forEach(tool => {
-        evt.modify(tool.name, item => {
-            item.maxDamage = tool.maxDamage       // durability
-        })
-    })
-})
+// ItemEvents.modification(evt => {
+//     tools.forEach(tool => {
+//         evt.modify(tool.name, item => {
+//             item.maxDamage = tool.maxDamage       // durability
+//         })
+//     })
+// })
 
 Platform.mods.kubejs.name = 'SUGOMA Tech'

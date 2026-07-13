@@ -10,14 +10,24 @@ const registerCyberneticsCTRecipes = (evt) => {
         return recipeID('createcybernetics', path)
     }
 
-    shapedRecipe(evt, getRecipeID('engineering_table'),
+    evt.shaped(
+        Item.of('createcybernetics:engineering_table', 1),
         [
-            [ null, item.iu.module.crafting.lvl2, null ],
-            [ item.iu.module.circuit, item.iu.machine_corpus.advanced_tech, item.iu.module.combining.lvl2 ],
-            [ item.ae.core.formation, 'industrialupgrade:solderingiron', item.ae.core.annihilation ]
-        ],
-    'createcybernetics:engineering_table')
-
+            ' C ',
+            'QDO',
+            'FSA'
+        ],{
+            A: item.ae.core.annihilation,
+            F: item.ae.core.formation,
+            C: item.iu.module.crafting.lvl2,
+            Q: item.iu.module.circuit,
+            O: item.iu.module.combining.lvl2,
+            S: 'industrialupgrade:solderingiron',
+            D: item.iu.machine_corpus.tech_adv
+        }
+    ).id(getRecipeID('engineering_table'))
+    
+    
     evt.shaped(
         Item.of(item.cn.fiber_optic, 1),
         [
@@ -108,7 +118,7 @@ const registerCyberneticsCTRecipes = (evt) => {
             'SCU',
             ' E '
         ],{
-            C: item.iu.machine_corpus.advanced_tech,
+            C: item.iu.machine_corpus.tech_adv,
             M: item.iu.module.cybernetics,
             E: item.iu.electromotor.lvl1,
             S: item.iu.module.scaner.lvl1,
@@ -151,7 +161,7 @@ const registerCyberneticsCTRecipes = (evt) => {
             'ACB',
             ' U '
         ],{
-            C: item.iu.machine_corpus.tech,
+            C: item.iu.machine_corpus.tech_adv,
             M: item.iu.module.cybernetics,
             U: item.iu.module.upgrade,
             A: item.iu.module.cutting.lvl1,
@@ -171,5 +181,4 @@ const registerCyberneticsCTRecipes = (evt) => {
         ],
         "result": { "id": "createcybernetics:wetware_electrocytemuscle", "count": 1 }
     }).id(getRecipeID('electrocytemuscle'))
-
 }

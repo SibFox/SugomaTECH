@@ -292,7 +292,7 @@ const registerCyberneticsETRecipes = (evt) => {
             E: item.create.electron_tube,
             R: tag.rod.electrum,
             O: item.obsidian,
-            F: item.create.lighter,
+            F: item.fns,
             W: item.iu.spool.lvl2,
             S: item.cn.synthnerves
         }
@@ -716,7 +716,7 @@ const registerCyberneticsETRecipes = (evt) => {
             S: item.cn.storage,
             N: item.cn.synthnerves,
             R: item.ingot.red_alloy,
-            F: item.create.lighter,
+            F: item.fns,
             D: item.ia.redstone_mechanism
         }
     )

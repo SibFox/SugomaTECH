@@ -332,6 +332,11 @@ const registerRecipeReplacings = (evt) => {
         tag.chests.wooden
     )
     
+    evt.replaceInput({ input: 'create:industrial_iron_block' },
+        'create:industrial_iron_block',
+        tag.ore_block.steel
+    )
+    
     
     
 

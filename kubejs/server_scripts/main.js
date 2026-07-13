@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
     registerPipeZRecipes(event)
     registerCyberneticsRecipes(event)
     registerMFFSRecipes(event)
-    registerFDRecipes(event)
+    // registerFDRecipes(event)
     registerWCRecipes(event)
     registerSBRecipes(event)
     registerAgritechRecipes(event)

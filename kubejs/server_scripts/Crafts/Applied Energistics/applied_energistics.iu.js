@@ -355,7 +355,8 @@ const registerAEIURecipes = (evt) => {
             asItem(item.cn.ssd)
         ],[
             asItem('megacells:bulk_item_cell')
-        ]
+        ],
+        { 'temperature': 3000 }
     )    
     
 

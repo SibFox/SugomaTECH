@@ -306,3 +306,7 @@ config/createthrusters-server.toml
 config/createthrusterslib-server.toml
 /.vs
 config/sable_kardanwelle*
+config/blockreplacer.json5
+/config/spark
+/config/audiolayer/cache
+servers.dat_old

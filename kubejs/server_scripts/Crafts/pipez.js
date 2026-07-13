@@ -22,7 +22,7 @@ const registerPipeZRecipes = (evt) => {
         ],[
             asItem('pipez:item_pipe', 4)
         ],
-        { 'temerature': 2000 }
+        { 'temperature': 2000 }
     )
     
     iuRecipe(evt, getRecipeID('fluid_pipe'), IUMachineCraft.WELDING,
@@ -32,7 +32,7 @@ const registerPipeZRecipes = (evt) => {
         ],[
             asItem('pipez:fluid_pipe', 4)
         ],
-        { 'temerature': 2000 }
+        { 'temperature': 2000 }
     )
 
     iuRecipe(evt, getRecipeID('universal_pipe'), IUMachineCraft.WELDING,

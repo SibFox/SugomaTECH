@@ -10,13 +10,16 @@ const registerCCRecipes = (evt) => {
         return recipeID('cc', path)
     }
 
-    evt.remove({ output: item.cc.computer.normal })
-    evt.remove({ output: item.cc.computer.advanced })
+    evt.remove({ output: 'computercraft:computer_normal' })
+    evt.remove({ output: 'computercraft:computer_advanced' })
+    evt.remove({ output: 'computercraft:computer_advanced_upgrade' })
+    // evt.remove({ output: item.cc.computer.normal })
+    // evt.remove({ output: item.cc.computer.advanced })
 
     shapedRecipe(evt, getRecipeID('computer_normal'),
         [
             [ item.iu.wire.isolated.copper, item.iu.microchip.lvl1, item.iu.wire.isolated.copper ],
-            [ item.glass_panel, item.cc.casing, item.glass_panel ],
+            [ tag.glass_panel, item.cc.casing, tag.glass_panel ],
             [ item.iu.wire.isolated.copper, item.iu.autopower_module, item.iu.wire.isolated.copper ]
         ],
     item.cc.computer.normal)
@@ -52,8 +55,9 @@ const registerCCRecipes = (evt) => {
     "result": {"count": 1, "id": item.cc.computer.advanced }
     }).id(getRecipeID('computer_advanced_upgrade'))
 
-    // evt.remove({ output: item.cc.computer.pocket.normal })
-    // evt.remove({ output: item.cc.computer.pocket.advanced })
+    evt.remove({ output: 'computercraft:pocket_computer_normal' })
+    evt.remove({ output: 'computercraft:pocket_computer_advanced' })
+    evt.remove({ output: 'computercraft:pocket_computer_advanced_upgrade' })
 
     shapedRecipe(evt, getRecipeID('pocket_computer_normal'),
         [
@@ -94,6 +98,9 @@ const registerCCRecipes = (evt) => {
     "result": {"count": 1, "id": item.cc.computer.pocket.advanced }
     }).id(getRecipeID('pocket_computer_advanced_upgrade'))
 
+    evt.remove({ output: 'computercraft:turtle_advanced_upgrade' })
+    evt.remove({ output: 'computercraft:turtle_advanced' })
+    evt.remove({ output: 'computercraft:turtle_normal' })
     // evt.remove({ output: item.cc.turtle.normal })
     // evt.remove({ output: item.cc.turtle.advanced })
 
@@ -257,7 +264,7 @@ const registerCCRecipes = (evt) => {
 
     shapedRecipe(evt, getRecipeID('peripheral_casing'),
         [
-            [ tag.rod.aluminum, tag.plate.titanium, tag.rod.aluminum ],
+            [ tag.rod.aluminium, tag.plate.titanium, tag.rod.aluminium ],
             [ tag.plate.titanium, item.iu.machine_corpus.tech, tag.plate.titanium ],
             [ tag.rod.electrum, tag.plate.titanium, tag.rod.electrum ]
         ],
