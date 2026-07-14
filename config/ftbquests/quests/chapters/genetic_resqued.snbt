@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "genetic_resqued"
-	group: "4A3E876B2700798D"
+	group: ""
 	icon: {
 		components: {
 			"geneticsresequenced:gene": "geneticsresequenced:basic"
@@ -18,7 +18,7 @@
 		x: -0.0952380952380949d
 		y: -3.3690476190476133d
 	}]
-	order_index: 0
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
