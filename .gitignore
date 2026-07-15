@@ -25,7 +25,7 @@ TrashSlotSaveState.json
 usercache.json
 usernamecache.json
 options.txt
-!*/options.txt
+!*/options.txt=
 config/craftingstation-server.toml
 config/craftingstation-client.toml
 config/emi_loot_config.toml
@@ -200,7 +200,6 @@ config/moonlight-client.toml
 config/supplementaries-common.toml
 config/supplementaries-client.toml
 dynamic-data-pack-cache/hash.txt
-
 config/packetfixer.properties
 config/reliable_replacer/example_rules.json.disabled
 config/appleskin-client.toml
@@ -277,7 +276,6 @@ config/create_dragons_plus-simulated-extension-server.toml
 config/create-server.toml
 config/createdieselgenerators-server.toml
 config/deployer-server.toml
-config/ftb*
 config/kaleidoscope_compat-common.toml
 config/offroad-server.toml
 config/selling_bin*
@@ -311,3 +309,7 @@ config/blockreplacer.json5
 /config/audiolayer/cache
 servers.dat_old
 cherishedworlds-favorites.dat
+config/ftblibrary-client.snbt
+config/ftbquests-client.snbt
+config/ftbxmodcompat.snbt
+config/ftbteams-server.snbt
