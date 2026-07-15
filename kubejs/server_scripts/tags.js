@@ -1,12 +1,8 @@
 "use strict";
 
 const registerOverallTags = (evt) => {
-    function add(tag, item) {
+    const add = (tag, item) => {
         evt.add(noHash(tag), item)
-    }
-
-    function remove(tag, item) {
-        evt.remove(noHash(tag), item)
     }
 
     for (const [key, val] of Object.entries(item.log.minecraft.stripped))
@@ -22,7 +18,9 @@ const registerOverallTags = (evt) => {
     });
 
     add(tag.shaft, 'create:shaft')
+    add(tag.shaft, 'createcasing:glass_shaft')
     add(tag.shaft, 'copycats:copycat_shaft')
+    add(tag.shaft, 'createcasing:brass_shaft')
 
     
     for (const [key, val] of Object.entries(item.create.cogwheel.small)) {
@@ -49,21 +47,17 @@ const registerOverallTags = (evt) => {
     add('minecraft:mineable/axe', 'immersive_furniture:furniture')
     add('minecraft:mineable/axe', 'immersive_furniture:artisans_workstation')
 
-    add('c:ingots/brass', item.ingot.brass)
-    add('c:nuggets/brass', item.nugget.brass)
-    add('c:plates/brass', item.plate.brass)
-    add('c:doubleplate/brass', item.doubleplate.brass)
-    add('c:storage_blocks/brass', item.ore_block.brass)
-
-    add(tag.wire.copper, item.iu.wire.bare.copper)
-    add(tag.wire.iron, item.iu.wire.bare.iron)
-    add(tag.wire.gold, item.iu.wire.bare.gold)
 
     // Удалить все теги с предмета
-    // for (let i of deletion_list) 
-    // { 
-    //     evt.removeAllTagsFrom(i) 
-    // }
+    for (let i of [
+        'create:iron_sheet', 'create:copper_sheet', 'create:golden_sheet',
+        'create:zinc_ingot', 'createaddition:zinc_sheet', 'createaddition:electrum_ingot',
+        'createaddition:electrum_nugget', 'createaddition:electrum_sheet',
+        'createcybernetics:titanium_block', 'createcybernetics:titaniumingot', 
+        'createcybernetics:titaniumnugget', 'createcybernetics:titaniumsheet', 'mffs:steel_ingot',
+        'createaddition:electrum_block', 'create:zinc_nugget', 'create:sturdy_sheet',
+        'createbigcannons:bronze_block', 'createbigcannons:bronze_ingot'
+    ]) { evt.removeAllTagsFrom(i) }
 
     console.info('Tag adding passed')
 }

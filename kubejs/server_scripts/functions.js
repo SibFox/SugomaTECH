@@ -20,12 +20,6 @@ const IUMachineCraft = {
     ELECTROLYZER: 'electrolyzer',
     SOLID_ELECTROLYZER: 'solid_electrolyzer',
     POLYMERIZER: 'polymerizer',
-    MOLECULAR: 'molecular', // energy: 0-inf
-    MOLECULAR_DOUBLE: 'doublemolecular', // energy: int 0-inf
-    CYCLOTRON: 'cyclotron', // chance (integer 0-100), 
-    // cryogen (consuming cryogen per tick, integer 1-100, default 1), 
-    // positrons (consuming positrons per tick, integer 1-100, default 1)
-    ENRICHMENT: 'enrichment', // rad_amount (integer 0-infinity)
     POLISHER: {
         LASER: 'laser',
         PRIMAL: 'primal_laser_polisher',
@@ -78,19 +72,20 @@ function asItem(item, amount) {
         }
     }
 
-    let nbtStartPos = item.indexOf('[')
-
+    let nbtStartPos = item.indexOf('[')    
     if (nbtStartPos > 0) {
-        let bracketContent = item.slice(nbtStartPos + 1, item.lastIndexOf(']'))
-        dict.components = parseComponents(bracketContent)
-        dict.haveComponents = Object.keys(dict.components).length > 0
-        dict.item = noHash(item.slice(0, nbtStartPos))
+        let nbtString = item.slice(nbtStartPos).replace('[', '').replace(']', '').split('=')
+        let componentTag = nbtString[0]
+        let componentValue = Number(nbtString[1])
+        dict.components[componentTag] = componentValue
+        dict.haveComponents = true
+        dict.item = dict.item.slice(0, nbtStartPos)
     }
 
     return dict
 }
 
-function shapedRecipe (evt, id, inputs, output, amount){
+const shapedRecipe = (evt, id, inputs, output, amount) => {
     if (amount === undefined || amount < 1 || amount == null) {
         amount = 1
     }
@@ -120,8 +115,7 @@ function shapedRecipe (evt, id, inputs, output, amount){
     ).id(id)
 }
 
-function cnRecipe(evt, output, pattern, indexes, addMechanical){
-    addMechanical = addMechanical || false
+const cnRecipe = (evt, output, pattern, indexes) => {
     let keys = {}
     for (const [key, entry] of Object.entries(indexes)) {
         entry = asItem(entry)
@@ -148,18 +142,10 @@ function cnRecipe(evt, output, pattern, indexes, addMechanical){
         }
     }).id(recipeID(output.item.replace(':', '/') + '/engtable'))
 
-    if (addMechanical)
-    {
-        evt.recipes.create.mechanical_crafting(Item.of(output.item, output.count),
-            pattern,
-            indexes
-        ).id(recipeID(output.item.replace(':', '/') + '/mechanical'))        
-    }
-
     evt.remove({ output: output.item })
 }
 
-function iuRecipe(evt, id, type, inputs, outputs, params){
+const iuRecipe = (evt, id, type, inputs, outputs, params) => {
     if (params === undefined || params < 1 || params == null) {
         params = {}
     }
@@ -189,10 +175,9 @@ function iuRecipe(evt, id, type, inputs, outputs, params){
         recipe.inputs.push(dict)
     }
 
-    if ([IUMachineCraft.SOLID_ELECTROLYZER, IUMachineCraft.DIVIDER.ITEM_FLUID].includes(type)) {
+    if (type === IUMachineCraft.SOLID_ELECTROLYZER) {
         recipe.inputs.push({ "type": "fluid", "id": "minecraft:water", "amount": 1 })
         recipe.isFluidRecipe = true
-        console.log('WATER ADDED --- ' + type + ' /// ' + id)
     }
 
     for (let output of outputs) {
@@ -216,9 +201,15 @@ function iuRecipe(evt, id, type, inputs, outputs, params){
     evt.custom(recipe).id(id + '/' + type)    
 }
 
-function aeAssemblerRecipe(evt, id, input_fluid, input_items, output){
+const aeAssemblerRecipe = (evt, id, input_fluid, input_items, output) => {
     let recipe = {
         "type": "extendedae:crystal_assembler",
+        "input_fluid": {
+            "amount": input_fluid.count,
+            "ingredient": {
+                "fluid": input_fluid.item
+            }
+        },
         "input_items": [],
         "output": {
             "count": output.count,
@@ -226,19 +217,10 @@ function aeAssemblerRecipe(evt, id, input_fluid, input_items, output){
         }
     }
 
-    if (input_fluid){
-        if (input_fluid.isTag || !input_fluid.isFluid) {
-            console.error("Recipe input fluid was not a Fluid in AE Assembler. Recipe ID: " + id)
-            return
-        }
-        recipe['input_fluid'] = {
-            "amount": input_fluid.count,
-            "ingredient": {
-                "fluid": input_fluid.item
-            }
-        }
+    if (input_fluid.isTag || !input_fluid.isFluid) {
+        console.error("Recipe input fluid was not a Fluid in AE Assembler. Recipe ID: " + id)
+        return
     }
-
 
     if (output.isTag || output.isFluid) {
         console.error("Recipe output was not an Item in AE Assembler. Recipe ID: " + id)
@@ -268,7 +250,7 @@ function aeAssemblerRecipe(evt, id, input_fluid, input_items, output){
     evt.custom(recipe).id(id + '/assembler')
 }
 
-function aeReactionRecipe(evt, id, energy, input_fluid, input_items, output){
+const aeReactionRecipe = (evt, id, energy, input_fluid, input_items, output) => {
     let input_arr = []
     let output_ready = { "#": output.count, "#t": "ae2:i", "id": output.item }
 
@@ -306,45 +288,29 @@ function aeReactionRecipe(evt, id, energy, input_fluid, input_items, output){
     }).id(id + '/reaction')
 }
 
-// function cElectrifyRecipe(evt, id, energy, input, output){
-//         let dict = {
-//             "type": "createaddition:charging",
-//             "energy": energy,
-//             "ingredients": [],
-//             "max_charge_rate": 360,
-//             "results": [ { "id": output.item } ]
-//         }
-
-//         if (input.isFluid) {
-//             console.error("Recipe input was a Fluid in Create Additions Electrify recipe. Recipe ID: " + id)
-//             return
-//         }
-//         if (output.isFluid || output.isTag) {
-//             console.error("Recipe output was not an Item in Create Additions Electrify recipe. Recipe ID: " + id)
-//             return
-//         }
-
-//         if (input.isTag) {
-//             dict.ingredients.push({ 'tag': input.item })
-//         } else {
-//             dict.ingredients.push({ 'item': input.item })            
-//         }
-
-//         evt.custom(dict).id(id + '/electrify')
-//}
-
-function removeFromInventory(player, searchItem, amount) {
-    let inv = player.inventory;
-    let remaining = amount;
-    let size = inv.getContainerSize();
-
-    for (let i = 0; i < size && remaining > 0; i++) {
-        let invItem = inv.getItem(i);
-        if (invItem.is(searchItem)) {
-            let take = Math.min(remaining, invItem.count);
-            invItem.count -= take;
-            remaining -= take;
+const cElectrifyRecipe = (evt, id, energy, input, output) => {
+        let dict = {
+            "type": "createaddition:charging",
+            "energy": energy,
+            "ingredients": [],
+            "max_charge_rate": 360,
+            "results": [ { "id": output.item } ]
         }
+
+        if (input.isFluid) {
+            console.error("Recipe input was a Fluid in Create Additions Electrify recipe. Recipe ID: " + id)
+            return
+        }
+        if (output.isFluid || output.isTag) {
+            console.error("Recipe output was not an Item in Create Additions Electrify recipe. Recipe ID: " + id)
+            return
+        }
+
+        if (input.isTag) {
+            dict.ingredients.push({ 'tag': input.item })
+        } else {
+            dict.ingredients.push({ 'item': input.item })            
+        }
+
+        evt.custom(dict).id(id + '/electrify')
     }
-    return amount - remaining;
-}

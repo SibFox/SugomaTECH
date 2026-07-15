@@ -7,7 +7,7 @@
 const registerIAMechanicalRecipes = (evt) => {
 
     function getRecipeID(path) {
-        return recipeID('ia/mechanical', path)
+        return recipeID('ia', path)
     }
 
     // Тут будут рецепты машинок и самолётиков

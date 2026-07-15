@@ -10,16 +10,13 @@ const registerCCRecipes = (evt) => {
         return recipeID('cc', path)
     }
 
-    evt.remove({ output: 'computercraft:computer_normal' })
-    evt.remove({ output: 'computercraft:computer_advanced' })
-    evt.remove({ output: 'computercraft:computer_advanced_upgrade' })
-    // evt.remove({ output: item.cc.computer.normal })
-    // evt.remove({ output: item.cc.computer.advanced })
+    evt.remove({ output: item.cc.computer.normal })
+    evt.remove({ output: item.cc.computer.advanced })
 
     shapedRecipe(evt, getRecipeID('computer_normal'),
         [
             [ item.iu.wire.isolated.copper, item.iu.microchip.lvl1, item.iu.wire.isolated.copper ],
-            [ tag.glass_panel, item.cc.casing, tag.glass_panel ],
+            [ item.glass_panel, item.cc.casing, item.glass_panel ],
             [ item.iu.wire.isolated.copper, item.iu.autopower_module, item.iu.wire.isolated.copper ]
         ],
     item.cc.computer.normal)
@@ -27,37 +24,36 @@ const registerCCRecipes = (evt) => {
     shapedRecipe(evt, getRecipeID('computer_advanced'),
         [
             [ item.iu.wire.glass, item.iu.microchip.lvl3, item.iu.wire.glass ],
-            [ tag.glass_panel, item.cc.casing, tag.glass_panel ],
+            [ item.glass_panel, item.cc.casing, item.glass_panel ],
             [ item.iu.wire.glass, item.iu.autopower_module, item.iu.wire.glass ]
         ],
     item.cc.computer.advanced)
 
-    evt.custom({
-    "type": "computercraft:transform_shaped",
-    "category": "redstone",
-    "function": [{"type": "computercraft:copy_components", "from": {"item": "computercraft:computer_normal"}}],
-    "key": {
-        "W": {"item": item.iu.wire.glass },
-        "M": {"type": "neoforge:components",
-        "components": {
-            "industrialupgrade:level_microchip": 3
-        },
-            "items": (item.iu.microchip.lvl3.slice(0, item.iu.microchip.lvl3.indexOf('[')))
-        },
-        "C": {"item": item.cc.computer.normal },
-        "A": {"item": item.iu.autopower_module }
-    },
-    "pattern": [
-        "WMW", 
-        " C ", 
-        "WAW"
-    ],
-    "result": {"count": 1, "id": item.cc.computer.advanced }
-    }).id(getRecipeID('computer_advanced_upgrade'))
+    // evt.custom({
+    // "type": "computercraft:transform_shaped",
+    // "category": "redstone",
+    // "function": [{"type": "computercraft:copy_components", "from": {"item": "computercraft:computer_normal"}}],
+    // "key": {
+    //     "w": {"item": item.iu.wire.glass },
+    //     "M": {"type": "neoforge:components",
+    //     "components": {
+    //         "industrialupgrade:level_microchip": 3
+    //     },
+    //     "items": item.iu.microchip.lvl3.slice(0, '[') },
+    //     "C": {"item": item.cc.casing },
+    //     "G": {"tag": noHash(tag.glass_panel) },
+    //     "A": {"item": item.iu.autopower_module }
+    // },
+    // "pattern": [
+    //     "WMW", 
+    //     "GCG", 
+    //     "WAW"
+    // ],
+    // "result": {"count": 1, "id": item.cc.computer.advanced }
+    // }).id(getRecipeID('computer_advanced_upgrade'))
 
-    evt.remove({ output: 'computercraft:pocket_computer_normal' })
-    evt.remove({ output: 'computercraft:pocket_computer_advanced' })
-    evt.remove({ output: 'computercraft:pocket_computer_advanced_upgrade' })
+    evt.remove({ output: item.cc.computer.pocket.normal })
+    evt.remove({ output: item.cc.computer.pocket.advanced })
 
     shapedRecipe(evt, getRecipeID('pocket_computer_normal'),
         [
@@ -75,34 +71,8 @@ const registerCCRecipes = (evt) => {
         ],
     item.cc.computer.pocket.advanced)
 
-    evt.custom({
-    "type": "computercraft:transform_shaped",
-    "category": "redstone",
-    "function": [{"type": "computercraft:copy_components", "from": {"item": item.cc.computer.pocket.normal}}],
-    "key": {
-        "W": {"item": item.iu.wire.glass },
-        "M": {"type": "neoforge:components",
-        "components": {
-            "industrialupgrade:level_microchip": 3
-        },
-            "items": (item.iu.microchip.lvl3.slice(0, item.iu.microchip.lvl3.indexOf('[')))
-        },
-        "C": {"item": item.cc.computer.pocket.normal },
-        "A": {"item": item.iu.autopower_module }
-    },
-    "pattern": [
-        "WMW", 
-        " C ", 
-        "WAW"
-    ],
-    "result": {"count": 1, "id": item.cc.computer.pocket.advanced }
-    }).id(getRecipeID('pocket_computer_advanced_upgrade'))
-
-    evt.remove({ output: 'computercraft:turtle_advanced_upgrade' })
-    evt.remove({ output: 'computercraft:turtle_advanced' })
-    evt.remove({ output: 'computercraft:turtle_normal' })
-    // evt.remove({ output: item.cc.turtle.normal })
-    // evt.remove({ output: item.cc.turtle.advanced })
+    evt.remove({ output: item.cc.turtle.normal })
+    evt.remove({ output: item.cc.turtle.advanced })
 
     shapedRecipe(evt, getRecipeID('turtle_normal'),
         [
@@ -119,29 +89,6 @@ const registerCCRecipes = (evt) => {
             [ item.iu.wire.glass, item.iu.battery.lead, item.iu.wire.glass ]
         ],
     item.cc.turtle.advanced)
-
-    evt.custom({
-    "type": "computercraft:transform_shaped",
-    "category": "redstone",
-    "function": [{"type": "computercraft:copy_components", "from": {"item": item.cc.turtle.normal}}],
-    "key": {
-        "W": {"item": item.iu.wire.glass },
-        "M": {"type": "neoforge:components",
-        "components": {
-            "industrialupgrade:level_microchip": 4
-        },
-            "items": (item.iu.microchip.lvl4.slice(0, item.iu.microchip.lvl4.indexOf('[')))
-        },
-        "C": {"item": item.cc.turtle.normal },
-        "A": {"item": item.iu.battery.lead }
-    },
-    "pattern": [
-        "WMW", 
-        " C ", 
-        "WAW"
-    ],
-    "result": {"count": 1, "id": item.cc.turtle.advanced }
-    }).id(getRecipeID('turtle_advanced_upgrade'))
 
     evt.remove({ output: item.cc.monitor.normal })
     evt.remove({ output: item.cc.monitor.advanced })
@@ -185,33 +132,21 @@ const registerCCRecipes = (evt) => {
     evt.remove({ output: item.cc.modem.wireless.normal })
     evt.remove({ output: item.cc.modem.wireless.advanced })
 
-    evt.shaped(
-        Item.of(item.cc.modem.wireless.normal, 1),
+    shapedRecipe(evt, getRecipeID('wireless_modem_normal'),
         [
-            ' W ',
-            'PBP',
-            'PSP'
-        ],{
-            P: tag.casings.tungsten,
-            B: item.ae.wireless_booster,
-            W: item.ae.wireless_access_point,
-            S: item.iu.module.wireless
-        }
-    ).id(getRecipeID('wireless_modem_normal'))
+            [ item.iu.wire.isolated.copper, null, item.iu.wire.isolated.copper ],
+            [ tag.plate.iron, item.ae.wireless_booster, tag.plate.iron ],
+            [ null, item.iu.wire.isolated.copper, null ]
+        ],
+    item.cc.modem.wireless.normal)
 
-    evt.shaped(
-        Item.of(item.cc.modem.wireless.advanced, 1),
+    shapedRecipe(evt, getRecipeID('wireless_modem_advanced'),
         [
-            ' W ',
-            'PBP',
-            'PSP'
-        ],{
-            P: tag.casings.electrum,
-            B: 'extendedae:wireless_connect',
-            W: item.ae.wireless_access_point,
-            S: item.iu.module.wireless
-        }
-    ).id(getRecipeID('wireless_modem_advanced'))
+            [ item.iu.wire.glass, null, item.iu.wire.glass ],
+            [ tag.plate.electrum, item.ae.wireless_booster, tag.plate.electrum ],
+            [ null, item.iu.wire.glass, null ]
+        ],
+    item.cc.modem.wireless.advanced)
 
     evt.remove({ output: item.cc.redstone_relay })
 
@@ -264,9 +199,9 @@ const registerCCRecipes = (evt) => {
 
     shapedRecipe(evt, getRecipeID('peripheral_casing'),
         [
-            [ tag.rod.aluminium, tag.plate.titanium, tag.rod.aluminium ],
-            [ tag.plate.titanium, item.iu.machine_corpus.tech, tag.plate.titanium ],
-            [ tag.rod.electrum, tag.plate.titanium, tag.rod.electrum ]
+            [ tag.rod.alluminum, tag.plate.titan, tag.rod.alluminum ],
+            [ tag.plate.titan, item.iu.machine_corpus.tech, tag.plate.titan ],
+            [ tag.rod.electrum, tag.plate.titan, tag.rod.electrum ]
         ],
     item.cc.casing)
 

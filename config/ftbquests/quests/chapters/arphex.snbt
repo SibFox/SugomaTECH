@@ -1,0 +1,944 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "arphex"
+	group: ""
+	icon: {
+		components: {
+			"ftbquests:icon": "kubejs:textures/quests/quest_icon_tormentor.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "3797DA8332D1F03F"
+	images: [
+		{
+			dependency: "289EC193A9CF47FC"
+			height: 20.0d
+			image: "kubejs:textures/quests/j_tormentor.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: 0.0d
+			y: -23.5d
+		}
+		{
+			height: 50.0d
+			image: "kubejs:textures/quests/spider_web.png"
+			rotation: 0.0d
+			width: 50.0d
+			x: 0.75d
+			y: 1.3452380952380594d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2EAAFD8C91736269"]
+			hide_until_deps_complete: true
+			icon_scale: 2.0d
+			id: "0952460708DD3D50"
+			rewards: [{
+				count: 2
+				id: "3AA088ADC1E6C5B4"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.0d
+			tasks: [{
+				entity: "arphex:spider_moth"
+				icon: {
+					components: {
+						"ftbquests:icon": "kubejs:textures/quests/quest_icon_spidermoth.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "5FBA55EEB7F1F9B1"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"11947E01F4CA1188"
+				"0952460708DD3D50"
+				"4E6BDCD6C1D58084"
+			]
+			hide_until_deps_complete: true
+			icon_scale: 2.0d
+			id: "2BBE8F041CD69B07"
+			rewards: [{
+				count: 4
+				id: "0A57C4FEEFF65B3D"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.0d
+			tasks: [{
+				entity: "arphex:scorpioid_bloodluster"
+				icon: {
+					components: {
+						"ftbquests:icon": "kubejs:textures/quests/quest_icon_bloodluster.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "77A775D767C6E230"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"0F9BF7950DB2AB64"
+				"2BBE8F041CD69B07"
+				"4E6BDCD6C1D58084"
+			]
+			hide_until_deps_complete: true
+			icon_scale: 2.0d
+			id: "7856DDAFFD4C65CB"
+			rewards: [{
+				count: 6
+				id: "09CF8A94DCDDA430"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.0d
+			tasks: [{
+				entity: "arphex:draconic_voidlasher"
+				icon: {
+					components: {
+						"ftbquests:icon": "kubejs:textures/quests/quest_icon_voidlasher.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "4EC2FD00A74AFF09"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["289EC193A9CF47FC"]
+			hide_until_deps_complete: true
+			icon_scale: 2.0d
+			id: "25377FA38E7E15EA"
+			rewards: [{
+				count: 8
+				id: "7B7D76CACF595B29"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				entity: "arphex:arachnoid_trisector"
+				icon: {
+					components: {
+						"ftbquests:icon": "kubejs:textures/quests/quest_icon_trisector.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "1532827755D23F29"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.1785714285714874d
+			y: -12.107142857142868d
+		}
+		{
+			id: "37C5416C2C7C9D6C"
+			invisible: true
+			tasks: [{
+				id: "13C6324842A67D78"
+				item: { count: 1, id: "arphex:abyssal_crystal" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			id: "26FC3EB2DE0502D3"
+			invisible: true
+			tasks: [{
+				id: "3863F1C4A6D17F8B"
+				item: { count: 1, id: "arphex:fire_opal" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			id: "3612CCFD7739FAEF"
+			invisible: true
+			tasks: [{
+				id: "43B500AF89AF15A7"
+				item: { count: 1, id: "arphex:void_geode" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"4E6BDCD6C1D58084"
+				"37C5416C2C7C9D6C"
+				"0952460708DD3D50"
+			]
+			hide_until_deps_visible: true
+			id: "3E12B876227732CD"
+			rewards: [{
+				id: "71EB4EEC484D6B1D"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4895EF070536DF4D"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:spectral_helmet" }
+					type: "item"
+				}
+				{
+					id: "51C5B92483C2710F"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:spectral_chestplate" }
+					type: "item"
+				}
+				{
+					id: "0573AAEB3BBB7C91"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:spectral_leggings" }
+					type: "item"
+				}
+				{
+					id: "039C4C755D435DC7"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:spectral_boots" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["289EC193A9CF47FC"]
+			hide_until_deps_complete: true
+			icon_scale: 2.0d
+			id: "2AFE6540334A0C82"
+			rewards: [{
+				count: 10
+				id: "0B5C839CD41E3AAC"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				entity: "arphex:diabolos_decimator"
+				icon: {
+					components: {
+						"ftbquests:icon": "kubejs:textures/quests/quest_icon_decimator.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "7724191BE476B2A7"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["289EC193A9CF47FC"]
+			hide_until_deps_complete: true
+			id: "3FB0A406C57BA65E"
+			optional: true
+			rewards: [{
+				count: 20
+				id: "385F3A681006E232"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				entity: "arphex:tormentor"
+				icon: {
+					components: {
+						"ftbquests:icon": "kubejs:textures/quests/quest_icon_tormentor.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "68B66DFE092403C1"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -21.0d
+		}
+		{
+			can_repeat: false
+			dependencies: [
+				"4E6BDCD6C1D58084"
+				"2BBE8F041CD69B07"
+				"26FC3EB2DE0502D3"
+			]
+			hide_until_deps_visible: true
+			id: "38986186701A4689"
+			rewards: [{
+				count: 2
+				id: "6964E33D22815FDB"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "50D928881670FBBF"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:infernal_helmet" }
+					type: "item"
+				}
+				{
+					id: "477FBEEBCFB8FFE3"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:infernal_chestplate" }
+					type: "item"
+				}
+				{
+					id: "486273856E50B9C1"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:infernal_leggings" }
+					type: "item"
+				}
+				{
+					id: "494619A16312901A"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:infernal_boots" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			icon: {
+				id: "minecraft:netherrack"
+			}
+			id: "11947E01F4CA1188"
+			invisible: true
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "225BCDE1D9545820"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["11947E01F4CA1188"]
+			icon: {
+				id: "minecraft:end_stone"
+			}
+			id: "0F9BF7950DB2AB64"
+			invisible: true
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "2947A1B114D09276"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			id: "460514A34AEFE9FF"
+			tasks: [{
+				id: "68134DF5FB78863E"
+				item: { count: 1, id: "arphex:chitin" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["460514A34AEFE9FF"]
+			hide_until_deps_complete: true
+			id: "3C1B748D553EF4B6"
+			rewards: [{
+				id: "2FDABB1217B3A6D5"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "414B2A2F3A23F1C6"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:chitin_armour_helmet" }
+					type: "item"
+				}
+				{
+					id: "3E1ADF7C8A16796E"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:chitin_armour_chestplate" }
+					type: "item"
+				}
+				{
+					id: "3DAFDAE2FA3074A1"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:chitin_armour_leggings" }
+					type: "item"
+				}
+				{
+					id: "465F450C409EA237"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:chitin_armour_boots" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["3C1B748D553EF4B6"]
+			id: "3D782039BC80BC2F"
+			optional: true
+			rewards: [{
+				id: "133D7298F176E7AD"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2A974D1E6FE4AFEA"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:chitin_armour_tier_2_helmet" }
+					type: "item"
+				}
+				{
+					id: "739ECA3AE75368BF"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:chitin_armour_tier_2_chestplate" }
+					type: "item"
+				}
+				{
+					id: "664CE1FBFB8B8D40"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:chitin_armour_tier_2_leggings" }
+					type: "item"
+				}
+				{
+					id: "1ED98C74F15753DC"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:chitin_armour_tier_2_boots" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["3D782039BC80BC2F"]
+			id: "566F0B6FC5B6B78D"
+			optional: true
+			tasks: [
+				{
+					id: "4B1FBC9BE0AC38BC"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:chitin_armour_tier_3_helmet" }
+					type: "item"
+				}
+				{
+					id: "616326A07B8A01A5"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:chitin_armour_tier_3_chestplate" }
+					type: "item"
+				}
+				{
+					id: "7F1F5959840F7033"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:chitin_armour_tier_3_leggings" }
+					type: "item"
+				}
+				{
+					id: "534C0466C2C2D3A7"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:chitin_armour_tier_3_boots" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"2EAAFD8C91736269"
+				"460514A34AEFE9FF"
+				"68134DF5FB78863E"
+			]
+			hide_until_deps_complete: true
+			id: "4E6BDCD6C1D58084"
+			tasks: [{
+				id: "550201F5E1E29509"
+				item: { count: 1, id: "arphex:heavy_chitin" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["460514A34AEFE9FF"]
+			hide_until_deps_complete: true
+			icon: {
+				components: {
+					"ftbquests:icon": "kubejs:textures/quests/quest_icon_arthropleura.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			icon_scale: 2.0d
+			id: "2EAAFD8C91736269"
+			rewards: [{
+				id: "0F2527F480B5991D"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.0d
+			tasks: [{
+				entity: "arphex:arthropleura_abomination"
+				icon: {
+					components: {
+						"ftbquests:icon": "kubejs:textures/quests/quest_icon_arthropleura.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "1F3ECFF64106DE86"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"4E6BDCD6C1D58084"
+				"566F0B6FC5B6B78D"
+			]
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "5FAFD9C0ADF74CE8"
+			tasks: [
+				{
+					id: "5A1F688EE21472ED"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:juggernaut_helmet" }
+					type: "item"
+				}
+				{
+					id: "679779CA7228B72A"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:juggernaut_chestplate" }
+					type: "item"
+				}
+				{
+					id: "32E53E3515198835"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:juggernaut_leggings" }
+					type: "item"
+				}
+				{
+					id: "53DB4CD2D97562CF"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:juggernaut_boots" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0F9BF7950DB2AB64"]
+			hide_until_deps_complete: true
+			icon: {
+				id: "arphex:crawling_portal"
+			}
+			id: "289EC193A9CF47FC"
+			tasks: [{
+				dimension: "arphex:the_crawling"
+				id: "4268CE2E17611685"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: -9.5d
+		}
+		{
+			dependencies: [
+				"3612CCFD7739FAEF"
+				"7856DDAFFD4C65CB"
+				"4E6BDCD6C1D58084"
+			]
+			hide_until_deps_visible: true
+			id: "0D45D64B3C739B40"
+			rewards: [{
+				count: 3
+				id: "38AD1E2FC9502D7A"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2C4CF5C00568EB62"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:umbral_helmet" }
+					type: "item"
+				}
+				{
+					id: "1E28C2042CE17BE6"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:umbral_chestplate" }
+					type: "item"
+				}
+				{
+					id: "1181C3FDB86E944F"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:umbral_leggings" }
+					type: "item"
+				}
+				{
+					id: "3D82D1BC52CB7851"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:umbral_boots" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["289EC193A9CF47FC"]
+			hide_until_deps_complete: true
+			icon_scale: 2.0d
+			id: "4DDC8DED691BCB1A"
+			optional: true
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				entity: "arphex:spider_matriarch"
+				icon: {
+					components: {
+						"ftbquests:icon": "kubejs:textures/quests/quest_icon_spider_matriarch.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "0FB5EBF44500CBC0"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: -11.0d
+		}
+		{
+			id: "79FBDB10A0DF27B0"
+			invisible: true
+			tasks: [{
+				id: "2E44ABBAB6FBFAA9"
+				item: { count: 1, id: "arphex:entropy_matrix_shard" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -12.5d
+		}
+		{
+			id: "0763E008B98B21BC"
+			invisible: true
+			tasks: [{
+				id: "64CDC86E7CBA90F4"
+				item: { count: 1, id: "arphex:time_prism" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -13.5d
+		}
+		{
+			id: "718B3B1782F24104"
+			invisible: true
+			tasks: [{
+				id: "1ABEA8AC5469B9CB"
+				item: { count: 1, id: "arphex:entropy_matrix" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -13.5d
+		}
+		{
+			dependencies: [
+				"0763E008B98B21BC"
+				"718B3B1782F24104"
+				"6D1AFBDDBE59807A"
+				"289EC193A9CF47FC"
+			]
+			hide_until_deps_visible: true
+			id: "3DFBDC511ADE0496"
+			rewards: [{
+				count: 4
+				id: "4223826B4950FA50"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "068654997E6F2BC6"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:spacetime_helmet" }
+					type: "item"
+				}
+				{
+					id: "1C02EB564D39182E"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:spacetime_chestplate" }
+					type: "item"
+				}
+				{
+					id: "3EB6AD080B7D7707"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:spacetime_leggings" }
+					type: "item"
+				}
+				{
+					id: "7A35E2E8410E625C"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:spacetime_boots" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["68F6ADE597C3719E"]
+			id: "6D1AFBDDBE59807A"
+			optional: true
+			tasks: [
+				{
+					id: "20E31BEF2BB5E3F5"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:vitality_armour_helmet" }
+					type: "item"
+				}
+				{
+					id: "57FB3CC995A1124E"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:vitality_armour_chestplate" }
+					type: "item"
+				}
+				{
+					id: "3F7E2E5C79CF9DC3"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:vitality_armour_leggings" }
+					type: "item"
+				}
+				{
+					id: "72FE270655948658"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:vitality_armour_boots" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["289EC193A9CF47FC"]
+			hide_until_deps_complete: true
+			id: "729403C110B7A4EC"
+			optional: true
+			rewards: [{
+				count: 5
+				id: "135165F4DB0C47F6"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4B4839F950CFDBBF"
+				item: { count: 1, id: "arphex:core_of_eternal_suffering" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -19.0d
+		}
+		{
+			dependencies: [
+				"38986186701A4689"
+				"3E12B876227732CD"
+				"0D45D64B3C739B40"
+				"3FB0A406C57BA65E"
+			]
+			hide_until_deps_visible: true
+			id: "72B7F7AD715F9222"
+			optional: true
+			rewards: [{
+				count: 5
+				id: "6CB9512E80CDCE0F"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "04B1726645A4D53D"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:eternal_helmet" }
+					type: "item"
+				}
+				{
+					id: "051521C848903790"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:eternal_chestplate" }
+					type: "item"
+				}
+				{
+					id: "71C8A34FB2E9B2B5"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:eternal_leggings" }
+					type: "item"
+				}
+				{
+					id: "5F9B5A4CA1A6B681"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:eternal_boots" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -16.0d
+		}
+		{
+			dependencies: [
+				"3FB0A406C57BA65E"
+				"72B7F7AD715F9222"
+			]
+			hide_until_deps_visible: true
+			id: "2A4CCBDC3747DB56"
+			optional: true
+			rewards: [{
+				count: 5
+				id: "70C97CC9F8B6F1F8"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "39445B63225C9A34"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:immortal_helmet" }
+					type: "item"
+				}
+				{
+					id: "72BC0A463CE16B76"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:immortal_chestplate" }
+					type: "item"
+				}
+				{
+					id: "73B12CA4C033A60A"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:immortal_leggings" }
+					type: "item"
+				}
+				{
+					id: "795527671C91CB07"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "arphex:immortal_boots" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -17.0d
+		}
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "kubejs:textures/quests/j_alien.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			icon_scale: 2.0d
+			id: "688641F2E1B6A876"
+			invisible: true
+			shape: "none"
+			size: 3.0d
+			tasks: [
+				{
+					icon: {
+						id: "gigeresque:petrified_object_1"
+					}
+					id: "76A7FC60FB51F5AE"
+					optional_task: true
+					structure: "gigeresque:gig_dungeon"
+					type: "structure"
+				}
+				{
+					icon: {
+						id: "gigeresque:petrified_object_2"
+					}
+					id: "16BB81E51E18672E"
+					optional_task: true
+					structure: "#gigeresque:gig_dungeons"
+					type: "structure"
+				}
+				{
+					icon: {
+						id: "gigeresque:petrified_object"
+					}
+					id: "1CB722DBE4403AA8"
+					optional_task: true
+					structure: "gigeresque:sculk_gig_dungeon"
+					type: "structure"
+				}
+			]
+			x: 0.0d
+			y: 21.0d
+		}
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "gigeresque:item/petrified_object_3"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			icon_scale: 2.0d
+			id: "5500226B67A44461"
+			invisible: true
+			shape: "none"
+			tasks: [{
+				id: "09E5591B028A0730"
+				observation_type: "entity_type"
+				observe_type: 5
+				timer: 0L
+				to_observe: "gigeresque:alien"
+				type: "observation"
+			}]
+			x: 0.0d
+			y: 18.5d
+		}
+		{
+			id: "68F6ADE597C3719E"
+			optional: true
+			tasks: [{
+				id: "1CA55A4F72525737"
+				item: { count: 1, id: "arphex:vitality_viewfinder" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 16.0d
+		}
+	]
+}
