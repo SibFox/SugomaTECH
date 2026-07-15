@@ -8,8 +8,9 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.recipes(event => {
-    registerRecipeRemovings(event)
     registerRecipeReplacings(event)
+    registerRecipeRemovings(event)
+    registerIURecipeRemovings(event)
     registerCommonRecipes(event)
     registerPBRecipes(event)
     registerIURecipes(event)
@@ -23,22 +24,35 @@ ServerEvents.recipes(event => {
     registerPipeZRecipes(event)
     registerCyberneticsRecipes(event)
     registerMFFSRecipes(event)
-    registerFDRecipes(event)
+    // registerFDRecipes(event)
     registerWCRecipes(event)
+    registerSBRecipes(event)
+    registerAgritechRecipes(event)
 })
 
-LootJS.lootTables(evt => {
-    evt.modifyLootTables(LootType.ENTITY).removeItem('pointblank:gunmetal_nugget')
-})
+// LootJS.lootTables(evt => {
+//     lootArPhEx(evt)
+//     evt.modifyLootTables(LootType.ENTITY).removeItem('pointblank:gunmetal_nugget')
+// })
+
+registerInteractions()
 
 // LootJS.lootTables(event => {
 //     let ids = event.getLootTableIds()
 //     console.info(ids)
 // })
 
-// RecipeViewerEvents.removeEntries('item', evt => {
-//     evt.remove('minecraft:string')
-// })
+RecipeViewerEvents.removeEntries('item', evt => {
+    for (let m of inc_metals)
+    {
+        evt.remove('kubejs:incomplete_' + m)
+    }
+
+    evt.remove(item.custom.kloverghett_seed)
+    evt.remove(item.custom.kloverghett_crystal)
+    evt.remove(item.custom.kloverghett_part)
+    evt.remove(item.custom.kloverghett_treated)
+})
 
 ItemEvents.foodEaten(event => {
     const {player} = event
@@ -56,6 +70,56 @@ ItemEvents.foodEaten(event => {
         }
     }
 })
+
+
+
+// // --- CONFIGURATION ---
+// const DISAPPEAR_LIST = [
+//     "minecraft:diamond",
+//     "minecraft:netherite_sword",
+//     "#forge:ingots/gold", // Tags work
+// ];
+
+// const $ItemEntity = Java.loadClass("net.minecraft.world.entity.item.ItemEntity");
+
+// /**
+//  * Check if item stack is in blacklist
+//  * @param {Internal.ItemStack} stack
+//  * @returns {boolean}
+//  */
+// function isBlacklisted(stack) {
+//     if (stack.isEmpty()) return false;
+//     return Ingredient.of(DISAPPEAR_LIST).test(stack);
+// }
+
+// // Prevent "Tossing" (Pressing Q)
+// ForgeEvents.onEvent("net.minecraftforge.event.entity.item.ItemTossEvent", (event) => {
+//     let itemEntity = event.getEntity();
+//     let stack = itemEntity.getItem();
+//     if (isBlacklisted(stack)) {
+//         event.setCanceled(true);
+//     }
+// });
+
+// // Disappear on "Join Level" (Fallback for GUI drops or other sources)
+// EntityEvents.spawned((evt) => {
+//     let entity = evt.entity
+//     if (!(entity instanceof $ItemEntity)) return
+//     if (evt.level.isClientSide()) return
+//     let stack = entity.item
+
+// })
+// ForgeEvents.onEvent("net.minecraftforge.event.entity.EntityJoinLevelEvent", (event) => {
+//     let entity = event.getEntity();
+//     if (!(entity instanceof $ItemEntity)) return;
+//     if (event.getLevel().isClientSide()) return;
+//     let stack = entity.getItem();
+//     if (isBlacklisted(stack)) {
+//         entity.discard();
+//     }
+// });
+
+registerItemObliteration()
 
 console.info('Loaded server scripts KJS')
 

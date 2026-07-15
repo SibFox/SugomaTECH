@@ -12,17 +12,17 @@ const registerMFFSCTRecipes = (evt) => {
 
     shapedRecipe(evt, getRecipeID('focus_matrix'),
         [
-            [ tag.plate.molybdenumsteel, item.iu.wire.glass, tag.plate.molybdenumsteel ],
+            [ item.iu.module.template.lvl1, item.iu.tech_box.normal.nano, item.iu.module.template.lvl1 ],
             [ item.iu.graphene_wire, item.iu.microchip.lvl6, item.iu.graphene_wire ],
-            [ tag.plate.molybdenumsteel, item.iu.wire.glass, tag.plate.molybdenumsteel ]
+            [ item.iu.controller.lvl2, item.cn.fiber_optic, item.iu.controller.lvl2 ]
         ],
-    item.mffs.focus_matrix, 4)
+    item.mffs.focus_matrix, 2)
 
     shapedRecipe(evt, getRecipeID('projector'),
         [
             [ null, item.iu.battery.energy_crystal.lvl2, null ],
             [ item.iu.module.synthesis.photon, item.mffs.focus_matrix, item.iu.module.slot.x8 ],
-            [ item.iu.module.combining.lvl2, item.iu.machine_corpus.advanced_tech, item.iu.module.tank.lvl4 ]
+            [ item.iu.module.combining.lvl2, item.iu.machine_corpus.tech_adv, item.iu.module.tank.lvl4 ]
         ],
     'mffs:projector')
 
@@ -30,7 +30,7 @@ const registerMFFSCTRecipes = (evt) => {
         [
             [ null, item.iu.module.generator.lvl2, null ],
             [ null, item.mffs.focus_matrix, null ],
-            [ item.iu.module.tank.lvl4, item.iu.machine_corpus.advanced_tech, item.iu.module.slot.x1 ]
+            [ item.iu.module.tank.lvl4, item.iu.machine_corpus.tech_adv, item.iu.module.slot.x1 ]
         ],
     'mffs:coercion_deriver')
 
@@ -46,7 +46,7 @@ const registerMFFSCTRecipes = (evt) => {
         [
             [ null, item.iu.module.scaner.lvl2, null ],
             [ item.iu.module.slot.x3, item.mffs.focus_matrix, item.iu.module.tank.lvl1 ],
-            [ null, item.iu.machine_corpus.advanced_tech, null ]
+            [ null, item.iu.machine_corpus.tech_adv, null ]
         ],
     'mffs:biometric_identifier')
 
@@ -54,7 +54,7 @@ const registerMFFSCTRecipes = (evt) => {
         [
             [ item.iu.module.scaner.lvl2, 'mffs:shock_module', item.iu.module.preservation ],
             [ null, item.mffs.focus_matrix, null ],
-            [ item.iu.module.slot.x8, item.iu.machine_corpus.advanced_tech, item.iu.module.slot.x8 ]
+            [ item.iu.module.slot.x8, item.iu.machine_corpus.tech_adv, item.iu.module.slot.x8 ]
         ],
     'mffs:interdiction_matrix')
 
@@ -89,6 +89,18 @@ const registerMFFSCTRecipes = (evt) => {
         ],
     'mffs:tube_mode')
 
+    evt.shaped(
+        Item.of('mffs:cylinder_mode', 1),
+        [
+            'C C',
+            'CDC',
+            'C C'
+        ],{
+            C: item.iu.composite,
+            D: item.mffs.focus_matrix
+        }
+    ).id(getRecipeID('cylinder_mode'))
+    
     shapedRecipe(evt, getRecipeID('pyramid_mode'),
         [
             [ item.ingot.composite, null, null ],
@@ -101,7 +113,7 @@ const registerMFFSCTRecipes = (evt) => {
         [
             [ item.iu.module.upgrade ],
             [ item.mffs.focus_matrix ],
-            [ item.iu.upgrade_casing ]
+            [ item.iu.upgrade.casing ]
         ],
     'mffs:scale_module', 8)
 
@@ -123,7 +135,7 @@ const registerMFFSCTRecipes = (evt) => {
         [
             [ null, item.iu.module.speed, null ],
             [ null, item.mffs.focus_matrix, null ],
-            [ item.ingot.red_alloy, item.iu.upgrade_casing, item.ingot.red_alloy ]
+            [ item.ingot.red_alloy, item.iu.upgrade.casing, item.ingot.red_alloy ]
         ],
     'mffs:speed_module', 2)
 
@@ -131,7 +143,7 @@ const registerMFFSCTRecipes = (evt) => {
         [
             [ item.iu.module.energy.lvl2 ],
             [ item.mffs.focus_matrix ],
-            [ item.iu.upgrade_casing ]
+            [ item.iu.upgrade.casing ]
         ],
     'mffs:capacity_module', 4)
 
@@ -139,7 +151,7 @@ const registerMFFSCTRecipes = (evt) => {
         [
             [ tag.wool, tag.wool, tag.wool ],
             [ tag.wool, item.mffs.focus_matrix, tag.wool ],
-            [ tag.wool, item.iu.upgrade_casing, tag.wool ]
+            [ tag.wool, item.iu.upgrade.casing, tag.wool ]
         ],
     'mffs:camouflage_module')
 }

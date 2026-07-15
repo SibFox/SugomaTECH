@@ -10,6 +10,7 @@ const registerAERecipes = (evt) => {
     registerAECTRecipes(evt)
     registerAEIURecipes(evt)
     registerAEMechanicalRecipes(evt)
+    registerAEMachinesRecipes(evt)
 
     console.info('Applied Energistics recipe adding passed')
 }

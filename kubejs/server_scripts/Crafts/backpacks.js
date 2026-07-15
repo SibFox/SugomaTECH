@@ -10,67 +10,163 @@ const registerSBRecipes = (evt) => {
         return recipeID('sb', path)
     }
 
-    shapedRecipe(evt, getRecipeID('backpack'),
-        [
-            [ tag.leather, tag.diamond, tag.leather ],
-            [ tag.rod.titan, tag.chest, tag.rod.titan ],
-            [ tag.leather, tag.diamond, tag.leather ]
-        ],
-    'sophisticatedbackpacks:backpack')
+    evt.remove({ id: 'sophisticatedbackpacks:backpack' })
+    evt.remove({ output: 'sophisticatedbackpacks:/backpack_tier_upgrade_grouped/copper_backpack/source/0' })
+    evt.remove({ output: 'sophisticatedbackpacks:/backpack_tier_upgrade_grouped/iron_backpack/source/0' })
+    evt.remove({ output: 'sophisticatedbackpacks:/backpack_tier_upgrade_grouped/iron_backpack_from_copper/0' })
+    evt.remove({ output: 'sophisticatedbackpacks:/backpack_tier_upgrade_grouped/gold_backpack/0' })
+    evt.remove({ output: 'sophisticatedbackpacks:/backpack_tier_upgrade_grouped/diamond_backpack/0' })
+    evt.remove({ output: 'sophisticatedbackpacks:/backpack_smithing_upgrade_grouped/netherite_backpack/0' })
 
-    evt.custom({    // Медь
-        "neoforge:conditions": [
-            {
-            "type": "sophisticatedcore:item_enabled",
-            "itemRegistryName": "sophisticatedbackpacks:copper_backpack"
-            }
-        ],
-        "type": "sophisticatedbackpacks:backpack_upgrade",
-        "category": "misc",
-        "key": {
-            "B": {
-            "item": "sophisticatedbackpacks:backpack"
-            },
-            "I": {
-            "tag": noHash(tag.plate.bronze)
-            }
-        },
-        "pattern": [
-            "III",
-            "IBI",
-            "III"
-        ],
-        "result": {
-            "count": 1,
-            "id": "sophisticatedbackpacks:copper_backpack"
+    evt.shaped(
+        Item.of('sophisticatedbackpacks:backpack', 1),
+        [
+            'LLL',
+            'LFL',
+            'LTL'
+        ],{
+            L: item.custom.hardened_leather,
+            F: item.custom.pack_frame,
+            T: tag.ingot.titanium_steel
         }
-    })
+    ).id(getRecipeID('backpack'))
 
     evt.custom({    // Железный
         "neoforge:conditions": [
             {
-            "type": "sophisticatedcore:item_enabled",
-            "itemRegistryName": "sophisticatedbackpacks:iron_backpack"
+                "type": "sophisticatedcore:item_enabled",
+                "itemRegistryName": "sophisticatedbackpacks:iron_backpack"
             }
         ],
         "type": "sophisticatedbackpacks:backpack_upgrade",
         "category": "misc",
         "key": {
             "B": {
-            "item": "sophisticatedbackpacks:copper_backpack"
+                "item": "sophisticatedbackpacks:backpack"
             },
             "I": {
-            "item": item.ingot.composite // Композит
+                "item": item.ingot.composite
+            },
+            "P": {
+                "item": item.custom.pack_frame
             }
         },
         "pattern": [
             "III",
             "IBI",
-            "III"
+            "IPI"
         ],
         "result": {
             "count": 1,
             "id": "sophisticatedbackpacks:iron_backpack"
+        }
+    })
+
+    evt.custom({    // Золотой
+        "neoforge:conditions": [
+            {
+                "type": "sophisticatedcore:item_enabled",
+                "itemRegistryName": "sophisticatedbackpacks:gold_backpack"
+            }
+        ],
+        "type": "sophisticatedbackpacks:backpack_upgrade",
+        "category": "misc",
+        "key": {
+            "B": {
+                "item": "sophisticatedbackpacks:iron_backpack"
+            },
+            "I": {
+                "item": tag.doubleplate.muntsa
+            },
+            "P": {
+                "item": item.custom.pack_frame
+            },
+            "A": {
+                "item": item.iu.tech_box.normal.nano
+            }
+        },
+        "pattern": [
+            "III",
+            "IBI",
+            "APA"
+        ],
+        "result": {
+            "count": 1,
+            "id": "sophisticatedbackpacks:gold_backpack"
+        }
+    })
+
+    evt.custom({    // Алмазный
+        "neoforge:conditions": [
+            {
+                "type": "sophisticatedcore:item_enabled",
+                "itemRegistryName": "sophisticatedbackpacks:diamond_backpack"
+            }
+        ],
+        "type": "sophisticatedbackpacks:backpack_upgrade",
+        "category": "misc",
+        "key": {
+            "B": {
+                "item": "sophisticatedbackpacks:gold_backpack"
+            },
+            "I": {
+                "item": tag.doubleplate.vitalium
+            },
+            "E": {
+                "item": item.ingot.entro
+            },
+            "P": {
+                "item": item.custom.pack_frame
+            },
+            "A": {
+                "item": item.iu.tech_box.normal.quantum
+            }
+        },
+        "pattern": [
+            "EIE",
+            "IBI",
+            "APA"
+        ],
+        "result": {
+            "count": 1,
+            "id": "sophisticatedbackpacks:diamond_backpack"
+        }
+    })
+
+    evt.custom({    // Незеритовый
+        "neoforge:conditions": [
+            {
+                "type": "sophisticatedcore:item_enabled",
+                "itemRegistryName": "sophisticatedbackpacks:netherite_backpack"
+            }
+        ],
+        "type": "sophisticatedbackpacks:backpack_upgrade",
+        "category": "misc",
+        "key": {
+            "B": {
+                "item": "sophisticatedbackpacks:diamond_backpack"
+            },
+            "I": {
+                "item": tag.doubleplate.stellite
+            },
+            "E": {
+                "item": item.ingot.netherite
+            },
+            "P": {
+                "item": item.custom.pack_frame
+            },
+            "A": {
+                "item": item.iu.tech_box.normal.spectral
+            }
+        },
+        "pattern": [
+            "EIE",
+            "IBI",
+            "APA"
+        ],
+        "result": {
+            "count": 1,
+            "id": "sophisticatedbackpacks:netherite_backpack"
         }
     })
 
