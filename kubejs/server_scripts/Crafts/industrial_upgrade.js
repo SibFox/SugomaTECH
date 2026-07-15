@@ -13,6 +13,7 @@ const registerIURecipes = (evt) => {
 
     evt.remove({ output: 'industrialupgrade:wiring/itemcable23' }) // Кобальтовая труба
     evt.remove({ output: 'industrialupgrade:wiring/itemcable22' }) // Входная труба
+    evt.remove({ output: 'industrialupgrade:crafting_elements/crafting_294_element' }) // Катушка
 
     shapedRecipe(evt, recipeID('iu', 'cobalt_pipe'),
         [
@@ -73,29 +74,27 @@ const registerIURecipes = (evt) => {
             'WWW'
         ],{
             W: item.iu.wire.bare.copper,
-            S: item.create.spool.item
+            S: item.custom.spool
         }
     ).id(getRecipeID('spool'))
 
-    console.info('Industrial Upgrade recipe adding passed')
+    // evt.shapeless(Item.of(item.iu.wire.bare.copper, 1),
+    //     [
+    //         'createaddition:copper_wire'
+    //     ]
+    // ).id(getRecipeID('wire_bare_copper_csa'))
 
-    evt.shapeless(Item.of(item.iu.wire.bare.copper, 1),
-        [
-            'createaddition:copper_wire'
-        ]
-    ).id(getRecipeID('wire_bare_copper_csa'))
-
-    evt.shapeless(Item.of(item.iu.wire.bare.gold, 1),
-        [
-            'createaddition:gold_wire'
-        ]
-    ).id(getRecipeID('wire_bare_gold_csa'))
+    // evt.shapeless(Item.of(item.iu.wire.bare.gold, 1),
+    //     [
+    //         'createaddition:gold_wire'
+    //     ]
+    // ).id(getRecipeID('wire_bare_gold_csa'))
     
-    evt.shapeless(Item.of(item.iu.wire.isolated.gold, 1),
-    [
-        'createaddition:electrum_wire'
-    ]
-    ).id(getRecipeID('wire_isolated_gold_csa'))
+    // evt.shapeless(Item.of(item.iu.wire.isolated.gold, 1),
+    // [
+    //     'createaddition:electrum_wire'
+    // ]
+    // ).id(getRecipeID('wire_isolated_gold_csa'))
 
     evt.shapeless(Item.of(item.iu.wire.bare.copper, 1),
         [
@@ -122,5 +121,5 @@ const registerIURecipes = (evt) => {
     ).id(getRecipeID('wire_isolated_copper_pg'))
     
     
-    
+    console.info('Industrial Upgrade recipe adding passed')
 }

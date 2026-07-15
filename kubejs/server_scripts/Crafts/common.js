@@ -20,6 +20,20 @@ const registerCommonRecipes = (evt) => {
         'minecraft:saddle'
     )
 
+    evt.shaped(
+        Item.of(item.custom.spool, 1),
+        [
+            'N',
+            'I',
+            'N'
+        ],{
+            N: tag.nugget.iron,
+            I: tag.ingot.iron
+        }
+    ).id(getRecipeID('spool'))
+    
+    
+
     iuRecipe(evt, getRecipeID('red_alloy'), IUMachineCraft.ALLOY_SMELTER.lvl1,
         [
             asItem(tag.ingot.electrum),
@@ -80,35 +94,35 @@ const registerCommonRecipes = (evt) => {
         ]
     )
 
-    cElectrifyRecipe(evt, getRecipeID('electrum_nugget'),
-        4000,
-        asItem(tag.nugget.gold),
-        asItem(item.nugget.electrum)
-    )
+    // cElectrifyRecipe(evt, getRecipeID('electrum_nugget'),
+    //     4000,
+    //     asItem(tag.nugget.gold),
+    //     asItem(item.nugget.electrum)
+    // )
 
-    cElectrifyRecipe(evt, getRecipeID('electrum_ingot'),
-        36000,
-        asItem(tag.ingot.gold),
-        asItem(item.ingot.electrum)
-    )
+    // cElectrifyRecipe(evt, getRecipeID('electrum_ingot'),
+    //     36000,
+    //     asItem(tag.ingot.gold),
+    //     asItem(item.ingot.electrum)
+    // )
     
-    cElectrifyRecipe(evt, getRecipeID('electrum_plate'),
-        36000,
-        asItem(tag.plate.gold),
-        asItem(item.plate.electrum)
-    )
+    // cElectrifyRecipe(evt, getRecipeID('electrum_plate'),
+    //     36000,
+    //     asItem(tag.plate.gold),
+    //     asItem(item.plate.electrum)
+    // )
     
-    cElectrifyRecipe(evt, getRecipeID('electrum_block'),
-        324000,
-        asItem(tag.ore_block.gold),
-        asItem(item.ore_block.electrum)
-    )
+    // cElectrifyRecipe(evt, getRecipeID('electrum_block'),
+    //     324000,
+    //     asItem(tag.ore_block.gold),
+    //     asItem(item.ore_block.electrum)
+    // )
     
-    cElectrifyRecipe(evt, getRecipeID('conducting_organic_polymer'),
-        6000,
-        asItem(item.custom.organic_polymer),
-        asItem(item.custom.conducting_organic_polymer)
-    )
+    // cElectrifyRecipe(evt, getRecipeID('conducting_organic_polymer'),
+    //     6000,
+    //     asItem(item.custom.organic_polymer),
+    //     asItem(item.custom.conducting_organic_polymer)
+    // )
     
     evt.shaped(
         Item.of(item.custom.pack_frame, 1),

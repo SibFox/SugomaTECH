@@ -196,6 +196,7 @@ const item = {
     },
 
     custom: {
+        spool: 'kubejs:spool',
         hemolymph_drop: 'kubejs:hemolymph_drop',
         organic_polymer: 'kubejs:organic_polymer',
         conducting_organic_polymer: 'kubejs:conducting_organic_polymer',
@@ -870,7 +871,6 @@ const item = {
         andesite_alloy: 'create:andesite_alloy',
         obsidian_powder:'create:powdered_obsidian',
         andesite_casing: 'create:andesite_casing',
-        modular_accumulator: 'createaddition:modular_accumulator',
         polished_rose_quarts: 'create:polished_rose_quartz',
         electron_tube: 'create:electron_tube',
         transmitter: 'create:transmitter',
@@ -884,6 +884,8 @@ const item = {
             andesite: 'create:andesite_casing',
             brass: 'create:brass_casing',
             industrial_iron: 'create:industrial_iron_block',
+            platinum: 'createpropulsion:platinum_casing',
+            conductive: 'powergrid:conductive_casing',
         },
 
         cogwheel: {
@@ -908,18 +910,18 @@ const item = {
             differential: 'petrolsparts:differential'
         },
 
-        spool: {
-            item: 'createaddition:spool',
-            copper: 'createaddition:copper_spool',
-            gold: 'createaddition:gold_spool',
-            electrum: 'createaddition:electrum_spool'
-        },
+        // spool: {
+        //     item: 'createaddition:spool',
+        //     copper: 'createaddition:copper_spool',
+        //     gold: 'createaddition:gold_spool',
+        //     electrum: 'createaddition:electrum_spool'
+        // },
 
-        connector: {
-            small: 'createaddition:connector',
-            small_light: 'createaddition:small_light_connector',
-            large: 'createaddition:large_connector',
-        },
+        // connector: {
+        //     small: 'createaddition:connector',
+        //     small_light: 'createaddition:small_light_connector',
+        //     large: 'createaddition:large_connector',
+        // },
     
         // ~~~~~~~~~~~~~~~~~~~~ Addons ~~~~~~~~~~~~~~~~~~~~
         control_chip: 'create_connected:control_chip',
@@ -1116,6 +1118,7 @@ const tag = {
         aluminiumsilicon: '#c:ingots/aluminiumsilicon',
         hafniumcarbide: '#c:ingots/hafniumcarbide',
         muntsa: '#c:ingots/muntsa',
+        vitalium: '#c:ingots/vitalium',
         // 4 сплавка
         woods: '#c:ingots/woods',
         stainless_steel: '#c:ingots/stainlesssteel',
@@ -1168,6 +1171,7 @@ const tag = {
         aluminiumsilicon: '#c:plates/aluminiumsilicon',
         hafniumcarbide: '#c:plates/hafniumcarbide',
         muntsa: '#c:plates/muntsa',
+        vitalium: '#c:plates/vitalium',
         // 4 сплавка
         woods: '#c:plates/woods',
         permalloy: '#c:plates/permalloy',
@@ -1208,6 +1212,7 @@ const tag = {
         aluminiumsilicon: '#c:doubleplate/aluminiumsilicon',
         hafniumcarbide: '#c:doubleplate/hafniumcarbide',
         muntsa: '#c:doubleplate/muntsa',
+        vitalium: '#c:doubleplate/vitalium',
         // 4 сплавка
         woods: '#c:doubleplate/woods',
         permalloy: '#c:doubleplate/permalloy',
@@ -1240,6 +1245,7 @@ const tag = {
         galliumarsenic: '#c:casings/galliumarsenic',
         tan_tung_haf: '#c:casings/tantalumtungstenhafnium',
         muntsa: '#c:casings/muntsa',
+        vitalium: '#c:casings/vitalium',
         // 4 сплавка
         alcled: '#c:casings/alcled',
         woods: '#c:casings/woods',
@@ -1352,12 +1358,9 @@ const fluid = {
 const deletion_list = [
     'create:iron_sheet', 'create:copper_sheet', 
     'create:golden_sheet','create:zinc_ingot', 
-    'createaddition:zinc_sheet', 'createaddition:electrum_ingot',
-    'createaddition:electrum_nugget', 'createaddition:electrum_sheet',
     'createcybernetics:titanium_block', 'createcybernetics:titaniumingot', 
     'createcybernetics:titaniumnugget', 'createcybernetics:titaniumsheet', 
-    'mffs:steel_ingot', 'createaddition:electrum_block', 
-    'create:zinc_nugget', 'create:sturdy_sheet',
+    'mffs:steel_ingot', 'create:zinc_nugget', 'create:sturdy_sheet',
     // 'createbigcannons:bronze_block', 'createbigcannons:bronze_ingot', 
     'createcybernetics:crushedtitanium', 'createpropulsion:platinum_ingot', 
     'createpropulsion:platinum_block', 'createpropulsion:platinum_sheet',
@@ -1370,8 +1373,10 @@ const deletion_list = [
     'createcybernetics:deepslate_titaniumore_block', 'createcybernetics:titaniumore_block',
     'create:zinc_block', 'powergrid:zinc_sheet', 'create:raw_zinc', 'create:brass_ingot',
     'create:brass_nugget', 'create:brass_sheet', 'create:brass_block',
-    'createaddition:copper_rod', 'createaddition:iron_rod', 'createaddition:gold_rod',
-    'createaddition:electrum_rod', 'createaddition:brass_rod'
+    // 'createaddition:copper_rod', 'createaddition:iron_rod', 'createaddition:gold_rod',
+    // 'createaddition:electrum_rod', 'createaddition:brass_rod', 'createaddition:electrum_block',
+    // 'createaddition:zinc_sheet', 'createaddition:electrum_ingot',
+    // 'createaddition:electrum_nugget', 'createaddition:electrum_sheet',
 
 ]
 

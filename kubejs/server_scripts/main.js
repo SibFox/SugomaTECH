@@ -47,6 +47,11 @@ RecipeViewerEvents.removeEntries('item', evt => {
     {
         evt.remove('kubejs:incomplete_' + m)
     }
+
+    evt.remove(item.custom.kloverghett_seed)
+    evt.remove(item.custom.kloverghett_crystal)
+    evt.remove(item.custom.kloverghett_part)
+    evt.remove(item.custom.kloverghett_treated)
 })
 
 ItemEvents.foodEaten(event => {

@@ -1,7 +1,9 @@
 {
-	chapter.31718A1EEFBD3C28.title: "Генетические изыскания"
+	chapter.31718A1EEFBD3C28.title: "&lГенетические изыскания"
 	chapter.3797DA8332D1F03F.title: "ArPhEx"
 	chapter.7A60DAD17BB41728.title: "{ftbquests.chapter.2}"
+	chapter_group.443A09D2BD4B2F8D.title: "&lМагазин"
+	chapter_group.53BFDBEC8FC0E28F.title: "&lДополнительное"
 	quest.001979AD8815672C.quest_desc: ["   &nПлазмид&r используется &6для внедрения&r в него &6генов&r"]
 	quest.001979AD8815672C.quest_subtitle: "Создайте плазмид"
 	quest.001979AD8815672C.title: "Генно-модифицирующая операция"
@@ -350,9 +352,6 @@
 	]
 	quest.38986186701A4689.quest_subtitle: "Создайте сет &cИнфернальной брони"
 	quest.38986186701A4689.title: "&cИнфернальная броня"
-	quest.3B07C195C50774CB.quest_desc: ["   Этот &nнеобязательный&r генератор &6позволяет питать механизмы&r, создавая FE энергию за счет горения угля."]
-	quest.3B07C195C50774CB.quest_subtitle: "Создайте угольный генератор"
-	quest.3B07C195C50774CB.title: "Горелка"
 	quest.3C1B748D553EF4B6.quest_desc: [
 		"&eБонус сета&r: Снижает входящий урон со спины на 10%"
 		""

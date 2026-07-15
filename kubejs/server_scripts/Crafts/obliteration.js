@@ -10,12 +10,10 @@ const registerItemObliteration = () => {
     const obliterateItems = [
         'create:iron_sheet', 'create:copper_sheet', 
         'create:golden_sheet','create:zinc_ingot', 
-        'createaddition:zinc_sheet', 'createaddition:electrum_ingot',
-        'createaddition:electrum_nugget', 'createaddition:electrum_sheet',
+        
         'createcybernetics:titanium_block', 'createcybernetics:titaniumingot', 
         'createcybernetics:titaniumnugget', 'createcybernetics:titaniumsheet', 
-        'mffs:steel_ingot', 'createaddition:electrum_block', 
-        'create:zinc_nugget', 'create:sturdy_sheet',
+        'mffs:steel_ingot', 'create:zinc_nugget', 'create:sturdy_sheet',
         // 'createbigcannons:bronze_block', 'createbigcannons:bronze_ingot', 
         'createcybernetics:crushedtitanium', 'createpropulsion:platinum_ingot', 
         'createpropulsion:platinum_block', 'createpropulsion:platinum_sheet',
@@ -28,13 +26,16 @@ const registerItemObliteration = () => {
         'createcybernetics:deepslate_titaniumore_block', 'createcybernetics:titaniumore_block',
         'create:zinc_block', 'powergrid:zinc_sheet', 'create:raw_zinc', 'create:brass_ingot',
         'create:brass_nugget', 'create:brass_sheet', 'create:brass_block',
-        'createaddition:copper_rod', 'createaddition:iron_rod', 'createaddition:gold_rod',
-        'createaddition:electrum_rod', 'createaddition:brass_rod', 'megacells:sky_osmium_ingot',
         'megacells:sky_osmium_block', 'extendedae:infinity_cobblestone_cell',
         'extendedae:infinity_water_cell', 'agritechevolved:biomass_burner',
         'agritechevolved:capacitor_tier1', 'agritechevolved:capacitor_tier2', 
         'agritechevolved:capacitor_tier3', 'geneticsresequenced:coal_generator',
-        'kaleidoscope_cookery:fruit_basket'
+        'kaleidoscope_cookery:fruit_basket', 'megacells:sky_osmium_ingot',
+
+        // 'createaddition:zinc_sheet', 'createaddition:electrum_ingot',
+        // 'createaddition:electrum_nugget', 'createaddition:electrum_sheet',
+        // 'createaddition:electrum_block', 'createaddition:copper_rod', 
+        // 'createaddition:iron_rod', 'createaddition:gold_rod',
     ]
 
     // Check if itemID exists within obliterateItems

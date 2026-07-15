@@ -192,6 +192,7 @@ function iuRecipe(evt, id, type, inputs, outputs, params){
     if ([IUMachineCraft.SOLID_ELECTROLYZER, IUMachineCraft.DIVIDER.ITEM_FLUID].includes(type)) {
         recipe.inputs.push({ "type": "fluid", "id": "minecraft:water", "amount": 1 })
         recipe.isFluidRecipe = true
+        console.log('WATER ADDED --- ' + type + ' /// ' + id)
     }
 
     for (let output of outputs) {
@@ -305,32 +306,32 @@ function aeReactionRecipe(evt, id, energy, input_fluid, input_items, output){
     }).id(id + '/reaction')
 }
 
-function cElectrifyRecipe(evt, id, energy, input, output){
-        let dict = {
-            "type": "createaddition:charging",
-            "energy": energy,
-            "ingredients": [],
-            "max_charge_rate": 360,
-            "results": [ { "id": output.item } ]
-        }
+// function cElectrifyRecipe(evt, id, energy, input, output){
+//         let dict = {
+//             "type": "createaddition:charging",
+//             "energy": energy,
+//             "ingredients": [],
+//             "max_charge_rate": 360,
+//             "results": [ { "id": output.item } ]
+//         }
 
-        if (input.isFluid) {
-            console.error("Recipe input was a Fluid in Create Additions Electrify recipe. Recipe ID: " + id)
-            return
-        }
-        if (output.isFluid || output.isTag) {
-            console.error("Recipe output was not an Item in Create Additions Electrify recipe. Recipe ID: " + id)
-            return
-        }
+//         if (input.isFluid) {
+//             console.error("Recipe input was a Fluid in Create Additions Electrify recipe. Recipe ID: " + id)
+//             return
+//         }
+//         if (output.isFluid || output.isTag) {
+//             console.error("Recipe output was not an Item in Create Additions Electrify recipe. Recipe ID: " + id)
+//             return
+//         }
 
-        if (input.isTag) {
-            dict.ingredients.push({ 'tag': input.item })
-        } else {
-            dict.ingredients.push({ 'item': input.item })            
-        }
+//         if (input.isTag) {
+//             dict.ingredients.push({ 'tag': input.item })
+//         } else {
+//             dict.ingredients.push({ 'item': input.item })            
+//         }
 
-        evt.custom(dict).id(id + '/electrify')
-    }
+//         evt.custom(dict).id(id + '/electrify')
+//}
 
 function removeFromInventory(player, searchItem, amount) {
     let inv = player.inventory;

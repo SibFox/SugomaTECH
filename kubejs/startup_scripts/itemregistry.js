@@ -2,7 +2,8 @@
 
 const registerItems = (evt) => {
     evt.create('coin')
-    evt.create('shop')
+    evt.create('shop')    
+    evt.create('spool')    
     evt.create('synth_nerve_cables')
     evt.create('hemolymph_drop')
     evt.create('organic_polymer')

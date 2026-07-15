@@ -310,3 +310,4 @@ config/blockreplacer.json5
 /config/spark
 /config/audiolayer/cache
 servers.dat_old
+cherishedworlds-favorites.dat

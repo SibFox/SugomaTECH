@@ -12,7 +12,7 @@ const registerRecipeRemovings = (evt) => {
     evt.remove({ mod: 'createcybernetics', type: 'create:mechanical_crafting' })
     evt.remove({ type: 'createdieselgenerators:hammering' })
     evt.remove({ type: 'createdieselgenerators:wire_cutting' })
-    evt.remove({ type: 'createaddition:rolling' })
+    // evt.remove({ type: 'createaddition:rolling' })
 
     evt.remove({ id: "petrolpark:recipe_book_test" })
     evt.remove({ output: "create:crushed_raw_nickel" })
@@ -33,11 +33,11 @@ const registerRecipeRemovings = (evt) => {
 
     evt.remove({ output: item.ingot.red_alloy })
 
-    evt.remove({ output: 'createaddition:electrum_rod', type: 'createaddition:charging' })
-    evt.remove({ output: 'createaddition:electrum_wire', type: 'createaddition:charging' })
-    evt.remove({ output: 'createaddition:electrum_nugget', type: 'createaddition:charging' })
-    evt.remove({ output: 'createaddition:electrum_ingot', type: 'createaddition:charging' })
-    evt.remove({ output: 'createaddition:electrum_sheet', type: 'createaddition:charging' })
+    // evt.remove({ output: 'createaddition:electrum_rod', type: 'createaddition:charging' })
+    // evt.remove({ output: 'createaddition:electrum_wire', type: 'createaddition:charging' })
+    // evt.remove({ output: 'createaddition:electrum_nugget', type: 'createaddition:charging' })
+    // evt.remove({ output: 'createaddition:electrum_ingot', type: 'createaddition:charging' })
+    // evt.remove({ output: 'createaddition:electrum_sheet', type: 'createaddition:charging' })
     
     evt.remove({ id: 'createcybernetics:wetware_spidereyes' }) // Уменьшает производительность в 8 раз, написать об этом разрабу
 

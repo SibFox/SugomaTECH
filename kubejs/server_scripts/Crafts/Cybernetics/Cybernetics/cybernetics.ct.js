@@ -36,7 +36,7 @@ const registerCyberneticsCTRecipes = (evt) => {
             'WWW'
         ],{
             W: item.iu.wire.glass,
-            S: item.create.spool.item
+            S: item.custom.spool
         }
     ).id(getRecipeID('fiber_optic'))
 

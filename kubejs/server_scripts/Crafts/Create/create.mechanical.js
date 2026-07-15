@@ -10,46 +10,38 @@ const registerCreateMechanicalRecipes = (evt) => {
         return recipeID('create/mechanical', path)
     }
 
-    evt.recipes.create.mechanical_crafting('createaddition:alternator', [
-        '  A  ',
-        ' ISI ',
-        'ISRSI',
-        ' ICI '
+    evt.recipes.create.mechanical_crafting('createthrusters:alternator', [
+        ' IPI ',
+        'ISCSI',
+        'ISASI',
+        'ISESI',
+        ' IFI '
     ], {
-        A: item.create.andesite_alloy,
-        C: item.iu.transistor.lvl2,
+        P: item.create.casing.platinum,
+        A: item.iu.battery.lithium,
+        C: item.iu.capacitor.lvl3,
+        E: item.iu.electromotor.lvl2,
         I: tag.plate.titanium_steel,
-        R: tag.shaft,
+        F: tag.shaft,
         S: item.iu.spool.lvl2
     }).id(getRecipeID('alternator'))
-    
 
-    evt.recipes.create.mechanical_crafting('createaddition:electric_motor', [
-        '  A  ',
-        ' BSB ',
-        'BSRSB',
-        ' BCB '
+    evt.recipes.create.mechanical_crafting('createthrusters:industrial_motor', [
+        ' IPI ',
+        'ISTSI',
+        'ISASI',
+        'ISESI',
+        ' IFI '
     ], {
-        A: item.create.andesite_alloy,
-        B: tag.plate.alumel,
-        C: item.iu.transistor.lvl2,
-        R: tag.shaft,
+        P: item.create.casing.platinum,
+        A: item.iu.battery.lithium,
+        T: item.iu.transistor.lvl2,
+        E: item.iu.electromotor.lvl2,
+        I: tag.plate.titanium_steel,
+        F: tag.shaft,
         S: item.iu.spool.lvl2
-    }).id(getRecipeID('electric_motor'))
+    }).id(getRecipeID('industrial_motor'))
 
-    evt.recipes.create.mechanical_crafting('createaddition:tesla_coil', [
-        'SSS',
-        'CAC',
-        'PBP',
-        'PEP'
-    ], {
-        A: item.create.andesite_alloy,
-        B: item.iu.machine_corpus.tech,
-        C: item.iu.transistor.lvl2,
-        E: item.create.electron_tube,
-        P: tag.plate.alumel,
-        S: item.iu.spool.superconducting.lvl1
-    }).id(getRecipeID('tesla_coil'))
 
     cnRecipe(evt, asItem(item.create.integrated_circuit),
         [

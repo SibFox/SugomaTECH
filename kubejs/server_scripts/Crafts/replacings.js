@@ -81,57 +81,57 @@ const registerRecipeReplacings = (evt) => {
     )
 
 
-    evt.replaceInput({ input: 'createaddition:electrum_sheet' },
-        'createaddition:electrum_sheet',
-        tag.plate.electrum
-    )
+    // evt.replaceInput({ input: 'createaddition:electrum_sheet' },
+    //     'createaddition:electrum_sheet',
+    //     tag.plate.electrum
+    // )
     // evt.replaceInput({ input: tag.plate.electrum },
     //     tag.plate.electrum,
     //     item.plate.electrum
     // )
-    evt.replaceOutput({ output: 'createaddition:electrum_sheet' },
-        'createaddition:electrum_sheet',
-        item.plate.electrum
-    )
+    // evt.replaceOutput({ output: 'createaddition:electrum_sheet' },
+    //     'createaddition:electrum_sheet',
+    //     item.plate.electrum
+    // )
 
-    evt.replaceInput({ input: 'createaddition:electrum_ingot' },
-        'createaddition:electrum_ingot',
-        tag.ingot.electrum
-    )
+    // evt.replaceInput({ input: 'createaddition:electrum_ingot' },
+    //     'createaddition:electrum_ingot',
+    //     tag.ingot.electrum
+    // )
     // evt.replaceInput({ input: tag.ingot.electrum },
     //     tag.ingot.electrum,
     //     item.ingot.electrum
     // )
-    evt.replaceOutput({ output: 'createaddition:electrum_ingot' },
-        'createaddition:electrum_ingot',
-        item.ingot.electrum
-    )
+    // evt.replaceOutput({ output: 'createaddition:electrum_ingot' },
+    //     'createaddition:electrum_ingot',
+    //     item.ingot.electrum
+    // )
     
-    evt.replaceOutput({ output: 'createaddition:electrum_block' },
-        'createaddition:electrum_block',
-        item.ore_block.electrum
-    )
+    // evt.replaceOutput({ output: 'createaddition:electrum_block' },
+    //     'createaddition:electrum_block',
+    //     item.ore_block.electrum
+    // )
     // evt.replaceInput({ input: tag.ore_block.electrum },
     //     tag.ore_block.electrum,
     //     item.ore_block.electrum
     // )
-    evt.replaceOutput({ output: 'createaddition:electrum_block' },
-        'createaddition:electrum_block',
-        item.ore_block.electrum
-    )
+    // evt.replaceOutput({ output: 'createaddition:electrum_block' },
+    //     'createaddition:electrum_block',
+    //     item.ore_block.electrum
+    // )
 
-    evt.replaceInput({ input: 'createaddition:electrum_nugget' },
-        'createaddition:electrum_nugget',
-        tag.nugget.electrum
-    )
+    // evt.replaceInput({ input: 'createaddition:electrum_nugget' },
+    //     'createaddition:electrum_nugget',
+    //     tag.nugget.electrum
+    // )
     // evt.replaceInput({ input: 'createaddition:electrum_nugget' },
     //     tag.nugget.electrum,
     //     item.nugget.electrum
     // )
-    evt.replaceOutput({ output: 'createaddition:electrum_nugget' },
-        'createaddition:electrum_nugget',
-        item.nugget.electrum
-    )
+    // evt.replaceOutput({ output: 'createaddition:electrum_nugget' },
+    //     'createaddition:electrum_nugget',
+    //     item.nugget.electrum
+    // )
     
 
     evt.replaceInput({ input: 'create:zinc_ingot' },
@@ -160,18 +160,18 @@ const registerRecipeReplacings = (evt) => {
         item.nugget.zinc
     )
 
-    evt.replaceInput({ input: 'createaddition:zinc_sheet' },
-        'createaddition:zinc_sheet',
-        tag.plate.zinc
-    )
+    // evt.replaceInput({ input: 'createaddition:zinc_sheet' },
+    //     'createaddition:zinc_sheet',
+    //     tag.plate.zinc
+    // )
     // evt.replaceInput({ input: 'createaddition:zinc_sheet' },
     //     tag.plate.zinc,
     //     item.plate.zinc
     // )
-    evt.replaceOutput({ output: 'createaddition:zinc_sheet' },
-        'createaddition:zinc_sheet',
-        item.plate.zinc
-    )
+    // evt.replaceOutput({ output: 'createaddition:zinc_sheet' },
+    //     'createaddition:zinc_sheet',
+    //     item.plate.zinc
+    // )
 
     evt.replaceInput({ input: 'create:sturdy_sheet' },
         'create:sturdy_sheet',

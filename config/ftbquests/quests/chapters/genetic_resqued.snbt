@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "genetic_resqued"
-	group: ""
+	group: "53BFDBEC8FC0E28F"
 	icon: {
 		components: {
 			"geneticsresequenced:gene": "geneticsresequenced:basic"
@@ -18,7 +18,7 @@
 		x: -0.0952380952380949d
 		y: -3.3690476190476133d
 	}]
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -101,26 +101,6 @@
 			}]
 			x: 0.0d
 			y: -1.0d
-		}
-		{
-			id: "3B07C195C50774CB"
-			optional: true
-			rewards: [{
-				id: "117341D6121C6E30"
-				item: {
-					count: 1
-					id: "kubejs:coin"
-				}
-				type: "item"
-			}]
-			shape: "rsquare"
-			tasks: [{
-				id: "7F4DE57A3A8908B9"
-				item: { count: 1, id: "geneticsresequenced:coal_generator" }
-				type: "item"
-			}]
-			x: -1.0d
-			y: -1.5d
 		}
 		{
 			dependencies: ["001979AD8815672C"]
@@ -308,6 +288,9 @@
 			y: -7.0d
 		}
 		{
+			dependencies: ["6BD49D9EEE8DE61A"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "61C89B5257A695AC"
 			optional: true
 			shape: "circle"
@@ -341,6 +324,9 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["6BD49D9EEE8DE61A"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "613B142597B57B1F"
 			rewards: [{
 				id: "024FBE5FB3CCD9F7"
