@@ -314,3 +314,5 @@ config/ftbquests-client.snbt
 config/ftbxmodcompat.snbt
 config/ftbteams-server.snbt
 /config/hailwall
+/backups
+config/AdvancedBackups-client.properties
