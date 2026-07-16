@@ -11,12 +11,11 @@ const registerSBRecipes = (evt) => {
     }
 
     evt.remove({ id: 'sophisticatedbackpacks:backpack' })
-    evt.remove({ output: 'sophisticatedbackpacks:/backpack_tier_upgrade_grouped/copper_backpack/source/0' })
-    evt.remove({ output: 'sophisticatedbackpacks:/backpack_tier_upgrade_grouped/iron_backpack/source/0' })
-    evt.remove({ output: 'sophisticatedbackpacks:/backpack_tier_upgrade_grouped/iron_backpack_from_copper/0' })
-    evt.remove({ output: 'sophisticatedbackpacks:/backpack_tier_upgrade_grouped/gold_backpack/0' })
-    evt.remove({ output: 'sophisticatedbackpacks:/backpack_tier_upgrade_grouped/diamond_backpack/0' })
-    evt.remove({ output: 'sophisticatedbackpacks:/backpack_smithing_upgrade_grouped/netherite_backpack/0' })
+    evt.remove({ output: 'sophisticatedbackpacks:copper_backpack' })
+    evt.remove({ output: 'sophisticatedbackpacks:iron_backpack' })
+    evt.remove({ output: 'sophisticatedbackpacks:gold_backpack' })
+    evt.remove({ output: 'sophisticatedbackpacks:diamond_backpack' })
+    evt.remove({ output: 'sophisticatedbackpacks:netherite_backpack' })
 
     evt.shaped(
         Item.of('sophisticatedbackpacks:backpack', 1),
@@ -35,7 +34,7 @@ const registerSBRecipes = (evt) => {
         "neoforge:conditions": [
             {
                 "type": "sophisticatedcore:item_enabled",
-                "itemRegistryName": "sophisticatedbackpacks:iron_backpack"
+            "itemRegistryName": "sophisticatedbackpacks:iron_backpack"
             }
         ],
         "type": "sophisticatedbackpacks:backpack_upgrade",
@@ -76,7 +75,7 @@ const registerSBRecipes = (evt) => {
                 "item": "sophisticatedbackpacks:iron_backpack"
             },
             "I": {
-                "item": tag.doubleplate.muntsa
+                "tag": noHash(tag.doubleplate.muntsa)
             },
             "P": {
                 "item": item.custom.pack_frame
@@ -110,7 +109,7 @@ const registerSBRecipes = (evt) => {
                 "item": "sophisticatedbackpacks:gold_backpack"
             },
             "I": {
-                "item": tag.doubleplate.vitalium
+                "tag": noHash(tag.doubleplate.vitalium)
             },
             "E": {
                 "item": item.ingot.entro
@@ -147,7 +146,7 @@ const registerSBRecipes = (evt) => {
                 "item": "sophisticatedbackpacks:diamond_backpack"
             },
             "I": {
-                "item": tag.doubleplate.stellite
+                "tag": noHash(tag.doubleplate.stellite)
             },
             "E": {
                 "item": item.ingot.netherite
