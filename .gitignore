@@ -313,3 +313,4 @@ config/ftblibrary-client.snbt
 config/ftbquests-client.snbt
 config/ftbxmodcompat.snbt
 config/ftbteams-server.snbt
+/config/hailwall
