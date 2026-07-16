@@ -1,0 +1,25 @@
+{
+  "mode": "blacklist",
+  "enforce": true,
+  "operatorsBypass": true,
+  "requireCompanionMod": true,
+  "verifySignature": true,
+  "logModLists": true,
+  "enableAccessLog": true,
+  "accessLogRetentionDays": 5,
+  "whitelist": [],
+  "blacklist": [
+    "meteor-client",
+    "wurst",
+    "baritone",
+    "xray",
+    "xrayultimate",
+    "freecam"
+  ],
+  "requiredMods": [],
+  "messageForbidden": "Kicked by HailWall: disallowed mods detected:",
+  "messageMissingRequired": "Kicked by HailWall: required mods are missing:",
+  "messageNoCompanion": "This server requires the HailWall mod. Please install it (client-side) to join.",
+  "messageTampered": "Mod verification failed: invalid signature.",
+  "messageProtocol": "Incompatible HailWall protocol version: please update the mod."
+}

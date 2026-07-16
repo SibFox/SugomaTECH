@@ -1,14 +1,6 @@
 type = listener_instances
 
 listener_instance {
-  listener_instance_identifier = ab0f7d1a-4e8e-40d8-8205-e991296f5cda-1784140083770
-  listener_provider_identifier = effect_gained
-  listener_instance_action_script_identifier = a27f5961-b678-42cd-8eff-f8d63542b26f-1784140083770
-  [executable_action_instance:42831694-64be-439f-aeb9-b80d73e15ccd-1784140134400][action_type:play_audio] = {"audioSource":"[source:local]/config/fancymenu/assets/sounds/tremor.ogg","soundChannel":"master","baseVolume":1.0}
-  [executable_block:a27f5961-b678-42cd-8eff-f8d63542b26f-1784140083770][type:generic] = [executables:42831694-64be-439f-aeb9-b80d73e15ccd-1784140134400;]
-}
-
-listener_instance {
   listener_instance_identifier = 860ad9f5-4dc9-4cc1-beef-69514512c610-1784127494988
   listener_provider_identifier = other_player_joined_world
   listener_instance_action_script_identifier = 09489505-ecef-42c9-ae40-61b20bf8c8de-1784127494988
