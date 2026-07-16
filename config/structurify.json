@@ -1,6 +1,6 @@
 {
-  "config_version": "2.0.11",
-  "config_datetime": "2026-01-09_15-53-14",
+  "config_version": "2.0.25",
+  "config_datetime": "2026-07-17_02-03-36",
   "general": {
     "disable_all_structures": false,
     "prevent_structure_overlap": true,
@@ -22,148 +22,78 @@
   "structures": [
     {
       "name": "minecraft:igloo",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "none"
+      "is_disabled": true
     },
     {
       "name": "minecraft:mansion",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "none"
+      "is_disabled": true
     },
     {
       "name": "minecraft:pillager_outpost",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin"
+      "is_disabled": true
     },
     {
       "name": "minecraft:ruined_portal",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "none"
+      "is_disabled": true
     },
     {
       "name": "minecraft:ruined_portal_desert",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "none"
+      "is_disabled": true
     },
     {
       "name": "minecraft:ruined_portal_jungle",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "none"
+      "is_disabled": true
     },
     {
       "name": "minecraft:ruined_portal_mountain",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "none"
+      "is_disabled": true
     },
     {
       "name": "minecraft:ruined_portal_ocean",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "none"
+      "is_disabled": true
     },
     {
       "name": "minecraft:ruined_portal_swamp",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "none"
+      "is_disabled": true
     },
     {
       "name": "minecraft:swamp_hut",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "none"
+      "is_disabled": true
     },
     {
       "name": "minecraft:village_desert",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin"
+      "is_disabled": true
     },
     {
       "name": "minecraft:village_plains",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin"
+      "is_disabled": true
     },
     {
       "name": "minecraft:village_savanna",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin"
+      "is_disabled": true
     },
     {
       "name": "minecraft:village_snowy",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin"
+      "is_disabled": true
     },
     {
       "name": "minecraft:village_taiga",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin"
+      "is_disabled": true
     },
     {
       "name": "arphex:altar_spawn",
-      "is_disabled": false,
       "whitelisted_biomes": [
         "#wythers:is_dark_forest"
-      ],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin"
+      ]
     },
     {
       "name": "arphex:ant_hill",
-      "is_disabled": false,
       "whitelisted_biomes": [
         "#betterarcheology:collections/taigas"
-      ],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "none"
+      ]
     },
     {
       "name": "arphex:crawling_castle",
-      "is_disabled": false,
-      "whitelisted_biomes": [],
       "blacklisted_biomes": [
         "minecraft:mushroom_fields",
         "minecraft:deep_frozen_ocean",
@@ -396,79 +326,65 @@
         "wythers:wistman_woods",
         "wythers:wooded_desert",
         "wythers:wooded_savanna"
-      ],
-      "step": "strongholds",
-      "terrain_adaptation": "bury"
+      ]
     },
     {
       "name": "arphex:spider_cave",
-      "is_disabled": false,
       "whitelisted_biomes": [
         "#betterarcheology:collections/badlands",
         "#betterarcheology:collections/jungles",
         "#betterarcheology:collections/forests"
-      ],
-      "blacklisted_biomes": [],
-      "step": "strongholds",
-      "terrain_adaptation": "none"
+      ]
     },
     {
       "name": "arphex:termite_hill",
-      "is_disabled": false,
       "whitelisted_biomes": [
         "#betterarcheology:collections/taigas",
         "#betterarcheology:collections/badlands"
-      ],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin"
+      ]
     },
     {
       "name": "gigeresque:gig_dungeon",
-      "is_disabled": false,
       "whitelisted_biomes": [
-        "#arphex:crawling_biomes"
+        "wythers:underground"
       ],
       "blacklisted_biomes": [
-        "minecraft:meadow"
+        "minecraft:meadow",
+        "minecraft:frozen_peaks",
+        "minecraft:jagged_peaks",
+        "minecraft:stony_peaks",
+        "minecraft:snowy_slopes",
+        "minecraft:cherry_grove",
+        "wythers:cool_stony_peaks",
+        "wythers:cool_plains",
+        "wythers:crimson_tundra",
+        "wythers:highlands",
+        "wythers:highland_plains",
+        "wythers:huangshan_highlands",
+        "wythers:maple_mountains",
+        "wythers:tropical_volcano",
+        "wythers:volcano"
       ],
-      "step": "strongholds",
-      "terrain_adaptation": "encapsulate",
-      "max_distance_from_center": 16,
-      "max_horizontal_distance_from_center": 116,
-      "max_vertical_distance_from_center": 116
+      "size": 16,
+      "start_height": {
+        "absolute": -32
+      }
     },
     {
       "name": "wythers:el_dorado",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "underground_decoration",
-      "terrain_adaptation": "beard_box"
+      "is_disabled": true
     },
     {
       "name": "wythers:village_badlands",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin"
+      "is_disabled": true
     },
     {
       "name": "wythers:village_badlands_desert",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin"
+      "is_disabled": true
     },
     {
       "name": "wythers:village_wooded_badlands",
-      "is_disabled": true,
-      "whitelisted_biomes": [],
-      "blacklisted_biomes": [],
-      "step": "surface_structures",
-      "terrain_adaptation": "beard_thin"
+      "is_disabled": true
     }
   ],
   "structure_sets": [
@@ -476,135 +392,194 @@
       "spacing": 32,
       "separation": 8,
       "name": "ae2:meteorite",
+      "is_disabled": false,
       "salt": 124895654,
       "frequency": 0.85,
-      "override_global_spacing_and_separation_modifier": false
+      "override_global_spacing_and_separation_modifier": false,
+      "structure_weights": {
+        "ae2:meteorite": 1
+      }
     },
     {
       "spacing": 30,
       "separation": 1,
       "name": "arphex:altar_spawn",
+      "is_disabled": false,
       "salt": 75873641,
       "frequency": 0.20500001,
-      "override_global_spacing_and_separation_modifier": false
+      "override_global_spacing_and_separation_modifier": false,
+      "structure_weights": {
+        "arphex:altar_spawn": 1
+      }
     },
     {
       "spacing": 200,
       "separation": 149,
       "name": "arphex:crawling_castle",
+      "is_disabled": false,
       "salt": 1875635337,
       "frequency": 0.32000002,
-      "override_global_spacing_and_separation_modifier": false
-    },
-    {
-      "spacing": 32,
-      "separation": 16,
-      "name": "betterarcheology:archeology_sites",
-      "salt": 990880770,
-      "frequency": 0.78000003,
-      "override_global_spacing_and_separation_modifier": false
-    },
-    {
-      "spacing": 24,
-      "separation": 12,
-      "name": "betterarcheology:fossil_sites",
-      "salt": 990880771,
-      "frequency": 0.32500002,
-      "override_global_spacing_and_separation_modifier": false
+      "override_global_spacing_and_separation_modifier": false,
+      "structure_weights": {
+        "arphex:crawling_castle": 1
+      }
     },
     {
       "spacing": 48,
       "separation": 24,
       "name": "betterdungeons:zombie_dungeons",
+      "is_disabled": false,
       "salt": 280667671,
       "frequency": 0.41500002,
-      "override_global_spacing_and_separation_modifier": false
+      "override_global_spacing_and_separation_modifier": false,
+      "structure_weights": {
+        "betterdungeons:zombie_dungeon": 1
+      }
     },
     {
       "spacing": 32,
       "separation": 8,
       "name": "minecraft:desert_pyramids",
+      "is_disabled": false,
       "salt": 14357617,
       "frequency": 0.1,
-      "override_global_spacing_and_separation_modifier": false
+      "override_global_spacing_and_separation_modifier": false,
+      "structure_weights": {
+        "minecraft:desert_pyramid": 1
+      }
     },
     {
       "spacing": 32,
       "separation": 8,
       "name": "minecraft:jungle_temples",
+      "is_disabled": false,
       "salt": 14357619,
       "frequency": 0.43,
-      "override_global_spacing_and_separation_modifier": false
+      "override_global_spacing_and_separation_modifier": false,
+      "structure_weights": {
+        "minecraft:jungle_pyramid": 1
+      }
     },
     {
       "name": "minecraft:mineshafts",
+      "is_disabled": false,
       "salt": 0,
       "frequency": 0.16000001,
-      "override_global_spacing_and_separation_modifier": false
+      "override_global_spacing_and_separation_modifier": false,
+      "structure_weights": {
+        "minecraft:mineshaft": 1,
+        "minecraft:mineshaft_mesa": 1
+      }
     },
     {
       "spacing": 40,
       "separation": 15,
       "name": "minecraft:ruined_portals",
+      "is_disabled": false,
       "salt": 34222645,
       "frequency": 0.21000001,
-      "override_global_spacing_and_separation_modifier": false
+      "override_global_spacing_and_separation_modifier": false,
+      "structure_weights": {
+        "minecraft:ruined_portal": 1,
+        "minecraft:ruined_portal_nether": 1,
+        "minecraft:ruined_portal_swamp": 1,
+        "minecraft:ruined_portal_mountain": 1,
+        "minecraft:ruined_portal_jungle": 1,
+        "minecraft:ruined_portal_ocean": 1,
+        "minecraft:ruined_portal_desert": 1
+      }
     },
     {
       "spacing": 24,
       "separation": 4,
       "name": "minecraft:shipwrecks",
+      "is_disabled": false,
       "salt": 165745295,
       "frequency": 0.52000004,
-      "override_global_spacing_and_separation_modifier": false
+      "override_global_spacing_and_separation_modifier": false,
+      "structure_weights": {
+        "minecraft:shipwreck_beached": 1,
+        "minecraft:shipwreck": 1
+      }
     },
     {
       "spacing": 34,
       "separation": 8,
       "name": "minecraft:villages",
+      "is_disabled": false,
       "salt": 10387312,
       "frequency": 0.0,
-      "override_global_spacing_and_separation_modifier": false
+      "override_global_spacing_and_separation_modifier": false,
+      "structure_weights": {
+        "minecraft:village_snowy": 1,
+        "minecraft:village_plains": 1,
+        "minecraft:village_taiga": 1,
+        "minecraft:village_savanna": 1,
+        "minecraft:village_desert": 1
+      }
     },
     {
       "spacing": 80,
       "separation": 20,
       "name": "minecraft:woodland_mansions",
+      "is_disabled": false,
       "salt": 10387319,
       "frequency": 0.0,
-      "override_global_spacing_and_separation_modifier": false
+      "override_global_spacing_and_separation_modifier": false,
+      "structure_weights": {
+        "minecraft:mansion": 1
+      }
     },
     {
       "spacing": 6,
       "separation": 3,
       "name": "wythers:baobab_dry_tropical_forest",
+      "is_disabled": false,
       "salt": 10387312,
       "frequency": 0.42000002,
-      "override_global_spacing_and_separation_modifier": false
+      "override_global_spacing_and_separation_modifier": false,
+      "structure_weights": {
+        "wythers:baobab_dry_tropical_forest": 1
+      }
     },
     {
       "spacing": 16,
       "separation": 8,
       "name": "wythers:baobab_savanna",
+      "is_disabled": false,
       "salt": 10387312,
       "frequency": 0.26500002,
-      "override_global_spacing_and_separation_modifier": false
+      "override_global_spacing_and_separation_modifier": false,
+      "structure_weights": {
+        "wythers:baobab_savanna": 1
+      }
     },
     {
       "spacing": 6,
       "separation": 3,
       "name": "wythers:baobab_tropical_forest",
+      "is_disabled": false,
       "salt": 10387312,
       "frequency": 0.16000001,
-      "override_global_spacing_and_separation_modifier": false
+      "override_global_spacing_and_separation_modifier": false,
+      "structure_weights": {
+        "wythers:baobab_tropical_forest": 1
+      }
     },
     {
       "spacing": 16,
       "separation": 4,
       "name": "wythers:villages",
+      "is_disabled": false,
       "salt": 10387312,
       "frequency": 0.0,
-      "override_global_spacing_and_separation_modifier": false
+      "override_global_spacing_and_separation_modifier": false,
+      "structure_weights": {
+        "wythers:village_wooded_badlands": 1,
+        "wythers:village_badlands_desert": 1,
+        "wythers:village_badlands": 1
+      }
     }
-  ]
+  ],
+  "structure_template_pools": []
 }
