@@ -1,10 +1,2 @@
 type = listener_instances
 
-listener_instance {
-  listener_instance_identifier = 860ad9f5-4dc9-4cc1-beef-69514512c610-1784127494988
-  listener_provider_identifier = other_player_joined_world
-  listener_instance_action_script_identifier = 09489505-ecef-42c9-ae40-61b20bf8c8de-1784127494988
-  [executable_action_instance:99fedf43-e6c0-477e-aa46-5fa35d81c59c-1784127500523][action_type:play_audio] = {"audioSource":"[source:local]/config/fancymenu/assets/sounds/join.ogg","soundChannel":"master","baseVolume":0.75}
-  [executable_block:09489505-ecef-42c9-ae40-61b20bf8c8de-1784127494988][type:generic] = [executables:99fedf43-e6c0-477e-aa46-5fa35d81c59c-1784127500523;]
-}
-
