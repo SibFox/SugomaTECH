@@ -302,7 +302,6 @@ const registerRecipeReplacings = (evt) => {
         item.ore_block.brass
     )
     
-    
 
 
 
@@ -332,7 +331,8 @@ const registerRecipeReplacings = (evt) => {
         tag.chests.wooden
     )
     
-    evt.replaceInput({ input: 'create:industrial_iron_block' },
+    evt.replaceInput({ input: 'create:industrial_iron_block', 
+            type: [ 'minecraft:crafting_shaped', 'minecraft:crafting_shapeless' ]},
         'create:industrial_iron_block',
         tag.ore_block.steel
     )

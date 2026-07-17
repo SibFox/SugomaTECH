@@ -316,3 +316,6 @@ config/ftbteams-server.snbt
 /config/hailwall
 /backups
 config/AdvancedBackups-client.properties
+config/chunky/config.json
+config/railways-client.toml
+config/railways-common.toml

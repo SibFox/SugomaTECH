@@ -54,4 +54,16 @@ const registerCreateIURecipes = (evt) => {
         ]
     )
 
+    iuRecipe(evt, getRecipeID('nethersteel_ingot'), IUMachineCraft.ALLOY_SMELTER.lvl1,
+        [
+            asItem(item.ingot.netherite_scrap),
+            asItem(tag.ingot.steel, 3)
+        ],[
+            asItem('createbigcannons:nethersteel_ingot', 8)
+        ],
+        { 'temperature': 5000 }
+    )
+    
+    
+
 }

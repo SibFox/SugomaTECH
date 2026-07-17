@@ -9,8 +9,6 @@ const registerCreateRemovings = (evt) => {
     // иначе затрагиваются input'ы последовательных крафтов
 
     evt.remove({ output: item.create.andesite_alloy, not: { type: 'create:sequenced_assembly'} })
-    // evt.remove({ output: item.create.modular_accumulator, not: { type: 'create:sequenced_assembly'} })
-    // evt.remove({ output: item.ingot.electrum, type: 'create:mixing' })
     evt.remove({ output: item.create.electron_tube, not: { type: 'create:sequenced_assembly'} })
     evt.remove({ output: item.create.transmitter, not: { type: 'create:sequenced_assembly'} })
     evt.remove({ output: item.create.belt, not: { type: 'create:sequenced_assembly'} })
@@ -71,14 +69,4 @@ const registerCreateRemovings = (evt) => {
     evt.remove({ output: 'createthrusters:propulsion_upgrade_t2' })
     evt.remove({ output: 'createthrusters:propulsion_upgrade_t3' })
     evt.remove({ output: 'createthrusters:propulsion_upgrade_t4' })
-
-
-
-    // evt.remove({ output: 'createaddition:electrum_ingot', not: { type: 'create:sequenced_assembly'} })
-    // evt.remove({ output: 'createaddition:rolling_mill', not: { type: 'create:sequenced_assembly'} })
-    // evt.remove({ output: 'createaddition:electrum_amulet', not: { type: 'create:sequenced_assembly'} })
-    // evt.remove({ output: 'createaddition:alternator', not: { type: 'create:sequenced_assembly'} })
-    // evt.remove({ output: 'createaddition:electric_motor', not: { type: 'create:sequenced_assembly'} })
-    // evt.remove({ output: 'createaddition:tesla_coil', not: { type: 'create:sequenced_assembly'} })
-    // evt.remove({ output: 'createaddition:electrum_block', not: { type: 'create:sequenced_assembly'} })
 }
