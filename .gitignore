@@ -319,3 +319,7 @@ config/AdvancedBackups-client.properties
 config/chunky/config.json
 config/railways-client.toml
 config/railways-common.toml
+/debug
+config/presencefootsteps/userconfig.json
+config/immersive_furniture.json
+/immersive_furniture

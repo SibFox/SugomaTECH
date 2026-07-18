@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
     registerPipeZRecipes(event)
     registerCyberneticsRecipes(event)
     registerMFFSRecipes(event)
-    // registerFDRecipes(event)
+    registerFDRecipes(event)
     registerWCRecipes(event)
     registerSBRecipes(event)
     registerAgritechRecipes(event)
@@ -67,6 +67,13 @@ ItemEvents.foodEaten(event => {
     ].includes(event.item.id)) {
         if (player) {
             event.player.give(Item.of('minecraft:bowl'))
+            return
+        }
+    }
+    if ('kubejs:preserved_meat') {
+        if (player) {
+            event.player.give(Item.of(item.iu.tin_can))
+            return
         }
     }
 })

@@ -1,6 +1,6 @@
 StartupEvents.registry('item', evt => {
   registerItems(evt)
-  // registerFoods(evt)
+  registerFoods(evt)
 })
 
 StartupEvents.registry('block', evt => {
