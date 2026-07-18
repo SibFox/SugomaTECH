@@ -31,6 +31,18 @@ const registerIURecipes = (evt) => {
         ],
     'industrialupgrade:wiring/itemcable22', 6)
 
+    evt.shaped(
+        Item.of(item.iu.tin_can, 1),
+        [
+            'C C',
+            ' C '
+        ],{
+            C: tag.casings.tin
+        }
+    ).id(getRecipeID('tin_can'))
+    
+    
+
     // evt.remove({ output: 'industrialupgrade:wiring/itemcable26' }) // Кобальт-хромовая труба
     // evt.remove({ output: 'industrialupgrade:wiring/itemcable25' }) // Входная труба
     // evt.remove({ output: 'industrialupgrade:wiring/itemcable24' }) // Выходная труба

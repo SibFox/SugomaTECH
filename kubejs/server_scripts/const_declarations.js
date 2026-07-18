@@ -234,6 +234,7 @@ const item = {
         tempered_glass: 'industrialupgrade:blockresource/tempered_glass',
         magnet: 'industrialupgrade:energy/magnet',
         exotic_material: 'industrialupgrade:crafting_elements/crafting_434_element',
+        tin_can: 'industrialupgrade:crafting_elements/crafting_296_element',
 
         graphene_wire: 'industrialupgrade:graphene_wire',
         graphene_plate: 'industrialupgrade:graphene_plate',
@@ -1237,6 +1238,7 @@ const tag = {
         niobium: '#c:casings/niobium',
         hafnium: '#c:casings/hafnium',
         yttrium: '#c:casings/yttrium',
+        tin: '#c:casings/tin',
         // 2 сплавка
         electrum: '#c:casings/electrum',
         brass: '#c:casings/brass',
