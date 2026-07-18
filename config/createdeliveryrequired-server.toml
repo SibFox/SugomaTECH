@@ -6,7 +6,7 @@
 	#Number of generated delivery offers shown by each Contractor.
 	# Default: 10
 	# Range: 1 ~ 32
-	generatedOfferCount = 8
+	generatedOfferCount = 5
 	#Minimum base travel distance in blocks for generated Contractor offers. Star distance multipliers apply on top of this base distance.
 	# Default: 500
 	# Range: 1 ~ 1000000
