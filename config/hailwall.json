@@ -14,9 +14,19 @@
     "baritone",
     "xray",
     "xrayultimate",
-    "freecam"
+    "freecam",
+    "ok_zoomer",
+    "chloride",
+    "zoom",
+    "xaero",
+    "freecamera-api",
+    "infinitezoom"
   ],
-  "requiredMods": [],
+  "requiredMods": [
+    "dreepyloadingscreen",
+    "fancymenu",
+    "langwhitelist"
+  ],
   "messageForbidden": "Kicked by HailWall: disallowed mods detected:",
   "messageMissingRequired": "Kicked by HailWall: required mods are missing:",
   "messageNoCompanion": "This server requires the HailWall mod. Please install it (client-side) to join.",
