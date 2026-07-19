@@ -78,7 +78,25 @@ ItemEvents.foodEaten(event => {
     }
 })
 
+BlockEvents.leftClicked(evt => {
+    const {player, block} = evt
+    const {x, z} = block
+    if (!player.isCreative()) {
+        if (x > -315 && x < -200 && z > -15 && z < 70 ){
+            evt.cancel()
+        }
+    }
+})
 
+BlockEvents.placed(evt => {
+    const {player, block} = evt
+    const {x, z} = block
+    if (!player.isCreative()) {
+        if (x > -315 && x < -200 && z > -15 && z < 70 ){
+            evt.cancel()
+        }
+    }
+})
 
 // // --- CONFIGURATION ---
 // const DISAPPEAR_LIST = [
