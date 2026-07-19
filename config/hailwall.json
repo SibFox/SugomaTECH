@@ -1,7 +1,7 @@
 {
   "mode": "blacklist",
   "enforce": true,
-  "operatorsBypass": true,
+  "operatorsBypass": false,
   "requireCompanionMod": true,
   "verifySignature": true,
   "logModLists": true,
@@ -23,7 +23,7 @@
     "infinitezoom"
   ],
   "requiredMods": [
-    "dreepyloadingscreen",
+    "drippyloadingscreen",
     "fancymenu",
     "langwhitelist"
   ],

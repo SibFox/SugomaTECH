@@ -70,7 +70,7 @@ ItemEvents.foodEaten(event => {
             return
         }
     }
-    if ('kubejs:preserved_meat') {
+    if (event.item.id == 'kubejs:preserved_meat') {
         if (player) {
             event.player.give(Item.of(item.iu.tin_can))
             return
