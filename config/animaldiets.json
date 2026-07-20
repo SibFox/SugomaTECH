@@ -1,0 +1,6 @@
+{
+  "minecraft:armadillo": "OMNIVORE",
+  "minecraft:horse": "HERBIVORE",
+  "cold_sweat:chameleon": "HERBIVORE",
+  "minecraft:chicken": "OMNIVORE"
+}
