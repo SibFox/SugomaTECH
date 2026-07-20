@@ -264,6 +264,23 @@
       ]
     },
     {
+      "seed": "farmersdelight:rice_panicle",
+      "validSoils": [
+        "minecraft:mud",
+        "agritechevolved:mulch"
+      ],
+      "drops": [
+        {
+          "item": "farmersdelight:rice_panicle",
+          "count": {
+            "min": 1,
+            "max": 3
+          },
+          "chance": 1.0
+        }
+      ]
+    },
+    {
       "seed": "minecraft:sweet_berries",
       "validSoils": [
         "minecraft:farmland",
@@ -298,6 +315,28 @@
           "count": {
             "min": 2,
             "max": 4
+          },
+          "chance": 1.0
+        }
+      ]
+    },
+    {
+      "seed": "supplementaries:flax_seeds",
+      "validSoils": [
+        "minecraft:farmland",
+        "minecraft:muddy_mangrove_roots",
+        "agritechevolved:infused_farmland",
+        "agritechevolved:mulch",
+        "farmersdelight:rich_soil_farmland",
+        "farmersdelight:rich_soil",
+        "farmersdelight:organic_compost"
+      ],
+      "drops": [
+        {
+          "item": "supplementaries:flax",
+          "count": {
+            "min": 1,
+            "max": 1
           },
           "chance": 1.0
         }
