@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "arphex"
-	group: ""
+	group: "53BFDBEC8FC0E28F"
 	icon: {
 		components: {
 			"ftbquests:icon": "kubejs:textures/quests/quest_icon_tormentor.png"
