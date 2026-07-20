@@ -22,6 +22,14 @@ const registerFDRecipes = (evt) => {
         item.iu.tin_can
     ).id(getRecipeID('preserved_meat'))
     
+    evt.recipes.farmersdelight.cutting(
+        'minecraft:bread',
+        tag.tool.knife,
+        [
+            '4x refurbished_furniture:bread_slice',
+        ]
+    ).id(getRecipeID('bread_slice'))
+    
     
 
     // for (let part of [ 'brain', 'heart', 'liver', 'lungs', 'stomach' ]) {

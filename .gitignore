@@ -1,4 +1,4 @@
-mods/client_*
+mods/*client_*
 coremods/
 crash-reports/
 customnpcs/
@@ -328,3 +328,6 @@ config/DistantHorizons.toml
 /Distant_Horizons_server_data
 config/DistantHorizons.toml
 config/blueprint-client.toml
+config/keymap.json
+config/statuseffectbars-common.toml
+config/stylisheffects-client.toml
