@@ -33,11 +33,7 @@ const registerRecipeRemovings = (evt) => {
 
     evt.remove({ output: item.ingot.red_alloy })
 
-    // evt.remove({ output: 'createaddition:electrum_rod', type: 'createaddition:charging' })
-    // evt.remove({ output: 'createaddition:electrum_wire', type: 'createaddition:charging' })
-    // evt.remove({ output: 'createaddition:electrum_nugget', type: 'createaddition:charging' })
-    // evt.remove({ output: 'createaddition:electrum_ingot', type: 'createaddition:charging' })
-    // evt.remove({ output: 'createaddition:electrum_sheet', type: 'createaddition:charging' })
+    evt.remove({ id: 'kaleidoscope_cookery:millstone/gunpowder_from_flint' })
     
     evt.remove({ id: 'createcybernetics:wetware_spidereyes' }) // Уменьшает производительность в 8 раз, написать об этом разрабу
 

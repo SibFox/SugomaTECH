@@ -14,7 +14,7 @@ const registerItemObliteration = () => {
         'createcybernetics:titanium_block', 'createcybernetics:titaniumingot', 
         'createcybernetics:titaniumnugget', 'createcybernetics:titaniumsheet', 
         'mffs:steel_ingot', 'create:zinc_nugget', 'create:sturdy_sheet',
-        // 'createbigcannons:bronze_block', 'createbigcannons:bronze_ingot', 
+        'createbigcannons:bronze_block', 'createbigcannons:bronze_ingot', 
         'createcybernetics:crushedtitanium', 'createpropulsion:platinum_ingot', 
         'createpropulsion:platinum_block', 'createpropulsion:platinum_sheet',
         'createpropulsion:platinum_nugget', 'createpropulsion:raw_platinum_block',
@@ -31,11 +31,16 @@ const registerItemObliteration = () => {
         'agritechevolved:capacitor_tier1', 'agritechevolved:capacitor_tier2', 
         'agritechevolved:capacitor_tier3', 'geneticsresequenced:coal_generator',
         'kaleidoscope_cookery:fruit_basket', 'megacells:sky_osmium_ingot',
+    ]
 
-        // 'createaddition:zinc_sheet', 'createaddition:electrum_ingot',
-        // 'createaddition:electrum_nugget', 'createaddition:electrum_sheet',
-        // 'createaddition:electrum_block', 'createaddition:copper_rod', 
-        // 'createaddition:iron_rod', 'createaddition:gold_rod',
+    const toStone = [
+        'create:zinc_ore', 'createpropulsion:platinum_ore',
+        'createcybernetics:titaniumore_block',
+    ]
+    
+    const toDeepslate = [
+        'create:deepslate_zinc_ore', 'createpropulsion:deepslate_platinum_ore',
+        'createcybernetics:deepslate_titaniumore_block'
     ]
 
     // Check if itemID exists within obliterateItems
@@ -80,9 +85,25 @@ const registerItemObliteration = () => {
     })
 
     // Destroy on interaction
+    BlockEvents.leftClicked(event => {
+        let { block } = event
+        if (ObliterateCheck(block.id)) {
+            if (toStone.includes(block.id)) { block.set('minecraft:stone') }
+            else if (toDeepslate.includes(block.id)) { block.set('minecraft:deepslate') }
+            else { block.set('minecraft:air') }
+            event.cancel()
+        }
+    })
+
+    // Destroy on interaction
     BlockEvents.rightClicked(event => {
         let { block } = event
-        if (ObliterateCheck(block.id)) { block.set('minecraft:air') }
+        if (ObliterateCheck(block.id)) {
+            if (toStone.includes(block.id)) { block.set('minecraft:stone') }
+            else if (toDeepslate.includes(block.id)) { block.set('minecraft:deepslate') }
+            else { block.set('minecraft:air') }
+            event.cancel()
+        }
     })
 
     // Destroy on block placement
