@@ -4,5 +4,6 @@
   "cold_sweat:chameleon": "HERBIVORE",
   "minecraft:chicken": "OMNIVORE",
   "minecraft:cow": "HERBIVORE",
-  "minecraft:sheep": "HERBIVORE"
+  "minecraft:sheep": "HERBIVORE",
+  "arphex:moth_moontracker": "CARNIVORE"
 }

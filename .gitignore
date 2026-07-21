@@ -331,3 +331,4 @@ config/blueprint-client.toml
 config/keymap.json
 config/statuseffectbars-common.toml
 config/stylisheffects-client.toml
+/config/structurify

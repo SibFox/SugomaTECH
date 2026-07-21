@@ -91,7 +91,6 @@ const registerItemObliteration = () => {
             if (toStone.includes(block.id)) { block.set('minecraft:stone') }
             else if (toDeepslate.includes(block.id)) { block.set('minecraft:deepslate') }
             else { block.set('minecraft:air') }
-            event.cancel()
         }
     })
 
@@ -102,7 +101,6 @@ const registerItemObliteration = () => {
             if (toStone.includes(block.id)) { block.set('minecraft:stone') }
             else if (toDeepslate.includes(block.id)) { block.set('minecraft:deepslate') }
             else { block.set('minecraft:air') }
-            event.cancel()
         }
     })
 

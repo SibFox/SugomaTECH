@@ -1,0 +1,5 @@
+["Walkie-Talkie Settings"]
+	#Range in blocks where players can hear others without being on the same frequency.
+	# Default: 20.0
+	# Range: 1.0 ~ 10000.0
+	chatRange = 50.0

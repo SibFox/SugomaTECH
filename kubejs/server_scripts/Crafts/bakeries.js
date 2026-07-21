@@ -16,75 +16,73 @@ const registerBakeriesRecipes = (evt) => {
     evt.remove({ id: 'bakeries:fermentation_box' })
     evt.remove({ id: 'bakeries:moka_pot' })
 
-    // evt.shaped(
-    //     Item.of('bakeries:blender', 1),
-    //     [
-    //         'NII',
-    //         'RVI',
-    //         'NCI'
-    //     ],{
-    //         I: item.ingot.iron,
-    //         N: item.nugget.iron,
-    //         R: item.redstone,
-    //         C: 'minecraft:cauldron',
-    //         V: 'minecraft:hopper'
-    //     }
-    // ).id(getRecipeID('blender'))
+    evt.shaped(
+        Item.of('bakeries:blender', 1),
+        [
+            'RII',
+            'RWI',
+            'RCI'
+        ],{
+            I: tag.ingot.tungsten,
+            R: item.redstone,
+            C: 'minecraft:cauldron',
+            W: item.create.whisk
+        }
+    ).id(getRecipeID('blender'))
     
-    // evt.shaped(
-    //     Item.of('bakeries:oven', 1),
-    //     [
-    //         'IRI',
-    //         'QGQ',
-    //         'IRI'
-    //     ],{
-    //         I: item.ingot.iron,
-    //         Q: item.quartz,
-    //         R: item.redstone,
-    //         G: item.iu.tempered_glass
-    //     }
-    // ).id(getRecipeID('oven'))
+    evt.shaped(
+        Item.of('bakeries:oven', 1),
+        [
+            'ITI',
+            'TGT',
+            'IHI'
+        ],{
+            I: tag.ingot.tungsten,
+            T: item.create.andesite_alloy,
+            G: item.iu.tempered_glass,
+            H: item.iu.heating_cylinder
+        }
+    ).id(getRecipeID('oven'))
     
     // evt.shaped(
     //     Item.of('bakeries:toaster', 1),
     //     [
-    //         'QGQ',
-    //         'IRI'
+    //         'TGT',
+    //         'IHI'
     //     ],{
-    //         I: item.ingot.iron,
-    //         R: item.redstone,
-    //         Q: item.quartz,
-    //         G: item.iu.tempered_glass
+    //         I: tag.ingot.tungsten,
+    //         T: tag.plate.titanium,
+    //         G: item.iu.tempered_glass,
+    //         H: item.iu.heating_cylinder
     //     }
     // ).id(getRecipeID('toaster'))
     
-    // evt.shaped(
-    //     Item.of('bakeries:fermentation_box', 1),
-    //     [
-    //         'IRI',
-    //         'QGQ',
-    //         'IDI'
-    //     ],{
-    //         I: item.ingot.iron,
-    //         R: item.redstone,
-    //         Q: item.quartz,
-    //         G: item.iu.tempered_glass,
-    //         D: 'minecraft:daylight_detector'
-    //     }
-    // ).id(getRecipeID('fermentation_box'))
+    evt.shaped(
+        Item.of('bakeries:fermentation_box', 1),
+        [
+            'ITI',
+            'TGT',
+            'ICI'
+        ],{
+            I: tag.ingot.tungsten,
+            T: item.create.andesite_alloy,
+            G: item.iu.tempered_glass,
+            C: item.iu.controller.lvl1,
+        }
+    ).id(getRecipeID('fermentation_box'))
     
-    // evt.shaped(
-    //     Item.of('bakeries:moka_pot', 1),
-    //     [
-    //         'I',
-    //         'IP',
-    //         'D'
-    //     ],{
-    //         I: item.ingot.iron,
-    //         P: 'minecraft:stick',
-    //         D: item.dye.black
-    //     }
-    // ).id(getRecipeID('moka_pot'))
+    evt.shaped(
+        Item.of('bakeries:moka_pot', 1),
+        [
+            'I ',
+            'IP',
+            'D '
+        ],{
+            I: tag.ingot.tungsten,
+            P: tag.rod.tungsten,
+            T: item.create.andesite_alloy,
+        }
+    ).id(getRecipeID('moka_pot'))
     
     
 

@@ -880,6 +880,7 @@ const item = {
         belt: 'create:belt_connector',
         fluid_pipe: 'create:fluid_pipe',
         mechanical_pump: 'create:mechanical_pump',
+        whisk: 'create:whisk',
         
         casing: {
             andesite: 'create:andesite_casing',
@@ -1098,6 +1099,7 @@ const tag = {
         platinum: '#c:ingots/platinum',
         yttrium: '#c:ingots/yttrium',
         // 2 сплавка
+        invar: '#c:ingots/invar',
         steel: '#c:ingots/steel',
         electrum: '#c:ingots/electrum',
         brass: '#c:ingots/brass',
@@ -1152,6 +1154,7 @@ const tag = {
         yttrium: '#c:plates/yttrium',
         composite: '#c:plates/advancedalloy',
         // 2 сплавка
+        invar: '#c:plates/invar',
         steel: '#c:plates/steel',
         brass: '#c:plates/brass',
         alumel: '#c:plates/alumel',
@@ -1240,6 +1243,7 @@ const tag = {
         yttrium: '#c:casings/yttrium',
         tin: '#c:casings/tin',
         // 2 сплавка
+        invar: '#c:casings/invar',
         electrum: '#c:casings/electrum',
         brass: '#c:casings/brass',
         duralumin: '#c:casings/duralumin',
@@ -1289,6 +1293,7 @@ const tag = {
         diamond: '#c:storage_blocks/diamond',
         redstone: '#c:storage_blocks/redstone',
         zinc: '#c:storage_blocks/zinc',
+        invar: '#c:storage_blocks/invar',
         brass: '#c:storage_blocks/brass',
         bronze: '#c:storage_blocks/bronze',
         electrum: '#c:storage_blocks/electrum',
