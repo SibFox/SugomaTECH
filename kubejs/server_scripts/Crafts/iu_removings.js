@@ -17,5 +17,5 @@ const registerIURecipeRemovings = (evt) => {
     //     { "type": "item",  "id": "industrialupgrade:wolframite"},
     // ]})
 
-    console.info('IU recipe removing passed')
+    // console.info('IU recipe removing passed')
 }
