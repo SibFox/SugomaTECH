@@ -107,10 +107,10 @@ git config --global core.autocrlf true
 
 rem ===== Pack (build) version check - mandatory update before menu =====
 :check_for_pack_version
-set "FS_FLAG = 0"
-if not exist "%LOCAL_VERSION_FILE%" set "FS_FLAG = 1"
-if "%LOCAL_BUILD%"=="" set "FS_FLAG = 1"
-if "!FS_FLAG!"=="1" (
+set FS_FLAG=false
+if not exist "%LOCAL_VERSION_FILE%" set FS_FLAG=true
+if "%LOCAL_BUILD%"=="" set FS_FLAG=true
+if "!FS_FLAG!"=="true" (
     echo.
     echo ============================================
     echo Первая установка. Скачивание всех файлов...
