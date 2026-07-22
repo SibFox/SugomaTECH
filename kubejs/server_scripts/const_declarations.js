@@ -880,6 +880,7 @@ const item = {
         belt: 'create:belt_connector',
         fluid_pipe: 'create:fluid_pipe',
         mechanical_pump: 'create:mechanical_pump',
+        whisk: 'create:whisk',
         
         casing: {
             andesite: 'create:andesite_casing',
@@ -1079,6 +1080,7 @@ const tag = {
         bronze: '#c:nuggets/bronze',
         steel: '#c:nuggets/steel',
         platinum: '#c:nuggets/platinum',
+        germanium: '#c:nuggets/germanium',
     },
 
     ingot: {
@@ -1097,7 +1099,9 @@ const tag = {
         titanium: '#c:ingots/titanium',
         platinum: '#c:ingots/platinum',
         yttrium: '#c:ingots/yttrium',
+        germanium: '#c:ingots/germanium',
         // 2 сплавка
+        invar: '#c:ingots/invar',
         steel: '#c:ingots/steel',
         electrum: '#c:ingots/electrum',
         brass: '#c:ingots/brass',
@@ -1151,7 +1155,9 @@ const tag = {
         platinum: '#c:plates/platinum',
         yttrium: '#c:plates/yttrium',
         composite: '#c:plates/advancedalloy',
+        germanium: '#c:plates/germanium',
         // 2 сплавка
+        invar: '#c:plates/invar',
         steel: '#c:plates/steel',
         brass: '#c:plates/brass',
         alumel: '#c:plates/alumel',
@@ -1192,6 +1198,7 @@ const tag = {
         obsidian: '#c:doubleplate/obsidian',
         hafnium: '#c:doubleplate/hafnium',
         yttrium: '#c:doubleplate/yttrium',
+        germanium: '#c:doubleplate/germanium',
         // 2 сплавка
         invar: '#c:doubleplate/invar',
         bronze: '#c:doubleplate/bronze',
@@ -1239,7 +1246,9 @@ const tag = {
         hafnium: '#c:casings/hafnium',
         yttrium: '#c:casings/yttrium',
         tin: '#c:casings/tin',
+        germanium: '#c:casings/germanium',
         // 2 сплавка
+        invar: '#c:casings/invar',
         electrum: '#c:casings/electrum',
         brass: '#c:casings/brass',
         duralumin: '#c:casings/duralumin',
@@ -1264,6 +1273,8 @@ const tag = {
     gear: {
         titanium: '#c:gears/titanium',
         yttrium: '#c:gears/yttrium',
+        tungsten: '#c:gears/tungsten',
+        germanium: '#c:gears/germanium',
         invar: '#c:gears/invar',
         brass: '#c:gears/brass',
         alumel: '#c:gears/alumel', // Алюминид-титан
@@ -1279,6 +1290,7 @@ const tag = {
         electrum: '#c:rods/electrum',
         aluminium: '#c:rods/aluminium',
         titanium: '#c:rods/titanium',
+        germanium: '#c:rods/germanium',
         tungsten: '#c:rods/tungsten',
     },
     
@@ -1288,7 +1300,9 @@ const tag = {
         gold: '#c:storage_blocks/gold',
         diamond: '#c:storage_blocks/diamond',
         redstone: '#c:storage_blocks/redstone',
+        germanium: '#c:storage_blocks/germanium',
         zinc: '#c:storage_blocks/zinc',
+        invar: '#c:storage_blocks/invar',
         brass: '#c:storage_blocks/brass',
         bronze: '#c:storage_blocks/bronze',
         electrum: '#c:storage_blocks/electrum',

@@ -41,7 +41,7 @@
 #min_thunder_time is the minimum time interval between thunder events in ticks. Set to -1 to disable thunder.
 #max_thunder_time is the maximum time interval between thunder events in ticks. Set to -1 to disable thunder.
 [[season_properties]]
-	melt_percent = 20.0
+	melt_percent = 100.0
 	max_rain_time = 1008000
 	min_rain_time = 252000
 	season = "LATE_SPRING"
@@ -58,7 +58,7 @@
 #min_thunder_time is the minimum time interval between thunder events in ticks. Set to -1 to disable thunder.
 #max_thunder_time is the maximum time interval between thunder events in ticks. Set to -1 to disable thunder.
 [[season_properties]]
-	melt_percent = 5.0
+	melt_percent = 10.0
 	max_rain_time = 720000
 	min_rain_time = 180000
 	season = "EARLY_SPRING"
@@ -92,7 +92,7 @@
 #min_thunder_time is the minimum time interval between thunder events in ticks. Set to -1 to disable thunder.
 #max_thunder_time is the maximum time interval between thunder events in ticks. Set to -1 to disable thunder.
 [[season_properties]]
-	melt_percent = 20.0
+	melt_percent = 50.0
 	max_rain_time = 144000
 	min_rain_time = 36000
 	season = "MID_AUTUMN"
@@ -109,7 +109,7 @@
 #min_thunder_time is the minimum time interval between thunder events in ticks. Set to -1 to disable thunder.
 #max_thunder_time is the maximum time interval between thunder events in ticks. Set to -1 to disable thunder.
 [[season_properties]]
-	melt_percent = 10.0
+	melt_percent = 50.0
 	max_rain_time = 864000
 	min_rain_time = 216000
 	season = "MID_SPRING"
@@ -126,7 +126,7 @@
 #min_thunder_time is the minimum time interval between thunder events in ticks. Set to -1 to disable thunder.
 #max_thunder_time is the maximum time interval between thunder events in ticks. Set to -1 to disable thunder.
 [[season_properties]]
-	melt_percent = 80.0
+	melt_percent = 100.0
 	max_rain_time = 1008000
 	min_rain_time = 252000
 	season = "EARLY_SUMMER"
@@ -143,7 +143,7 @@
 #min_thunder_time is the minimum time interval between thunder events in ticks. Set to -1 to disable thunder.
 #max_thunder_time is the maximum time interval between thunder events in ticks. Set to -1 to disable thunder.
 [[season_properties]]
-	melt_percent = 80.0
+	melt_percent = 100.0
 	max_rain_time = 288000
 	min_rain_time = 72000
 	season = "EARLY_AUTUMN"
@@ -177,7 +177,7 @@
 #min_thunder_time is the minimum time interval between thunder events in ticks. Set to -1 to disable thunder.
 #max_thunder_time is the maximum time interval between thunder events in ticks. Set to -1 to disable thunder.
 [[season_properties]]
-	melt_percent = 80.0
+	melt_percent = 100.0
 	max_rain_time = 864000
 	min_rain_time = 216000
 	season = "MID_SUMMER"
@@ -228,7 +228,7 @@
 #min_thunder_time is the minimum time interval between thunder events in ticks. Set to -1 to disable thunder.
 #max_thunder_time is the maximum time interval between thunder events in ticks. Set to -1 to disable thunder.
 [[season_properties]]
-	melt_percent = 80.0
+	melt_percent = 100.0
 	max_rain_time = 432000
 	min_rain_time = 108000
 	season = "LATE_SUMMER"

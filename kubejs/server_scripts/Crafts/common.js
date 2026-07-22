@@ -181,29 +181,54 @@ const registerCommonRecipes = (evt) => {
         ],
         { 'temperature': 6000 }
     )
+
+    evt.remove({ id: 'walkietalkie:walkie_talkie' })
+    evt.remove({ id: 'walkietalkie:battery' })
+    
+    evt.shaped(
+    Item.of('walkietalkie:walkie_talkie', 1),
+        [
+            'BPP',
+            'PCG',
+            'PMP'
+        ],{
+            M: item.iu.microchip.lvl2,
+            B: tag.rod.electrum,
+            C: item.iu.controller.lvl1,
+            P: tag.plate.invar,
+            G: tag.gear.tungsten
+        }
+    ).id(getRecipeID('walkie_talkie'))
+
+    evt.shaped(
+        Item.of('walkietalkie:battery', 1),
+        [
+            'CAC',
+        ],{
+            A: 'industrialupgrade:battery/advanced_re_battery[industrialupgrade:energy=10000.0d]',
+            C: tag.casings.germanium
+        }
+    ).id(getRecipeID('walkie_battery'))
     
     
 
-    // До добавления биг кэнонс
-    // evt.shapeless(Item.of(item.ingot.bronze, 1),
-    //     [
-    //         Ingredient.of(tag.nugget.bronze, 9)
-    //     ]
-    // ).id(getRecipeID('bronze_ingot_ct'))
+    evt.shapeless(Item.of(item.ingot.bronze, 1),
+        [
+            Ingredient.of(tag.nugget.bronze, 9)
+        ]
+    ).id(getRecipeID('bronze_ingot_ct'))
     
-    // До добавления биг кэнонс
-    // evt.shapeless(Item.of(item.ingot.steel, 1),
-    //     [
-    //         Ingredient.of(tag.nugget.steel, 9)
-    //     ]
-    // ).id(getRecipeID('steel_ingot_ct'))
+    evt.shapeless(Item.of(item.ingot.steel, 1),
+        [
+            Ingredient.of(tag.nugget.steel, 9)
+        ]
+    ).id(getRecipeID('steel_ingot_ct'))
     
-    // До добавления биг кэнонс
-    // evt.shapeless(Item.of(item.nugget.steel, 9),
-    //     [
-    //         tag.ingot.steel
-    //     ]
-    // ).id(getRecipeID('steel_nugget_ct'))
+    evt.shapeless(Item.of(item.nugget.steel, 9),
+        [
+            tag.ingot.steel
+        ]
+    ).id(getRecipeID('steel_nugget_ct'))
 
 
     // Кловергетт

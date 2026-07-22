@@ -2,5 +2,8 @@
   "minecraft:armadillo": "OMNIVORE",
   "minecraft:horse": "HERBIVORE",
   "cold_sweat:chameleon": "HERBIVORE",
-  "minecraft:chicken": "OMNIVORE"
+  "minecraft:chicken": "OMNIVORE",
+  "minecraft:cow": "HERBIVORE",
+  "minecraft:sheep": "HERBIVORE",
+  "arphex:moth_moontracker": "CARNIVORE"
 }
