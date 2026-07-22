@@ -84,8 +84,9 @@ if not "%REMOTE_BAT%"=="%LOCAL_BAT%" (
 
         echo.
         echo Скрипт обновлён до версии %REMOTE_BAT%.
-        echo Запустите его заново, чтобы применить обновления.
-        goto :end
+        start %~f0
+        endlocal
+        goto :eof
     ) else (
         echo [ПРЕДУПРЕЖДЕНИЕ] Не удалось скачать update_sborka.bat, продолжаю со старой версией скрипта.
     )
@@ -342,8 +343,10 @@ goto :end
 
 
 :info_on_git
-echo Git установлен. Запустите скрипт заново, чтобы изменения PATH применились.
-goto :end
+echo Git установлен.
+start %~f0
+endlocal
+goto :eof
 
 
 rem %1 = file path, %2 = prefix (REMOTE or LOCAL)
@@ -365,10 +368,6 @@ goto :eof
 :convert_to_crlf
 powershell -NoProfile -Command "$c = Get-Content -Raw -Encoding UTF8 -Path '%~1'; $c = $c -replace \"`r`n\", \"`n\" -replace \"`n\", \"`r`n\"; [System.IO.File]::WriteAllText('%~1', $c, [System.Text.Encoding]::UTF8)"
 goto :eof
-
-
-:cleanup
-goto :end
 
 :end
 echo Всё.

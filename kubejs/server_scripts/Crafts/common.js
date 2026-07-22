@@ -181,20 +181,34 @@ const registerCommonRecipes = (evt) => {
         ],
         { 'temperature': 6000 }
     )
+
+    evt.remove({ id: 'walkietalkie:walkie_talkie' })
+    evt.remove({ id: 'walkietalkie:battery' })
     
     evt.shaped(
-        Item.of('walkietalkie:walkie_talkie', 1),
+    Item.of('walkietalkie:walkie_talkie', 1),
         [
             'BPP',
-            'PC',
+            'PCG',
             'PMP'
         ],{
             M: item.iu.microchip.lvl2,
             B: tag.rod.electrum,
             C: item.iu.controller.lvl1,
-            P: tag.plate.invar
+            P: tag.plate.invar,
+            G: tag.gear.tungsten
         }
     ).id(getRecipeID('walkie_talkie'))
+
+    evt.shaped(
+        Item.of('walkietalkie:battery', 1),
+        [
+            'CAC',
+        ],{
+            A: 'industrialupgrade:battery/advanced_re_battery[industrialupgrade:energy=10000.0d]',
+            C: tag.casings.germanium
+        }
+    ).id(getRecipeID('walkie_battery'))
     
     
 

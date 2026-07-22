@@ -76,7 +76,7 @@ const registerBakeriesRecipes = (evt) => {
         [
             'I ',
             'IP',
-            'D '
+            'T '
         ],{
             I: tag.ingot.tungsten,
             P: tag.rod.tungsten,
