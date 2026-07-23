@@ -281,6 +281,23 @@
       ]
     },
     {
+      "seed": "kaleidoscope_cookery:wild_rice",
+      "validSoils": [
+        "minecraft:mud",
+        "agritechevolved:mulch"
+      ],
+      "drops": [
+        {
+          "item": "kaleidoscope_cookery:rice_panicle",
+          "count": {
+            "min": 1,
+            "max": 3
+          },
+          "chance": 1.0
+        }
+      ]
+    },
+    {
       "seed": "minecraft:sweet_berries",
       "validSoils": [
         "minecraft:farmland",
@@ -1240,6 +1257,109 @@
             "max": 2
           },
           "chance": 1.0
+        }
+      ]
+    },
+    {
+      "seed": "kaleidoscope_cookery:tomato_seed",
+      "validSoils": [
+        "minecraft:farmland",
+        "mysticalagriculture:inferium_farmland",
+        "mysticalagriculture:prudentium_farmland",
+        "mysticalagriculture:tertium_farmland",
+        "mysticalagriculture:imperium_farmland",
+        "mysticalagriculture:supremium_farmland",
+        "mysticalagradditions:insanium_farmland",
+        "agritechevolved:infused_farmland",
+        "agritechevolved:mulch",
+        "justdirethings:goosoil_tier1",
+        "justdirethings:goosoil_tier2",
+        "justdirethings:goosoil_tier3",
+        "justdirethings:goosoil_tier4",
+        "farmersdelight:rich_soil_farmland"
+      ],
+      "drops": [
+        {
+          "item": "kaleidoscope_cookery:tomato",
+          "count": {
+            "min": 1,
+            "max": 2
+          },
+          "chance": 1.0
+        }
+      ]
+    },
+    {
+      "seed": "kaleidoscope_cookery:chili_seed",
+      "validSoils": [
+        "minecraft:farmland",
+        "mysticalagriculture:inferium_farmland",
+        "mysticalagriculture:prudentium_farmland",
+        "mysticalagriculture:tertium_farmland",
+        "mysticalagriculture:imperium_farmland",
+        "mysticalagriculture:supremium_farmland",
+        "mysticalagradditions:insanium_farmland",
+        "agritechevolved:infused_farmland",
+        "agritechevolved:mulch",
+        "justdirethings:goosoil_tier1",
+        "justdirethings:goosoil_tier2",
+        "justdirethings:goosoil_tier3",
+        "justdirethings:goosoil_tier4",
+        "farmersdelight:rich_soil_farmland"
+      ],
+      "drops": [
+        {
+          "item": "kaleidoscope_cookery:red_chili",
+          "count": {
+            "min": 1,
+            "max": 2
+          },
+          "chance": 0.8
+        },
+        {
+          "item": "kaleidoscope_cookery:green_chili",
+          "count": {
+            "min": 1,
+            "max": 2
+          },
+          "chance": 0.8
+        }
+      ]
+    },
+    {
+      "seed": "kaleidoscope_cookery:lettuce_seed",
+      "validSoils": [
+        "minecraft:farmland",
+        "mysticalagriculture:inferium_farmland",
+        "mysticalagriculture:prudentium_farmland",
+        "mysticalagriculture:tertium_farmland",
+        "mysticalagriculture:imperium_farmland",
+        "mysticalagriculture:supremium_farmland",
+        "mysticalagradditions:insanium_farmland",
+        "agritechevolved:infused_farmland",
+        "agritechevolved:mulch",
+        "justdirethings:goosoil_tier1",
+        "justdirethings:goosoil_tier2",
+        "justdirethings:goosoil_tier3",
+        "justdirethings:goosoil_tier4",
+        "farmersdelight:rich_soil_farmland"
+      ],
+      "drops": [
+        {
+          "item": "kaleidoscope_cookery:lettuce",
+          "count": {
+            "min": 1,
+            "max": 2
+          },
+          "chance": 1
+        },
+        {
+          "item": "kaleidoscope_cookery:caterpillar",
+          "count": {
+            "min": 1,
+            "max": 1
+          },
+          "chance": 0.1
         }
       ]
     },

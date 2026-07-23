@@ -29,8 +29,21 @@ const registerFDRecipes = (evt) => {
             '4x refurbished_furniture:bread_slice',
         ]
     ).id(getRecipeID('bread_slice'))
-    
-    
+
+    evt.custom(
+        {
+        "type": "kaleidoscope_cookery:chopping_board",
+        "cut_count": 4,
+        "ingredient": {
+            "item": "starcatcher:starcaught_fish"
+        },
+        "model_id": "kaleidoscope_cookery:cod",
+        "result": {
+            "count": 2,
+            "id": "kaleidoscope_cookery:sashimi"
+        }
+        }
+    )
 
     // for (let part of [ 'brain', 'heart', 'liver', 'lungs', 'stomach' ]) {
     //     evt.recipes.farmersdelight.cutting(
