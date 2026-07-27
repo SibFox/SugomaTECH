@@ -1,0 +1,1646 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5EE6961466E3F775"
+	group: ""
+	id: "5EE6961466E3F775"
+	images: [
+		{
+			height: 1.0d
+			image: "ftbquests:textures/gui/collect_rewards.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -16.5d
+			y: -0.785714285714306d
+		}
+		{
+			height: 1.0d
+			image: "chipped:block/lily_pad/leaf_lily_pad"
+			rotation: 0.0d
+			width: 1.0d
+			x: -8.642857142857153d
+			y: -3.1785714285714306d
+		}
+		{
+			height: 1.0d
+			image: "supplementaries:block/plants/simple/potted_rose_bush"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.21428571428573d
+			y: -3.5d
+		}
+		{
+			height: 1.0d
+			image: "kaleidoscope_tavern:item/wine"
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.803571428571402d
+			y: 0.2142857142857224d
+		}
+		{
+			height: 2.0d
+			image: "quark:block/lavender_blossom_leaves"
+			rotation: 0.0d
+			width: 2.0d
+			x: 2.386904761904802d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "kaleidoscope_tavern:block/plant/wild_grapevine"
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.0d
+			y: 1.797619047619058d
+		}
+		{
+			height: 1.0d
+			image: "kaleidoscope_tavern:block/plant/wild_grapevine_plant"
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.03571428571427d
+			y: 0.3690476190476275d
+		}
+		{
+			height: 1.0d
+			image: "mynethersdelight:block/crimson_fungus_colony_stage0"
+			rotation: 0.0d
+			width: 1.0d
+			x: -10.672619047619008d
+			y: -2.297619047619058d
+		}
+		{
+			height: 1.0d
+			image: "chipped:block/cobweb/hanging_cobweb"
+			rotation: 0.0d
+			width: 1.0d
+			x: -13.636904761904738d
+			y: 0.023809523809518396d
+		}
+		{
+			height: 1.0d
+			image: "kaleidoscope_end:block/dream_berry_head"
+			rotation: 0.0d
+			width: 1.0d
+			x: -12.136904761904738d
+			y: 0.09523809523808069d
+		}
+		{
+			height: 1.0d
+			image: "kaleidoscope_end:block/dream_berry_plant_berries"
+			rotation: 0.0d
+			width: 1.0d
+			x: -12.136904761904738d
+			y: -1.047619047619058d
+		}
+		{
+			height: 1.0d
+			image: "kaleidoscope_nether:block/weeping_cave_vines_berries"
+			rotation: 0.0d
+			width: 1.0d
+			x: -10.672619047619023d
+			y: 0.2738095238095184d
+		}
+		{
+			height: 1.0d
+			image: "kaleidoscope_nether:block/weeping_cave_vines_plant_berries"
+			rotation: 0.0d
+			width: 1.0d
+			x: -10.672619047619023d
+			y: -0.8690476190476204d
+		}
+		{
+			height: 1.0d
+			image: "chipped:block/cobweb/stretched_cobweb"
+			rotation: 0.0d
+			width: 1.0d
+			x: -13.636904761904738d
+			y: -0.9404761904761969d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/cave_vines_lit"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.178571428571445d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/cave_vines_plant"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.178571428571445d
+			y: -0.2142857142857153d
+		}
+		{
+			height: 1.0d
+			image: "supplementaries:block/plants/simple/potted_cave_vine"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.178571428571445d
+			y: -1.4642857142857153d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/hanging_roots"
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.178571428571445d
+			y: -2.25d
+		}
+		{
+			height: 1.0d
+			image: "gigeresque:textures/entity/chestburster/burster_blood.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -15.14285714285716d
+			y: -0.5357142857142918d
+		}
+		{
+			height: 1.0d
+			image: "kaleidoscope_end:block/ender_mint/stage7"
+			rotation: 0.0d
+			width: 1.0d
+			x: -12.172619047619023d
+			y: -2.297619047619058d
+		}
+		{
+			height: 1.0d
+			image: "arphex:block/scorchfire"
+			rotation: 0.0d
+			width: 1.0d
+			x: -13.351190476190453d
+			y: -1.797619047619058d
+		}
+		{
+			height: 1.0d
+			image: "starcatcher:item/waterlogged_satchel"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.0833333333333215d
+			y: 2.607142857142861d
+		}
+		{
+			height: 1.0d
+			image: "bettervannilafishes:item/female_salmon"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.0d
+			y: 1.7952380952381048d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/seagrass"
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.035714285714285d
+			y: 1.3666666666666742d
+		}
+		{
+			height: 1.0d
+			image: "bakeries:item/bread_knife"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.4285714285714306d
+			y: -1.1761904761904916d
+		}
+		{
+			height: 1.0d
+			image: "mynethersdelight:item/slices_of_bread"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: -1.7119047619047763d
+		}
+		{
+			height: 1.0d
+			image: "createpropulsion:textures/particle/smoke/big_smoke_6.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.255952380952351d
+			y: -4.949999999999999d
+		}
+		{
+			height: 1.0d
+			image: "createpropulsion:textures/particle/smoke/big_smoke_10.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.541666666666643d
+			y: -4.485714285714284d
+		}
+		{
+			height: 1.0d
+			image: "industrialupgrade:block/crop/hafnium_leaf_3"
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.999999999999986d
+			y: -4.321428571428587d
+		}
+		{
+			height: 1.0d
+			image: "industrialupgrade:block/crop/hafnium_leaf_1"
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.964285714285708d
+			y: -2.107142857142872d
+		}
+		{
+			height: 1.0d
+			image: "industrialupgrade:block/crop/hafnium_leaf_2"
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.999999999999986d
+			y: -3.107142857142872d
+		}
+		{
+			height: 1.0d
+			image: "industrialupgrade:block/crop/hafnium_leaf_0"
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.928571428571416d
+			y: -1.3214285714285872d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/nether_wart_stage2"
+			rotation: 0.0d
+			width: 1.0d
+			x: -6.0d
+			y: -2.7142857142857117d
+		}
+		{
+			height: 1.0d
+			image: "farmersdelight:textures/particle/sparkle_1.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.785714285714285d
+			y: -3.8571428571428577d
+		}
+		{
+			height: 1.0d
+			image: "visuality:textures/particle/sparkle_3.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.178571428571431d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "subtle_effects:textures/particle/spark.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.678571428571431d
+			y: -4.821428571428573d
+		}
+		{
+			height: 1.0d
+			image: "mynethersdelight:item/boiled_egg"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.428571428571431d
+			y: -2.9261904761904844d
+		}
+		{
+			height: 1.0d
+			image: "kaleidoscope_cookery:item/kitchen_shovel_has_oil"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.0d
+			y: -3.354761904761915d
+		}
+		{
+			height: 1.0d
+			image: "farmersdelight:item/noodle_soup"
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.02857142857144d
+			y: -1.1261904761904873d
+		}
+		{
+			height: 1.0d
+			image: "create:item/wheat_flour"
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.9226190476190865d
+			y: 0.9309523809523625d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:textures/mob_effect/water_breathing.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.619047619047606d
+			y: 1.0d
+		}
+		{
+			height: 0.75d
+			image: "serene_shrubbery:textures/particle/butterfly_bush_particle_16.png"
+			rotation: 0.0d
+			width: 0.75d
+			x: 10.601190476190439d
+			y: -0.8904761904762069d
+		}
+		{
+			height: 1.0d
+			image: "subtle_effects:textures/particle/waterfall_cloud_1.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.7797619047619548d
+			y: -2.1285714285714405d
+		}
+		{
+			height: 0.75d
+			image: "minecraft:textures/particle/effect_5.png"
+			rotation: 0.0d
+			width: 0.75d
+			x: 10.886904761904702d
+			y: 1.109523809523786d
+		}
+		{
+			height: 1.0d
+			image: "farmersdelight:item/sweet_berry_cheesecake_slice"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.7916666666666217d
+			y: -4.842857142857145d
+		}
+		{
+			height: 1.0d
+			image: "kaleidoscope_cookery:item/berry_platter"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.1249999999999503d
+			y: -5.0333333333333385d
+		}
+		{
+			height: 1.0d
+			image: "cold_sweat:textures/particle/warm_air_3.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.6011904761904177d
+			y: -1.8904761904761997d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "6FC05D36477D360B"
+			tasks: [{
+				id: "071A7299D110B97D"
+				type: "checkmark"
+			}]
+			x: 2.386904761904802d
+			y: 1.0d
+		}
+		{
+			dependency_requirement: "one_started"
+			hide_lock_icon: true
+			id: "60F53C1385733041"
+			tasks: [{
+				id: "60B376C5E87A2EA4"
+				item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "kaleidoscope_cookery:straw_hat" }
+				type: "item"
+			}]
+			x: 2.386904761904802d
+			y: -1.0d
+		}
+		{
+			dependency_requirement: "one_started"
+			hide_lock_icon: true
+			icon: {
+				id: "refurbished_furniture:workbench"
+			}
+			id: "414C78C6851EF6E9"
+			optional: true
+			tasks: [
+				{
+					id: "385E7B022BF1DEFC"
+					item: { count: 1, id: "refurbished_furniture:wrench" }
+					type: "item"
+				}
+				{
+					id: "4106808B61F8CB7A"
+					item: { count: 1, id: "refurbished_furniture:light_electricity_generator" }
+					type: "item"
+				}
+				{
+					id: "6E5E5179676D8AE7"
+					item: { count: 1, id: "refurbished_furniture:workbench" }
+					type: "item"
+				}
+			]
+			x: 3.386904761904802d
+			y: 0.0d
+		}
+		{
+			dependencies: ["170354E462B1EA2D"]
+			hide_lock_icon: true
+			id: "0A4828B4C2946117"
+			optional: true
+			tasks: [{
+				id: "3C1DB2EB34235075"
+				item: { count: 1, id: "farmersdelight:stove" }
+				type: "item"
+			}]
+			x: 1.8869047619048018d
+			y: -3.0d
+		}
+		{
+			dependencies: ["170354E462B1EA2D"]
+			hide_lock_icon: true
+			id: "4F044C048ED6F0F4"
+			optional: true
+			tasks: [{
+				id: "11887869791E0026"
+				item: { count: 1, id: "kaleidoscope_cookery:stove" }
+				type: "item"
+			}]
+			x: 2.886904761904802d
+			y: -3.0d
+		}
+		{
+			icon: {
+				id: "minecraft:wheat_seeds"
+			}
+			id: "5373723F2B5BA0ED"
+			optional: true
+			rewards: [{
+				id: "50FBD5DB6A4C1152"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "51C5D63924D726F3"
+					item: { count: 1, id: "minecraft:wheat_seeds" }
+					type: "item"
+				}
+				{
+					id: "387C9F60D1C7F288"
+					item: { count: 1, id: "minecraft:pumpkin_seeds" }
+					type: "item"
+				}
+				{
+					id: "6A5042B7E0BBEF84"
+					item: { count: 1, id: "minecraft:beetroot_seeds" }
+					type: "item"
+				}
+				{
+					id: "64B3F6C9BC2702E4"
+					item: { count: 1, id: "farmersdelight:cabbage_seeds" }
+					type: "item"
+				}
+				{
+					id: "13C8140887BAEBD1"
+					item: { count: 1, id: "supplementaries:flax_seeds" }
+					type: "item"
+				}
+				{
+					id: "3105F0B1C4DF2675"
+					item: { count: 1, id: "kaleidoscope_cookery:wild_rice" }
+					type: "item"
+				}
+				{
+					id: "178EB6E72257ED22"
+					item: { count: 1, id: "kaleidoscope_cookery:tomato_seed" }
+					type: "item"
+				}
+				{
+					id: "1DE1BF22FDD7AD79"
+					item: { count: 1, id: "kaleidoscope_cookery:chili_seed" }
+					type: "item"
+				}
+				{
+					id: "71EF1537710753DE"
+					item: { count: 1, id: "kaleidoscope_cookery:lettuce_seed" }
+					type: "item"
+				}
+			]
+			x: -9.172619047619023d
+			y: -2.797619047619058d
+		}
+		{
+			hide_dependency_lines: true
+			hide_lock_icon: true
+			id: "6F5EE211BAD7CFBE"
+			tasks: [{
+				id: "56A48E8F81876E50"
+				item: { count: 1, id: "kaleidoscope_cookery:iron_kitchen_knife" }
+				type: "item"
+			}]
+			x: 7.194047619047673d
+			y: -1.5d
+		}
+		{
+			id: "64644AA0C7D5DE86"
+			tasks: [{
+				id: "32E557D8BB3338C9"
+				item: { count: 1, id: "farmersdelight:cutting_board" }
+				type: "item"
+			}]
+			x: 1.8869047619048018d
+			y: -4.0d
+		}
+		{
+			id: "6261C2D1EBD68A05"
+			tasks: [{
+				id: "18D1310FAA64AED9"
+				item: { count: 1, id: "kaleidoscope_cookery:chopping_board" }
+				type: "item"
+			}]
+			x: 2.886904761904802d
+			y: -4.0d
+		}
+		{
+			dependencies: ["60F53C1385733041"]
+			dependency_requirement: "one_started"
+			hide_lock_icon: true
+			id: "58170BB0F5130F58"
+			optional: true
+			tasks: [{
+				id: "5DB9998A51E69449"
+				item: { count: 1, id: "kaleidoscope_cookery:scarecrow" }
+				type: "item"
+			}]
+			x: 1.3869047619048018d
+			y: 0.0d
+		}
+		{
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			hide_lock_icon: true
+			id: "0370762C646A0D8D"
+			tasks: [{
+				id: "6097BA4BD09AD1E8"
+				item: { count: 1, id: "kaleidoscope_cookery:kitchen_shovel" }
+				type: "item"
+			}]
+			x: 8.194047619047673d
+			y: -2.0d
+		}
+		{
+			id: "53967F5E9ABFC16E"
+			optional: true
+			tasks: [{
+				id: "08F089BD7033E254"
+				item: { count: 1, id: "kaleidoscope_cookery:kitchenware_racks" }
+				type: "item"
+			}]
+			x: 7.194047619047673d
+			y: -0.5d
+		}
+		{
+			dependency_requirement: "one_started"
+			hide_lock_icon: true
+			id: "170354E462B1EA2D"
+			tasks: [{
+				id: "6905AB2134E0F73C"
+				item: { count: 1, id: "minecraft:campfire" }
+				type: "item"
+			}]
+			x: 2.386904761904802d
+			y: -2.0d
+		}
+		{
+			id: "178E26EE5A8206F7"
+			tasks: [{
+				id: "18FF6C7F254BBA6B"
+				item: { count: 1, id: "kaleidoscope_cookery:oil" }
+				type: "item"
+			}]
+			x: 7.194047619047673d
+			y: -3.5d
+		}
+		{
+			id: "27EAD96596A07F85"
+			tasks: [{
+				id: "3C26765408D3CAAB"
+				item: { count: 1, id: "kaleidoscope_cookery:oil_pot" }
+				type: "item"
+			}]
+			x: 7.194047619047673d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0370762C646A0D8D"]
+			hide_dependency_lines: false
+			hide_dependent_lines: true
+			hide_lock_icon: true
+			id: "26F639B3E1FEF8CD"
+			tasks: [{
+				id: "75CA696D84883B86"
+				item: { count: 1, id: "kaleidoscope_cookery:pot" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -3.5d
+		}
+		{
+			hide_dependency_lines: true
+			icon: {
+				id: "kaleidoscope_cookery:stockpot"
+			}
+			id: "0E35DEFD4521D756"
+			tasks: [
+				{
+					id: "08CEB7EAE579A1FD"
+					item: { count: 1, id: "kaleidoscope_cookery:stockpot" }
+					type: "item"
+				}
+				{
+					id: "79567182F2879167"
+					item: { count: 1, id: "kaleidoscope_cookery:stockpot_lid" }
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: -3.5d
+		}
+		{
+			hide_dependency_lines: true
+			id: "204E76B2292B59CB"
+			tasks: [{
+				id: "66E24B7746E029E1"
+				item: { count: 1, id: "farmersdelight:cooking_pot" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -3.869047619047599d
+		}
+		{
+			id: "20C9664E8AB5B890"
+			tasks: [{
+				id: "48A845328428805A"
+				item: { count: 1, id: "kaleidoscope_cookery:steamer" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -4.5d
+		}
+		{
+			icon: {
+				id: "farmersdelight:iron_knife"
+			}
+			id: "1433B84A058A6BCE"
+			tasks: [
+				{
+					id: "31E56C1CD716C859"
+					item: { count: 1, id: "farmersdelight:flint_knife" }
+					type: "item"
+				}
+				{
+					id: "464D3744A8F7CF87"
+					item: { count: 1, id: "farmersdelight:iron_knife" }
+					match_components: "fuzzy"
+					type: "item"
+				}
+			]
+			x: 6.194047619047673d
+			y: -2.0d
+		}
+		{
+			hide_dependency_lines: true
+			hide_lock_icon: true
+			icon: {
+				id: "minecraft:nether_wart"
+			}
+			id: "2FB68EC354898550"
+			optional: true
+			rewards: [{
+				count: 3
+				id: "325ED2B1F1FD7EAB"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "193074CD4C72DAEA"
+					item: { count: 1, id: "mynethersdelight:powder_cannon" }
+					type: "item"
+				}
+				{
+					id: "1B921265C321E845"
+					item: { count: 1, id: "minecraft:crimson_fungus" }
+					type: "item"
+				}
+				{
+					id: "7A7227CE5D5C1B13"
+					item: { count: 1, id: "minecraft:warped_fungus" }
+					type: "item"
+				}
+				{
+					id: "144C97C04348E060"
+					item: { count: 1, id: "minecraft:nether_wart" }
+					type: "item"
+				}
+				{
+					id: "416F07E671DDFB05"
+					item: { count: 1, id: "mynethersdelight:bullet_pepper" }
+					type: "item"
+				}
+				{
+					id: "78EB763896144D9C"
+					item: { count: 1, id: "kaleidoscope_nether:crimson_fruit" }
+					type: "item"
+				}
+				{
+					id: "3C73A4DE67D3719A"
+					item: { count: 1, id: "kaleidoscope_nether:warped_fruit" }
+					type: "item"
+				}
+				{
+					id: "545DEFEECD46368D"
+					item: { count: 1, id: "kaleidoscope_nether:soul_pepper" }
+					type: "item"
+				}
+				{
+					id: "4B07A0CD20A8FB14"
+					item: { count: 1, id: "kaleidoscope_nether:poisonous_fruit" }
+					type: "item"
+				}
+			]
+			x: -10.666666666666593d
+			y: -1.488095238095255d
+		}
+		{
+			hide_dependency_lines: true
+			hide_lock_icon: true
+			icon: {
+				id: "kaleidoscope_end:ender_mint"
+			}
+			id: "6B423C3BB14C70F6"
+			optional: true
+			rewards: [{
+				count: 5
+				id: "368AC80BDD0C12AB"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "150F2C8ADFDD467E"
+					item: { count: 1, id: "minecraft:chorus_flower" }
+					type: "item"
+				}
+				{
+					id: "633F2F770E1C3D0E"
+					item: { count: 1, id: "minecraft:chorus_fruit" }
+					type: "item"
+				}
+				{
+					id: "06B46E7B38D29664"
+					item: { count: 1, id: "kaleidoscope_end:chorus_petal" }
+					type: "item"
+				}
+				{
+					id: "109DD37FA899F3AC"
+					item: { count: 1, id: "kaleidoscope_end:dream_berry" }
+					type: "item"
+				}
+				{
+					id: "6E8EEF0D7F232230"
+					item: { count: 1, id: "kaleidoscope_end:ender_mint" }
+					type: "item"
+				}
+			]
+			x: -12.1666666666666d
+			y: -1.5595238095238315d
+		}
+		{
+			hide_lock_icon: true
+			icon: {
+				id: "minecraft:carrot"
+			}
+			id: "55B8211F86FE8222"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "23C43CC4F139C3C3"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2BE395A7624D58EC"
+					item: { count: 1, id: "minecraft:wheat" }
+					type: "item"
+				}
+				{
+					id: "0EFB183B2AEB191C"
+					item: { count: 1, id: "minecraft:carrot" }
+					type: "item"
+				}
+				{
+					id: "703E7D5FA31EA659"
+					item: { count: 1, id: "minecraft:potato" }
+					type: "item"
+				}
+				{
+					id: "0A9EB81387B22648"
+					item: { count: 1, id: "minecraft:beetroot" }
+					type: "item"
+				}
+				{
+					id: "35B180314E8B91BB"
+					item: { count: 1, id: "minecraft:pumpkin" }
+					type: "item"
+				}
+				{
+					id: "0B37A935CB488670"
+					item: { count: 1, id: "farmersdelight:tomato" }
+					type: "item"
+				}
+				{
+					id: "3D3AE6D02E0DBF7C"
+					item: { count: 1, id: "kaleidoscope_cookery:tomato" }
+					type: "item"
+				}
+				{
+					id: "33C54450A5102F11"
+					item: { count: 1, id: "farmersdelight:cabbage" }
+					type: "item"
+				}
+				{
+					id: "2402C124AEE75517"
+					item: { count: 1, id: "kaleidoscope_cookery:lettuce" }
+					type: "item"
+				}
+				{
+					id: "75EE348B2D2A76AC"
+					item: { count: 1, id: "farmersdelight:rice_panicle" }
+					type: "item"
+				}
+				{
+					id: "682A8535C8696E24"
+					item: { count: 1, id: "kaleidoscope_cookery:rice_panicle" }
+					type: "item"
+				}
+				{
+					id: "6A88EFAEAA8F12F8"
+					item: { count: 1, id: "kaleidoscope_cookery:red_chili" }
+					type: "item"
+				}
+				{
+					id: "2E75F9C60A56B91C"
+					item: { count: 1, id: "kaleidoscope_cookery:green_chili" }
+					type: "item"
+				}
+				{
+					id: "69168C8B91EA997A"
+					item: { count: 1, id: "minecraft:kelp" }
+					type: "item"
+				}
+				{
+					id: "481B23EDEC1991A3"
+					item: { count: 1, id: "minecraft:seagrass" }
+					type: "item"
+				}
+				{
+					id: "0EC6074A3B5DBC63"
+					item: { count: 1, id: "supplementaries:flax" }
+					type: "item"
+				}
+			]
+			x: -9.172619047619023d
+			y: -1.797619047619058d
+		}
+		{
+			hide_lock_icon: true
+			icon: {
+				id: "minecraft:sweet_berries"
+			}
+			id: "099CF5696D9AF72D"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "433425EA523214CF"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "69F18C5CEC76C028"
+					item: { count: 1, id: "minecraft:apple" }
+					type: "item"
+				}
+				{
+					id: "2822463DFFEE0C15"
+					item: { count: 1, id: "minecraft:sweet_berries" }
+					type: "item"
+				}
+				{
+					id: "167454B6A7371348"
+					item: { count: 1, id: "minecraft:glow_berries" }
+					type: "item"
+				}
+				{
+					id: "0DB8850019B58C0A"
+					item: { count: 1, id: "minecraft:melon_slice" }
+					type: "item"
+				}
+				{
+					id: "21BBBC3A9F9F7A20"
+					item: { count: 1, id: "minecraft:cocoa_beans" }
+					type: "item"
+				}
+				{
+					id: "64B678D219701AAA"
+					item: { count: 1, id: "minecraft:sugar_cane" }
+					type: "item"
+				}
+				{
+					id: "03716F1385305C79"
+					item: { count: 1, id: "kaleidoscope_tavern:grape" }
+					type: "item"
+				}
+				{
+					id: "5AFF34021B40F89D"
+					item: { count: 1, id: "kaleidoscope_tavern:ice_grape" }
+					type: "item"
+				}
+				{
+					id: "3E926D91DA9350AA"
+					item: { count: 1, id: "kaleidoscope_tavern:gold_grape" }
+					type: "item"
+				}
+				{
+					id: "5F2234CE66467FEC"
+					item: { count: 1, id: "kaleidoscope_tavern:green_grape" }
+					type: "item"
+				}
+			]
+			x: -9.172619047619023d
+			y: -0.7976190476190581d
+		}
+		{
+			icon: {
+				id: "farmersdelight:ham"
+			}
+			id: "0D5167A1C8E704C3"
+			optional: true
+			rewards: [{
+				id: "7CA137B56E0A6EFC"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "000801AC9F577723"
+					item: { count: 1, id: "minecraft:beef" }
+					type: "item"
+				}
+				{
+					id: "233622EED7FC32AB"
+					item: { count: 1, id: "minecraft:mutton" }
+					type: "item"
+				}
+				{
+					id: "46A6FA5ACFC810A3"
+					item: { count: 1, id: "farmersdelight:ham" }
+					type: "item"
+				}
+				{
+					id: "4376CE94D47832FC"
+					item: { count: 1, id: "minecraft:porkchop" }
+					type: "item"
+				}
+				{
+					id: "4E5152E1178FA3F9"
+					item: { count: 1, id: "minecraft:chicken" }
+					type: "item"
+				}
+				{
+					id: "6D31BBD8B598D0F4"
+					item: { count: 1, id: "minecraft:rabbit" }
+					type: "item"
+				}
+				{
+					id: "50DB9CC303C68A3B"
+					item: { count: 1, id: "minecraft:cod" }
+					type: "item"
+				}
+				{
+					id: "6C692A29303BC89B"
+					item: { count: 1, id: "minecraft:salmon" }
+					type: "item"
+				}
+				{
+					id: "68290819B53F4593"
+					item: { count: 1, id: "kaleidoscope_cookery:caterpillar" }
+					type: "item"
+				}
+			]
+			x: -9.172619047619023d
+			y: 0.2023809523809419d
+		}
+		{
+			icon: {
+				id: "agritechevolved:basic_planter"
+			}
+			id: "7E2197715C3EEA2A"
+			optional: true
+			rewards: [{
+				id: "28B6BFD07BAE3A47"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "299215B265B8E59F"
+					item: { count: 1, id: "agritechevolved:basic_birch_planter" }
+					type: "item"
+				}
+				{
+					id: "28618299971955A1"
+					item: { count: 1, id: "agritechevolved:basic_planter" }
+					type: "item"
+				}
+				{
+					id: "23EF5B33E1D4A150"
+					item: { count: 1, id: "agritechevolved:basic_spruce_planter" }
+					match_components: "fuzzy"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7572E909253F1C2E"
+					item: { count: 1, id: "agritechevolved:basic_dark_oak_planter" }
+					type: "item"
+				}
+			]
+			x: -4.994047619047585d
+			y: 0.9880952380952444d
+		}
+		{
+			id: "712B7A5BEF7F5518"
+			optional: true
+			tasks: [{
+				id: "4087C93121669F91"
+				item: { count: 1, id: "farmersdelight:organic_compost" }
+				type: "item"
+			}]
+			x: -4.994047619047585d
+			y: -0.5119047619047556d
+		}
+		{
+			dependencies: ["712B7A5BEF7F5518"]
+			hide_lock_icon: true
+			id: "725F311F14E62B9F"
+			optional: true
+			rewards: [{
+				id: "44A257666BC0B044"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "08D56DF1429A55C6"
+				item: { count: 1, id: "farmersdelight:rich_soil" }
+				type: "item"
+			}]
+			x: -4.994047619047585d
+			y: -1.5119047619047556d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_nether:raw_piglin_meat"
+			}
+			id: "178FEA0D4846F448"
+			optional: true
+			rewards: [{
+				count: 3
+				id: "3D9E276856FD9658"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3780FE51F0A5B7DF"
+					item: { count: 1, id: "mynethersdelight:strider_rock" }
+					type: "item"
+				}
+				{
+					id: "4E8D4CBE36B98FF7"
+					item: { count: 1, id: "mynethersdelight:strider_slice" }
+					type: "item"
+				}
+				{
+					id: "2133EF8528FC5A59"
+					item: { count: 1, id: "kaleidoscope_nether:blaze_heart" }
+					type: "item"
+				}
+				{
+					id: "75400D624A4EBC3E"
+					item: { count: 1, id: "kaleidoscope_nether:raw_piglin_meat" }
+					type: "item"
+				}
+				{
+					id: "0563D9A08AEFD298"
+					item: { count: 1, id: "kaleidoscope_nether:raw_strider_meat" }
+					type: "item"
+				}
+				{
+					id: "01C2EB1C550ABA41"
+					item: { count: 1, id: "kaleidoscope_nether:ghast_tentacle" }
+					type: "item"
+				}
+				{
+					id: "644B986E099C8A61"
+					item: { count: 1, id: "mynethersdelight:ghasta" }
+					type: "item"
+				}
+				{
+					id: "68A35ECFF7A2B228"
+					item: { count: 1, id: "kaleidoscope_nether:nether_caterpillar" }
+					type: "item"
+				}
+				{
+					id: "7708585ED58DCC71"
+					item: { count: 1, id: "mynethersdelight:hoglin_loin" }
+					type: "item"
+				}
+				{
+					id: "5052BCA24171B981"
+					item: { count: 1, id: "mynethersdelight:hoglin_hide" }
+					type: "item"
+				}
+				{
+					id: "116786D3BA966BC3"
+					item: { count: 1, id: "kaleidoscope_nether:wither_rib" }
+					type: "item"
+				}
+			]
+			x: -10.666666666666593d
+			y: -0.488095238095255d
+		}
+		{
+			dependencies: ["7E2197715C3EEA2A"]
+			id: "10E40D29304B342A"
+			optional: true
+			tasks: [{
+				id: "768A78A515749695"
+				item: { count: 1, id: "agritechevolved:advanced_planter" }
+				type: "item"
+			}]
+			x: -4.994047619047585d
+			y: 1.9880952380952444d
+		}
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "kubejs:item/facial_skins"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "37F057BA2BFCA277"
+			optional: true
+			rewards: [{
+				id: "5DB334AAF926CF7E"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "31E5ABF8AE121550"
+					item: { count: 1, id: "createcybernetics:bodypart_brain" }
+					type: "item"
+				}
+				{
+					id: "2587F02F9A6596FF"
+					item: { count: 1, id: "createcybernetics:bodypart_eyeballs" }
+					type: "item"
+				}
+				{
+					id: "3C3190004417775B"
+					item: { count: 1, id: "createcybernetics:bodypart_lungs" }
+					type: "item"
+				}
+				{
+					id: "38DF82A1F8330908"
+					item: { count: 1, id: "createcybernetics:bodypart_intestines" }
+					type: "item"
+				}
+				{
+					id: "164098B3E9D70BAC"
+					item: { count: 1, id: "createcybernetics:bodypart_liver" }
+					type: "item"
+				}
+				{
+					id: "3CD9D646D4A207EC"
+					item: { count: 1, id: "createcybernetics:bodypart_rightarm" }
+					type: "item"
+				}
+				{
+					id: "430B92C5F34C5DF7"
+					item: { count: 1, id: "createcybernetics:bodypart_leftarm" }
+					type: "item"
+				}
+				{
+					id: "593BEEA8E2A077FE"
+					item: { count: 1, id: "createcybernetics:bodypart_rightleg" }
+					type: "item"
+				}
+				{
+					id: "054438963A8A29ED"
+					item: { count: 1, id: "createcybernetics:bodypart_leftleg" }
+					type: "item"
+				}
+			]
+			x: -15.172619047619023d
+			y: -0.7976190476190581d
+		}
+		{
+			icon: {
+				id: "kaleidoscope_end:raw_endermite_meat"
+			}
+			id: "002C1CC8E3104101"
+			optional: true
+			rewards: [{
+				count: 5
+				id: "09256367480F47C4"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5533CFB849CA216C"
+					item: { count: 1, id: "kaleidoscope_end:raw_ender_dragon_meat" }
+					type: "item"
+				}
+				{
+					id: "5C17900443014BFB"
+					item: { count: 1, id: "kaleidoscope_end:void_conch" }
+					type: "item"
+				}
+				{
+					id: "11927997E5CE000D"
+					item: { components: { "cold_sweat:armor_insulation": { insulation: [ ] } }, count: 1, id: "minecraft:shulker_shell" }
+					type: "item"
+				}
+				{
+					id: "63DAEFF29D5882C4"
+					item: { count: 1, id: "kaleidoscope_end:shulker_shell_meat" }
+					type: "item"
+				}
+				{
+					id: "7857EC20893892F5"
+					item: { count: 1, id: "kaleidoscope_end:dragon_egg_liquid" }
+					type: "item"
+				}
+				{
+					id: "7E148F5795F8C1B2"
+					item: { count: 1, id: "kaleidoscope_end:optic_nerve" }
+					type: "item"
+				}
+				{
+					id: "3BCC4A56548FF9F1"
+					item: { count: 1, id: "kaleidoscope_end:raw_endermite_meat" }
+					type: "item"
+				}
+				{
+					id: "31E1521907C5FEC8"
+					item: { count: 1, id: "kaleidoscope_end:end_caterpillar" }
+					type: "item"
+				}
+			]
+			x: -12.1666666666666d
+			y: -0.5595238095238315d
+		}
+		{
+			icon: {
+				id: "minecraft:spider_eye"
+			}
+			id: "2C8FCA043AB5D0A2"
+			optional: true
+			rewards: [{
+				id: "142262A96DAFB445"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "62C3F9AD85457BA1"
+					item: { count: 1, id: "minecraft:spider_eye" }
+					type: "item"
+				}
+				{
+					id: "24058C7413FB411C"
+					item: { count: 1, id: "minecraft:fermented_spider_eye" }
+					type: "item"
+				}
+				{
+					id: "1EF36F13C2DCF1F3"
+					item: { count: 1, id: "arphex:maggot_grub" }
+					type: "item"
+				}
+				{
+					id: "3948832AD8162453"
+					item: { count: 1, id: "arphex:locust_larvae" }
+					type: "item"
+				}
+				{
+					id: "21E973DD50335506"
+					item: { count: 1, id: "arphex:roach_nymph" }
+					type: "item"
+				}
+				{
+					id: "76F146B4C4C7DE34"
+					item: { count: 1, id: "arphex:bloodworm_grub" }
+					type: "item"
+				}
+				{
+					id: "4E0FCCCDD3788118"
+					item: { count: 1, id: "arphex:raw_hemolymph" }
+					type: "item"
+				}
+				{
+					id: "761F05F70CDDEAEF"
+					item: { count: 1, id: "arphex:spider_supplement" }
+					type: "item"
+				}
+			]
+			x: -13.630952380952316d
+			y: -1.4166666666666856d
+		}
+		{
+			icon: {
+				id: "arphex:void_sherbet"
+			}
+			id: "46496877023BCD31"
+			optional: true
+			rewards: [{
+				count: 5
+				id: "0A97F3ECFA02AB89"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "353098C7AAF171AB"
+					item: { count: 1, id: "arphex:scorched_soup" }
+					type: "item"
+				}
+				{
+					id: "5B9E64E0718C26BC"
+					item: { count: 1, id: "arphex:void_sherbet" }
+					type: "item"
+				}
+				{
+					id: "396D1C7637CADD6C"
+					item: { count: 1, id: "arphex:time_syrup" }
+					type: "item"
+				}
+			]
+			x: -13.630952380952316d
+			y: -0.4166666666666856d
+		}
+		{
+			dependencies: ["725F311F14E62B9F"]
+			hide_lock_icon: true
+			id: "2D7EE25C41D4D9D1"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "6983D2CD07906126"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "72B0AABB42A3DB7D"
+				item: { count: 1, id: "agritechevolved:mulch" }
+				type: "item"
+			}]
+			x: -4.994047619047585d
+			y: -2.5119047619047556d
+		}
+		{
+			dependencies: ["2D7EE25C41D4D9D1"]
+			hide_lock_icon: true
+			id: "002644AAEF310123"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "457693D57B29B64B"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3B8AD8171A6C9FB4"
+				item: { count: 1, id: "agritechevolved:infused_farmland" }
+				type: "item"
+			}]
+			x: -4.994047619047585d
+			y: -3.5119047619047556d
+		}
+		{
+			id: "14C1C69331B410B0"
+			rewards: [{
+				id: "582E642AF3419E57"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "65E158DFD8E5C019"
+				item: { count: 1, id: "kaleidoscope_cookery:millstone" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			id: "25FA9E748ED76DA3"
+			optional: true
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "minecraft:textures/entity_icon/horse/horse_cream.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "59DF8D3FC4BA23AE"
+				observation_type: "entity_type"
+				observe_type: 5
+				optional_task: true
+				timer: 0L
+				to_observe: "minecraft:horse"
+				type: "observation"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["14C1C69331B410B0"]
+			id: "5C0897E07BA04A7B"
+			rewards: [{
+				id: "296DEED7DB220E89"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "038DA7FAE0D47A18"
+				item: { count: 1, id: "kaleidoscope_cookery:flour" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			id: "513276280CEADDB4"
+			tasks: [{
+				id: "6B48B63918CFFD0A"
+				item: { count: 1, id: "farmersdelight:skillet" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: -2.869047619047599d
+		}
+		{
+			dependencies: ["1433B84A058A6BCE"]
+			hide_dependency_lines: true
+			hide_lock_icon: true
+			id: "1B3AFACB868AE24D"
+			optional: true
+			tasks: [{
+				id: "2D0B9154B4FEEE72"
+				item: { count: 1, id: "minecraft:lead" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["725F311F14E62B9F"]
+			hide_lock_icon: true
+			id: "681DD0056508A692"
+			optional: true
+			rewards: [{
+				id: "531FA37452252FCD"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "773CB1D0E024E5AA"
+				item: { count: 1, id: "mynethersdelight:resurgent_soil" }
+				type: "item"
+			}]
+			x: -5.994047619047585d
+			y: -2.0119047619047556d
+		}
+		{
+			id: "62618E952324AD10"
+			tasks: [{
+				id: "10F1AE49C62D447D"
+				item: { count: 1, id: "kaleidoscope_tavern:barrel" }
+				type: "item"
+			}]
+			x: 10.005952380952401d
+			y: 0.0d
+		}
+		{
+			id: "1101794EDE79E8F2"
+			tasks: [{
+				id: "0E5E44C9EC9C1E46"
+				item: { count: 1, id: "kaleidoscope_tavern:empty_bottle" }
+				type: "item"
+			}]
+			x: 11.505952380952401d
+			y: 0.5d
+		}
+		{
+			id: "08DC6A140917778C"
+			tasks: [{
+				id: "13A3A070900C34C8"
+				item: { count: 1, id: "kaleidoscope_tavern:grape" }
+				type: "item"
+			}]
+			x: 10.005952380952401d
+			y: 1.0d
+		}
+		{
+			icon: {
+				id: "minecraft:fishing_rod"
+			}
+			id: "70244E7EB42BA63D"
+			optional: true
+			tasks: [
+				{
+					id: "5FD934BE5F2E5158"
+					item: { count: 1, id: "minecraft:fishing_rod" }
+					type: "item"
+				}
+				{
+					id: "5B3160FF4A98B5F7"
+					item: { count: 1, id: "starcatcher:starcatcher_rod" }
+					type: "item"
+				}
+			]
+			x: 7.005952380952415d
+			y: 2.104761904761922d
+		}
+		{
+			id: "54E1111E5CEF1E7E"
+			tasks: [{
+				id: "20EFD6A507112AEC"
+				item: { count: 1, id: "kaleidoscope_cookery:teapot" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -4.5d
+		}
+	]
+}

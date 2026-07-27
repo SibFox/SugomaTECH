@@ -1,12 +1,17 @@
 {
 	chapter.31718A1EEFBD3C28.title: "&lГенетические изыскания"
 	chapter.3797DA8332D1F03F.title: "&lArPhEx"
+	chapter.5EE6961466E3F775.title: "Фермерство"
 	chapter.7A60DAD17BB41728.title: "{ftbquests.chapter.2}"
 	chapter_group.443A09D2BD4B2F8D.title: "&lМагазин"
 	chapter_group.53BFDBEC8FC0E28F.title: "&lДополнительное"
 	quest.001979AD8815672C.quest_desc: ["   &nПлазмид&r используется &6для внедрения&r в него &6генов&r"]
 	quest.001979AD8815672C.quest_subtitle: "Создайте плазмид"
 	quest.001979AD8815672C.title: "Генно-модифицирующая операция"
+	quest.002644AAEF310123.quest_desc: ["  Этот вид почвы можно использовать как в лотке, так и вместо пашни."]
+	quest.002644AAEF310123.quest_subtitle: "Лучшая из возможных"
+	quest.002C1CC8E3104101.quest_subtitle: "То еще приключение"
+	quest.002C1CC8E3104101.title: "&d[ Коллекция ]:  \"Неземные вкусности\""
 	quest.01908AA9362EC6E7.quest_desc: [
 		"   &nСкальпель&r - &zвесьма полезный инструмент&r"
 		""
@@ -21,6 +26,8 @@
 		""
 		"{ftbquests.chapter.88}"
 	]
+	quest.0370762C646A0D8D.quest_desc: ["  &eЛопатка&r будет &6необходима&r для приготовления пищи в &aвоке&r"]
+	quest.0370762C646A0D8D.quest_subtitle: "Удобный переворачиватель горячестей"
 	quest.07011121E021E56B.quest_desc: ["{ftbquests.chapter.85}"]
 	quest.0763E008B98B21BC.quest_desc: [
 		"                  &aХрупкая.&r"
@@ -61,6 +68,7 @@
 		"{ftbquests.chapter.56AEAC22236F88E3.quest17.description16}"
 		"{ftbquests.chapter.56AEAC22236F88E3.quest17.description17}"
 	]
+	quest.08DC6A140917778C.quest_subtitle: "Всему голова!"
 	quest.0952460708DD3D50.quest_desc: [
 		"              &5Он&r ищет меня."
 		"     Я знаю, что &5он&r где-то рядом."
@@ -69,12 +77,17 @@
 	]
 	quest.0952460708DD3D50.quest_subtitle: "Победите &5Паучью Моль"
 	quest.0952460708DD3D50.title: "&5Моль"
+	quest.099CF5696D9AF72D.quest_subtitle: "Сладости!"
+	quest.099CF5696D9AF72D.title: "&a[ Коллекция ]:  \"Фрукты-ягодки\""
 	quest.09E438DA724A4817.quest_desc: [
 		"{ftbquests.chapter.56AEAC22236F88E3.quest35.description1}"
 		""
 		"{ftbquests.chapter.56AEAC22236F88E3.quest35.description2}"
 		""
 	]
+	quest.0A4828B4C2946117.quest_desc: ["  &6Позволяет нагревать&r как &eкухонный котёл&r из &dФермерского восторга&r, так и &eкастрюлю&r, &eвок&r и &eпароварки&r из &dКалейдоскопа&r."]
+	quest.0A4828B4C2946117.quest_subtitle: "Фермерский восторг"
+	quest.0A4828B4C2946117.title: "&eКухонная плита"
 	quest.0BEF86EEB360F9FA.quest_desc: [
 		"{ftbquests.chapter.56AEAC22236F88E3.quest6.description1}"
 		""
@@ -93,6 +106,8 @@
 	]
 	quest.0D45D64B3C739B40.quest_subtitle: "Создайте сет &dТеневой брони"
 	quest.0D45D64B3C739B40.title: "&dТеневая броня"
+	quest.0D5167A1C8E704C3.quest_subtitle: "Чистый белок!"
+	quest.0D5167A1C8E704C3.title: "&a[ Коллекция ]:  \"Рыба да мясо\""
 	quest.0D78B2E8A66CEDDA.quest_desc: [
 		"{ftbquests.chapter.292851496F040C0B.quest1.description1}"
 		""
@@ -107,6 +122,17 @@
 		""
 		"{ftbquests.chapter.292851496F040C0B.quest1.description7}"
 	]
+	quest.0E35DEFD4521D756.quest_desc: [
+		"  &eКастрюля&r из &dКалейдоскопа&r"
+		""
+		"  Позволяет готовить рецепты из мода."
+		""
+		"  Необходимо &6разместить на источнике тепла&r, таком как костёр или кухонная плита, а также &6надеть&r &eкрышку&r для начала процесса готовки."
+		""
+		"  Забирать готовую еду следует тарелкой, &cчтобы не обжечься&r!"
+	]
+	quest.0E35DEFD4521D756.quest_subtitle: "Калейдоскоп"
+	quest.0E35DEFD4521D756.title: "&eКастрюля"
 	quest.0EC3D9768A0AF3B3.quest_desc: [
 		"{ftbquests.chapter.22}"
 		""
@@ -133,6 +159,19 @@
 		"{ftbquests.chapter.80}"
 		"{image:kubejs:textures/quests/ae2_7.png width:169 height:90 align:center}"
 	]
+	quest.1433B84A058A6BCE.quest_subtitle: "Нож!"
+	quest.1433B84A058A6BCE.title: "Нож"
+	quest.14C1C69331B410B0.quest_desc: [
+		"  &eЖёрнов Калейдоскопа&r может &6перемалывать&r множество различных предметов и культур"
+		""
+		"  Самое очевидное, на что способен этот крепыш - &6превратить&r &aпшеницу&r &6в&r &eмуку&r!"
+		""
+		"  Для его работы &6необходимо подвести к нему лошадь&r, осла или мула и постараться запрячь его в жернов."
+		""
+		"{@pagebreak}"
+		" &6Чтобы перемолоть&r предмет, &6достаточно нажать ПКМ&r, &6держа его в руке&r, либо кинуть этот предмет сверху на жёрнов."
+	]
+	quest.14C1C69331B410B0.quest_subtitle: "Стационарный блендер размера XXL"
 	quest.15354EFC545C1C5F.quest_desc: [
 		"{ftbquests.chapter.5A0B30A41D65CC21.quest11.description1}"
 		""
@@ -146,6 +185,12 @@
 	]
 	quest.1674C337F8B32D9B.quest_subtitle: "Получите &aспираль ДНК"
 	quest.1674C337F8B32D9B.title: "ДНК"
+	quest.170354E462B1EA2D.quest_desc: [
+		"  А вы знали, что &6готовить еду можно и на костре&r?"
+		""
+		"  &o...Знали же, правда?&r"
+	]
+	quest.170354E462B1EA2D.title: "&eКостёр"
 	quest.175DB693486F5E1A.quest_desc: [
 		"{ftbquests.chapter.10}"
 		""
@@ -153,6 +198,10 @@
 		""
 		"{ftbquests.chapter.41}"
 	]
+	quest.178E26EE5A8206F7.quest_desc: ["  Можно получить, &6убивая&r &cсвиней,&r &cпиглинов&r и &cхоглинов&r с помощью &eтесака,&r либо &6перемолов&r &aсемена&r &6в&r &eжёрнове.&r"]
+	quest.178E26EE5A8206F7.quest_subtitle: "Жир!"
+	quest.178FEA0D4846F448.quest_subtitle: "Незабываемый опыт"
+	quest.178FEA0D4846F448.title: "&e[ Коллекция ]:  \"Адская мясная тарелка\""
 	quest.17A47E26BE71E97A.quest_desc: ["   &nЭкстрактор ДНК&r нужен &6для извлечения&r &aспиралей ДНК&r &6из&r &eклеток&r"]
 	quest.17A47E26BE71E97A.quest_subtitle: "Создайте экстрактор ДНК"
 	quest.17A47E26BE71E97A.title: "Экстрактор генов"
@@ -173,6 +222,8 @@
 	]
 	quest.19FE1F2000E58A36.quest_subtitle: "Соберите &aобразцы ткани"
 	quest.19FE1F2000E58A36.title: "Материал для исследования"
+	quest.1B3AFACB868AE24D.quest_desc: ["  Используйте любой &eнож&r из &dФермерского восторга&r и &6ломайте им траву&r, чтобы выбить &eсолому&r."]
+	quest.1B3AFACB868AE24D.quest_subtitle: "Можно создать!"
 	quest.1C21443E27019756.quest_desc: ["{ftbquests.chapter.55}"]
 	quest.1D437CA60FF3489C.quest_desc: [
 		"{ftbquests.chapter.47BD500A3691AC25.quest16.description1}"
@@ -207,6 +258,27 @@
 		"{ftbquests.chapter.32}"
 	]
 	quest.1FBD802D36A7C48E.title: "{ftbquests.chapter.27}"
+	quest.204E76B2292B59CB.quest_desc: [
+		"  &eКухонный котёл&r из &dФермерского восторга&r"
+		""
+		"  Позволяет готовить рецепты из мода."
+		""
+		"  Необходимо &6разместить на источнике тепла&r, таком как костёр или кухонная плита."
+	]
+	quest.204E76B2292B59CB.quest_subtitle: "Фермерский восторг"
+	quest.204E76B2292B59CB.title: "&eКухонный котёл"
+	quest.20C9664E8AB5B890.quest_desc: [
+		"  &eПароварка&r из &dКалейдоскопа&r"
+		""
+		"  Позволяет готовить рецепты из мода."
+		""
+		"  Необходимо &6разместить на источнике тепла&r, таком как костёр или кухонная плита."
+		""
+		"  Можно размещать несколько пароварок друг на дружке!"
+		""
+		"  Для начала процесса приготовления надо закрыть пароварку, &6нажав ПКМ&r, &6крадучесь&r."
+	]
+	quest.20C9664E8AB5B890.quest_subtitle: "Паро-паро-варка!"
 	quest.20F7E12C7F799E62.quest_desc: ["{ftbquests.chapter.4}"]
 	quest.20F7E12C7F799E62.title: "{ftbquests.chapter.3}"
 	quest.25377FA38E7E15EA.quest_subtitle: "Победите &aАрахноида-Трисектора"
@@ -222,6 +294,13 @@
 		""
 		"{ftbquests.chapter.81}"
 	]
+	quest.25FA9E748ED76DA3.quest_desc: [
+		"  Для работы &eжёрнова&r &6пригодится лошадь&r, &6мул&r или &6осел&r."
+		""
+		"  Благо, что &6седло тоже можно создать&r..."
+	]
+	quest.25FA9E748ED76DA3.quest_subtitle: "И мне живется несладко"
+	quest.25FA9E748ED76DA3.title: "Я - маленькая лошадка"
 	quest.261988BFBF279F0C.quest_desc: ["{ftbquests.chapter.64}"]
 	quest.262E647A5F56D66A.quest_desc: [
 		"{ftbquests.chapter.34}"
@@ -230,6 +309,17 @@
 		""
 		"{ftbquests.chapter.36}"
 	]
+	quest.26F639B3E1FEF8CD.quest_desc: [
+		"  &eВок&r из &dКалейдоскопа&r"
+		""
+		"  Позволяет готовить рецепты из мода."
+		""
+		"  Необходимо &6разместить на источнике тепла&r, таком как костёр или кухонная плита, а также &6использовать&r &eлопатку&r в процессе приготовления."
+		""
+		"  Забирать готовую еду следует тарелкой, &cчтобы не обжечься&r!"
+	]
+	quest.26F639B3E1FEF8CD.quest_subtitle: "Калейдоскоп"
+	quest.26F639B3E1FEF8CD.title: "&eВок"
 	quest.26FC3EB2DE0502D3.quest_desc: [
 		"                  &cГорячий.&r"
 		""
@@ -243,6 +333,18 @@
 		""
 		"{ftbquests.chapter.7}"
 	]
+	quest.27EAD96596A07F85.quest_desc: [
+		"  &6Можно разместить&r на кухне."
+		""
+		"  Хранит значительное количество &eмасла&r."
+		""
+		""
+		"  &6Чтобы взять в руки, надо сломать&r."
+		""
+		""
+		"  &6Нажав ПКМ&r с наполненной маслёнкой &6по&r &eвоку&r можно вылить в него немного масла для готовки."
+	]
+	quest.27EAD96596A07F85.quest_subtitle: "Милый способ хранения масла"
 	quest.289EC193A9CF47FC.quest_desc: [
 		"             Где-то должно быть это место..."
 		""
@@ -291,9 +393,16 @@
 	]
 	quest.2BBE8F041CD69B07.quest_subtitle: "Победите &cСкорпида-Кровожада"
 	quest.2BBE8F041CD69B07.title: "&cКровожад"
+	quest.2C8FCA043AB5D0A2.quest_subtitle: "Паучительный обед"
+	quest.2C8FCA043AB5D0A2.title: "&c[ Коллекция ]: \"Ползучее лакомство\""
+	quest.2D7EE25C41D4D9D1.quest_desc: ["  Этот вид почвы можно использовать как в лотке, так и вместо пашни."]
+	quest.2D7EE25C41D4D9D1.quest_subtitle: "Предвестник изобилия"
 	quest.2E5C6BF66A865E86.quest_desc: ["{ftbquests.chapter.54}"]
 	quest.2EAAFD8C91736269.quest_subtitle: "Победите Артроплевру"
 	quest.2EAAFD8C91736269.title: "Многоножка"
+	quest.2FB68EC354898550.quest_desc: [""]
+	quest.2FB68EC354898550.quest_subtitle: "Адское путешествие прилагается"
+	quest.2FB68EC354898550.title: "&e[ Коллекция ]:  \"Адская кухня\""
 	quest.2FC45DEC412F5866.quest_desc: [
 		"{ftbquests.chapter.5A0B30A41D65CC21.quest18.description1}"
 		""
@@ -339,6 +448,9 @@
 		" &5Постоянно искажается&r, если я им двигаю.."
 	]
 	quest.37C5416C2C7C9D6C.title: "&5Пустотный кристалл"
+	quest.37F057BA2BFCA277.quest_desc: [""]
+	quest.37F057BA2BFCA277.quest_subtitle: "&zУвлекательный конструктор!"
+	quest.37F057BA2BFCA277.title: "&4[ Коллекция ]:  \"По кусочкам\""
 	quest.38986186701A4689.quest_desc: [
 		"&eБонус сета&r: чем больше элементов брони надето, тем больше &eэффект Сопротивления&r и &eнаносимый урон&r, а также &eполный иммунитет к слабым атакам&r."
 		""
@@ -424,6 +536,16 @@
 		""
 		"{ftbquests.chapter.63}"
 	]
+	quest.414C78C6851EF6E9.quest_desc: [
+		"  &eВерстак&r из мода &6Refurbished Furniture&r позволяет создать &zбольшое количество разнообразной мебели и безделушек&r &7(и не только для кухни!)&r"
+		""
+		""
+		"  Обратите внимание, что для его работы &6его нужно питать&r &eэнергией генератора&r из этого же мода"
+		""
+		" Чтобы подключить генератор к верстаку &7(и остальной электронике из мода)&r &6возьмите в руку&r &eгаечный ключ&r и соедините желтые точки друг с другом &6с помощью нажатия ПКМ&r &a123123"
+	]
+	quest.414C78C6851EF6E9.quest_subtitle: "Сделайте верстак для мебели"
+	quest.414C78C6851EF6E9.title: "&z&oХочется кухню покруче?"
 	quest.428C84E8A63362B7.quest_desc: ["{ftbquests.chapter.53}"]
 	quest.4541A3398F8D9447.quest_desc: [
 		"{ftbquests.chapter.82}"
@@ -440,6 +562,8 @@
 	]
 	quest.460514A34AEFE9FF.quest_subtitle: "Раздобудьте хитин"
 	quest.460514A34AEFE9FF.title: "Твердый панцирь"
+	quest.46496877023BCD31.quest_subtitle: "Высокоматериальная кухня"
+	quest.46496877023BCD31.title: "&c[ Коллекция ]: \"Невероятные лакомства\""
 	quest.47AD819295852D52.quest_desc: [
 		"   &nИнъектор плазмид&r нужен для того, чтобы &6переместить улучшенный генами&r &eплазмид&r &6в шприц&r с очищенной кровью."
 		""
@@ -454,8 +578,30 @@
 	quest.4DDC8DED691BCB1A.title: "&eМатриарх"
 	quest.4E6BDCD6C1D58084.quest_desc: ["&6&oЭтот хитин куда прочнее и тяжелее...&r&r"]
 	quest.4E6BDCD6C1D58084.quest_subtitle: "Раздобудьте прочный хитин"
+	quest.4F044C048ED6F0F4.quest_desc: [
+		"  &6Позволяет нагревать&r как &eкухонный котёл&r и &eсковороду&r из &dФермерского восторга&r, так и все остальное из &dКалейдоскопа&r."
+		""
+		"  &6Зажигается с помощью огнива&r"
+	]
+	quest.4F044C048ED6F0F4.quest_subtitle: "Калейдоскоп"
+	quest.4F044C048ED6F0F4.title: "&eПлита"
+	quest.513276280CEADDB4.quest_desc: [
+		"&eСковорода&r из &dФермерского восторга&r"
+		""
+		"Позволяет жарить целый стак еды."
+		""
+		"Необходимо &6разместить на источнике тепла&r, таком как костёр или кухонная плита."
+	]
+	quest.513276280CEADDB4.quest_subtitle: "Смертельное оружие"
+	quest.5373723F2B5BA0ED.quest_desc: [""]
+	quest.5373723F2B5BA0ED.quest_subtitle: "Первое, что стоит завести в своем саду!"
+	quest.5373723F2B5BA0ED.title: "&a[ Коллекция ]:  \"Основной набор фермера\""
+	quest.53967F5E9ABFC16E.quest_subtitle: "Настенное хранилище инструментов"
+	quest.54E1111E5CEF1E7E.title: "Чайник"
 	quest.5500226B67A44461.quest_subtitle: " &5Будет, что рассказать внукам, если я выберусь живым..."
 	quest.5500226B67A44461.title: "&5Последнее, что я увижу в своей жизни."
+	quest.55B8211F86FE8222.quest_subtitle: "Почти все, что можно встретить в мире!"
+	quest.55B8211F86FE8222.title: "&a[ Коллекция ]:  \"Культуры верхнего мира\""
 	quest.562BF588C9AE77F3.quest_desc: [
 		"{ftbquests.chapter.56AEAC22236F88E3.quest4.description1}"
 		""
@@ -490,6 +636,9 @@
 	]
 	quest.57B3D2B3506C1298.quest_subtitle: "Создайте шприц"
 	quest.57B3D2B3506C1298.title: "Хороший доктор"
+	quest.58170BB0F5130F58.quest_desc: ["  Поговаривают, что оно отпугивает вредителей"]
+	quest.58170BB0F5130F58.quest_subtitle: "Не смейте топтать мои грядки!"
+	quest.58170BB0F5130F58.title: "&eПугало!"
 	quest.58344F08DBF07AB1.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest81.description1}"]
 	quest.583A859E492347DE.quest_desc: [
 		"   &zНадоели парни с магнитным геном&r?"
@@ -522,6 +671,7 @@
 	]
 	quest.5946A043F2E1AF0E.quest_subtitle: "Создайте дешифратор ДНК"
 	quest.5946A043F2E1AF0E.title: "Декодирование по-генетически"
+	quest.5C0897E07BA04A7B.quest_subtitle: "Будущее тесто!"
 	quest.5DAFA95394B84E01.quest_desc: [
 		"{ftbquests.chapter.65}"
 		""
@@ -586,6 +736,13 @@
 		""
 		"{ftbquests.chapter.59}"
 	]
+	quest.60F53C1385733041.quest_desc: [
+		"  Чтобы получить любые &aсемена&r из Калейдоскопа сначала надо &6надеть&r &eсоломенную шляпу&r."
+		""
+		"  Теперь, когда она надета, попробуйте поломать блоки травы."
+	]
+	quest.60F53C1385733041.quest_subtitle: "То, без чего не стать фермером"
+	quest.60F53C1385733041.title: "&eСоломенная шляпа"
 	quest.613B142597B57B1F.quest_desc: [
 		"   &nОверклок&r &6ускоряет работу механизмов.&r"
 		""
@@ -598,6 +755,14 @@
 	quest.61C89B5257A695AC.quest_desc: ["   &nОрганический субстрат&r позволяет &6проращивать&r &eклетки&r &6в инкубаторе&r"]
 	quest.61C89B5257A695AC.quest_subtitle: "Создайте органический субстрат"
 	quest.61C89B5257A695AC.title: "Органический суп-страт"
+	quest.62618E952324AD10.quest_subtitle: "Винодельня!"
+	quest.6261C2D1EBD68A05.quest_desc: [
+		"  Предназначена &6только для использования&r &eтесака&r из &dКалейдоскопа&r."
+		""
+		"  Это не значит, что она Вам не пригодится."
+	]
+	quest.6261C2D1EBD68A05.quest_subtitle: "Калейдоскоп"
+	quest.6261C2D1EBD68A05.title: "&eРазделочная доска"
 	quest.63903A9AA7B60C36.quest_desc: [
 		"   &nИнкубатор&r &6нужен для проращивания&r &eклеток&r &6или обработки&r &eспиралей ДНК&r"
 		""
@@ -611,6 +776,15 @@
 		"{ftbquests.chapter.5A0B30A41D65CC21.quest51.description2}"
 		"{ftbquests.chapter.5A0B30A41D65CC21.quest51.image0}"
 	]
+	quest.64644AA0C7D5DE86.quest_desc: [
+		"  Позволяет производить &6множество махинаций разными инструментами&r, включая топоры и лопаты."
+		"  "
+		"  Подходит также и для использования &eтесака&r, однако в таком случае &6все ингредиенты будут обработаны в варианты из&r &dФермерского восторга&r."
+	]
+	quest.64644AA0C7D5DE86.quest_subtitle: "Фермерский восторг"
+	quest.64644AA0C7D5DE86.title: "&eРазделочная доска"
+	quest.681DD0056508A692.quest_desc: ["  Этот вид почвы можно использовать как в лотке, так и вместо пашни."]
+	quest.681DD0056508A692.quest_subtitle: "Адский вариант плодородной земли"
 	quest.6884857F6081D537.quest_desc: [
 		"{image:kubejs:textures/quests/ae2_6.png width:88 height:64 align:center}"
 		""
@@ -625,6 +799,8 @@
 	quest.68F6ADE597C3719E.quest_desc: [" &eЛипкая мембрана линзы, кажется, липнет к пальцам...&r"]
 	quest.68F6ADE597C3719E.quest_subtitle: "Создайте &eЛинзу жизненной силы"
 	quest.68F6ADE597C3719E.title: "&eЛинза жизненной силы"
+	quest.6B423C3BB14C70F6.quest_subtitle: "Путевка в неизвестное"
+	quest.6B423C3BB14C70F6.title: "&d[ Коллекция ]:  \"Край наслаждения\""
 	quest.6BD49D9EEE8DE61A.quest_desc: ["   &nКлетки&r &6необходимы для последующего извлечения&r &aгенов&r из существ"]
 	quest.6BD49D9EEE8DE61A.quest_subtitle: "Получите &aклетки"
 	quest.6BD49D9EEE8DE61A.title: "Клеточная материя"
@@ -669,6 +845,20 @@
 		""
 		"{ftbquests.chapter.44}"
 	]
+	quest.6F5EE211BAD7CFBE.quest_subtitle: "Тесак!"
+	quest.6F5EE211BAD7CFBE.title: "Тесак"
+	quest.6FC05D36477D360B.quest_desc: [
+		"   &8&oС того момента, как я осознал слабость своей плоти, она вызывала у меня отвращение.&r"
+		""
+		"  В это мире нужно хорошо питаться, чтобы стать сильнее, здоровее и &zвкуснее&r."
+		""
+		"  Пробуди в себе гурмана и попробуй всего понемогу."
+	]
+	quest.6FC05D36477D360B.quest_subtitle: "Хорошая пища - залог здоровья"
+	quest.6FC05D36477D360B.title: "&aПриступая к готовке"
+	quest.70244E7EB42BA63D.quest_subtitle: "Рыбак - рыбака..."
+	quest.712B7A5BEF7F5518.quest_desc: ["  Этот вид почвы можно использовать как в лотке, так и вместо пашни."]
+	quest.712B7A5BEF7F5518.quest_subtitle: "Лучше, чем простая земля."
 	quest.718B3B1782F24104.quest_desc: [
 		"   &eПостоянно пульсирует энергией.&r"
 		"             &eТёплая наощупь.&r"
@@ -682,6 +872,8 @@
 		""
 		"{ftbquests.chapter.45}"
 	]
+	quest.725F311F14E62B9F.quest_desc: ["  Этот вид почвы можно использовать как в лотке, так и вместо пашни."]
+	quest.725F311F14E62B9F.quest_subtitle: "Прекрасная почва для растений"
 	quest.729403C110B7A4EC.quest_desc: [
 		"       &c&k.&r&cЧиСТая нЕНавИсТЬ и сТРаДаНИя&k.&r"
 		"               &c&k.     .  ..    .      .&r"
@@ -759,7 +951,19 @@
 	quest.79FBDB10A0DF27B0.quest_desc: [" &eМаленький осколок чего-то большего.&r"]
 	quest.79FBDB10A0DF27B0.quest_subtitle: "Раздобудьте &eОсколок Матрицы Энтропии"
 	quest.79FBDB10A0DF27B0.title: "&eОсколок Матрицы Энтропии"
+	quest.7E2197715C3EEA2A.quest_desc: [
+		"  &eБазовые лотки&r - это отличный &6способ выращивать растения&r пусть и медленно, но пассивно, &6без ограничения на высадку по сезонам&r"
+		""
+		"  &eПримитивные лотки&r &6работают медленно&r"
+		""
+		"  Для их работы &6нужно разместить в нижний слот подходящую почву&r для растения, а также &6можно добавить&r &aудобрение&r в слот справа"
+	]
+	quest.7E2197715C3EEA2A.quest_subtitle: "Создайте примитивный лоток для растений"
+	quest.7E2197715C3EEA2A.title: "Примитивный лоток"
+	reward.2B7D2AE74228FD7B.title: "&eСобиратель Ада!"
+	reward.4BB120D4D87CD540.title: "&dСобиратель Края!"
 	task.03E7EB6A4EA4D9F4.title: "{ftbquests.chapter.33}"
+	task.071A7299D110B97D.title: "Приступая к готовке"
 	task.09E5591B028A0730.title: "Биологический ужас из гробниц"
 	task.1F3ECFF64106DE86.title: "Артроплевра"
 	task.225BCDE1D9545820.title: "Ад"
