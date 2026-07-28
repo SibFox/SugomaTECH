@@ -34,7 +34,7 @@ const registerSBRecipes = (evt) => {
         "neoforge:conditions": [
             {
                 "type": "sophisticatedcore:item_enabled",
-            "itemRegistryName": "sophisticatedbackpacks:iron_backpack"
+                "itemRegistryName": "sophisticatedbackpacks:iron_backpack"
             }
         ],
         "type": "sophisticatedbackpacks:backpack_upgrade",
@@ -75,7 +75,7 @@ const registerSBRecipes = (evt) => {
                 "item": "sophisticatedbackpacks:iron_backpack"
             },
             "I": {
-                "tag": noHash(tag.doubleplate.muntsa)
+                "tag": noHash(tag.plate.muntsa)
             },
             "P": {
                 "item": item.custom.pack_frame
@@ -109,7 +109,7 @@ const registerSBRecipes = (evt) => {
                 "item": "sophisticatedbackpacks:gold_backpack"
             },
             "I": {
-                "tag": noHash(tag.doubleplate.vitalium)
+                "tag": noHash(tag.plate.vitalium)
             },
             "E": {
                 "item": item.ingot.entro
@@ -146,7 +146,7 @@ const registerSBRecipes = (evt) => {
                 "item": "sophisticatedbackpacks:diamond_backpack"
             },
             "I": {
-                "tag": noHash(tag.doubleplate.stellite)
+                "tag": noHash(tag.plate.stellite)
             },
             "E": {
                 "item": item.ingot.netherite

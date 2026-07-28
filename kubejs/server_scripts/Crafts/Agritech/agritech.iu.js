@@ -49,7 +49,7 @@ const registerAgritechIURecipes = (evt) => {
     iuRecipe(evt, getRecipeID('mulch'), IUMachineCraft.CHEMICAL_FACTORY,
         [
             asItem(fluid.biomass, 1000),
-            asItem('minecraft:farmland'),
+            asItem('farmersdelight:rich_soil'),
             asItem(item.iu.dust.calcium_phosphate)
         ],[
             asItem('agritechevolved:mulch')
