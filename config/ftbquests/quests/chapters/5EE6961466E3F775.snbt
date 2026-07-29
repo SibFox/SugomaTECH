@@ -3,6 +3,12 @@
 	default_quest_shape: ""
 	filename: "5EE6961466E3F775"
 	group: "53BFDBEC8FC0E28F"
+	icon: {
+		components: {
+			"ftbquests:icon": "farmersdelight:textures/mob_effect/nourishment.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
 	id: "5EE6961466E3F775"
 	images: [
 		{
@@ -34,32 +40,24 @@
 			image: "kaleidoscope_tavern:item/wine"
 			rotation: 0.0d
 			width: 1.0d
-			x: 10.803571428571402d
-			y: 0.2142857142857224d
+			x: 6.252976190476161d
+			y: -5.107142857142861d
 		}
 		{
 			height: 2.0d
 			image: "quark:block/lavender_blossom_leaves"
 			rotation: 0.0d
 			width: 2.0d
-			x: 2.386904761904802d
-			y: 1.0d
+			x: 2.39583333333335d
+			y: 0.9821428571428541d
 		}
 		{
 			height: 1.0d
 			image: "kaleidoscope_tavern:block/plant/wild_grapevine"
 			rotation: 0.0d
 			width: 1.0d
-			x: 10.0d
-			y: 1.797619047619058d
-		}
-		{
-			height: 1.0d
-			image: "kaleidoscope_tavern:block/plant/wild_grapevine_plant"
-			rotation: 0.0d
-			width: 1.0d
-			x: 10.03571428571427d
-			y: 0.3690476190476275d
+			x: -0.7202380952380452d
+			y: -4.374999999999986d
 		}
 		{
 			height: 1.0d
@@ -178,24 +176,24 @@
 			image: "starcatcher:item/waterlogged_satchel"
 			rotation: 0.0d
 			width: 1.0d
-			x: 6.0833333333333215d
-			y: 2.607142857142861d
+			x: 4.0833333333333215d
+			y: 3.107142857142861d
 		}
 		{
 			height: 1.0d
 			image: "bettervannilafishes:item/female_salmon"
 			rotation: 0.0d
 			width: 1.0d
-			x: 6.0d
-			y: 1.7952380952381048d
+			x: 4.0d
+			y: 2.295238095238105d
 		}
 		{
 			height: 1.0d
 			image: "minecraft:block/seagrass"
 			rotation: 0.0d
 			width: 1.0d
-			x: 7.035714285714285d
-			y: 1.3666666666666742d
+			x: 5.035714285714285d
+			y: 1.8666666666666742d
 		}
 		{
 			height: 1.0d
@@ -215,43 +213,11 @@
 		}
 		{
 			height: 1.0d
-			image: "createpropulsion:textures/particle/smoke/big_smoke_6.png"
-			rotation: 0.0d
-			width: 1.0d
-			x: 10.255952380952351d
-			y: -4.949999999999999d
-		}
-		{
-			height: 1.0d
-			image: "createpropulsion:textures/particle/smoke/big_smoke_10.png"
-			rotation: 0.0d
-			width: 1.0d
-			x: 10.541666666666643d
-			y: -4.485714285714284d
-		}
-		{
-			height: 1.0d
-			image: "industrialupgrade:block/crop/hafnium_leaf_3"
-			rotation: 0.0d
-			width: 1.0d
-			x: -4.999999999999986d
-			y: -4.321428571428587d
-		}
-		{
-			height: 1.0d
 			image: "industrialupgrade:block/crop/hafnium_leaf_1"
 			rotation: 0.0d
 			width: 1.0d
-			x: -4.964285714285708d
-			y: -2.107142857142872d
-		}
-		{
-			height: 1.0d
-			image: "industrialupgrade:block/crop/hafnium_leaf_2"
-			rotation: 0.0d
-			width: 1.0d
-			x: -4.999999999999986d
-			y: -3.107142857142872d
+			x: -4.5d
+			y: -2.169642857142861d
 		}
 		{
 			height: 1.0d
@@ -266,56 +232,48 @@
 			image: "minecraft:block/nether_wart_stage2"
 			rotation: 0.0d
 			width: 1.0d
-			x: -6.0d
-			y: -2.7142857142857117d
+			x: -5.535714285714285d
+			y: -2.026785714285708d
 		}
 		{
 			height: 1.0d
 			image: "farmersdelight:textures/particle/sparkle_1.png"
 			rotation: 0.0d
 			width: 1.0d
-			x: -5.785714285714285d
-			y: -3.8571428571428577d
+			x: -5.714285714285715d
+			y: -3.776785714285708d
 		}
 		{
 			height: 1.0d
 			image: "visuality:textures/particle/sparkle_3.png"
 			rotation: 0.0d
 			width: 1.0d
-			x: -5.178571428571431d
-			y: -5.5d
-		}
-		{
-			height: 1.0d
-			image: "subtle_effects:textures/particle/spark.png"
-			rotation: 0.0d
-			width: 1.0d
-			x: -4.678571428571431d
-			y: -4.821428571428573d
+			x: -4.892857142857139d
+			y: -5.169642857142847d
 		}
 		{
 			height: 1.0d
 			image: "mynethersdelight:item/boiled_egg"
 			rotation: 0.0d
 			width: 1.0d
-			x: 6.428571428571431d
-			y: -2.9261904761904844d
+			x: 4.928571428571431d
+			y: -2.4261904761904844d
 		}
 		{
 			height: 1.0d
 			image: "kaleidoscope_cookery:item/kitchen_shovel_has_oil"
 			rotation: 0.0d
 			width: 1.0d
-			x: 6.0d
-			y: -3.354761904761915d
+			x: 4.5d
+			y: -2.854761904761915d
 		}
 		{
 			height: 1.0d
 			image: "farmersdelight:item/noodle_soup"
 			rotation: 0.0d
 			width: 1.0d
-			x: 8.02857142857144d
-			y: -1.1261904761904873d
+			x: 6.528571428571439d
+			y: -0.6261904761904873d
 		}
 		{
 			height: 1.0d
@@ -330,16 +288,16 @@
 			image: "minecraft:textures/mob_effect/water_breathing.png"
 			rotation: 0.0d
 			width: 1.0d
-			x: 6.619047619047606d
-			y: 1.0d
+			x: 4.619047619047606d
+			y: 1.5d
 		}
 		{
 			height: 0.75d
 			image: "serene_shrubbery:textures/particle/butterfly_bush_particle_16.png"
 			rotation: 0.0d
 			width: 0.75d
-			x: 10.601190476190439d
-			y: -0.8904761904762069d
+			x: 0.1458333333333357d
+			y: -6.267857142857153d
 		}
 		{
 			height: 1.0d
@@ -354,8 +312,8 @@
 			image: "minecraft:textures/particle/effect_5.png"
 			rotation: 0.0d
 			width: 0.75d
-			x: 10.886904761904702d
-			y: 1.109523809523786d
+			x: 4.681547619047592d
+			y: -6.0d
 		}
 		{
 			height: 1.0d
@@ -380,6 +338,94 @@
 			width: 1.0d
 			x: 1.6011904761904177d
 			y: -1.8904761904761997d
+		}
+		{
+			height: 1.0d
+			image: "kaleidoscope_tavern:block/plant/wild_grapevine_plant"
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.7529761904761614d
+			y: -5.535714285714285d
+		}
+		{
+			height: 1.0d
+			image: "farmersdelight:textures/particle/steam_9.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.645833333333357d
+			y: -5.053571428571427d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/tube_coral"
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.252976190476197d
+			y: 3.589285714285708d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/sea_pickle"
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.645833333333343d
+			y: 3.732142857142847d
+		}
+		{
+			height: 1.0d
+			image: "visuality:textures/particle/underwater_bubble.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.9315476190476275d
+			y: 2.6964285714285694d
+		}
+		{
+			height: 1.0d
+			image: "farmersdelight:block/budding_tomatoes_stage3"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.3244047619047805d
+			y: 0.2321428571428612d
+		}
+		{
+			height: 1.0d
+			image: "farmersdelight:item/cooking_pot"
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.5d
+			y: -4.5d
+		}
+		{
+			height: 1.0d
+			image: "farmersdelight:item/horse_feed"
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.318452380952351d
+			y: -0.875d
+		}
+		{
+			height: 1.0d
+			image: "farmersdelight:textures/particle/sparkle_1.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.568452380952351d
+			y: -1.3035714285714235d
+		}
+		{
+			height: 1.0d
+			image: "industrialupgrade:block/crop/terra_wart_3"
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.0d
+			y: -4.205357142857139d
+		}
+		{
+			height: 1.0d
+			image: "industrialupgrade:item/bee_genome_radius_i"
+			rotation: 0.0d
+			width: 1.0d
+			x: -6.107142857142847d
+			y: -3.062499999999993d
 		}
 	]
 	order_index: 0
@@ -533,8 +579,8 @@
 				item: { count: 1, id: "kaleidoscope_cookery:iron_kitchen_knife" }
 				type: "item"
 			}]
-			x: 7.194047619047673d
-			y: -1.5d
+			x: 5.694047619047673d
+			y: -1.0d
 		}
 		{
 			id: "64644AA0C7D5DE86"
@@ -580,8 +626,8 @@
 				item: { count: 1, id: "kaleidoscope_cookery:kitchen_shovel" }
 				type: "item"
 			}]
-			x: 8.194047619047673d
-			y: -2.0d
+			x: 6.694047619047673d
+			y: -1.5d
 		}
 		{
 			id: "53967F5E9ABFC16E"
@@ -591,8 +637,8 @@
 				item: { count: 1, id: "kaleidoscope_cookery:kitchenware_racks" }
 				type: "item"
 			}]
-			x: 7.194047619047673d
-			y: -0.5d
+			x: 5.694047619047673d
+			y: 0.0d
 		}
 		{
 			dependency_requirement: "one_started"
@@ -613,8 +659,8 @@
 				item: { count: 1, id: "kaleidoscope_cookery:oil" }
 				type: "item"
 			}]
-			x: 7.194047619047673d
-			y: -3.5d
+			x: 5.694047619047673d
+			y: -3.0d
 		}
 		{
 			id: "27EAD96596A07F85"
@@ -623,8 +669,8 @@
 				item: { count: 1, id: "kaleidoscope_cookery:oil_pot" }
 				type: "item"
 			}]
-			x: 7.194047619047673d
-			y: -2.5d
+			x: 5.681547619047613d
+			y: -2.017857142857153d
 		}
 		{
 			dependencies: ["0370762C646A0D8D"]
@@ -637,8 +683,8 @@
 				item: { count: 1, id: "kaleidoscope_cookery:pot" }
 				type: "item"
 			}]
-			x: 9.5d
-			y: -3.5d
+			x: 7.5d
+			y: -3.0500000000000007d
 		}
 		{
 			hide_dependency_lines: true
@@ -658,8 +704,8 @@
 					type: "item"
 				}
 			]
-			x: 11.5d
-			y: -3.5d
+			x: 9.5d
+			y: -3.0500000000000007d
 		}
 		{
 			hide_dependency_lines: true
@@ -669,8 +715,8 @@
 				item: { count: 1, id: "farmersdelight:cooking_pot" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: -3.869047619047599d
+			x: 8.5d
+			y: -3.4190476190476d
 		}
 		{
 			id: "20C9664E8AB5B890"
@@ -679,8 +725,8 @@
 				item: { count: 1, id: "kaleidoscope_cookery:steamer" }
 				type: "item"
 			}]
-			x: 9.5d
-			y: -4.5d
+			x: 7.5d
+			y: -4.050000000000001d
 		}
 		{
 			icon: {
@@ -700,8 +746,8 @@
 					type: "item"
 				}
 			]
-			x: 6.194047619047673d
-			y: -2.0d
+			x: 4.694047619047673d
+			y: -1.5d
 		}
 		{
 			hide_dependency_lines: true
@@ -1123,8 +1169,8 @@
 				item: { count: 1, id: "farmersdelight:rich_soil" }
 				type: "item"
 			}]
-			x: -4.994047619047585d
-			y: -1.5119047619047556d
+			x: -4.5d
+			y: -1.5d
 		}
 		{
 			icon: {
@@ -1435,7 +1481,10 @@
 			y: -0.4166666666666856d
 		}
 		{
-			dependencies: ["725F311F14E62B9F"]
+			dependencies: [
+				"725F311F14E62B9F"
+				"681DD0056508A692"
+			]
 			hide_lock_icon: true
 			id: "2D7EE25C41D4D9D1"
 			optional: true
@@ -1543,8 +1592,8 @@
 				item: { count: 1, id: "farmersdelight:skillet" }
 				type: "item"
 			}]
-			x: 10.5d
-			y: -2.869047619047599d
+			x: 8.5d
+			y: -2.4190476190476d
 		}
 		{
 			dependencies: ["1433B84A058A6BCE"]
@@ -1578,8 +1627,8 @@
 				item: { count: 1, id: "mynethersdelight:resurgent_soil" }
 				type: "item"
 			}]
-			x: -5.994047619047585d
-			y: -2.0119047619047556d
+			x: -5.5d
+			y: -1.5d
 		}
 		{
 			id: "62618E952324AD10"
@@ -1588,8 +1637,8 @@
 				item: { count: 1, id: "kaleidoscope_tavern:barrel" }
 				type: "item"
 			}]
-			x: 10.005952380952401d
-			y: 0.0d
+			x: 5.5d
+			y: -5.589285714285708d
 		}
 		{
 			id: "1101794EDE79E8F2"
@@ -1598,22 +1647,42 @@
 				item: { count: 1, id: "kaleidoscope_tavern:empty_bottle" }
 				type: "item"
 			}]
-			x: 11.505952380952401d
-			y: 0.5d
-		}
-		{
-			id: "08DC6A140917778C"
-			tasks: [{
-				id: "13A3A070900C34C8"
-				item: { count: 1, id: "kaleidoscope_tavern:grape" }
-				type: "item"
-			}]
-			x: 10.005952380952401d
-			y: 1.0d
+			x: 5.5d
+			y: -4.589285714285708d
 		}
 		{
 			icon: {
-				id: "minecraft:fishing_rod"
+				id: "kaleidoscope_tavern:grape"
+			}
+			id: "08DC6A140917778C"
+			tasks: [
+				{
+					id: "13A3A070900C34C8"
+					item: { count: 1, id: "kaleidoscope_tavern:grape" }
+					type: "item"
+				}
+				{
+					id: "7CB693136CD98354"
+					item: { count: 1, id: "kaleidoscope_tavern:green_grape" }
+					type: "item"
+				}
+				{
+					id: "29C35D400651FD9D"
+					item: { count: 1, id: "kaleidoscope_tavern:gold_grape" }
+					type: "item"
+				}
+				{
+					id: "02E1975F29E92B90"
+					item: { count: 1, id: "kaleidoscope_tavern:ice_grape" }
+					type: "item"
+				}
+			]
+			x: -0.7202380952380452d
+			y: -4.874999999999986d
+		}
+		{
+			icon: {
+				id: "starcatcher:starcatcher_rod"
 			}
 			id: "70244E7EB42BA63D"
 			optional: true
@@ -1629,8 +1698,8 @@
 					type: "item"
 				}
 			]
-			x: 7.005952380952415d
-			y: 2.104761904761922d
+			x: 5.005952380952415d
+			y: 2.604761904761922d
 		}
 		{
 			id: "54E1111E5CEF1E7E"
@@ -1639,8 +1708,55 @@
 				item: { count: 1, id: "kaleidoscope_cookery:teapot" }
 				type: "item"
 			}]
-			x: 11.5d
-			y: -4.5d
+			x: 9.5d
+			y: -4.050000000000001d
+		}
+		{
+			id: "7D9C2D7B26B96F0B"
+			tasks: [{
+				icon: {
+					id: "kaleidoscope_tavern:grapevine"
+				}
+				id: "26A388C674B5141A"
+				observation_type: "block"
+				observe_type: 0
+				timer: 0L
+				to_observe: "kaleidoscope_tavern:wild_grapevine_plant"
+				type: "observation"
+			}]
+			x: -0.7202380952380452d
+			y: -5.874999999999986d
+		}
+		{
+			id: "705C0672ECE1C88E"
+			tasks: [{
+				count: 8L
+				id: "048E133B712AE7ED"
+				item: { count: 1, id: "kaleidoscope_tavern:trellis" }
+				type: "item"
+			}]
+			x: 0.27976190476195484d
+			y: -5.374999999999986d
+		}
+		{
+			id: "1B3120FF31141F5B"
+			tasks: [{
+				id: "057166A86DEB4447"
+				item: { count: 1, id: "kaleidoscope_tavern:pressing_tub" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -5.089285714285708d
+		}
+		{
+			id: "228FCAB0089DE1C3"
+			tasks: [{
+				id: "7E1B7D2EC9453DBE"
+				item: { count: 1, id: "starcatcher:tackle_box" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.5d
 		}
 	]
 }

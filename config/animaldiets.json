@@ -6,5 +6,6 @@
   "minecraft:cow": "HERBIVORE",
   "minecraft:sheep": "HERBIVORE",
   "arphex:moth_moontracker": "CARNIVORE",
-  "arphex:spider_flat": "CARNIVORE"
+  "arphex:spider_flat": "CARNIVORE",
+  "arphex:spider_jump": "CARNIVORE"
 }

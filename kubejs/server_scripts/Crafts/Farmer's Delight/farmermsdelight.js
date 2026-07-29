@@ -85,5 +85,68 @@ const registerFDRecipes = (evt) => {
     // evt.smoking('createcybernetics:cooked_liver', item.cn.bodypart.liver).xp(0.35)
     // evt.smoking('createcybernetics:roasted_andouille', 'createcybernetics:andouille_sausage').xp(0.35)
 
+
+
+    // ====== КОМОПСТЫ (FD, MND, ATE) ======
+
+    // Органический компост
+    evt.shapeless(Item.of('farmersdelight:organic_compost', 8),
+        [
+            'industrialupgrade:blockresource/peat',
+            'agritechevolved:compacted_biomass',
+            'agritechevolved:compacted_biomass',
+            'farmersdelight:tree_bark',
+            'farmersdelight:tree_bark',
+            'industrialupgrade:fertilizer',
+            'industrialupgrade:fertilizer',
+            'industrialupgrade:fertilizer',
+            'industrialupgrade:fertilizer'
+        ]
+    ).id(getRecipeID('organic_compost'))
+
+    // Летейский компост
+    evt.shapeless(Item.of('mynethersdelight:letios_compost', 8),
+        [
+            [
+                'minecraft:soul_sand',
+                'minecraft:soul_soil'
+            ],
+            'agritechevolved:compacted_biomass',
+            'agritechevolved:compacted_biomass',
+            [
+                'minecraft:warped_roots',
+                'minecraft:crimson_roots'
+            ],
+            [
+                'minecraft:warped_roots',
+                'minecraft:crimson_roots'
+            ],
+            'industrialupgrade:fertilizer',
+            'industrialupgrade:fertilizer',
+            'industrialupgrade:fertilizer',
+            'industrialupgrade:fertilizer'
+        ]
+    ).id(getRecipeID('letios_compost'))
+    
+    iuRecipe(evt, getRecipeID('mulch'), IUMachineCraft.CHEMICAL_FACTORY,
+        [
+            asItem(fluid.brilliant_azure, 1000),
+            asItem('farmersdelight:rich_soil'),
+            asItem('mynethersdelight:resurgent_soil')
+        ],[
+            asItem('agritechevolved:mulch')
+        ]
+    )
+
+    aeReactionRecipe(evt, getRecipeID('infused_farmland'),
+        10000, asItem(fluid.quantum_infusion, 200),
+        [
+            asItem('agritechevolved:mulch', 4),
+            asItem(item.iu.plutonium_lazuli_crystall)
+
+        ],
+        asItem('agritechevolved:infused_farmland', 4)
+    )
+
     console.info('Farmer\'s Delight recipe adding passed')
 }

@@ -31,6 +31,9 @@ const registerItemObliteration = () => {
         'agritechevolved:capacitor_tier1', 'agritechevolved:capacitor_tier2', 
         'agritechevolved:capacitor_tier3', 'geneticsresequenced:coal_generator',
         'kaleidoscope_cookery:fruit_basket', 'megacells:sky_osmium_ingot',
+        'advanced_ae:quantum_helmet', 'advanced_ae:quantum_chestplate',
+        'advanced_ae:quantum_leggings', 'advanced_ae:quantum_boots',
+        // 'advanced_ae:*_card'
     ]
 
     const toStone = [

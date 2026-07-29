@@ -133,5 +133,104 @@ const registerIURecipes = (evt) => {
     ).id(getRecipeID('wire_isolated_copper_pg'))
     
     
+
+    iuRecipe(evt, getRecipeID('processor_3'), IUMachineCraft.ELECTRONIC_ASSEMBLER,
+        [
+            asItem(item.iu.chip.lvl2),
+            asItem(item.iu.inductor.lvl2),
+            asItem(item.iu.polished_silicon_disk),
+            asItem(item.iu.diode.lvl1, 2),
+            asItem(item.iu.cooling_system.lvl1)
+        ],[
+            asItem(item.iu.processor.lvl3)
+        ]
+    )
+
+    iuRecipe(evt, getRecipeID('processor_4'), IUMachineCraft.ELECTRONIC_ASSEMBLER,
+        [
+            asItem(item.iu.chip.lvl2, 2),
+            asItem(item.iu.inductor.lvl2),
+            asItem(item.iu.polished_silicon_disk),
+            asItem(item.iu.diode.lvl2, 2),
+            asItem(item.iu.cooling_system.lvl1)
+        ],[
+            asItem(item.iu.processor.lvl4)
+        ]
+    )
+
+    iuRecipe(evt, getRecipeID('processor_5'), IUMachineCraft.ELECTRONIC_ASSEMBLER,
+        [
+            asItem(item.iu.chip.lvl3),
+            asItem(item.iu.inductor.lvl3),
+            asItem(item.iu.processor.lvl1),
+            asItem(item.iu.diode.lvl2, 2),
+            asItem(item.iu.cooling_system.lvl2)
+        ],[
+            asItem(item.iu.processor.lvl5)
+        ]
+    )
+
+    iuRecipe(evt, getRecipeID('processor_6'), IUMachineCraft.ELECTRONIC_ASSEMBLER,
+        [
+            asItem(item.iu.chip.lvl3, 2),
+            asItem(item.iu.inductor.lvl3),
+            asItem(item.iu.processor.lvl2),
+            asItem(item.iu.diode.lvl2, 2),
+            asItem(item.iu.cooling_system.lvl2)
+        ],[
+            asItem(item.iu.processor.lvl6)
+        ]
+    )
+
+    iuRecipe(evt, getRecipeID('processor_7'), IUMachineCraft.ELECTRONIC_ASSEMBLER,
+        [
+            asItem(item.iu.chip.lvl4),
+            asItem(item.iu.inductor.lvl3),
+            asItem(item.iu.processor.lvl3),
+            asItem(item.iu.diode.lvl3, 2),
+            asItem(item.iu.cooling_system.lvl3)
+        ],[
+            asItem(item.iu.processor.lvl7)
+        ]
+    )
+
+    iuRecipe(evt, getRecipeID('processor_8'), IUMachineCraft.ELECTRONIC_ASSEMBLER,
+        [
+            asItem(item.iu.chip.lvl4, 2),
+            asItem(item.iu.inductor.lvl3),
+            asItem(item.iu.processor.lvl4),
+            asItem(item.iu.diode.lvl3, 2),
+            asItem(item.iu.cooling_system.lvl3)
+        ],[
+            asItem(item.iu.processor.lvl8)
+        ]
+    )
+
+    iuRecipe(evt, getRecipeID('processor_9'), IUMachineCraft.ELECTRONIC_ASSEMBLER,
+        [
+            asItem(item.iu.chip.lvl5, 2),
+            asItem(item.iu.inductor.lvl4),
+            asItem(item.iu.processor.lvl5),
+            asItem(item.iu.diode.lvl3, 2),
+            asItem(item.iu.cooling_system.lvl4)
+        ],[
+            asItem(item.iu.processor.lvl9)
+        ]
+    )
+
+    iuRecipe(evt, getRecipeID('processor_10'), IUMachineCraft.ELECTRONIC_ASSEMBLER,
+        [
+            asItem(item.iu.chip.lvl6, 3),
+            asItem(item.iu.inductor.lvl4),
+            asItem(item.iu.processor.lvl6),
+            asItem(item.iu.diode.lvl3, 2),
+            asItem(item.iu.cooling_system.lvl4)
+        ],[
+            asItem(item.iu.processor.lvl10)
+        ]
+    )
+
+
+
     console.info('Industrial Upgrade recipe adding passed')
 }
