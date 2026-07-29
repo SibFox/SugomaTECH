@@ -4,19 +4,9 @@
       "seed": "minecraft:wheat_seeds",
       "validSoils": [
         "minecraft:farmland",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -41,19 +31,9 @@
       "seed": "minecraft:beetroot_seeds",
       "validSoils": [
         "minecraft:farmland",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -78,19 +58,9 @@
       "seed": "minecraft:carrot",
       "validSoils": [
         "minecraft:farmland",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -107,19 +77,9 @@
       "seed": "minecraft:potato",
       "validSoils": [
         "minecraft:farmland",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -144,19 +104,9 @@
       "seed": "minecraft:melon_seeds",
       "validSoils": [
         "minecraft:farmland",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -173,19 +123,9 @@
       "seed": "minecraft:pumpkin_seeds",
       "validSoils": [
         "minecraft:farmland",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -205,7 +145,8 @@
         "minecraft:grass_block",
         "minecraft:sand",
         "minecraft:red_sand",
-        "agritechevolved:mulch"
+        "agritechevolved:mulch",
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -223,7 +164,8 @@
       "validSoils": [
         "minecraft:sand",
         "minecraft:red_sand",
-        "agritechevolved:mulch"
+        "agritechevolved:mulch",
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -248,9 +190,9 @@
         "minecraft:mud",
         "minecraft:moss_block",
         "minecraft:muddy_mangrove_roots",
-        "agritechevolved:mulch",
+        "farmersdelight:organic_compost",
         "farmersdelight:rich_soil",
-        "farmersdelight:organic_compost"
+        "agritechevolved:mulch"
       ],
       "drops": [
         {
@@ -267,11 +209,30 @@
       "seed": "farmersdelight:rice_panicle",
       "validSoils": [
         "minecraft:mud",
-        "agritechevolved:mulch"
+        "agritechevolved:mulch",
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
           "item": "farmersdelight:rice_panicle",
+          "count": {
+            "min": 1,
+            "max": 3
+          },
+          "chance": 1.0
+        }
+      ]
+    },
+    {
+      "seed": "kaleidoscope_cookery:wild_rice",
+      "validSoils": [
+        "minecraft:mud",
+        "agritechevolved:mulch",
+        "agritechevolved:infused_farmland"
+      ],
+      "drops": [
+        {
+          "item": "kaleidoscope_cookery:rice_panicle",
           "count": {
             "min": 1,
             "max": 3
@@ -293,21 +254,11 @@
         "minecraft:mud",
         "minecraft:moss_block",
         "minecraft:muddy_mangrove_roots",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
-        "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland",
+        "farmersdelight:organic_compost",
         "farmersdelight:rich_soil",
-        "farmersdelight:organic_compost"
+        "farmersdelight:rich_soil_farmland",
+        "agritechevolved:mulch",
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -325,11 +276,11 @@
       "validSoils": [
         "minecraft:farmland",
         "minecraft:muddy_mangrove_roots",
-        "agritechevolved:infused_farmland",
-        "agritechevolved:mulch",
-        "farmersdelight:rich_soil_farmland",
+        "farmersdelight:organic_compost",
         "farmersdelight:rich_soil",
-        "farmersdelight:organic_compost"
+        "farmersdelight:rich_soil_farmland",
+        "agritechevolved:mulch",
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -345,7 +296,8 @@
     {
       "seed": "minecraft:glow_berries",
       "validSoils": [
-        "minecraft:moss_block"
+        "minecraft:moss_block",
+        "agritechevolved:mulch"
       ],
       "drops": [
         {
@@ -361,7 +313,10 @@
     {
       "seed": "minecraft:nether_wart",
       "validSoils": [
-        "minecraft:soul_sand"
+        "minecraft:soul_sand",
+        "mynethersdelight:resurgent_soil",
+        "mynethersdelight:resurgent_soil_farmland",
+        "agritechevolved:mulch"
       ],
       "drops": [
         {
@@ -401,7 +356,9 @@
     {
       "seed": "minecraft:kelp",
       "validSoils": [
-        "minecraft:mud"
+        "minecraft:mud",
+        "agritechevolved:mulch",
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -419,9 +376,13 @@
       "validSoils": [
         "minecraft:mycelium",
         "minecraft:podzol",
-        "agritechevolved:mulch",
         "farmersdelight:rich_soil",
-        "farmersdelight:organic_compost"
+        "farmersdelight:organic_compost",
+        "minecraft:netherrack",
+        "minecraft:crimson_nylium",
+        "minecraft:warped_nylium",
+        "mynethersdelight:resurgent_soil",
+        "agritechevolved:mulch"
       ],
       "drops": [
         {
@@ -439,9 +400,13 @@
       "validSoils": [
         "minecraft:mycelium",
         "minecraft:podzol",
-        "agritechevolved:mulch",
         "farmersdelight:rich_soil",
-        "farmersdelight:organic_compost"
+        "farmersdelight:organic_compost",
+        "minecraft:netherrack",
+        "minecraft:crimson_nylium",
+        "minecraft:warped_nylium",
+        "mynethersdelight:resurgent_soil",
+        "agritechevolved:mulch"
       ],
       "drops": [
         {
@@ -477,19 +442,9 @@
       "seed": "minecraft:pitcher_pod",
       "validSoils": [
         "minecraft:farmland",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -506,19 +461,9 @@
       "seed": "minecraft:torchflower_seeds",
       "validSoils": [
         "minecraft:farmland",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -544,19 +489,9 @@
         "minecraft:mud",
         "minecraft:moss_block",
         "minecraft:muddy_mangrove_roots",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -582,19 +517,9 @@
         "minecraft:mud",
         "minecraft:moss_block",
         "minecraft:muddy_mangrove_roots",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -620,19 +545,9 @@
         "minecraft:mud",
         "minecraft:moss_block",
         "minecraft:muddy_mangrove_roots",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -658,19 +573,9 @@
         "minecraft:mud",
         "minecraft:moss_block",
         "minecraft:muddy_mangrove_roots",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -696,19 +601,9 @@
         "minecraft:mud",
         "minecraft:moss_block",
         "minecraft:muddy_mangrove_roots",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -734,19 +629,9 @@
         "minecraft:mud",
         "minecraft:moss_block",
         "minecraft:muddy_mangrove_roots",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -772,19 +657,9 @@
         "minecraft:mud",
         "minecraft:moss_block",
         "minecraft:muddy_mangrove_roots",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -810,19 +685,9 @@
         "minecraft:mud",
         "minecraft:moss_block",
         "minecraft:muddy_mangrove_roots",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -848,19 +713,9 @@
         "minecraft:mud",
         "minecraft:moss_block",
         "minecraft:muddy_mangrove_roots",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -886,19 +741,9 @@
         "minecraft:mud",
         "minecraft:moss_block",
         "minecraft:muddy_mangrove_roots",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -924,19 +769,9 @@
         "minecraft:mud",
         "minecraft:moss_block",
         "minecraft:muddy_mangrove_roots",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -962,19 +797,9 @@
         "minecraft:mud",
         "minecraft:moss_block",
         "minecraft:muddy_mangrove_roots",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -1000,19 +825,9 @@
         "minecraft:mud",
         "minecraft:moss_block",
         "minecraft:muddy_mangrove_roots",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -1038,19 +853,9 @@
         "minecraft:mud",
         "minecraft:moss_block",
         "minecraft:muddy_mangrove_roots",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -1076,19 +881,9 @@
         "minecraft:mud",
         "minecraft:moss_block",
         "minecraft:muddy_mangrove_roots",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -1114,19 +909,9 @@
         "minecraft:mud",
         "minecraft:moss_block",
         "minecraft:muddy_mangrove_roots",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -1152,19 +937,9 @@
         "minecraft:mud",
         "minecraft:moss_block",
         "minecraft:muddy_mangrove_roots",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -1181,19 +956,9 @@
       "seed": "farmersdelight:cabbage_seeds",
       "validSoils": [
         "minecraft:farmland",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -1218,19 +983,9 @@
       "seed": "farmersdelight:tomato_seeds",
       "validSoils": [
         "minecraft:farmland",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -1244,22 +999,86 @@
       ]
     },
     {
+      "seed": "kaleidoscope_cookery:tomato_seed",
+      "validSoils": [
+        "minecraft:farmland",
+        "farmersdelight:rich_soil_farmland",
+        "agritechevolved:mulch",
+        "agritechevolved:infused_farmland"
+      ],
+      "drops": [
+        {
+          "item": "kaleidoscope_cookery:tomato",
+          "count": {
+            "min": 1,
+            "max": 2
+          },
+          "chance": 1.0
+        }
+      ]
+    },
+    {
+      "seed": "kaleidoscope_cookery:chili_seed",
+      "validSoils": [
+        "minecraft:farmland",
+        "farmersdelight:rich_soil_farmland",
+        "mynethersdelight:resurgent_soil_farmland",
+        "agritechevolved:mulch",
+        "agritechevolved:infused_farmland"
+      ],
+      "drops": [
+        {
+          "item": "kaleidoscope_cookery:red_chili",
+          "count": {
+            "min": 1,
+            "max": 2
+          },
+          "chance": 0.8
+        },
+        {
+          "item": "kaleidoscope_cookery:green_chili",
+          "count": {
+            "min": 1,
+            "max": 2
+          },
+          "chance": 0.8
+        }
+      ]
+    },
+    {
+      "seed": "kaleidoscope_cookery:lettuce_seed",
+      "validSoils": [
+        "minecraft:farmland",
+        "farmersdelight:rich_soil_farmland",
+        "agritechevolved:mulch",
+        "agritechevolved:infused_farmland"
+      ],
+      "drops": [
+        {
+          "item": "kaleidoscope_cookery:lettuce",
+          "count": {
+            "min": 1,
+            "max": 2
+          },
+          "chance": 1
+        },
+        {
+          "item": "kaleidoscope_cookery:caterpillar",
+          "count": {
+            "min": 1,
+            "max": 1
+          },
+          "chance": 0.1
+        }
+      ]
+    },
+    {
       "seed": "farmersdelight:onion",
       "validSoils": [
         "minecraft:farmland",
-        "mysticalagriculture:inferium_farmland",
-        "mysticalagriculture:prudentium_farmland",
-        "mysticalagriculture:tertium_farmland",
-        "mysticalagriculture:imperium_farmland",
-        "mysticalagriculture:supremium_farmland",
-        "mysticalagradditions:insanium_farmland",
-        "agritechevolved:infused_farmland",
+        "farmersdelight:rich_soil_farmland",
         "agritechevolved:mulch",
-        "justdirethings:goosoil_tier1",
-        "justdirethings:goosoil_tier2",
-        "justdirethings:goosoil_tier3",
-        "justdirethings:goosoil_tier4",
-        "farmersdelight:rich_soil_farmland"
+        "agritechevolved:infused_farmland"
       ],
       "drops": [
         {
@@ -1703,6 +1522,7 @@
       "validSoils": [
         "minecraft:crimson_nylium",
         "minecraft:warped_nylium",
+        "mynethersdelight:resurgent_soil",
         "agritechevolved:mulch"
       ],
       "drops": [
@@ -1745,6 +1565,7 @@
       "validSoils": [
         "minecraft:crimson_nylium",
         "minecraft:warped_nylium",
+        "mynethersdelight:resurgent_soil",
         "agritechevolved:mulch"
       ],
       "drops": [
@@ -1866,11 +1687,15 @@
     },
     {
       "soil": "farmersdelight:rich_soil",
-      "growthModifier": 0.02
+      "growthModifier": 0.03
     },
     {
       "soil": "farmersdelight:rich_soil_farmland",
-      "growthModifier": 0.02
+      "growthModifier": 0.035
+    },
+    {
+      "soil": "mynethersdelight:resurgent_soil",
+      "growthModifier": 0.03
     },
     {
       "soil": "farmersdelight:organic_compost",

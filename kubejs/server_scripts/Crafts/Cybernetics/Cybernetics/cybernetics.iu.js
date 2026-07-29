@@ -26,10 +26,10 @@ const registerCyberneticsIURecipes = (evt) => {
     iuRecipe(evt, getRecipeID('synthnerves'), IUMachineCraft.CHEMICAL_FACTORY,
         [
             asItem(fluid.glucose, 100),
-            asItem(item.custom.synth_nerve_cables),
+            asItem(item.custom.synth_nerve_cables, 3),
             asItem(item.custom.conducting_organic_polymer)
         ],[
-            asItem(item.cn.synthnerves)
+            asItem(item.cn.synthnerves, 3)
         ]
     )
 

@@ -36,6 +36,27 @@ const registerAgritechCTRecipes = (evt) => {
             G: item.iu.tempered_glass
         }
     ).id(getRecipeID('cloche_dome'))
+
+    evt.shaped(
+        Item.of('agritechevolved:composter', 1),
+        [
+            ' S ',
+            'BQE',
+            ' O '
+        ],{
+            Q: item.iu.machine_corpus.bio,
+            E: item.iu.module.energy,
+            B: item.iu.module.bio.lvl1,
+            S: item.iu.microchip.lvl3,
+            O: item.iu.module.slot.x8
+        }
+    ).id(getRecipeID('composter'))
+    
+    
+
+
+
+    
     
     evt.shaped(
         Item.of('agritechevolved:ym_mk1', 2),
@@ -124,6 +145,5 @@ const registerAgritechCTRecipes = (evt) => {
             B: item.iu.tech_box.big.quantum
         }
     ).id(getRecipeID('sm_mk3'))
-
 
 }

@@ -119,3 +119,136 @@
 # item = "mysticalagriculture:mystical_fertilizer"
 # speed_multiplier = 1.2
 # yield_multiplier = 1.2
+
+
+# ====== ПОЧВЫ ======
+[soils.mc_dirt]
+block = "minecraft:dirt"
+growth_modifier = 0.01
+
+[soil.mc_grass_block]
+block = "minecraft:grass_block"
+growth_modifier = 0.01
+
+[soils.mc_coarse_dirt]
+block = "minecraft:coarse_dirt"
+growth_modifier = 0.008
+
+[soil.mc_rooted_dirt]
+block = "minecraft:rooted_dirt"
+growth_modifier = 0.01
+
+[soil.mc_moss_block]
+block = "minecraft:moss_block"
+growth_modifier = 0.01
+
+[soils.mc_netherrack]
+block = "minecraft:netherrack"
+growth_modifier = 0.01
+
+[soils.mc_podzol]
+block = "minecraft:podzol"
+growth_modifier = 0.012
+
+[soils.mc_mycelium]
+block = "minecraft:mycelium"
+growth_modifier = 0.012
+
+[soils.mc_mud]
+block = "minecraft:mud"
+growth_modifier = 0.015
+
+[soil.mc_farmland]
+block = "minecraft:farmland"
+growth_modifier = 0.015
+
+[soil.mc_sand]
+block = "minecraft:sand"
+growth_modifier = 0.012
+
+[soil.mc_red_sand]
+block = "minecraft:red_sand"
+growth_modifier = 0.012
+
+[soil.mc_soul_sand]
+block = "minecraft:soul_sand"
+growth_modifier = 0.015
+
+[soil.mc_end_stone]
+block = "minecraft:end_stone"
+growth_modifier = 0.015
+
+[soil.mc_jungle_log]
+block = "minecraft:jungle_log"
+growth_modifier = 0.015
+
+[soil.mc_jungle_wood]
+block = "minecraft:jungle_wood"
+growth_modifier = 0.015
+
+[soil.mc_stripped_jungle_log]
+block = "minecraft:stripped_jungle_log"
+growth_modifier = 0.015
+
+[soil.mc_stripped_jungle_wood]
+block = "minecraft:stripped_jungle_wood"
+growth_modifier = 0.015
+
+[soil.mc_crimson_nylium]
+block = "minecraft:crimson_nylium"
+growth_modifier = 0.015
+
+[soil.mc_warped_nylium]
+block = "minecraft:warped_nylium"
+growth_modifier = 0.015
+
+[soil.fd_organic_compost]
+block = "farmersdelight:organic_compost"
+growth_modifier = 0.02
+
+[soil.fd_rich_soil]
+block = "farmersdelight:rich_soil"
+growth_modifier = 0.025
+
+[soil.fd_rich_soil_farmland]
+block = "farmersdelight:rich_soil_farmland"
+growth_modifier = 0.035
+
+[soil.fd_resurgent_soil]
+block = "mynethersdelight:resurgent_soil"
+growth_modifier = 0.025
+
+[soil.fd_resurgent_soil_farmland]
+block = "mynethersdelight:resurgent_soil_farmland"
+growth_modifier = 0.035
+
+[soil.at_mulch]
+block = "agritechevolved:mulch"
+growth_modifier = 0.06
+
+[soil.at_infused_farmland]
+block = "agritechevolved:infused_farmland"
+growth_modifier = 0.12
+
+
+# ===== УДОБРЕНИЯ =====
+
+[fertilizers.bone_meal]
+item = "minecraft:bone_meal"
+speed_multiplier = 1.15
+yield_multiplier = 1.1
+
+[fertilizers.biomass]
+item = "agritechevolved:biomass"
+speed_multiplier = 1.35
+yield_multiplier = 1.2
+
+[fertilizers.compacted_biomass]
+item = "agritechevolved:compacted_biomass"
+speed_multiplier = 1.5
+yield_multiplier = 1.3
+
+[fertilizers.iu_fertilizer]
+item = "industrialupgrade:fertilizer"
+speed_multiplier = 1.75
+yield_multiplier = 1.4

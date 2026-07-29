@@ -1,0 +1,31 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2D6733F67CAAFF20"
+	group: ""
+	icon: {
+		id: "walkietalkie:walkie_talkie"
+	}
+	id: "2D6733F67CAAFF20"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "5D4E4AC18A7121C8"
+		rewards: [{
+			auto: "enabled"
+			command: "/tellraw @p [{\"text\":\"[М.].: \",\"color\":\"red\",\"bold\":true},{\"text\":\"*пшшш* ...приём! Стажёр, ты меня слышишь? Мои датчики зафиксировали колоссальный всплеск энергии в твоём секторе — ровно миллион FE! У тебя там генератор не идёт вразнос? Пожалуйста, скажи, что это под контролем, у меня нет желания оформлять отчёт о твоей дезинтеграции... *хрррж-пшш*\",\"color\":\"yellow\",\"italic\":true}]"
+			exclude_from_claim_all: true
+			id: "4C8330D2DFC1D486"
+			type: "command"
+		}]
+		tasks: [{
+			id: "3895F09CE23DE32E"
+			max_input: 1000L
+			type: "forge_energy"
+			value: 1000000L
+		}]
+		x: -1.0d
+		y: 0.0d
+	}]
+}

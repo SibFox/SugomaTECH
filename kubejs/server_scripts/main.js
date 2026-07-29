@@ -30,10 +30,10 @@ ServerEvents.recipes(event => {
     registerBakeriesRecipes(event)
 })
 
-// LootJS.lootTables(evt => {
-//     lootArPhEx(evt)
-//     evt.modifyLootTables(LootType.ENTITY).removeItem('pointblank:gunmetal_nugget')
-// })
+LootJS.lootTables(evt => {
+    // lootArPhEx(evt)
+    lootBackpacks(evt)
+})
 
 registerInteractions()
 
@@ -41,6 +41,8 @@ registerInteractions()
 //     let ids = event.getLootTableIds()
 //     console.info(ids)
 // })
+
+
 
 RecipeViewerEvents.removeEntries('item', evt => {
     for (let m of inc_metals)

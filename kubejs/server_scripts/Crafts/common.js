@@ -23,9 +23,7 @@ const registerCommonRecipes = (evt) => {
     evt.shaped(
         Item.of(item.custom.spool, 1),
         [
-            'N',
-            'I',
-            'N'
+            'NIN'
         ],{
             N: tag.nugget.iron,
             I: tag.ingot.iron

@@ -16,5 +16,6 @@ const registerAgritechRemovings = (evt) => {
     evt.remove({ output: 'agritechevolved:sm_mk1' })
     evt.remove({ output: 'agritechevolved:sm_mk2' })
     evt.remove({ output: 'agritechevolved:sm_mk3' })
+    evt.remove({ output: 'agritechevolved:composter' })
 
 }

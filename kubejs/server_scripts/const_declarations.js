@@ -235,6 +235,7 @@ const item = {
         magnet: 'industrialupgrade:energy/magnet',
         exotic_material: 'industrialupgrade:crafting_elements/crafting_434_element',
         tin_can: 'industrialupgrade:crafting_elements/crafting_296_element',
+        plutonium_lazuli_crystall: 'industrialupgrade:crafting_elements/crafting_446_element',
 
         graphene_wire: 'industrialupgrade:graphene_wire',
         graphene_plate: 'industrialupgrade:graphene_plate',
@@ -1362,6 +1363,7 @@ const fluid = {
     cryogen: '$industrialupgrade:iufluidcryogen',
     biomass: '$industrialupgrade:iufluidbiomass',
     plant_mixture: '$industrialupgrade:iufluidplantmixture',
+    brilliant_azure: '$industrialupgrade:iufluidazurebrilliant',
 
     metal: {
         bronze: '$industrialupgrade:iufluidbronze',
