@@ -2,6 +2,7 @@
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Resources ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 
+//#region ITEMS 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ITEMS ITEMS ITEMS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
@@ -16,6 +17,7 @@ const item = {
     tnt: 'minecraft:tnt',
     enderpearl: 'minecraft:ender_pearl',
     leather: 'minecraft:leather',
+    flint: 'minecraft:flint',
     rotten_flesh: 'minecraft:rotten_flash',
     glass: 'minecraft:glass',
     glass_bottle: 'minecraft:glass_bottle',
@@ -45,6 +47,8 @@ const item = {
     experience_bottle: 'minecraft:experience_bottle',
     echo_shard: 'minecraft:echo_shard',
     fns: 'minecraft:flint_and_steel',
+    compass: 'minecraft:compass',
+    conduit: 'minecraft:conduit',
 
     // ~~~~~~~~~~~~~~~~~~~~ Farmer's Delight ~~~~~~~~~~~~~~~~~~~~ 
     milk_bottle: 'farmersdelight:milk_bottle',
@@ -107,6 +111,7 @@ const item = {
         }
     },
 
+    //#region Metals
     nugget: {
         copper: 'create:copper_nugget',
         iron: 'minecraft:iron_nugget',
@@ -121,34 +126,67 @@ const item = {
     },
 
     ingot: {
+        // Обычные
         copper: 'minecraft:copper_ingot',
         iron: 'minecraft:iron_ingot',
         gold: 'minecraft:gold_ingot',
         zinc: 'industrialupgrade:itemingots/zinc_ingot',
+        platinum: 'industrialupgrade:itemingots/platinum_ingot',
+        netherite_scrap: 'minecraft:netherite_scrap',
+        titanium: 'industrialupgrade:itemingots/titanium_ingot',
+        composite: 'industrialupgrade:crafting_elements/crafting_274_element',
+        // 2 сплавка
         bronze: 'industrialupgrade:itemingots/bronze_ingot',
         brass: 'industrialupgrade:alloyingot/red_brass',
         electrum: 'industrialupgrade:itemingots/electrum_ingot',
-        platinum: 'industrialupgrade:itemingots/platinum_ingot',
         red_alloy: 'morered:red_alloy_ingot',
-        netherite_scrap: 'minecraft:netherite_scrap',
-        netherite: 'minecraft:netherite_ingot',
         gunmetal: 'pointblank:gunmetal_ingot',
-        titanium: 'industrialupgrade:itemingots/titanium_ingot',
-        composite: 'industrialupgrade:crafting_elements/crafting_274_element',
         wolframite: 'industrialupgrade:wolframite',
-        steel: 'industrialupgrade:itemingots/steel_ingot',
+        gallium_arsenic: 'industrialupgrade:alloyingot/gallium_arsenic',
         titanium_steel: 'industrialupgrade:crafting_elements/crafting_504_element',
         carbon_tungsteen: 'industrialupgrade:crafting_elements/crafting_480_element',
+        steel: 'industrialupgrade:itemingots/steel_ingot',
+        nether_star: 'industrialupgrade:nether_star_ingot',
+        steel_untreated: 'industrialupgrade:crafting_elements/crafting_502_element',
+        nichrome: 'industrialupgrade:alloyingot/nichrome',
+        nitenol: 'industrialupgrade:alloyingot/nitenol',
+        duralumin: 'industrialupgrade:alloyingot/duralumin',
+        alumel: 'industrialupgrade:alloyingot/alumel',
+        niobium_titanium: 'industrialupgrade:alloyingot/niobium_titanium',
+        cobalt_chrome: 'industrialupgrade:alloyingot/cobalt_chrome',
+        osmiridium: 'industrialupgrade:alloyingot/osmiridium',
+        ferromanganese: 'industrialupgrade:alloyingot/ferromanganese',
+        // 3 сплавка
+        netherite: 'minecraft:netherite_ingot',
         vanadoalumite: 'industrialupgrade:alloyingot/vanadoalumite',
         quantum_alloy: 'advanced_ae:quantum_alloy',
-        woods_alloy: 'industrialupgrade:alloyingot/woods',
         sky_bronze: 'megacells:sky_bronze_ingot',
         sky_steel: 'megacells:sky_steel_ingot',
         entro: 'extendedae:entro_ingot',
-        nether_star: 'industrialupgrade:nether_star_ingot',
-
+        muntsa: 'industrialupgrade:alloyingot/muntsa',
+        alcled: 'industrialupgrade:alloyingot/alcled',
+        aluminum_bronze: 'industrialupgrade:alloyingot/aluminum_bronze',
+        vitalium: 'industrialupgrade:alloyingot/vitalium',
+        aluminium_silicon: 'industrialupgrade:alloyingot/aluminium_silicon',
+        beryllium_bronze: 'industrialupgrade:alloyingot/beryllium_bronze',
+        zeliber: 'industrialupgrade:alloyingot/zeliber',
+        hafnium_boride: 'industrialupgrade:alloyingot/hafnium_boride_alloy',
+        tan_tung_haf: 'industrialupgrade:alloyingot/tantalum_tungsten_hafnium',
+        hafnium_carbide: 'industrialupgrade:alloyingot/hafnium_carbide',
+        molybdenum_steel: 'industrialupgrade:alloyingot/molybdenum_steel',
+        yttrium_aluminium_garnet: 'industrialupgrade:alloyingot/yttrium_aluminium_garnet',
+        // 4 сплавка
+        stainless_steel: 'industrialupgrade:alloyingot/stainless_steel',
+        inconel: 'industrialupgrade:alloyingot/inconel',
+        stellite: 'industrialupgrade:alloyingot/stellite',
+        woods: 'industrialupgrade:alloyingot/woods',
+        permalloy: 'industrialupgrade:alloyingot/permalloy',
+        // 5 сплавка
         superalloy_haynes: 'industrialupgrade:alloyingot/superalloy_haynes',
         superalloy_rene: 'industrialupgrade:alloyingot/superalloy_rene',
+
+
+        titanium_steel_untreated: 'industrialupgrade:crafting_elements/crafting_503_element',
     },
 
     plate: {
@@ -195,6 +233,8 @@ const item = {
         sky_bronze: 'megacells:sky_bronze_block',
     },
 
+    //#endregion
+
     custom: {
         spool: 'kubejs:spool',
         hemolymph_drop: 'kubejs:hemolymph_drop',
@@ -218,6 +258,7 @@ const item = {
         },
     },
 
+    // #region Industrial Upgrade
     // ~~~~~~~~~~~~~~~~~~~~ INDUSTRIAL UPGRADE ~~~~~~~~~~~~~~~~~~~~ 
     // ~~~~~~~~~~~~~~~~~~~~ INDUSTRIAL UPGRADE ~~~~~~~~~~~~~~~~~~~~ 
     // ~~~~~~~~~~~~~~~~~~~~ INDUSTRIAL UPGRADE ~~~~~~~~~~~~~~~~~~~~ 
@@ -258,6 +299,8 @@ const item = {
         ruby: 'industrialupgrade:preciousgem/ruby_gem',
         saphire: 'industrialupgrade:preciousgem/sapphire_gem',
         topaz: 'industrialupgrade:preciousgem/topaz_gem',
+        beryllium: 'industrialupgrade:crafting_elements/crafting_449_element',
+        bor: 'industrialupgrade:crafting_elements/crafting_448_element',
 
         grown_silicon_crystal: 'industrialupgrade:crafting_elements/crafting_492_element',
         silicon_crystal: 'industrialupgrade:crafting_elements/crafting_493_element',
@@ -303,6 +346,7 @@ const item = {
             quartz: 'industrialupgrade:itemdust/quartz_dust',
             sulfur: 'industrialupgrade:itemdust/sulfur_dust',
             stone: 'industrialupgrade:itemdust/stone_dust',
+            coal: 'industrialupgrade:itemdust/coal_dust',
             small: {
                 calcium_phosphate: 'industrialupgrade:smalldust/calcium_phosphate',
                 potassium: 'industrialupgrade:smalldust/potassium',
@@ -718,6 +762,9 @@ const item = {
         },
     },
 
+    //#endregion
+    //#region Applied Energistics
+
     // ~~~~~~~~~~~~~~~~~~~~ APPLIED ENERGISTICS ~~~~~~~~~~~~~~~~~~~~ 
     // ~~~~~~~~~~~~~~~~~~~~ APPLIED ENERGISTICS ~~~~~~~~~~~~~~~~~~~~ 
 
@@ -786,6 +833,9 @@ const item = {
         },
     },
 
+    //#endregion
+    //#region ArPhEx
+
     // ~~~~~~~~~~~~~~~~~~~~ ARPHEX ~~~~~~~~~~~~~~~~~~~~ 
     // ~~~~~~~~~~~~~~~~~~~~ ARPHEX ~~~~~~~~~~~~~~~~~~~~ 
     // ~~~~~~~~~~~~~~~~~~~~ ARPHEX ~~~~~~~~~~~~~~~~~~~~ 
@@ -828,6 +878,9 @@ const item = {
         },
     },
 
+    //#endregion
+    //#region Computer Craft
+
     // ~~~~~~~~~~~~~~~~~~~~ Computer Craft ~~~~~~~~~~~~~~~~~~~~
 
     cc: {
@@ -864,6 +917,9 @@ const item = {
 
     },
 
+    //#endregion
+    //#region Create
+
     // ~~~~~~~~~~~~~~~~~~~~ Create ~~~~~~~~~~~~~~~~~~~~
     // ~~~~~~~~~~~~~~~~~~~~ Create ~~~~~~~~~~~~~~~~~~~~
     // ~~~~~~~~~~~~~~~~~~~~ Create ~~~~~~~~~~~~~~~~~~~~
@@ -882,6 +938,7 @@ const item = {
         fluid_pipe: 'create:fluid_pipe',
         mechanical_pump: 'create:mechanical_pump',
         whisk: 'create:whisk',
+        gyroscopic_mechanism: 'simulated:gyroscopic_mechanism',
         
         casing: {
             andesite: 'create:andesite_casing',
@@ -912,19 +969,6 @@ const item = {
             planetary_geatset: 'petrolsparts:planetary_gearset',
             differential: 'petrolsparts:differential'
         },
-
-        // spool: {
-        //     item: 'createaddition:spool',
-        //     copper: 'createaddition:copper_spool',
-        //     gold: 'createaddition:gold_spool',
-        //     electrum: 'createaddition:electrum_spool'
-        // },
-
-        // connector: {
-        //     small: 'createaddition:connector',
-        //     small_light: 'createaddition:small_light_connector',
-        //     large: 'createaddition:large_connector',
-        // },
     
         // ~~~~~~~~~~~~~~~~~~~~ Addons ~~~~~~~~~~~~~~~~~~~~
         control_chip: 'create_connected:control_chip',
@@ -944,6 +988,9 @@ const item = {
         // ~~~~~~~~~~~~~~~~~~~~ Aeronautics ~~~~~~~~~~~~~~~~~~~~
         engine_assembly: 'simulated:engine_assembly',
     },
+
+    //#endregion
+    //#region Cybernetics
 
     // ~~~~~~~~~~~~~~~~~~~~ Cybernetics ~~~~~~~~~~~~~~~~~~~~ 
 
@@ -980,6 +1027,8 @@ const item = {
         },
     },
 
+    //#endregion
+
     // ~~~~~~~~~~~~~~~~~~~~ Point Blank ~~~~~~~~~~~~~~~~~~~~ 
 
     pb: {
@@ -987,6 +1036,8 @@ const item = {
         processor: 'pointblank:processor',
         gunmetal_mesh: 'pointblank:gunmetal_mesh',
     },
+
+    //#region Immersive Aircraft
 
     // ~~~~~~~~~~~~~~~~~~~~ Immersive Aircraft/Machinery ~~~~~~~~~~~~~~~~~~~~
 
@@ -1005,7 +1056,17 @@ const item = {
         sturdy_pipes: 'immersive_aircraft:sturdy_pipes',
         improved_landing_gear: 'immersive_aircraft:improved_landing_gear',
         iron_drill: 'immersive_machinery:iron_drill',
+        rotary_cannon: 'immersive_aircraft:rotary_cannon',
+        heavy_crossbow: 'immersive_aircraft:heavy_crossbow',
+        bomb_bay: 'immersive_aircraft:bomb_bay',
+        gyroscope: 'immersive_aircraft:gyroscope',
+        gyroscope_hud: 'immersive_aircraft:gyroscope_hud',
+        gyroscope_dials: 'immersive_aircraft:gyroscope_dials',
+        hull_reinforcement: 'immersive_aircraft:hull_reinforcement',
     },
+
+    //#endregion
+    //#region Genetics Resequenced
 
     // ~~~~~~~~~~~~~~~~~~~~ Genetics Resequenced ~~~~~~~~~~~~~~~~~~~~
 
@@ -1023,6 +1084,8 @@ const item = {
         advanced_incubator: 'geneticsresequenced:advanced_incubator',
     },
 
+    //#endregion
+
     // ~~~~~~~~~~~~~~~~~~~~ Modular Force Fields System ~~~~~~~~~~~~~~~~~~~~
 
     mffs: {
@@ -1032,7 +1095,8 @@ const item = {
 }
 
 
-
+//#endregion
+//#region TAGS
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ TAGS TAGS TAGS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
@@ -1040,6 +1104,7 @@ const item = {
 const tag = {
     plank: '#minecraft:planks',
     log: '#minecraft:logs',
+    wooden_slab: '#minecraft:wooden_slabs',
     stone: '#c:stones',
     sand: '#c:sands',
     redstone: '#c:dusts/redstone',
@@ -1056,6 +1121,7 @@ const tag = {
     obsidian: '#c:obsidians',
     slime_ball: '#c:slime_balls',
     certus_quartz: '#ae2:all_certus_quartz',
+    rope: '#c:ropes',
     
     rods: '#c:rods',
     shaft: '#techoma:shafts',
@@ -1069,6 +1135,8 @@ const tag = {
 
     
     // ~~~~~~~~~~ Tables ~~~~~~~~~
+
+    //#region Metals
 
     nugget: {
         copper: '#c:nuggets/copper',
@@ -1084,6 +1152,8 @@ const tag = {
         germanium: '#c:nuggets/germanium',
     },
 
+    //#region Ingots
+
     ingot: {
         // Обычное
         copper: '#c:ingots/copper',
@@ -1091,6 +1161,7 @@ const tag = {
         gold: '#c:ingots/gold',
         zinc: '#c:ingots/zinc',
         silver: '#c:ingots/silver',
+        tin: '#c:ingots/tin',
         lead: '#c:ingots/lead',
         aluminium: '#c:ingots/aluminium',
         tungsten: '#c:ingots/tungsten',
@@ -1101,6 +1172,23 @@ const tag = {
         platinum: '#c:ingots/platinum',
         yttrium: '#c:ingots/yttrium',
         germanium: '#c:ingots/germanium',
+        nickel: '#c:ingots/nickel',
+        arsenic: '#c:ingots/arsenic',
+        gallium: '#c:ingots/gallium',
+        chromium: '#c:ingots/chromium',
+        niobium: '#c:ingots/niobium',
+        vanadium: '#c:ingots/vanadium',
+        cobalt: '#c:ingots/cobalt',
+        thallium: '#c:ingots/thallium',
+        molybdenum: '#c:ingots/molybdenum',
+        osmium: '#c:ingots/osmium',
+        tantalum: '#c:ingots/tantalum',
+        neodymium: '#c:ingots/neodymium',
+        iridium: '#c:ingots/iridium',
+        manganese: '#c:ingots/manganese',
+        barium: '#c:ingots/barium',
+        bismuth: '#c:ingots/bismuth',
+        cadmium: '#c:ingots/cadmium',
         // 2 сплавка
         invar: '#c:ingots/invar',
         steel: '#c:ingots/steel',
@@ -1139,6 +1227,9 @@ const tag = {
         draconid: '#c:ingots/draconid',
     },
 
+    //#endregion
+    //#region Plates
+
     plate: {
         // Обычное
         copper: '#c:plates/copper',
@@ -1156,7 +1247,18 @@ const tag = {
         platinum: '#c:plates/platinum',
         yttrium: '#c:plates/yttrium',
         composite: '#c:plates/advancedalloy',
+        tantalum: '#c:plates/tantalum',
         germanium: '#c:plates/germanium',
+        aluminium: '#c:plates/aluminium',
+        nickel: '#c:plates/nickel',
+        arsenic: '#c:plates/arsenic',
+        gallium: '#c:plates/gallium',
+        chromium: '#c:plates/chromium',
+        niobium: '#c:plates/niobium',
+        vanadium: '#c:plates/vanadium',
+        osmium: '#c:plates/osmium',
+        iridium: '#c:plates/iridium',
+        manganese: '#c:plates/manganese',
         // 2 сплавка
         invar: '#c:plates/invar',
         steel: '#c:plates/steel',
@@ -1192,6 +1294,9 @@ const tag = {
         bloodstone: '#c:plates/bloodstone',
         draconid: '#c:plates/draconid',
     },
+
+    //#endregion
+    //#region Doubleplates
     
     doubleplate: {
         // Обычное
@@ -1199,7 +1304,21 @@ const tag = {
         obsidian: '#c:doubleplate/obsidian',
         hafnium: '#c:doubleplate/hafnium',
         yttrium: '#c:doubleplate/yttrium',
+        tin: '#c:doubleplate/tin',
         germanium: '#c:doubleplate/germanium',
+        aluminium: '#c:doubleplate/aluminium',
+        tantalum: '#c:doubleplate/tantalum',
+        nickel: '#c:doubleplate/nickel',
+        arsenic: '#c:doubleplate/arsenic',
+        gallium: '#c:doubleplate/gallium',
+        gallium: '#c:doubleplate/tantalum',
+        chromium: '#c:doubleplate/chromium',
+        niobium: '#c:doubleplate/niobium',
+        cobalt: '#c:doubleplate/cobalt',
+        osmium: '#c:doubleplate/osmium',
+        vanadium: '#c:doubleplate/vanadium',
+        iridium: '#c:doubleplate/iridium',
+        manganese: '#c:doubleplate/manganese',
         // 2 сплавка
         invar: '#c:doubleplate/invar',
         bronze: '#c:doubleplate/bronze',
@@ -1235,7 +1354,10 @@ const tag = {
         draconid: '#c:doubleplate/draconid',
     },
 
-    casings: {
+    //#endregion
+    //#region Casings
+
+    casing: {
         // Обычное
         iron: '#c:casings/iron',
         tungsten: '#c:casings/tungsten',
@@ -1248,11 +1370,23 @@ const tag = {
         yttrium: '#c:casings/yttrium',
         tin: '#c:casings/tin',
         germanium: '#c:casings/germanium',
+        aluminium: '#c:casings/aluminium',
+        tantalum: '#c:casings/tantalum',
+        nickel: '#c:casings/nickel',
+        arsenic: '#c:casings/arsenic',
+        gallium: '#c:casings/gallium',
+        chromium: '#c:casings/chromium',
+        cobalt: '#c:casings/cobalt',
+        osmium: '#c:casings/osmium',
+        iridium: '#c:casings/iridium',
+        manganese: '#c:casings/manganese',
+        vanadium: '#c:casings/vanadium',
         // 2 сплавка
         invar: '#c:casings/invar',
         electrum: '#c:casings/electrum',
         brass: '#c:casings/brass',
         duralumin: '#c:casings/duralumin',
+        alumel: '#c:casings/alumel',
         // 3 сплавка
         galliumarsenic: '#c:casings/galliumarsenic',
         tan_tung_haf: '#c:casings/tantalumtungstenhafnium',
@@ -1271,47 +1405,104 @@ const tag = {
         draconid: '#c:casings/draconid',
     },
     
+    //#endregion
+    //#region Gears
+
     gear: {
+        // Обычыное
         titanium: '#c:gears/titanium',
         yttrium: '#c:gears/yttrium',
+        aluminium: '#c:gears/aluminium',
         tungsten: '#c:gears/tungsten',
         germanium: '#c:gears/germanium',
+        tin: '#c:gears/tin',
+        nickel: '#c:gears/nickel',
+        arsenic: '#c:gears/arsenic',
+        tantalum: '#c:gears/tantalum',
+        gallium: '#c:gears/gallium',
+        chromium: '#c:gears/chromium',
+        niobium: '#c:gears/niobium',
+        cobalt: '#c:gears/cobalt',
+        osmium: '#c:gears/osmium',
+        iridium: '#c:gears/iridium',
+        vanadium: '#c:gears/vanadium',
+        manganese: '#c:gears/manganese',
+        // 2 сплавка
         invar: '#c:gears/invar',
         brass: '#c:gears/brass',
         alumel: '#c:gears/alumel', // Алюминид-титан
         brass: '#c:gears/redbrass',
         duralumin: '#c:gears/duralumin',
+        // 3 сплавка
         hafniumboride: '#c:gears/hafniumboride',
         tan_tung_haf: '#c:gears/tantalumtungstenhafnium',
+        // 4 сплавка
         alcled: '#c:gears/alcled',
         woods: '#c:gears/woods',
     },
     
+    //#endregion
+    //#region Rods
+
     rod: {
         electrum: '#c:rods/electrum',
         aluminium: '#c:rods/aluminium',
         titanium: '#c:rods/titanium',
         germanium: '#c:rods/germanium',
         tungsten: '#c:rods/tungsten',
+        nickel: '#c:rods/nickel',
+        arsenic: '#c:rods/arsenic',
+        tin: '#c:rods/tin',
+        gallium: '#c:rods/gallium',
+        chromium: '#c:rods/chromium',
+        niobium: '#c:rods/niobium',
+        cobalt: '#c:rods/cobalt',
+        osmium: '#c:rods/osmium',
+        vanadium: '#c:rods/vanadium',
+        iridium: '#c:rods/iridium',
+        manganese: '#c:rods/manganese',
+        tantalum: '#c:rods/tantalum',
     },
     
+    //#endregion
+    //#region Ore Blocks
+
     ore_block: {
+        // Обычное
         copper: '#c:storage_blocks/copper',
         iron: '#c:storage_blocks/iron',
         gold: '#c:storage_blocks/gold',
         diamond: '#c:storage_blocks/diamond',
         redstone: '#c:storage_blocks/redstone',
         germanium: '#c:storage_blocks/germanium',
+        aluminium: '#c:storage_blocks/aluminium',
+        nickel: '#c:storage_blocks/nickel',
         zinc: '#c:storage_blocks/zinc',
+        tin: '#c:storage_blocks/tin',
+        titanium: '#c:storage_blocks/titanium',
+        platinum: '#c:storage_blocks/platinum',
+        arsenic: '#c:storage_blocks/arsenic',
+        tantalum: '#c:storage_blocks/tantalum',
+        vanadium: '#c:storage_blocks/vanadium',
+        gallium: '#c:storage_blocks/gallium',
+        chromium: '#c:storage_blocks/chromium',
+        niobium: '#c:storage_blocks/niobium',
+        cobalt: '#c:storage_blocks/cobalt',
+        osmium: '#c:storage_blocks/osmium',
+        iridium: '#c:storage_blocks/iridium',
+        manganese: '#c:storage_blocks/manganese',
+        // 2 сплавка
         invar: '#c:storage_blocks/invar',
         brass: '#c:storage_blocks/brass',
         bronze: '#c:storage_blocks/bronze',
         electrum: '#c:storage_blocks/electrum',
-        titanium: '#c:storage_blocks/titanium',
         steel: '#c:storage_blocks/steel',
-        platinum: '#c:storage_blocks/platinum',
+        // 3 сплавка
+        // 4 сплавка
         woods: '#c:storage_blocks/woods',
     },
+
+    //#endregion
 
     wire: {
         copper: '#c:wires/copper',
@@ -1327,6 +1518,7 @@ const tag = {
     dusts: {
         diamond: '#c:dusts/diamond',
         emerald: '#c:dusts/emerald',
+        coal: '#c:dusts/coal',
     },
 
     ae: {
@@ -1343,6 +1535,8 @@ const tag = {
     },
 }
 
+//#endregion
+//#region Fluids
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ FLUIDS FLUIDS FLUIDS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
@@ -1372,6 +1566,8 @@ const fluid = {
         nethersteel: '$createbigcannons:molten_nethersteel',
     },
 }
+
+//#endregion
 
 const deletion_list = [
     'create:iron_sheet', 'create:copper_sheet', 

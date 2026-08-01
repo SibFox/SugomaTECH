@@ -14,7 +14,7 @@ const registerIURecipeRemovings = (evt) => {
      * 
      * @param {Internal.RecipesEventJS} evt 
      * @param {string} type 
-     * @param {Array<string>} items 
+     * @param {Array<Dictionary>} items 
      */
     function removeIUCraft(evt, type, items)
     {
@@ -37,7 +37,7 @@ const registerIURecipeRemovings = (evt) => {
             }
             if (item.isFluid) {
                 out.type = "fluid"
-                recipe.isFluidRecipe = true
+                dict.isFluidRecipe = true
             }
 
             dict.output.push(out)
@@ -46,6 +46,7 @@ const registerIURecipeRemovings = (evt) => {
         evt.custom(dict)
     }
 
+    // Процессоры
     removeIUCraft(evt, IUMachineCraft.ELECTRONIC_ASSEMBLER, [asItem(item.iu.processor.lvl3)])
     removeIUCraft(evt, IUMachineCraft.ELECTRONIC_ASSEMBLER, [asItem(item.iu.processor.lvl4)])
     removeIUCraft(evt, IUMachineCraft.ELECTRONIC_ASSEMBLER, [asItem(item.iu.processor.lvl5)])
@@ -54,8 +55,45 @@ const registerIURecipeRemovings = (evt) => {
     removeIUCraft(evt, IUMachineCraft.ELECTRONIC_ASSEMBLER, [asItem(item.iu.processor.lvl8)])
     removeIUCraft(evt, IUMachineCraft.ELECTRONIC_ASSEMBLER, [asItem(item.iu.processor.lvl9)])
     removeIUCraft(evt, IUMachineCraft.ELECTRONIC_ASSEMBLER, [asItem(item.iu.processor.lvl10)])
-    
-    
 
+    // Сплаволитейка на 2
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl1, [asItem(item.ingot.steel_untreated)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl1, [asItem(item.ingot.wolframite)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl1, [asItem(item.ingot.titanium_steel_untreated)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl1, [asItem(item.ingot.gallium_arsenic)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl1, [asItem(item.ingot.brass)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl1, [asItem(item.ingot.nichrome)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl1, [asItem(item.ingot.nitenol)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl1, [asItem(item.ingot.duralumin)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl1, [asItem(item.ingot.alumel)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl1, [asItem(item.ingot.cobalt_chrome)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl1, [asItem(item.ingot.niobium_titanium)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl1, [asItem(item.ingot.osmiridium)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl1, [asItem(item.ingot.ferromanganese)])
+
+    // Сплаволитейка на 3
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl2, [asItem(item.ingot.titanium_steel)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl2, [asItem(item.ingot.yttrium_aluminium_garnet)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl2, [asItem(item.ingot.molybdenum_steel)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl2, [asItem(item.ingot.hafnium_carbide)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl2, [asItem(item.ingot.hafnium_boride)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl2, [asItem(item.ingot.tan_tung_haf)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl2, [asItem(item.ingot.zeliber)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl2, [asItem(item.ingot.beryllium_bronze)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl2, [asItem(item.ingot.aluminium_silicon)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl2, [asItem(item.ingot.vitalium)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl2, [asItem(item.ingot.vanadoalumite)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl2, [asItem(item.ingot.aluminum_bronze)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl2, [asItem(item.ingot.alcled)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl2, [asItem(item.ingot.muntsa)])
+
+    // Сплаволитейка на 4
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl3, [asItem(item.ingot.stainless_steel)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl3, [asItem(item.ingot.inconel)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl3, [asItem(item.ingot.stellite)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl3, [asItem(item.ingot.woods)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl3, [asItem(item.ingot.steel)])
+    removeIUCraft(evt, IUMachineCraft.ALLOY_SMELTER.lvl3, [asItem(item.ingot.permalloy)])
+    
     console.info('IU recipe removing passed')
 }

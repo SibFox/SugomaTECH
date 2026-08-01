@@ -333,3 +333,5 @@ config/statuseffectbars-common.toml
 config/stylisheffects-client.toml
 /config/structurify
 config/DistantHorizons.toml
+config/sightline-client.toml
+config/immersive_machinery.json

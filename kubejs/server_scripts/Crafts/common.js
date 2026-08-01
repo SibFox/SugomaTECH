@@ -164,8 +164,8 @@ const registerCommonRecipes = (evt) => {
             M: item.iu.module.macerator.lvl1,
             C: item.iu.molecular_core,
             G: 'industrialupgrade:basemachine2/lava_gen',
-            P: tag.casings.palladium,
-            O: tag.casings.polonium
+            P: tag.casing.palladium,
+            O: tag.casing.polonium
         }
     ).id(getRecipeID('hole_filler'))
     
@@ -204,7 +204,7 @@ const registerCommonRecipes = (evt) => {
             'CAC',
         ],{
             A: 'industrialupgrade:battery/advanced_re_battery[industrialupgrade:energy=10000.0d]',
-            C: tag.casings.germanium
+            C: tag.casing.germanium
         }
     ).id(getRecipeID('walkie_battery'))
     
@@ -229,51 +229,51 @@ const registerCommonRecipes = (evt) => {
     ).id(getRecipeID('steel_nugget_ct'))
 
 
-    // Кловергетт
+    // Кловергетт (пока что скрыт)
 
-    iuRecipe(evt, getRecipeID('kloverghett_crystal'), IUMachineCraft.SILICON_CHAMBER,
-        [
-            asItem(item.custom.kloverghett_seed, 3),
-            asItem(item.echo_shard)
-        ],[
-            asItem(item.custom.kloverghett_crystal)
-        ]
-    )
+    // iuRecipe(evt, getRecipeID('kloverghett_crystal'), IUMachineCraft.SILICON_CHAMBER,
+    //     [
+    //         asItem(item.custom.kloverghett_seed, 3),
+    //         asItem(item.echo_shard)
+    //     ],[
+    //         asItem(item.custom.kloverghett_crystal)
+    //     ]
+    // )
 
-    aeReactionRecipe(evt, getRecipeID('kloverghett_part'),
-        100000, asItem(fluid.cryogen, 500),
-        [
-            asItem(item.custom.kloverghett_crystal, 4),
-            asItem(item.ae.charged_certus_quartz_crystal, 32),
-            asItem(item.ae.fluix_crystal, 24),
-            asItem(item.ae.entro_crystal, 24),
-            asItem(item.iu.dust.energy, 16)
-        ],
-        asItem(item.custom.kloverghett_part, 1)
-    )
+    // aeReactionRecipe(evt, getRecipeID('kloverghett_part'),
+    //     100000, asItem(fluid.cryogen, 500),
+    //     [
+    //         asItem(item.custom.kloverghett_crystal, 4),
+    //         asItem(item.ae.charged_certus_quartz_crystal, 32),
+    //         asItem(item.ae.fluix_crystal, 24),
+    //         asItem(item.ae.entro_crystal, 24),
+    //         asItem(item.iu.dust.energy, 16)
+    //     ],
+    //     asItem(item.custom.kloverghett_part, 1)
+    // )
     
-    iuRecipe(evt, getRecipeID('kloverghett_treated'), IUMachineCraft.CYCLOTRON,
-        [
-            asItem(item.custom.kloverghett_part, 3)
-        ],[
-            asItem(item.custom.kloverghett_treated)
-        ],
-        { 
-            'chance': 60,
-            'cryogen': 70,
-            'positrons': 43
-        }
-    )
+    // iuRecipe(evt, getRecipeID('kloverghett_treated'), IUMachineCraft.CYCLOTRON,
+    //     [
+    //         asItem(item.custom.kloverghett_part, 3)
+    //     ],[
+    //         asItem(item.custom.kloverghett_treated)
+    //     ],
+    //     { 
+    //         'chance': 60,
+    //         'cryogen': 70,
+    //         'positrons': 40
+    //     }
+    // )
     
-    iuRecipe(evt, getRecipeID('kloverghett_seed'), IUMachineCraft.FLUID_INTEGRATOR,
-        [
-            asItem(fluid.fluid_matter, 75),
-            asItem(item.custom.kloverghett_crystal)
-        ],[
-            asItem(item.custom.kloverghett_seed, 5),
-            asItem(fluid.nitrooxide, 125)
-        ]
-    )
+    // iuRecipe(evt, getRecipeID('kloverghett_seed'), IUMachineCraft.FLUID_INTEGRATOR,
+    //     [
+    //         asItem(fluid.fluid_matter, 75),
+    //         asItem(item.custom.kloverghett_crystal)
+    //     ],[
+    //         asItem(item.custom.kloverghett_seed, 5),
+    //         asItem(fluid.nitrooxide, 125)
+    //     ]
+    // )
     
     
     // Экзо-компоненты брони
