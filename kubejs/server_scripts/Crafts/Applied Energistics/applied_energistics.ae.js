@@ -75,7 +75,7 @@ const registerAEMachinesRecipes = (evt) => {
     
     aeReactionRecipe(evt, getRecipeID('quantum_alloy'),
         200000, asItem(fluid.quantum_infusion, 1000),
-        [ asItem(item.ingot.woods_alloy, 4), asItem(item.ae.shattered_singularity, 4), asItem(item.ae.singularity, 4) ],
+        [ asItem(item.ingot.woods, 4), asItem(item.ae.shattered_singularity, 4), asItem(item.ae.singularity, 4) ],
         asItem(item.ingot.quantum_alloy)
     )
 

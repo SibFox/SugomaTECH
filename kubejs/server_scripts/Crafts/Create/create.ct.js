@@ -474,5 +474,31 @@ const registerCreateCTRecipes = (evt) => {
         }
     ).id(getRecipeID('propulsion/ion_thruster'))
     
+    evt.shaped(
+        Item.of('aeronautics:andesite_propeller', 1),
+        [
+            'P',
+            'S',
+            'A'
+        ],{
+            A: tag.shaft,
+            S: tag.wooden_slab,
+            P: item.ia.propeller
+        }
+    ).id(getRecipeID('andesite_propeller'))
+    
+    evt.shaped(
+        Item.of('aeronautics:smart_propeller', 1),
+        [
+            'P',
+            'G',
+            'L'
+        ],{
+            L: item.create.casing.brass,
+            P: item.ia.propeller,
+            G: item.create.gyroscopic_mechanism
+        }
+    ).id(getRecipeID('smart_propeller'))
+    
     
 }

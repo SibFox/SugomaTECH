@@ -10,14 +10,18 @@ const registerIACTRecipes = (evt) => {
         return recipeID('ia', path)
     }
 
-    shapedRecipe(evt, getRecipeID('propeller'),
+    evt.shaped(
+        Item.of(item.ia.propeller, 1),
         [
-            [ null, item.iu.rotor.wind.model.iron, null ],
-            [ item.iu.rotor.wind.model.iron, item.iu.rotor.wind.core.iron, item.iu.rotor.wind.model.iron ],
-            [ null, item.iu.rotor.wind.model.iron, null ]
-        ],
-    item.ia.propeller)
-
+            'P P',
+            ' C ',
+            'P P'
+        ],{
+            P: item.iu.rotor.wind.model.iron,
+            C: item.iu.rotor.wind.core.iron
+        }
+    ).id(getRecipeID('propeller'))
+    
     shapedRecipe(evt, getRecipeID('enhanced_propeller'),
         [
             [ null, item.iu.rotor.wind.model.steel, null ],
@@ -119,6 +123,131 @@ const registerIACTRecipes = (evt) => {
         }
     ).id(getRecipeID('redstone_mechanism'))
     
+    evt.shaped(
+        Item.of(item.ia.hull, 3),
+        [
+            'AAA',
+            'TTT',
+            'AAA'
+        ],{
+            A: tag.casing.alumel,
+            T: tag.log
+        }
+    ).id(getRecipeID('hull'))
     
+    evt.shaped(
+        Item.of(item.ia.sail, 3),
+        [
+            'WAS',
+            'WAS',
+            'WAS'
+        ],{
+            A: item.create.andesite_alloy,
+            W: tag.wool,
+            S: item.string
+        }
+    ).id(getRecipeID('sail'))
+    
+    evt.shaped(
+        Item.of(item.ia.rotary_cannon, 1),
+        [
+            ' B ',
+            'WRW',
+            'PGP'
+        ],{
+            B: 'createbigcannons:steel_autocannon_barrel',
+            W: item.pb.guninternals,
+            R: 'createbigcannons:steel_autocannon_recoil_spring',
+            G: tag.gear.titanium,
+            P: tag.plate.steel
+        }
+    ).id(getRecipeID('rotary_cannon'))
+    
+    evt.shaped(
+        Item.of(item.ia.heavy_crossbow, 1),
+        [
+            'RCR',
+            ' H ',
+            'PGP'
+        ],{
+            C: 'minecraft:crossbow',
+            G: tag.gear.titanium,
+            P: tag.plate.steel,
+            H: 'minecraft:tripwire_hook',
+            R: tag.rod.tungsten
+        }
+    ).id(getRecipeID('heavy_crossbow'))
+    
+    evt.shaped(
+        Item.of(item.ia.bomb_bay, 1),
+        [
+            'SMS',
+            'S S'
+        ],{
+            S: tag.ingot.steel,
+            M: item.ia.industrial_gears
+        }
+    ).id(getRecipeID('bomb_bay'))
+    
+    evt.shaped(
+        Item.of(item.ia.gyroscope, 1),
+        [
+            ' O ',
+            'CGC',
+            'LLL'
+        ],{
+            G: item.create.gyroscopic_mechanism,
+            L: tag.ingot.brass,
+            C: item.comparator,
+            O: item.compass
+        }
+    ).id(getRecipeID('gyroscope'))
+    
+    evt.shaped(
+        Item.of(item.ia.gyroscope_hud, 1),
+        [
+            'TPT',
+            'ELE',
+            'NGM'
+        ],{
+            G: item.ia.gyroscope,
+            M: item.iu.microchip.lvl1,
+            N: 'minecraft:note_block',
+            L: 'minecraft:redstone_lamp',
+            P: tag.glass_panel,
+            E: tag.ingot.electrum,
+            T: item.create.electron_tube
+        }
+    ).id(getRecipeID('gyroscope_hud'))
+    
+    evt.shaped(
+        Item.of(item.ia.gyroscope_dials, 1),
+        [
+            'PPP',
+            'CCC',
+            'NGT'
+        ],{
+            G: item.ia.gyroscope,
+            N: 'minecraft:note_block',
+            P: tag.glass_panel,
+            T: item.create.electron_tube,
+            C: 'minecraft:clock'
+        }
+    ).id(getRecipeID('gyroscope_dials'))
+    
+    evt.shaped(
+        Item.of(item.ia.hull_reinforcement, 1),
+        [
+            'TTT',
+            'HHH',
+            'TTT'
+        ],{
+            T: tag.plate.titanium_steel,
+            H: item.ia.hull
+        }
+    ).id(getRecipeID('hull_reinforcement'))
+    
+    
+
 
 }

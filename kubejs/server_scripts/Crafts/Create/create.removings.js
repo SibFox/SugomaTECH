@@ -39,6 +39,8 @@ const registerCreateRemovings = (evt) => {
     evt.remove({ output: 'createthrusters:thruster_lense', not: { type: 'create:sequenced_assembly'} })
     evt.remove({ output: 'createthrusters:alternator', not: { type: 'create:sequenced_assembly'} })
     evt.remove({ output: 'createthrusters:industrial_motor', not: { type: 'create:sequenced_assembly'} })
+    evt.remove({ output: 'aeronautics:smart_propeller', not: { type: 'create:sequenced_assembly'} })
+    evt.remove({ output: 'aeronautics:andesite_propeller', not: { type: 'create:sequenced_assembly'} })
 
 
     // evt.remove({ id: 'createbigcannons:melting/melt_bronze_ingot' })

@@ -56,7 +56,7 @@ const registerAECTRecipes = (evt) => {
             F: item.ae.fluix_pearl,
             O: item.ae.cable.quartz_fiber,
             T: item.create.transmitter,
-            C: tag.casings.niobium
+            C: tag.casing.niobium
         }
     ).id(getRecipeID('wireless_receiver'))
 
@@ -88,7 +88,7 @@ const registerAECTRecipes = (evt) => {
             'C C'
         ],{
             A: item.ae.core.annihilation,
-            C: tag.casings.hafnium,
+            C: tag.casing.hafnium,
             P: item.iu.upgrade.pulling
         }
     ).id(getRecipeID('import_bus'))
@@ -101,7 +101,7 @@ const registerAECTRecipes = (evt) => {
             ' F '
         ],{
             F: item.ae.core.formation,
-            C: tag.casings.hafnium,
+            C: tag.casing.hafnium,
             E: item.iu.upgrade.ejector
         }
     ).id(getRecipeID('export_bus'))

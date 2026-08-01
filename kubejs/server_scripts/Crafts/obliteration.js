@@ -34,6 +34,8 @@ const registerItemObliteration = () => {
         'advanced_ae:quantum_helmet', 'advanced_ae:quantum_chestplate',
         'advanced_ae:quantum_leggings', 'advanced_ae:quantum_boots',
         // 'advanced_ae:*_card'
+
+        'immersive_aircraft:gyrodyne'
     ]
 
     const toStone = [

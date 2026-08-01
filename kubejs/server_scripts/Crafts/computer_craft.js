@@ -192,7 +192,7 @@ const registerCCRecipes = (evt) => {
             'PBP',
             'PSP'
         ],{
-            P: tag.casings.tungsten,
+            P: tag.casing.tungsten,
             B: item.ae.wireless_booster,
             W: item.ae.wireless_access_point,
             S: item.iu.module.wireless
@@ -206,7 +206,7 @@ const registerCCRecipes = (evt) => {
             'PBP',
             'PSP'
         ],{
-            P: tag.casings.electrum,
+            P: tag.casing.electrum,
             B: 'extendedae:wireless_connect',
             W: item.ae.wireless_access_point,
             S: item.iu.module.wireless
