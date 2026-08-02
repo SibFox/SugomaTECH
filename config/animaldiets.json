@@ -8,5 +8,11 @@
   "arphex:moth_moontracker": "CARNIVORE",
   "arphex:spider_flat": "CARNIVORE",
   "arphex:spider_jump": "CARNIVORE",
-  "arphex:ant_arsonist_worker": "OMNIVORE"
+  "arphex:ant_arsonist_worker": "OMNIVORE",
+  "minecraft:pig": "HERBIVORE",
+  "arphex:butterfly_bewitcher": "CARNIVORE",
+  "arphex:butterfly_bewitcher_giant": "OMNIVORE",
+  "arphex:spider_lunger": "CARNIVORE",
+  "arphex:mantis_mutilator": "OMNIVORE",
+  "arphex:ant_arsonist_soldier": "OMNIVORE"
 }

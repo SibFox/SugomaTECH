@@ -13,11 +13,12 @@ const registerCLRecipes = (evt) => {
     evt.remove({ output: 'chunkloaders:single_chunk_loader' })
     evt.remove({ output: 'chunkloaders:basic_chunk_loader' })
     evt.remove({ output: 'chunkloaders:advanced_chunk_loader' })
+    evt.remove({ output: 'chunkloaders:ultimate_chunk_loader' })
 
     shapedRecipe(evt, getRecipeID('single'),
         [
             [ tag.doubleplate.invar, tag.obsidian, tag.doubleplate.invar ],
-            [ tag.obsidian, tag.ender_pearl, tag.obsidian ],
+            [ tag.obsidian, tag.enderpearl, tag.obsidian ],
             [ tag.doubleplate.invar, tag.obsidian, tag.doubleplate.invar ]
         ],
     'chunkloaders:single_chunk_loader')
