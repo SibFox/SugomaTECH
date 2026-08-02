@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "name": "arphex_flood",
+        "conditions": {
+            "daycount": "repeat(7,1,2)"
+        }
+    },
+    {
+        "name": "arphex_too_active",
+        "conditions": {
+            "daycount": "repeat(7,3,5)"
+        }
+    }
+]

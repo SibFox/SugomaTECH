@@ -30,7 +30,7 @@
 	#Enabled by default - controls whether non-boss hallucinations (like the spider ones) can spawn. Boss hallucinations are controlled by boss spawning.
 	"Enable non-boss hallucination spawning" = true
 	#If you're not getting enough spawns from the other spawn settings, you can boost them even further with this mode at the cost of reducing vanilla mob spawns on solid ground (potential performance impact). Replaces X in 10 vanilla mobs with a random arphex mob. If insanity mode is enabled, it will replace them with random insanity mode mobs (can include crawling dimension mobs). Therefore, if you set this value to 10.0, it will replace 10/10 (100%) of vanilla mobs with random arphex equivalents. 1.0 by default
-	"Vanilla Replacement Mode" = 3.0
+	"Vanilla Replacement Mode" = 4.0
 	#Will only work if Vanilla Replacement Mode has a value above 0. If you enable this as well, even vanilla animal mobs have a chance to be replaced.
 	"Vanilla Animal Replacements" = false
 
