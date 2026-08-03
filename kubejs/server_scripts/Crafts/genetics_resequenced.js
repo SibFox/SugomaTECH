@@ -33,7 +33,7 @@ const registerGRRecipes = (evt) => {
     shapedRecipe(evt, getRecipeID('cell_analyzer'),
         [
             [ item.iu.module.analyzer, null, item.iu.cooling_cylinder ],
-            [ item.iu.module.slot.x1, item.iu.machine_corpus.tech, item.iu.module.slot.x1 ],
+            [ item.iu.module.slot.x1, item.iu.machine_corpus.tech_adv, item.iu.module.slot.x1 ],
             [ null, item.iu.electromotor.with_bearings.lvl1, null ]
         ],
     item.gr.cell_analyzer)
@@ -41,7 +41,7 @@ const registerGRRecipes = (evt) => {
     shapedRecipe(evt, getRecipeID('blood_purifier'),
         [
             [ item.iu.module.liquid.lvl1, null, item.iu.cooling_cylinder ],
-            [ item.iu.module.tank.lvl1, item.iu.machine_corpus.tech, item.iu.module.slot.x1 ],
+            [ item.iu.module.tank.lvl1, item.iu.machine_corpus.tech_adv, item.iu.module.slot.x1 ],
             [ null, item.iu.electromotor.with_bearings.lvl1, null ]
         ],
     item.gr.blood_purifier)
@@ -49,7 +49,7 @@ const registerGRRecipes = (evt) => {
     shapedRecipe(evt, getRecipeID('dna_extractor'),
         [
             [ item.iu.module.transformation, item.iu.cooling_cylinder, item.iu.module.extractor.lvl2 ],
-            [ item.iu.module.slot.x1, item.iu.machine_corpus.tech, item.iu.module.slot.x1 ],
+            [ item.iu.module.slot.x1, item.iu.machine_corpus.tech_adv, item.iu.module.slot.x1 ],
             [ null, item.iu.electromotor.with_bearings.lvl1, null ]
         ],
     item.gr.dna_extractor)
@@ -57,7 +57,7 @@ const registerGRRecipes = (evt) => {
     shapedRecipe(evt, getRecipeID('dna_decryptor'),
         [
             [ item.iu.module.analyzer, item.iu.cooling_cylinder, item.iu.module.circuit ],
-            [ item.iu.module.slot.x1, item.iu.machine_corpus.tech, item.iu.module.slot.x1 ],
+            [ item.iu.module.slot.x1, item.iu.machine_corpus.tech_adv, item.iu.module.slot.x1 ],
             [ null, item.iu.electromotor.with_bearings.lvl1, null ]
         ],
     item.gr.dna_decryptor)
@@ -65,7 +65,7 @@ const registerGRRecipes = (evt) => {
     shapedRecipe(evt, getRecipeID('plasmid_infuser'),
         [
             [ item.iu.module.combining.lvl2, null, item.iu.cooling_cylinder ],
-            [ item.iu.module.slot.x1, item.iu.machine_corpus.tech, item.iu.module.slot.x1 ],
+            [ item.iu.module.slot.x1, item.iu.machine_corpus.tech_adv, item.iu.module.slot.x1 ],
             [ null, item.iu.electromotor.with_bearings.lvl1, null ]
         ],
     item.gr.plasmid_infuser)
@@ -73,7 +73,7 @@ const registerGRRecipes = (evt) => {
     shapedRecipe(evt, getRecipeID('plasmid_injector'),
         [
             [ item.iu.module.combining.lvl2, item.iu.cooling_cylinder, item.iu.module.circuit ],
-            [ item.iu.module.slot.x1, item.iu.machine_corpus.tech, item.iu.module.tank.lvl1 ],
+            [ item.iu.module.slot.x1, item.iu.machine_corpus.tech_adv, item.iu.module.tank.lvl1 ],
             [ null, item.iu.electromotor.with_bearings.lvl1, null ]
         ],
     item.gr.plasmid_injector)
@@ -81,7 +81,7 @@ const registerGRRecipes = (evt) => {
     shapedRecipe(evt, getRecipeID('advanced_incubator'),
         [
             [ item.iu.module.combining.lvl2, item.iu.module.heat.lvl2, item.iu.module.brewing ],
-            [ item.iu.module.slot.x4, item.iu.machine_corpus.tech, item.iu.module.slot.x2 ],
+            [ item.iu.module.slot.x4, item.iu.machine_corpus.tech_adv, item.iu.module.slot.x2 ],
             [ null, item.iu.electromotor.with_bearings.lvl1, null ]
         ],
     item.gr.advanced_incubator)

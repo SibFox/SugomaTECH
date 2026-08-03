@@ -277,6 +277,8 @@ const item = {
         exotic_material: 'industrialupgrade:crafting_elements/crafting_434_element',
         tin_can: 'industrialupgrade:crafting_elements/crafting_296_element',
         plutonium_lazuli_crystall: 'industrialupgrade:crafting_elements/crafting_446_element',
+        electum_boiler: 'industrialupgrade:crafting_elements/crafting_601_element',
+        cultivated_peat: 'industrialupgrade:cultivated_peat',
 
         graphene_wire: 'industrialupgrade:graphene_wire',
         graphene_plate: 'industrialupgrade:graphene_plate',
@@ -593,6 +595,7 @@ const item = {
             casing: 'industrialupgrade:module_schedule',
         },
 
+        //#region IU Модули
         module: {
             template: {
                 lvl1: 'industrialupgrade:crafting_elements/crafting_21_element',
@@ -656,6 +659,13 @@ const item = {
                 lvl4: 'industrialupgrade:crafting_elements/crafting_162_element',
                 lvl5: 'industrialupgrade:crafting_elements/crafting_615_element',
             },
+            extruder: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_163_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_125_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_126_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_127_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_616_element',
+            },
             transformation: 'industrialupgrade:crafting_elements/crafting_75_element',
             transformation_adv: 'industrialupgrade:crafting_elements/crafting_10_element',
             combining: {
@@ -670,6 +680,20 @@ const item = {
             circuit: 'industrialupgrade:crafting_elements/crafting_73_element',
             potion: 'industrialupgrade:crafting_elements/crafting_661_element',
             brewing: 'industrialupgrade:crafting_elements/crafting_658_element',
+            press: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_63_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_1_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_77_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_102_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_608_element',
+            },
+            rolling: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_165_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_166_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_167_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_168_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_609_element',
+            },
             heat: {
                 lvl1: 'industrialupgrade:crafting_elements/crafting_39_element',
                 lvl2: 'industrialupgrade:crafting_elements/crafting_15_element',
@@ -702,6 +726,20 @@ const item = {
                 lvl4: 'industrialupgrade:crafting_elements/crafting_131_element',
                 lvl5: 'industrialupgrade:crafting_elements/crafting_605_element',
             },
+            mineral: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_205_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_204_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_202_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_203_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_633_element',
+            },
+            electrofurnace: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_219_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_225_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_221_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_223_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_617_element',
+            },
             repulsor_shield: 'industrialupgrade:crafting_elements/crafting_439_element',
             ore: 'industrialupgrade:crafting_elements/crafting_53_element',
             boosting: 'industrialupgrade:crafting_elements/crafting_155_element',
@@ -719,12 +757,22 @@ const item = {
                 lvl4: 'industrialupgrade:crafting_elements/crafting_136_element',
                 lvl5: 'industrialupgrade:crafting_elements/crafting_612_element',
             },
+            pump: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_241_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_248_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_245_element',
+            },
+            filler: 'industrialupgrade:crafting_elements/crafting_265_element',
+            electrolyzer: 'industrialupgrade:crafting_elements/crafting_244_element',
             assembler: 'industrialupgrade:crafting_elements/crafting_243_element',
             cybernetics: 'kubejs:module_cybernetics',
             lava: 'industrialupgrade:crafting_elements/crafting_228_element',
             unpacking: 'industrialupgrade:crafting_elements/crafting_469_element',
             transformer: 'industrialupgrade:crafting_elements/crafting_156_element',
+            steam: 'industrialupgrade:crafting_elements/crafting_32_element',
         },
+
+        //#endregion
 
         core: {
             normal: {

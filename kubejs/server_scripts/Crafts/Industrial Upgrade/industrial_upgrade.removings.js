@@ -10,6 +10,23 @@ const registerIURecipeRemovings = (evt) => {
         return recipeID('iu_change', path)
     }
 
+    evt.remove({ output: [
+        'industrialupgrade:basemachine3/steam_generator', 'industrialupgrade:basemachine3/electric_wire_insulator',
+        'industrialupgrade:basemachine3/crystal_charge', 'industrialupgrade:basemachine3/bio_generator',
+        'industrialupgrade:basemachine3/fluid_heater', 'industrialupgrade:basemachine3/electric_squeezer',
+        'industrialupgrade:simplemachine/compressor_iu', 'industrialupgrade:simplemachine/macerator_iu',
+        'industrialupgrade:moremachine2/cutting', 'industrialupgrade:simplemachine/extractor_iu',
+        'industrialupgrade:moremachine2/extruder', 'industrialupgrade:moremachine2/rolling',
+        'industrialupgrade:basemachine1/handler_ho', 'industrialupgrade:basemachine2/electrolyzer_iu',
+        'industrialupgrade:basemachine3/pump_iu', 'industrialupgrade:basemachine3/laser_polisher',
+        'industrialupgrade:basemachine3/peat_generator'
+    ] })    
+
+
+
+
+
+
     /**
      * 
      * @param {Internal.RecipesEventJS} evt 

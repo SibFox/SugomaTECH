@@ -337,9 +337,14 @@ const registerRecipeReplacings = (evt) => {
         tag.ore_block.steel
     )
     
+    evt.replaceInput({ input: 'minecraft:dried_kelp', mod: 'create' },
+        'minecraft:dried_kelp',
+        item.iu.rubber
+    )
+    
     
     
 
 
-    console.info('Recipe replcaings passed')
+    console.info('Recipe replacings passed')
 }

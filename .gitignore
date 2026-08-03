@@ -335,3 +335,5 @@ config/stylisheffects-client.toml
 config/DistantHorizons.toml
 config/sightline-client.toml
 config/immersive_machinery.json
+config/betterf3.toml
+config/particlerain/particles.json

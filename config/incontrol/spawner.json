@@ -12,7 +12,6 @@
         "arphex:centipede_evictor_larvae",
         "arphex:centipede_stalker",
         "arphex:scorpion_striker",
-        "arphex:spider_lurker",
         "arphex:spider_brood",
         "arphex:spider_recluse",
         "arphex:spider_sinker",
@@ -25,7 +24,7 @@
     ],
     "phase": "arphex_too_active",
     "persecond": 1,
-    "attempts": 50,
+    "attempts": 35,
     "amount": {
       "minimum": 1,
       "maximum": 3,
@@ -41,7 +40,7 @@
       "maxhostile": 150,
       "validspawn": true,
       "and": {
-        "maxlight": 6,
+        "maxlight": 4,
         "maxlight_sky": 15
       }
     }
@@ -59,7 +58,6 @@
         "arphex:centipede_evictor_larvae",
         "arphex:centipede_stalker",
         "arphex:scorpion_striker",
-        "arphex:spider_lurker",
         "arphex:spider_brood",
         "arphex:spider_recluse",
         "arphex:spider_sinker",
@@ -72,7 +70,7 @@
     ],
     "phase": "arphex_flood",
     "persecond": 1,
-    "attempts": 70,
+    "attempts": 60,
     "amount": {
       "minimum": 2,
       "maximum": 5,
@@ -89,7 +87,7 @@
       "validspawn": true,
       "and": {
         "maxtime": 13000,
-        "maxlight": 6,
+        "maxlight": 4,
         "maxlight_sky": 15
       }
     }
@@ -107,7 +105,6 @@
         "arphex:centipede_evictor_larvae",
         "arphex:centipede_stalker",
         "arphex:scorpion_striker",
-        "arphex:spider_lurker",
         "arphex:spider_brood",
         "arphex:spider_recluse",
         "arphex:spider_sinker",
@@ -120,7 +117,7 @@
     ],
     "phase": "arphex_flood",
     "persecond": 1,
-    "attempts": 100,
+    "attempts": 80,
     "amount": {
       "minimum": 2,
       "maximum": 6,
@@ -137,7 +134,7 @@
       "validspawn": true,
       "and": {
         "mintime": 13000,
-        "maxlight": 8,
+        "maxlight": 4,
         "maxlight_sky": 15
       }
     }

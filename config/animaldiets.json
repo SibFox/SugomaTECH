@@ -14,5 +14,7 @@
   "arphex:butterfly_bewitcher_giant": "OMNIVORE",
   "arphex:spider_lunger": "CARNIVORE",
   "arphex:mantis_mutilator": "OMNIVORE",
-  "arphex:ant_arsonist_soldier": "OMNIVORE"
+  "arphex:ant_arsonist_soldier": "OMNIVORE",
+  "minecraft:fox": "OMNIVORE",
+  "minecraft:trader_llama": "HERBIVORE"
 }

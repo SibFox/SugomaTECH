@@ -38,13 +38,24 @@ const registerAECTRecipes = (evt) => {
         ]
     ).id(getRecipeID('silicon_x8'))
 
-    shapedRecipe(evt, getRecipeID('inscriber'),
+    evt.shaped(
+        Item.of('ae2:inscriber', 1),
         [
-            [ item.iu.module.macerator.lvl2, null, item.iu.module.cutting.lvl2 ],
-            [ item.ae.processor.calculation, item.iu.machine_corpus.tech_adv, item.ae.processor.logic ],
-            [ item.iu.module.slot.x3, item.iu.electromotor.lvl2, item.iu.module.slot.x1 ]
-        ],
-    'ae2:inscriber')
+            'MPC',
+            'PQP',
+            'SEO'
+        ],{
+            M: item.iu.module.macerator.lvl2,
+            C: item.iu.module.cutting.lvl2,
+            P: item.iu.carbon_plastic,
+            Q: item.iu.machine_corpus.tech_adv,
+            S: item.iu.module.slot.x3,
+            O: item.iu.module.slot.x1,
+            E: item.iu.electromotor.lvl2
+        }
+    ).id(getRecipeID('inscriber'))
+    
+    
 
     evt.shaped(
         Item.of('ae2:wireless_receiver', 1),
