@@ -51,7 +51,7 @@ const registerIUCTRecipes = (evt) => {
         [
             'powergrid:iron_wire'
         ]
-    ).id(getRecipeID('wire_bare_gold_pg'))
+    ).id(getRecipeID('wire_bare_iron_pg'))
 
     evt.shapeless(Item.of(item.iu.wire.bare.gold, 1),
         [
@@ -64,10 +64,34 @@ const registerIUCTRecipes = (evt) => {
             'powergrid:insulated_copper_wire'
         ]
     ).id(getRecipeID('wire_isolated_copper_pg'))
+
+    evt.shapeless(Item.of('industrialupgrade:tank_iu/tank_iu', 1),
+        [
+            'industrialupgrade:tank_iu/tank_iu'
+        ]
+    ).id(getRecipeID('tank_empty'))
+
+    evt.shapeless(Item.of('industrialupgrade:tank_iu/adv_tank', 1),
+        [
+            'industrialupgrade:tank_iu/adv_tank'
+        ]
+    ).id(getRecipeID('tank_empty_2'))
+
+    evt.shapeless(Item.of('industrialupgrade:tank_iu/imp_tank', 1),
+        [
+            'industrialupgrade:tank_iu/imp_tank'
+        ]
+    ).id(getRecipeID('tank_empty_3'))
+
+    evt.shapeless(Item.of('industrialupgrade:tank_iu/per_tank', 1),
+        [
+            'industrialupgrade:tank_iu/per_tank'
+        ]
+    ).id(getRecipeID('tank_empty_4'))
     
 
 
-    // Переделка машинок
+    // #region Переделка машинок
 
     evt.shaped(
         Item.of('industrialupgrade:basemachine3/electric_wire_insulator', 1),
@@ -320,8 +344,189 @@ const registerIUCTRecipes = (evt) => {
             P: item.iu.cultivated_peat
         }
     ).id(getRecipeID('peat_generator'))
+
+    //#endregion    
+    
+    //#region Переделка роторов
+
+    
+    for (let t of ['wind', 'water']) {
+        
+        evt.shaped(
+            Item.of(item.iu.rotor[t].core.bronze, 1),
+            [
+                'BBB',
+                'BCB',
+                'BBB'
+            ],{
+                B: tag.plate.bronze,
+                C: item.iu.rotor[t].core.wooden
+            }
+        ).id(getRecipeID(t+'_core_bronze'))
+    
+        evt.shaped(
+            Item.of(item.iu.rotor[t].core.iron, 1),
+            [
+                'BBB',
+                'BCB',
+                'BBB'
+            ],{
+                B: tag.plate.iron,
+                C: item.iu.rotor[t].core.bronze
+            }
+        ).id(getRecipeID(t+'_core_iron'))
+
+        evt.shaped(
+            Item.of(item.iu.rotor[t].core.steel, 1),
+            [
+                ' B ',
+                'BCB',
+                ' B '
+            ],{
+                B: tag.plate.steel,
+                C: item.iu.rotor[t].core.iron
+            }
+        ).id(getRecipeID(t+'_core_steel'))
+
+        evt.shaped(
+            Item.of(item.iu.rotor[t].core.carbon, 1),
+            [
+                ' B ',
+                'BCB',
+                ' B '
+            ],{
+                B: item.iu.carbon,
+                C: item.iu.rotor[t].core.steel
+            }
+        ).id(getRecipeID(t+'_core_carbon'))
+
+        evt.shaped(
+            Item.of(item.iu.rotor[t].core.iridium, 1),
+            [
+                'DBD',
+                'BCB',
+                'DBD'
+            ],{
+                B: item.iu.industrial_iridium_plate,
+                D: tag.doubleplate.iridium,
+                C: item.iu.rotor[t].core.carbon
+            }
+        ).id(getRecipeID(t+'_core_iridium'))
+
+        evt.shaped(
+            Item.of(item.iu.rotor[t].core.comp_iridium, 1),
+            [
+                'DBD',
+                'BCB',
+                'DBD'
+            ],{
+                B: item.iu.compressed_carbon,
+                D: item.iu.compressed_industrial_iridium_plate,
+                C: item.iu.rotor[t].core.iridium
+            }
+        ).id(getRecipeID(t+'_core_comp_iridium'))
+
+        evt.shaped(
+            Item.of(item.iu.rotor[t].core.spectral, 1),
+            [
+                'DBD',
+                'ACA',
+                'DBD'
+            ],{
+                B: item.iu.compressed_industrial_iridium_plate,
+                D: item.iu.microchip.lvl9,
+                A: item.iu.tech_box.big.nano,
+                C: item.iu.rotor[t].core.comp_iridium
+            }
+        ).id(getRecipeID(t+'_core_spectral'))
+
+        evt.shaped(
+            Item.of(item.iu.rotor[t].core.mythic, 1),
+            [
+                'DBD',
+                'ACA',
+                ' B '
+            ],{
+                B: item.iu.microchip.lvl7,
+                D: item.iu.core.excited.proton,
+                A: item.iu.tech_box.normal.quantum,
+                C: item.iu.rotor[t].core.spectral
+            }
+        ).id(getRecipeID(t+'_core_mythic'))
+
+        evt.shaped(
+            Item.of(item.iu.rotor[t].core.photon, 1),
+            [
+                'DAD',
+                'ACA',
+                ' A '
+            ],{
+                D: item.iu.core.excited.singular,
+                A: item.iu.tech_box.normal.quantum,
+                C: item.iu.rotor[t].core.mythic
+            }
+        ).id(getRecipeID(t+'_core_photon'))
+        
+        evt.shaped(
+            Item.of(item.iu.rotor[t].core.neutron, 1),
+            [
+                'DAD',
+                'ACA',
+                'BAB'
+            ],{
+                A: item.iu.microchip.lvl8,
+                B: item.iu.industrial_iridium_plate,
+                C: item.iu.rotor[t].core.photon,
+                D: item.ingot.neutronium
+            }
+        ).id(getRecipeID(t+'_core_neutron'))
+
+        evt.shaped(
+            Item.of(item.iu.rotor[t].core.barion, 1),
+            [
+                'DAD',
+                'ACA',
+                ' A '
+            ],{
+                D: item.iu.core.excited.proton,
+                A: item.iu.tech_box.big.quantum,
+                C: item.iu.rotor[t].core.neutron
+            }
+        ).id(getRecipeID(t+'_core_barion'))
+
+        evt.shaped(
+            Item.of(item.iu.rotor[t].core.adron, 1),
+            [
+                'DAD',
+                'ACA',
+                'DAD'
+            ],{
+                D: item.iu.compressed_industrial_iridium_plate,
+                A: item.iu.microchip.lvl10,
+                C: item.iu.rotor[t].core.barion
+            }
+        ).id(getRecipeID(t+'_core_adron'))
+
+        evt.shaped(
+            Item.of(item.iu.rotor[t].core.ultra, 1),
+            [
+                'AFA',
+                'FCF',
+                'DFD'
+            ],{
+                D: item.iu.compressed_industrial_iridium_plate,
+                A: item.iu.microchip.lvl11,
+                F: item.ingot.photoniy,
+                C: item.iu.rotor[t].core.adron
+            }
+        ).id(getRecipeID(t+'_core_ultra'))
+        
+
+    }
     
     
+
+    //#endregion
 
     console.info('Industrial Upgrade recipe adding passed')
 }

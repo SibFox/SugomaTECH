@@ -10,9 +10,9 @@ const registerCCRecipes = (evt) => {
         return recipeID('cc', path)
     }
 
-    evt.remove({ output: 'computercraft:computer_normal' })
-    evt.remove({ output: 'computercraft:computer_advanced' })
-    evt.remove({ output: 'computercraft:computer_advanced_upgrade' })
+    evt.remove({ id: 'computercraft:computer_normal' })
+    evt.remove({ id: 'computercraft:computer_advanced' })
+    evt.remove({ id: 'computercraft:computer_advanced_upgrade' })
     // evt.remove({ output: item.cc.computer.normal })
     // evt.remove({ output: item.cc.computer.advanced })
 
@@ -55,9 +55,9 @@ const registerCCRecipes = (evt) => {
     "result": {"count": 1, "id": item.cc.computer.advanced }
     }).id(getRecipeID('computer_advanced_upgrade'))
 
-    evt.remove({ output: 'computercraft:pocket_computer_normal' })
-    evt.remove({ output: 'computercraft:pocket_computer_advanced' })
-    evt.remove({ output: 'computercraft:pocket_computer_advanced_upgrade' })
+    evt.remove({ id: 'computercraft:pocket_computer_normal' })
+    evt.remove({ id: 'computercraft:pocket_computer_advanced' })
+    evt.remove({ id: 'computercraft:pocket_computer_advanced_upgrade' })
 
     shapedRecipe(evt, getRecipeID('pocket_computer_normal'),
         [
@@ -98,9 +98,9 @@ const registerCCRecipes = (evt) => {
     "result": {"count": 1, "id": item.cc.computer.pocket.advanced }
     }).id(getRecipeID('pocket_computer_advanced_upgrade'))
 
-    evt.remove({ output: 'computercraft:turtle_advanced_upgrade' })
-    evt.remove({ output: 'computercraft:turtle_advanced' })
-    evt.remove({ output: 'computercraft:turtle_normal' })
+    evt.remove({ id: 'computercraft:turtle_advanced_upgrade' })
+    evt.remove({ id: 'computercraft:turtle_advanced' })
+    evt.remove({ id: 'computercraft:turtle_normal' })
     // evt.remove({ output: item.cc.turtle.normal })
     // evt.remove({ output: item.cc.turtle.advanced })
 

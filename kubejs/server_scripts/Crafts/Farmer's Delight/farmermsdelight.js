@@ -93,8 +93,8 @@ const registerFDRecipes = (evt) => {
     evt.shapeless(Item.of('farmersdelight:organic_compost', 8),
         [
             'industrialupgrade:blockresource/peat',
-            'agritechevolved:compacted_biomass',
-            'agritechevolved:compacted_biomass',
+            'agritechevolved:biomass',
+            'agritechevolved:biomass',
             'farmersdelight:tree_bark',
             'farmersdelight:tree_bark',
             'industrialupgrade:fertilizer',
@@ -111,8 +111,8 @@ const registerFDRecipes = (evt) => {
                 'minecraft:soul_sand',
                 'minecraft:soul_soil'
             ],
-            'agritechevolved:compacted_biomass',
-            'agritechevolved:compacted_biomass',
+            'agritechevolved:biomass',
+            'agritechevolved:biomass',
             [
                 'minecraft:warped_roots',
                 'minecraft:crimson_roots'

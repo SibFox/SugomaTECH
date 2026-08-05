@@ -22,7 +22,17 @@ const registerIURecipeRemovings = (evt) => {
         'industrialupgrade:basemachine3/peat_generator'
     ] })    
 
-
+    for (let t of ['wind', 'water']) {
+        evt.remove({ output: [
+            item.iu.rotor[t].core.bronze,
+            item.iu.rotor[t].core.iron, item.iu.rotor[t].core.steel,
+            item.iu.rotor[t].core.carbon, item.iu.rotor[t].core.iridium,
+            item.iu.rotor[t].core.comp_iridium, item.iu.rotor[t].core.spectral,
+            item.iu.rotor[t].core.mythic, item.iu.rotor[t].core.neutron,
+            item.iu.rotor[t].core.photon, item.iu.rotor[t].core.barion,
+            item.iu.rotor[t].core.adron, item.iu.rotor[t].core.ultra
+        ] })
+    }
 
 
 

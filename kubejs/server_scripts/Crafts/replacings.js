@@ -342,6 +342,16 @@ const registerRecipeReplacings = (evt) => {
         item.iu.rubber
     )
     
+    evt.replaceOutput({ output: 'industrialupgrade:itemcell/smallfluidcell' },
+        'industrialupgrade:itemcell/smallfluidcell',
+        '3x industrialupgrade:itemcell/smallfluidcell'
+    )
+    
+    evt.replaceOutput({ output: 'industrialupgrade:itemcell/reinforcedfluidcell' },
+        'industrialupgrade:itemcell/reinforcedfluidcell',
+        '3x industrialupgrade:itemcell/reinforcedfluidcell'
+    )
+    
     
     
 

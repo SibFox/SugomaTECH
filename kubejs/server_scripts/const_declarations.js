@@ -186,6 +186,8 @@ const item = {
         superalloy_rene: 'industrialupgrade:alloyingot/superalloy_rene',
 
 
+        photoniy: 'industrialupgrade:photoniy_ingot',
+        neutronium: 'industrialupgrade:neutroniumingot',
         titanium_steel_untreated: 'industrialupgrade:crafting_elements/crafting_503_element',
     },
 
@@ -312,6 +314,8 @@ const item = {
         industrial_iridium_plate: 'industrialupgrade:crafting_elements/crafting_285_element',
         compressed_industrial_iridium_plate: 'industrialupgrade:quantumitems2',
         dense_compressed_industrial_iridium_plate: 'industrialupgrade:quantumitems4',
+
+        photoniy: 'industrialupgrade:photoniy',
     
         wire: {
             bare: {
@@ -550,16 +554,80 @@ const item = {
         rotor: {
             wind: {
                 core: {
+                    wooden: 'industrialupgrade:corewind/core_wind',
+                    bronze: 'industrialupgrade:corewind/core_wind1',
                     iron: 'industrialupgrade:corewind/core_wind2',
+                    steel: 'industrialupgrade:corewind/core_wind3',
+                    carbon: 'industrialupgrade:corewind/core_wind4',
+                    iridium: 'industrialupgrade:corewind/core_wind5',
+                    comp_iridium: 'industrialupgrade:corewind/core_wind6',
+                    spectral: 'industrialupgrade:corewind/core_wind7',
+                    mythic: 'industrialupgrade:corewind/core_wind8',
+                    neutron: 'industrialupgrade:corewind/core_wind9',
+                    photon: 'industrialupgrade:corewind/core_wind10',
+                    barion: 'industrialupgrade:corewind/core_wind11',
+                    adron: 'industrialupgrade:corewind/core_wind12',
+                    ultra: 'industrialupgrade:corewind/core_wind13',
                 },
                 model: {
                     iron: 'industrialupgrade:windrod/iron_rotor_model',
-                    steel: 'industrialupgrade:windrod/steel_rotor_model',                    
+                    steel: 'industrialupgrade:windrod/steel_rotor_model',
                 },
                 ready: {
+                    wooden: 'industrialupgrade:rotor/rotor_wood',
+                    bronze: 'industrialupgrade:rotor/rotor_bronze',
                     iron: 'industrialupgrade:rotor/rotor_iron',
-                },      
+                    steel: 'industrialupgrade:rotor/rotor_steel',
+                    carbon: 'industrialupgrade:rotor/rotor_carbon',
+                    iridium: 'industrialupgrade:rotor/iridium',
+                    comp_iridium: 'industrialupgrade:rotor/compressiridium',
+                    spectral: 'industrialupgrade:rotor/spectral',
+                    mythic: 'industrialupgrade:rotor/myphical',
+                    photon: 'industrialupgrade:rotor/photon',
+                    neutron: 'industrialupgrade:rotor/neutron',
+                    barion: 'industrialupgrade:rotor/barionrotor',
+                    adron: 'industrialupgrade:rotor/adronrotor',
+                    ultra: 'industrialupgrade:rotor/ultramarinerotor',
+                },
             },
+            water: {
+                core: {
+                    wooden: 'industrialupgrade:corewater/core_wind',
+                    bronze: 'industrialupgrade:corewater/core_wind1',
+                    iron: 'industrialupgrade:corewater/core_wind2',
+                    steel: 'industrialupgrade:corewater/core_wind3',
+                    carbon: 'industrialupgrade:corewater/core_wind4',
+                    iridium: 'industrialupgrade:corewater/core_wind5',
+                    comp_iridium: 'industrialupgrade:corewater/core_wind6',
+                    spectral: 'industrialupgrade:corewater/core_wind7',
+                    mythic: 'industrialupgrade:corewater/core_wind8',
+                    neutron: 'industrialupgrade:corewater/core_wind9',
+                    photon: 'industrialupgrade:corewater/core_wind10',
+                    barion: 'industrialupgrade:corewater/core_wind11',
+                    adron: 'industrialupgrade:corewater/core_wind12',
+                    ultra: 'industrialupgrade:corewater/core_wind13',
+                },
+                model: {
+                    iron: 'industrialupgrade:waterrod/iron_rotor_model',
+                    steel: 'industrialupgrade:waterrod/steel_rotor_model',
+                },
+                ready: {
+                    wooden: 'industrialupgrade:water_rotor/water_rotor_wood',
+                    bronze: 'industrialupgrade:water_rotor/water_rotor_bronze',
+                    iron: 'industrialupgrade:water_rotor/water_rotor_iron',
+                    steel: 'industrialupgrade:water_rotor/water_rotor_steel',
+                    carbon: 'industrialupgrade:water_rotor/water_rotor_carbon',
+                    iridium: 'industrialupgrade:water_rotor/water_iridium',
+                    comp_iridium: 'industrialupgrade:water_rotor/water_compressiridium',
+                    spectral: 'industrialupgrade:water_rotor/water_spectral',
+                    mythic: 'industrialupgrade:water_rotor/water_myphical',
+                    photon: 'industrialupgrade:water_rotor/water_photon',
+                    neutron: 'industrialupgrade:water_rotor/water_neutron',
+                    barion: 'industrialupgrade:water_rotor/water_barionrotor',
+                    adron: 'industrialupgrade:water_rotor/water_adronrotor',
+                    ultra: 'industrialupgrade:water_rotor/water_ultramarinerotor',
+                },
+            }
         },
 
         drilling_bit: {
