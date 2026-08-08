@@ -489,22 +489,6 @@ const registerCyberneticsETRecipes = (evt) => {
         }
     )
 
-    cnRecipe(evt, asItem('createcybernetics:brainupgrades_cyberdeck'),
-        [
-            'M    ',
-            'TTTTT',
-            'TWDET',
-            'TTTTT',
-            '     ',
-        ],{
-            M: 'create:redstone_link',
-            T: item.cn.titanium_plating,
-            W: item.iu.spool.lvl1,
-            D: item.cn.diodes,
-            E: item.create.electron_tube
-        }
-    )
-
     cnRecipe(evt, asItem('createcybernetics:brainupgrades_chipwareslots'),
         [
             '     ',

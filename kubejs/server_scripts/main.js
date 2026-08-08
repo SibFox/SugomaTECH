@@ -82,9 +82,10 @@ ItemEvents.foodEaten(event => {
 
 BlockEvents.leftClicked(evt => {
     const {player, block} = evt
-    const {x, z} = block
+    const {x, z, y} = block
     if (!player.isCreative()) {
-        if (x > -315 && x < -200 && z > -15 && z < 70 ){
+        if ((x > -315 && x < -200 && z > -15 && z < 70) ||
+            (x > -403 && x < -398 && z >  63 && z < 71 && y > -42 && y < -30)){
             evt.cancel()
         }
     }
@@ -92,9 +93,10 @@ BlockEvents.leftClicked(evt => {
 
 BlockEvents.placed(evt => {
     const {player, block} = evt
-    const {x, z} = block
+    const {x, z, y} = block
     if (!player.isCreative()) {
-        if (x > -315 && x < -200 && z > -15 && z < 70 ){
+        if (x > -315 && x < -200 && z > -15 && z < 70 ||
+            (x > -403 && x < -398 && z >  63 && z < 71 && y > -42 && y < -30)){
             evt.cancel()
         }
     }

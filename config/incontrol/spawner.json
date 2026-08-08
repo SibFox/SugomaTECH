@@ -8,11 +8,9 @@
         "arphex:mosquito_morbidity",
         "arphex:silverfish_spectre",
         "arphex:locust_landscourge",
-        "arphex:hornet_harbinger_giant",
-        "arphex:centipede_evictor_larvae",
+        "arphex:hornet_harbinger",
         "arphex:centipede_stalker",
         "arphex:scorpion_striker",
-        "arphex:spider_lurker",
         "arphex:spider_brood",
         "arphex:spider_recluse",
         "arphex:spider_sinker",
@@ -20,29 +18,29 @@
         "arphex:spider_obstructer",
         "arphex:spider_funnel",
         "arphex:spider_lunger",
-        "arphex:spider_ambusher",
         "arphex:dragonfly_dreadnought"
     ],
     "phase": "arphex_too_active",
-    "persecond": 1,
-    "attempts": 50,
+    "persecond": 0.65,
+    "attempts": 5,
     "amount": {
       "minimum": 1,
-      "maximum": 3,
-      "groupdistance": 10
+      "maximum": 2,
+      "groupdistance": 30
     },
     "conditions": {
       "dimension": "minecraft:overworld",
       "norestrictions": true,
-      "mindist": 15,
+      "mindist": 40,
       "maxdist": 100,
       "minheight": -30,
       "maxheight": 300,
-      "maxhostile": 150,
+      "maxthis": 30,
       "validspawn": true,
       "and": {
-        "maxlight": 6,
-        "maxlight_sky": 15
+        "maxtime": 13000,
+        "maxlight": 4,
+        "maxlight_sky": 13
       }
     }
   },
@@ -55,11 +53,9 @@
         "arphex:mosquito_morbidity",
         "arphex:silverfish_spectre",
         "arphex:locust_landscourge",
-        "arphex:hornet_harbinger_giant",
-        "arphex:centipede_evictor_larvae",
+        "arphex:hornet_harbinger",
         "arphex:centipede_stalker",
         "arphex:scorpion_striker",
-        "arphex:spider_lurker",
         "arphex:spider_brood",
         "arphex:spider_recluse",
         "arphex:spider_sinker",
@@ -67,29 +63,28 @@
         "arphex:spider_obstructer",
         "arphex:spider_funnel",
         "arphex:spider_lunger",
-        "arphex:spider_ambusher",
         "arphex:dragonfly_dreadnought"
     ],
-    "phase": "arphex_flood",
-    "persecond": 1,
-    "attempts": 70,
+    "phase": "arphex_too_active",
+    "persecond": 0.8,
+    "attempts": 12,
     "amount": {
-      "minimum": 2,
-      "maximum": 5,
+      "minimum": 1,
+      "maximum": 3,
       "groupdistance": 20
     },
     "conditions": {
       "dimension": "minecraft:overworld",
       "norestrictions": true,
-      "mindist": 15,
+      "mindist": 30,
       "maxdist": 100,
       "minheight": -30,
       "maxheight": 300,
-      "maxhostile": 150,
+      "maxthis": 30,
       "validspawn": true,
       "and": {
-        "maxtime": 13000,
-        "maxlight": 6,
+        "mintime": 13000,
+        "maxlight": 4,
         "maxlight_sky": 15
       }
     }
@@ -107,7 +102,6 @@
         "arphex:centipede_evictor_larvae",
         "arphex:centipede_stalker",
         "arphex:scorpion_striker",
-        "arphex:spider_lurker",
         "arphex:spider_brood",
         "arphex:spider_recluse",
         "arphex:spider_sinker",
@@ -119,25 +113,72 @@
         "arphex:dragonfly_dreadnought"
     ],
     "phase": "arphex_flood",
-    "persecond": 1,
-    "attempts": 100,
+    "persecond": 0.8,
+    "attempts": 20,
     "amount": {
-      "minimum": 2,
-      "maximum": 6,
+      "minimum": 1,
+      "maximum": 3,
+      "groupdistance": 20
+    },
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "norestrictions": true,
+      "mindist": 40,
+      "maxdist": 100,
+      "minheight": -30,
+      "maxheight": 300,
+      "maxthis": 30,
+      "validspawn": true,
+      "and": {
+        "maxtime": 13000,
+        "maxlight": 6,
+        "maxlight_sky": 14
+      }
+    }
+  },
+  {
+    "mob": [
+        "arphex:millipede_marauder",
+        "arphex:fly_festerer",
+        "arphex:moth_moontracker",
+        "arphex:beetle_bulwark",
+        "arphex:mosquito_morbidity",
+        "arphex:silverfish_spectre",
+        "arphex:locust_landscourge",
+        "arphex:hornet_harbinger_giant",
+        "arphex:centipede_evictor_larvae",
+        "arphex:centipede_stalker",
+        "arphex:scorpion_striker",
+        "arphex:spider_brood",
+        "arphex:spider_recluse",
+        "arphex:spider_sinker",
+        "arphex:spider_matriarch_larvae",
+        "arphex:spider_obstructer",
+        "arphex:spider_funnel",
+        "arphex:spider_lunger",
+        "arphex:spider_ambusher",
+        "arphex:dragonfly_dreadnought"
+    ],
+    "phase": "arphex_flood",
+    "persecond": 0.8,
+    "attempts": 35,
+    "amount": {
+      "minimum": 1,
+      "maximum": 4,
       "groupdistance": 10
     },
     "conditions": {
       "dimension": "minecraft:overworld",
       "norestrictions": true,
-      "mindist": 15,
+      "mindist": 25,
       "maxdist": 100,
       "minheight": -30,
       "maxheight": 300,
-      "maxhostile": 150,
+      "maxthis": 30,
       "validspawn": true,
       "and": {
         "mintime": 13000,
-        "maxlight": 8,
+        "maxlight": 6,
         "maxlight_sky": 15
       }
     }

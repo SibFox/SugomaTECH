@@ -337,9 +337,24 @@ const registerRecipeReplacings = (evt) => {
         tag.ore_block.steel
     )
     
+    evt.replaceInput({ input: 'minecraft:dried_kelp', mod: 'create' },
+        'minecraft:dried_kelp',
+        item.iu.rubber
+    )
+    
+    evt.replaceOutput({ output: 'industrialupgrade:itemcell/smallfluidcell' },
+        'industrialupgrade:itemcell/smallfluidcell',
+        '3x industrialupgrade:itemcell/smallfluidcell'
+    )
+    
+    evt.replaceOutput({ output: 'industrialupgrade:itemcell/reinforcedfluidcell' },
+        'industrialupgrade:itemcell/reinforcedfluidcell',
+        '3x industrialupgrade:itemcell/reinforcedfluidcell'
+    )
+    
     
     
 
 
-    console.info('Recipe replcaings passed')
+    console.info('Recipe replacings passed')
 }

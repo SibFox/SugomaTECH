@@ -500,5 +500,32 @@ const registerCreateCTRecipes = (evt) => {
         }
     ).id(getRecipeID('smart_propeller'))
     
-    
+    Color.DYE.forEach(color => {
+        evt.remove({ output: 'numismatics:'+color+'_card' })
+        evt.remove({ output: 'numismatics:'+color+'_id_card' })
+
+        evt.shaped(
+            Item.of('numismatics:'+color+'_card', 1),
+            [
+                'MPD',
+            ],{
+                D: item.dye[color],
+                P: item.iu.plastic,
+                M: item.create.precision_mechanism
+            }
+        ).id(getRecipeID('bank_card_'+color))
+        
+        evt.shaped(
+            Item.of('numismatics:'+color+'_id_card', 1),
+            [
+                ' D ',
+                'EPI'
+            ],{
+                D: item.dye[color],
+                P: item.iu.plastic,
+                E: item.paper,
+                I: tag.nugget.brass
+            }
+        ).id(getRecipeID('id_card_'+color))
+    });
 }

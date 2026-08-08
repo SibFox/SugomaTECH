@@ -2,13 +2,15 @@
     {
         "name": "arphex_flood",
         "conditions": {
-            "daycount": "repeat(7,1,2)"
-        }
+            "daycount": "repeat(10,3,3)"
+        },
+        "message": "Жуки лезут со всех щелей..."
     },
     {
         "name": "arphex_too_active",
         "conditions": {
-            "daycount": "repeat(7,3,5)"
-        }
+            "daycount": "repeat(10,1,2)"
+        },
+        "message": "Жуки ведут себя странно активно..."
     }
 ]

@@ -49,6 +49,7 @@ const item = {
     fns: 'minecraft:flint_and_steel',
     compass: 'minecraft:compass',
     conduit: 'minecraft:conduit',
+    paper: 'minecraft:paper',
 
     // ~~~~~~~~~~~~~~~~~~~~ Farmer's Delight ~~~~~~~~~~~~~~~~~~~~ 
     milk_bottle: 'farmersdelight:milk_bottle',
@@ -186,6 +187,8 @@ const item = {
         superalloy_rene: 'industrialupgrade:alloyingot/superalloy_rene',
 
 
+        photoniy: 'industrialupgrade:photoniy_ingot',
+        neutronium: 'industrialupgrade:neutroniumingot',
         titanium_steel_untreated: 'industrialupgrade:crafting_elements/crafting_503_element',
     },
 
@@ -277,6 +280,8 @@ const item = {
         exotic_material: 'industrialupgrade:crafting_elements/crafting_434_element',
         tin_can: 'industrialupgrade:crafting_elements/crafting_296_element',
         plutonium_lazuli_crystall: 'industrialupgrade:crafting_elements/crafting_446_element',
+        electum_boiler: 'industrialupgrade:crafting_elements/crafting_601_element',
+        cultivated_peat: 'industrialupgrade:cultivated_peat',
 
         graphene_wire: 'industrialupgrade:graphene_wire',
         graphene_plate: 'industrialupgrade:graphene_plate',
@@ -310,6 +315,8 @@ const item = {
         industrial_iridium_plate: 'industrialupgrade:crafting_elements/crafting_285_element',
         compressed_industrial_iridium_plate: 'industrialupgrade:quantumitems2',
         dense_compressed_industrial_iridium_plate: 'industrialupgrade:quantumitems4',
+
+        photoniy: 'industrialupgrade:photoniy',
     
         wire: {
             bare: {
@@ -548,16 +555,80 @@ const item = {
         rotor: {
             wind: {
                 core: {
+                    wooden: 'industrialupgrade:corewind/core_wind',
+                    bronze: 'industrialupgrade:corewind/core_wind1',
                     iron: 'industrialupgrade:corewind/core_wind2',
+                    steel: 'industrialupgrade:corewind/core_wind3',
+                    carbon: 'industrialupgrade:corewind/core_wind4',
+                    iridium: 'industrialupgrade:corewind/core_wind5',
+                    comp_iridium: 'industrialupgrade:corewind/core_wind6',
+                    spectral: 'industrialupgrade:corewind/core_wind7',
+                    mythic: 'industrialupgrade:corewind/core_wind8',
+                    neutron: 'industrialupgrade:corewind/core_wind9',
+                    photon: 'industrialupgrade:corewind/core_wind10',
+                    barion: 'industrialupgrade:corewind/core_wind11',
+                    adron: 'industrialupgrade:corewind/core_wind12',
+                    ultra: 'industrialupgrade:corewind/core_wind13',
                 },
                 model: {
                     iron: 'industrialupgrade:windrod/iron_rotor_model',
-                    steel: 'industrialupgrade:windrod/steel_rotor_model',                    
+                    steel: 'industrialupgrade:windrod/steel_rotor_model',
                 },
                 ready: {
+                    wooden: 'industrialupgrade:rotor/rotor_wood',
+                    bronze: 'industrialupgrade:rotor/rotor_bronze',
                     iron: 'industrialupgrade:rotor/rotor_iron',
-                },      
+                    steel: 'industrialupgrade:rotor/rotor_steel',
+                    carbon: 'industrialupgrade:rotor/rotor_carbon',
+                    iridium: 'industrialupgrade:rotor/iridium',
+                    comp_iridium: 'industrialupgrade:rotor/compressiridium',
+                    spectral: 'industrialupgrade:rotor/spectral',
+                    mythic: 'industrialupgrade:rotor/myphical',
+                    photon: 'industrialupgrade:rotor/photon',
+                    neutron: 'industrialupgrade:rotor/neutron',
+                    barion: 'industrialupgrade:rotor/barionrotor',
+                    adron: 'industrialupgrade:rotor/adronrotor',
+                    ultra: 'industrialupgrade:rotor/ultramarinerotor',
+                },
             },
+            water: {
+                core: {
+                    wooden: 'industrialupgrade:corewater/core_wind',
+                    bronze: 'industrialupgrade:corewater/core_wind1',
+                    iron: 'industrialupgrade:corewater/core_wind2',
+                    steel: 'industrialupgrade:corewater/core_wind3',
+                    carbon: 'industrialupgrade:corewater/core_wind4',
+                    iridium: 'industrialupgrade:corewater/core_wind5',
+                    comp_iridium: 'industrialupgrade:corewater/core_wind6',
+                    spectral: 'industrialupgrade:corewater/core_wind7',
+                    mythic: 'industrialupgrade:corewater/core_wind8',
+                    neutron: 'industrialupgrade:corewater/core_wind9',
+                    photon: 'industrialupgrade:corewater/core_wind10',
+                    barion: 'industrialupgrade:corewater/core_wind11',
+                    adron: 'industrialupgrade:corewater/core_wind12',
+                    ultra: 'industrialupgrade:corewater/core_wind13',
+                },
+                model: {
+                    iron: 'industrialupgrade:waterrod/iron_rotor_model',
+                    steel: 'industrialupgrade:waterrod/steel_rotor_model',
+                },
+                ready: {
+                    wooden: 'industrialupgrade:water_rotor/water_rotor_wood',
+                    bronze: 'industrialupgrade:water_rotor/water_rotor_bronze',
+                    iron: 'industrialupgrade:water_rotor/water_rotor_iron',
+                    steel: 'industrialupgrade:water_rotor/water_rotor_steel',
+                    carbon: 'industrialupgrade:water_rotor/water_rotor_carbon',
+                    iridium: 'industrialupgrade:water_rotor/water_iridium',
+                    comp_iridium: 'industrialupgrade:water_rotor/water_compressiridium',
+                    spectral: 'industrialupgrade:water_rotor/water_spectral',
+                    mythic: 'industrialupgrade:water_rotor/water_myphical',
+                    photon: 'industrialupgrade:water_rotor/water_photon',
+                    neutron: 'industrialupgrade:water_rotor/water_neutron',
+                    barion: 'industrialupgrade:water_rotor/water_barionrotor',
+                    adron: 'industrialupgrade:water_rotor/water_adronrotor',
+                    ultra: 'industrialupgrade:water_rotor/water_ultramarinerotor',
+                },
+            }
         },
 
         drilling_bit: {
@@ -593,6 +664,7 @@ const item = {
             casing: 'industrialupgrade:module_schedule',
         },
 
+        //#region IU Модули
         module: {
             template: {
                 lvl1: 'industrialupgrade:crafting_elements/crafting_21_element',
@@ -656,6 +728,13 @@ const item = {
                 lvl4: 'industrialupgrade:crafting_elements/crafting_162_element',
                 lvl5: 'industrialupgrade:crafting_elements/crafting_615_element',
             },
+            extruder: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_163_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_125_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_126_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_127_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_616_element',
+            },
             transformation: 'industrialupgrade:crafting_elements/crafting_75_element',
             transformation_adv: 'industrialupgrade:crafting_elements/crafting_10_element',
             combining: {
@@ -670,6 +749,20 @@ const item = {
             circuit: 'industrialupgrade:crafting_elements/crafting_73_element',
             potion: 'industrialupgrade:crafting_elements/crafting_661_element',
             brewing: 'industrialupgrade:crafting_elements/crafting_658_element',
+            press: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_63_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_1_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_77_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_102_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_608_element',
+            },
+            rolling: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_165_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_166_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_167_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_168_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_609_element',
+            },
             heat: {
                 lvl1: 'industrialupgrade:crafting_elements/crafting_39_element',
                 lvl2: 'industrialupgrade:crafting_elements/crafting_15_element',
@@ -702,6 +795,20 @@ const item = {
                 lvl4: 'industrialupgrade:crafting_elements/crafting_131_element',
                 lvl5: 'industrialupgrade:crafting_elements/crafting_605_element',
             },
+            mineral: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_205_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_204_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_202_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_203_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_633_element',
+            },
+            electrofurnace: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_219_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_225_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_221_element',
+                lvl4: 'industrialupgrade:crafting_elements/crafting_223_element',
+                lvl5: 'industrialupgrade:crafting_elements/crafting_617_element',
+            },
             repulsor_shield: 'industrialupgrade:crafting_elements/crafting_439_element',
             ore: 'industrialupgrade:crafting_elements/crafting_53_element',
             boosting: 'industrialupgrade:crafting_elements/crafting_155_element',
@@ -719,12 +826,22 @@ const item = {
                 lvl4: 'industrialupgrade:crafting_elements/crafting_136_element',
                 lvl5: 'industrialupgrade:crafting_elements/crafting_612_element',
             },
+            pump: {
+                lvl1: 'industrialupgrade:crafting_elements/crafting_241_element',
+                lvl2: 'industrialupgrade:crafting_elements/crafting_248_element',
+                lvl3: 'industrialupgrade:crafting_elements/crafting_245_element',
+            },
+            filler: 'industrialupgrade:crafting_elements/crafting_265_element',
+            electrolyzer: 'industrialupgrade:crafting_elements/crafting_244_element',
             assembler: 'industrialupgrade:crafting_elements/crafting_243_element',
             cybernetics: 'kubejs:module_cybernetics',
             lava: 'industrialupgrade:crafting_elements/crafting_228_element',
             unpacking: 'industrialupgrade:crafting_elements/crafting_469_element',
             transformer: 'industrialupgrade:crafting_elements/crafting_156_element',
+            steam: 'industrialupgrade:crafting_elements/crafting_32_element',
         },
+
+        //#endregion
 
         core: {
             normal: {

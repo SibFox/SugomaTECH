@@ -13,7 +13,7 @@ const registerAEMachinesRecipes = (evt) => {
     // ~~~~~~~ Кристальный сборщик ~~~~~~~
     
     aeAssemblerRecipe(evt, getRecipeID('entro_ingot'),
-        asItem(fluid.redstone, 10),
+        asItem(fluid.redstone, 40),
         [
             asItem(item.ae.entro_dust, 4),
             asItem(item.ingot.vanadoalumite, 4),
@@ -23,7 +23,7 @@ const registerAEMachinesRecipes = (evt) => {
     )
 
     aeAssemblerRecipe(evt, getRecipeID('sky_steel'),
-        asItem(fluid.lava, 100),
+        asItem(fluid.lava, 300),
         [
             asItem(item.ae.charged_certus_quartz_crystal, 4),
             asItem(item.ingot.titanium_steel, 4),
@@ -35,7 +35,7 @@ const registerAEMachinesRecipes = (evt) => {
     aeAssemblerRecipe(evt, getRecipeID('sky_bronze'),
         asItem(fluid.lava, 100),
         [
-            asItem(item.ae.certus_quartz_crystal, 4),
+            asItem(item.ae.charged_certus_quartz_crystal, 4),
             asItem(item.ingot.bronze, 4),
             asItem(item.ae.sky_dust, 4)
         ],
@@ -75,12 +75,16 @@ const registerAEMachinesRecipes = (evt) => {
     
     aeReactionRecipe(evt, getRecipeID('quantum_alloy'),
         200000, asItem(fluid.quantum_infusion, 1000),
-        [ asItem(item.ingot.woods, 4), asItem(item.ae.shattered_singularity, 4), asItem(item.ae.singularity, 4) ],
+        [ 
+            asItem(item.ingot.woods, 4), 
+            asItem(item.ae.shattered_singularity, 4), 
+            asItem(item.ae.singularity, 4) 
+        ],
         asItem(item.ingot.quantum_alloy)
     )
 
     aeReactionRecipe(evt, getRecipeID('entro_ingot'),
-        500000, asItem(fluid.redstone, 40),
+        500000, asItem(fluid.redstone, 180),
         [
             asItem(item.ae.entro_dust, 24),
             asItem(item.ingot.vanadoalumite, 24),
@@ -90,7 +94,7 @@ const registerAEMachinesRecipes = (evt) => {
     )
 
     aeReactionRecipe(evt, getRecipeID('sky_steel'),
-        300000, asItem(fluid.lava, 1000),
+        300000, asItem(fluid.lava, 4000),
         [
             asItem(item.ae.charged_certus_quartz_crystal, 24),
             asItem(item.ingot.titanium_steel, 24),
@@ -100,7 +104,7 @@ const registerAEMachinesRecipes = (evt) => {
     )
     
     aeReactionRecipe(evt, getRecipeID('sky_bronze'),
-        250000, asItem(fluid.lava, 1000),
+        250000, asItem(fluid.lava, 1500),
         [
             asItem(item.ae.charged_certus_quartz_crystal, 24),
             asItem(item.ingot.bronze, 24),
@@ -110,7 +114,7 @@ const registerAEMachinesRecipes = (evt) => {
     )
     
     aeReactionRecipe(evt, getRecipeID('shattered_singularity'),
-        200000, asItem(fluid.redstone, 40),
+        200000, asItem(fluid.redstone, 90),
         [
             asItem(item.ae.quantum_singularity, 2),
             asItem(item.ae.ender_dust, 2),

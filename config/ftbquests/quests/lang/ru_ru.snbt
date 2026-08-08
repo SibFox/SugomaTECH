@@ -16,6 +16,8 @@
 	]
 	quest.002644AAEF310123.quest_subtitle: "&7 &o Обычный грунт боле не способен удовлетворить твои аппетиты, а?"
 	quest.002644AAEF310123.title: "&#4D6AF5Био&#5668F5-&#6067F5к&#6965F5в&#7363F5а&#7C61F5н&#8660F5т&#8F5EF5о&#995CF5в&#A25BF5ы&#AC59F5й &#BF56F5с&#C854F5у&#D252F5б&#DB50F5с&#E54FF5т&#EE4DF5рат"
+	quest.002C1CC8E3104101.quest_subtitle: "Апофеоз кухонного мастерства"
+	quest.002C1CC8E3104101.title: "&d[ Коллекция ]:  \"Эндская плоть\""
 	quest.01908AA9362EC6E7.quest_desc: [
 		"   &nСкальпель&r - &zвесьма полезный инструмент&r"
 		""
@@ -97,6 +99,8 @@
 	]
 	quest.0952460708DD3D50.quest_subtitle: "Победите &5Паучью Моль"
 	quest.0952460708DD3D50.title: "&5Моль"
+	quest.099CF5696D9AF72D.quest_subtitle: "Сладости!"
+	quest.099CF5696D9AF72D.title: "&a[ Коллекция ]:  \"Фрукты-ягодки\""
 	quest.09E438DA724A4817.quest_desc: [
 		"{ftbquests.chapter.56AEAC22236F88E3.quest35.description1}"
 		""
@@ -124,6 +128,8 @@
 	]
 	quest.0D45D64B3C739B40.quest_subtitle: "Создайте сет &dТеневой брони"
 	quest.0D45D64B3C739B40.title: "&dТеневая броня"
+	quest.0D5167A1C8E704C3.quest_subtitle: "Чистый белок!"
+	quest.0D5167A1C8E704C3.title: "&a[ Коллекция ]:  \"Рыба да мясо\""
 	quest.0D78B2E8A66CEDDA.quest_desc: [
 		"{ftbquests.chapter.292851496F040C0B.quest1.description1}"
 		""
@@ -138,6 +144,7 @@
 		""
 		"{ftbquests.chapter.292851496F040C0B.quest1.description7}"
 	]
+	quest.0D78B2E8A66CEDDA.title: "Режимы рецептов"
 	quest.0E35DEFD4521D756.quest_desc: [
 		"&eКастрюля&r из &dКалейдоскопа&r позволяет готовить рецепты из мода!"
 		""
@@ -226,6 +233,8 @@
 	quest.178E26EE5A8206F7.quest_desc: ["  Можно получить, &6убивая&r &cсвиней,&r &cпиглинов&r и &cхоглинов&r с помощью &eтесака,&r либо &6перемолов&r &aсемена&r &6в&r &eжёрнове.&r"]
 	quest.178E26EE5A8206F7.quest_subtitle: "Жир!"
 	quest.178E26EE5A8206F7.title: "&#FF8950Масло"
+	quest.178FEA0D4846F448.quest_subtitle: "Незабываемый опыт"
+	quest.178FEA0D4846F448.title: "&e[ Коллекция ]:  \"Адская мясная тарелка\""
 	quest.17A47E26BE71E97A.quest_desc: ["   &nЭкстрактор ДНК&r нужен &6для извлечения&r &aспиралей ДНК&r &6из&r &eклеток&r"]
 	quest.17A47E26BE71E97A.quest_subtitle: "Создайте экстрактор ДНК"
 	quest.17A47E26BE71E97A.title: "Экстрактор генов"
@@ -422,6 +431,8 @@
 	]
 	quest.2BBE8F041CD69B07.quest_subtitle: "Победите &cСкорпида-Кровожада"
 	quest.2BBE8F041CD69B07.title: "&cКровожад"
+	quest.2C8FCA043AB5D0A2.quest_subtitle: "Паучительный обед"
+	quest.2C8FCA043AB5D0A2.title: "&c[ Коллекция ]: \"Ползучее лакомство\""
 	quest.2D7EE25C41D4D9D1.quest_desc: [
 		"  В попытках превзойти обычный органический компост, наш &#4DF2F5самоп&#4DEDF5р&#4DE8F5о&#4DE3F5в&#4DDFF5о&#4DDAF5з&#4DD5F5г&#4DD0F5л&#4DCBF5а&#4DC6F5ш&#4DC1F5е&#4DBDF5н&#4DB8F5н&#4DB3F5ы&#4DAEF5й &#4DA4F5о&#4D9FF5т&#4D9BF5д&#4D96F5е&#4D91F5л &#4D87F5б&#4D82F5и&#4D7DF5о&#4D79F5с&#4D74F5и&#4D6FF5н&#4D6AF5теза&r перепробовал &eсотни&r &#4DF5B3хим&#56F4AFи&#60F3ABч&#69F2A8е&#72F0A4с&#7CEFA0к&#85EE9Cи&#8FED98х &#A1EB91к&#ABE98Dа&#B4E889т&#BDE786а&#C7E682л&#D0E57Eи&#DAE47Aз&#E3E276а&#ECE173т&#F6E06Fо&#FFDF6Bров. "
 		""
@@ -436,6 +447,8 @@
 	quest.2E5C6BF66A865E86.quest_desc: ["{ftbquests.chapter.54}"]
 	quest.2EAAFD8C91736269.quest_subtitle: "Победите Артроплевру"
 	quest.2EAAFD8C91736269.title: "Многоножка"
+	quest.2FB68EC354898550.quest_subtitle: "Адское путешествие прилагается"
+	quest.2FB68EC354898550.title: "&e[ Коллекция ]:  \"Адская кухня\""
 	quest.2FC45DEC412F5866.quest_desc: [
 		"{ftbquests.chapter.5A0B30A41D65CC21.quest18.description1}"
 		""
@@ -481,6 +494,8 @@
 		" &5Постоянно искажается&r, если я им двигаю.."
 	]
 	quest.37C5416C2C7C9D6C.title: "&5Пустотный кристалл"
+	quest.37F057BA2BFCA277.quest_subtitle: "&zУвлекательный конструктор!"
+	quest.37F057BA2BFCA277.title: "&4[ Коллекция ]:  \"По кусочкам\""
 	quest.38986186701A4689.quest_desc: [
 		"&eБонус сета&r: чем больше элементов брони надето, тем больше &eэффект Сопротивления&r и &eнаносимый урон&r, а также &eполный иммунитет к слабым атакам&r."
 		""
@@ -591,6 +606,8 @@
 	]
 	quest.460514A34AEFE9FF.quest_subtitle: "Раздобудьте хитин"
 	quest.460514A34AEFE9FF.title: "Твердый панцирь"
+	quest.46496877023BCD31.quest_subtitle: "Нутриенто-питательно!"
+	quest.46496877023BCD31.title: "&c[ Коллекция ]: \"Пауковарка!\""
 	quest.47AD819295852D52.quest_desc: [
 		"   &nИнъектор плазмид&r нужен для того, чтобы &6переместить улучшенный генами&r &eплазмид&r &6в шприц&r с очищенной кровью."
 		""
@@ -619,6 +636,8 @@
 	]
 	quest.513276280CEADDB4.quest_subtitle: "&zСмертельное оружие"
 	quest.513276280CEADDB4.title: "&#FF5050Сковорода"
+	quest.5373723F2B5BA0ED.quest_subtitle: "Первое, что стоит завести в своем саду!"
+	quest.5373723F2B5BA0ED.title: "&a[ Коллекция ]:  \"Основной набор фермера\""
 	quest.53967F5E9ABFC16E.quest_desc: [""]
 	quest.53967F5E9ABFC16E.quest_subtitle: "Настенное хранилище инструментов"
 	quest.53967F5E9ABFC16E.title: "&#FF8950Стойка для кухонной утвари"
@@ -626,6 +645,8 @@
 	quest.54E1111E5CEF1E7E.title: "&#FF5050Чайник"
 	quest.5500226B67A44461.quest_subtitle: " &5Будет, что рассказать внукам, если я выберусь живым..."
 	quest.5500226B67A44461.title: "&5Последнее, что я увижу в своей жизни."
+	quest.55B8211F86FE8222.quest_subtitle: "Почти все, что можно встретить в мире!"
+	quest.55B8211F86FE8222.title: "&a[ Коллекция ]:  \"Культуры верхнего мира\""
 	quest.562BF588C9AE77F3.quest_desc: [
 		"{ftbquests.chapter.56AEAC22236F88E3.quest4.description1}"
 		""
@@ -841,6 +862,8 @@
 	quest.68F6ADE597C3719E.quest_desc: [" &eЛипкая мембрана линзы, кажется, липнет к пальцам...&r"]
 	quest.68F6ADE597C3719E.quest_subtitle: "Создайте &eЛинзу жизненной силы"
 	quest.68F6ADE597C3719E.title: "&eЛинза жизненной силы"
+	quest.6B423C3BB14C70F6.quest_subtitle: "Путевка в неизвестное"
+	quest.6B423C3BB14C70F6.title: "&d[ Коллекция ]:  \"Край наслаждения\""
 	quest.6BD49D9EEE8DE61A.quest_desc: ["   &nКлетки&r &6необходимы для последующего извлечения&r &aгенов&r из существ"]
 	quest.6BD49D9EEE8DE61A.quest_subtitle: "Получите &aклетки"
 	quest.6BD49D9EEE8DE61A.title: "Клеточная материя"
