@@ -111,8 +111,7 @@ const registerFDRecipes = (evt) => {
                 'minecraft:soul_sand',
                 'minecraft:soul_soil'
             ],
-            'agritechevolved:biomass',
-            'agritechevolved:biomass',
+            '2x agritechevolved:biomass',
             [
                 'minecraft:warped_roots',
                 'minecraft:crimson_roots'
@@ -121,16 +120,13 @@ const registerFDRecipes = (evt) => {
                 'minecraft:warped_roots',
                 'minecraft:crimson_roots'
             ],
-            'industrialupgrade:fertilizer',
-            'industrialupgrade:fertilizer',
-            'industrialupgrade:fertilizer',
-            'industrialupgrade:fertilizer'
+            '4x industrialupgrade:fertilizer'
         ]
     ).id(getRecipeID('letios_compost'))
     
     iuRecipe(evt, getRecipeID('mulch'), IUMachineCraft.CHEMICAL_FACTORY,
         [
-            asItem(fluid.brilliant_azure, 1000),
+            asItem(fluid.brilliant_azure, 250),
             asItem('farmersdelight:rich_soil'),
             asItem('mynethersdelight:resurgent_soil')
         ],[

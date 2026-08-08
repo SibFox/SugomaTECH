@@ -1,0 +1,10 @@
+{
+  "network": {
+    "batchIntervalMs": 50,
+    "cursorIntervalMs": 100
+  },
+  "poster": {
+    "maxEditors": 3,
+    "disableImages": true
+  }
+}

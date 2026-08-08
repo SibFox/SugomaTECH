@@ -338,3 +338,6 @@ config/immersive_machinery.json
 config/betterf3.toml
 config/particlerain/particles.json
 config/inventoryprofilesnext/inventoryprofiles.json
+config/gpushift-client.toml
+config/gpushift-gpu-v2-beta.json
+config/gpushift-smart-calibration.json

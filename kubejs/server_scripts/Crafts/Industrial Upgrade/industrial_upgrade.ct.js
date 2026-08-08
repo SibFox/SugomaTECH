@@ -125,30 +125,30 @@ const registerIUCTRecipes = (evt) => {
     evt.shaped(
         Item.of('industrialupgrade:basemachine3/bio_generator', 1),
         [
-            'BTG',
-            ' Q ',
+            ' G ',
+            'LQB',
             ' E '
         ],{
             E: item.iu.electromotor.lvl1,
             Q: item.iu.machine_corpus.tech,
+            G: item.iu.module.generator.lvl1,
             B: item.iu.module.bio.lvl1,
-            T: item.iu.module.tank.lvl1,
-            G: item.iu.module.generator.lvl1
+            L: item.iu.module.liquid.lvl1
         }
     ).id(getRecipeID('bio_generator'))
     
     evt.shaped(
         Item.of('industrialupgrade:basemachine3/steam_generator', 1),
         [
-            'STG',
-            ' Q ',
+            ' G ',
+            'LQS',
             ' E '
         ],{
             E: item.iu.electromotor.lvl1,
             Q: item.iu.machine_corpus.tech,
+            G: item.iu.module.generator.lvl1,
             S: item.iu.module.steam,
-            T: item.iu.module.tank.lvl1,
-            G: item.iu.module.generator.lvl1
+            L: item.iu.module.liquid.lvl1
         }
     ).id(getRecipeID('steam_generator'))
     

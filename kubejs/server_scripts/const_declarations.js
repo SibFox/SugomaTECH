@@ -49,6 +49,7 @@ const item = {
     fns: 'minecraft:flint_and_steel',
     compass: 'minecraft:compass',
     conduit: 'minecraft:conduit',
+    paper: 'minecraft:paper',
 
     // ~~~~~~~~~~~~~~~~~~~~ Farmer's Delight ~~~~~~~~~~~~~~~~~~~~ 
     milk_bottle: 'farmersdelight:milk_bottle',
