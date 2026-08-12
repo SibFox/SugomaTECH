@@ -1,0 +1,9 @@
+{
+  "key.journeymap.minimap_toggle_alt": {
+    "keyCode": 77,
+    "keyType": "KEYBOARD",
+    "alt": false,
+    "shift": false,
+    "ctrl": true
+  }
+}
