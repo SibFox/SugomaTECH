@@ -18,9 +18,23 @@ const registerCreateCTRecipes = (evt) => {
         ],
     'create:mechanical_drill')
 
+    shapedRecipe(evt, getRecipeID('mechanical_press'),
+        [
+            [ tag.shaft ],
+            [ item.create.casing.andesite ],
+            [ tag.doubleplate.iron ]
+        ],
+    'create:mechanical_press', 1)
+
+    evt.shapeless(Item.of(item.create.andesite_alloy, 9),
+        [
+            'create:andesite_alloy_block'
+        ]
+    ).id(getRecipeID('andesite_alloy_9'))
+
     evt.shapeless(Item.of('powergrid:wire', 1),
         [
-            item.iu.wire.bare.copper            
+            item.iu.wire.bare.copper
         ]
     ).id(getRecipeID('wire_bare_copper'))
 

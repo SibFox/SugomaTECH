@@ -10,6 +10,8 @@ const registerPBPrinterRecipes = (evt) => {
         return recipeID('pb', path)
     }
 
+    evt.remove({type: "pointblank:default"});
+
     function addPrinterCraft(ingredients, result)
     {
         let ingredientsMap = []
@@ -23,7 +25,7 @@ const registerPBPrinterRecipes = (evt) => {
             if (ingredient_elem.isTag) {
                 ingredient.tag = ingredientName
             } else {
-                ingredient.item = ingredientName                
+                ingredient.item = ingredientName
             }
             ingredientsMap.push(ingredient)
         }

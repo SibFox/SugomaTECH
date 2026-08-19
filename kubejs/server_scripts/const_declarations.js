@@ -1420,6 +1420,7 @@ const tag = {
         titanium: '#c:doubleplate/titanium',
         obsidian: '#c:doubleplate/obsidian',
         hafnium: '#c:doubleplate/hafnium',
+        iron: '#c:doubleplate/iron',
         yttrium: '#c:doubleplate/yttrium',
         tin: '#c:doubleplate/tin',
         germanium: '#c:doubleplate/germanium',
