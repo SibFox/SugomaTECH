@@ -30,10 +30,13 @@ curl -f -sS -L -o "%REMOTE_VERSION_TMP%" "%RAW_BASE%/version.txt"
 if errorlevel 1 (
     echo [ERROR] Не получается скачать version.txt.
     if exist "%REMOTE_VERSION_TMP%" del /Q "%REMOTE_VERSION_TMP%"
+	pause
     goto :end
 )
+echo Сопостановление версий...
 call :parse_version_file "%REMOTE_VERSION_TMP%" REMOTE
 call :parse_version_file "%LOCAL_VERSION_FILE%" LOCAL
+pause
 del /Q "%REMOTE_VERSION_TMP%"
 
 echo.
@@ -56,6 +59,8 @@ goto :check_git
 :safe_self_update
 call :convert_to_utf8_no_bom "!UPDATER_TMP!"
 copy /Y "!UPDATER_TMP!" "%~f0" >nul
+echo [D] Скрипт скопирован
+pause
 del /Q "!UPDATER_TMP!"
 > "%LOCAL_VERSION_FILE%" (
     echo(%REMOTE_BAT%
