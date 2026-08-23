@@ -1,375 +1,236 @@
-﻿
 @echo off
 chcp 65001 >nul
-setlocal enabledelayedexpansion
+setlocal EnableExtensions EnableDelayedExpansion
 
-rem ===== Setting =====
-
+rem ===== Settings =====
 set "REPO_OWNER=SibFox"
 set "REPO_NAME=SugomaTECH"
 set "BRANCH=releases"
 set "TARGET_DIR=%~dp0"
 if "%TARGET_DIR:~-1%"=="\" set "TARGET_DIR=%TARGET_DIR:~0,-1%"
-set "GITHUB_PAT=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"
-
-set "REPO_URL=https://%GITHUB_PAT%@github.com/%REPO_OWNER%/%REPO_NAME%.git"
 set "LOCAL_VERSION_FILE=%~dp0local_version.txt"
-
-rem ===== Files for copy =====
-set FILES[0]=mods
-set FILES[1]=config
-set FILES[2]=kubejs
-set FILES[3]=resourcepacks
-set FILES[4]=fancymenu
-set FILES[5]=fancymenu_data
-set FILE_COUNT=5
-
-rem ===== Required files (always downloaded) =====
-@REM set REQUIRED[0]=ПРОЧИТАТЬ.txt
-@REM set REQUIRED_COUNT=0
-
-
-rem ===== Bat version check =====
-:check_for_bat_version
-echo.
-echo ============================================
-echo Проверка версии...
-echo ============================================
-echo.
-
+set "REPO_URL=https://github.com/%REPO_OWNER%/%REPO_NAME%.git"
 set "RAW_BASE=https://raw.githubusercontent.com/%REPO_OWNER%/%REPO_NAME%/%BRANCH%"
+set "GIT_TERMINAL_PROMPT=0"
+
+rem ===== Paths controlled by this updater =====
+set "FILES[0]=mods"
+set "FILES[1]=config"
+set "FILES[2]=kubejs"
+set "FILES[3]=resourcepacks"
+set "FILES[4]=fancymenu"
+set "FILES[5]=fancymenu_data"
+set "FILES[6]=pointblank"
+set "FILE_COUNT=6"
+
+rem ===== Self-update: intentionally uses curl =====
+:check_bat_version
 set "REMOTE_VERSION_TMP=%TEMP%\remote_version_%RANDOM%.txt"
-
-curl -s -L -H "Authorization: token %GITHUB_PAT%" -o "%REMOTE_VERSION_TMP%" "%RAW_BASE%/version.txt"
-
-if not exist "%REMOTE_VERSION_TMP%" (
-    echo [ПРЕДУПРЕЖДЕНИЕ] Не удалось получить version.txt. Проверка версии пропущена.
-    goto :bat_version_check_done
-)
-
-call :parse_version_file "%REMOTE_VERSION_TMP%" REMOTE
-call :parse_version_file "%LOCAL_VERSION_FILE%" LOCAL
-
-del /Q "%REMOTE_VERSION_TMP%"
-
-echo Локальная версия bat:        "%LOCAL_BAT%"
-echo Версия bat в репозитории:    "%REMOTE_BAT%"
-echo Локальная версия сборки:     "%LOCAL_BUILD%"
-echo Версия сборки в репозитории: "%REMOTE_BUILD%"
-
-if "%REMOTE_BAT%"=="404: Not Found" (
-    echo [ПРЕДУПРЕЖДЕНИЕ] Файл версий не обнаружен, продолжаю со старой версией скрипта.
-    set "REMOTE_BAT="
-    set "REMOTE_BUILD="
-    set "REMOTE_REQUIRED="
-    goto :bat_version_check_done
-)
-
-if not "%REMOTE_BAT%"=="%LOCAL_BAT%" (
-    echo.
-    echo Доступна новая версия скрипта. Обновляю сам файл...
-
-    set "UPDATER_TMP=%TEMP%\update_sborka_%RANDOM%.bat"
-    curl -s -L -H "Authorization: token %GITHUB_PAT%" -o "!UPDATER_TMP!" "%RAW_BASE%/update_sborka.bat"
-
-    if exist "!UPDATER_TMP!" (
-        call :convert_to_crlf "!UPDATER_TMP!"
-        copy /Y "!UPDATER_TMP!" "%~f0" >nul
-        del /Q "!UPDATER_TMP!"
-
-        > "%LOCAL_VERSION_FILE%" (
-            echo(%REMOTE_BAT%
-            echo(%LOCAL_BUILD%
-        )
-
-        echo.
-        echo Скрипт обновлён до версии %REMOTE_BAT%.
-        start %~f0
-        endlocal
-        goto :eof
-    ) else (
-        echo [ПРЕДУПРЕЖДЕНИЕ] Не удалось скачать update_sborka.bat, продолжаю со старой версией скрипта.
-    )
-) else (
-    echo Версия bat актуальна.
-)
-
-:bat_version_check_done
-
-
-where git >nul 2>&1
+curl -f -sS -L -o "%REMOTE_VERSION_TMP%" "%RAW_BASE%/version.txt"
 if errorlevel 1 (
-    goto :install_git
-)
-
-git config --global core.quotepath false
-git config --global core.autocrlf true
-
-
-rem ===== Pack (build) version check - mandatory update before menu =====
-:check_for_pack_version
-set FS_FLAG=false
-if not exist "%LOCAL_VERSION_FILE%" set FS_FLAG=true
-if "%LOCAL_BUILD%"=="" set FS_FLAG=true
-if "!FS_FLAG!"=="true" (
-    echo.
-    echo ============================================
-    echo Первая установка. Скачивание всех файлов...
-    echo ============================================
-    call :download_files "ALL"
-
-    > "%LOCAL_VERSION_FILE%" (
-        echo(%REMOTE_BAT%
-        echo(%REMOTE_BUILD%
-    )
-    goto :pack_version_check_done
-) else (
-    if defined REMOTE_BUILD (
-        if not "%REMOTE_BUILD%"=="%LOCAL_BUILD%" (
-            echo.
-            echo ============================================
-            echo Доступно обновление сборки. Скачивание обновлённых файлов...
-            echo ============================================
-            call :download_files "%REMOTE_REQUIRED%"
-
-            > "%LOCAL_VERSION_FILE%" (
-                echo(%REMOTE_BAT%
-                echo(%REMOTE_BUILD%
-            )
-            goto :pack_version_check_done
-        ) else (
-            echo Версия сборки актуальна.
-        )
-    )
-)
-
-:pack_version_check_done
-
-
-:user_choose
-rem ===== Menu =====
-echo.
-echo ============================================
-echo Доступные файлы и папки для скачивания:
-echo ============================================
-for /L %%i in (0,1,%FILE_COUNT%) do (
-    echo   [%%i] !FILES[%%i]!
-)
-echo ============================================
-echo.
-echo Введите номера через запятую ^(например: 0,2,3^)
-echo или "all" для скачивания всех файлов
-echo Введите "q" для выхода
-echo.
-set /p "USER_CHOICE=Ваш выбор: "
-
-rem ===== Choise =====
-if /I "%USER_CHOICE%"=="q" (
+    echo [ERROR] Cannot download version.txt. Check your Internet connection.
+    if exist "%REMOTE_VERSION_TMP%" del /Q "%REMOTE_VERSION_TMP%"
     goto :end
 )
-set "SELECTED_LIST="
-if /I "%USER_CHOICE%"=="all" (
-    set "SELECTED_LIST=ALL"
-    @REM for /L %%i in (0,1,%FILE_COUNT%) do set "SELECTED_LIST=!SELECTED_LIST!,%%i"
-) else (
-    set "SELECTED_LIST=,%USER_CHOICE%,"
-    set "SELECTED_LIST=!SELECTED_LIST: =!"
-)
+call :parse_version_file "%REMOTE_VERSION_TMP%" REMOTE
+call :parse_version_file "%LOCAL_VERSION_FILE%" LOCAL
+del /Q "%REMOTE_VERSION_TMP%"
 
 echo.
-echo Выбрано: !SELECTED_LIST!
+echo Local BAT version:       "%LOCAL_BAT%"
+echo Repository BAT version:  "%REMOTE_BAT%"
+echo Local build version:     "%LOCAL_BUILD%"
+echo Repository build version:"%REMOTE_BUILD%"
 
-call :download_files "%SELECTED_LIST%"
+if not defined REMOTE_BAT goto :check_git
+if "%REMOTE_BAT%"=="%LOCAL_BAT%" goto :check_git
 
-goto :user_choose
+echo Updating script...
+set "UPDATER_TMP=%TEMP%\update_sborka_%RANDOM%.bat"
+curl -f -sS -L -o "!UPDATER_TMP!" "%RAW_BASE%/update_sborka.bat"
+if errorlevel 1 goto :self_update_error
+findstr /C:"GITHUB_PAT=" /C:"Authorization:" /C:"x-access-token" "!UPDATER_TMP!" >nul
+if errorlevel 1 goto :safe_self_update
 
+echo [WARNING] The published BAT still contains private-repository authentication.
+echo Keeping the local public version and continuing with the build update.
+del /Q "!UPDATER_TMP!"
+goto :check_git
 
-rem ============================================
-rem Subroutines
-rem ============================================
-
-rem %1 = index list in ",0,3,4," format, or "ALL"
-:download_files
-setlocal enabledelayedexpansion
-set "IDX_LIST=%~1"
-
-set "SPARSE_PATHS="
-if /I "!IDX_LIST!"=="ALL" (
-    for /L %%i in (0,1,%FILE_COUNT%) do (
-        if defined FILES[%%i] set "SPARSE_PATHS=!SPARSE_PATHS! "!FILES[%%i]!""
-    )
-) else (
-    for /L %%i in (0,1,%FILE_COUNT%) do (
-        if defined FILES[%%i] (
-            echo !IDX_LIST! | findstr /C:",%%i," >nul
-            if not errorlevel 1 set "SPARSE_PATHS=!SPARSE_PATHS! "!FILES[%%i]!""
-        )
-    )
+:safe_self_update
+call :convert_to_utf8_no_bom "!UPDATER_TMP!"
+copy /Y "!UPDATER_TMP!" "%~f0" >nul
+del /Q "!UPDATER_TMP!"
+> "%LOCAL_VERSION_FILE%" (
+    echo(%REMOTE_BAT%
+    echo(%LOCAL_BUILD%
 )
-@REM for /L %%i in (0,1,%REQUIRED_COUNT%) do (
-@REM     if defined REQUIRED[%%i] set "SPARSE_PATHS=!SPARSE_PATHS! "!REQUIRED[%%i]!""
-@REM )
-
-if "!SPARSE_PATHS!"=="" (
-    echo Нечего скачивать на этом шаге.
-    endlocal
-    goto :eof
-)
-
-set "DL_TEMP=%TEMP%\repo_extract_%RANDOM%_%RANDOM%"
-
-echo.
-echo Клонирование: !SPARSE_PATHS!
-git clone --progress --filter=blob:none --no-checkout --depth 1 --branch "%BRANCH%" "%REPO_URL%" "!DL_TEMP!"
-if errorlevel 1 (
-    echo Ошибка при клонировании.
-    if exist "!DL_TEMP!" rmdir /S /Q "!DL_TEMP!"
-    endlocal
-    goto :eof
-)
-
-pushd "!DL_TEMP!"
-
-git sparse-checkout init --cone
-git sparse-checkout set !SPARSE_PATHS!
-
-if errorlevel 1 (
-    echo [ОШИБКА] Не удалось настроить sparse-checkout.
-    popd
-    rmdir /S /Q "!DL_TEMP!"
-    endlocal
-    goto :eof
-)
-
-git checkout "%BRANCH%"
-if errorlevel 1 (
-    echo [ОШИБКА] Не удалось выполнить checkout.
-    popd
-    rmdir /S /Q "!DL_TEMP!"
-    endlocal
-    goto :eof
-)
-popd
-
-echo.
-echo Копирование файлов в !TARGET_DIR!...
-if not exist "%TARGET_DIR%" mkdir "%TARGET_DIR%"
-
-for /L %%i in (0,1,%FILE_COUNT%) do (
-    if defined FILES[%%i] (
-        set "MATCHED=0"
-        if /I "!IDX_LIST!"=="ALL" (
-            set "MATCHED=1"
-        ) else (
-            echo !IDX_LIST! | findstr /C:",%%i," >nul
-            if not errorlevel 1 set "MATCHED=1"
-        )
-        if "!MATCHED!"=="1" (
-            set "SRC=!FILES[%%i]!"
-            set "SRC_PATH=!DL_TEMP!\!SRC!"
-            set "DST_PATH=%TARGET_DIR%\!SRC!"
-
-            if exist "!SRC_PATH!\*" (
-                echo [Папка]  !SRC!
-                robocopy "!SRC_PATH!" "!DST_PATH!" /MIR > nul
-            ) else (
-                for %%F in ("!DST_PATH!") do if not exist "%%~dpF" mkdir "%%~dpF"
-                copy /Y "!SRC_PATH!" "!DST_PATH!" >nul
-                echo Обновлён файл: !SRC!
-            )
-        )
-    )
-)
-
-@REM for /L %%i in (0,1,%REQUIRED_COUNT%) do (
-@REM     if defined REQUIRED[%%i] (
-@REM         set "SRC=!REQUIRED[%%i]!"
-@REM         set "SRC_PATH=!DL_TEMP!\!SRC!"
-@REM         set "DST_PATH=%TARGET_DIR%\!SRC!"
-
-@REM         if exist "!SRC_PATH!\*" (
-@REM             echo [Папка]  !SRC!
-@REM             robocopy "!SRC_PATH!" "!DST_PATH!" /MIR /NFL /NDL /NJH /NJS
-@REM         ) else (
-@REM             for %%F in ("!DST_PATH!") do if not exist "%%~dpF" mkdir "%%~dpF"
-@REM             copy /Y "!SRC_PATH!" "!DST_PATH!" >nul
-@REM             echo Обновлён файл: !SRC!
-@REM         )
-@REM     )
-@REM )
-
-rem ===== Flatten mods\CLIENT into mods, remove empty CLIENT folder =====
-if exist "%TARGET_DIR%\mods\CLIENT" (
-    echo Перенос клиентских модов из mods\CLIENT...
-    robocopy "%TARGET_DIR%\mods\CLIENT" "%TARGET_DIR%\mods" /MOVE /E /NFL /NDL /NJH /NJS
-    if exist "%TARGET_DIR%\mods\CLIENT" rmdir /S /Q "%TARGET_DIR%\mods\CLIENT"
-)
-
-rmdir /S /Q "!DL_TEMP!"
+start "" "%~f0"
 endlocal
 goto :eof
 
+:check_git
+where git >nul 2>&1
+if errorlevel 1 goto :install_git
+call :trust_current_directory
+call :build_sparse_paths
+call :backup_self
+call :update_build
+goto :end
 
+:self_update_error
+echo [ERROR] Cannot download the new script version.
+goto :end
+
+:trust_current_directory
+set "SAFE_DIR_FOUND=0"
+for /f "delims=" %%D in ('git config --global --get-all safe.directory 2^>nul') do (
+    if /I "%%~D"=="%TARGET_DIR%" set "SAFE_DIR_FOUND=1"
+)
+if "!SAFE_DIR_FOUND!"=="0" git config --global --add safe.directory "%TARGET_DIR%"
+goto :eof
+
+:build_sparse_paths
+set "SPARSE_PATTERNS="
+set "GIT_PATHS="
+for /L %%i in (0,1,%FILE_COUNT%) do if defined FILES[%%i] (
+    rem Non-cone patterns exclude all repository-root files, including this BAT.
+    set "SPARSE_PATTERNS=!SPARSE_PATTERNS! /!FILES[%%i]!/"
+    set "GIT_PATHS=!GIT_PATHS! !FILES[%%i]!"
+)
+goto :eof
+
+:backup_self
+set "SELF_BACKUP=%TEMP%\update_sborka_self_%RANDOM%.bat"
+copy /Y "%~f0" "!SELF_BACKUP!" >nul
+goto :eof
+
+:restore_self
+if defined SELF_BACKUP if exist "!SELF_BACKUP!" (
+    copy /Y "!SELF_BACKUP!" "%~f0" >nul
+    del /Q "!SELF_BACKUP!"
+)
+goto :eof
+
+rem ===== Update directly in the game directory =====
+:update_build
+pushd "%TARGET_DIR%"
+
+if not exist ".git" (
+    echo.
+    echo First installation of managed files...
+    git init
+    if errorlevel 1 goto :git_error_popd
+    git remote add origin "%REPO_URL%"
+) else (
+    git remote set-url origin "%REPO_URL%"
+)
+
+rem Non-cone mode is mandatory: cone mode always includes repository-root files.
+git sparse-checkout set --no-cone !SPARSE_PATTERNS!
+if errorlevel 1 goto :git_error_popd
+call :restore_self
+git update-index --skip-worktree -- "%~nx0" >nul 2>&1
+
+rem Partial fetch obtains blobs only when selected paths need them.
+git -c credential.helper= -c credential.interactive=false fetch --quiet --filter=blob:none --depth=1 origin "+refs/heads/%BRANCH%:refs/remotes/origin/%BRANCH%"
+if errorlevel 1 goto :git_error_popd
+
+set "LOCAL_COMMIT="
+git rev-parse --verify HEAD >nul 2>&1
+if not errorlevel 1 for /f %%H in ('git rev-parse --verify HEAD') do set "LOCAL_COMMIT=%%H"
+for /f %%H in ('git rev-parse "origin/%BRANCH%"') do set "REMOTE_COMMIT=%%H"
+if not defined LOCAL_COMMIT goto :apply_update
+if /I "!LOCAL_COMMIT!"=="!REMOTE_COMMIT!" goto :build_current
+
+git diff --quiet HEAD "origin/%BRANCH%" -- !GIT_PATHS!
+if errorlevel 1 echo Updating managed files...
+if not errorlevel 1 echo New commit has no changes in managed paths.
+
+:apply_update
+if not defined LOCAL_COMMIT echo First checkout of managed files...
+rem No git clean: untracked user mods and files remain untouched.
+git reset --hard "origin/%BRANCH%"
+if errorlevel 1 goto :git_error_popd
+
+popd
+call :restore_self
+call :write_local_version
+echo Update completed.
+goto :eof
+
+:build_current
+popd
+call :restore_self
+echo Build is current.
+goto :eof
+
+:git_error_popd
+popd
+call :restore_self
+:git_error
+echo [ERROR] Git cannot update the build. No GitHub sign-in will be requested.
+goto :eof
+
+:write_local_version
+> "%LOCAL_VERSION_FILE%" (
+    echo(%REMOTE_BAT%
+    echo(%REMOTE_BUILD%
+)
+goto :eof
+
+rem ===== Automatic Git installation =====
 :install_git
-echo Git не найден. Пробую установить...
+echo Git not found. Trying to install it...
 
 where winget >nul 2>&1
 if not errorlevel 1 (
     winget source update
     winget install --id Git.Git -e --source winget --accept-package-agreements --accept-source-agreements
-    if not errorlevel 1 (
-        goto :info_on_git
-    ) else (
-        echo [ПРЕДУПРЕЖДЕНИЕ] Скачивание через winget не удалось. Пробую curl...
-    )
+    if not errorlevel 1 goto :info_on_git
+    echo [WARNING] winget installation failed. Trying curl...
 )
 
 where curl >nul 2>&1
 if not errorlevel 1 (
-    echo Установка через прямое скачивание...
+    echo Installing through direct download...
     set "GIT_INSTALLER=%TEMP%\git_installer.exe"
     curl -L --retry 3 --connect-timeout 15 -o "!GIT_INSTALLER!" "https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.3/Git-2.55.0.3-64-bit.exe"
-
     if exist "!GIT_INSTALLER!" (
-        echo Установка Git...
+        echo Installing Git...
         "!GIT_INSTALLER!" /VERYSILENT /NORESTART /NOCANCEL /SP- /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS
         del /Q "!GIT_INSTALLER!"
         goto :info_on_git
     )
 )
 
-echo [ОШИБКА] Не удалось установить Git автоматически. Установите вручную: https://git-scm.com/download/win
+echo [ERROR] Cannot install Git automatically. Install it manually: https://git-scm.com/download/win
 goto :end
 
-
 :info_on_git
-echo Git установлен.
-start %~f0
+echo Git is installed. Restarting the script...
+start "" "%~f0"
 endlocal
 goto :eof
-
 
 rem %1 = file path, %2 = prefix (REMOTE or LOCAL)
 :parse_version_file
 set "LN=0"
 set "%2_BAT="
 set "%2_BUILD="
-set "%2_REQUIRED="
-if not exist %1 goto :eof
-for /f "usebackq tokens=* delims=" %%L in (%1) do (
+if not exist "%~1" goto :eof
+for /f "usebackq tokens=* delims=" %%L in ("%~1") do (
     set /a LN+=1
     if !LN! EQU 1 set "%2_BAT=%%L"
     if !LN! EQU 2 set "%2_BUILD=%%L"
-    if !LN! EQU 3 set "%2_REQUIRED=%%L"
 )
 goto :eof
 
-
-:convert_to_crlf
-powershell -NoProfile -Command "$c = Get-Content -Raw -Encoding UTF8 -Path '%~1'; $c = $c -replace \"`r`n\", \"`n\" -replace \"`n\", \"`r`n\"; [System.IO.File]::WriteAllText('%~1', $c, [System.Text.Encoding]::UTF8)"
+:convert_to_utf8_no_bom
+powershell -NoProfile -Command "$p='%~1'; $c=[System.IO.File]::ReadAllText($p); [System.IO.File]::WriteAllText($p, $c, [System.Text.UTF8Encoding]::new($false))"
 goto :eof
 
 :end
-echo Всё.
+echo.
 pause
 endlocal
