@@ -49,12 +49,8 @@ echo Updating script...
 set "UPDATER_TMP=%TEMP%\update_sborka_%RANDOM%.bat"
 curl -f -sS -L -o "!UPDATER_TMP!" "%RAW_BASE%/update_sborka.bat"
 if errorlevel 1 goto :self_update_error
-findstr /C:"GITHUB_PAT=" /C:"Authorization:" /C:"x-access-token" "!UPDATER_TMP!" >nul
-if errorlevel 1 goto :safe_self_update
+goto :safe_self_update
 
-echo [WARNING] The published BAT still contains private-repository authentication.
-echo Keeping the local public version and continuing with the build update.
-del /Q "!UPDATER_TMP!"
 goto :check_git
 
 :safe_self_update
