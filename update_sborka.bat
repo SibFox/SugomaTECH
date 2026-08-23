@@ -30,13 +30,11 @@ curl -f -sS -L -o "%REMOTE_VERSION_TMP%" "%RAW_BASE%/version.txt"
 if errorlevel 1 (
     echo [ERROR] Не получается скачать version.txt.
     if exist "%REMOTE_VERSION_TMP%" del /Q "%REMOTE_VERSION_TMP%"
-	pause
     goto :end
 )
 echo Сопостановление версий...
 call :parse_version_file "%REMOTE_VERSION_TMP%" REMOTE
 call :parse_version_file "%LOCAL_VERSION_FILE%" LOCAL
-pause
 del /Q "%REMOTE_VERSION_TMP%"
 
 echo.
@@ -59,8 +57,6 @@ goto :check_git
 :safe_self_update
 call :convert_to_utf8_no_bom "!UPDATER_TMP!"
 copy /Y "!UPDATER_TMP!" "%~f0" >nul
-echo [D] Скрипт скопирован
-pause
 del /Q "!UPDATER_TMP!"
 > "%LOCAL_VERSION_FILE%" (
     echo(%REMOTE_BAT%
@@ -78,12 +74,12 @@ git config --global core.quotepath false
 git config --global core.autocrlf true
 call :trust_current_directory
 call :build_sparse_paths
-rem call :backup_self
+call :backup_self
 call :update_build
 goto :end
 
 :self_update_error
-echo [ERROR] Cannot download the new script version.
+echo [ERROR] Не удалось скачать новую версию скрипта.
 goto :end
 
 :trust_current_directory
@@ -135,7 +131,7 @@ if not exist ".git" (
 rem Non-cone mode is mandatory: cone mode always includes repository-root files.
 git sparse-checkout set --no-cone !SPARSE_PATTERNS!
 if errorlevel 1 goto :git_error_popd
-rem call :restore_self
+call :restore_self
 git update-index --skip-worktree -- "%~nx0" >nul 2>&1
 
 rem Partial fetch obtains blobs only when selected paths need them.
@@ -160,20 +156,20 @@ git reset --hard "origin/%BRANCH%"
 if errorlevel 1 goto :git_error_popd
 
 popd
-rem call :restore_self
+call :restore_self
 call :write_local_version
 echo Обновление завершено.
 goto :eof
 
 :build_current
 popd
-rem call :restore_self
+call :restore_self
 echo Установлена последняя версия сборки.
 goto :eof
 
 :git_error_popd
 popd
-rem call :restore_self
+call :restore_self
 :git_error
 echo [ERROR] Git не может обновить сборку.
 goto :eof
@@ -187,14 +183,14 @@ goto :eof
 
 rem ===== Automatic Git installation =====
 :install_git
-echo Git not found. Trying to install it...
+echo Git не обнаружен. Скачиваю...
 
 where winget >nul 2>&1
 if not errorlevel 1 (
     winget source update
     winget install --id Git.Git -e --source winget --accept-package-agreements --accept-source-agreements
     if not errorlevel 1 goto :info_on_git
-    echo [WARNING] winget installation failed. Trying curl...
+    echo [WARNING] Установка через winget не удалась. Пробую curl...
 )
 
 where curl >nul 2>&1
