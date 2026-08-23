@@ -28,7 +28,7 @@ rem ===== Self-update: intentionally uses curl =====
 set "REMOTE_VERSION_TMP=%TEMP%\remote_version_%RANDOM%.txt"
 curl -f -sS -L -o "%REMOTE_VERSION_TMP%" "%RAW_BASE%/version.txt"
 if errorlevel 1 (
-    echo [ERROR] Cannot download version.txt. Check your Internet connection.
+    echo [ERROR] Не получается скачать version.txt.
     if exist "%REMOTE_VERSION_TMP%" del /Q "%REMOTE_VERSION_TMP%"
     goto :end
 )
@@ -45,7 +45,7 @@ echo Repository build version:"%REMOTE_BUILD%"
 if not defined REMOTE_BAT goto :check_git
 if "%REMOTE_BAT%"=="%LOCAL_BAT%" goto :check_git
 
-echo Updating script...
+echo Обновление скрипта...
 set "UPDATER_TMP=%TEMP%\update_sborka_%RANDOM%.bat"
 curl -f -sS -L -o "!UPDATER_TMP!" "%RAW_BASE%/update_sborka.bat"
 if errorlevel 1 goto :self_update_error
@@ -66,11 +66,12 @@ endlocal
 goto :eof
 
 :check_git
+echo Проверка установки...
 where git >nul 2>&1
 if errorlevel 1 goto :install_git
 call :trust_current_directory
 call :build_sparse_paths
-call :backup_self
+rem call :backup_self
 call :update_build
 goto :end
 
@@ -87,6 +88,7 @@ if "!SAFE_DIR_FOUND!"=="0" git config --global --add safe.directory "%TARGET_DIR
 goto :eof
 
 :build_sparse_paths
+echo Настройка путей...
 set "SPARSE_PATTERNS="
 set "GIT_PATHS="
 for /L %%i in (0,1,%FILE_COUNT%) do if defined FILES[%%i] (
@@ -110,11 +112,12 @@ goto :eof
 
 rem ===== Update directly in the game directory =====
 :update_build
+echo Обновление сборки...
 pushd "%TARGET_DIR%"
 
 if not exist ".git" (
     echo.
-    echo First installation of managed files...
+    echo Первая установка файлов...
     git init
     if errorlevel 1 goto :git_error_popd
     git remote add origin "%REPO_URL%"
@@ -125,7 +128,7 @@ if not exist ".git" (
 rem Non-cone mode is mandatory: cone mode always includes repository-root files.
 git sparse-checkout set --no-cone !SPARSE_PATTERNS!
 if errorlevel 1 goto :git_error_popd
-call :restore_self
+rem call :restore_self
 git update-index --skip-worktree -- "%~nx0" >nul 2>&1
 
 rem Partial fetch obtains blobs only when selected paths need them.
@@ -140,32 +143,32 @@ if not defined LOCAL_COMMIT goto :apply_update
 if /I "!LOCAL_COMMIT!"=="!REMOTE_COMMIT!" goto :build_current
 
 git diff --quiet HEAD "origin/%BRANCH%" -- !GIT_PATHS!
-if errorlevel 1 echo Updating managed files...
-if not errorlevel 1 echo New commit has no changes in managed paths.
+if errorlevel 1 echo Обновление отслеживаемых файлов...
+if not errorlevel 1 echo Новый commit не имеет изменений в отслеживаемых путях.
 
 :apply_update
-if not defined LOCAL_COMMIT echo First checkout of managed files...
+if not defined LOCAL_COMMIT echo Первый checkout отслеживаемых файлов...
 rem No git clean: untracked user mods and files remain untouched.
 git reset --hard "origin/%BRANCH%"
 if errorlevel 1 goto :git_error_popd
 
 popd
-call :restore_self
+rem call :restore_self
 call :write_local_version
-echo Update completed.
+echo Обновление завершено.
 goto :eof
 
 :build_current
 popd
-call :restore_self
-echo Build is current.
+rem call :restore_self
+echo Установлена последняя версия сборки.
 goto :eof
 
 :git_error_popd
 popd
-call :restore_self
+rem call :restore_self
 :git_error
-echo [ERROR] Git cannot update the build. No GitHub sign-in will be requested.
+echo [ERROR] Git не может обновить сборку.
 goto :eof
 
 :write_local_version
@@ -200,11 +203,11 @@ if not errorlevel 1 (
     )
 )
 
-echo [ERROR] Cannot install Git automatically. Install it manually: https://git-scm.com/download/win
+echo [ERROR] Git не может установиться автоматически. Установите его вручную: https://git-scm.com/download/win
 goto :end
 
 :info_on_git
-echo Git is installed. Restarting the script...
+echo Git установлен. Перезагрузка скрипта...
 start "" "%~f0"
 endlocal
 goto :eof
