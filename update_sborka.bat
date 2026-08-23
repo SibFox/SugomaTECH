@@ -74,6 +74,8 @@ goto :eof
 echo Проверка установки...
 where git >nul 2>&1
 if errorlevel 1 goto :install_git
+git config --global core.quotepath false
+git config --global core.autocrlf true
 call :trust_current_directory
 call :build_sparse_paths
 rem call :backup_self
@@ -231,7 +233,7 @@ for /f "usebackq tokens=* delims=" %%L in ("%~1") do (
 goto :eof
 
 :convert_to_utf8_no_bom
-powershell -NoProfile -Command "$p='%~1'; $c=[System.IO.File]::ReadAllText($p); [System.IO.File]::WriteAllText($p, $c, [System.Text.UTF8Encoding]::new($false))"
+powershell -NoProfile -Command "$p='%~1'; $c=[System.IO.File]::ReadAllText($p); $c = $c -replace \"`r`n\", \"`n\" -replace \"`n\", \"`r`n\"; [System.IO.File]::WriteAllText($p, $c, [System.Text.UTF8Encoding]::new($false))"
 goto :eof
 
 :end
