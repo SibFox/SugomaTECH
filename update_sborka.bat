@@ -28,10 +28,11 @@ rem ===== Self-update: intentionally uses curl =====
 set "REMOTE_VERSION_TMP=%TEMP%\remote_version_%RANDOM%.txt"
 curl -f -sS -L -o "%REMOTE_VERSION_TMP%" "%RAW_BASE%/version.txt"
 if errorlevel 1 (
-    echo [ERROR] Cannot download version.txt. Check your Internet connection.
+    echo [ERROR] Не получается скачать version.txt.
     if exist "%REMOTE_VERSION_TMP%" del /Q "%REMOTE_VERSION_TMP%"
     goto :end
 )
+echo Сопостановление версий...
 call :parse_version_file "%REMOTE_VERSION_TMP%" REMOTE
 call :parse_version_file "%LOCAL_VERSION_FILE%" LOCAL
 del /Q "%REMOTE_VERSION_TMP%"
@@ -45,16 +46,12 @@ echo Repository build version:"%REMOTE_BUILD%"
 if not defined REMOTE_BAT goto :check_git
 if "%REMOTE_BAT%"=="%LOCAL_BAT%" goto :check_git
 
-echo Updating script...
+echo Обновление скрипта...
 set "UPDATER_TMP=%TEMP%\update_sborka_%RANDOM%.bat"
 curl -f -sS -L -o "!UPDATER_TMP!" "%RAW_BASE%/update_sborka.bat"
 if errorlevel 1 goto :self_update_error
-findstr /C:"GITHUB_PAT=" /C:"Authorization:" /C:"x-access-token" "!UPDATER_TMP!" >nul
-if errorlevel 1 goto :safe_self_update
+goto :safe_self_update
 
-echo [WARNING] The published BAT still contains private-repository authentication.
-echo Keeping the local public version and continuing with the build update.
-del /Q "!UPDATER_TMP!"
 goto :check_git
 
 :safe_self_update
@@ -70,8 +67,11 @@ endlocal
 goto :eof
 
 :check_git
+echo Проверка установки...
 where git >nul 2>&1
 if errorlevel 1 goto :install_git
+git config --global core.quotepath false
+git config --global core.autocrlf true
 call :trust_current_directory
 call :build_sparse_paths
 call :backup_self
@@ -79,7 +79,7 @@ call :update_build
 goto :end
 
 :self_update_error
-echo [ERROR] Cannot download the new script version.
+echo [ERROR] Не удалось скачать новую версию скрипта.
 goto :end
 
 :trust_current_directory
@@ -91,6 +91,7 @@ if "!SAFE_DIR_FOUND!"=="0" git config --global --add safe.directory "%TARGET_DIR
 goto :eof
 
 :build_sparse_paths
+echo Настройка путей...
 set "SPARSE_PATTERNS="
 set "GIT_PATHS="
 for /L %%i in (0,1,%FILE_COUNT%) do if defined FILES[%%i] (
@@ -114,11 +115,12 @@ goto :eof
 
 rem ===== Update directly in the game directory =====
 :update_build
+echo Обновление сборки...
 pushd "%TARGET_DIR%"
 
 if not exist ".git" (
     echo.
-    echo First installation of managed files...
+    echo Первая установка файлов...
     git init
     if errorlevel 1 goto :git_error_popd
     git remote add origin "%REPO_URL%"
@@ -144,11 +146,11 @@ if not defined LOCAL_COMMIT goto :apply_update
 if /I "!LOCAL_COMMIT!"=="!REMOTE_COMMIT!" goto :build_current
 
 git diff --quiet HEAD "origin/%BRANCH%" -- !GIT_PATHS!
-if errorlevel 1 echo Updating managed files...
-if not errorlevel 1 echo New commit has no changes in managed paths.
+if errorlevel 1 echo Обновление отслеживаемых файлов...
+if not errorlevel 1 echo Новый commit не имеет изменений в отслеживаемых путях.
 
 :apply_update
-if not defined LOCAL_COMMIT echo First checkout of managed files...
+if not defined LOCAL_COMMIT echo Первый checkout отслеживаемых файлов...
 rem No git clean: untracked user mods and files remain untouched.
 git reset --hard "origin/%BRANCH%"
 if errorlevel 1 goto :git_error_popd
@@ -156,20 +158,20 @@ if errorlevel 1 goto :git_error_popd
 popd
 call :restore_self
 call :write_local_version
-echo Update completed.
+echo Обновление завершено.
 goto :eof
 
 :build_current
 popd
 call :restore_self
-echo Build is current.
+echo Установлена последняя версия сборки.
 goto :eof
 
 :git_error_popd
 popd
 call :restore_self
 :git_error
-echo [ERROR] Git cannot update the build. No GitHub sign-in will be requested.
+echo [ERROR] Git не может обновить сборку.
 goto :eof
 
 :write_local_version
@@ -181,14 +183,14 @@ goto :eof
 
 rem ===== Automatic Git installation =====
 :install_git
-echo Git not found. Trying to install it...
+echo Git не обнаружен. Скачиваю...
 
 where winget >nul 2>&1
 if not errorlevel 1 (
     winget source update
     winget install --id Git.Git -e --source winget --accept-package-agreements --accept-source-agreements
     if not errorlevel 1 goto :info_on_git
-    echo [WARNING] winget installation failed. Trying curl...
+    echo [WARNING] Установка через winget не удалась. Пробую curl...
 )
 
 where curl >nul 2>&1
@@ -204,11 +206,11 @@ if not errorlevel 1 (
     )
 )
 
-echo [ERROR] Cannot install Git automatically. Install it manually: https://git-scm.com/download/win
+echo [ERROR] Git не может установиться автоматически. Установите его вручную: https://git-scm.com/download/win
 goto :end
 
 :info_on_git
-echo Git is installed. Restarting the script...
+echo Git установлен. Перезагрузка скрипта...
 start "" "%~f0"
 endlocal
 goto :eof
@@ -227,7 +229,7 @@ for /f "usebackq tokens=* delims=" %%L in ("%~1") do (
 goto :eof
 
 :convert_to_utf8_no_bom
-powershell -NoProfile -Command "$p='%~1'; $c=[System.IO.File]::ReadAllText($p); [System.IO.File]::WriteAllText($p, $c, [System.Text.UTF8Encoding]::new($false))"
+powershell -NoProfile -Command "$p='%~1'; $c=[System.IO.File]::ReadAllText($p); $c = $c -replace \"`r`n\", \"`n\" -replace \"`n\", \"`r`n\"; [System.IO.File]::WriteAllText($p, $c, [System.Text.UTF8Encoding]::new($false))"
 goto :eof
 
 :end
