@@ -16,7 +16,7 @@ const registerCreateWashingRecipes = (evt) => {
 
     for (let metal of [ 'mikhail', 'aluminium', 'vanadium', 
         'cobalt', 'tungsten', 'magnesium', 'nickel', 'platinum', 'titanium', 'chromium', 
-        'spinel', 'silver', 'zinc', 'manganese', 'iridium', 'germanium', 'lead', 'tin', 
+        'spinel', 'silver', 'manganese', 'iridium', 'germanium', 'lead', 'tin', 
         'osmium', 'tantalum', 'cadmium', 'arsenic', 'barium', 'bismuth', 'gadolinium', 
         'gallium', 'hafnium', 'yttrium', 'molybdenum', 'neodymium', 'niobium', 
         'palladium', 'polonium', 'strontium', 'thallium', 'zirconium'
@@ -26,4 +26,35 @@ const registerCreateWashingRecipes = (evt) => {
             [ 'industrialupgrade:purifiedcrushed/' + metal, CreateItem.of(item.iu.dust.stone, 0.66)])
     }
 
+    regWashingRecipe(evt, 'industrialupgrade:crushed/copper', 
+        [
+            'industrialupgrade:purifiedcrushed/copper',
+            CreateItem.of(item.iu.dust.stone, 0.66),
+            CreateItem.of(item.clay_ball, 0.25)
+        ]
+    )
+
+    regWashingRecipe(evt, 'industrialupgrade:crushed/iron', 
+        [
+            'industrialupgrade:purifiedcrushed/iron',
+            CreateItem.of(item.iu.dust.stone, 0.66),
+            CreateItem.of(item.redstone, 0.25)
+        ]
+    )
+
+    regWashingRecipe(evt, 'industrialupgrade:crushed/gold', 
+        [
+            'industrialupgrade:purifiedcrushed/gold',
+            CreateItem.of(item.iu.dust.stone, 0.66),
+            CreateItem.of(item.quartz, 0.25)
+        ]
+    )
+
+    regWashingRecipe(evt, 'industrialupgrade:crushed/zinc', 
+        [
+            'industrialupgrade:purifiedcrushed/zinc',
+            CreateItem.of(item.iu.dust.stone, 0.66),
+            CreateItem.of(item.gunpowder, 0.25)
+        ]
+    )
 }

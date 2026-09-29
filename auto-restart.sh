@@ -60,7 +60,7 @@ wait_for_stop() {
 }
 
 notify() {
-    echo "Сервер будет перезагружен через $1"
+    echo "$1"
     send_command "tellraw @a {\"text\":\"$1\",\"color\":\"yellow\"}"
 }
 
@@ -94,7 +94,6 @@ command_listener() {
 
                 echo "Таймер перезапуска отменён"
                 kill -TERM "$MAIN_PID"
-				exit 0
                 ;;
 
             start)
@@ -133,7 +132,7 @@ timer_loop() {
         WAIT_TIME=$((RESTART_TIME - CURRENT_TIME - 600))
 
         if [ "$WAIT_TIME" -gt 0 ]; then
-            echo "Следующая перезагрузка в $RESTART_LABEL"
+            echo "Следующая перезагрузка в $RESTART_LABEL через $WAIT_TIME секунд"
             sleep "$WAIT_TIME"
         fi
 

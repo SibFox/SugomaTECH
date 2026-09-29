@@ -58,4 +58,9 @@ const registerCreateRemovings = (evt) => {
     evt.remove({ output: 'createthrusters:propulsion_upgrade_t2' })
     evt.remove({ output: 'createthrusters:propulsion_upgrade_t3' })
     evt.remove({ output: 'createthrusters:propulsion_upgrade_t4' })
+
+    evt.remove({ id: 'create:splashing/crushed_raw_copper' })
+    evt.remove({ id: 'create:splashing/crushed_raw_iron' })
+    evt.remove({ id: 'create:splashing/crushed_raw_gold' })
+    evt.remove({ id: 'create:splashing/crushed_raw_zinc' })
 }
