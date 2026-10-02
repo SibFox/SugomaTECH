@@ -92,9 +92,9 @@ const registerAEIURecipes = (evt) => {
 
     iuRecipe(evt, getRecipeID('logic_processor'), IUMachineCraft.CHEMICAL_FACTORY,
         [
-            asItem(item.ae.processor.printed.logic),
-            asItem(item.ae.printed_silicon),
-            asItem(fluid.redstone, 10)
+            asItem(tag.plate.gold, 2),
+            asItem(item.iu.polished_silicon_disk),
+            asItem(fluid.redstone, 20)
         ],[
             asItem(item.ae.processor.logic)
         ]
@@ -102,9 +102,9 @@ const registerAEIURecipes = (evt) => {
 
     iuRecipe(evt, getRecipeID('calculation_processor'), IUMachineCraft.CHEMICAL_FACTORY,
         [
-            asItem(item.ae.processor.printed.calculation),
-            asItem(item.ae.printed_silicon),
-            asItem(fluid.redstone, 10)
+            asItem(item.ae.certus_quartz_crystal, 2),
+            asItem(item.iu.polished_silicon_disk),
+            asItem(fluid.redstone, 20)
         ],[
             asItem(item.ae.processor.calculation)
         ]
@@ -112,9 +112,9 @@ const registerAEIURecipes = (evt) => {
 
     iuRecipe(evt, getRecipeID('engineering_processor'), IUMachineCraft.CHEMICAL_FACTORY,
         [
-            asItem(item.ae.processor.printed.engineering),
-            asItem(item.ae.printed_silicon),
-            asItem(fluid.redstone, 10)
+            asItem(item.diamond, 2),
+            asItem(item.iu.polished_silicon_disk),
+            asItem(fluid.redstone, 20)
         ],[
             asItem(item.ae.processor.engineering)
         ]
@@ -122,9 +122,9 @@ const registerAEIURecipes = (evt) => {
 
     iuRecipe(evt, getRecipeID('energy_processor'), IUMachineCraft.CHEMICAL_FACTORY,
         [
-            asItem(item.ae.processor.printed.energy),
-            asItem(item.ae.printed_silicon),
-            asItem(fluid.redstone, 10)
+            asItem(item.ae.charged_redstone_crystal, 2),
+            asItem(item.iu.polished_silicon_disk),
+            asItem(fluid.redstone, 20)
         ],[
             asItem(item.ae.processor.energy)
         ]
@@ -132,9 +132,9 @@ const registerAEIURecipes = (evt) => {
 
     iuRecipe(evt, getRecipeID('concurrent_processor'), IUMachineCraft.CHEMICAL_FACTORY,
         [
-            asItem(item.ae.processor.printed.concurrent),
-            asItem(item.ae.printed_silicon),
-            asItem(fluid.redstone, 10)
+            asItem(item.ae.entro_crystal, 2),
+            asItem(item.iu.polished_silicon_disk),
+            asItem(fluid.redstone, 20)
         ],[
             asItem(item.ae.processor.concurrent)
         ]

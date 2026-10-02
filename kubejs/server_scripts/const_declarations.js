@@ -1319,6 +1319,7 @@ const tag = {
         osmiridium: '#c:ingots/osmiridium',
         niobium_titanium: '#c:ingots/niobiumtitanium',
         galliumarsenic: '#c:ingots/galliumarsenic',
+        nitenol: '#c:ingots/nitenol',
         // 3 сплавка
         molybdenum_steel: '#c:ingots/molybdenumsteel',
         alcled: '#c:ingots/alcled',
@@ -1388,6 +1389,7 @@ const tag = {
         titanium_steel: '#c:plates/titaniumsteel',
         osmiridium: '#c:plates/osmiridium',
         galliumarsenic: '#c:plates/galliumarsenic',
+        nitenol: '#c:plates/nitenol',
         // 3 сплавка
         molybdenumsteel: '#c:plates/molybdenumsteel',
         berylliumbronze: '#c:plates/berylliumbronze',
@@ -1449,6 +1451,7 @@ const tag = {
         alumel: '#c:doubleplate/alumel',
         nitenol: '#c:doubleplate/nitenol',
         galliumarsenic: '#c:doubleplate/galliumarsenic',
+        nitenol: '#c:doubleplate/nitenol',
         // 3 сплавка
         alcled: '#c:doubleplate/alcled',
         berylliumbronze: '#c:doubleplate/berylliumbronze',
@@ -1505,6 +1508,7 @@ const tag = {
         brass: '#c:casings/brass',
         duralumin: '#c:casings/duralumin',
         alumel: '#c:casings/alumel',
+        nitenol: '#c:casings/nitenol',
         // 3 сплавка
         galliumarsenic: '#c:casings/galliumarsenic',
         tan_tung_haf: '#c:casings/tantalumtungstenhafnium',
