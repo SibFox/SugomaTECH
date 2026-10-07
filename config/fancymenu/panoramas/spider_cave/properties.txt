@@ -1,0 +1,9 @@
+type = panorama
+
+panorama-meta {
+  name = spider_cave
+  speed = 1.0
+  fov = 120.0
+  angle = -30.0
+  start_rotation = 0
+}

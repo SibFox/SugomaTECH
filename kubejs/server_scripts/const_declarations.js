@@ -206,6 +206,9 @@ const item = {
         niobium_titanium: 'industrialupgrade:alloyplate/niobium_titanium',
         brass: 'industrialupgrade:alloyplate/red_brass',
         wolframite: 'industrialupgrade:crafting_elements/crafting_655_element',
+
+        superalloy_haynes: 'industrialupgrade:alloyplate/superalloy_haynes',
+        superalloy_rene: 'industrialupgrade:alloyplate/superalloy_rene',
     },
 
     doubleplate: {
@@ -456,13 +459,22 @@ const item = {
             tech_adv: 'industrialupgrade:blockresource/advanced_machine',
         },
 
-        chip: {
+        soic: {
             lvl1: 'industrialupgrade:circuit/circuit_part2',
             lvl2: 'industrialupgrade:circuit/advanced_part2',
             lvl3: 'industrialupgrade:circuit/nanocircuit_part2',
             lvl4: 'industrialupgrade:circuit/quantumcircuit_part2',
             lvl5: 'industrialupgrade:circuit/spectralcircuit_part2',
             lvl6: 'industrialupgrade:circuit/photon_part2'
+        },
+
+        qfp: {
+            lvl1: 'industrialupgrade:circuit/circuit_part3',
+            lvl2: 'industrialupgrade:circuit/advanced_part3',
+            lvl3: 'industrialupgrade:circuit/nanocircuit_part3',
+            lvl4: 'industrialupgrade:circuit/quantumcircuit_part3',
+            lvl5: 'industrialupgrade:circuit/spectralcircuit_part3',
+            lvl6: 'industrialupgrade:circuit/photon_part3'
         },
     
         microchip: {
@@ -1306,6 +1318,7 @@ const tag = {
         barium: '#c:ingots/barium',
         bismuth: '#c:ingots/bismuth',
         cadmium: '#c:ingots/cadmium',
+        spinel: '#c:ingots/spinel',
         // 2 сплавка
         invar: '#c:ingots/invar',
         steel: '#c:ingots/steel',
@@ -1377,6 +1390,7 @@ const tag = {
         osmium: '#c:plates/osmium',
         iridium: '#c:plates/iridium',
         manganese: '#c:plates/manganese',
+        spinel: '#c:plates/spinel',
         // 2 сплавка
         invar: '#c:plates/invar',
         steel: '#c:plates/steel',
@@ -1439,6 +1453,7 @@ const tag = {
         vanadium: '#c:doubleplate/vanadium',
         iridium: '#c:doubleplate/iridium',
         manganese: '#c:doubleplate/manganese',
+        spinel: '#c:doubleplate/spinel',
         // 2 сплавка
         invar: '#c:doubleplate/invar',
         bronze: '#c:doubleplate/bronze',
@@ -1502,6 +1517,7 @@ const tag = {
         iridium: '#c:casings/iridium',
         manganese: '#c:casings/manganese',
         vanadium: '#c:casings/vanadium',
+        spinel: '#c:casings/spinel',
         // 2 сплавка
         invar: '#c:casings/invar',
         electrum: '#c:casings/electrum',
@@ -1549,6 +1565,7 @@ const tag = {
         iridium: '#c:gears/iridium',
         vanadium: '#c:gears/vanadium',
         manganese: '#c:gears/manganese',
+        spinel: '#c:gears/spinel',
         // 2 сплавка
         invar: '#c:gears/invar',
         brass: '#c:gears/brass',
@@ -1613,6 +1630,7 @@ const tag = {
         osmium: '#c:storage_blocks/osmium',
         iridium: '#c:storage_blocks/iridium',
         manganese: '#c:storage_blocks/manganese',
+        spinel: '#c:storage_blocks/spinel',
         // 2 сплавка
         invar: '#c:storage_blocks/invar',
         brass: '#c:storage_blocks/brass',

@@ -45,6 +45,8 @@ const registerPipeZRecipes = (evt) => {
         { 'temperature': 3000 }
     )
 
+    evt.remove({ output: 'pipez:filter_destination_tool' })
+
     evt.shaped(
         Item.of('pipez:filter_destination_tool', 1),
         [
@@ -57,7 +59,6 @@ const registerPipeZRecipes = (evt) => {
             C: item.iu.microchip.lvl1
         }
     ).id(getRecipeID('filter_destination_tool'))
-    
     
 
     evt.remove({ output: 'pipez:basic_upgrade' })
