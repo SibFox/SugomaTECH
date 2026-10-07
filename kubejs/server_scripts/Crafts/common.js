@@ -241,7 +241,7 @@ const registerCommonRecipes = (evt) => {
     // )
 
     // aeReactionRecipe(evt, getRecipeID('kloverghett_part'),
-    //     100000, asItem(fluid.cryogen, 500),
+    //     3500000, asItem(fluid.cryogen, 500),
     //     [
     //         asItem(item.custom.kloverghett_crystal, 4),
     //         asItem(item.ae.charged_certus_quartz_crystal, 32),

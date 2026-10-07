@@ -205,7 +205,7 @@ const registerAEIURecipes = (evt) => {
     
     iuRecipe(evt, getRecipeID('annihilation_core'), IUMachineCraft.ELECTRONIC_ASSEMBLER,
         [
-            asItem(item.iu.chip.lvl3),
+            asItem(item.iu.soic.lvl3),
             asItem(item.iu.ruby),
             asItem(item.ae.fluix_dust),
             asItem(item.ae.processor.logic),
@@ -218,7 +218,7 @@ const registerAEIURecipes = (evt) => {
 
     iuRecipe(evt, getRecipeID('formation_core'), IUMachineCraft.ELECTRONIC_ASSEMBLER,
         [
-            asItem(item.iu.chip.lvl3),
+            asItem(item.iu.soic.lvl3),
             asItem(item.iu.saphire),
             asItem(item.ae.fluix_dust),
             asItem(item.ae.processor.logic),

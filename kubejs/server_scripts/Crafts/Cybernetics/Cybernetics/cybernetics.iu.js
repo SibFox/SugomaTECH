@@ -36,7 +36,7 @@ const registerCyberneticsIURecipes = (evt) => {
     iuRecipe(evt, getRecipeID('ssd'), IUMachineCraft.CIRCUIT_MANUFACTURER,
         [
             asItem(item.iu.rom.corpus),
-            asItem(item.iu.chip.lvl3),
+            asItem(item.iu.soic.lvl3),
             asItem('industrialupgrade:crafting_elements/crafting_560_element'),
             asItem(item.iu.capacitor.lvl3),
             asItem(item.iu.ram.interface)
@@ -49,7 +49,7 @@ const registerCyberneticsIURecipes = (evt) => {
     iuRecipe(evt, getRecipeID('gpu'), IUMachineCraft.CIRCUIT_MANUFACTURER,
         [
             asItem(item.iu.rom.corpus),
-            asItem(item.iu.chip.lvl3),
+            asItem(item.iu.soic.lvl3),
             asItem('industrialupgrade:crafting_elements/crafting_560_element'),
             asItem(item.iu.diode.lvl2, 2),
             asItem(item.iu.cooling_system.lvl2)
@@ -65,7 +65,7 @@ const registerCyberneticsIURecipes = (evt) => {
             asItem(item.iu.processor.lvl8),
             asItem(item.cn.ssd, 2),
             asItem(item.custom.conducting_organic_polymer, 4),
-            asItem(item.iu.chip.lvl4, 1)
+            asItem(item.iu.soic.lvl4, 1)
         ],[
             asItem(item.cn.upgradepart.neural_processor)
         ],

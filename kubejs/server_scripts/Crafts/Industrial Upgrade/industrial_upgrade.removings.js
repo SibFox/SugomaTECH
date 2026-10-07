@@ -73,6 +73,12 @@ const registerIURecipeRemovings = (evt) => {
         evt.custom(dict)
     }
 
+    evt.remove({ output: item.iu.qfp.lvl2 })
+    evt.remove({ output: item.iu.qfp.lvl3 })
+    evt.remove({ output: item.iu.qfp.lvl4 })
+    evt.remove({ output: item.iu.qfp.lvl5 })
+    evt.remove({ output: item.iu.qfp.lvl6 })
+
     // Процессоры
     removeIUCraft(evt, IUMachineCraft.ELECTRONIC_ASSEMBLER, [asItem(item.iu.processor.lvl3)])
     removeIUCraft(evt, IUMachineCraft.ELECTRONIC_ASSEMBLER, [asItem(item.iu.processor.lvl4)])

@@ -32,6 +32,81 @@ const registerIUCTRecipes = (evt) => {
     'industrialupgrade:wiring/itemcable22', 6)
 
     evt.shaped(
+        Item.of(item.iu.qfp.lvl2, 1),
+        [
+            'UUU',
+            'CQC',
+            'PPP'
+        ],{
+            U: item.iu.carbon,
+            P: tag.plate.platinum,
+            Q: item.iu.polished_silicon_disk,
+            C: item.iu.capacitor.lvl2
+        }
+    ).id(getRecipeID('qfp_2'))
+
+    evt.shaped(
+        Item.of(item.iu.qfp.lvl3, 1),
+        [
+            'UUU',
+            'CQC',
+            'PPP'
+        ],{
+            U: item.iu.carbon,
+            P: tag.plate.bronze,
+            Q: item.iu.polished_silicon_disk,
+            C: item.iu.capacitor.lvl3
+        }
+    ).id(getRecipeID('qfp_3'))
+
+    evt.shaped(
+        Item.of(item.iu.qfp.lvl4, 1),
+        [
+            'UUU',
+            'CQC',
+            'PPP'
+        ],{
+            U: item.iu.carbon,
+            P: tag.plate.steel,
+            Q: item.iu.polished_silicon_disk,
+            C: item.iu.capacitor.lvl4
+        }
+    ).id(getRecipeID('qfp_4'))
+
+    evt.shaped(
+        Item.of(item.iu.qfp.lvl5, 1),
+        [
+            'UUU',
+            'CQC',
+            'PPP'
+        ],{
+            U: item.iu.carbon,
+            P: tag.plate.spinel,
+            Q: item.iu.polished_silicon_disk,
+            C: item.iu.capacitor.lvl5
+        }
+    ).id(getRecipeID('qfp_5'))
+
+    evt.shaped(
+        Item.of(item.iu.qfp.lvl6, 1),
+        [
+            'UUU',
+            'CQC',
+            'PPP'
+        ],{
+            U: item.iu.carbon,
+            P: item.plate.superalloy_rene,
+            Q: item.iu.polished_silicon_disk,
+            C: item.iu.capacitor.lvl6
+        }
+    ).id(getRecipeID('qfp_6'))
+    
+    
+    
+    
+
+
+    evt.shaped(
         Item.of(item.iu.tin_can, 1),
         [
             'C C',

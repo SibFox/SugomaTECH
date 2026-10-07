@@ -34,6 +34,7 @@ const registerRecipeRemovings = (evt) => {
     evt.remove({ output: item.ingot.red_alloy })
 
     evt.remove({ id: 'kaleidoscope_cookery:millstone/gunpowder_from_flint' })
+    evt.remove({ id: 'kaleidoscope_cookery:millstone/redstone_from_redstone_ore' })
     
     evt.remove({ id: 'createcybernetics:wetware_spidereyes' }) // Уменьшает производительность в 8 раз, написать об этом разрабу
 
