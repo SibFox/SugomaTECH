@@ -342,3 +342,5 @@ config/gpushift-client.toml
 config/gpushift-gpu-v2-beta.json
 config/gpushift-smart-calibration.json
 config/voidfog-client.toml
+config/windy-config.json
+config/whitecap.json
