@@ -14,11 +14,8 @@
         "arphex:spider_brood",
         "arphex:spider_recluse",
         "arphex:spider_sinker",
-        "arphex:spider_matriarch_larvae",
         "arphex:spider_obstructer",
-        "arphex:spider_funnel",
-        "arphex:spider_lunger",
-        "arphex:dragonfly_dreadnought"
+        "arphex:spider_funnel"
     ],
     "phase": "arphex_too_active",
     "persecond": 0.65,
@@ -59,11 +56,8 @@
         "arphex:spider_brood",
         "arphex:spider_recluse",
         "arphex:spider_sinker",
-        "arphex:spider_matriarch_larvae",
         "arphex:spider_obstructer",
-        "arphex:spider_funnel",
-        "arphex:spider_lunger",
-        "arphex:dragonfly_dreadnought"
+        "arphex:spider_funnel"
     ],
     "phase": "arphex_too_active",
     "persecond": 0.8,
@@ -105,12 +99,10 @@
         "arphex:spider_brood",
         "arphex:spider_recluse",
         "arphex:spider_sinker",
-        "arphex:spider_matriarch_larvae",
         "arphex:spider_obstructer",
         "arphex:spider_funnel",
         "arphex:spider_lunger",
-        "arphex:spider_ambusher",
-        "arphex:dragonfly_dreadnought"
+        "arphex:spider_ambusher"
     ],
     "phase": "arphex_flood",
     "persecond": 0.8,
@@ -152,12 +144,10 @@
         "arphex:spider_brood",
         "arphex:spider_recluse",
         "arphex:spider_sinker",
-        "arphex:spider_matriarch_larvae",
         "arphex:spider_obstructer",
         "arphex:spider_funnel",
         "arphex:spider_lunger",
-        "arphex:spider_ambusher",
-        "arphex:dragonfly_dreadnought"
+        "arphex:spider_ambusher"
     ],
     "phase": "arphex_flood",
     "persecond": 0.8,

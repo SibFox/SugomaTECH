@@ -33,8 +33,15 @@ const registerRecipeRemovings = (evt) => {
 
     evt.remove({ output: item.ingot.red_alloy })
 
+    evt.remove({ output: 'minecraft:emerald', type: 'kaleidoscope_cookery:millstone' })
+    evt.remove({ output: item.diamond, type: 'kaleidoscope_cookery:millstone' })
+    evt.remove({ output: 'minecraft:raw_gold', type: 'kaleidoscope_cookery:millstone' })
+    evt.remove({ output: 'minecraft:raw_iron', type: 'kaleidoscope_cookery:millstone' })
+    evt.remove({ output: 'minecraft:coal', type: 'kaleidoscope_cookery:millstone' })
+    evt.remove({ output: item.lapis, type: 'kaleidoscope_cookery:millstone' })
+    evt.remove({ output: 'minecraft:raw_copper', type: 'kaleidoscope_cookery:millstone' })
+    evt.remove({ output: item.redstone, type: 'kaleidoscope_cookery:millstone' })
     evt.remove({ id: 'kaleidoscope_cookery:millstone/gunpowder_from_flint' })
-    evt.remove({ id: 'kaleidoscope_cookery:millstone/redstone_from_redstone_ore' })
     
     evt.remove({ id: 'createcybernetics:wetware_spidereyes' }) // Уменьшает производительность в 8 раз, написать об этом разрабу
 
