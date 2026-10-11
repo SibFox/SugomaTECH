@@ -37,7 +37,7 @@ const registerAEIURecipes = (evt) => {
 
     iuRecipe(evt, getRecipeID('fluix_crystal'), IUMachineCraft.MIXER.TRIPLE_SOLID,
         [
-            asItem(item.ae.fluix_crystal),
+            asItem(item.ae.certus_quartz_crystal),
             asItem(item.quartz),
             asItem(item.redstone)
         ],[

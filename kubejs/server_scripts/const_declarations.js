@@ -334,7 +334,8 @@ const item = {
                 iron: 'industrialupgrade:wiring/iron1',
                 gold: 'industrialupgrade:wiring/gold1'
             },
-            glass: 'industrialupgrade:wiring/glass_1'
+            glass: 'industrialupgrade:wiring/glass_1',
+            ampere: 'industrialupgrade:wiring/ampere',
         },
     
         battery: {

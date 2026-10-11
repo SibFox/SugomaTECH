@@ -344,3 +344,7 @@ config/gpushift-smart-calibration.json
 config/voidfog-client.toml
 config/windy-config.json
 config/whitecap.json
+config/ankinbt.json
+/notes
+config/whitecap-server.json
+config/constantmusic.toml

@@ -19,7 +19,8 @@ const registerIURecipeRemovings = (evt) => {
         'industrialupgrade:moremachine2/extruder', 'industrialupgrade:moremachine2/rolling',
         'industrialupgrade:basemachine1/handler_ho', 'industrialupgrade:basemachine2/electrolyzer_iu',
         'industrialupgrade:basemachine3/pump_iu', 'industrialupgrade:basemachine3/laser_polisher',
-        'industrialupgrade:basemachine3/peat_generator'
+        'industrialupgrade:basemachine3/peat_generator', 'industrialupgrade:basemachine3/electric_refractory_furnace',
+        'industrialupgrade:basemachine3/ampere_generator', 'industrialupgrade:basemachine3/electric_dryer'
     ] })    
 
     for (let t of ['wind', 'water']) {

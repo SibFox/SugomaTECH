@@ -420,6 +420,53 @@ const registerIUCTRecipes = (evt) => {
         }
     ).id(getRecipeID('peat_generator'))
 
+    evt.shaped(
+        Item.of('industrialupgrade:basemachine3/electric_dryer', 1),
+        [
+            ' F ',
+            'BQE',
+            ' M '
+        ],{
+            F: item.iu.module.liquid.lvl1,
+            B: item.iu.module.tank.lvl1,
+            E: item.iu.module.extractor.lvl1,
+            Q: item.iu.machine_corpus.tech,
+            M: item.iu.electromotor.lvl1
+        }
+    ).id(getRecipeID('electric_dryer'))
+    
+    evt.shaped(
+        Item.of('industrialupgrade:basemachine3/ampere_generator', 1),
+        [
+            ' B ',
+            'AQA',
+            ' E '
+        ],{
+            B: item.iu.battery.lead,
+            Q: item.iu.machine_corpus.tech,
+            E: item.iu.electromotor.lvl1,
+            A: item.iu.wire.ampere
+        }
+    ).id(getRecipeID('ampere_generator'))
+    
+    evt.shaped(
+        Item.of('industrialupgrade:basemachine3/electric_refractory_furnace', 1),
+        [
+            'A B',
+            'HQJ',
+            ' E '
+        ],{
+            A: 'industrialupgrade:mini_smeltery/mini_smeltery',
+            B: 'industrialupgrade:refractory_furnace/refractory_furnace',
+            Q: item.iu.machine_corpus.tech,
+            E: item.iu.electromotor.with_bearings.lvl1,
+            H: item.iu.heating_cylinder,
+            J: item.iu.module.tank.lvl1
+        }
+    ).id(getRecipeID('electric_refractory_furnace'))
+    
+
+
     //#endregion    
     
     //#region Переделка роторов
