@@ -607,6 +607,40 @@ const registerAECTRecipes = (evt) => {
     ).id(getRecipeID('assembler_matrix_frame'))
     
     
-    
+    // evt.custom(
+    //     {
+    //         "type": "ae2:transform",
+    //         "ingredients": [
+    //             {
+    //                 "item": "ae2:charged_certus_quartz_crystal"
+    //             },
+    //             {
+    //                 "item": "ae2:certus_quartz_dust"
+    //             }
+    //         ],
+    //         "result": {
+    //             "count": 2,
+    //             "id": "ae2:certus_quartz_crystal"
+    //         }
+    //     }
+    // )
     
 }
+
+// 'exposure:color_film\
+// [exposure:film_frames=\
+// [{entities_in_frame:\
+// [{distance:2,id:"minecraft:player",\
+// name:"SibFox",pos:[I;-1395,79,760]}],\
+// extra_data:{biome:"minecraft:plains",\
+// day_time:30940670,\
+// dimension:"minecraft:overworld",\
+// focal_length:53,\
+// light_level:11,\
+// pitch:-6.888746f,\
+// pos:[-1394.0299473512034d,80.0d,757.9064994254536d],\
+// shutter_speed:"1/500",\
+// timestamp:1791930793L,weather:"Clear",\
+// yaw:8.717041f},\
+// identifier:"jkinaru_139971805",\
+// photographer:{name:"jkinaru",uuid:[I;1766456550,-2130692947,-1487510597,73789291]}}]]'

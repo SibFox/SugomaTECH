@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
 })
 
 LootJS.lootTables(evt => {
-    // lootArPhEx(evt)
+    lootArPhEx(evt)
     lootBackpacks(evt)
 })
 
