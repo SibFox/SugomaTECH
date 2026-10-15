@@ -348,3 +348,6 @@ config/ankinbt.json
 /notes
 config/whitecap-server.json
 config/constantmusic.toml
+/local/crash_assistant
+/config/crash_assistant
+/config/xtranims
