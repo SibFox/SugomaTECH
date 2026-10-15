@@ -341,7 +341,22 @@ const registerCommonRecipes = (evt) => {
         }
     ).id(getRecipeID('exo_4'))
 
+    Color.DYE.forEach(clr => {
+        evt.custom({
+            "type": "ae2:transform",
+            "ingredients": [
+                {
+                    "item": "minecraft:"+clr+"_concrete_powder"
+                }
+            ],
+            "result": {
+                "count": 1,
+                "id": "minecraft:"+clr+"_concrete"
+            }
+        })
+    })
 
+    
 
     console.info('Common recipe adding passed')
 }
