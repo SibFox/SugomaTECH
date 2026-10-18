@@ -1,3 +1,9 @@
+function calcSaturation(nutrition, saturation) {
+    return { nutrition: nutrition, 
+        saturation: saturation / nutrition / 2
+    }
+}
+
 StartupEvents.registry('item', evt => {
   registerItems(evt)
   registerFoods(evt)
@@ -11,6 +17,19 @@ StartupEvents.registry('block', evt => {
   //   .requiresTool(false)
   //   .soundType('glass')
   //   .renderType('cutout')
+
+  // evt.create('jar_embryo_block')
+  //   .parentModel('kubejs:models/block/jar_embryo')
+  //   .item(i => {
+  //     i.food(food => {
+  //       let hungerData = calcSaturation(4, 10)
+  //       food.nutrition(hungerData.nutrition)
+  //           .saturation(hungerData.saturation)
+  //           .effect('minecraft:nausea', 1200, 0, 1)
+  //           .effect('minecraft:poison', 100, 0, 0.7)
+  //           .effect('minecraft:darkness', 300, 0, 1)
+  //     }).maxStackSize(16)
+  //   })
 
 })
 

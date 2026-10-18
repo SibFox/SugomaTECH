@@ -1,105 +1,162 @@
 "use strict";
 
-function calcSaturation(nutrition, saturation) {
-    return { nutrition: nutrition, 
-        saturation: saturation / nutrition / 2
-    }
-}
+// const { Item } = require("@side-only/startup/events/registry");
 
-let registerFoods = (evt) => {
+// /**
+//  * 
+//  * @param {Item} evt 
+//  */
+const registerFoods = (evt) => {
+    evt.create('boiled_silk_gland').food(food => {
+        let hungerData = calcSaturation(7, 6)
+        food.nutrition(hungerData.nutrition)
+            .saturation(hungerData.saturation)
+    }).maxStackSize(64)
+
+    evt.create('boiled_spider_eggs').food(food => {
+        let hungerData = calcSaturation(5, 6)
+        food.nutrition(hungerData.nutrition)
+            .saturation(hungerData.saturation)
+            .fastToEat()
+    }).maxStackSize(64)
+
+    evt.create('boiled_spider_leg_meat').food(food => {
+        let hungerData = calcSaturation(7, 12)
+        food.nutrition(hungerData.nutrition)
+            .saturation(hungerData.saturation)
+    }).maxStackSize(64)
+
+    evt.create('spider_eggs').food(food => {
+        let hungerData = calcSaturation(2, 3)
+        food.nutrition(hungerData.nutrition)
+            .saturation(hungerData.saturation)
+            .fastToEat()
+    }).maxStackSize(64)
+
+    evt.create('spider_leg_meat').food(food => {
+        let hungerData = calcSaturation(3, 5)
+        food.nutrition(hungerData.nutrition)
+            .saturation(hungerData.saturation)
+    }).maxStackSize(64)
+    
+    evt.create('silk_pasta').food(food => {
+        let hungerData = calcSaturation(12, 10)
+        food.nutrition(hungerData.nutrition)
+            .saturation(hungerData.saturation)
+    }).maxStackSize(64)
+    .tooltip(Text.translate('item.kubejs.silk_pasta.desc').gray())
+    
+
     evt.create('preserved_meat').food(food => {
         let hungerData = calcSaturation(8, 10)
         food.nutrition(hungerData.nutrition)
             .saturation(hungerData.saturation)
     }).maxStackSize(64)
     
+    evt.create('jar_embryo').food(food => {
+        let hungerData = calcSaturation(4, 10)
+        food.nutrition(hungerData.nutrition)
+            .saturation(hungerData.saturation)
+            .effect('minecraft:nausea', 1200, 0, 1)
+            .effect('minecraft:poison', 100, 0, 0.7)
+            .effect('minecraft:darkness', 300, 0, 1)
+    }).maxStackSize(16)
 
-    // evt.create('cooked_lungs').food(food => {
-    //     food
-    //         .nutrition(5)
-    //         .saturation(0.2)
-    // })
-    // evt.create('cooked_stomach').food(food => {
-    //     food
-    //         .nutrition(8)
-    //         .saturation(0.35)
-    // })
+    evt.create('jar_orphan_paste').food(food => {
+        let hungerData = calcSaturation(14, 18)
+        food.nutrition(hungerData.nutrition)
+            .saturation(hungerData.saturation)
+            .effect('minecraft:nausea', 600, 0, 0.9)
+    }).maxStackSize(16)
+    .tooltip(Text.translate('item.kubejs.jar_orphan_paste.desc').gray())
     
-    // evt.create('minced_brain').food(food => {
-    //     food
-    //         .nutrition(1)
-    // })
-    // evt.create('cooked_minced_brain').food(food => {
-    //     food
-    //         .nutrition(2)
-    //         .saturation(0.4)
-    // })
-    // evt.create('minced_heart').food(food => {
-    //     food
-    //         .nutrition(1)
-    // })
-    // evt.create('cooked_minced_heart').food(food => {
-    //     food
-    //         .nutrition(4)
-    //         .saturation(0.3)
-    // })
-    // evt.create('minced_liver').food(food => {
-    //     food
-    //         .nutrition(1)
-    // })
-    // evt.create('cooked_minced_liver').food(food => {
-    //     food
-    //         .nutrition(4)
-    //         .saturation(0.3)
-    // })
-    // evt.create('minced_lungs').food(food => {
-    //     food
-    //         .nutrition(1)
-    // })
-    // evt.create('cooked_minced_lungs').food(food => {
-    //     food
-    //         .nutrition(2)
-    //         .saturation(0.4)
-    // })
-    // evt.create('minced_stomach').food(food => {
-    //     food
-    //         .nutrition(1)
-    // })
-    // evt.create('cooked_minced_stomach').food(food => {
-    //     food
-    //         .nutrition(4)
-    //         .saturation(0.28)
-    // })
-    // evt.create('hemolymph_soaked_brain').food(food => {
-    //     food
-    //         .nutrition(1)
-    //         .effect('minecraft:poison', 100, 0, 1)
-    //         .effect('minecraft:hunger', 200, 0, 0.7)
-    // })
-    // evt.create('hemolymph_soaked_heart').food(food => {
-    //     food
-    //         .nutrition(1)
-    //         .effect('minecraft:poison', 100, 0, 1)
-    //         .effect('minecraft:hunger', 200, 0, 0.7)
-    // })
-    // evt.create('hemolymph_soaked_liver').food(food => {
-    //     food
-    //         .nutrition(1)
-    //         .effect('minecraft:poison', 100, 0, 1)
-    //         .effect('minecraft:hunger', 200, 0, 0.7)
-    // })
-    // evt.create('hemolymph_soaked_lungs').food(food => {
-    //     food
-    //         .nutrition(1)
-    //         .effect('minecraft:poison', 100, 0, 1)
-    //         .effect('minecraft:hunger', 200, 0, 0.7)
-    // })
-    // evt.create('hemolymph_soaked_stomach').food(food => {
-    //     food
-    //         .nutrition(1)
-    //         .effect('minecraft:poison', 100, 0, 1)
-    //         .effect('minecraft:hunger', 200, 0, 0.7)
-    // })
+
+    evt.create('cooked_lungs').food(food => {
+        food
+            .nutrition(5)
+            .saturation(0.2)
+    })
+    evt.create('cooked_stomach').food(food => {
+        food
+            .nutrition(8)
+            .saturation(0.35)
+    })
+    
+    evt.create('minced_brain').food(food => {
+        food
+            .nutrition(1)
+    })
+    evt.create('cooked_minced_brain').food(food => {
+        food
+            .nutrition(2)
+            .saturation(0.4)
+    })
+    evt.create('minced_heart').food(food => {
+        food
+            .nutrition(1)
+    })
+    evt.create('cooked_minced_heart').food(food => {
+        food
+            .nutrition(4)
+            .saturation(0.3)
+    })
+    evt.create('minced_liver').food(food => {
+        food
+            .nutrition(1)
+    })
+    evt.create('cooked_minced_liver').food(food => {
+        food
+            .nutrition(4)
+            .saturation(0.3)
+    })
+    evt.create('minced_lungs').food(food => {
+        food
+            .nutrition(1)
+    })
+    evt.create('cooked_minced_lungs').food(food => {
+        food
+            .nutrition(2)
+            .saturation(0.4)
+    })
+    evt.create('minced_stomach').food(food => {
+        food
+            .nutrition(1)
+    })
+    evt.create('cooked_minced_stomach').food(food => {
+        food
+            .nutrition(4)
+            .saturation(0.28)
+    })
+    evt.create('hemolymph_soaked_brain').food(food => {
+        food
+            .nutrition(1)
+            .effect('minecraft:poison', 100, 0, 1)
+            .effect('minecraft:hunger', 200, 0, 0.7)
+    })
+    evt.create('hemolymph_soaked_heart').food(food => {
+        food
+            .nutrition(1)
+            .effect('minecraft:poison', 100, 0, 1)
+            .effect('minecraft:hunger', 200, 0, 0.7)
+    })
+    evt.create('hemolymph_soaked_liver').food(food => {
+        food
+            .nutrition(1)
+            .effect('minecraft:poison', 100, 0, 1)
+            .effect('minecraft:hunger', 200, 0, 0.7)
+    })
+    evt.create('hemolymph_soaked_lungs').food(food => {
+        food
+            .nutrition(1)
+            .effect('minecraft:poison', 100, 0, 1)
+            .effect('minecraft:hunger', 200, 0, 0.7)
+    })
+    evt.create('hemolymph_soaked_stomach').food(food => {
+        food
+            .nutrition(1)
+            .effect('minecraft:poison', 100, 0, 1)
+            .effect('minecraft:hunger', 200, 0, 0.7)
+    })
     
     // evt.create('jar_embryo_paste').food(food => {
     //     let hungerData = calcSaturation(4, 8)

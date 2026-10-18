@@ -50,6 +50,7 @@ const item = {
     compass: 'minecraft:compass',
     conduit: 'minecraft:conduit',
     paper: 'minecraft:paper',
+    bottle: 'minecraft:glass_bottle',
 
     // ~~~~~~~~~~~~~~~~~~~~ Farmer's Delight ~~~~~~~~~~~~~~~~~~~~ 
     milk_bottle: 'farmersdelight:milk_bottle',
@@ -249,8 +250,10 @@ const item = {
         synth_nerve_cables: 'kubejs:synth_nerve_cables',
         pack_frame: 'kubejs:pack_frame',
         hardened_leather: 'kubejs:hardened_leather',
+        jar: 'kubejs:jar',
         embryo: 'kubejs:embryo',
         embryo_in_jar: 'kubejs:jar_embryo',
+        orphan_paste: 'kubejs:jar_orphan_paste',
         kloverghett_seed: 'kubejs:kloverghett_seed',
         kloverghett_crystal: 'kubejs:kloverghett_crystal',
         kloverghett_part: 'kubejs:kloverghett_part',

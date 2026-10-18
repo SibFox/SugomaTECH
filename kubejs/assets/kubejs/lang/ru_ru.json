@@ -12,22 +12,26 @@
   "item.morered.red_alloy_ingot": "Слиток краснокаменного сплава",
   "item.kubejs.kloverghett_seed": "Металлическое семечко",
   "item.kubejs.kloverghett_seed.desc": "Странное металлическое образование, напоминающее семечко",
-  "item.kubejs.kloverghett_crystal": "Кловергеттов кристалл",
-  "item.kubejs.kloverghett_crystal.desc": "Биологический металл искусственного происхождения, склонный к инфузии с податливыми материалами биологического происхождения Улья",
-  "item.kubejs.kloverghett_part": "Кусочек кловергетта",
+  "item.kubejs.kloverghett_crystal": "Неизвестный кристалл",
+  "item.kubejs.kloverghett_crystal.desc": "",
+  "item.kubejs.kloverghett_part": "Неизветный материал",
   "item.kubejs.kloverghett_part.desc": "",
-  "item.kubejs.kloverghett_treated": "Обработанный кловергетт",
-  "item.kubejs.kloverghett_treated.desc": "В данном состоянии обладает сверхпотенциалом для инфузии с материалами Улья",
+  "item.kubejs.kloverghett_treated": "Неизвестный материал",
+  "item.kubejs.kloverghett_treated.desc": "",
   "item.kubejs.exo_c_1": "Вольфрамитовые экзо-компоненты",
   "item.kubejs.exo_c_2": "Мифриловые экзо-компоненты",
   "item.kubejs.exo_c_3": "Драконидовые экзо-компоненты",
   "item.kubejs.exo_c_4": "Кловергеттовые экзо-компоненты",
+  "item.kubejs.embryo": "Эмбрион",
+  
   "item.kubejs.preserved_meat": "Законсервированное мясо",
-
-  "fluid_type.kubejs.liquid_redstone": "Сжиженный редстоун",
-
+  "item.kubejs.jar_embryo": "Эмбрион в банке",
+  "item.kubejs.jar_orphan_paste": "Сиротская паста",
+  "item.kubejs.jar_orphan_paste.desc": "Сделано из самых лучших ингредиентов. Идеальная еда для веганов!",
   "item.kubejs.plated_stomach_nether": "Нет спасения.",
   "item.kubejs.plated_stomach_nether.desc": "Даже от одного вида §lэтого§r у меня начинается изжога...",
+  "item.kubejs.plated_stomach_end.desc": "§oЧто... §rНет, я даже думать об этом не хочу.",
   "item.kubejs.plated_stomach_end": "Путь к сердцу мужчины...",
-  "item.kubejs.plated_stomach_end.desc": "§oЧто... §rНет, я даже думать об этом не хочу."
+  
+  "fluid_type.kubejs.liquid_redstone": "Сжиженный редстоун"
 }

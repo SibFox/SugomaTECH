@@ -1,8 +1,10 @@
 "use strict";
 
+let { $RecipesKubeEvent } = require("@package/dev/latvian/mods/kubejs/recipe");
+
 /**
  * 
- * @param {Internal.RecipesEventJS} evt 
+ * @param {$RecipesKubeEvent} evt 
  */
 const registerCommonRecipes = (evt) => {
 
@@ -228,6 +230,32 @@ const registerCommonRecipes = (evt) => {
         ]
     ).id(getRecipeID('steel_nugget_ct'))
 
+
+    evt.shaped(
+        Item.of(item.custom.jar, 1),
+        [
+            'B',
+            'G'
+        ],{
+            B: item.bottle,
+            G: item.iu.tempered_glass
+        }
+    ).id(getRecipeID('jar'))
+    
+    evt.shapeless(Item.of(item.custom.embryo_in_jar, 1),
+        [
+            item.custom.jar, item.custom.embryo
+        ]
+    ).id(getRecipeID('embryo_in_jar'))
+    
+    evt.recipes.create.mixing(
+        [item.custom.orphan_paste],
+        [
+            item.custom.jar, 
+            Ingredient.of(item.custom.embryo, 6),
+            Ingredient.of(fluid.glucose, 200)
+        ]
+    ).id(getRecipeID('orphan_paste'))
 
     // Кловергетт (пока что скрыт)
 

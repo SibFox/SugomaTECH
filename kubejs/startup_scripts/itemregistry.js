@@ -1,5 +1,11 @@
 "use strict";
 
+// const { Item } = require("@side-only/startup/events/registry");
+
+// /**
+//  * 
+//  * @param {Item} evt 
+//  */
 const registerItems = (evt) => {
     evt.create('coin')
     evt.create('shop')    
@@ -13,7 +19,10 @@ const registerItems = (evt) => {
     evt.create('module_cybernetics')
     evt.create('jar')
     evt.create('embryo')
-    evt.create('jar_embryo')
+    evt.create('spider_silk')
+    evt.create('silk_gland')
+    evt.create('spider_leg')
+    evt.create('chitin_shard')
     evt.create('exo_c_1')
     evt.create('exo_c_2')
     evt.create('exo_c_3')
