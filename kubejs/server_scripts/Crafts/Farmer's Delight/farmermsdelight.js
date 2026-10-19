@@ -1,6 +1,6 @@
 "use strict";
 
-let { $RecipesKubeEvent } = require("@package/dev/latvian/mods/kubejs/recipe");
+let $RecipesKubeEvent = Java.loadClass("dev.latvian.mods.kubejs.recipe.RecipesKubeEvent");
 
 /**
  * 

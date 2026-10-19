@@ -81,14 +81,6 @@ ItemEvents.foodEaten(event => {
 
 checkPrivateTerritories()
 
-ItemEvents.rightClicked(evt => {
-    evt.server.tell('id: '+evt.item.id)
-    evt.server.tell(`${evt.item.tags}`)
-    evt.server.tell(evt.item.tagKeys)
-    evt.server.tell(evt.item.hasTag('kubejs:dont_get_rad'))
-    // evt.server.tell(evt.item.tags.contains('kubejs:dont_get_rad'))
-})
-
 PlayerEvents.tick(evt => {
     if (evt.server.tickCount % 40) {
         let  { player } = evt
@@ -134,14 +126,6 @@ EntityEvents.death("arphex:spider_moth", evt => {
     }
 })
 
-EntityEvents.spawned('player', evt => {
-    const { player } = evt
-    if (player) {
-        player.forceAddEffect()
-    }
-})
-
 registerItemObliteration()
 
 console.info('Loaded server scripts KJS')
-
