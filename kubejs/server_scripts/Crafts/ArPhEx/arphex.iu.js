@@ -114,6 +114,14 @@ const registerArPhExIURecipes = (evt) => {
         ]
     )
     
+    iuRecipe(evt, getRecipeID('chitin_shard'), IUMachineCraft.EXTRACTOR,
+        [
+            asItem(item.custom.chitin_shard, 9)
+        ],[
+            asItem(item.arphex.chitin)
+        ]
+    )
+    
     
 
 }

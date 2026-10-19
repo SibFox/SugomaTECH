@@ -13,7 +13,7 @@ const registerItems = () => {
         evt.create('hardened_leather')
         evt.create('module_cybernetics')
         evt.create('jar')
-        evt.create('embryo')
+        evt.create('fettus')
         evt.create('spider_silk')
         evt.create('silk_gland')
         evt.create('spider_leg')

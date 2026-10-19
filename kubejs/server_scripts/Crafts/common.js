@@ -242,17 +242,17 @@ const registerCommonRecipes = (evt) => {
         }
     ).id(getRecipeID('jar'))
     
-    evt.shapeless(Item.of(item.custom.embryo_in_jar, 1),
+    evt.shapeless(Item.of(item.custom.fettus_in_jar, 1),
         [
-            item.custom.jar, item.custom.embryo
+            item.custom.jar, item.custom.fettus
         ]
-    ).id(getRecipeID('embryo_in_jar'))
+    ).id(getRecipeID('fettus_in_jar'))
     
     evt.recipes.create.mixing(
         [item.custom.orphan_paste],
         [
             item.custom.jar, 
-            Ingredient.of(item.custom.embryo, 6),
+            Ingredient.of(item.custom.fettus, 6),
             Fluid.of(noHash(fluid.glucose), 200)
         ]
     ).id(getRecipeID('orphan_paste'))

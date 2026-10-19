@@ -1,19 +1,15 @@
-// priority: 1
+// priority: 0
 "use strict";
 
 console.info('Loading server scripts KJS')
 
-ServerEvents.tags('item', event => {
-    registerOverallTags(event)
-})
+registerOverallTags()
 
 ServerEvents.recipes(event => {
     registerRecipeReplacings(event)
     registerRecipeRemovings(event)
-    registerIURecipeRemovings(event)
     registerCommonRecipes(event)
     registerPBRecipes(event)
-    registerIURecipes(event)
     registerAERecipes(event)
     registerCCRecipes(event)
     registerCreateRecipes(event)
@@ -29,6 +25,8 @@ ServerEvents.recipes(event => {
     registerAgritechRecipes(event)
     registerBakeriesRecipes(event)
 })
+
+registerIURecipes()
 
 LootJS.lootTables(evt => {
     lootArPhEx(evt)
@@ -73,7 +71,7 @@ ItemEvents.foodEaten(event => {
             return
         }
     
-        if (['kubejs:jar_orphan_paste', 'kubejs:jar_embryo'].includes(event.item.id))
+        if (['kubejs:jar_orphan_paste', 'kubejs:jar_fettus'].includes(event.item.id))
         {
             event.player.give(Item.of(item.custom.jar))
             return
@@ -83,6 +81,25 @@ ItemEvents.foodEaten(event => {
 
 checkPrivateTerritories()
 
+ItemEvents.rightClicked(evt => {
+    evt.server.tell('id: '+evt.item.id)
+    evt.server.tell(`${evt.item.tags}`)
+    evt.server.tell(evt.item.tagKeys)
+    evt.server.tell(evt.item.hasTag('kubejs:dont_get_rad'))
+    // evt.server.tell(evt.item.tags.contains('kubejs:dont_get_rad'))
+})
+
+PlayerEvents.tick(evt => {
+    if (evt.server.tickCount % 40) {
+        let  { player } = evt
+        player.inventory.allItems.forEach(item => {
+            if (item.hasTag('kubejs:dont_get_rad')){
+                item.components.set('industrialupgrade:food_radiation_dose', 0)
+            }
+        })
+    }
+})
+
 EntityEvents.death("player", evt => {
     const { source, entity, player, server } = evt
     const killer = source.actual
@@ -90,7 +107,7 @@ EntityEvents.death("player", evt => {
     if (killer)
         if (player.username == 'jkinaru' && killer.username == 'arphex:spider_moth')
             if (Math.random > 0.6)
-                player.drop(Item.of('kubejs:embryo').stack, false, false)
+                player.drop(Item.of('kubejs:fettus').stack, false, false)
 })
 
 EntityEvents.death("arphex:spider_moth", evt => {

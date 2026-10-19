@@ -10,8 +10,8 @@ const registerBlocks = () => {
         //   .soundType('glass')
         //   .renderType('cutout')
 
-        evt.create('jar_embryo')
-            .parentModel('kubejs:models/block/jar_embryo.json')
+        evt.create('jar_fettus')
+            .parentModel('kubejs:models/block/jar_fettus.json')
             .item(i => {
             i.food(food => {
                 let hungerData = calcSaturation(4, 10)
@@ -22,8 +22,9 @@ const registerBlocks = () => {
                     .effect('minecraft:darkness', 300, 0, 1)
                 })
                     .maxStackSize(16)
-                    .texture('kubejs:textures/item/jar_embryo')
+                    .texture('kubejs:textures/item/jar_fettus')
                     .useAnimation('drink')
+                    .tooltip(Text.translate('block.kubejs.jar_fettus.desc').gray())
             })
                 .box(5,0,5, 11,8,11)
                 .hardness(0.3)

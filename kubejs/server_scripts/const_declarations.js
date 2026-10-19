@@ -50,6 +50,7 @@ const item = {
     compass: 'minecraft:compass',
     conduit: 'minecraft:conduit',
     paper: 'minecraft:paper',
+    shears: 'minecraft:shears',
 
     // ~~~~~~~~~~~~~~~~~~~~ Farmer's Delight ~~~~~~~~~~~~~~~~~~~~ 
     milk_bottle: 'farmersdelight:milk_bottle',
@@ -241,6 +242,8 @@ const item = {
 
     //#endregion
 
+    //#region Custom
+
     custom: {
         spool: 'kubejs:spool',
         hemolymph_drop: 'kubejs:hemolymph_drop',
@@ -249,9 +252,10 @@ const item = {
         synth_nerve_cables: 'kubejs:synth_nerve_cables',
         pack_frame: 'kubejs:pack_frame',
         hardened_leather: 'kubejs:hardened_leather',
+        chitin_shard: 'kubejs:chitin_shard',
         jar: 'kubejs:jar',
-        embryo: 'kubejs:embryo',
-        embryo_in_jar: 'kubejs:jar_embryo',
+        fettus: 'kubejs:fettus',
+        fettus_in_jar: 'kubejs:jar_fettus',
         orphan_paste: 'kubejs:jar_orphan_paste',
         kloverghett_seed: 'kubejs:kloverghett_seed',
         kloverghett_crystal: 'kubejs:kloverghett_crystal',
@@ -265,6 +269,8 @@ const item = {
             lvl4: 'kubejs:exo_c_4',
         },
     },
+
+    //#endregion
 
     // #region Industrial Upgrade
     // ~~~~~~~~~~~~~~~~~~~~ INDUSTRIAL UPGRADE ~~~~~~~~~~~~~~~~~~~~ 
@@ -1701,6 +1707,8 @@ const fluid = {
     biomass: '$industrialupgrade:iufluidbiomass',
     plant_mixture: '$industrialupgrade:iufluidplantmixture',
     brilliant_azure: '$industrialupgrade:iufluidazurebrilliant',
+    black_oil: '$industrialupgrade:iufluidblackoil',
+    carbon_monoxide: '$industrialupgrade:iufluidcarbonmonoxide',
 
     metal: {
         bronze: '$industrialupgrade:iufluidbronze',
