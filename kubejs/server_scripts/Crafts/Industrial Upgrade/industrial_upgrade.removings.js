@@ -7,7 +7,7 @@ const registerIURecipeRemovings = () => {
         return recipeID('iu_change', path)
     }
     
-    let { $ItemStack } = require("@package/net/minecraft/world/item");
+    // let { $ItemStack } = require("@package/net/minecraft/world/item");
 
     ServerEvents.recipes(evt => {
         evt.remove({ output: [

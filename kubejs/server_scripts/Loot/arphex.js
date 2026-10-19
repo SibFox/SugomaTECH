@@ -1,6 +1,6 @@
 "use strict";
 
-const { $LootTableEventJS } = require("@package/com/almostreliable/lootjs/kube");
+let $LootTableEventJS = Java.loadClass("com.almostreliable.lootjs.kube.LootTableEventJS");
 
 /**
  * 
