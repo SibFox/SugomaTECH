@@ -237,7 +237,7 @@ const registerCommonRecipes = (evt) => {
             'B',
             'G'
         ],{
-            B: item.bottle,
+            B: item.glass_bottle,
             G: item.iu.tempered_glass
         }
     ).id(getRecipeID('jar'))
