@@ -146,20 +146,20 @@ const registerCreateCTRecipes = (evt) => {
     ).id(getRecipeID('belt'))
     
     
-    evt.shaped(
-        Item.of('petrolsparts:pneumatic_tube', 4),
-        [
-            'RMR',
-            'RLR',
-            'TST'
-        ],{
-            T: tag.plate.tungsten,
-            S: tag.cogwheel,
-            L: item.iu.rotor.wind.ready.iron,
-            M: item.create.precision_mechanism,
-            R: item.iu.synthetic_rubber
-        }
-    ).id(getRecipeID('pneumatic_tube'))
+    // evt.shaped(
+    //     Item.of('petrolsparts:pneumatic_tube', 4),
+    //     [
+    //         'RMR',
+    //         'RLR',
+    //         'TST'
+    //     ],{
+    //         T: tag.plate.tungsten,
+    //         S: tag.cogwheel,
+    //         L: item.iu.rotor.wind.ready.iron,
+    //         M: item.create.precision_mechanism,
+    //         R: item.iu.synthetic_rubber
+    //     }
+    // ).id(getRecipeID('pneumatic_tube'))
     
     evt.shapeless(Item.of('simulated:redstone_magnet', 1),
         [

@@ -207,13 +207,12 @@ function iuRecipe(evt, id, type, inputs, outputs, params){
         }
         if (output.isFluid) {
             dict.type = "fluid"
-            // recipe.isFluidRecipe = true
         }
 
         recipe.outputs.push(dict)
     }
 
-    evt.custom(recipe).id(id + '/' + type)    
+    evt.custom(recipe).id(id + '/' + type)
 }
 
 function aeAssemblerRecipe(evt, id, input_fluid, input_items, output){

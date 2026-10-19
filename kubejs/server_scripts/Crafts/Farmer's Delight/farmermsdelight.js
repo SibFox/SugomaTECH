@@ -1,8 +1,10 @@
 "use strict";
 
+let $RecipesKubeEvent = Java.loadClass("dev.latvian.mods.kubejs.recipe.RecipesKubeEvent");
+
 /**
  * 
- * @param {Internal.RecipesEventJS} evt 
+ * @param {$RecipesKubeEvent} evt 
  */
 const registerFDRecipes = (evt) => {
 
@@ -10,7 +12,11 @@ const registerFDRecipes = (evt) => {
         return recipeID('fd', path)
     }
 
-    evt.recipes.farmersdelight.cooking(
+    const fdCutting = evt.recipes.farmersdelight.cutting
+    const fdCooking = evt.recipes.farmersdelight.cooking
+    const kcSteamer = evt.recipes.kaleidoscope_cookery.steamer
+
+    fdCooking(
         'meals',
         [
             '#c:raw_meats',
@@ -22,7 +28,7 @@ const registerFDRecipes = (evt) => {
         item.iu.tin_can
     ).id(getRecipeID('preserved_meat'))
     
-    evt.recipes.farmersdelight.cutting(
+    fdCutting(
         'minecraft:bread',
         tag.tool.knife,
         [
@@ -32,58 +38,151 @@ const registerFDRecipes = (evt) => {
 
     evt.custom(
         {
-        "type": "kaleidoscope_cookery:chopping_board",
-        "cut_count": 4,
-        "ingredient": {
-            "item": "starcatcher:starcaught_fish"
-        },
-        "model_id": "kaleidoscope_cookery:cod",
-        "result": {
-            "count": 2,
-            "id": "kaleidoscope_cookery:sashimi"
-        }
+            "type": "kaleidoscope_cookery:chopping_board",
+            "cut_count": 4,
+            "ingredient": {
+                "item": "starcatcher:starcaught_fish"
+            },
+            "model_id": "kaleidoscope_cookery:cod",
+            "result": {
+                "count": 2,
+                "id": "kaleidoscope_cookery:sashimi"
+            }
         }
     )
 
-    // for (let part of [ 'brain', 'heart', 'liver', 'lungs', 'stomach' ]) {
-    //     evt.recipes.farmersdelight.cutting(
-    //         item.cn.bodypart[part],
-    //         tag.tool.knife,
-    //         [
-    //             '2x kubejs:minced_' + part,
-    //             ChanceResult.of('createcybernetics:ground_offal', 0.25)
-    //         ]
-    //     ).id(getRecipeID('minced_' + part + '/cutting'))
+    for (let part of [ 'brain', 'heart', 'liver', 'lungs', 'stomach' ]) {
+        fdCutting(
+            item.cn.bodypart[part],
+            tag.tool.knife,
+            [
+                '2x kubejs:minced_' + part,
+                ChanceResult.of('createcybernetics:ground_offal', 0.3)
+            ]
+        ).id(getRecipeID('minced_' + part + '/cutting'))
 
-    //     evt.recipes.farmersdelight.cooking(
-    //         'meals',
-    //         [
-    //             item.cn.bodypart[part], item.custom.hemolymph_drop,
-    //             item.custom.hemolymph_drop, item.custom.hemolymph_drop, item.sugar
-    //         ],
-    //         'kubejs:hemolymph_soaked_' + part,
-    //         0.5,
-    //         160
-    //     ).id(getRecipeID('hemolymph_soaked_' + part + '/cooking'))
-    // }
+        // evt.recipes.farmersdelight.cooking(
+        //     'meals',
+        //     [
+        //         item.cn.bodypart[part], item.custom.hemolymph_drop,
+        //         item.custom.hemolymph_drop, item.custom.hemolymph_drop, item.sugar
+        //     ],
+        //     'kubejs:hemolymph_soaked_' + part,
+        //     0.5,
+        //     160
+        // ).id(getRecipeID('hemolymph_soaked_' + part + '/cooking'))
+    }
 
-    // for (let food of [ 'kubejs:minced_brain', 'kubejs:minced_lungs', 'kubejs:minced_liver',
-    //      'kubejs:minced_heart' ,'kubejs:minced_stomach' ]) {
-    //         evt.smelting(food.replace(':', ':cooked_'), food).xp(0.35)
-    //         evt.smoking(food.replace(':', ':cooked_'), food).xp(0.35)
-    //         evt.campfireCooking(food.replace(':', ':cooked_'), food, 0.35, 600)
-    // }
+    fdCutting(
+        'createcybernetics:cooked_brain',
+        tag.tool.knife,
+        [
+            '2x kubejs:cooked_minced_brain',
+            ChanceResult.of('createcybernetics:ground_offal', 0.1)
+        ]
+    ).id(getRecipeID('cooked_minced_brain/cutting'))
 
-    // evt.smelting('kubejs:cooked_lungs', item.cn.bodypart.lungs).xp(0.35)
-    // evt.smoking('kubejs:cooked_lungs', item.cn.bodypart.lungs).xp(0.35)
+    fdCutting(
+        'createcybernetics:cooked_heart',
+        tag.tool.knife,
+        [
+            '2x kubejs:cooked_minced_heart',
+            ChanceResult.of('createcybernetics:ground_offal', 0.1)
+        ]
+    ).id(getRecipeID('cooked_minced_heart/cutting'))
 
-    // evt.smelting('1x kubejs:cooked_stomach', item.cn.bodypart.stomach).xp(0.35)
-    // evt.smoking('1x kubejs:cooked_stomach', item.cn.bodypart.stomach).xp(0.35)
+    fdCutting(
+        'createcybernetics:cooked_liver',
+        tag.tool.knife,
+        [
+            '2x kubejs:cooked_minced_liver',
+            ChanceResult.of('createcybernetics:ground_offal', 0.1)
+        ]
+    ).id(getRecipeID('cooked_minced_liver/cutting'))
 
-    // evt.smoking('createcybernetics:cooked_brain', item.cn.bodypart.brain).xp(0.35)
-    // evt.smoking('createcybernetics:cooked_heart', item.cn.bodypart.heart).xp(0.35)
-    // evt.smoking('createcybernetics:cooked_liver', item.cn.bodypart.liver).xp(0.35)
-    // evt.smoking('createcybernetics:roasted_andouille', 'createcybernetics:andouille_sausage').xp(0.35)
+    fdCutting(
+        'kubejs:cooked_lungs',
+        tag.tool.knife,
+        [
+            '2x kubejs:cooked_minced_lungs',
+            ChanceResult.of('createcybernetics:ground_offal', 0.1)
+        ]
+    ).id(getRecipeID('cooked_minced_lungs/cutting'))
+
+    fdCutting(
+        'kubejs:cooked_stomach',
+        tag.tool.knife,
+        [
+            '2x kubejs:cooked_minced_stomach',
+            ChanceResult.of('createcybernetics:ground_offal', 0.1)
+        ]
+    ).id(getRecipeID('cooked_minced_stomach/cutting'))
+
+    for (let food of [ 'kubejs:minced_brain', 'kubejs:minced_lungs', 'kubejs:minced_liver',
+         'kubejs:minced_heart' ,'kubejs:minced_stomach' ]) {
+            evt.smelting(food.replace(':', ':cooked_'), food).xp(0.35)
+            evt.smoking(food.replace(':', ':cooked_'), food).xp(0.35)
+            evt.campfireCooking(food.replace(':', ':cooked_'), food, 0.35, 600)
+    }
+
+    evt.smelting('kubejs:cooked_lungs', item.cn.bodypart.lungs).xp(0.35)
+    evt.smoking('kubejs:cooked_lungs', item.cn.bodypart.lungs).xp(0.35)
+    evt.campfireCooking('kubejs:cooked_lungs', item.cn.bodypart.lungs, 0.35, 600)
+
+    evt.smelting('kubejs:cooked_stomach', item.cn.bodypart.stomach).xp(0.35)
+    evt.smoking('kubejs:cooked_stomach', item.cn.bodypart.stomach).xp(0.35)
+    evt.campfireCooking('kubejs:cooked_stomach', item.cn.bodypart.stomach, 0.35, 600)
+
+    evt.smoking('createcybernetics:cooked_brain', item.cn.bodypart.brain).xp(0.35)
+    evt.smoking('createcybernetics:cooked_heart', item.cn.bodypart.heart).xp(0.35)
+    evt.smoking('createcybernetics:cooked_liver', item.cn.bodypart.liver).xp(0.35)
+    evt.smoking('createcybernetics:roasted_andouille', 'createcybernetics:andouille_sausage').xp(0.35)
+
+
+
+    fdCutting(
+        'kubejs:spider_leg',
+        tag.tool.knife,
+        [
+            'kubejs:spider_leg_meat',
+            ChanceResult.of('2x ' + item.custom.chitin_shard, 0.33)
+        ]
+    )
+
+    fdCutting(
+        'kubejs:boiled_silk_gland',
+        tag.tool.knife,
+        [
+            'kubejs:spider_silk',
+            Item.of(item.string, 2),
+            ChanceResult.of(Item.of(item.string, 4), 0.33)
+        ]
+    )
+
+    kcSteamer(
+        'kubejs:boiled_silk_gland',
+        'kubejs:silk_gland'
+    )
+
+    kcSteamer(
+        'kubejs:boiled_spider_leg_meat',
+        'kubejs:spider_leg_meat'
+    )
+
+    kcSteamer(
+        'kubejs:boiled_spider_eggs',
+        'kubejs:spider_eggs'
+    )
+
+    evt.shapeless(Item.of(item.string, 8),
+        [
+            'kubejs:spider_silk',
+            item.shears
+        ]
+    ).id(getRecipeID('string_from_spider_silk'))
+    .damageIngredient(item.shears, 1)
+    
+    
 
 
 

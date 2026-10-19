@@ -6,9 +6,6 @@ de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
 net.minecraft.client.gui.screens.DisconnectedScreen {
 }
 
-com.mrcrayfish.catalogue.client.screen.CatalogueModListScreen {
-}
-
 net.minecraft.client.gui.screens.worldselection.SelectWorldScreen {
 }
 
@@ -73,5 +70,17 @@ net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
 }
 
 net.minecraft.client.gui.screens.TitleScreen {
+}
+
+net.minecraft.client.gui.screens.options.VideoSettingsScreen {
+}
+
+net.caffeinemc.mods.sodium.client.gui.VideoSettingsScreen {
+}
+
+com.seibel.distanthorizons.common.wrappers.gui.classicConfig.DhConfigScreen_neoforge {
+}
+
+com.perigrine3.createcybernetics.client.gui.CybereyeSkinConfigScreen {
 }
 

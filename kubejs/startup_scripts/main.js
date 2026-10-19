@@ -1,18 +1,18 @@
-StartupEvents.registry('item', evt => {
-  registerItems(evt)
-  registerFoods(evt)
-})
+function calcSaturation(nutrition, saturation) {
+    return { nutrition: nutrition, 
+        saturation: saturation / nutrition / 2
+    }
+}
 
-StartupEvents.registry('block', evt => {
-  // event.create('quartz_glass')
-  //   .transparent(true)
-  //   .hardness(0.3)
-  //   .resistance(0.3)
-  //   .requiresTool(false)
-  //   .soundType('glass')
-  //   .renderType('cutout')
+registerItems()
+registerFoods()
+registerBlocks()
 
-})
+// StartupEvents.registry('mob_effect', evt => {
+//   evt.create('neuroposin')
+//     .
+// })
+
 
 StartupEvents.registry('armor_material', evt => {
   evt.create('bio')
