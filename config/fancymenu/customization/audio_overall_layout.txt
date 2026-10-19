@@ -3,14 +3,15 @@ type = fancymenu_layout
 layout-meta {
   identifier = %fancymenu:universal_layout%
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1784126627612
+  last_edited_time = 1792451733613
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
+  universal_layout_whitelist = com.seibel.distanthorizons.common.wrappers.gui.classicConfig.DhConfigScreen_neoforge;
   universal_layout_blacklist = pause_screen;
-  [loading_requirement_container_meta:f58b6a7c-2b04-4079-b4d3-8d4509c0946b-1784126593516] = [groups:][instances:]
+  [loading_requirement_container_meta:0d5b0269-1ada-456f-92b6-962aa8cbee43-1792451708752] = [groups:][instances:]
 }
 
 menu_background {
@@ -23,7 +24,8 @@ menu_background {
 menu_background {
   instance_identifier = 2ec3b81f-a32b-4447-8ea1-f3d5f0ee10a2-1783969474358
   background_type = panorama
-  show_background = false
+  show_background = true
+  panorama_name = the_black_hive
 }
 
 menu_background {
@@ -380,46 +382,58 @@ element {
   audio_instance_weight_13 = 1.0
   play_mode = shuffle
   looping = true
-  volume = 0.75
   sound_source = music
   element_type = audio_v2
   instance_identifier = b8971eb0-678b-4147-be84-610195fb7c2c-1771430852870
   appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
+  disappearance_delay = no_delay
   fade_in_v2 = no_fading
-  fade_in_speed = 1.0
   fade_out = no_fading
-  fade_out_speed = 1.0
-  base_opacity = 1.0
   auto_sizing = false
   auto_sizing_base_screen_width = 2560
   auto_sizing_base_screen_height = 1496
+  auto_sizing_base_gui_scale = 0
+  auto_sizing_base_gui_width = 0
+  auto_sizing_base_gui_height = 0
   sticky_anchor = false
   anchor_point = mid-centered
   x = -50
   y = -150
   width = 100
   height = 40
-  stretch_x = false
-  stretch_y = false
   stay_on_screen = true
   element_loading_requirement_container_identifier = 188a65a2-7940-41f6-995c-c2abd6551926-1771430852870
   [loading_requirement_container_meta:188a65a2-7940-41f6-995c-c2abd6551926-1771430852870] = [groups:][instances:]
   enable_parallax = false
-  parallax_intensity_v2 = 0.5
   invert_parallax = false
   animated_offset_x = 0
   animated_offset_y = 0
   load_once_per_session = false
-  in_editor_color = #5CA6EFFF
   layer_hidden_in_editor = false
-  rotation_degrees = 0.0
   advanced_rotation_mode = false
-  vertical_tilt_degrees = 0.0
   advanced_vertical_tilt_mode = false
-  horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_mode = false
+  should_be_affected_by_decoration_overlays = false
+  in_editor_color = #5CA6EFFF
+  advanced_posx = -2147483648
+  advanced_posy = -2147483648
+  advanced_width = -2147483648
+  advanced_height = -2147483648
+  stretch_x = false
+  stretch_y = false
+  appearance_delay_seconds = 1.0
+  disappearance_delay_seconds = 1.0
+  fade_in_speed = 1.0
+  fade_out_speed = 1.0
+  base_opacity = 1.0
   parallax_intensity_x = 0.5
   parallax_intensity_y = 0.5
+  rotation_degrees = 0.0
+  advanced_rotation_degrees = 0.0
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_degrees = 0.0
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_degrees = 0.0
+  volume = 0.75
 }
 
