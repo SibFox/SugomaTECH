@@ -253,7 +253,7 @@ const registerCommonRecipes = (evt) => {
         [
             item.custom.jar, 
             Ingredient.of(item.custom.embryo, 6),
-            Ingredient.of(fluid.glucose, 200)
+            Fluid.of(noHash(fluid.glucose), 200)
         ]
     ).id(getRecipeID('orphan_paste'))
 

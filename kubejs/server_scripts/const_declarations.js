@@ -50,7 +50,6 @@ const item = {
     compass: 'minecraft:compass',
     conduit: 'minecraft:conduit',
     paper: 'minecraft:paper',
-    bottle: 'minecraft:glass_bottle',
 
     // ~~~~~~~~~~~~~~~~~~~~ Farmer's Delight ~~~~~~~~~~~~~~~~~~~~ 
     milk_bottle: 'farmersdelight:milk_bottle',

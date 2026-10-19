@@ -37,11 +37,6 @@ LootJS.lootTables(evt => {
 
 registerInteractions()
 
-// LootJS.lootTables(event => {
-//     let ids = event.getLootTableIds()
-//     console.info(ids)
-// })
-
 
 
 RecipeViewerEvents.removeEntries('item', evt => {
@@ -99,13 +94,33 @@ EntityEvents.death("player", evt => {
 })
 
 EntityEvents.death("arphex:spider_moth", evt => {
-    const { entity, server } = evt
+    const { server, entity, source } = evt
     let pData = server.persistentData
-    if (!pData.getBoolean('moth_killed'))
+    const killer = source.actual
+    if (killer)
     {
-        pData.putBoolean('moth_killed', true)
-        server.tell('Паучья Моль была убита.')
-        // server.runCommandSilent()
+        if (!pData.getBoolean('moth_killed'))
+        {
+            console.log(killer.getName(), entity.getName())
+            pData.putBoolean('moth_killed', true)
+            pData.putString('moth_killed_by', killer.getStringUuid())
+            server.runCommandSilent('title @a times 10t 4s 7s')
+            server.runCommandSilent('title @a subtitle \
+                [{"text":"","color":"white","bold":false},\
+                {"text":"Паучья Моль ","color":"dark_purple","bold":true},\
+                {"text":"была впервые повержена игроком ","color":"white","bold":false},\
+                {"text":"'+killer.getName().getString()+'","bold":true},{"text":"!"}]')
+            server.runCommandSilent('title @a title {"text":"Ужас повержен","color":"dark_red","bold":true}')
+            server.runCommandSilent('execute as @a at @s run playsound minecraft:entity.wither.death master @s \
+                '+ entity.getX() +' '+ entity.getY() +' '+ entity.getZ() +' 1000 0.7')
+        }
+    }
+})
+
+EntityEvents.spawned('player', evt => {
+    const { player } = evt
+    if (player) {
+        player.forceAddEffect()
     }
 })
 

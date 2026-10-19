@@ -27,11 +27,11 @@
   "item.kubejs.preserved_meat": "Законсервированное мясо",
   "item.kubejs.jar_embryo": "Эмбрион в банке",
   "item.kubejs.jar_orphan_paste": "Сиротская паста",
-  "item.kubejs.jar_orphan_paste.desc": "Сделано из самых лучших ингредиентов. Идеальная еда для веганов!",
+  "item.kubejs.jar_orphan_paste.desc": "Сделано из самых лучших ингредиентов. Идеальная еда для &aвеганов&r!",
   "item.kubejs.plated_stomach_nether": "Нет спасения.",
   "item.kubejs.plated_stomach_nether.desc": "Даже от одного вида §lэтого§r у меня начинается изжога...",
   "item.kubejs.plated_stomach_end.desc": "§oЧто... §rНет, я даже думать об этом не хочу.",
-  "item.kubejs.plated_stomach_end": "Путь к сердцу мужчины...",
+  "item.kubejs.plated_stomach_end": "&4Путь к сердцу мужчины...",
   
   "fluid_type.kubejs.liquid_redstone": "Сжиженный редстоун"
 }
