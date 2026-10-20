@@ -5,6 +5,7 @@
 const registerOverallTags = () => {
 
     ServerEvents.tags('item', evt => {
+
         function add(tag, item) {
             evt.add(noHash(tag), item)
         }
@@ -71,11 +72,23 @@ const registerOverallTags = () => {
         add('kubejs:dont_get_rad', '#c:potions')
         add('kubejs:dont_get_rad', '#kaleidoscope_tavern:cocktail_ingredient')
 
+        
+        evt.add('quad:immune/all', '#nether_portal_remastered:obsidian_rune')
+        evt.add('quad:immune/cactus', '#nether_portal_remastered:obsidian_rune')
+        evt.add('quad:immune/explosion', '#nether_portal_remastered:obsidian_rune')
+        evt.add('quad:immune/fire', '#nether_portal_remastered:obsidian_rune')
+        evt.add('quad:immune/lightning', '#nether_portal_remastered:obsidian_rune')
+
         // Удалить все теги с предмета
-        // for (let i of deletion_list) 
+        // for (let i of deletion_list)
         // { 
         //     evt.removeAllTagsFrom(i) 
         // }
+    })
+
+    ServerEvents.tags('block', evt => {
+        evt.add('quad:nether_portal/built', '#nether_portal_remastered:obsidian_rune')
+        evt.add('quad:nether_portal/formed', '#nether_portal_remastered:obsidian_rune')
     })
 
 
