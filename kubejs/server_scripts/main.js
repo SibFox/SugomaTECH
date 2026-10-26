@@ -126,6 +126,16 @@ EntityEvents.death("arphex:spider_moth", evt => {
     }
 })
 
+BlockEvents.rightClicked(event => {
+    let { block, server, player } = event
+    if (block.id == 'minecraft:end_portal_frame' && player.getMainHandItem().id == 'minecraft:ender_eye') {
+        block.set('arphex:scorched_sand')
+        server.runCommandSilent(`summon minecraft:lightning_bolt ${block.x} ${block.y} ${block.z}`)
+        if (Math.random() < 0.35)
+            server.runCommandSilent(`setblock ${block.x} ${block.y+1} ${block.z} arphex:scorch`)
+    }
+})
+
 registerItemObliteration()
 
 console.info('Loaded server scripts KJS')

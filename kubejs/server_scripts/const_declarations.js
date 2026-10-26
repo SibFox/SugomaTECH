@@ -299,7 +299,7 @@ const item = {
         graphite_plate: 'industrialupgrade:crafting_elements/crafting_320_element',
         base_generator: 'industrialupgrade:basemachine3/generator_iu',
         autopower_module: 'industrialupgrade:crafting_elements/crafting_713_element',
-        power_slot: 'industrialupgrade:crafting_elements/crafting_539_element',
+        power_slot: 'industrialupgrade:crafting_elements/crafting_593_element',
         tube_scheme: 'industrialupgrade:crafting_elements/crafting_122_element',
         laser_component: 'industrialupgrade:crafting_elements/crafting_354_element',
         molecular_core: 'industrialupgrade:itemiucrafring/itemmtcore',
