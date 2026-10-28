@@ -947,10 +947,10 @@ const item = {
             quantum: 'advanced_ae:quantum_processor', 
             accumulation: 'megacells:accumulation_processor',
             printed: {
+                logic: 'ae2:printed_logic_processor',
                 calculation: 'ae2:printed_calculation_processor',
                 engineering: 'ae2:printed_engineering_processor',
                 energy: 'appflux:printed_energy_processor',
-                logic: 'ae2:printed_logic_processor',
                 concurrent: 'extendedae:concurrent_processor_print',
                 quantum: 'advanced_ae:printed_quantum_processor',
                 accumulation: 'megacells:printed_accumulation_processor',

@@ -1,6 +1,11 @@
 // priority: 11
 "use strict";
 
+// let { $RecipesKubeEvent } = require("@package/dev/latvian/mods/kubejs/recipe");
+// let { $ItemStack } = require("@package/net/minecraft/world/item");
+// let { $Ingredient } = require("@package/net/minecraft/world/item/crafting");
+// let { $SizedIngredient } = require("@package/net/neoforged/neoforge/common/crafting");
+
 const IUMachineCraft = {
     MACERATOR: 'macerator',
     CHARGER: 'charger',
@@ -112,7 +117,7 @@ function shapedRecipe (evt, id, inputs, output, amount){
             }
         }
     }
-    console.info(id)
+    // console.info(id)
     evt.shaped(
         Item.of(output, amount),
         pattern,
@@ -304,6 +309,46 @@ function aeReactionRecipe(evt, id, energy, input_fluid, input_items, output){
         "output": output_ready
     }).id(id + '/reaction')
 }
+
+
+/**
+ * 
+ * @param {$RecipesKubeEvent} evt 
+ * @param {string} id
+ * @param {$Ingredient} top
+ * @param {$Ingredient} middle
+ * @param {$Ingredient} bottom
+ * @param {$ItemStack} output
+ * @param {boolean} press
+ */
+function aeInscriberRecipe(evt, id, top = null, middle = null, bottom = null, output = null, press = false){
+    let final_dict = {
+        "type": "ae2:inscriber",
+        "ingredients": {},
+        "mode": "inscribe",
+        "result": {
+            "count": output.getCount(),
+            "id": output.id
+        }
+    }
+    
+    if (press)
+        final_dict.mode = 'press'
+
+    if (top)
+        final_dict.ingredients['top'] = top.toJson()
+    if (middle)
+        final_dict.ingredients['middle'] = middle.toJson()
+    if (bottom)
+        final_dict.ingredients['bottom'] = bottom.toJson()
+    
+    evt.custom(final_dict).id(id + '/inscriber')
+    
+    // console.log(top.kjs$toNestedJson()) sizedIngr
+    // console.log(middle.kjs$toNestedJson())
+}
+
+
 
 // function cElectrifyRecipe(evt, id, energy, input, output){
 //         let dict = {

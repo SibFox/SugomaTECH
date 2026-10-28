@@ -352,6 +352,21 @@ const registerRecipeReplacings = (evt) => {
         '3x industrialupgrade:itemcell/reinforcedfluidcell'
     )
     
+    evt.replaceInput({ input: 'ae2:silicon' },
+        'ae2:silicon',
+        item.iu.polished_silicon_crystal
+    )
+    
+    evt.replaceInput({ input: '#c:silicon' },
+        '#c:silicon',
+        item.iu.polished_silicon_crystal
+    )
+    
+    evt.replaceInput({ input: 'ae2:printed_silicon' },
+        'ae2:printed_silicon',
+        item.iu.polished_silicon_disk
+    )
+    
     
     
 

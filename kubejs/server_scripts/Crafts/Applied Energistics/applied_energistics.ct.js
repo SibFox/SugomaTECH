@@ -26,17 +26,19 @@ const registerAECTRecipes = (evt) => {
         ]
     ).id(getRecipeID('fluix_crystal'))
 
-    evt.shapeless(Item.of(item.ae.silicon, 4),
-        [
-            item.iu.dust.calcium_phosphate, item.iu.dust.silicon
-        ]
-    ).id(getRecipeID('silicon_x4'))
+    // evt.shapeless(Item.of(item.ae.silicon, 4),
+    //     [
+    //         item.iu.dust.calcium_phosphate, item.iu.dust.silicon
+    //     ]
+    // ).id(getRecipeID('silicon_x4'))
 
-    evt.shapeless(Item.of(item.ae.silicon, 8),
-        [
-            item.iu.dust.potassium, Item.of(item.iu.dust.silicon, 4)
-        ]
-    ).id(getRecipeID('silicon_x8'))
+    // evt.shapeless(Item.of(item.ae.silicon, 8),
+    //     [
+    //         item.iu.dust.potassium, Item.of(item.iu.dust.silicon, 4)
+    //     ]
+    // ).id(getRecipeID('silicon_x8'))
+    
+    
 
     evt.shaped(
         Item.of('ae2:inscriber', 1),

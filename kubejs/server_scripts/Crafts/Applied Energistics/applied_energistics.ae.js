@@ -10,6 +10,23 @@ const registerAEMachinesRecipes = (evt) => {
         return recipeID('ae', path)
     }
 
+    
+//     aeInscriberRecipe(evt, getRecipeID('bla'),
+// Ingredient.of(tag.ingot.adamantium), 
+// Ingredient.of(item.blaze_rod), 
+// null, Item.of(item.ae.cable.fluix_covered, 7))
+
+    aeInscriberRecipe(evt, getRecipeID('polished_silicon_disk'),
+        Ingredient.of('ae2:silicon_press'),
+        Ingredient.of(item.iu.polished_silicon_crystal),
+        null,
+        Item.of(item.iu.polished_silicon_disk, 1)
+    )
+    
+    
+
+
+
     // ~~~~~~~ Кристальный сборщик ~~~~~~~
     
     aeAssemblerRecipe(evt, getRecipeID('entro_ingot'),
@@ -142,4 +159,49 @@ const registerAEMachinesRecipes = (evt) => {
     )
     
     
+
+    // ~~~~~~~ Передел плат под полированный диск из IU ~~~~~~~
+
+    for (let i of ['logic', 'calculation', 'engineering', 'energy'
+        , 'concurrent', 'quantum'
+    ])
+    {
+        evt.remove({ output: item.ae.processor[i] })
+
+        aeInscriberRecipe(evt, getRecipeID('processor_'+i),
+            Ingredient.of(item.ae.processor.printed[i]),
+            Ingredient.of(item.redstone),
+            Ingredient.of(item.iu.polished_silicon_disk),
+            Item.of(item.ae.processor[i], 1), true
+        )
+
+        aeAssemblerRecipe(evt, getRecipeID('processor_'+i),
+            null,
+            [
+                asItem(item.ae.processor.printed[i], 4),
+                asItem(item.iu.polished_silicon_disk, 4),
+                asItem(item.redstone, 4)
+            ],
+            asItem(item.ae.processor[i], 4)
+        )
+    }
+
+    evt.remove({ output: item.ae.processor.accumulation })
+
+    aeInscriberRecipe(evt, getRecipeID('processor_accumulation'),
+        Ingredient.of(item.ae.processor.printed.accumulation),
+        Ingredient.of(item.ae.fluix_dust),
+        Ingredient.of(item.iu.polished_silicon_disk),
+        Item.of(item.ae.processor.accumulation, 1), true
+    )
+
+    aeAssemblerRecipe(evt, getRecipeID('processor_accumulation'),
+        null,
+        [
+            asItem(item.ae.processor.printed.accumulation, 4),
+            asItem(item.iu.polished_silicon_disk, 4),
+            asItem(item.ae.fluix_dust, 4)
+        ],
+        asItem(item.ae.processor.accumulation, 4)
+    )
 }
