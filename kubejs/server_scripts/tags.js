@@ -73,12 +73,13 @@ const registerOverallTags = () => {
         add('kubejs:dont_get_rad', '#kaleidoscope_tavern:cocktail_ingredient')
 
         
-        evt.add('quad:immune/all', '#nether_portal_remastered:obsidian_rune')
-        evt.add('quad:immune/cactus', '#nether_portal_remastered:obsidian_rune')
-        evt.add('quad:immune/explosion', '#nether_portal_remastered:obsidian_rune')
-        evt.add('quad:immune/fire', '#nether_portal_remastered:obsidian_rune')
-        evt.add('quad:immune/lightning', '#nether_portal_remastered:obsidian_rune')
+        add('quad:immune/all', '#nether_portal_remastered:obsidian_rune')
+        add('quad:immune/cactus', '#nether_portal_remastered:obsidian_rune')
+        add('quad:immune/explosion', '#nether_portal_remastered:obsidian_rune')
+        add('quad:immune/fire', '#nether_portal_remastered:obsidian_rune')
+        add('quad:immune/lightning', '#nether_portal_remastered:obsidian_rune')
 
+        add('c:silicon', item.iu.polished_silicon_crystal)
         // Удалить все теги с предмета
         // for (let i of deletion_list)
         // { 
