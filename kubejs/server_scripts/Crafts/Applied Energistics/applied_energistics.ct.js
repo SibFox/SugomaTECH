@@ -26,17 +26,19 @@ const registerAECTRecipes = (evt) => {
         ]
     ).id(getRecipeID('fluix_crystal'))
 
-    evt.shapeless(Item.of(item.ae.silicon, 4),
-        [
-            item.iu.dust.calcium_phosphate, item.iu.dust.silicon
-        ]
-    ).id(getRecipeID('silicon_x4'))
+    // evt.shapeless(Item.of(item.ae.silicon, 4),
+    //     [
+    //         item.iu.dust.calcium_phosphate, item.iu.dust.silicon
+    //     ]
+    // ).id(getRecipeID('silicon_x4'))
 
-    evt.shapeless(Item.of(item.ae.silicon, 8),
-        [
-            item.iu.dust.potassium, Item.of(item.iu.dust.silicon, 4)
-        ]
-    ).id(getRecipeID('silicon_x8'))
+    // evt.shapeless(Item.of(item.ae.silicon, 8),
+    //     [
+    //         item.iu.dust.potassium, Item.of(item.iu.dust.silicon, 4)
+    //     ]
+    // ).id(getRecipeID('silicon_x8'))
+    
+    
 
     evt.shaped(
         Item.of('ae2:inscriber', 1),
@@ -219,7 +221,7 @@ const registerAECTRecipes = (evt) => {
             G: item.iu.tempered_glass,
             D: item.ae.core.annihilation,
             F: item.ae.core.formation,
-            C: item.iu.molecular_core,
+            C: item.iu.module.assembler,
             M: item.iu.module.crafting.lvl2,
             S: item.iu.module.slot.x2
         }
@@ -626,21 +628,3 @@ const registerAECTRecipes = (evt) => {
     // )
     
 }
-
-// 'exposure:color_film\
-// [exposure:film_frames=\
-// [{entities_in_frame:\
-// [{distance:2,id:"minecraft:player",\
-// name:"SibFox",pos:[I;-1395,79,760]}],\
-// extra_data:{biome:"minecraft:plains",\
-// day_time:30940670,\
-// dimension:"minecraft:overworld",\
-// focal_length:53,\
-// light_level:11,\
-// pitch:-6.888746f,\
-// pos:[-1394.0299473512034d,80.0d,757.9064994254536d],\
-// shutter_speed:"1/500",\
-// timestamp:1791930793L,weather:"Clear",\
-// yaw:8.717041f},\
-// identifier:"jkinaru_139971805",\
-// photographer:{name:"jkinaru",uuid:[I;1766456550,-2130692947,-1487510597,73789291]}}]]'

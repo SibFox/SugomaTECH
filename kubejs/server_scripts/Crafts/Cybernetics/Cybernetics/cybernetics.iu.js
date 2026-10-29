@@ -37,7 +37,7 @@ const registerCyberneticsIURecipes = (evt) => {
         [
             asItem(item.iu.rom.corpus),
             asItem(item.iu.soic.lvl3),
-            asItem('industrialupgrade:crafting_elements/crafting_560_element'),
+            asItem('industrialupgrade:crafting_elements/crafting_560_element'), //алюм-бронз шина данных
             asItem(item.iu.capacitor.lvl3),
             asItem(item.iu.ram.interface)
         ],[
@@ -50,7 +50,7 @@ const registerCyberneticsIURecipes = (evt) => {
         [
             asItem(item.iu.rom.corpus),
             asItem(item.iu.soic.lvl3),
-            asItem('industrialupgrade:crafting_elements/crafting_560_element'),
+            asItem('industrialupgrade:crafting_elements/crafting_560_element'), //алюм-бронз шина данных
             asItem(item.iu.diode.lvl2, 2),
             asItem(item.iu.cooling_system.lvl2)
         ],[
