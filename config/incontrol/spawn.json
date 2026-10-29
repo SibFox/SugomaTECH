@@ -3,7 +3,8 @@
     "mob": [
       "minecraft:witch",
       "minecraft:zombie_horse",
-      "minecraft:skeleton_horse"
+      "minecraft:skeleton_horse",
+      "minecraft:zombie_villager"
     ],
     "when": "onjoin",
     "result": "deny"
@@ -12,12 +13,11 @@
     "mob": [
       "minecraft:zombie",
       "minecraft:skeleton",
-      "minecraft:creeper",
-      "minecraft:zombie_villager"
+      "minecraft:creeper"
     ],
     "minheight": 30,
     "when": "onjoin",
-    "spawntype": "mob_summoned",
+    "spawntype": [ "natural" ],
     "result": "deny"
   },
   {
