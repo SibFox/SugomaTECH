@@ -80,6 +80,13 @@ const registerOverallTags = () => {
         add('quad:immune/lightning', '#nether_portal_remastered:obsidian_rune')
 
         add('c:silicon', item.iu.polished_silicon_crystal)
+
+        add('railways:internal/nuggets/brass_nuggets', tag.nugget.brass)
+        add('railways:internal/plates/brass_plates', tag.plate.brass)
+        add('railways:internal/glass/colorless', '#c:glass_blocks/colorless')
+
+
+
         // Удалить все теги с предмета
         // for (let i of deletion_list)
         // { 
