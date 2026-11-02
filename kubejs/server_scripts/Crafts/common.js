@@ -179,7 +179,7 @@ const registerCommonRecipes = (evt) => {
         ],[
             asItem(item.ingot.netherite)
         ],
-        { 'temperature': 6000 }
+        { 'temperature': 5000 }
     )
 
     evt.remove({ id: 'walkietalkie:walkie_talkie' })
