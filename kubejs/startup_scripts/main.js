@@ -40,6 +40,12 @@ const tools = [
     { name: 'industrialupgrade:ruby_pickaxe', maxDamage: 0, attackDamage: 4, attackSpeed: 1.5 },
     { name: 'industrialupgrade:ruby_axe', maxDamage: 0, attackDamage: 8, attackSpeed: 1.1 },
     { name: 'industrialupgrade:ruby_shovel', maxDamage: 0, attackDamage: 4.5, attackSpeed: 1.3 },
+    { name: 'arphex:abyssal_axe', maxDamage: 0, attackDamage: 15, attackSpeed: 0.8 },
+    { name: 'industrialupgrade:energy_tools/chainsaw', maxDamage: 0, attackDamage: 7.5, attackSpeed: 1.2 },
+    { name: 'industrialupgrade:energy_tools/nano_saber', maxDamage: 0, attackDamage: 6, attackSpeed: 2.2 },
+    { name: 'industrialupgrade:energy_tools/katana', maxDamage: 0, attackDamage: 8, attackSpeed: 3.5 },
+    { name: 'industrialupgrade:energy_tools/itemnanosaber1', maxDamage: 0, attackDamage: 9, attackSpeed: 2.2 },
+    { name: 'industrialupgrade:energy_tools/itemnanosaber', maxDamage: 0, attackDamage: 13, attackSpeed: 2.2 },
 ];
 
 ItemEvents.modification(evt => {
