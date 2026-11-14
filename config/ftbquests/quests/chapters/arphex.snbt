@@ -34,7 +34,7 @@
 	quests: [
 		{
 			dependencies: ["2EAAFD8C91736269"]
-			hide_until_deps_complete: true
+			hide_until_deps_complete: false
 			icon_scale: 2.0d
 			id: "0952460708DD3D50"
 			rewards: [{
@@ -67,7 +67,6 @@
 			dependencies: [
 				"11947E01F4CA1188"
 				"0952460708DD3D50"
-				"4E6BDCD6C1D58084"
 			]
 			hide_until_deps_complete: true
 			icon_scale: 2.0d
@@ -102,7 +101,6 @@
 			dependencies: [
 				"0F9BF7950DB2AB64"
 				"2BBE8F041CD69B07"
-				"4E6BDCD6C1D58084"
 			]
 			hide_until_deps_complete: true
 			icon_scale: 2.0d
@@ -139,7 +137,7 @@
 			icon_scale: 2.0d
 			id: "25377FA38E7E15EA"
 			rewards: [{
-				count: 8
+				count: 10
 				id: "7B7D76CACF595B29"
 				item: {
 					count: 1
@@ -199,7 +197,6 @@
 		}
 		{
 			dependencies: [
-				"4E6BDCD6C1D58084"
 				"37C5416C2C7C9D6C"
 				"0952460708DD3D50"
 			]
@@ -236,7 +233,7 @@
 				}
 			]
 			x: 0.0d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["289EC193A9CF47FC"]
@@ -303,7 +300,6 @@
 		{
 			can_repeat: false
 			dependencies: [
-				"4E6BDCD6C1D58084"
 				"2BBE8F041CD69B07"
 				"26FC3EB2DE0502D3"
 			]
@@ -486,11 +482,7 @@
 			y: 11.0d
 		}
 		{
-			dependencies: [
-				"2EAAFD8C91736269"
-				"460514A34AEFE9FF"
-				"68134DF5FB78863E"
-			]
+			dependencies: ["2EAAFD8C91736269"]
 			hide_until_deps_complete: true
 			id: "4E6BDCD6C1D58084"
 			tasks: [{
@@ -498,8 +490,8 @@
 				item: { count: 1, id: "arphex:heavy_chitin" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.5d
+			x: -1.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["460514A34AEFE9FF"]
@@ -568,7 +560,7 @@
 				}
 			]
 			x: 0.0d
-			y: 6.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0F9BF7950DB2AB64"]
@@ -589,7 +581,6 @@
 			dependencies: [
 				"3612CCFD7739FAEF"
 				"7856DDAFFD4C65CB"
-				"4E6BDCD6C1D58084"
 			]
 			hide_until_deps_visible: true
 			id: "0D45D64B3C739B40"
@@ -633,6 +624,15 @@
 			icon_scale: 2.0d
 			id: "4DDC8DED691BCB1A"
 			optional: true
+			rewards: [{
+				count: 8
+				id: "740C6DDFEF8FCC84"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
 			shape: "none"
 			size: 1.5d
 			tasks: [{
@@ -939,6 +939,19 @@
 			}]
 			x: 0.0d
 			y: 16.0d
+		}
+		{
+			dependencies: ["3FB0A406C57BA65E"]
+			hide_until_deps_complete: true
+			id: "4213D090B6664280"
+			tasks: [{
+				count: 64L
+				id: "41EF662149BC11D8"
+				item: { count: 1, id: "minecraft:bedrock" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -30.5d
 		}
 	]
 }

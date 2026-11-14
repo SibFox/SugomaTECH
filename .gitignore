@@ -4,6 +4,7 @@ crash-reports/
 customnpcs/
 downloads/
 data/
+!*kubejs/data/
 journeymap/
 local/kubejs/
 logs/
@@ -330,7 +331,6 @@ config/blueprint-client.toml
 config/keymap.json
 config/statuseffectbars-common.toml
 config/stylisheffects-client.toml
-/config/structurify
 config/DistantHorizons.toml
 config/sightline-client.toml
 config/immersive_machinery.json

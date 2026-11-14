@@ -1,5 +1,4 @@
 {
-	chapter.2D6733F67CAAFF20.title: "ВОКС-канал (OP-VIEW)"
 	chapter.31718A1EEFBD3C28.title: "&#ED4E4E&lГ&lе&lн&#E2505A&lе&#D65266&lт&#CB5472&lи&#BF567E&lч&#B4588A&lе&#A85A96&lс&#9D5CA2&lк&#925EAD&lи&#8660B9&lе &#6F64D1&lо&#6466DD&lп&#5868E9&lы&#4D6AF5&lт&lы"
 	chapter.3797DA8332D1F03F.title: "&#C81C1C&lA&lr&#D6452E&lP&#E46E41&lh&#F19653&lE&#FFBF65&lx"
 	chapter.5EE6961466E3F775.title: "&#1CC89A&lФ&lе&lр&#2CCF8D&lм&#3DD680&lе&#4DDD73&lр&#5DE466&lс&#6DEA59&lт&#7EF14C&lв&#8EF83F&lо &#A7FF37&lи &#BAFF41&lз&#C3FF46&lе&#CDFF4C&lм&#D6FF51&lл&#DFFF56&lе&#E8FF5B&lд&#F2FF60&lе&#FBFF65&lл&lи&lе"
@@ -107,6 +106,11 @@
 		"{ftbquests.chapter.56AEAC22236F88E3.quest35.description2}"
 		""
 	]
+	quest.0A1290B65902B13E.quest_desc: [
+		"{ftbquests.chapter.56AEAC22236F88E3.quest72.description1}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest72.description2}"
+	]
 	quest.0A4828B4C2946117.quest_desc: ["  &6Позволяет нагревать&r как &eкухонный котёл&r из &dФермерского восторга&r, так и &eкастрюлю&r, &eвок&r и &eпароварки&r из &dКалейдоскопа&r."]
 	quest.0A4828B4C2946117.quest_subtitle: "Фермерский восторг"
 	quest.0A4828B4C2946117.title: "&eКухонная плита"
@@ -163,6 +167,17 @@
 	]
 	quest.0F9BF7950DB2AB64.quest_subtitle: "Попадите в &dКрай"
 	quest.0F9BF7950DB2AB64.title: "&dКрай"
+	quest.10305A9C5E67E049.quest_desc: [
+		"{ftbquests.chapter.56AEAC22236F88E3.quest88.description1}"
+		""
+		""
+	]
+	quest.107FC78F9702D8A7.quest_desc: [
+		"{ftbquests.chapter.56AEAC22236F88E3.quest38.description1}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest38.description2}"
+	]
+	quest.107FC78F9702D8A7.title: "{ftbquests.chapter.56AEAC22236F88E3.quest38.title}"
 	quest.10E40D29304B342A.quest_desc: [
 		"  Выращивает культуры &zгораздо быстрее&r &eпримитивного лотка&r"
 		""
@@ -322,6 +337,13 @@
 	]
 	quest.228FCAB0089DE1C3.quest_subtitle: "Рыболовные сласти!"
 	quest.228FCAB0089DE1C3.title: "&#1659E1Рыболовные снасти"
+	quest.25377FA38E7E15EA.quest_desc: [
+		"  &cУжасающая&r своими размерами и &aсилой&r амальгамация &7трилобита&r и &7паука&r."
+		""
+		"               &cКрайне опасен&r. "
+		""
+		"  &cСпособен представлять угрозу даже при ношении&r &eВечной&r &cброни&r."
+	]
 	quest.25377FA38E7E15EA.quest_subtitle: "Победите &aАрахноида-Трисектора"
 	quest.25377FA38E7E15EA.title: "&aАрахноид-Трисектор"
 	quest.25620FBD89BCEDC2.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest7.description1}"]
@@ -386,7 +408,7 @@
 	quest.289EC193A9CF47FC.quest_desc: [
 		"             Где-то должно быть это место..."
 		""
-		"  Особое строение, из которого можно пробраться &4дальше..."
+		"  Особое &cстроение&r, из которого можно пробраться &4дальше..."
 		""
 		"            &4....Глубже, бЛИжЕ..."
 		""
@@ -418,8 +440,17 @@
 	]
 	quest.2A4CCBDC3747DB56.quest_subtitle: "Создайте сет &zБессмертной брони"
 	quest.2A4CCBDC3747DB56.title: "&zБессмертная броня"
+	quest.2AFE6540334A0C82.quest_desc: [
+		" &cУжасающая&r своей &6силой&r и размерами амальгамация &7многоножки&r и &7дьявольского броненосца&r."
+		""
+		"               &cКрайне опасен&r. "
+		""
+		"  &cСпособен представлять угрозу даже при ношении&r &eВечной&r &cброни&r."
+	]
 	quest.2AFE6540334A0C82.quest_subtitle: "Победите &6Дьявольского Дециматора"
 	quest.2AFE6540334A0C82.title: "&6Дьявольский Дециматор"
+	quest.2B4992B2BA6F979B.quest_desc: ["На пути к ветряной энергии... Или другим &zштуковинам&r."]
+	quest.2B4992B2BA6F979B.quest_subtitle: "Создайте железный ротор"
 	quest.2B684BF745B97FD5.quest_desc: ["   &nКлеточный анализатор&r &6нужен для преобразования&r &eобразцов ткани&r &6в&r &aклетки&r"]
 	quest.2B684BF745B97FD5.quest_subtitle: "Создайте клеточный анализатор"
 	quest.2B684BF745B97FD5.title: "Проведем анализ"
@@ -445,6 +476,12 @@
 	quest.2D7EE25C41D4D9D1.quest_subtitle: "Эксперименты!"
 	quest.2D7EE25C41D4D9D1.title: "&#4DF2F5Му&#4DD0F5л&#4DAEF5ь&#4D8CF5ч&#4D6AF5а"
 	quest.2E5C6BF66A865E86.quest_desc: ["{ftbquests.chapter.54}"]
+	quest.2EAAFD8C91736269.quest_desc: [
+		"  Длинное, извивающееся мерзкое создание, &6слабое к дальним атакам&r."
+		""
+		"  Появляется рядом с &cКомплексом&r."
+		"  "
+	]
 	quest.2EAAFD8C91736269.quest_subtitle: "Победите Артроплевру"
 	quest.2EAAFD8C91736269.title: "Многоножка"
 	quest.2FB68EC354898550.quest_subtitle: "Адское путешествие прилагается"
@@ -535,6 +572,11 @@
 	]
 	quest.3D782039BC80BC2F.quest_subtitle: "Создайте Хитиновый сет 2 уровня"
 	quest.3D782039BC80BC2F.title: "Хитиновая броня &6(Уровень 2)"
+	quest.3D986028A8068D74.quest_desc: [
+		"{ftbquests.chapter.56AEAC22236F88E3.quest25.description1}"
+		""
+		"{ftbquests.chapter.56AEAC22236F88E3.quest25.description2}"
+	]
 	quest.3DD2F37E7A2BB49B.quest_desc: [
 		"{ftbquests.chapter.56AEAC22236F88E3.quest3.description1}"
 		""
@@ -590,6 +632,8 @@
 	]
 	quest.414C78C6851EF6E9.quest_subtitle: "Сделайте верстак для мебели!"
 	quest.414C78C6851EF6E9.title: "&z&oХочется кухню покруче?"
+	quest.4213D090B6664280.quest_desc: ["&4&l нЕ тРоГАЙ "]
+	quest.4213D090B6664280.quest_subtitle: "ТЕСТ"
 	quest.428C84E8A63362B7.quest_desc: ["{ftbquests.chapter.53}"]
 	quest.4541A3398F8D9447.quest_desc: [
 		"{ftbquests.chapter.82}"
@@ -598,11 +642,11 @@
 	]
 	quest.457DB28DFC8CFB01.quest_desc: ["{ftbquests.chapter.56AEAC22236F88E3.quest9.description1}"]
 	quest.460514A34AEFE9FF.quest_desc: [
-		"             Прочный материал."
+		"             &oПрочный материал.&r"
 		""
-		" Возможно, его можно использовать, как&r &eзамену для бронепластин&r?"
+		" &oВозможно, его можно использовать, как&r &eзамену для бронепластин&r?&r"
 		""
-		" Думаю, стоит присмотреться к&r &eжукам&r и &eмногоножкам&r, похоже, что они покрыты достаточно прочным хитином."
+		" &oДумаю, стоит присмотреться к&r &eжукам&r &oи&r &eмногоножкам&r&o, похоже, что они покрыты достаточно прочным хитином.&r"
 	]
 	quest.460514A34AEFE9FF.quest_subtitle: "Раздобудьте хитин"
 	quest.460514A34AEFE9FF.title: "Твердый панцирь"
@@ -618,6 +662,13 @@
 	quest.4B06A3C83175D9C8.quest_desc: ["   &nВнедритель плазмид&r используется для того, чтобы &6внедрить исследованные гены в&r &eпустой плазмид&r"]
 	quest.4B06A3C83175D9C8.quest_subtitle: "Создайте внедритель плазмид"
 	quest.4B06A3C83175D9C8.title: "Внедрение"
+	quest.4DDC8DED691BCB1A.quest_desc: [
+		"               &cМать выводка&r."
+		""
+		"  &6Невероятно ловкая&r, несмотря на свой размер."
+		""
+		"  Постоянно вынашивает &cпотомство&r в коконе, который прячет под брюшко."
+	]
 	quest.4DDC8DED691BCB1A.quest_subtitle: "Победите &eПаука-Матриарха"
 	quest.4DDC8DED691BCB1A.title: "&eМатриарх"
 	quest.4E6BDCD6C1D58084.quest_desc: ["&6&oЭтот хитин куда прочнее и тяжелее...&r&r"]
@@ -716,6 +767,8 @@
 	]
 	quest.5946A043F2E1AF0E.quest_subtitle: "Создайте дешифратор ДНК"
 	quest.5946A043F2E1AF0E.title: "Декодирование по-генетически"
+	quest.5AA9BA209C4FC32B.quest_desc: ["&oПоверить не могу, что я это сделал...&r"]
+	quest.5AA9BA209C4FC32B.quest_subtitle: "Создайте вентилятор в корпусе"
 	quest.5C0897E07BA04A7B.quest_subtitle: "Будущее тесто!"
 	quest.5C0897E07BA04A7B.title: "&#FFFEA2Мука"
 	quest.5DAFA95394B84E01.quest_desc: [
@@ -859,7 +912,18 @@
 	quest.688641F2E1B6A876.quest_subtitle: " &5...И она обязательно посмотрит в Вас в ответ"
 	quest.688641F2E1B6A876.title: "&5Загляните в бездну..."
 	quest.68B327CB42E12CB5.quest_desc: ["{ftbquests.chapter.74}"]
-	quest.68F6ADE597C3719E.quest_desc: [" &eЛипкая мембрана линзы, кажется, липнет к пальцам...&r"]
+	quest.68F6ADE597C3719E.quest_desc: [
+		" &o&eЛипкая мембрана линзы, кажется, липнет к пальцам...&r&r"
+		""
+		" &bДает возможность посмотреть количество здоровья сущности&r"
+		""
+		" Посмотрите на существо и зажмите ПКМ, чтобы измерить его максимальное и текущее здоровье."
+		" &7Замеряет на дальнем расстоянии, если красться.&r"
+		""
+		" ЛКМ, чтобы включить режим \"линзы\", дающий информацию о здоровье сущности, как только носитель линзы наносит ей урон."
+		""
+		" &7Можно сложить в Сингулярный мешок.&r"
+	]
 	quest.68F6ADE597C3719E.quest_subtitle: "Создайте &eЛинзу жизненной силы"
 	quest.68F6ADE597C3719E.title: "&eЛинза жизненной силы"
 	quest.6B423C3BB14C70F6.quest_subtitle: "Путевка в неизвестное"
