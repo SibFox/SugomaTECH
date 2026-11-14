@@ -86,12 +86,25 @@ const registerAECTRecipes = (evt) => {
         }
     ).id(getRecipeID('network_tool'))
 
-    evt.shapeless(Item.of('ae2:storage_bus', 1),
+    evt.shaped(
+        Item.of(Item.of('ae2:storage_bus'), 1),
         [
-            item.iu.upgrade.pulling,
-            '#ae2:interface'
-        ]
+            ' C ',
+            'PZP',
+            'PPP'
+        ],{
+            C: item.iu.microchip.lvl1,
+            P: tag.casing.chromium,
+            Z: item.iu.upgrade.pulling
+        }
     ).id(getRecipeID('storage_bus'))
+    
+    // evt.shapeless(Item.of('ae2:storage_bus', 1),
+    //     [
+    //         item.iu.upgrade.pulling,
+    //         '#ae2:interface'
+    //     ]
+    // ).id(getRecipeID('storage_bus'))
     
     evt.shaped(
         Item.of('ae2:import_bus', 1),

@@ -94,7 +94,6 @@ config/ok_zoomer/config.toml
 config/paraglider-common.toml
 config/paraglider-player-states.toml
 config/paraglider-server.toml
-config/parcool-client.toml
 config/particlerain.json
 config/passablefoliage-common.yaml
 config/paths_config.toml
@@ -352,3 +351,4 @@ config/constantmusic.toml
 /config/crash_assistant
 /config/xtranims
 /config/structurify
+/config/punchy
