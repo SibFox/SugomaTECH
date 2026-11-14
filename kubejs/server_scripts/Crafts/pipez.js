@@ -73,11 +73,11 @@ const registerPipeZRecipes = (evt) => {
             'BUB',
             'APA'
         ],{
-            U: item.iu.module.template.lvl1,
+            U: item.iu.upgrade.casing,
             A: tag.ingot.duralumin,
             B: item.ingot.red_alloy,
             C: item.iu.controller.lvl1,
-            P: item.iu.microchip.lvl2
+            P: item.ae.processor.logic
         }
     ).id(getRecipeID('basic_upgrade'))
     
@@ -92,7 +92,7 @@ const registerPipeZRecipes = (evt) => {
             A: tag.ingot.nitenol,
             B: item.iu.exotic_material,
             C: item.iu.controller.lvl2,
-            P: item.iu.microchip.lvl4
+            P: item.ae.processor.concurrent
         }
     ).id(getRecipeID('improved_upgrade'))
     
@@ -107,7 +107,7 @@ const registerPipeZRecipes = (evt) => {
             A: tag.ingot.hafniumboride,
             B: item.iu.graphite_plate,
             C: item.iu.controller.lvl3,
-            P: item.iu.microchip.lvl6
+            P: item.ae.processor.accumulation
         }
     ).id(getRecipeID('advanced_upgrade'))
     
@@ -122,7 +122,7 @@ const registerPipeZRecipes = (evt) => {
             A: tag.ingot.inconel,
             B: item.ingot.netherite,
             C: item.iu.controller.lvl4,
-            P: item.iu.microchip.lvl8
+            P: item.ae.processor.quantum
         }
     ).id(getRecipeID('ultimate_upgrade'))
     

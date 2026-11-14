@@ -95,11 +95,15 @@ PlayerEvents.tick(evt => {
 EntityEvents.death("player", evt => {
     const { source, entity, player, server } = evt
     const killer = source.actual
-    console.log(player.username, killer.username)
+    let chance = Math.random() > 0.6
+    let b1 = player.username == 'jkinaru'
+    let b2 = killer.username == 'arphex:spider_moth'
+    console.log(`Player: ${player.username}/${b1} || Killer: ${killer.username}/${b2} || Chance: ${chance}`)
+    // server.tell(`Player: ${player.username}/${b1} || Killer: ${killer.username}/${b2} || Chance: ${chance}`)
     if (killer)
-        if (player.username == 'jkinaru' && killer.username == 'arphex:spider_moth')
-            if (Math.random > 0.6)
-                player.drop(Item.of('kubejs:fettus').stack, false, false)
+        if (b1 && b2)
+            if (chance)
+                player.drop(Item.of('kubejs:fettus'), false, false)
 })
 
 EntityEvents.death("arphex:spider_moth", evt => {
