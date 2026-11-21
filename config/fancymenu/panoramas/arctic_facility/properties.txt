@@ -1,0 +1,9 @@
+type = panorama
+
+panorama-meta {
+  name = arctic_facility
+  speed = 0.8
+  fov = 100.0
+  angle = -15.0
+  start_rotation = 0
+}

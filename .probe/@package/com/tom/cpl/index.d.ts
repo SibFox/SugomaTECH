@@ -1,0 +1,10 @@
+export * as math from "@package/com/tom/cpl/math";
+export * as util from "@package/com/tom/cpl/util";
+export * as tag from "@package/com/tom/cpl/tag";
+export * as block from "@package/com/tom/cpl/block";
+export * as text from "@package/com/tom/cpl/text";
+export * as config from "@package/com/tom/cpl/config";
+export * as nbt from "@package/com/tom/cpl/nbt";
+export * as gui from "@package/com/tom/cpl/gui";
+export * as command from "@package/com/tom/cpl/command";
+export * as item from "@package/com/tom/cpl/item";

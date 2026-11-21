@@ -190,7 +190,6 @@ rem ============================================
 
 rem %1 = index list in ",0,3,4," format, or "ALL"
 :download_files
-setlocal enabledelayedexpansion
 set "IDX_LIST=%~1"
 
 set "SPARSE_PATHS="

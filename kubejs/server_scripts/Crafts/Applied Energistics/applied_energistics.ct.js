@@ -26,17 +26,19 @@ const registerAECTRecipes = (evt) => {
         ]
     ).id(getRecipeID('fluix_crystal'))
 
-    evt.shapeless(Item.of(item.ae.silicon, 4),
-        [
-            item.iu.dust.calcium_phosphate, item.iu.dust.silicon
-        ]
-    ).id(getRecipeID('silicon_x4'))
+    // evt.shapeless(Item.of(item.ae.silicon, 4),
+    //     [
+    //         item.iu.dust.calcium_phosphate, item.iu.dust.silicon
+    //     ]
+    // ).id(getRecipeID('silicon_x4'))
 
-    evt.shapeless(Item.of(item.ae.silicon, 8),
-        [
-            item.iu.dust.potassium, Item.of(item.iu.dust.silicon, 4)
-        ]
-    ).id(getRecipeID('silicon_x8'))
+    // evt.shapeless(Item.of(item.ae.silicon, 8),
+    //     [
+    //         item.iu.dust.potassium, Item.of(item.iu.dust.silicon, 4)
+    //     ]
+    // ).id(getRecipeID('silicon_x8'))
+    
+    
 
     evt.shaped(
         Item.of('ae2:inscriber', 1),
@@ -84,12 +86,25 @@ const registerAECTRecipes = (evt) => {
         }
     ).id(getRecipeID('network_tool'))
 
-    evt.shapeless(Item.of('ae2:storage_bus', 1),
+    evt.shaped(
+        Item.of(Item.of('ae2:storage_bus'), 1),
         [
-            item.iu.upgrade.pulling,
-            '#ae2:interface'
-        ]
+            ' C ',
+            'PZP',
+            'PPP'
+        ],{
+            C: item.iu.microchip.lvl1,
+            P: tag.casing.chromium,
+            Z: item.iu.upgrade.pulling
+        }
     ).id(getRecipeID('storage_bus'))
+    
+    // evt.shapeless(Item.of('ae2:storage_bus', 1),
+    //     [
+    //         item.iu.upgrade.pulling,
+    //         '#ae2:interface'
+    //     ]
+    // ).id(getRecipeID('storage_bus'))
     
     evt.shaped(
         Item.of('ae2:import_bus', 1),
@@ -219,7 +234,7 @@ const registerAECTRecipes = (evt) => {
             G: item.iu.tempered_glass,
             D: item.ae.core.annihilation,
             F: item.ae.core.formation,
-            C: item.iu.molecular_core,
+            C: item.iu.module.assembler,
             M: item.iu.module.crafting.lvl2,
             S: item.iu.module.slot.x2
         }
@@ -607,6 +622,22 @@ const registerAECTRecipes = (evt) => {
     ).id(getRecipeID('assembler_matrix_frame'))
     
     
-    
+    // evt.custom(
+    //     {
+    //         "type": "ae2:transform",
+    //         "ingredients": [
+    //             {
+    //                 "item": "ae2:charged_certus_quartz_crystal"
+    //             },
+    //             {
+    //                 "item": "ae2:certus_quartz_dust"
+    //             }
+    //         ],
+    //         "result": {
+    //             "count": 2,
+    //             "id": "ae2:certus_quartz_crystal"
+    //         }
+    //     }
+    // )
     
 }

@@ -1,0 +1,10 @@
+export * as parts from "@package/com/tom/cpm/shared/parts";
+export * as model from "@package/com/tom/cpm/shared/model";
+export * as skin from "@package/com/tom/cpm/shared/skin";
+export * as config from "@package/com/tom/cpm/shared/config";
+export * as network from "@package/com/tom/cpm/shared/network";
+export * as animation from "@package/com/tom/cpm/shared/animation";
+export * as definition from "@package/com/tom/cpm/shared/definition";
+export * as io from "@package/com/tom/cpm/shared/io";
+export * as util from "@package/com/tom/cpm/shared/util";
+export * as gui from "@package/com/tom/cpm/shared/gui";

@@ -1,0 +1,10 @@
+{
+  "name": "us_chest_pouches",
+  "type": "Attachment",
+  "category": "bandolier",
+  "groups": [
+      "bandolier"
+  ],
+  "features": [
+  ]
+}

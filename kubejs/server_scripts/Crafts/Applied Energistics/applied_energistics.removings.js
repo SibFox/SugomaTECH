@@ -72,6 +72,10 @@ const registerAERemovings = (evt) => {
     evt.remove({ output: 'extendedae:assembler_matrix_glass' })
     evt.remove({ output: 'extendedae:assembler_matrix_frame' })
     evt.remove({ output: 'advanced_ae:adv_pattern_provider_upgrade' })
+    evt.remove({ output: item.ae.silicon, type: 'minecraft:smelting' })
+    evt.remove({ output: item.ae.silicon, type: 'minecraft:blasting' })
+    evt.remove({ output: 'extendedae:quartz_blend' })
+    evt.remove({ output: 'extendedae:silicon_block' })
     // evt.remove({ output: '' })
     
     evt.remove({ id: 'ae2:network/cells/spatial_storage_cell_2_cubed' })

@@ -1,0 +1,81 @@
+import { $ChunkPos, $Level } from "@package/net/minecraft/world/level";
+import { $MultiBlockEntity } from "@package/com/denfop/api/blockentity";
+import { $BlockEntityInventory } from "@package/com/denfop/blockentity/base";
+import { $Player } from "@package/net/minecraft/world/entity/player";
+import { $BlockTileEntity } from "@package/com/denfop/blocks";
+import { $List, $Map } from "@package/java/util";
+import { $AirPollutionComponent, $AbstractComponent, $EnumTypeStyle_, $ComponentBaseEnergy, $SoilPollutionComponent, $EnumTypeStyle } from "@package/com/denfop/componets";
+import { $IType } from "@package/com/denfop/api/widget";
+import { $ContainerMenuRadiationStorage } from "@package/com/denfop/containermenu";
+import { $HolderLookup$Provider, $BlockPos, $BlockPos_ } from "@package/net/minecraft/core";
+import { $BlockState_, $BlockState } from "@package/net/minecraft/world/level/block/state";
+import { $ResourceKey } from "@package/net/minecraft/resources";
+import { $AABB } from "@package/net/minecraft/world/phys";
+import { $BlockEntityType } from "@package/net/minecraft/world/level/block/entity";
+import { $BlockCapability } from "@package/net/neoforged/neoforge/capabilities";
+
+declare module "@package/com/denfop/blockentity/mechanism/radiation_storage" {
+    export class $BlockEntityRadiationStorage extends $BlockEntityInventory implements $IType {
+        getStyle(): $EnumTypeStyle;
+        getGuiContainer(arg0: $Player): $ContainerMenuRadiationStorage;
+        blockState: $BlockState;
+        static ticker: number;
+        pollutionSoil: $SoilPollutionComponent;
+        level: $Level;
+        advComponentMap: $Map<string, $AbstractComponent>;
+        componentList: $List<$AbstractComponent>;
+        updateServerList: $List<$AbstractComponent>;
+        active: string;
+        facing: number;
+        static ATTACHMENTS_NBT_KEY: string;
+        static updates: $Map<$ResourceKey<$Level>, $List<$ChunkPos>>;
+        /**
+         * @deprecated
+         */
+        type: $BlockEntityType<never>;
+        isLoaded: boolean;
+        remove: boolean;
+        worldPosition: $BlockPos;
+        pollutionAir: $AirPollutionComponent;
+        radiation: $ComponentBaseEnergy;
+        pos: $BlockPos;
+        provider: $HolderLookup$Provider;
+        capabilityComponents: $Map<$BlockCapability<never, never>, $AbstractComponent>;
+        block: $BlockTileEntity<any>;
+        static defaultAabbs: $List<$AABB>;
+        updateClientList: $List<$AbstractComponent>;
+        teBlock: $MultiBlockEntity;
+        constructor(arg0: number, arg1: $EnumTypeStyle_, arg2: $MultiBlockEntity, arg3: $BlockPos_, arg4: $BlockState_);
+        get style(): $EnumTypeStyle;
+    }
+    export class $BlockEntitySimpleRadiationStorage extends $BlockEntityRadiationStorage {
+        blockState: $BlockState;
+        static ticker: number;
+        pollutionSoil: $SoilPollutionComponent;
+        level: $Level;
+        advComponentMap: $Map<string, $AbstractComponent>;
+        componentList: $List<$AbstractComponent>;
+        updateServerList: $List<$AbstractComponent>;
+        active: string;
+        facing: number;
+        static ATTACHMENTS_NBT_KEY: string;
+        static updates: $Map<$ResourceKey<$Level>, $List<$ChunkPos>>;
+        /**
+         * @deprecated
+         */
+        type: $BlockEntityType<never>;
+        isLoaded: boolean;
+        remove: boolean;
+        worldPosition: $BlockPos;
+        pollutionAir: $AirPollutionComponent;
+        radiation: $ComponentBaseEnergy;
+        pos: $BlockPos;
+        provider: $HolderLookup$Provider;
+        capabilityComponents: $Map<$BlockCapability<never, never>, $AbstractComponent>;
+        block: $BlockTileEntity<any>;
+        static defaultAabbs: $List<$AABB>;
+        updateClientList: $List<$AbstractComponent>;
+        teBlock: $MultiBlockEntity;
+        constructor(arg0: $BlockPos_, arg1: $BlockState_);
+    }
+}

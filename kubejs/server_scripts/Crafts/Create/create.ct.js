@@ -18,9 +18,23 @@ const registerCreateCTRecipes = (evt) => {
         ],
     'create:mechanical_drill')
 
+    shapedRecipe(evt, getRecipeID('mechanical_press'),
+        [
+            [ tag.shaft ],
+            [ item.create.casing.andesite ],
+            [ tag.doubleplate.iron ]
+        ],
+    'create:mechanical_press', 1)
+
+    evt.shapeless(Item.of(item.create.andesite_alloy, 9),
+        [
+            'create:andesite_alloy_block'
+        ]
+    ).id(getRecipeID('andesite_alloy_9'))
+
     evt.shapeless(Item.of('powergrid:wire', 1),
         [
-            item.iu.wire.bare.copper            
+            item.iu.wire.bare.copper
         ]
     ).id(getRecipeID('wire_bare_copper'))
 
@@ -132,20 +146,20 @@ const registerCreateCTRecipes = (evt) => {
     ).id(getRecipeID('belt'))
     
     
-    evt.shaped(
-        Item.of('petrolsparts:pneumatic_tube', 4),
-        [
-            'RMR',
-            'RLR',
-            'TST'
-        ],{
-            T: tag.plate.tungsten,
-            S: tag.cogwheel,
-            L: item.iu.rotor.wind.ready.iron,
-            M: item.create.precision_mechanism,
-            R: item.iu.synthetic_rubber
-        }
-    ).id(getRecipeID('pneumatic_tube'))
+    // evt.shaped(
+    //     Item.of('petrolsparts:pneumatic_tube', 4),
+    //     [
+    //         'RMR',
+    //         'RLR',
+    //         'TST'
+    //     ],{
+    //         T: tag.plate.tungsten,
+    //         S: tag.cogwheel,
+    //         L: item.iu.rotor.wind.ready.iron,
+    //         M: item.create.precision_mechanism,
+    //         R: item.iu.synthetic_rubber
+    //     }
+    // ).id(getRecipeID('pneumatic_tube'))
     
     evt.shapeless(Item.of('simulated:redstone_magnet', 1),
         [

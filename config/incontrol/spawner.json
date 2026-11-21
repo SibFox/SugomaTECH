@@ -14,14 +14,11 @@
         "arphex:spider_brood",
         "arphex:spider_recluse",
         "arphex:spider_sinker",
-        "arphex:spider_matriarch_larvae",
         "arphex:spider_obstructer",
-        "arphex:spider_funnel",
-        "arphex:spider_lunger",
-        "arphex:dragonfly_dreadnought"
+        "arphex:spider_funnel"
     ],
     "phase": "arphex_too_active",
-    "persecond": 0.65,
+    "persecond": 0.45,
     "attempts": 5,
     "amount": {
       "minimum": 1,
@@ -35,7 +32,7 @@
       "maxdist": 100,
       "minheight": -30,
       "maxheight": 300,
-      "maxthis": 30,
+      "maxthis": 20,
       "validspawn": true,
       "and": {
         "maxtime": 13000,
@@ -59,19 +56,16 @@
         "arphex:spider_brood",
         "arphex:spider_recluse",
         "arphex:spider_sinker",
-        "arphex:spider_matriarch_larvae",
         "arphex:spider_obstructer",
-        "arphex:spider_funnel",
-        "arphex:spider_lunger",
-        "arphex:dragonfly_dreadnought"
+        "arphex:spider_funnel"
     ],
     "phase": "arphex_too_active",
-    "persecond": 0.8,
-    "attempts": 12,
+    "persecond": 0.6,
+    "attempts": 8,
     "amount": {
       "minimum": 1,
-      "maximum": 3,
-      "groupdistance": 20
+      "maximum": 2,
+      "groupdistance": 25
     },
     "conditions": {
       "dimension": "minecraft:overworld",
@@ -80,7 +74,7 @@
       "maxdist": 100,
       "minheight": -30,
       "maxheight": 300,
-      "maxthis": 30,
+      "maxthis": 20,
       "validspawn": true,
       "and": {
         "mintime": 13000,
@@ -105,19 +99,17 @@
         "arphex:spider_brood",
         "arphex:spider_recluse",
         "arphex:spider_sinker",
-        "arphex:spider_matriarch_larvae",
         "arphex:spider_obstructer",
         "arphex:spider_funnel",
         "arphex:spider_lunger",
-        "arphex:spider_ambusher",
-        "arphex:dragonfly_dreadnought"
+        "arphex:spider_ambusher"
     ],
     "phase": "arphex_flood",
-    "persecond": 0.8,
-    "attempts": 20,
+    "persecond": 0.6,
+    "attempts": 13,
     "amount": {
       "minimum": 1,
-      "maximum": 3,
+      "maximum": 2,
       "groupdistance": 20
     },
     "conditions": {
@@ -152,20 +144,18 @@
         "arphex:spider_brood",
         "arphex:spider_recluse",
         "arphex:spider_sinker",
-        "arphex:spider_matriarch_larvae",
         "arphex:spider_obstructer",
         "arphex:spider_funnel",
         "arphex:spider_lunger",
-        "arphex:spider_ambusher",
-        "arphex:dragonfly_dreadnought"
+        "arphex:spider_ambusher"
     ],
     "phase": "arphex_flood",
-    "persecond": 0.8,
-    "attempts": 35,
+    "persecond": 0.6,
+    "attempts": 16,
     "amount": {
       "minimum": 1,
-      "maximum": 4,
-      "groupdistance": 10
+      "maximum": 3,
+      "groupdistance": 15
     },
     "conditions": {
       "dimension": "minecraft:overworld",

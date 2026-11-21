@@ -1,13 +1,8 @@
 "use strict";
 
-/**
- * 
- * @param {Internal.RecipesEventJS} evt 
- */
 const registerArPhExCTRemovings = (evt) => {
-    
+
     evt.remove({ output: item.arphex.scorch_charge })
-    evt.remove({ output: 'arphex:mangled_spider_flesh' })
 
     evt.remove({ output: item.arphex.spectral_shard })
     evt.remove({ output: item.arphex.spectral_ingot })

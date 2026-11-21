@@ -1,10 +1,6 @@
 // priority: 10
 "use strict";
 
-/**
- * 
- * @param {Internal.RecipesEventJS} evt 
- */
 const registerItemObliteration = () => {
 
     const obliterateItems = [
@@ -33,6 +29,8 @@ const registerItemObliteration = () => {
         'kaleidoscope_cookery:fruit_basket', 'megacells:sky_osmium_ingot',
         'advanced_ae:quantum_helmet', 'advanced_ae:quantum_chestplate',
         'advanced_ae:quantum_leggings', 'advanced_ae:quantum_boots',
+        item.ae.silicon, item.ae.printed_silicon, 'extendedae:quartz_blend',
+        'extendedae:silicon_block',
         // 'advanced_ae:*_card'
 
         'immersive_aircraft:gyrodyne'

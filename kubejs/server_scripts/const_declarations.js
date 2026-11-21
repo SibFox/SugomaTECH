@@ -50,6 +50,7 @@ const item = {
     compass: 'minecraft:compass',
     conduit: 'minecraft:conduit',
     paper: 'minecraft:paper',
+    shears: 'minecraft:shears',
 
     // ~~~~~~~~~~~~~~~~~~~~ Farmer's Delight ~~~~~~~~~~~~~~~~~~~~ 
     milk_bottle: 'farmersdelight:milk_bottle',
@@ -206,6 +207,9 @@ const item = {
         niobium_titanium: 'industrialupgrade:alloyplate/niobium_titanium',
         brass: 'industrialupgrade:alloyplate/red_brass',
         wolframite: 'industrialupgrade:crafting_elements/crafting_655_element',
+
+        superalloy_haynes: 'industrialupgrade:alloyplate/superalloy_haynes',
+        superalloy_rene: 'industrialupgrade:alloyplate/superalloy_rene',
     },
 
     doubleplate: {
@@ -238,6 +242,8 @@ const item = {
 
     //#endregion
 
+    //#region Custom
+
     custom: {
         spool: 'kubejs:spool',
         hemolymph_drop: 'kubejs:hemolymph_drop',
@@ -246,8 +252,11 @@ const item = {
         synth_nerve_cables: 'kubejs:synth_nerve_cables',
         pack_frame: 'kubejs:pack_frame',
         hardened_leather: 'kubejs:hardened_leather',
-        embryo: 'kubejs:embryo',
-        embryo_in_jar: 'kubejs:jar_embryo',
+        chitin_shard: 'kubejs:chitin_shard',
+        jar: 'kubejs:jar',
+        fettus: 'kubejs:fettus',
+        fettus_in_jar: 'kubejs:jar_fettus',
+        orphan_paste: 'kubejs:jar_orphan_paste',
         kloverghett_seed: 'kubejs:kloverghett_seed',
         kloverghett_crystal: 'kubejs:kloverghett_crystal',
         kloverghett_part: 'kubejs:kloverghett_part',
@@ -260,6 +269,8 @@ const item = {
             lvl4: 'kubejs:exo_c_4',
         },
     },
+
+    //#endregion
 
     // #region Industrial Upgrade
     // ~~~~~~~~~~~~~~~~~~~~ INDUSTRIAL UPGRADE ~~~~~~~~~~~~~~~~~~~~ 
@@ -288,7 +299,7 @@ const item = {
         graphite_plate: 'industrialupgrade:crafting_elements/crafting_320_element',
         base_generator: 'industrialupgrade:basemachine3/generator_iu',
         autopower_module: 'industrialupgrade:crafting_elements/crafting_713_element',
-        power_slot: 'industrialupgrade:crafting_elements/crafting_539_element',
+        power_slot: 'industrialupgrade:crafting_elements/crafting_593_element',
         tube_scheme: 'industrialupgrade:crafting_elements/crafting_122_element',
         laser_component: 'industrialupgrade:crafting_elements/crafting_354_element',
         molecular_core: 'industrialupgrade:itemiucrafring/itemmtcore',
@@ -331,7 +342,8 @@ const item = {
                 iron: 'industrialupgrade:wiring/iron1',
                 gold: 'industrialupgrade:wiring/gold1'
             },
-            glass: 'industrialupgrade:wiring/glass_1'
+            glass: 'industrialupgrade:wiring/glass_1',
+            ampere: 'industrialupgrade:wiring/ampere',
         },
     
         battery: {
@@ -456,13 +468,22 @@ const item = {
             tech_adv: 'industrialupgrade:blockresource/advanced_machine',
         },
 
-        chip: {
+        soic: {
             lvl1: 'industrialupgrade:circuit/circuit_part2',
             lvl2: 'industrialupgrade:circuit/advanced_part2',
             lvl3: 'industrialupgrade:circuit/nanocircuit_part2',
             lvl4: 'industrialupgrade:circuit/quantumcircuit_part2',
             lvl5: 'industrialupgrade:circuit/spectralcircuit_part2',
             lvl6: 'industrialupgrade:circuit/photon_part2'
+        },
+
+        qfp: {
+            lvl1: 'industrialupgrade:circuit/circuit_part3',
+            lvl2: 'industrialupgrade:circuit/advanced_part3',
+            lvl3: 'industrialupgrade:circuit/nanocircuit_part3',
+            lvl4: 'industrialupgrade:circuit/quantumcircuit_part3',
+            lvl5: 'industrialupgrade:circuit/spectralcircuit_part3',
+            lvl6: 'industrialupgrade:circuit/photon_part3'
         },
     
         microchip: {
@@ -926,10 +947,10 @@ const item = {
             quantum: 'advanced_ae:quantum_processor', 
             accumulation: 'megacells:accumulation_processor',
             printed: {
+                logic: 'ae2:printed_logic_processor',
                 calculation: 'ae2:printed_calculation_processor',
                 engineering: 'ae2:printed_engineering_processor',
                 energy: 'appflux:printed_energy_processor',
-                logic: 'ae2:printed_logic_processor',
                 concurrent: 'extendedae:concurrent_processor_print',
                 quantum: 'advanced_ae:printed_quantum_processor',
                 accumulation: 'megacells:printed_accumulation_processor',
@@ -1306,6 +1327,7 @@ const tag = {
         barium: '#c:ingots/barium',
         bismuth: '#c:ingots/bismuth',
         cadmium: '#c:ingots/cadmium',
+        spinel: '#c:ingots/spinel',
         // 2 сплавка
         invar: '#c:ingots/invar',
         steel: '#c:ingots/steel',
@@ -1319,6 +1341,7 @@ const tag = {
         osmiridium: '#c:ingots/osmiridium',
         niobium_titanium: '#c:ingots/niobiumtitanium',
         galliumarsenic: '#c:ingots/galliumarsenic',
+        nitenol: '#c:ingots/nitenol',
         // 3 сплавка
         molybdenum_steel: '#c:ingots/molybdenumsteel',
         alcled: '#c:ingots/alcled',
@@ -1376,6 +1399,7 @@ const tag = {
         osmium: '#c:plates/osmium',
         iridium: '#c:plates/iridium',
         manganese: '#c:plates/manganese',
+        spinel: '#c:plates/spinel',
         // 2 сплавка
         invar: '#c:plates/invar',
         steel: '#c:plates/steel',
@@ -1388,6 +1412,7 @@ const tag = {
         titanium_steel: '#c:plates/titaniumsteel',
         osmiridium: '#c:plates/osmiridium',
         galliumarsenic: '#c:plates/galliumarsenic',
+        nitenol: '#c:plates/nitenol',
         // 3 сплавка
         molybdenumsteel: '#c:plates/molybdenumsteel',
         berylliumbronze: '#c:plates/berylliumbronze',
@@ -1420,6 +1445,7 @@ const tag = {
         titanium: '#c:doubleplate/titanium',
         obsidian: '#c:doubleplate/obsidian',
         hafnium: '#c:doubleplate/hafnium',
+        iron: '#c:doubleplate/iron',
         yttrium: '#c:doubleplate/yttrium',
         tin: '#c:doubleplate/tin',
         germanium: '#c:doubleplate/germanium',
@@ -1436,6 +1462,7 @@ const tag = {
         vanadium: '#c:doubleplate/vanadium',
         iridium: '#c:doubleplate/iridium',
         manganese: '#c:doubleplate/manganese',
+        spinel: '#c:doubleplate/spinel',
         // 2 сплавка
         invar: '#c:doubleplate/invar',
         bronze: '#c:doubleplate/bronze',
@@ -1448,6 +1475,7 @@ const tag = {
         alumel: '#c:doubleplate/alumel',
         nitenol: '#c:doubleplate/nitenol',
         galliumarsenic: '#c:doubleplate/galliumarsenic',
+        nitenol: '#c:doubleplate/nitenol',
         // 3 сплавка
         alcled: '#c:doubleplate/alcled',
         berylliumbronze: '#c:doubleplate/berylliumbronze',
@@ -1498,12 +1526,14 @@ const tag = {
         iridium: '#c:casings/iridium',
         manganese: '#c:casings/manganese',
         vanadium: '#c:casings/vanadium',
+        spinel: '#c:casings/spinel',
         // 2 сплавка
         invar: '#c:casings/invar',
         electrum: '#c:casings/electrum',
         brass: '#c:casings/brass',
         duralumin: '#c:casings/duralumin',
         alumel: '#c:casings/alumel',
+        nitenol: '#c:casings/nitenol',
         // 3 сплавка
         galliumarsenic: '#c:casings/galliumarsenic',
         tan_tung_haf: '#c:casings/tantalumtungstenhafnium',
@@ -1544,6 +1574,7 @@ const tag = {
         iridium: '#c:gears/iridium',
         vanadium: '#c:gears/vanadium',
         manganese: '#c:gears/manganese',
+        spinel: '#c:gears/spinel',
         // 2 сплавка
         invar: '#c:gears/invar',
         brass: '#c:gears/brass',
@@ -1608,6 +1639,7 @@ const tag = {
         osmium: '#c:storage_blocks/osmium',
         iridium: '#c:storage_blocks/iridium',
         manganese: '#c:storage_blocks/manganese',
+        spinel: '#c:storage_blocks/spinel',
         // 2 сплавка
         invar: '#c:storage_blocks/invar',
         brass: '#c:storage_blocks/brass',
@@ -1675,6 +1707,8 @@ const fluid = {
     biomass: '$industrialupgrade:iufluidbiomass',
     plant_mixture: '$industrialupgrade:iufluidplantmixture',
     brilliant_azure: '$industrialupgrade:iufluidazurebrilliant',
+    black_oil: '$industrialupgrade:iufluidblackoil',
+    carbon_monoxide: '$industrialupgrade:iufluidcarbonmonoxide',
 
     metal: {
         bronze: '$industrialupgrade:iufluidbronze',

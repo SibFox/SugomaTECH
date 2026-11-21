@@ -48,7 +48,7 @@ const registerCreateIURecipes = (evt) => {
             asItem(item.ingot.red_alloy, 1),
             asItem(item.redstone, 4),
             asItem(item.create.electron_tube),
-            asItem(item.iu.chip.lvl1)
+            asItem(item.iu.soic.lvl1)
         ],[
             asItem(item.create.transmitter)
         ]

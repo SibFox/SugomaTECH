@@ -558,8 +558,8 @@
 				item: { count: 1, id: "industrialupgrade:basemachine3/alkalineearthquarry" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.0d
+			x: 1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["754A3D01A701B1D7"]
@@ -579,11 +579,12 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["754A3D01A701B1D7"]
+			dependencies: ["4EDDFEECAECAFBFF"]
 			id: "3D986028A8068D74"
+			min_required_dependencies: 1
 			rewards: [{
 				id: "4A076E5F723DB729"
 				item: {
@@ -597,11 +598,14 @@
 				item: { count: 1, id: "industrialupgrade:basemachine3/laser_polisher" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.0d
+			x: -1.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["3D986028A8068D74"]
+			dependencies: [
+				"3D986028A8068D74"
+				"754A3D01A701B1D7"
+			]
 			id: "07011121E021E56B"
 			rewards: [{
 				id: "4A8CC32C572ADDCE"
@@ -841,6 +845,7 @@
 				"3BABDECA88C13932"
 				"69DB6129A483C9F1"
 			]
+			dependency_requirement: "one_completed"
 			id: "107FC78F9702D8A7"
 			rewards: [{
 				id: "243028A4C2864C0A"
@@ -2026,9 +2031,8 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "561F7E17BB91F914"
-				item: { count: 1, id: "industrialupgrade:itemcell/itemcell" }
-				match_components: "fuzzy"
+				id: "092279B99C91667E"
+				item: { components: { "industrialupgrade:fluid": { amount: 1000, id: "industrialupgrade:iufluidnitrogen" } }, count: 1, id: "industrialupgrade:itemcell/itemcell" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -2389,26 +2393,6 @@
 			y: -12.5d
 		}
 		{
-			dependencies: ["10305A9C5E67E049"]
-			id: "0CD92F65FEAF421F"
-			optional: true
-			rewards: [{
-				id: "41239C23599B1A6C"
-				item: {
-					count: 1
-					id: "kubejs:coin"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "291C5AB7CB0DD13A"
-				item: { count: 1, id: "industrialupgrade:basemachine3/aircollector" }
-				type: "item"
-			}]
-			x: -6.5d
-			y: -17.5d
-		}
-		{
 			dependencies: ["4EDDFEECAECAFBFF"]
 			id: "46AE76C8304AF2F5"
 			tasks: [{
@@ -2473,6 +2457,51 @@
 				}
 			]
 			x: -9.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["2B4992B2BA6F979B"]
+			hide_lock_icon: true
+			id: "5AA9BA209C4FC32B"
+			optional: true
+			rewards: [{
+				id: "3811C831D38A2684"
+				item: {
+					count: 1
+					id: "kubejs:coin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7117C77CD1967A16"
+				item: { count: 1, id: "create:encased_fan" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["2580BB3B453F9AEF"]
+			id: "2B4992B2BA6F979B"
+			optional: true
+			tasks: [{
+				id: "4610B6A1A5143654"
+				item: { count: 1, id: "industrialupgrade:rotor/rotor_iron" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["0658B78DEB1015A4"]
+			id: "2580BB3B453F9AEF"
+			optional: true
+			tasks: [{
+				id: "1FD9095C9E272693"
+				item: { count: 1, id: "industrialupgrade:basemachine3/rotor_assembler" }
+				type: "item"
+			}]
+			x: -7.5d
 			y: -10.0d
 		}
 	]

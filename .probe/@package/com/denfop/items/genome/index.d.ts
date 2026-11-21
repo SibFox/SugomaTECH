@@ -1,0 +1,188 @@
+import { $Item, $ItemStack_ } from "@package/net/minecraft/world/item";
+import { $BlockBehaviour$Properties } from "@package/net/minecraft/world/level/block/state";
+import { $ResourceLocation } from "@package/net/minecraft/resources";
+import { $GeneticTraits, $GenomeItem } from "@package/com/denfop/api/bee/genetics";
+import { $ItemMain } from "@package/com/denfop/items";
+import { $Block } from "@package/net/minecraft/world/level/block";
+import { $Map } from "@package/java/util";
+import { $ISubEnum } from "@package/com/denfop/blocks";
+import { $IGenomeItem, $GeneticTraits as $GeneticTraits$1 } from "@package/com/denfop/api/crop/genetics";
+import { $Object, $Enum } from "@package/java/lang";
+
+declare module "@package/com/denfop/items/genome" {
+    export class $ItemCropGenome$Types extends $Enum<$ItemCropGenome$Types> implements $ISubEnum {
+        getName(): string;
+        static values(): $ItemCropGenome$Types[];
+        static valueOf(arg0: string): $ItemCropGenome$Types;
+        getId(): number;
+        getMainPath(): string;
+        static getFromID(arg0: number): $ItemCropGenome$Types;
+        register(): boolean;
+        createProperties(): $BlockBehaviour$Properties;
+        getSerializedName(): string;
+        getOtherPart(): string;
+        registerVariants(): boolean;
+        registerOnlyBlock(): boolean;
+        canAddToTab(): boolean;
+        getRemappedEnumConstantName(): string;
+        static pest_iii: $ItemCropGenome$Types;
+        static air_iii: $ItemCropGenome$Types;
+        static genome_adaptive_i: $ItemCropGenome$Types;
+        static chance_ii: $ItemCropGenome$Types;
+        static biome_i: $ItemCropGenome$Types;
+        static genome_adaptive_iii: $ItemCropGenome$Types;
+        static yield_iii: $ItemCropGenome$Types;
+        static biome_iv: $ItemCropGenome$Types;
+        static grow_speed_i: $ItemCropGenome$Types;
+        static soil_block: $ItemCropGenome$Types;
+        static chance_iii: $ItemCropGenome$Types;
+        static soil_i: $ItemCropGenome$Types;
+        static biome_ii: $ItemCropGenome$Types;
+        static genome_resistance_iii: $ItemCropGenome$Types;
+        static light_i: $ItemCropGenome$Types;
+        static seed_ii: $ItemCropGenome$Types;
+        static radiation_iii: $ItemCropGenome$Types;
+        static water: $ItemCropGenome$Types;
+        static genome_resistance_i: $ItemCropGenome$Types;
+        static weed_ii: $ItemCropGenome$Types;
+        static soil_ii: $ItemCropGenome$Types;
+        static biome: $ItemCropGenome$Types;
+        static biome_iii: $ItemCropGenome$Types;
+        static air_ii: $ItemCropGenome$Types;
+        static radiation_ii: $ItemCropGenome$Types;
+        static grow_speed_ii: $ItemCropGenome$Types;
+        static air_i: $ItemCropGenome$Types;
+        static chance_i: $ItemCropGenome$Types;
+        static light_iii: $ItemCropGenome$Types;
+        static yield_ii: $ItemCropGenome$Types;
+        static night_grow: $ItemCropGenome$Types;
+        static radiation_i: $ItemCropGenome$Types;
+        static light_ii: $ItemCropGenome$Types;
+        static genome_adaptive_ii: $ItemCropGenome$Types;
+        static sun: $ItemCropGenome$Types;
+        static soil_iii: $ItemCropGenome$Types;
+        static weather_ii: $ItemCropGenome$Types;
+        static genome_resistance_ii: $ItemCropGenome$Types;
+        static light_iv: $ItemCropGenome$Types;
+        static weed_i: $ItemCropGenome$Types;
+        static weather_i: $ItemCropGenome$Types;
+        static pest_i: $ItemCropGenome$Types;
+        static seed_i: $ItemCropGenome$Types;
+        static beecombine: $ItemCropGenome$Types;
+        static grow_speed_iii: $ItemCropGenome$Types;
+        static yield_i: $ItemCropGenome$Types;
+        static pest_ii: $ItemCropGenome$Types;
+        static seed_iii: $ItemCropGenome$Types;
+        static weed_iii: $ItemCropGenome$Types;
+        get id(): number;
+        get mainPath(): string;
+        get serializedName(): string;
+        get otherPart(): string;
+        get remappedEnumConstantName(): string;
+    }
+    /**
+     * Values that may be interpreted as {@link $ItemCropGenome$Types}.
+     */
+    export type $ItemCropGenome$Types_ = "crop_genomesoil_i" | "crop_genomesoil_ii" | "crop_genomesoil_iii" | "crop_genomechance_i" | "crop_genomechance_ii" | "crop_genomechance_iii" | "crop_genomebeecombine" | "crop_genomeyield_i" | "crop_genomeyield_ii" | "crop_genomeyield_iii" | "crop_genomeweather_i" | "crop_genomeweather_ii" | "crop_genomewater" | "crop_genomelight_i" | "crop_genomelight_ii" | "crop_genomelight_iii" | "crop_genomelight_iv" | "crop_genomebiome_i" | "crop_genomebiome_ii" | "crop_genomebiome" | "crop_genomebiome_iii" | "crop_genomebiome_iv" | "crop_genomegrow_speed_i" | "crop_genomegrow_speed_ii" | "crop_genomegrow_speed_iii" | "crop_genomepest_i" | "crop_genomepest_ii" | "crop_genomepest_iii" | "crop_genomeseed_i" | "crop_genomeseed_ii" | "crop_genomeseed_iii" | "crop_genomeweed_i" | "crop_genomeweed_ii" | "crop_genomeweed_iii" | "crop_genomesoil_block" | "crop_genomesun" | "crop_genomenight_grow" | "crop_genomeair_i" | "crop_genomeair_ii" | "crop_genomeair_iii" | "crop_genomeradiation_i" | "crop_genomeradiation_ii" | "crop_genomeradiation_iii" | "crop_genomegenome_resistance_i" | "crop_genomegenome_resistance_ii" | "crop_genomegenome_resistance_iii" | "crop_genomegenome_adaptive_i" | "crop_genomegenome_adaptive_ii" | "crop_genomegenome_adaptive_iii";
+    export class $ItemBeeGenome<T extends $Enum<T>> extends $ItemMain<T> implements $GenomeItem {
+        getGenomeTraits(arg0: $ItemStack_): $GeneticTraits;
+        static BASE_ATTACK_DAMAGE_ID: $ResourceLocation;
+        static DEFAULT_MAX_STACK_SIZE: number;
+        descriptionId: string;
+        static MAX_BAR_WIDTH: number;
+        static BASE_ATTACK_SPEED_ID: $ResourceLocation;
+        static ABSOLUTE_MAX_STACK_SIZE: number;
+        canRepair: boolean;
+        moonlight$clientAnimationProvider: $Object;
+        static BY_BLOCK: $Map<$Block, $Item>;
+        constructor(arg0: T);
+    }
+    export class $ItemCropGenome<T extends $Enum<T>> extends $ItemMain<T> implements $IGenomeItem {
+        getGenomeTraits(arg0: $ItemStack_): $GeneticTraits$1;
+        static BASE_ATTACK_DAMAGE_ID: $ResourceLocation;
+        static DEFAULT_MAX_STACK_SIZE: number;
+        descriptionId: string;
+        static MAX_BAR_WIDTH: number;
+        static BASE_ATTACK_SPEED_ID: $ResourceLocation;
+        static ABSOLUTE_MAX_STACK_SIZE: number;
+        canRepair: boolean;
+        moonlight$clientAnimationProvider: $Object;
+        static BY_BLOCK: $Map<$Block, $Item>;
+        constructor(arg0: T);
+    }
+    export class $ItemBeeGenome$Types extends $Enum<$ItemBeeGenome$Types> implements $ISubEnum {
+        getName(): string;
+        static values(): $ItemBeeGenome$Types[];
+        static valueOf(arg0: string): $ItemBeeGenome$Types;
+        getId(): number;
+        getMainPath(): string;
+        static getFromID(arg0: number): $ItemBeeGenome$Types;
+        register(): boolean;
+        createProperties(): $BlockBehaviour$Properties;
+        getSerializedName(): string;
+        getOtherPart(): string;
+        registerVariants(): boolean;
+        registerOnlyBlock(): boolean;
+        canAddToTab(): boolean;
+        getRemappedEnumConstantName(): string;
+        static hardening_ii: $ItemBeeGenome$Types;
+        static population_i: $ItemBeeGenome$Types;
+        static pest_iii: $ItemBeeGenome$Types;
+        static jelly_iii: $ItemBeeGenome$Types;
+        static air_iii: $ItemBeeGenome$Types;
+        static genome_adaptive_i: $ItemBeeGenome$Types;
+        static product_ii: $ItemBeeGenome$Types;
+        static genome_adaptive_iii: $ItemBeeGenome$Types;
+        static food_i: $ItemBeeGenome$Types;
+        static jelly_i: $ItemBeeGenome$Types;
+        static birth_ii: $ItemBeeGenome$Types;
+        static mortality_ii: $ItemBeeGenome$Types;
+        static soil_i: $ItemBeeGenome$Types;
+        static birth_i: $ItemBeeGenome$Types;
+        static birth_iii: $ItemBeeGenome$Types;
+        static jelly_ii: $ItemBeeGenome$Types;
+        static night: $ItemBeeGenome$Types;
+        static genome_resistance_iii: $ItemBeeGenome$Types;
+        static population_ii: $ItemBeeGenome$Types;
+        static radiation_iii: $ItemBeeGenome$Types;
+        static genome_resistance_i: $ItemBeeGenome$Types;
+        static soil_ii: $ItemBeeGenome$Types;
+        static radius_iii: $ItemBeeGenome$Types;
+        static biome: $ItemBeeGenome$Types;
+        static air_ii: $ItemBeeGenome$Types;
+        static radiation_ii: $ItemBeeGenome$Types;
+        static air_i: $ItemBeeGenome$Types;
+        static radiation_i: $ItemBeeGenome$Types;
+        static hardening_i: $ItemBeeGenome$Types;
+        static genome_adaptive_ii: $ItemBeeGenome$Types;
+        static food_iii: $ItemBeeGenome$Types;
+        static population_iii: $ItemBeeGenome$Types;
+        static sun: $ItemBeeGenome$Types;
+        static soil_iii: $ItemBeeGenome$Types;
+        static weather_ii: $ItemBeeGenome$Types;
+        static food_ii: $ItemBeeGenome$Types;
+        static genome_resistance_ii: $ItemBeeGenome$Types;
+        static hardening_iii: $ItemBeeGenome$Types;
+        static mortality_i: $ItemBeeGenome$Types;
+        static product_i: $ItemBeeGenome$Types;
+        static swarm_iii: $ItemBeeGenome$Types;
+        static radius_i: $ItemBeeGenome$Types;
+        static mortality_iii: $ItemBeeGenome$Types;
+        static weather_i: $ItemBeeGenome$Types;
+        static radius_ii: $ItemBeeGenome$Types;
+        static pest_i: $ItemBeeGenome$Types;
+        static product_iii: $ItemBeeGenome$Types;
+        static swarm_i: $ItemBeeGenome$Types;
+        static swarm_ii: $ItemBeeGenome$Types;
+        static pest_ii: $ItemBeeGenome$Types;
+        get id(): number;
+        get mainPath(): string;
+        get serializedName(): string;
+        get otherPart(): string;
+        get remappedEnumConstantName(): string;
+    }
+    /**
+     * Values that may be interpreted as {@link $ItemBeeGenome$Types}.
+     */
+    export type $ItemBeeGenome$Types_ = "bee_genome_soil_i" | "bee_genome_soil_ii" | "bee_genome_soil_iii" | "bee_genome_food_i" | "bee_genome_food_ii" | "bee_genome_food_iii" | "bee_genome_biome" | "bee_genome_jelly_i" | "bee_genome_jelly_ii" | "bee_genome_jelly_iii" | "bee_genome_weather_i" | "bee_genome_weather_ii" | "bee_genome_product_i" | "bee_genome_product_ii" | "bee_genome_product_iii" | "bee_genome_birth_i" | "bee_genome_birth_ii" | "bee_genome_birth_iii" | "bee_genome_hardening_i" | "bee_genome_hardening_ii" | "bee_genome_hardening_iii" | "bee_genome_population_i" | "bee_genome_population_ii" | "bee_genome_population_iii" | "bee_genome_swarm_i" | "bee_genome_swarm_ii" | "bee_genome_swarm_iii" | "bee_genome_mortality_i" | "bee_genome_mortality_ii" | "bee_genome_mortality_iii" | "bee_genome_pest_i" | "bee_genome_pest_ii" | "bee_genome_pest_iii" | "bee_genome_radius_i" | "bee_genome_radius_ii" | "bee_genome_radius_iii" | "bee_genome_sun" | "bee_genome_night" | "bee_genome_air_i" | "bee_genome_air_ii" | "bee_genome_air_iii" | "bee_genome_radiation_i" | "bee_genome_radiation_ii" | "bee_genome_radiation_iii" | "bee_genome_genome_resistance_i" | "bee_genome_genome_resistance_ii" | "bee_genome_genome_resistance_iii" | "bee_genome_genome_adaptive_i" | "bee_genome_genome_adaptive_ii" | "bee_genome_genome_adaptive_iii";
+}

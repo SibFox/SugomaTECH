@@ -152,7 +152,7 @@ const registerCCRecipes = (evt) => {
             [ item.iu.wire.isolated.copper, tag.glass_panel, item.iu.wire.isolated.copper ],
             [ item.iu.corpus_cover.lvl1, item.iu.wire.isolated.copper, item.iu.corpus_cover.lvl1 ]
         ],
-    item.cc.monitor.normal)
+    item.cc.monitor.normal, 6)
 
     shapedRecipe(evt, getRecipeID('monitor_advanced'),
         [
@@ -160,7 +160,7 @@ const registerCCRecipes = (evt) => {
             [ item.iu.wire.glass, tag.glass_panel, item.iu.wire.glass ],
             [ item.iu.corpus_cover.lvl1, item.iu.wire.glass, item.iu.corpus_cover.lvl1 ]
         ],
-    item.cc.monitor.advanced)
+    item.cc.monitor.advanced, 6)
 
     evt.remove({ output: item.cc.cable })
 

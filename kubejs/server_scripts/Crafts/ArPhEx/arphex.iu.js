@@ -18,7 +18,7 @@ const registerArPhExIURecipes = (evt) => {
         ],[
             asItem(item.arphex.spectral_shard, 2)
         ],
-        { 'temperature': 5500 }
+        { 'temperature': 5000 }
     )
     
     iuRecipe(evt, getRecipeID('spectral_ingot'), IUMachineCraft.MOLECULAR_DOUBLE,
@@ -41,7 +41,7 @@ const registerArPhExIURecipes = (evt) => {
         ],[
             asItem(item.arphex.infernal_shard, 2)
         ],
-        { 'temperature': 7000 }
+        { 'temperature': 5000 }
     )
     
     iuRecipe(evt, getRecipeID('infernal_ingot'), IUMachineCraft.MOLECULAR_DOUBLE,
@@ -111,6 +111,14 @@ const registerArPhExIURecipes = (evt) => {
             asItem('minecraft:magma_cream')
         ],[
             asItem(item.arphex.scorch_charge)
+        ]
+    )
+    
+    iuRecipe(evt, getRecipeID('chitin_shard'), IUMachineCraft.EXTRACTOR,
+        [
+            asItem(item.custom.chitin_shard, 9)
+        ],[
+            asItem(item.arphex.chitin)
         ]
     )
     

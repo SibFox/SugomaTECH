@@ -45,6 +45,22 @@ const registerPipeZRecipes = (evt) => {
         { 'temperature': 3000 }
     )
 
+    evt.remove({ output: 'pipez:filter_destination_tool' })
+
+    evt.shaped(
+        Item.of('pipez:filter_destination_tool', 1),
+        [
+            'ITI',
+            'WCW'
+        ],{
+            I: tag.plate.invar,
+            T: tag.plate.niobium_titanium,
+            W: item.iu.wire.isolated.copper,
+            C: item.iu.microchip.lvl1
+        }
+    ).id(getRecipeID('filter_destination_tool'))
+    
+
     evt.remove({ output: 'pipez:basic_upgrade' })
     evt.remove({ output: 'pipez:improved_upgrade' })
     evt.remove({ output: 'pipez:advanced_upgrade' })
@@ -61,7 +77,7 @@ const registerPipeZRecipes = (evt) => {
             A: tag.ingot.duralumin,
             B: item.ingot.red_alloy,
             C: item.iu.controller.lvl1,
-            P: item.iu.microchip.lvl4
+            P: item.ae.processor.logic
         }
     ).id(getRecipeID('basic_upgrade'))
     
@@ -73,10 +89,10 @@ const registerPipeZRecipes = (evt) => {
             'APA'
         ],{
             U: 'pipez:basic_upgrade',
-            A: tag.ingot.berylliumbronze,
+            A: tag.ingot.nitenol,
             B: item.iu.exotic_material,
             C: item.iu.controller.lvl2,
-            P: item.iu.microchip.lvl5
+            P: item.ae.processor.concurrent
         }
     ).id(getRecipeID('improved_upgrade'))
     
@@ -91,7 +107,7 @@ const registerPipeZRecipes = (evt) => {
             A: tag.ingot.hafniumboride,
             B: item.iu.graphite_plate,
             C: item.iu.controller.lvl3,
-            P: item.iu.microchip.lvl6
+            P: item.ae.processor.accumulation
         }
     ).id(getRecipeID('advanced_upgrade'))
     
@@ -106,7 +122,7 @@ const registerPipeZRecipes = (evt) => {
             A: tag.ingot.inconel,
             B: item.ingot.netherite,
             C: item.iu.controller.lvl4,
-            P: item.iu.microchip.lvl8
+            P: item.ae.processor.quantum
         }
     ).id(getRecipeID('ultimate_upgrade'))
     

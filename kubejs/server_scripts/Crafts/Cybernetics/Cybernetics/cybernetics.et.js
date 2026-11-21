@@ -513,7 +513,7 @@ const registerCyberneticsETRecipes = (evt) => {
             'TT TT'
         ],{
             T: item.cn.titanium_plating,
-            E: item.custom.embryo,
+            E: item.custom.fettus,
             B: item.ore_block.titanium,
             S: item.cn.synthnerves,
             M: item.cn.titanium_mesh

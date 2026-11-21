@@ -28,4 +28,4 @@
 	#How long will a single bubble last? (In ticks)
 	# Default: 500
 	# Range: 20 ~ 1200
-	bubble_lifetime = 500
+	bubble_lifetime = 150

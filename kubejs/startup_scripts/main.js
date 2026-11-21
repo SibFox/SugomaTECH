@@ -1,18 +1,18 @@
-StartupEvents.registry('item', evt => {
-  registerItems(evt)
-  registerFoods(evt)
-})
+function calcSaturation(nutrition, saturation) {
+    return { nutrition: nutrition, 
+        saturation: saturation / nutrition / 2
+    }
+}
 
-StartupEvents.registry('block', evt => {
-  // event.create('quartz_glass')
-  //   .transparent(true)
-  //   .hardness(0.3)
-  //   .resistance(0.3)
-  //   .requiresTool(false)
-  //   .soundType('glass')
-  //   .renderType('cutout')
+registerItems()
+registerFoods()
+registerBlocks()
 
-})
+// StartupEvents.registry('mob_effect', evt => {
+//   evt.create('neuroposin')
+//     .
+// })
+
 
 StartupEvents.registry('armor_material', evt => {
   evt.create('bio')
@@ -40,6 +40,12 @@ const tools = [
     { name: 'industrialupgrade:ruby_pickaxe', maxDamage: 0, attackDamage: 4, attackSpeed: 1.5 },
     { name: 'industrialupgrade:ruby_axe', maxDamage: 0, attackDamage: 8, attackSpeed: 1.1 },
     { name: 'industrialupgrade:ruby_shovel', maxDamage: 0, attackDamage: 4.5, attackSpeed: 1.3 },
+    { name: 'arphex:abyssal_axe', maxDamage: 0, attackDamage: 15, attackSpeed: 0.8 },
+    { name: 'industrialupgrade:energy_tools/chainsaw', maxDamage: 0, attackDamage: 7.5, attackSpeed: 1.2 },
+    { name: 'industrialupgrade:energy_tools/nano_saber', maxDamage: 0, attackDamage: 6, attackSpeed: 2.2 },
+    { name: 'industrialupgrade:energy_tools/katana', maxDamage: 0, attackDamage: 8, attackSpeed: 3.5 },
+    { name: 'industrialupgrade:energy_tools/itemnanosaber1', maxDamage: 0, attackDamage: 9, attackSpeed: 2.2 },
+    { name: 'industrialupgrade:energy_tools/itemnanosaber', maxDamage: 0, attackDamage: 13, attackSpeed: 2.2 },
 ];
 
 ItemEvents.modification(evt => {
